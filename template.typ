@@ -1,5 +1,6 @@
 #let conf(
   title: "Untitled Blueprint",
+  subtitle: none,
   authors: (),
   date: none,
   abstract: none,
@@ -24,10 +25,14 @@
   // Title Block
   align(center)[
     block(text(weight: "bold", size: 2em, title))
+    if subtitle != none {
+      v(0.4em)
+      block(text(size: 1.2em, fill: luma(60), style: "italic", subtitle))
+    }
     v(1.5em)
 
     grid(
-      columns: count => calc.min(authors.len(), 3),
+      columns: calc.min(authors.len(), 3),
       gutter: 2em,
       ..authors.map(author => align(center)[
         strong(author.name) \
@@ -37,7 +42,7 @@
     )
 
     v(1em)
-    if date != none { text(italic, date) }
+    if date != none { text(style: "italic", date) }
   ]
 
   v(2em)
@@ -53,7 +58,7 @@
   }
 
   // Table of Contents
-  outline(indent: auto)
+  outline(indent: auto, depth: 2)
   pagebreak()
 
   body
