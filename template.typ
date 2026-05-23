@@ -19,7 +19,7 @@
   set heading(numbering: "1.1.")
 
   // Show rules for clean heading layouts
-  show heading: it => block(bottom: 1em, top: 1.5em, it)
+  show heading: it => block(above: 1.5em, below: 1em, it)
 
   // Title Block
   align(center)[
