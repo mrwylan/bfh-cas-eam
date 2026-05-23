@@ -24,36 +24,38 @@
 
   // Title Block
   align(center)[
-    block(text(weight: "bold", size: 2em, title))
-    if subtitle != none {
+    #block(text(weight: "bold", size: 2em, title))
+    #if subtitle != none {
       v(0.4em)
       block(text(size: 1.2em, fill: luma(60), style: "italic", subtitle))
     }
-    v(1.5em)
+    #v(1.5em)
 
-    grid(
+    #grid(
       columns: calc.min(authors.len(), 3),
       gutter: 2em,
       ..authors.map(author => align(center)[
-        strong(author.name) \
-        text(size: 9pt, fill: luma(80), author.affiliation) \
-        link(author.email)
+        #strong(author.name) \
+        #text(size: 9pt, fill: luma(80), author.affiliation) \
+        #link(author.email)
       ])
     )
 
-    v(1em)
-    if date != none { text(style: "italic", date) }
+    #v(1em)
+    #if date != none {
+      text(style: "italic", date)
+    }
   ]
 
   v(2em)
 
   // Abstract Block
   if abstract != none {
-    block(width: 85%, inset: 1em, radius: 4pt, fill: luma(245))[
+    align(center, block(width: 85%, inset: 1em, radius: 4pt, fill: luma(245))[
       #align(center)[#strong("Abstract")]
       #v(0.5em)
       #abstract
-    ]
+    ])
     v(2em)
   }
 
