@@ -33,6 +33,10 @@ The outside-in perspective inverts this logic, treating the customer journey as 
 Architectural decisions are evaluated not by their internal technical elegance but by their measurable effect on customer-facing outcomes.
 This shift is supported by capability-based planning, which provides a stable abstraction layer between volatile market demands and the slower-moving application landscape @ulrich2011.
 
+A customer journey describes the complete, end-to-end sequence of experiences a defined persona undergoes when interacting with an organization — from initial awareness through active engagement to post-interaction evaluation @lemon2016.
+Decomposed into discrete touchpoints, it captures both the operational dimension (what the customer does) and the emotional dimension (how the customer perceives the interaction) at each stage.
+In the context of Enterprise Architecture Management, the customer journey functions as the primary analytical driver: architectural decisions are evaluated not by their internal technical quality but by their measurable effect on customer-facing outcomes @lemon2016 @temkin2010.
+
 == Business Capability Management
 A business capability defines what an organization does, independent of how it is currently implemented @ulrich2011.
 Capabilities serve as the immutable anchor point that connects customer strategy to IT execution because they remain stable across organizational restructurings and technology refresh cycles.
