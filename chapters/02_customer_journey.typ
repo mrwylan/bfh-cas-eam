@@ -15,7 +15,7 @@ The journey was structured across six phases:
 + *First Contract* — the journey concludes when Amira secures and documents her first catering assignment.
 
 Each phase was decomposed into discrete touchpoints, moments of direct interaction between Amira and the portal's systems, content, or guidance flows.
-The emotional curve across the journey was captured using a sentiment scale, revealing the critical moments where uncertainty peaks and reliable system support has the highest architectural impact.
+The emotional curve across the journey was captured using a sentiment scale, revealing the critical moments where uncertainty peaks and reliable system support has the highest architectural impact @stickdorn2011.
 
 Key touchpoints identified:
 
