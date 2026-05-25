@@ -1,4 +1,4 @@
-// ── Chapter 3: Collaboration Phase — Outside-In Mapping ─────────────────────
+// ── 02_customer_journey.typ — Chapter 3: Collaboration Phase: Outside-In Mapping ──
 
 = The Collaboration Phase: Outside-In Mapping
 
@@ -106,17 +106,17 @@ The emotional curve across the journey reveals two structurally significant poin
 Phase 3 (Operating Permit) marks the lowest sentiment at −2, driven not by process design failure but by the heterogeneous digitalisation level of cantonal authority systems — an architectural constraint outside the platform's direct control.
 Phase 5 (First Contract) reaches the peak at +2, but the transition from the digital portal to a physical supplier contract represents a residual analogue gap that the target architecture must address @stickdorn2011.
 
-Both extremes are direct inputs for the pain point analysis in Section 3.2 and the Business Object analysis in Section 3.3.
+Both extremes are direct inputs for the pain point analysis in @sec-pain-points and the Business Object analysis in @sec-business-objects.
 
 
-== Pain Points and Value Drivers
+== Pain Points and Value Drivers <sec-pain-points>
 The journey mapping exercise surfaced structural bottlenecks where customer experience deteriorates due to underlying system limitations rather than process design failures.
 This distinction is architecturally significant: process failures can be resolved through training and governance, whereas system-induced friction requires deliberate architectural intervention @temkin2010.
 
 *1. Regulatory fragmentation (Phase 3, sentiment −2)*
 
 Administrative requirements vary by canton and are partially inaccessible through digital channels.
-Of the 18 Business Objects identified across the journey (see Section 3.3), six are hybrid and three remain fully analogue — all concentrated in Phase 3.
+Of the 18 Business Objects identified across the journey (see @sec-business-objects), six are hybrid and two remain fully analogue — both concentrated in Phase 3.
 The root cause is not absent regulation but absent API: cantonal systems range from fully digital (e.g. Zürich, Basel-Stadt) to analogue-only (e.g. Wallis), with no federal consolidation layer.
 This creates a _Line of Failure_ — a point at which the digital journey structurally cannot continue without manual intervention.
 
@@ -166,7 +166,7 @@ The supplier contract with Transgourmet may require physical signature, breaking
 ) <tbl-value-drivers>
 
 
-== Business Object Analysis
+== Business Object Analysis <sec-business-objects>
 The journey mapping was extended into a Business Object analysis following the dematerialisation framework introduced by @normann2001 and further developed by @tercek2015.
 The framework evaluates information artefacts on four dimensions: _liquidity_ (how freely the object can flow across organisational boundaries), _unbundling_ (whether it can be separated from its physical carrier), _density_ (value concentration per unit of information), and _vaporisation potential_ (degree to which the object can be fully dematerialised into a digital service).
 
@@ -207,7 +207,7 @@ Across the five journey phases, 18 Business Objects were identified, classified 
   ]
 ) <tbl-business-objects>
 
-Of the 18 objects, 9 are fully dematerialised (≥ 80 %), 6 are hybrid (40–79 %), and 3 remain substantially analogue (< 40 %).
+Of the 18 objects, 10 are fully dematerialised (≥ 80 %), 6 are hybrid (40–79 %), and 2 remain substantially analogue (< 40 %).
 All three analogue objects are concentrated in Phase 3 and owned by cantonal authorities — confirming that regulatory fragmentation is the primary architectural constraint of the journey, not a process design failure.
 
 In the ArchiMate model, Business Objects are associated with Business Processes via _Access_ relationships (read or write), making their ownership and state transitions traceable across layers.
