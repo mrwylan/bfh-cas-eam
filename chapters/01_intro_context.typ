@@ -9,15 +9,14 @@ Second, it records the individual learning path, capturing the evolution of arch
 The dual-purpose structure reflects BFH's emphasis on Praxis-Transfer: the ability to ground theoretical models in real organizational contexts and to critically evaluate that transfer.
 
 == Case Study / Company Profile
-Amira wants to found a catering business.
-She already has a concept, but no experience with the formal requirements of starting a hospitality business in Switzerland.
-Permits, financing, resource planning, and procurement, she knows these topics matter, but does not know how to approach them.
-She needs orientation and reliable step-by-step guidance.
+Amira is planning to found a catering business in Switzerland.
+She has a rough concept, but no experience with the formal requirements of starting a hospitality business.
+Business registration, financing, resource planning, and procurement, she knows these topics are relevant, but does not know how to approach them.
 
-GastroStart is a fictional portal that addresses exactly this need: it supports founders in the hospitality sector through all relevant phases of business formation.
+GastroStart is a fictional portal that guides founders in the hospitality sector through the key phases of business formation: from initial orientation through registration, business concept, and operating permit to financing and the first contract.
 
-This customer journey, from the first uncertain Google search to the completed registration on GastroStart, serves as the starting point for the modelling exercise.
-From it, business objects are identified, linked to states and business events, and mapped in ArchiMate.
+This customer journey serves as the starting point for the modelling exercise.
+From it, relevant business objects are identified with their states and business events, and mapped in ArchiMate.
 
 == Methodological Approach
 The work applies the TOGAF Architecture Development Method (ADM) as its primary process framework, complemented by ArchiMate 3.1 as the visual modeling language @opengroup2018togaf @opengroup2019archimate.

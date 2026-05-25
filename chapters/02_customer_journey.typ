@@ -3,8 +3,17 @@
 = The Collaboration Phase: Outside-In Mapping
 
 == Customer Journey Definition
-Building on the case introduced in Section 1.2, the collaboration phase maps Amira's journey in detail, from her first point of contact with GastroStart to the completion of her registration.
-The journey was structured across five phases: awareness, orientation, registration, configuration, and first use.
+Building on the case introduced in Section 1.2, the collaboration phase maps Amira's journey in detail across the six phases defined by the GastroStart portal.
+
+The journey was structured across six phases:
+
++ *Initial Orientation* — Amira discovers GastroStart and assesses whether the portal meets her needs.
++ *Registration* — she creates an account and completes her founder profile.
++ *Business Concept* — the portal guides her through structuring and documenting her catering concept.
++ *Operating Permit* — GastroStart provides a step-by-step checklist for the Swiss Betriebsbewilligung process.
++ *Financing* — Amira uses the portal's planning tools to prepare a financing application.
++ *First Contract* — the journey concludes when Amira secures and documents her first catering assignment.
+
 Each phase was decomposed into discrete touchpoints, moments of direct interaction between Amira and the portal's systems, content, or guidance flows.
 The emotional curve across the journey was captured using a sentiment scale, revealing the critical moments where uncertainty peaks and reliable system support has the highest architectural impact.
 
