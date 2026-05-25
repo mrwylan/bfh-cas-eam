@@ -5,6 +5,35 @@
 == Customer Journey Definition
 Building on the case introduced in Section 1.2, the collaboration phase maps Amira's journey in detail across the six phases defined by the GastroStart portal.
 
+#figure(
+  caption: [Persona Profile: Amira],
+  block(
+    width: 100%,
+    stroke: 0.5pt,
+    radius: 4pt,
+    clip: true,
+  )[
+    #block(
+      width: 100%,
+      fill: luma(60),
+      inset: (x: 1em, y: 0.6em),
+    )[
+      #text(fill: white, weight: "bold", size: 1.05em)[Persona: Amira]
+    ]
+    #block(inset: 1em)[
+      #grid(
+        columns: (3cm, 1fr),
+        row-gutter: 0.55em,
+        [*Role*],         [Prospective founder, catering sector],
+        [*Context*],      [No industry background; rough business concept in place],
+        [*Goals*],        [Found a legally compliant business; overlook nothing essential],
+        [*Frustrations*], [Opaque administrative processes; fear of making mistakes; no professional network],
+        [*Need*],         [Step-by-step guidance; everything in one place],
+      )
+    ]
+  ]
+) <persona-amira>
+
 The journey was structured across six phases:
 
 + *Initial Orientation* — Amira discovers GastroStart and assesses whether the portal meets her needs.
