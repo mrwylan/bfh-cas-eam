@@ -4,7 +4,7 @@
 
 == Customer Journey Definition
 Building on the case introduced in Section 1.2, the collaboration phase maps Amira's journey across five phases defined by the GastroStart portal.
-The journey was developed collaboratively across participants from four organisations — Transgourmet Schweiz AG, Finnoflett Schweiz, the Bundeskanzlei, and DV Bern — each contributing domain expertise from their respective institutional contexts.
+The journey was developed collaboratively across participants from four organisations — Transgourmet Schweiz AG, FINNOFLEET Schweiz, the Bundeskanzlei, and DV Bern — each contributing domain expertise from their respective institutional contexts.
 
 #figure(
   caption: [Persona Profile: Amira],
@@ -85,7 +85,7 @@ Each phase was decomposed into discrete touchpoints capturing what Amira does, w
 
       [*4. Financing*],
       [Selects bank partner; credit assessment runs in background; receives IBAN],
-      [Bank selection UI; Finnoflett credit API; IBAN dashboard],
+      [Bank selection UI; FINNOFLEET credit API; IBAN dashboard],
       ["What if I'm rejected? Will I know why?"],
       [↓ −1],
       [Credit decision returned without explanation; no link to alternative CH funding programmes],
@@ -128,7 +128,7 @@ Founders without eID face a registration barrier at the first meaningful interac
 *3. Financing opacity (Phase 4, sentiment −1)*
 
 Amira has no visibility into the credit scoring logic and receives no actionable guidance if the assessment returns an unfavourable result.
-The capability gap is not in the assessment itself but in the explanation interface between Finnoflett's scoring model and the GastroStart user experience.
+The capability gap is not in the assessment itself but in the explanation interface between FINNOFLEET's scoring model and the GastroStart user experience.
 
 *4. Residual analogue touchpoints (Phase 5, sentiment gap)*
 
@@ -156,7 +156,7 @@ The supplier contract with Transgourmet may require physical signature, breaking
 
       [Financing opacity],
       [Transparent, explainable credit assessment],
-      [UX layer over Finnoflett API: plain-language decision feedback; alternative funding links],
+      [UX layer over FINNOFLEET API: plain-language decision feedback; alternative funding links],
 
       [Analogue contract gap],
       [Fully digital supplier onboarding],
@@ -197,9 +197,9 @@ Across the five journey phases, 18 Business Objects were identified, classified 
       [10], [Handelsregistereintrag],       [Contract],    [3], [Bund/Kanton],    [85 %],  [Largely digital via Zefix/EHRA],
       [11], [Bewilligungsstatus],           [Event],       [3], [DV Bern],        [65 %],  [Digital in portal; source data often manual],
       [12], [Kantonales Formular],          [Document],    [3], [Kanton],         [25 %],  [Largest dematerialisation gap in the journey],
-      [13], [Bonitätsprüfung],             [Data Object], [4], [Finnoflett],     [100 %], [Fully automated; risk: opaque result],
-      [14], [Geschäftskonto (IBAN)],        [Entity],      [4], [Finnoflett],     [100 %], [Instant digital issuance via banking API],
-      [15], [Kreditantrag],                [Contract],    [4], [Finnoflett],     [70 %],  [Largely digital; signature may be physical],
+      [13], [Bonitätsprüfung],             [Data Object], [4], [FINNOFLEET],     [100 %], [Fully automated; risk: opaque result],
+      [14], [Geschäftskonto (IBAN)],        [Entity],      [4], [FINNOFLEET],     [100 %], [Instant digital issuance via banking API],
+      [15], [Kreditantrag],                [Contract],    [4], [FINNOFLEET],     [70 %],  [Largely digital; signature may be physical],
       [16], [Lieferantenkonto],            [Entity],      [5], [Transgourmet],   [100 %], [Fully digital via catalogue API],
       [17], [Bestellung],                  [Document],    [5], [Transgourmet],   [100 %], [Fully digital order flow],
       [18], [Liefervertrag (Neukunde)],    [Contract],    [5], [Transgourmet],   [65 %],  [Framework contract; physical signature risk],
@@ -217,7 +217,7 @@ In the ArchiMate model, Business Objects are associated with Business Processes 
 Architectural decisions in team settings are not purely analytical — they are social negotiations shaped by professional background, prior experience, and differing mental models of what architecture is for @bass2012.
 
 *Group composition:*
-The collaboration involved participants from four organisations: Transgourmet Schweiz AG (Grosshandel), Finnoflett Schweiz (Finanzsoftware), the Bundeskanzlei (öffentliche Verwaltung), and DV Bern (Softwareentwicklung öffentliche Hand).
+The collaboration involved participants from four organisations: Transgourmet Schweiz AG (Grosshandel), FINNOFLEET Schweiz (standardisierte und individuell entwickelte Lösungen für Banken, Pensionskassen und Versicherungen), the Bundeskanzlei (öffentliche Verwaltung), and DV Bern (Softwareentwicklung öffentliche Hand).
 This breadth reflected the deliberate design of the GastroStart case: a product whose delivery chain spans private logistics, regulated financial services, federal identity infrastructure, and public-sector software delivery.
 
 *Divergence:*
