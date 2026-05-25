@@ -9,12 +9,14 @@ Second, it records the individual learning path, capturing the evolution of arch
 The dual-purpose structure reflects BFH's emphasis on Praxis-Transfer: the ability to ground theoretical models in real organizational contexts and to critically evaluate that transfer.
 
 == Case Study / Company Profile
-_[Describe the organizational context or customer environment used for the collaborative work.
-Cover the industry sector, size, strategic challenges, and the specific architectural problem that was chosen as the focus.]_
+Amira is planning to found a catering business in Switzerland.
+She has a rough concept, but no experience with the formal requirements of starting a hospitality business.
+Business registration, financing, resource planning, and procurement, she knows these topics are relevant, but does not know how to approach them.
 
-The case study centers on [Organization Name], a [sector] company with approximately [N] employees.
-The primary architectural challenge is [brief description of the problem].
-This context provides a realistic and bounded scope within which the EAM frameworks introduced during the CAS can be applied and evaluated.
+GastroStart is a fictional portal that guides founders in the hospitality sector through the key phases of business formation: from initial orientation through registration, business concept, and operating permit to financing and the first contract.
+
+This customer journey serves as the starting point for the modelling exercise.
+From it, relevant business objects are identified with their states and business events, and mapped in ArchiMate.
 
 == Methodological Approach
 The work applies the TOGAF Architecture Development Method (ADM) as its primary process framework, complemented by ArchiMate 3.1 as the visual modeling language @opengroup2018togaf @opengroup2019archimate.
@@ -32,6 +34,10 @@ technology inventories, system rationalization, and infrastructure optimization 
 The outside-in perspective inverts this logic, treating the customer journey as the primary architectural driver @temkin2010.
 Architectural decisions are evaluated not by their internal technical elegance but by their measurable effect on customer-facing outcomes.
 This shift is supported by capability-based planning, which provides a stable abstraction layer between volatile market demands and the slower-moving application landscape @ulrich2011.
+
+A customer journey describes the complete, end-to-end sequence of experiences a defined persona undergoes when interacting with an organization — from initial awareness through active engagement to post-interaction evaluation @lemon2016.
+Decomposed into discrete touchpoints, it captures both the operational dimension (what the customer does) and the emotional dimension (how the customer perceives the interaction) at each stage.
+In the context of Enterprise Architecture Management, the customer journey functions as the primary analytical driver: architectural decisions are evaluated not by their internal technical quality but by their measurable effect on customer-facing outcomes @lemon2016 @temkin2010.
 
 == Business Capability Management
 A business capability defines what an organization does, independent of how it is currently implemented @ulrich2011.
