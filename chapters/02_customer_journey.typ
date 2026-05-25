@@ -208,7 +208,7 @@ Across the five journey phases, 18 Business Objects were identified, classified 
 ) <tbl-business-objects>
 
 Of the 18 objects, 10 are fully dematerialised (≥ 80 %), 6 are hybrid (40–79 %), and 2 remain substantially analogue (< 40 %).
-All three analogue objects are concentrated in Phase 3 and owned by cantonal authorities — confirming that regulatory fragmentation is the primary architectural constraint of the journey, not a process design failure.
+Both analogue objects are concentrated in Phase 3 and owned by cantonal authorities — confirming that regulatory fragmentation is the primary architectural constraint of the journey, not a process design failure.
 
 In the ArchiMate model, Business Objects are associated with Business Processes via _Access_ relationships (read or write), making their ownership and state transitions traceable across layers.
 
