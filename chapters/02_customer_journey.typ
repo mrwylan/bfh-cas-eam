@@ -134,7 +134,23 @@ Corresponding value drivers, areas where improved architectural support would yi
 + *Error prevention by design*: Validation rules, contextual checklists, and progress indicators prevent mistakes at the system level rather than relying on the user's prior knowledge.
 
 == Collaborative Synthesis
-The peer group consisted of [N] participants from [describe professional backgrounds].
-Divergent mental models of the customer journey emerged early: technical participants focused on data flows, while business-oriented participants prioritized emotional states and service quality indicators.
-The reconciliation process followed a structured workshop format: individual journey maps were created in parallel, then merged through facilitated negotiation, and finally validated against available customer data.
-The final synthesized journey map represents a consensus artifact that neither individual participant would have produced independently — a direct demonstration of the collaborative value that BFH's EAM curriculum is designed to generate.
+Architectural decisions in team settings are not purely analytical — they are social negotiations shaped by professional background, prior experience, and differing mental models of what architecture is for @bass2012.
+The collaborative phase of this project made this dynamic explicit: a shared customer journey had to be negotiated across participants with heterogeneous perspectives before it could serve as a reliable input for the architectural analysis in Chapter 4.
+
+*Group composition:*
+_[N] participants; professional backgrounds included e.g. [Software Architect / Business Analyst / Project Manager / IT Consultant — replace with actual roles]._
+
+*Divergence:*
+Two structural divergence types emerged early in the workshop.
+Technically oriented participants gravitated toward data flows and system dependencies, mapping touchpoints to application interfaces.
+Business-oriented participants focused on the emotional reality of the customer experience, prioritising phases where trust and clarity were at stake.
+_[Describe the concrete divergence that occurred in your group: Which specific journey phase or touchpoint was contested? What did each side argue?]_
+
+*Consensus mechanism:*
+_[Describe how the group resolved the divergence: e.g. dot-voting on contested touchpoints / structured debate facilitated by the lecturer / escalation to a shared evaluation criterion.]_
+In retrospect, the mechanism was effective at resolving visible disagreements; however, it is worth noting whether any minority perspectives were suppressed that may resurface as implementation risks in Chapter 4.
+
+*Synthesis outcome:*
+The resulting journey map (@fig-journey-map) is a consensus artefact: it reflects decisions that no single participant would have made independently.
+_[Note whether the group-synthesised journey deviates from your individual view of Amira's journey — and if so, on which phase or dimension.]_
+This negotiated quality is precisely what gives the artefact its architectural legitimacy: it represents a shared understanding, not an individual analysis.
