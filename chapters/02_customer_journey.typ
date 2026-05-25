@@ -121,14 +121,17 @@ This distinction is architecturally significant: process failures can be resolve
 
 Primary pain points identified:
 
-+ *[Pain Point 1]*: [Description — link to responsible system or integration gap]
-+ *[Pain Point 2]*: [Description — link to responsible system or integration gap]
-+ *[Pain Point 3]*: [Description — link to responsible system or integration gap]
++ *Regulatory fragmentation*: Administrative requirements vary by canton and are difficult to navigate comprehensively (directly observable in Phase 4 of @fig-journey-map, emotion score −2).
++ *Financing opacity*: Amira has no knowledge of available financing options and credit processes, creating a capability gap in Phase 5.
++ *Procurement uncertainty*: No guidance exists for supplier selection and procurement planning, leaving a critical operational phase unsupported.
++ *Fear of costly mistakes*: The absence of validation mechanisms generates anxiety that slows progress and erodes trust in the portal.
 
-Corresponding value drivers — areas where improved architectural support would yield measurable customer benefit:
+Corresponding value drivers, areas where improved architectural support would yield measurable customer benefit:
 
-+ *[Value Driver 1]*: [Expected improvement and architectural lever]
-+ *[Value Driver 2]*: [Expected improvement and architectural lever]
++ *Consolidated access*: Centralising all founding-relevant information and tools in one place directly addresses the fragmentation pain point.
++ *Proactive guidance*: Replacing self-directed research with step-by-step workflows reduces the cognitive load on first-time founders and prevents errors before they occur.
++ *Data privacy transparency*: Explicit communication of how personal and business data is handled builds the trust required for Amira to engage fully with the platform.
++ *Error prevention by design*: Validation rules, contextual checklists, and progress indicators prevent mistakes at the system level rather than relying on the user's prior knowledge.
 
 == Collaborative Synthesis
 The peer group consisted of [N] participants from [describe professional backgrounds].
