@@ -3,12 +3,10 @@
 = The Collaboration Phase: Outside-In Mapping
 
 == Customer Journey Definition
-_[Replace the placeholder content in this section with the actual persona and journey data developed during the workshop phase.]_
-
-The collaboration phase focused on the persona of [Persona Name], representing [target customer segment].
-The journey was mapped across five phases: [Phase 1], [Phase 2], [Phase 3], [Phase 4], and [Phase 5].
-Each phase was decomposed into discrete touchpoints — moments of direct interaction between the customer and organizational systems or representatives.
-The emotional curve across the journey was captured using a sentiment scale, revealing three critical moments of truth where customer satisfaction was most volatile.
+Building on the case introduced in Section 1.2, the collaboration phase maps Amira's journey in detail, from her first point of contact with GastroStart to the completion of her registration.
+The journey was structured across five phases: awareness, orientation, registration, configuration, and first use.
+Each phase was decomposed into discrete touchpoints, moments of direct interaction between Amira and the portal's systems, content, or guidance flows.
+The emotional curve across the journey was captured using a sentiment scale, revealing the critical moments where uncertainty peaks and reliable system support has the highest architectural impact.
 
 Key touchpoints identified:
 
