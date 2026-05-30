@@ -287,7 +287,6 @@ The release is publicly downloadable from
 | `v1.0.0` | First complete submission draft |
 | `v1.1.0` | Significant content additions (new chapter, major revision) |
 | `v1.0.1` | Minor fixes (typos, formatting, reference corrections) |
-
 ---
 
 ## Writing Conventions
