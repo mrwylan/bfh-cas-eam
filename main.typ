@@ -3,7 +3,7 @@
 #show: conf.with(
   title: "Learning Path Documentation: Enterprise Architecture Management in Practice",
   subtitle: "Connecting Customer Journeys to Capabilities and Application Landscapes",
-  date: "BFH CAS Enterprise Architecture Management (EAM) — 2025/2026",
+  date: "BFH CAS Enterprise Architecture Management (EAM), 2026",
   abstract: [
     This document serves a dual purpose: it presents the architectural artifact developed
     during the collaborative phase of the CAS EAM program, and it traces the individual
@@ -15,9 +15,9 @@
   ],
   authors: (
     (
-      name: "Author Name",
+      name: "Jakob Albrecht",
       affiliation: "BFH CAS Enterprise Architecture Management",
-      email: "author@example.com"
+      email: "jakob.albrecht@students.bfh.ch"
     ),
   ),
 )
