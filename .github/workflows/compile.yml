@@ -1,4 +1,5 @@
 name: Compile Typst Document
+
 on:
   push:
     branches: [ main ]

@@ -247,7 +247,9 @@ git commit -m "docs(ch6): add competency shift reflection — before/after contr
 
 ## CI/CD Pipeline
 
-Every push and pull request to `main` triggers the GitHub Actions workflow:
+### Continuous Integration — `compile.yml`
+
+Every push and pull request to `main` triggers the compile workflow:
 
 1. **Checkout** the repository
 2. **Install Typst** 0.11.1 via `typst-community/setup-typst`
@@ -260,6 +262,31 @@ Download the latest compiled PDF:
 The PDF in the artifact is always in sync with the `main` branch —
 useful for sharing progress with your supervisor without sending files by email.
 
+### Release Workflow — `release.yml`
+
+Pushing a semantic version tag triggers a full release:
+
+```bash
+git tag v1.0.0
+git push origin v1.0.0
+```
+
+The workflow:
+
+1. **Compiles** `main.typ` → `bfh-cas-eam-v1.0.0.pdf` (version-stamped filename)
+2. **Generates** a changelog from commit messages since the last tag
+3. **Creates** a GitHub Release with the PDF attached as a release asset
+
+The release is publicly downloadable from  
+`GitHub → Releases → vX.Y.Z → Assets → bfh-cas-eam-vX.Y.Z.pdf`
+
+**Versioning convention:**
+
+| Tag | Meaning |
+|---|---|
+| `v1.0.0` | First complete submission draft |
+| `v1.1.0` | Significant content additions (new chapter, major revision) |
+| `v1.0.1` | Minor fixes (typos, formatting, reference corrections) |
 ---
 
 ## Writing Conventions
