@@ -1,25 +1,32 @@
 #import "template.typ": conf
 
 #show: conf.with(
-  title: "Deterministic Engineering Systems Architecture",
-  date: "May 2026",
+  title: "Learning Path Documentation: Enterprise Architecture Management in Practice",
+  subtitle: "Connecting Customer Journeys to Capabilities and Application Landscapes",
+  date: "BFH CAS Enterprise Architecture Management (EAM) — 2025/2026",
   abstract: [
-    This paper outlines a highly disciplined approach to decoupled text configuration
-    using the Typst typesetting system. By treating documentation as compile-target
-    source code, teams can enforce structural guardrails and isolate layout changes
-    from underlying semantic prose tracks.
+    This document serves a dual purpose: it presents the architectural artifact developed
+    during the collaborative phase of the CAS EAM program, and it traces the individual
+    learning path of the author throughout the course.
+    Anchored in the Outside-In paradigm, the work maps a concrete customer journey down
+    through Business Capability Management to the underlying application and data landscape.
+    The final chapters provide a critical methodological reflection and an honest account
+    of the competency shift achieved during the program.
   ],
   authors: (
     (
-      name: "Lead Architect",
-      affiliation: "Systems Optimization Group",
-      email: "architect@engine.internal"
+      name: "Author Name",
+      affiliation: "BFH CAS Enterprise Architecture Management",
+      email: "author@example.com"
     ),
   ),
 )
 
-// Content Stitched Stream
-#include "chapters/01_introduction.typ"
+// ── Chapter Stream ──────────────────────────────────────────────────────────
+#include "chapters/01_intro_context.typ"
+#include "chapters/02_customer_journey.typ"
+#include "chapters/03_ea_realization.typ"
+#include "chapters/04_learning_path.typ"
 
-// References
+// ── References ──────────────────────────────────────────────────────────────
 #bibliography("refs.bib", style: "ieee", title: "References")
