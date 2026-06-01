@@ -1,50 +1,50 @@
 // ── Chapter 1 & 2: Introduction, Context, and Theoretical Foundation ────────
 
-= Introduction and Context
+= Einleitung und Kontext
 
-== Objective and Scope
-This document fulfills two explicit requirements of the BFH CAS Enterprise Architecture Management program.
-First, it documents the architectural artifact produced during the collaborative project phase.
-Second, it records the individual learning path, capturing the evolution of architectural thinking over the duration of the CAS.
-The dual-purpose structure reflects BFH's emphasis on Praxis-Transfer: the ability to ground theoretical models in real organizational contexts and to critically evaluate that transfer.
+== Zielsetzung und Geltungsbereich
+Dieses Dokument erfüllt zwei explizite Anforderungen des BFH-CAS-Programms Enterprise Architecture Management.
+Erstens dokumentiert es das architektonische Artefakt, das während der kollaborativen Projektphase entstanden ist.
+Zweitens hält es den individuellen Lernpfad fest und erfasst die Entwicklung des architektonischen Denkens über die Dauer des CAS hinweg.
+Die zweigeteilte Struktur spiegelt den Schwerpunkt der BFH auf den Praxis-Transfer wider: die Fähigkeit, theoretische Modelle in realen organisationalen Kontexten zu verankern und diesen Transfer kritisch zu beurteilen.
 
-== Case Study / Company Profile
-Amira is planning to found a catering business in Switzerland.
-She has a rough concept, but no experience with the formal requirements of starting a hospitality business.
-Business registration, financing, resource planning, and procurement, she knows these topics are relevant, but does not know how to approach them.
+== Fallstudie / Unternehmensprofil
+Amira plant, in der Schweiz ein Catering-Unternehmen zu gründen.
+Sie hat ein grobes Konzept, aber keine Erfahrung mit den formalen Anforderungen einer Betriebsgründung im Gastgewerbe.
+Handelsregistereintrag, Finanzierung, Ressourcenplanung und Beschaffung – sie weiss, dass diese Themen relevant sind, aber nicht, wie sie sie angehen soll.
 
-GastroStart is a fictional portal that guides founders in the hospitality sector through the key phases of business formation: from initial orientation through registration, business concept, and operating permit to financing and the first contract.
+GastroStart ist ein fiktives Portal, das Gründerinnen und Gründer im Gastgewerbe durch die zentralen Phasen der Betriebsgründung führt: von der ersten Orientierung über Registrierung, Geschäftskonzept und Betriebsbewilligung bis hin zur Finanzierung und zum ersten Vertrag.
 
-This customer journey serves as the starting point for the modelling exercise.
-From it, relevant business objects are identified with their states and business events, and mapped in ArchiMate.
+Diese Customer Journey dient als Ausgangspunkt für die Modellierungsübung.
+Aus ihr werden die relevanten Business Objects mit ihren Zuständen und Business Events identifiziert und in ArchiMate abgebildet.
 
-== Methodological Approach
-The work applies the TOGAF Architecture Development Method (ADM) as its primary process framework, complemented by ArchiMate 3.1 as the visual modeling language @opengroup2018togaf @opengroup2019archimate.
-Where the formal notation introduced unnecessary overhead for stakeholder communication, lightweight canvas models were used as an intermediate representation.
-The Outside-In paradigm — anchoring architectural change in customer experience rather than internal IT concerns — serves as the overarching design philosophy throughout @ross2006enterprise.
+== Methodisches Vorgehen
+Die Arbeit verwendet die TOGAF Architecture Development Method (ADM) als primäres Prozess-Framework, ergänzt durch ArchiMate 3.1 als visuelle Modellierungssprache @opengroup2018togaf @opengroup2019archimate.
+Wo die formale Notation für die Stakeholder-Kommunikation unnötigen Aufwand verursachte, wurden leichtgewichtige Canvas-Modelle als Zwischendarstellung eingesetzt.
+Das Outside-In-Paradigma – die Verankerung architektonischer Veränderung in der Kundenerfahrung statt in internen IT-Belangen – dient durchgehend als übergeordnete Designphilosophie @ross2006enterprise.
 
 
 // ── Chapter 2: Theoretical Foundation ───────────────────────────────────────
 
-= Theoretical Foundation: Modern EAM Paradigms
+= Theoretische Grundlagen: Moderne EAM-Paradigmen
 
-== The Outside-In Perspective
-Traditional enterprise architecture practice has historically been driven by an inside-out orientation:
-technology inventories, system rationalization, and infrastructure optimization are the primary inputs.
-The outside-in perspective inverts this logic, treating the customer journey as the primary architectural driver @temkin2010.
-Architectural decisions are evaluated not by their internal technical elegance but by their measurable effect on customer-facing outcomes.
-This shift is supported by capability-based planning, which provides a stable abstraction layer between volatile market demands and the slower-moving application landscape @ulrich2011.
+== Die Outside-In-Perspektive
+Die traditionelle Enterprise-Architecture-Praxis war historisch von einer Inside-Out-Orientierung geprägt:
+Technologie-Inventare, System-Rationalisierung und Infrastruktur-Optimierung sind die primären Eingaben.
+Die Outside-In-Perspektive kehrt diese Logik um und behandelt die Customer Journey als primären architektonischen Treiber @temkin2010.
+Architektonische Entscheidungen werden nicht an ihrer internen technischen Eleganz gemessen, sondern an ihrer messbaren Wirkung auf kundenseitige Ergebnisse.
+Diese Verschiebung wird durch die capability-basierte Planung gestützt, die eine stabile Abstraktionsschicht zwischen volatilen Marktanforderungen und der sich langsamer verändernden Application-Landschaft bildet @ulrich2011.
 
-A customer journey describes the complete, end-to-end sequence of experiences a defined persona undergoes when interacting with an organization — from initial awareness through active engagement to post-interaction evaluation @lemon2016.
-Decomposed into discrete touchpoints, it captures both the operational dimension (what the customer does) and the emotional dimension (how the customer perceives the interaction) at each stage.
-In the context of Enterprise Architecture Management, the customer journey functions as the primary analytical driver: architectural decisions are evaluated not by their internal technical quality but by their measurable effect on customer-facing outcomes @lemon2016 @temkin2010.
+Eine Customer Journey beschreibt die vollständige, durchgängige Abfolge von Erfahrungen, die eine definierte Persona im Zusammenspiel mit einer Organisation durchläuft – von der ersten Wahrnehmung über die aktive Auseinandersetzung bis zur Bewertung nach der Interaktion @lemon2016.
+In einzelne Touchpoints zerlegt, erfasst sie an jeder Station sowohl die operative Dimension (was die Kundin tut) als auch die emotionale Dimension (wie die Kundin die Interaktion wahrnimmt).
+Im Kontext des Enterprise Architecture Management fungiert die Customer Journey als primärer analytischer Treiber: Architektonische Entscheidungen werden nicht an ihrer internen technischen Qualität gemessen, sondern an ihrer messbaren Wirkung auf kundenseitige Ergebnisse @lemon2016 @temkin2010.
 
 == Business Capability Management
-A business capability defines what an organization does, independent of how it is currently implemented @ulrich2011.
-Capabilities serve as the immutable anchor point that connects customer strategy to IT execution because they remain stable across organizational restructurings and technology refresh cycles.
-In this work, capability mapping follows the level-three decomposition recommended by the Business Architecture Guild, distinguishing strategic, core, and enabling capabilities @biz_arch_guild2017.
+Eine Business Capability definiert, was eine Organisation tut, unabhängig davon, wie es aktuell umgesetzt ist @ulrich2011.
+Capabilities dienen als unveränderlicher Ankerpunkt, der die Kundenstrategie mit der IT-Umsetzung verbindet, weil sie über organisatorische Umstrukturierungen und Technologie-Erneuerungszyklen hinweg stabil bleiben.
+In dieser Arbeit folgt das Capability Mapping der von der Business Architecture Guild empfohlenen Zerlegung auf Stufe drei und unterscheidet zwischen strategischen, Kern- und unterstützenden Capabilities @biz_arch_guild2017.
 
-== Architectural Guardrails and Governance
-Without deterministic engineering constraints, architectural decisions accumulate as undocumented technical debt that compounds over ten- to fifteen-year IT life-cycle horizons @fowler2018.
-Guardrails — pre-approved patterns, technology standards, and decommission schedules — reduce decision latency at the team level while preserving coherence at the portfolio level.
-Governance in this context is not a bureaucratic gate but a feedback mechanism that keeps local decisions aligned with long-term strategic intent @zachman1987.
+== Architektonische Guardrails und Governance
+Ohne deterministische Engineering-Einschränkungen akkumulieren architektonische Entscheidungen als undokumentierte technische Schuld, die sich über einen IT-Lebenszyklus von zehn bis fünfzehn Jahren aufsummiert @fowler2018.
+Guardrails – vorab genehmigte Patterns, Technologiestandards und Ausserbetriebnahme-Zeitpläne – verringern die Entscheidungslatenz auf Team-Ebene und bewahren zugleich die Kohärenz auf Portfolio-Ebene.
+Governance ist in diesem Kontext kein bürokratisches Gate, sondern ein Feedback-Mechanismus, der lokale Entscheidungen mit der langfristigen strategischen Absicht in Einklang hält @zachman1987.

@@ -1,17 +1,18 @@
 #import "template.typ": conf
 
 #show: conf.with(
-  title: "Learning Path Documentation: Enterprise Architecture Management in Practice",
-  subtitle: "Connecting Customer Journeys to Capabilities and Application Landscapes",
+  title: "Learning-Path-Dokumentation: Enterprise Architecture Management in der Praxis",
+  subtitle: "Die Verbindung von Customer Journeys mit Capabilities und Application-Landschaften",
   date: "BFH CAS Enterprise Architecture Management (EAM), 2026",
   abstract: [
-    This document serves a dual purpose: it presents the architectural artifact developed
-    during the collaborative phase of the CAS EAM program, and it traces the individual
-    learning path of the author throughout the course.
-    Anchored in the Outside-In paradigm, the work maps a concrete customer journey down
-    through Business Capability Management to the underlying application and data landscape.
-    The final chapters provide a critical methodological reflection and an honest account
-    of the competency shift achieved during the program.
+    Dieses Dokument verfolgt einen doppelten Zweck: Es stellt das architektonische Artefakt vor,
+    das während der kollaborativen Phase des CAS-EAM-Programms entwickelt wurde, und es zeichnet
+    den individuellen Lernpfad des Autors über den gesamten Kurs hinweg nach.
+    Verankert im Outside-In-Paradigma bildet die Arbeit eine konkrete Customer Journey über das
+    Business Capability Management bis hinunter zur zugrunde liegenden Application- und
+    Datenlandschaft ab.
+    Die abschliessenden Kapitel liefern eine kritische methodische Reflexion und eine ehrliche
+    Auseinandersetzung mit dem Kompetenzwandel, der während des Programms erreicht wurde.
   ],
   authors: (
     (
@@ -29,4 +30,4 @@
 #include "chapters/04_learning_path.typ"
 
 // ── References ──────────────────────────────────────────────────────────────
-#bibliography("refs.bib", style: "ieee", title: "References")
+#bibliography("refs.bib", style: "ieee", title: "Literaturverzeichnis")
