@@ -1,63 +1,63 @@
 // ── Chapter 4 & 5: EA Realization and Target Architecture ───────────────────
 
-= The Inside-Out Mapping: Enterprise Architecture Realization
+= Das Inside-Out-Mapping: Realisierung der Enterprise Architecture
 
-== Business Architecture Layer
-Each touchpoint identified in the customer journey was traced to one or more business capabilities using the capability map developed for [Organization Name].
-The mapping reveals which capabilities are customer-critical — directly affecting journey quality — and which are enabling — supporting operational continuity without direct customer visibility.
+== Business-Architecture-Schicht
+Jeder in der Customer Journey identifizierte Touchpoint wurde anhand der für [Organization Name] entwickelten Capability Map auf eine oder mehrere Business Capabilities zurückgeführt.
+Das Mapping zeigt auf, welche Capabilities kundenkritisch sind – also die Qualität der Journey direkt beeinflussen – und welche unterstützend sind – also die betriebliche Kontinuität ohne direkte Sichtbarkeit für die Kundin sicherstellen.
 
 #table(
   columns: (auto, auto, auto),
   inset: 8pt,
   align: (left, left, left),
   stroke: 0.5pt,
-  [*Customer Touchpoint*], [*Business Capability*], [*Capability Type*],
+  [*Customer Touchpoint*], [*Business Capability*], [*Capability-Typ*],
   [_[Touchpoint A]_], [_[Capability X]_], [Core],
   [_[Touchpoint B]_], [_[Capability Y]_], [Enabling],
   [_[Touchpoint C]_], [_[Capability Z]_], [Strategic],
 )
 
-The capability-to-process mapping beneath this table is documented separately in the ArchiMate model
-(see appendix or attached model file).
-Process decomposition follows TOGAF ADM Phase B conventions @opengroup2018togaf.
+Das Capability-to-Process-Mapping unterhalb dieser Tabelle ist separat im ArchiMate-Modell dokumentiert
+(siehe Anhang oder beigefügte Modelldatei).
+Die Prozesszerlegung folgt den Konventionen von TOGAF ADM Phase B @opengroup2018togaf.
 
-== Application and Data Architecture Layer
-The application landscape was surveyed against the capability map to identify which systems currently support each customer-critical capability.
-Master data ownership was a primary analytical lens: fragmented ownership of customer master data across [N] systems was identified as a root cause of [specific pain point].
+== Application- und Data-Architecture-Schicht
+Die Application-Landschaft wurde gegen die Capability Map erhoben, um zu identifizieren, welche Systeme aktuell jede kundenkritische Capability unterstützen.
+Die Eigentümerschaft an den Stammdaten (Master Data) war eine primäre analytische Linse: Die fragmentierte Eigentümerschaft an Kunden-Stammdaten über [N] Systeme hinweg wurde als Grundursache für [specific pain point] identifiziert.
 
 ```
 [Customer Touchpoint] → [Business Capability] → [Application Service] → [Data / Infrastructure]
       (Outside-In)                                       (Inside-Out)
 ```
 
-Key findings from the application layer analysis:
+Zentrale Erkenntnisse aus der Analyse der Application-Schicht:
 
-- *Master data fragmentation*: Customer identity data is held in [System A], [System B], and [System C] without a canonical master, causing reconciliation errors at [Touchpoint X].
-- *Integration debt*: Point-to-point integrations between [System D] and [System E] create a brittle dependency with no documented SLA.
-- *Shadow IT*: [Department] maintains an unregistered [tool type] that holds authoritative data for [Capability Y], outside the governed application portfolio.
+- *Stammdaten-Fragmentierung*: Kundenidentitätsdaten liegen in [System A], [System B] und [System C] ohne kanonischen Master vor und verursachen Abgleichfehler bei [Touchpoint X].
+- *Integration Debt*: Punkt-zu-Punkt-Integrationen zwischen [System D] und [System E] erzeugen eine fragile Abhängigkeit ohne dokumentiertes SLA.
+- *Shadow IT*: [Department] betreibt ein nicht registriertes [tool type], das autoritative Daten für [Capability Y] hält – ausserhalb des governten Application-Portfolios.
 
-== Technical Debt Alignment
-Technical debt is here defined operationally as the future cost imposed by present architectural decisions @fowler2018.
-The following friction zones were identified as carrying significant ten-year lifecycle risk:
+== Ausrichtung der technischen Schuld
+Technische Schuld (Technical Debt) wird hier operativ definiert als die künftigen Kosten, die durch heutige architektonische Entscheidungen entstehen @fowler2018.
+Die folgenden Reibungszonen wurden als Träger eines signifikanten Zehnjahres-Lebenszyklusrisikos identifiziert:
 
 + *[Friction Zone 1]*: [Description, estimated maintenance cost trajectory, risk rating]
 + *[Friction Zone 2]*: [Description, estimated maintenance cost trajectory, risk rating]
 + *[Friction Zone 3]*: [Description, estimated maintenance cost trajectory, risk rating]
 
-Each friction zone was scored on two axes: customer journey impact (direct vs. indirect) and remediation complexity (low / medium / high).
-This scoring provides the prioritization logic for the target architecture roadmap in the following chapter.
+Jede Reibungszone wurde auf zwei Achsen bewertet: Wirkung auf die Customer Journey (direkt vs. indirekt) und Komplexität der Behebung (tief / mittel / hoch).
+Diese Bewertung liefert die Priorisierungslogik für die Roadmap der Ziel-Architektur im folgenden Kapitel.
 
 
 // ── Chapter 5: Target Architecture and Transformation Roadmap ───────────────
 
-= Target Architecture and Transformation Roadmap
+= Ziel-Architektur und Transformations-Roadmap
 
-== Target State Design
-The target architecture addresses the three friction zones identified in the as-is analysis.
-The design follows the principle of minimal viable intervention: only changes that directly resolve a customer-journey pain point or eliminate a high-risk technical debt item are included in the baseline target state.
-Speculative improvements are recorded in the backlog but excluded from the roadmap to preserve investment focus.
+== Design des Zielzustands
+Die Ziel-Architektur adressiert die drei in der As-is-Analyse identifizierten Reibungszonen.
+Das Design folgt dem Prinzip der minimal tragfähigen Intervention: Nur Änderungen, die direkt einen Pain Point der Customer Journey beheben oder einen risikoreichen Posten technischer Schuld eliminieren, werden in den Baseline-Zielzustand aufgenommen.
+Spekulative Verbesserungen werden im Backlog festgehalten, aber aus der Roadmap ausgeschlossen, um den Investitionsfokus zu wahren.
 
-Core design decisions in the target state:
+Zentrale Designentscheidungen im Zielzustand:
 
 - *[Decision 1]*: [Rationale and expected outcome]
 - *[Decision 2]*: [Rationale and expected outcome]
@@ -66,32 +66,32 @@ Core design decisions in the target state:
 _[Insert ArchiMate target state diagram or capability heat-map here.]_
 
 == Strategic Alignment Canvas
-The one-page Strategic Alignment Canvas below maps the proposed architectural changes against the organization's stated strategic objectives.
-This format is adapted from the Business Model Canvas to operate at the architectural layer, making the strategic rationale legible to executive stakeholders without requiring ArchiMate literacy @osterwalder2010.
+Das einseitige Strategic Alignment Canvas unten bildet die vorgeschlagenen architektonischen Änderungen gegen die erklärten strategischen Ziele der Organisation ab.
+Dieses Format ist vom Business Model Canvas abgeleitet, um auf der architektonischen Schicht zu operieren, und macht die strategische Begründung für Stakeholder auf Führungsebene lesbar, ohne ArchiMate-Kenntnisse vorauszusetzen @osterwalder2010.
 
 #table(
   columns: (1fr, 1fr),
   inset: 10pt,
   stroke: 0.5pt,
-  [*Strategic Objective*], [*Architectural Initiative*],
+  [*Strategisches Ziel*], [*Architektonische Initiative*],
   [_[Objective 1]_], [_[Initiative A]_],
   [_[Objective 2]_], [_[Initiative B]_],
   [_[Objective 3]_], [_[Initiative C]_],
 )
 
-== Migration and Cost Considerations
-The transformation is structured as three sequential phases aligned with TOGAF ADM Phase F (Migration Planning) @opengroup2018togaf.
+== Migrations- und Kostenüberlegungen
+Die Transformation ist als drei sequenzielle Phasen strukturiert, ausgerichtet auf TOGAF ADM Phase F (Migration Planning) @opengroup2018togaf.
 
-*Phase 1 — Foundation (0–6 months)*:
-Establish the master data governance model and decommission the highest-risk point-to-point integration.
-Estimated investment: [range].
+*Phase 1 — Foundation (0–6 Monate)*:
+Aufbau des Governance-Modells für Stammdaten und Ausserbetriebnahme der risikoreichsten Punkt-zu-Punkt-Integration.
+Geschätzte Investition: [range].
 
-*Phase 2 — Consolidation (6–18 months)*:
-Migrate shadow IT data to the governed application portfolio and implement the target integration pattern.
-Estimated investment: [range].
+*Phase 2 — Consolidation (6–18 Monate)*:
+Migration der Shadow-IT-Daten in das governte Application-Portfolio und Umsetzung des Ziel-Integrationspatterns.
+Geschätzte Investition: [range].
 
-*Phase 3 — Optimization (18–36 months)*:
-Retire legacy systems confirmed as redundant after Phase 2 consolidation.
-Residual operating cost reduction: [estimated saving per year].
+*Phase 3 — Optimization (18–36 Monate)*:
+Ausserbetriebnahme von Legacy-Systemen, die nach der Konsolidierung in Phase 2 als redundant bestätigt wurden.
+Reduktion der verbleibenden Betriebskosten: [estimated saving per year].
 
-Long-term operating cost is the primary financial metric: the target architecture is evaluated not by project delivery cost alone but by its effect on the ten-year total cost of ownership of the affected capabilities.
+Die langfristigen Betriebskosten sind die primäre finanzielle Kennzahl: Die Ziel-Architektur wird nicht allein an den Projektkosten gemessen, sondern an ihrer Wirkung auf die Total Cost of Ownership der betroffenen Capabilities über zehn Jahre.

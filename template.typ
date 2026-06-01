@@ -15,7 +15,7 @@
   )
 
   // Typography layout
-  set text(font: "Linux Libertine", size: 11pt, lang: "en")
+  set text(font: "Linux Libertine", size: 11pt, lang: "de", region: "CH")
   set par(justify: true, leading: 0.65em)
   set heading(numbering: "1.1.")
 

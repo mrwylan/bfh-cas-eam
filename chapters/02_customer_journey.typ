@@ -1,13 +1,13 @@
 // ── 02_customer_journey.typ — Chapter 3: Collaboration Phase: Outside-In Mapping ──
 
-= The Collaboration Phase: Outside-In Mapping
+= Die Kollaborationsphase: Outside-In-Mapping
 
-== Customer Journey Definition
-Building on the case introduced in Section 1.2, the collaboration phase maps Amira's journey across five phases defined by the GastroStart portal.
-The journey was developed collaboratively across participants from four organisations — Transgourmet Schweiz AG, FINNOFLEET Schweiz, the Bundeskanzlei, and DV Bern — each contributing domain expertise from their respective institutional contexts.
+== Definition der Customer Journey
+Aufbauend auf dem in Abschnitt 1.2 eingeführten Fall bildet die Kollaborationsphase Amiras Journey über fünf vom GastroStart-Portal definierte Phasen ab.
+Die Journey wurde gemeinsam mit Teilnehmenden aus vier Organisationen entwickelt – der Transgourmet Schweiz AG, FINNOFLEET Schweiz, der Bundeskanzlei und DV Bern –, die jeweils Domänen-Expertise aus ihrem institutionellen Kontext einbrachten.
 
 #figure(
-  caption: [Persona Profile: Amira],
+  caption: [Persona-Profil: Amira],
   block(
     width: 100%,
     stroke: 0.5pt,
@@ -25,29 +25,29 @@ The journey was developed collaboratively across participants from four organisa
       #grid(
         columns: (3cm, 1fr),
         row-gutter: 0.55em,
-        [*Role*],         [Prospective founder, catering sector],
-        [*Context*],      [No industry background; rough business concept in place],
-        [*Goals*],        [Found a legally compliant catering business; miss nothing essential],
-        [*Frustrations*], [Opaque administrative processes; fear of costly mistakes; no professional network],
-        [*Need*],         [Step-by-step guidance across registration, permits, financing, and procurement, in one place],
+        [*Rolle*],        [Angehende Gründerin, Catering-Branche],
+        [*Kontext*],      [Kein Branchenhintergrund; grobes Geschäftskonzept vorhanden],
+        [*Ziele*],        [Ein rechtskonformes Catering-Unternehmen gründen; nichts Wesentliches verpassen],
+        [*Frustrationen*],[Intransparente Verwaltungsprozesse; Angst vor kostspieligen Fehlern; kein berufliches Netzwerk],
+        [*Bedürfnis*],    [Schritt-für-Schritt-Begleitung über Registrierung, Bewilligungen, Finanzierung und Beschaffung – alles an einem Ort],
       )
     ]
   ]
 ) <persona-amira>
 
-The journey was structured across five phases:
+Die Journey wurde über fünf Phasen strukturiert:
 
-+ *Initial Orientation* — Amira discovers GastroStart, selects her canton and business type, and receives a tailored checklist of requirements.
-+ *Registration* — she authenticates via eID, creates a founder profile, and establishes her account on the platform.
-+ *Operating Permit* — GastroStart guides her through the canton-specific permit process, coordinating submission to the relevant authorities.
-+ *Financing* — the portal connects her to banking partners for credit assessment and business account opening.
-+ *First Contract* — Amira establishes her supplier account with Transgourmet and places her first order.
++ *Initiale Orientierung* — Amira entdeckt GastroStart, wählt ihren Kanton und ihren Betriebstyp und erhält eine massgeschneiderte Checkliste der Anforderungen.
++ *Registrierung* — sie authentifiziert sich per eID, erstellt ein Gründungsprofil und richtet ihr Konto auf der Plattform ein.
++ *Betriebsbewilligung* — GastroStart führt sie durch den kantonsspezifischen Bewilligungsprozess und koordiniert die Einreichung bei den zuständigen Behörden.
++ *Finanzierung* — das Portal verbindet sie mit Bankpartnern für die Bonitätsprüfung und die Eröffnung eines Geschäftskontos.
++ *Erster Vertrag* — Amira richtet ihr Lieferantenkonto bei Transgourmet ein und gibt ihre erste Bestellung auf.
 
-Each phase was decomposed into discrete touchpoints capturing what Amira does, which system she interacts with, her emotional state, and where the current or target architecture creates friction or opportunity.
-@fig-journey-map provides the consolidated journey map across all five phases.
+Jede Phase wurde in einzelne Touchpoints zerlegt, die festhalten, was Amira tut, mit welchem System sie interagiert, in welchem emotionalen Zustand sie sich befindet und wo die aktuelle oder Ziel-Architektur Reibung oder Chancen erzeugt.
+@fig-journey-map zeigt die konsolidierte Journey Map über alle fünf Phasen.
 
 #figure(
-  caption: [Customer Journey Map: Amira on GastroStart],
+  caption: [Customer Journey Map: Amira auf GastroStart],
   block(width: 100%, breakable: true)[
     #set text(size: 7.5pt)
     #table(
@@ -57,85 +57,85 @@ Each phase was decomposed into discrete touchpoints capturing what Amira does, w
       fill: (x, y) => if y == 0 { luma(210) } else if calc.odd(y) { luma(248) } else { white },
       align: (left, left, left, left, center, left, left),
 
-      [*Phase*], [*Action*], [*Touchpoint*], [*Thought / Need*], [*Emo.*], [*Pain Point*], [*Opportunity*],
+      [*Phase*], [*Aktion*], [*Touchpoint*], [*Gedanke / Bedürfnis*], [*Emo.*], [*Pain Point*], [*Chance*],
 
-      [*1. Initial \ Orientation*],
-      [Searches "Gastronomie gründen Schweiz"; selects Kanton Bern, Betriebstyp Catering],
-      [Search engine → landing page; canton selector],
-      ["Does this cover my canton specifically?"],
+      [*1. Initiale \ Orientierung*],
+      [Sucht "Gastronomie gründen Schweiz"; wählt Kanton Bern, Betriebstyp Catering],
+      [Suchmaschine → Landingpage; Kantonsauswahl],
+      ["Deckt das speziell meinen Kanton ab?"],
       [↓ −1],
-      [Requirements vary per canton; no digital differentiation between cantons],
-      [Canton-aware onboarding: dynamic requirement list per canton × business type],
+      [Anforderungen variieren je Kanton; keine digitale Differenzierung zwischen Kantonen],
+      [Kantonsbewusstes Onboarding: dynamische Anforderungsliste je Kanton × Betriebstyp],
 
-      [*2. Registration*],
-      [Creates account via eID; fills founder profile with canton and Gemeinde],
-      [eID login (Bundeskanzlei EIAM); profile wizard (DV Bern)],
-      ["Why do I need eID? I don't have one yet."],
+      [*2. Registrierung*],
+      [Erstellt Konto per eID; füllt Gründungsprofil mit Kanton und Gemeinde aus],
+      [eID-Login (Bundeskanzlei EIAM); Profil-Wizard (DV Bern)],
+      ["Warum brauche ich eine eID? Ich habe noch keine."],
       [→ 0],
-      [eID not universally adopted; no fallback for users without eID],
-      [Progressive identity verification; allow partial profile without eID],
+      [eID nicht flächendeckend verbreitet; kein Fallback für Nutzende ohne eID],
+      [Progressive Identitätsprüfung; partielles Profil ohne eID zulassen],
 
-      [*3. Operating \ Permit*],
-      [Works through permit checklist; submits cantonal application],
-      [GastroStart wizard (DV Bern); Behörden-API (Bundeskanzlei); cantonal authority systems],
-      ["Which canton rules apply? How long will this take?"],
+      [*3. Betriebs- \ bewilligung*],
+      [Arbeitet die Bewilligungs-Checkliste ab; reicht den kantonalen Antrag ein],
+      [GastroStart-Wizard (DV Bern); Behörden-API (Bundeskanzlei); kantonale Behördensysteme],
+      ["Welche Kantonsregeln gelten? Wie lange dauert das?"],
       [↓↓ −2],
-      [Canton systems have heterogeneous digitalisation levels; some require physical submission. _Line of Failure:_ analogue cantonal process breaks digital journey],
-      [Integrated canton-specific permit guide; status tracking; explicit fallback to print where API unavailable],
+      [Kantonale Systeme haben heterogene Digitalisierungsgrade; einige verlangen physische Einreichung. _Line of Failure:_ analoger kantonaler Prozess unterbricht die digitale Journey],
+      [Integrierter kantonsspezifischer Bewilligungs-Guide; Status-Tracking; expliziter Fallback auf Papier, wo keine API verfügbar ist],
 
-      [*4. Financing*],
-      [Selects bank partner; credit assessment runs in background; receives IBAN],
-      [Bank selection UI; FINNOFLEET credit API; IBAN dashboard],
-      ["What if I'm rejected? Will I know why?"],
+      [*4. Finanzierung*],
+      [Wählt Bankpartner; Bonitätsprüfung läuft im Hintergrund; erhält IBAN],
+      [Bankauswahl-UI; FINNOFLEET-Bonitäts-API; IBAN-Dashboard],
+      ["Was, wenn ich abgelehnt werde? Erfahre ich, warum?"],
       [↓ −1],
-      [Credit decision returned without explanation; no link to alternative CH funding programmes],
-      [Transparent scoring feedback; pre-filled templates for CH funding programmes],
+      [Kreditentscheid ohne Begründung zurückgegeben; keine Verlinkung zu alternativen CH-Förderprogrammen],
+      [Transparentes Scoring-Feedback; vorausgefüllte Vorlagen für CH-Förderprogramme],
 
-      [*5. First \ Contract*],
-      [Opens Transgourmet account via portal; browses catalogue; places first order],
-      [Transgourmet catalogue API; order workflow (DV Bern); order confirmation],
-      ["Are new-customer conditions competitive?"],
+      [*5. Erster \ Vertrag*],
+      [Eröffnet Transgourmet-Konto über Portal; durchsucht Katalog; gibt erste Bestellung auf],
+      [Transgourmet-Katalog-API; Bestell-Workflow (DV Bern); Bestellbestätigung],
+      ["Sind die Neukundenkonditionen konkurrenzfähig?"],
       [↑↑ +2],
-      [New-customer pricing less favourable; supplier contract may require physical signature],
-      [Negotiated onboarding conditions for portal-referred founders; digital contract signing],
+      [Neukunden-Preisgestaltung weniger günstig; Lieferantenvertrag verlangt allenfalls physische Unterschrift],
+      [Ausgehandelte Onboarding-Konditionen für vom Portal vermittelte Gründende; digitale Vertragsunterzeichnung],
     )
   ]
 ) <fig-journey-map>
 
-The emotional curve across the journey reveals two structurally significant points.
-Phase 3 (Operating Permit) marks the lowest sentiment at −2, driven not by process design failure but by the heterogeneous digitalisation level of cantonal authority systems — an architectural constraint outside the platform's direct control.
-Phase 5 (First Contract) reaches the peak at +2, but the transition from the digital portal to a physical supplier contract represents a residual analogue gap that the target architecture must address @stickdorn2011.
+Die emotionale Kurve über die Journey hinweg offenbart zwei strukturell bedeutsame Punkte.
+Phase 3 (Betriebsbewilligung) markiert mit −2 die tiefste Stimmung, getrieben nicht durch ein Versagen im Prozessdesign, sondern durch den heterogenen Digitalisierungsgrad der kantonalen Behördensysteme – eine architektonische Einschränkung ausserhalb der direkten Kontrolle der Plattform.
+Phase 5 (Erster Vertrag) erreicht mit +2 den Höhepunkt, doch der Übergang vom digitalen Portal zu einem physischen Lieferantenvertrag stellt eine verbleibende analoge Lücke dar, die die Ziel-Architektur adressieren muss @stickdorn2011.
 
-Both extremes are direct inputs for the pain point analysis in @sec-pain-points and the Business Object analysis in @sec-business-objects.
+Beide Extreme sind direkte Eingaben für die Pain-Point-Analyse in @sec-pain-points und die Business-Object-Analyse in @sec-business-objects.
 
 
-== Pain Points and Value Drivers <sec-pain-points>
-The journey mapping exercise surfaced structural bottlenecks where customer experience deteriorates due to underlying system limitations rather than process design failures.
-This distinction is architecturally significant: process failures can be resolved through training and governance, whereas system-induced friction requires deliberate architectural intervention @temkin2010.
+== Pain Points und Value Drivers <sec-pain-points>
+Die Journey-Mapping-Übung legte strukturelle Engpässe offen, an denen sich die Kundenerfahrung aufgrund grundlegender Systemlimitierungen statt aufgrund von Fehlern im Prozessdesign verschlechtert.
+Diese Unterscheidung ist architektonisch bedeutsam: Prozessfehler lassen sich durch Schulung und Governance beheben, während systembedingte Reibung eine bewusste architektonische Intervention erfordert @temkin2010.
 
-*1. Regulatory fragmentation (Phase 3, sentiment −2)*
+*1. Regulatorische Fragmentierung (Phase 3, Stimmung −2)*
 
-Administrative requirements vary by canton and are partially inaccessible through digital channels.
-Of the 18 Business Objects identified across the journey (see @sec-business-objects), six are hybrid and two remain fully analogue — both concentrated in Phase 3.
-The root cause is not absent regulation but absent API: cantonal systems range from fully digital (e.g. Zürich, Basel-Stadt) to analogue-only (e.g. Wallis), with no federal consolidation layer.
-This creates a _Line of Failure_ — a point at which the digital journey structurally cannot continue without manual intervention.
+Administrative Anforderungen variieren je Kanton und sind über digitale Kanäle teilweise nicht zugänglich.
+Von den 18 über die Journey identifizierten Business Objects (siehe @sec-business-objects) sind sechs hybrid und zwei bleiben vollständig analog – beide konzentriert in Phase 3.
+Die Grundursache ist nicht fehlende Regulierung, sondern fehlende API: Kantonale Systeme reichen von vollständig digital (z.~B. Zürich, Basel-Stadt) bis ausschliesslich analog (z.~B. Wallis), ohne föderale Konsolidierungsschicht.
+Das erzeugt eine _Line of Failure_ – einen Punkt, an dem die digitale Journey strukturell nicht ohne manuellen Eingriff fortgesetzt werden kann.
 
-*2. Identity verification barrier (Phase 2, sentiment 0)*
+*2. Barriere der Identitätsprüfung (Phase 2, Stimmung 0)*
 
-The mandatory eID requirement presupposes an infrastructure that is not yet universally adopted in Switzerland.
-Founders without eID face a registration barrier at the first meaningful interaction with the platform.
+Die obligatorische eID-Anforderung setzt eine Infrastruktur voraus, die in der Schweiz noch nicht flächendeckend verbreitet ist.
+Gründende ohne eID stossen bereits bei der ersten substanziellen Interaktion mit der Plattform auf eine Registrierungsbarriere.
 
-*3. Financing opacity (Phase 4, sentiment −1)*
+*3. Intransparenz der Finanzierung (Phase 4, Stimmung −1)*
 
-Amira has no visibility into the credit scoring logic and receives no actionable guidance if the assessment returns an unfavourable result.
-The capability gap is not in the assessment itself but in the explanation interface between FINNOFLEET's scoring model and the GastroStart user experience.
+Amira hat keinen Einblick in die Logik des Credit Scorings und erhält keine umsetzbare Orientierung, falls die Prüfung ein ungünstiges Ergebnis liefert.
+Die Capability-Lücke liegt nicht in der Prüfung selbst, sondern in der Erklärungsschnittstelle zwischen FINNOFLEETs Scoring-Modell und der GastroStart-User-Experience.
 
-*4. Residual analogue touchpoints (Phase 5, sentiment gap)*
+*4. Verbleibende analoge Touchpoints (Phase 5, Stimmungslücke)*
 
-The supplier contract with Transgourmet may require physical signature, breaking the fully digital journey at its final and otherwise most positive stage.
+Der Lieferantenvertrag mit Transgourmet verlangt allenfalls eine physische Unterschrift und bricht die vollständig digitale Journey in ihrer letzten und ansonsten positivsten Phase.
 
 #figure(
-  caption: [Pain Points and Architectural Value Drivers],
+  caption: [Pain Points und architektonische Value Drivers],
   block(width: 100%)[
     #set text(size: 9pt)
     #table(
@@ -144,36 +144,36 @@ The supplier contract with Transgourmet may require physical signature, breaking
       stroke: 0.4pt,
       fill: (x, y) => if y == 0 { luma(210) } else if calc.odd(y) { luma(248) } else { white },
 
-      [*Pain Point*], [*Value Driver*], [*Architectural Response*],
+      [*Pain Point*], [*Value Driver*], [*Architektonische Antwort*],
 
-      [Regulatory fragmentation],
-      [Consolidated, canton-aware permit guidance],
-      [Canton × business-type rule matrix maintained by DV Bern; explicit fallback process for analogue cantons],
+      [Regulatorische Fragmentierung],
+      [Konsolidierte, kantonsbewusste Bewilligungs-Guidance],
+      [Regelmatrix Kanton × Betriebstyp, gepflegt von DV Bern; expliziter Fallback-Prozess für analoge Kantone],
 
-      [Identity verification barrier],
-      [Progressive onboarding without hard eID dependency],
-      [Staged identity verification; eID optional at registration, mandatory only at permit submission],
+      [Barriere der Identitätsprüfung],
+      [Progressives Onboarding ohne harte eID-Abhängigkeit],
+      [Gestufte Identitätsprüfung; eID bei der Registrierung optional, erst bei der Bewilligungseinreichung obligatorisch],
 
-      [Financing opacity],
-      [Transparent, explainable credit assessment],
-      [UX layer over FINNOFLEET API: plain-language decision feedback; alternative funding links],
+      [Intransparenz der Finanzierung],
+      [Transparente, erklärbare Bonitätsprüfung],
+      [UX-Schicht über der FINNOFLEET-API: Entscheidungs-Feedback in verständlicher Sprache; Links zu alternativen Förderungen],
 
-      [Analogue contract gap],
-      [Fully digital supplier onboarding],
-      [Digital contract signing integrated into Transgourmet portal connector],
+      [Analoge Vertragslücke],
+      [Vollständig digitales Lieferanten-Onboarding],
+      [Digitale Vertragsunterzeichnung, integriert in den Transgourmet-Portal-Connector],
     )
   ]
 ) <tbl-value-drivers>
 
 
-== Business Object Analysis <sec-business-objects>
-The journey mapping was extended into a Business Object analysis following the dematerialisation framework introduced by @normann2001 and further developed by @tercek2015.
-The framework evaluates information artefacts on four dimensions: _liquidity_ (how freely the object can flow across organisational boundaries), _unbundling_ (whether it can be separated from its physical carrier), _density_ (value concentration per unit of information), and _vaporisation potential_ (degree to which the object can be fully dematerialised into a digital service).
+== Business-Object-Analyse <sec-business-objects>
+Das Journey Mapping wurde zu einer Business-Object-Analyse erweitert, die dem von @normann2001 eingeführten und von @tercek2015 weiterentwickelten Dematerialisierungs-Framework folgt.
+Das Framework bewertet Informationsartefakte entlang vier Dimensionen: _Liquidität_ (wie frei das Objekt über organisatorische Grenzen hinweg fliessen kann), _Unbundling_ (ob es von seinem physischen Träger getrennt werden kann), _Dichte_ (Wertkonzentration pro Informationseinheit) und _Vaporisierungspotenzial_ (Grad, in dem das Objekt vollständig in einen digitalen Service dematerialisiert werden kann).
 
-Across the five journey phases, 18 Business Objects were identified, classified by ArchiMate kernel type, ownership, and current dematerialisation level.
+Über die fünf Journey-Phasen hinweg wurden 18 Business Objects identifiziert, klassifiziert nach ArchiMate-Kerneltyp, Eigentümerschaft und aktuellem Dematerialisierungsgrad.
 
 #figure(
-  caption: [Business Object Inventory: GastroStart],
+  caption: [Business-Object-Inventar: GastroStart],
   block(width: 100%, breakable: true)[
     #set text(size: 7.5pt)
     #table(
@@ -183,57 +183,57 @@ Across the five journey phases, 18 Business Objects were identified, classified 
       fill: (x, y) => if y == 0 { luma(210) } else if calc.odd(y) { luma(248) } else { white },
       align: (center, left, left, center, left, center, left),
 
-      [*\#*], [*Business Object*], [*Kernel Type*], [*Ph.*], [*Owner*], [*Dematerialisation*], [*Notes*],
+      [*\#*], [*Business Object*], [*Kernel Type*], [*Ph.*], [*Owner*], [*Dematerialisierung*], [*Bemerkungen*],
 
-      [1],  [Kantonsanforderungskatalog],   [Document],    [1], [DV Bern],        [95 %],  [Fully digital rule matrix; maintenance risk at legislative change],
-      [2],  [Betriebstyp-Profil],           [Entity],      [1], [DV Bern],        [100 %], [Core data object; basis for all downstream processes],
-      [3],  [Bewilligungsübersicht],         [Document],    [1], [DV Bern],        [60 %],  [Completeness depends on cantonal data quality],
-      [4],  [eID-Identitätsnachweis],        [Document],    [2], [Bundeskanzlei],  [100 %], [Fully digital; risk: user without eID],
-      [5],  [Gründungsprofil],              [Entity],      [2], [DV Bern],        [100 %], [Persistent platform object],
-      [6],  [Nutzerkonto],                  [Entity],      [2], [DV Bern],        [100 %], [eID-linked; enables process resumption],
-      [7],  [Gewerbebewilligung],           [Contract],    [3], [Kanton],         [55 %],  [Canton-dependent; ZH digital, VS analogue],
-      [8],  [Lebensmittelkontroll-Anmeldung],[Document],   [3], [Kanton],         [45 %],  [Partially postal; high mediation-break risk],
-      [9],  [Alkoholbewilligung],           [Contract],    [3], [Kanton],         [30 %],  [Frequently requires physical presence — highest analogue risk],
-      [10], [Handelsregistereintrag],       [Contract],    [3], [Bund/Kanton],    [85 %],  [Largely digital via Zefix/EHRA],
-      [11], [Bewilligungsstatus],           [Event],       [3], [DV Bern],        [65 %],  [Digital in portal; source data often manual],
-      [12], [Kantonales Formular],          [Document],    [3], [Kanton],         [25 %],  [Largest dematerialisation gap in the journey],
-      [13], [Bonitätsprüfung],             [Data Object], [4], [FINNOFLEET],     [100 %], [Fully automated; risk: opaque result],
-      [14], [Geschäftskonto (IBAN)],        [Entity],      [4], [FINNOFLEET],     [100 %], [Instant digital issuance via banking API],
-      [15], [Kreditantrag],                [Contract],    [4], [FINNOFLEET],     [70 %],  [Largely digital; signature may be physical],
-      [16], [Lieferantenkonto],            [Entity],      [5], [Transgourmet],   [100 %], [Fully digital via catalogue API],
-      [17], [Bestellung],                  [Document],    [5], [Transgourmet],   [100 %], [Fully digital order flow],
-      [18], [Liefervertrag (Neukunde)],    [Contract],    [5], [Transgourmet],   [65 %],  [Framework contract; physical signature risk],
+      [1],  [Kantonsanforderungskatalog],   [Document],    [1], [DV Bern],        [95 %],  [Vollständig digitale Regelmatrix; Pflegerisiko bei Gesetzesänderung],
+      [2],  [Betriebstyp-Profil],           [Entity],      [1], [DV Bern],        [100 %], [Kerndatenobjekt; Basis für alle nachgelagerten Prozesse],
+      [3],  [Bewilligungsübersicht],         [Document],    [1], [DV Bern],        [60 %],  [Vollständigkeit hängt von der kantonalen Datenqualität ab],
+      [4],  [eID-Identitätsnachweis],        [Document],    [2], [Bundeskanzlei],  [100 %], [Vollständig digital; Risiko: Nutzende ohne eID],
+      [5],  [Gründungsprofil],              [Entity],      [2], [DV Bern],        [100 %], [Persistentes Plattform-Objekt],
+      [6],  [Nutzerkonto],                  [Entity],      [2], [DV Bern],        [100 %], [eID-verknüpft; ermöglicht Prozesswiederaufnahme],
+      [7],  [Gewerbebewilligung],           [Contract],    [3], [Kanton],         [55 %],  [Kantonsabhängig; ZH digital, VS analog],
+      [8],  [Lebensmittelkontroll-Anmeldung],[Document],   [3], [Kanton],         [45 %],  [Teilweise postalisch; hohes Risiko eines Medienbruchs],
+      [9],  [Alkoholbewilligung],           [Contract],    [3], [Kanton],         [30 %],  [Verlangt häufig physische Präsenz – höchstes analoges Risiko],
+      [10], [Handelsregistereintrag],       [Contract],    [3], [Bund/Kanton],    [85 %],  [Weitgehend digital über Zefix/EHRA],
+      [11], [Bewilligungsstatus],           [Event],       [3], [DV Bern],        [65 %],  [Digital im Portal; Quelldaten oft manuell],
+      [12], [Kantonales Formular],          [Document],    [3], [Kanton],         [25 %],  [Grösste Dematerialisierungslücke in der Journey],
+      [13], [Bonitätsprüfung],             [Data Object], [4], [FINNOFLEET],     [100 %], [Vollständig automatisiert; Risiko: intransparentes Ergebnis],
+      [14], [Geschäftskonto (IBAN)],        [Entity],      [4], [FINNOFLEET],     [100 %], [Sofortige digitale Ausstellung über Banking-API],
+      [15], [Kreditantrag],                [Contract],    [4], [FINNOFLEET],     [70 %],  [Weitgehend digital; Unterschrift allenfalls physisch],
+      [16], [Lieferantenkonto],            [Entity],      [5], [Transgourmet],   [100 %], [Vollständig digital über Katalog-API],
+      [17], [Bestellung],                  [Document],    [5], [Transgourmet],   [100 %], [Vollständig digitaler Bestellfluss],
+      [18], [Liefervertrag (Neukunde)],    [Contract],    [5], [Transgourmet],   [65 %],  [Rahmenvertrag; Risiko physischer Unterschrift],
     )
   ]
 ) <tbl-business-objects>
 
-Of the 18 objects, 10 are fully dematerialised (≥ 80 %), 6 are hybrid (40–79 %), and 2 remain substantially analogue (< 40 %).
-Both analogue objects are concentrated in Phase 3 and owned by cantonal authorities — confirming that regulatory fragmentation is the primary architectural constraint of the journey, not a process design failure.
+Von den 18 Objekten sind 10 vollständig dematerialisiert (≥ 80 %), 6 sind hybrid (40–79 %) und 2 bleiben weitgehend analog (< 40 %).
+Beide analogen Objekte sind in Phase 3 konzentriert und liegen im Eigentum kantonaler Behörden – was bestätigt, dass die regulatorische Fragmentierung die primäre architektonische Einschränkung der Journey ist und nicht ein Versagen im Prozessdesign.
 
-In the ArchiMate model, Business Objects are associated with Business Processes via _Access_ relationships (read or write), making their ownership and state transitions traceable across layers.
+Im ArchiMate-Modell werden Business Objects über _Access_-Beziehungen (lesend oder schreibend) mit Business Processes verknüpft, wodurch ihre Eigentümerschaft und ihre Zustandsübergänge schichtenübergreifend nachvollziehbar werden.
 
 
-== Collaborative Synthesis
-Architectural decisions in team settings are not purely analytical — they are social negotiations shaped by professional background, prior experience, and differing mental models of what architecture is for @bass2012.
+== Kollaborative Synthese
+Architektonische Entscheidungen im Team sind nicht rein analytisch – sie sind soziale Verhandlungen, geprägt von beruflichem Hintergrund, früheren Erfahrungen und unterschiedlichen mentalen Modellen davon, wozu Architektur dient @bass2012.
 
-*Group composition:*
-The collaboration involved participants from four organisations: Transgourmet Schweiz AG (Grosshandel), FINNOFLEET Schweiz (standardisierte und individuell entwickelte Lösungen für Banken, Pensionskassen und Versicherungen), the Bundeskanzlei (öffentliche Verwaltung), and DV Bern (Softwareentwicklung öffentliche Hand).
-This breadth reflected the deliberate design of the GastroStart case: a product whose delivery chain spans private logistics, regulated financial services, federal identity infrastructure, and public-sector software delivery.
+*Gruppenzusammensetzung:*
+An der Kollaboration beteiligt waren Teilnehmende aus vier Organisationen: Transgourmet Schweiz AG (Grosshandel), FINNOFLEET Schweiz (standardisierte und individuell entwickelte Lösungen für Banken, Pensionskassen und Versicherungen), die Bundeskanzlei (öffentliche Verwaltung) und DV Bern (Softwareentwicklung öffentliche Hand).
+Diese Breite spiegelte das bewusste Design des GastroStart-Falls wider: ein Produkt, dessen Leistungskette private Logistik, regulierte Finanzdienstleistungen, föderale Identitätsinfrastruktur und Software-Bereitstellung der öffentlichen Hand umspannt.
 
-*Divergence:*
-Two structural tensions emerged early.
-Technically oriented participants gravitated toward data flows and API boundaries, framing the journey as an integration problem between four organisational systems.
-Business-oriented participants focused on the emotional reality of Amira's experience, arguing that the Phase 3 sentiment collapse (−2) was the central architectural problem regardless of its technical cause.
-The most contested question was whether the cantonal heterogeneity in Phase 3 was _in scope_ for the platform architecture or should be classified as an external constraint and deferred.
+*Divergenz:*
+Früh traten zwei strukturelle Spannungen auf.
+Technisch orientierte Teilnehmende neigten zu Datenflüssen und API-Grenzen und rahmten die Journey als Integrationsproblem zwischen vier organisatorischen Systemen.
+Geschäftsorientierte Teilnehmende fokussierten auf die emotionale Realität von Amiras Erfahrung und argumentierten, dass der Stimmungseinbruch in Phase 3 (−2) das zentrale architektonische Problem sei, ungeachtet seiner technischen Ursache.
+Die umstrittenste Frage war, ob die kantonale Heterogenität in Phase 3 _im Scope_ der Plattform-Architektur liege oder als externe Einschränkung klassifiziert und zurückgestellt werden solle.
 
-*Consensus mechanism:*
-The group resolved the tension by separating the analytical levels: the customer journey was maintained as a pure Outside-In artefact (Amira's experience, regardless of cause), while the Service Blueprint introduced the Inside-Out layer (what each organisation does backstage) @stickdorn2011.
-This separation — which maps directly to the ArchiMate distinction between Business Process (journey) and Application Service (backstage) — allowed both perspectives to contribute without overwriting each other.
+*Konsensmechanismus:*
+Die Gruppe löste die Spannung, indem sie die analytischen Ebenen trennte: Die Customer Journey wurde als reines Outside-In-Artefakt geführt (Amiras Erfahrung, ungeachtet der Ursache), während das Service Blueprint die Inside-Out-Schicht einführte (was jede Organisation im Backstage tut) @stickdorn2011.
+Diese Trennung – die direkt auf die ArchiMate-Unterscheidung zwischen Business Process (Journey) und Application Service (Backstage) abbildet – erlaubte es beiden Perspektiven, beizutragen, ohne sich gegenseitig zu überschreiben.
 
-*Synthesis outcome:*
-The resulting journey map (@fig-journey-map) is a consensus artefact.
-The decision to treat cantonal analogue processes as a _Line of Failure_ rather than an out-of-scope external constraint was the most consequential design choice: it kept the architectural problem honest and prevented the group from artificially inflating the dematerialisation score by excluding the hardest cases.
-This negotiated quality is what gives the artefact its architectural legitimacy: it represents a shared understanding, not a single participant's optimistic projection.
+*Synthese-Ergebnis:*
+Die resultierende Journey Map (@fig-journey-map) ist ein Konsens-Artefakt.
+Die Entscheidung, kantonale analoge Prozesse als _Line of Failure_ statt als ausserhalb des Scopes liegende externe Einschränkung zu behandeln, war die folgenreichste Designentscheidung: Sie hielt das architektonische Problem ehrlich und verhinderte, dass die Gruppe den Dematerialisierungswert künstlich aufblähte, indem sie die schwierigsten Fälle ausschloss.
+Diese ausgehandelte Qualität verleiht dem Artefakt seine architektonische Legitimität: Es repräsentiert ein geteiltes Verständnis und nicht die optimistische Projektion einer einzelnen Person.
 
 #block(
   width: 100%,
@@ -242,9 +242,9 @@ This negotiated quality is what gives the artefact its architectural legitimacy:
   stroke: 0.4pt,
   fill: luma(250),
 )[
-  *Personal note:*
-  My individual view diverged from the group consensus on one point: I would have classified the eID barrier (Phase 2) as a higher-severity pain point than the group assigned it (sentiment 0).
-  The reasoning: a failed registration blocks all downstream phases, making it a higher-risk structural dependency than the Phase 3 analogue gaps — which, while more visible emotionally, can be partially mitigated by the portal's fallback process.
-  The group prioritised emotional intensity over structural dependency risk.
-  Both framings are architecturally defensible; the difference reveals a genuine tension between user-experience-centred and resilience-centred architectural evaluation criteria.
+  *Persönliche Anmerkung:*
+  Meine individuelle Sicht wich in einem Punkt vom Gruppenkonsens ab: Ich hätte die eID-Barriere (Phase 2) als Pain Point höherer Schwere eingestuft, als die Gruppe ihr zuwies (Stimmung 0).
+  Die Begründung: Eine gescheiterte Registrierung blockiert alle nachgelagerten Phasen und macht sie zu einer strukturellen Abhängigkeit mit höherem Risiko als die analogen Lücken in Phase 3 – die zwar emotional sichtbarer sind, sich aber durch den Fallback-Prozess des Portals teilweise abfedern lassen.
+  Die Gruppe priorisierte emotionale Intensität über das Risiko struktureller Abhängigkeit.
+  Beide Rahmungen sind architektonisch vertretbar; der Unterschied offenbart eine echte Spannung zwischen user-experience-zentrierten und resilienz-zentrierten architektonischen Bewertungskriterien.
 ]
