@@ -2,6 +2,29 @@
 
 = Das Inside-Out-Mapping: Realisierung der Enterprise Architecture
 
+== Operating-Model-Einordnung nach Ross, Weill und Robertson
+Bevor die Customer Journey auf Capabilities und Systeme heruntergebrochen wird, ist eine grundlegende Einordnung nötig: Welches Operating Model liegt der Belieferung überhaupt zugrunde?
+Ross, Weill und Robertson unterscheiden vier Operating Models entlang der beiden Achsen Standardisierung der Geschäftsprozesse und Integration der Daten @ross2006enterprise.
+Aus dieser Klassifikation leitet sich ab, wie viel Integration eine Architektur tragen muss und wo Autonomie zulässig bleibt.
+
+Die Analyse des Falls zeigt, dass nicht ein einziges, sondern zwei Operating Models auf zwei unterschiedlichen Ebenen wirken – ein zentrales Resultat der Erarbeitung:
+
+#figure(
+  caption: [Operating-Model-Matrix nach Ross, Weill und Robertson @ross2006enterprise mit Verortung der Transgourmet-B2B-Belieferung (Unification) und der übergreifenden Customer Journey (Replication)],
+  image("../assets/operating_model_matrix_transgourmet_b2b.svg", width: 92%),
+) <fig-operating-model-matrix>
+
+- *Ebene Customer Journey — Replication*: Über die fünf Akteure der Journey hinweg (GastroStart-Gründungsportal, Behörde, Finanzpartner, Transgourmet, weitere Lieferanten) sind die Prozesse durch EDIFACT/GS1 hoch standardisiert, die Daten bleiben jedoch organisationsautonom. Es gibt bewusst keine geteilte Datenhaltung zwischen den Akteuren; die Standardisierung sitzt an der Aussenkante in Form standardisierter Kontrakte.
+- *Ebene Transgourmet B2B-Belieferung — Unification*: Innerhalb von Transgourmet sind sowohl Prozesse als auch Daten hoch integriert. Kunden-, Sortiments-, Preis-, Bestands-, Bestell- und Lieferdaten werden geteilt, die Kernprozesse (Bestellung, Disposition, Lieferung, Fakturierung) sind standardisiert, und ein zentrales System bedient alle Kanäle.
+
+#figure(
+  caption: [Die zwei Operating Models auf zwei Ebenen: Replication an der Aussenkante der Customer Journey, Unification im Inneren der Transgourmet-B2B-Belieferung],
+  image("../assets/operating_model_dual_level_journey_transgourmet.svg", width: 100%),
+) <fig-operating-model-dual-level>
+
+Diese Unterscheidung ist architektonisch folgenreich: Das Unification-Modell im Inneren rechtfertigt eine integrierte, datenzentrierte Architektur mit kanonischem Stammdatenmodell, während das Replication-Modell an der Aussenkante gerade keine Datenintegration zwischen den Partnern verlangt, sondern stabile, standardisierte Schnittstellen (EDIFACT/GS1).
+Die Outside-In-Sicht der Customer Journey und die Inside-Out-Realisierung treffen sich genau an dieser Grenze.
+
 == Business-Architecture-Schicht
 Jeder in der Customer Journey identifizierte Touchpoint wurde anhand der für [Organization Name] entwickelten Capability Map auf eine oder mehrere Business Capabilities zurückgeführt.
 Das Mapping zeigt auf, welche Capabilities kundenkritisch sind – also die Qualität der Journey direkt beeinflussen – und welche unterstützend sind – also die betriebliche Kontinuität ohne direkte Sichtbarkeit für die Kundin sicherstellen.
@@ -35,6 +58,25 @@ Zentrale Erkenntnisse aus der Analyse der Application-Schicht:
 - *Stammdaten-Fragmentierung*: Kundenidentitätsdaten liegen in [System A], [System B] und [System C] ohne kanonischen Master vor und verursachen Abgleichfehler bei [Touchpoint X].
 - *Integration Debt*: Punkt-zu-Punkt-Integrationen zwischen [System D] und [System E] erzeugen eine fragile Abhängigkeit ohne dokumentiertes SLA.
 - *Shadow IT*: [Department] betreibt ein nicht registriertes [tool type], das autoritative Daten für [Capability Y] hält – ausserhalb des governten Application-Portfolios.
+
+== ArchiMate-Modell des Ist-Zustands
+Die konsolidierte Sicht auf den Ist-Zustand der Transgourmet-B2B-Belieferung wurde als ArchiMate-Modell über die drei Schichten Business, Application und Technology erstellt @opengroup2019archimate.
+Das Modell macht das Unification-Operating-Model aus @fig-operating-model-matrix konkret sichtbar und legt zugleich die strukturellen Schwachstellen der heutigen Realisierung offen.
+
+#figure(
+  caption: [ArchiMate-Ist-Zustand der Transgourmet-B2B-Belieferung über Business-, Application- und Technology-Schicht],
+  image("../assets/ea_ist_archimate_transgourmet_b2b.svg", width: 78%),
+) <fig-archimate-ist>
+
+Die Schichten lesen sich wie folgt:
+
+- *Business Layer*: Der externe B2B-Kunde (Gastronomiebetrieb) interagiert über EDIFACT/GS1 mit der Prozesskette Bestellung (ORDERS, ORDRSP) → Disposition (Tour, Kommissionierung) → Lieferung (DESADV, RECADV) → Fakturierung (INVOIC, APERAK). Die zentralen Geschäftsobjekte sind Kunde, Sortiment, Bestellung, Lieferung und Faktura.
+- *Application Layer*: Der B2B-Shop (Web-Portal, Bestellaufnahme) und das EDI-Gateway (EDIFACT-Verarbeitung) bilden die Schnittstellen nach aussen; realisiert werden die Geschäftsfunktionen jedoch durch ein zentrales Dispo-/ERP-System als monolithisches Kernsystem, das Auftragsverwaltung, Stammdaten, Logistik und Faktura in einer Lösung bündelt.
+- *Technology Layer*: Das Kernsystem wird von einem Application-Server (VM-Hosting) getragen und auf einem Datenbank-Server (RDBMS, zentrale Daten) gehostet.
+
+Die entscheidende architektonische Beobachtung: Der monolithische Dispo-/ERP-Kern realisiert sämtliche Geschäftsfunktionen ohne Anti-Corruption Layer (ACL) und ohne Schnitt in Self-Contained Systems (SCS) @bass2012.
+Schnittstellen wie B2B-Shop und EDI-Gateway koppeln direkt an den Monolithen, wodurch die im Unification-Modell erwünschte Datenintegration zugleich zur strukturellen Abhängigkeit wird.
+Genau diese Kopplung bildet die Brücke zur folgenden Analyse der technischen Schuld.
 
 == Ausrichtung der technischen Schuld
 Technische Schuld (Technical Debt) wird hier operativ definiert als die künftigen Kosten, die durch heutige architektonische Entscheidungen entstehen @fowler2018.
