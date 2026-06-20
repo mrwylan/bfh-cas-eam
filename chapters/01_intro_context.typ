@@ -45,7 +45,8 @@ Im Kontext des Enterprise Architecture Management fungiert die Customer Journey 
 == Business Capability Management
 Eine Business Capability definiert, was eine Organisation tut, unabhängig davon, wie es aktuell umgesetzt ist @ulrich2011.
 Capabilities dienen als unveränderlicher Ankerpunkt, der die Kundenstrategie mit der IT-Umsetzung verbindet, weil sie über organisatorische Umstrukturierungen und Technologie-Erneuerungszyklen hinweg stabil bleiben.
-In dieser Arbeit folgt das Capability Mapping der von der Business Architecture Guild empfohlenen Zerlegung auf Stufe drei und unterscheidet zwischen strategischen, Kern- und unterstützenden Capabilities @biz_arch_guild2017.
+Das Capability Mapping folgt der GFbUA-Methodik @Spichiger2026GFbUA und gliedert in Führungs-, Kern- und Unterstützungsfähigkeiten @engels2008.
+Die Customer Journey dient als Modellierungseinstieg; das verwandte Value-Stream-Konzept der Business Architecture Guild @biz_arch_guild2017 wird inhaltlich gestreift, methodisch jedoch nicht übernommen.
 
 #quote(attribution: [@Spichiger2026GFbUA], block: true)[
   Geschäftsfähigkeiten bilden eine stabile, redundanzfreie Baumstruktur der funktionalen Dekomposition einer Unternehmung. Sie abstrahieren von jeglichen Ressourcen, werden aber von diesen unterstützt. Geschäftsfähigkeiten sind in sich stark zusammenhängend während sie mit andern Geschäftsfähigkeiten lose gekoppelt sind.
