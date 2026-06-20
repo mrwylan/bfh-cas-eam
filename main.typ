@@ -25,9 +25,11 @@
 
 // ── Chapter Stream ──────────────────────────────────────────────────────────
 #include "chapters/01_intro_context.typ"
-#include "chapters/02_customer_journey.typ"
-#include "chapters/03_ea_realization.typ"
-#include "chapters/04_learning_path.typ"
+#include "chapters/02_intro_theoretical-foundation.typ"
+#include "chapters/03_customer_journey.typ"
+#include "chapters/04_ea_realization.typ"
+#include "chapters/05_ea_target-architecture.typ"
+#include "chapters/06_learning_path.typ"
 
 // ── References ──────────────────────────────────────────────────────────────
 #bibliography("refs.bib", style: "ieee", title: "Literaturverzeichnis")
