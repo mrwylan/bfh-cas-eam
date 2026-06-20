@@ -74,7 +74,7 @@ Die Schichten lesen sich wie folgt:
 - *Application Layer*: Der B2B-Shop (Web-Portal, Bestellaufnahme) und das EDI-Gateway (EDIFACT-Verarbeitung) bilden die Schnittstellen nach aussen; realisiert werden die Geschäftsfunktionen jedoch durch ein zentrales Dispo-/ERP-System als monolithisches Kernsystem, das Auftragsverwaltung, Stammdaten, Logistik und Faktura in einer Lösung bündelt.
 - *Technology Layer*: Das Kernsystem wird von einem Application-Server (VM-Hosting) getragen und auf einem Datenbank-Server (RDBMS, zentrale Daten) gehostet.
 
-Die entscheidende architektonische Beobachtung: Der monolithische Dispo-/ERP-Kern realisiert sämtliche Geschäftsfunktionen ohne klare Modularisierung im Sinne lose gekoppelter Bausteine @bass2012 – konkret ohne Anti-Corruption Layer (ACL) @evans2003ddd und ohne Schnitt in Self-Contained Systems (SCS) @scs2016.
+Die entscheidende architektonische Beobachtung: Der monolithische Dispo-/ERP-Kern realisiert sämtliche Geschäftsfunktionen ohne Anti-Corruption Layer (ACL) und ohne Schnitt in Self-Contained Systems (SCS) @bass2012.
 Schnittstellen wie B2B-Shop und EDI-Gateway koppeln direkt an den Monolithen, wodurch die im Unification-Modell erwünschte Datenintegration zugleich zur strukturellen Abhängigkeit wird.
 Genau diese Kopplung bildet die Brücke zur folgenden Analyse der technischen Schuld.
 
