@@ -7,7 +7,7 @@
   abstract: [
     Dieses Dokument verfolgt einen doppelten Zweck: Es stellt das architektonische Artefakt vor,
     das während der kollaborativen Phase des CAS-EAM-Programms entwickelt wurde, und es zeichnet
-    den individuellen Lernpfad des Autors über den gesamten Kurs hinweg nach.
+    den individuellen Lernpfad der Autoren über den gesamten Kurs hinweg nach.
     Verankert im Outside-In-Paradigma bildet die Arbeit eine konkrete Customer Journey über das
     Business Capability Management bis hinunter zur zugrunde liegenden Application- und
     Datenlandschaft ab.
@@ -19,6 +19,21 @@
       name: "Jakob Albrecht",
       affiliation: "BFH CAS Enterprise Architecture Management",
       email: "jakob.albrecht@students.bfh.ch"
+    ),
+    (
+      name: "Adrian Angehl",
+      affiliation: "BFH CAS Enterprise Architecture Management",
+      email: "adrian.angehl@students.bfh.ch"
+    ),
+    (
+      name: "Giovanna Beier",
+      affiliation: "BFH CAS Enterprise Architecture Management",
+      email: "giovanna.beier@students.bfh.ch"
+    ),
+    (
+      name: "Jan Sohnemann",
+      affiliation: "BFH CAS Enterprise Architecture Management",
+      email: "jan.sohnemann@students.bfh.ch"
     ),
   ),
 )
