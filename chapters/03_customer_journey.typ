@@ -1,8 +1,22 @@
+#import "../markers.typ": theorie-anker, design-entscheid, stolperstein
 // ── 02_customer_journey.typ — Chapter 3: Collaboration Phase: Outside-In Mapping ──
 
-= Die Kollaborationsphase: Outside-In-Mapping
+//= Die Kollaborationsphase: Outside-In-Mapping
 
-== Definition der Customer Journey
+= Die Reise beginnt: Einigung über die Customer Journey
+Diese Customer Journey dient als Ausgangspunkt für die Modellierungsübung.
+Aus ihr werden die relevanten Business Objects mit ihren Zuständen und Business Events identifiziert und in ArchiMate abgebildet.
+
+== Die Geschichte von Amira
+Amira plant, in der Schweiz ein Catering-Unternehmen zu gründen.
+Sie hat ein grobes Konzept, aber keine Erfahrung mit den formalen Anforderungen einer Betriebsgründung im Gastgewerbe.
+Handelsregistereintrag, Finanzierung, Ressourcenplanung und Beschaffung – sie weiss, dass diese Themen relevant sind, aber nicht, wie sie sie angehen soll.
+
+GastroStart ist ein fiktives Portal, das Gründerinnen und Gründer im Gastgewerbe durch die zentralen Phasen der Betriebsgründung führt: von der ersten Orientierung über Registrierung, Geschäftskonzept und Betriebsbewilligung bis hin zur Finanzierung und zum ersten Lieferantenvertrag.
+
+#design-entscheid[Gastrostart bietet auch Dienstleistungen und Funktionalitäten für die Unterstützung des Betriebes eines Gastrounternehmens - unter Anderem Funktionalitäten für die Überwachung von Zahlungsfälligkeiten und ein Einkaufsplanungsmodul. Gemeinsam haben wir uns entschieden, nur das Onboarding von Amira abzubilden, da sonst das Szenario zu gross geworden wäre.]
+
+== 
 Aufbauend auf dem in Abschnitt 1.2 eingeführten Fall bildet die Kollaborationsphase Amiras Journey über fünf vom GastroStart-Portal definierte Phasen ab.
 Die Journey wurde gemeinsam mit Teilnehmenden aus vier Organisationen entwickelt – der Transgourmet Schweiz AG, FINNOFLEET Schweiz, der Bundeskanzlei und DV Bern –, die jeweils Domänen-Expertise aus ihrem institutionellen Kontext einbrachten.
 
@@ -34,6 +48,8 @@ Die Journey wurde gemeinsam mit Teilnehmenden aus vier Organisationen entwickelt
     ]
   ]
 ) <persona-amira>
+
+#stolperstein[woher kommen die pahsen?!?]
 
 Die Journey wurde über fünf Phasen strukturiert:
 

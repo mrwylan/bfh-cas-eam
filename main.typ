@@ -30,14 +30,14 @@
     (name: "Soucoupe", affiliation: "Bundesverwaltung", email: "..."),
   ),
   eingereicht-von: "Soucoupe",   // ändert sich pro abgegebener Kopie
-  kompendium: false,             // false = Abgabeversion, true = persönliches Kompendium
+  kompendium: true,             // false = Abgabeversion, true = persönliches Kompendium
 
 )
 )
 
 // ── Chapter Stream ──────────────────────────────────────────────────────────
-#include "chapters/01_intro_context.typ"
-#include "chapters/02_intro_theoretical-foundation.typ"
+#include "chapters/01_Einleitung.typ"
+#include "chapters/02_Mitglieder.typ"
 #include "chapters/03_customer_journey.typ"
 #include "chapters/04_ea_realization.typ"
 #include "chapters/05_ea_target-architecture.typ"

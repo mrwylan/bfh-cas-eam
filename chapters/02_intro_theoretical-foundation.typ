@@ -1,20 +1,25 @@
-// ── Chapter 2: Theoretical Foundation ───────────────────────────────────────
-
+// ── Chapter 2: Theoretical Foundation 
+───────────────────────────────────────
+#import "../markers.typ": theorie-anker, design-entscheid, stolperstein
 = Theoretische Grundlagen: Moderne EAM-Paradigmen
 
 == Die Outside-In-Perspektive
-Die traditionelle Enterprise-Architecture-Praxis war historisch von einer Inside-Out-Orientierung geprägt:
+#theorie-anker[Die traditionelle Enterprise-Architecture-Praxis war historisch von einer Inside-Out-Orientierung geprägt:
 Technologie-Inventare, System-Rationalisierung und Infrastruktur-Optimierung sind die primären Eingaben.
-Die Outside-In-Perspektive kehrt diese Logik um und behandelt die Customer Journey als primären architektonischen Treiber @temkin2010.
-Architektonische Entscheidungen werden nicht an ihrer internen technischen Eleganz gemessen, sondern an ihrer messbaren Wirkung auf kundenseitige Ergebnisse.
-Diese Verschiebung wird durch die capability-basierte Planung gestützt, die eine stabile Abstraktionsschicht zwischen volatilen Marktanforderungen und der sich langsamer verändernden Application-Landschaft bildet @ulrich2011.
-Wir erarbeiten die Geschäftsähigkeiten durch das Vorgehensmodell nach RIM (Ressourcen unabhängiges Modell) und weisen die Prozesse der Customer Journey den entsprechenden Capabilities zu. @Spichiger2026GFbUA.
+Die Outside-In-Perspektive kehrt diese Logik um und behandelt die Customer Journey als primären architektonischen Treiber @temkin2010.]
+
+#theorie-anker[Die Outside-In-Perspektive ist ein Paradigma, das die Kundenerfahrung in den Mittelpunkt der Architekturarbeit stellt.
+Architektonische Entscheidungen werden nicht an ihrer internen technischen Eleganz gemessen, sondern an ihrer messbaren Wirkung auf kundenseitige Ergebnisse.]
+
+#theorie-anker[Diese Verschiebung wird durch die capability-basierte Planung gestützt, die eine stabile Abstraktionsschicht zwischen volatilen Marktanforderungen und der sich langsamer verändernden Application-Landschaft bildet @ulrich2011.
+Wir erarbeiten die Geschäftsähigkeiten durch das Vorgehensmodell nach RIM (Ressourcen unabhängiges Modell) und weisen die Prozesse der Customer Journey den entsprechenden Capabilities zu. @Spichiger2026GFbUA.]
 
 == Einführung in die Customer Journey
 
-Eine Customer Journey beschreibt die vollständige, durchgängige Abfolge von Erfahrungen, die eine definierte Persona im Zusammenspiel mit einer Organisation durchläuft – von der ersten Wahrnehmung über die aktive Auseinandersetzung bis zur Bewertung nach der Interaktion @lemon2016.
+#theorie-anker[Eine Customer Journey beschreibt die vollständige, durchgängige Abfolge von Erfahrungen, die eine definierte Persona im Zusammenspiel mit einer Organisation durchläuft – von der ersten Wahrnehmung über die aktive Auseinandersetzung bis zur Bewertung nach der Interaktion @lemon2016.]
+
 In einzelne Touchpoints zerlegt, erfasst sie an jeder Station sowohl die operative Dimension (was die Kundin tut) als auch die emotionale Dimension (wie die Kundin die Interaktion wahrnimmt).
-Im Kontext des Enterprise Architecture Management fungiert die Customer Journey als primärer analytischer Treiber: Architektonische Entscheidungen werden nicht an ihrer internen technischen Qualität gemessen, sondern an ihrer messbaren Wirkung auf kundenseitige Ergebnisse @lemon2016 @temkin2010.
+#theorie-anker[Im Kontext des Enterprise Architecture Management fungiert die Customer Journey als primärer analytischer Treiber: Architektonische Entscheidungen werden nicht an ihrer internen technischen Qualität gemessen, sondern an ihrer messbaren Wirkung auf kundenseitige Ergebnisse @lemon2016 @temkin2010.]
 
 == Business Capability Management
 Eine Business Capability definiert, was eine Organisation tut, unabhängig davon, wie es aktuell umgesetzt ist @ulrich2011.
@@ -26,7 +31,7 @@ Die Customer Journey dient als Modellierungseinstieg; das verwandte Value-Stream
   Geschäftsfähigkeiten bilden eine stabile, redundanzfreie Baumstruktur der funktionalen Dekomposition einer Unternehmung. Sie abstrahieren von jeglichen Ressourcen, werden aber von diesen unterstützt. Geschäftsfähigkeiten sind in sich stark zusammenhängend während sie mit andern Geschäftsfähigkeiten lose gekoppelt sind.
 ]
 
-== Methodische Reflexion: Sterilität als Designentscheidung im RIM
+/*== Methodische Reflexion: Sterilität als Designentscheidung im RIM
 Bei der Arbeit mit dem Ressourcenunabhängigen Modell (RIM) der GFbUA fällt die bewusst neutrale Begrifflichkeit auf – Geschäftsfähigkeit, Geschäftsobjekt, Geschäftstransaktion @Spichiger2026GFbUA.
 Im Vergleich zum business-nahen Vokabular des BIZBOK der Business Architecture Guild @biz_arch_guild2017 wirkt diese Sprache zunächst steril.
 Diese Sterilität ist jedoch nicht als stilistisches Versehen, sondern als Designentscheidung zu lesen – und gerade darin liegt eine Stärke der Methode.
@@ -34,10 +39,10 @@ Diese Sterilität ist jedoch nicht als stilistisches Versehen, sondern als Desig
 Die GFbUA wählt neutrale Begriffe, weil das RIM über Branchen, Geschäftsmodelle und Reorganisationen hinweg stabil bleiben soll.
 Sobald Vokabular Branchen- oder Kontextsemantik vorlädt, verliert es seine Übertragbarkeit: Ein „Value Stream" trägt implizit das Bild einer linearen Wertschöpfung mit definierten Stages mit, während eine „Geschäftsfähigkeit" nur die Eigenschaft „in sich stark zusammenhängend, lose gekoppelt nach aussen" transportiert.
 Genau diese Begriffsdisziplin macht das RIM dauerhaft tragfähig.
-
+*/
 == Enterprise Architecture as Strategy: Operating Models und IT-Governance
-Ross, Weill und Robertson liefern mit _Enterprise Architecture as Strategy_ den strategischen Rahmen, der erklärt, warum dieselbe Architekturmethode in unterschiedlichen Unternehmen unterschiedlich gesteuert werden muss @ross2006enterprise.
-Im Kern steht die Frage der IT-Governance, verstanden als das Rahmenwerk von Entscheidungsrechten und Kontrollstrukturen, das erwünschtes Verhalten in der IT fördert @weill2004.
+#theorie-anker[Ross, Weill und Robertson liefern mit _Enterprise Architecture as Strategy_ den strategischen Rahmen, der erklärt, warum dieselbe Architekturmethode in unterschiedlichen Unternehmen unterschiedlich gesteuert werden muss @ross2006enterprise.
+Im Kern steht die Frage der IT-Governance, verstanden als das Rahmenwerk von Entscheidungsrechten und Kontrollstrukturen, das erwünschtes Verhalten in der IT fördert @weill2004.]
 Vereinfacht lautet sie: Wer hat das Sagen und wer darf mitreden?
 
 === Operating Models als Bezugsrahmen
