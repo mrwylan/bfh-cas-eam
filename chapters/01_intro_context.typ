@@ -3,6 +3,7 @@
 = Einleitung und Kontext
 
 == Zielsetzung und Geltungsbereich
+
 Dieses Dokument erfüllt zwei explizite Anforderungen des BFH-CAS-Programms Enterprise Architecture Management.
 Erstens dokumentiert es das architektonische Artefakt, das während der kollaborativen Projektphase entstanden ist.
 Zweitens hält es den individuellen Lernpfad fest und erfasst die Entwicklung des architektonischen Denkens über die Dauer des CAS hinweg.

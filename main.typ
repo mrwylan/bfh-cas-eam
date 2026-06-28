@@ -5,6 +5,14 @@
   subtitle: "Die Verbindung von Customer Journeys mit Capabilities und Application-Landschaften",
   date: "BFH CAS Enterprise Architecture Management (EAM), 2026",
   abstract: [
+    /*nota: L'abstract è un riassunto completo e autonomo dell'intero lavoro (obiettivi, metodi, risultati e conclusioni).
+    L'abstract svela tutti i passaggi dello studio, compresi i risultati finali e le conclusioni. 
+    L'abstract è molto sintetico, solitamente compreso tra 150 e 250 parole.
+    L'abstract segue una struttura logica serrata (Contesto → Problema → Metodo → Risultati → Conclusione).*/
+    Diese Gruppenarbeit berichtet darüber, wie vier Kollegen aus ganz unterschidlichen Unternehmen sich auf einer Idee für ein gemeinesamens Unternehmen geeinigt haben und dieses in iterativen Schritten erarbeitet haben. In der Arbeit wird zunächst die Customer Journey beschrieben und abgegrenzt. DAnach folgt die "Modellierungsreise" enttlang der RIM-Methodik. Anschliessend werden die Ressourcen wieder dazugenommen - wobei jeder der vier Kollegen am Schluss einer Vertiefung seines eigenen Anteils am Unternehmen präsentiert.
+
+
+    /*
     Dieses Dokument verfolgt einen doppelten Zweck: Es stellt das architektonische Artefakt vor,
     das während der kollaborativen Phase des CAS-EAM-Programms entwickelt wurde, und es zeichnet
     den individuellen Lernpfad der Autoren über den gesamten Kurs hinweg nach.
@@ -13,29 +21,18 @@
     Datenlandschaft ab.
     Die abschliessenden Kapitel liefern eine kritische methodische Reflexion und eine ehrliche
     Auseinandersetzung mit dem Kompetenzwandel, der während des Programms erreicht wurde.
+    */
   ],
-  authors: (
-    (
-      name: "Jakob Albrecht",
-      affiliation: "BFH CAS Enterprise Architecture Management",
-      email: "jakob.albrecht@students.bfh.ch"
-    ),
-    (
-      name: "Adrian Angehl",
-      affiliation: "BFH CAS Enterprise Architecture Management",
-      email: "adrian.angehl@students.bfh.ch"
-    ),
-    (
-      name: "Giovanna Beier",
-      affiliation: "BFH CAS Enterprise Architecture Management",
-      email: "giovanna.beier@students.bfh.ch"
-    ),
-    (
-      name: "Jan Sohnemann",
-      affiliation: "BFH CAS Enterprise Architecture Management",
-      email: "jan.sohnemann@students.bfh.ch"
-    ),
+   authors: (
+    (name: "Mitglied 1", affiliation: "DV Bern", email: "..."),
+    (name: "Mitglied 2", affiliation: "Finnofleet", email: "..."),
+    (name: "Mitglied 3", affiliation: "Transgourmet", email: "..."),
+    (name: "Soucoupe", affiliation: "Bundesverwaltung", email: "..."),
   ),
+  eingereicht-von: "Soucoupe",   // ändert sich pro abgegebener Kopie
+  kompendium: false,             // false = Abgabeversion, true = persönliches Kompendium
+
+)
 )
 
 // ── Chapter Stream ──────────────────────────────────────────────────────────

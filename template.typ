@@ -1,11 +1,19 @@
+#import "markers.typ": kompendium-modus
+
+
+
+
 #let conf(
   title: "Untitled Blueprint",
   subtitle: none,
   authors: (),
+  eingereicht-von: none,
+  kompendium: false,
   date: none,
   abstract: none,
   body
 ) = {
+  kompendium-modus.update(kompendium)
   // Page setup
   set page(
     paper: "a4",
@@ -37,6 +45,11 @@
       block(text(size: 1.2em, fill: luma(60), style: "italic", subtitle))
     }
     #v(1.5em)
+
+ #if eingereicht-von != none {
+      block(text(size: 1em, weight: "bold")[Eingereicht von: #eingereicht-von])
+      v(0.8em)
+    }
 
     #grid(
       columns: calc.min(authors.len(), 3),
