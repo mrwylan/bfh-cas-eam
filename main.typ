@@ -33,7 +33,7 @@
   kompendium: false,             // false = Abgabeversion, true = persönliches Kompendium
 
 )
-)
+
 
 // ── Chapter Stream ──────────────────────────────────────────────────────────
 #include "chapters/01_Einleitung.typ"

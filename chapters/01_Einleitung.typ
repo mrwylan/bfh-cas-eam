@@ -18,7 +18,30 @@ Dadurch wird jeder Mitglied der Gruppe seinen individuellen Lernpfad festhalten 
 Die Zusammenarbeit hat Unternehmungscharakter angenommen: durch die iterative Vorgehensweise und die regelmässigen - anfangs etwas erzwungene Übungen - musste ein gemeinsamer Nenner gefunden werden und eingegrenzt werden. 
 Die Diskussionen betreffend der Schärfung der Mission /*(was macht das Unternehmen? was davon soll abgebildet werden? wo hören wir auf?) */ sowie die wöchentlichen Feedbackrunden haben nach und nach die Zusammenarbeit und die gemeinsame Unternehmensvision gefördert und gefestigt. 
 
-== Bemerkung zu den visuellen Call-outs
+== Methode
+=== Struktur und Gestaltung des Artefaktes
+Die Gestaltung der Gruppenarbeit folgt dem Windschatten der Vorlesungen und Übungen. 
++ Outside-In
++ vom Abstrakten zum Konkreten 
++ Dematerialisierung 
++ Rematerialisierung
++ Kritische Hinterfragung (Übungen vom 17.06., 24.06.)
+
+=== Erklärung zum Einsatz von künstlicher Intelligenz 
+*Texte:* Wenn nicht anderweitig deklariert, sind die Texte dieser Arbeit ohne Einsatz generativer künstlicher Intelligenz redigiert. 
+
+*Graphiken und Tabellen:* Um Medienbrüche bei der Integration graphischen Materials zu vermeiden, sind Tabellen und Graphiken soweit wie möglich in Markup-Code übernommen worden. 
+Wir haben künstliche Intelligenz ausschliesslich für die Formattierung eingetzt. 
+
+=== Eingesetzte Tools
+*Modellierung:* Archi - und Archimate, Draw.io und UML
+
+*Textredaktion:* Visual Studio Code mit Typst Plugin, github repository 
+
+*Bibliographie:* Zotero, ieee style
+
+
+=== Bemerkung zu den visuellen Call-outs
 Immer wieder mussten sich die vier Gesellen über etwas einigen oder zwischen mehrere Optionen wählen - oder aber sind mehr oder weniger kurz falsch abgebogen. 
 Diese Momente sind ein wichtiger Teil der gemeinsamen Arbeit und sind entsprechend hervorgehoben: 
 #design-entscheid([Für die Weiterentwicklung wichtige Entscheidungen sind diesem Block entsprechend graphisch wiedergeben und festgehalten. ])

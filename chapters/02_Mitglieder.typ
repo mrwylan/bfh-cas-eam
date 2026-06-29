@@ -9,7 +9,6 @@ Jeder Mitglied stellt sein Unternehmen kurz vor.
 
 == Transgourmet
 #todo-action([Jakob Albrecht's Unternehmen beschreiben])
-#theorie-anker[klammer auf klammer zu]
 /*Vorstellung Transgourmet*/
 
 == DV Bern

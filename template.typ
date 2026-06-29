@@ -22,9 +22,9 @@
   )
 
   // Typography layout
-  set text(font: "Linux Libertine", size: 11pt, lang: "de", region: "CH")
+  set text(font: "New Computer Modern", size: 11pt, lang: "de", region: "CH")
   set par(justify: true, leading: 0.65em)
-  set heading(numbering: "1.1.")
+  set heading(numbering: "1.1.1")
 
   // Show rules for clean heading layouts
   show heading: it => block(above: 1.5em, below: 1em, it)

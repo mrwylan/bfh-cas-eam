@@ -1,3 +1,4 @@
+#import "../markers.typ": theorie-anker, design-entscheid, stolperstein, frage, todo-action
 // ── Chapter 1 & 2: Introduction, Context, and Theoretical Foundation ────────
 
 = Einleitung und Kontext
@@ -20,6 +21,8 @@ Diese Customer Journey dient als Ausgangspunkt für die Modellierungsübung.
 Aus ihr werden die relevanten Business Objects mit ihren Zuständen und Business Events identifiziert und in ArchiMate abgebildet.
 
 == Methodisches Vorgehen
-Die Arbeit verwendet die TOGAF Architecture Development Method (ADM) als primäres Prozess-Framework, ergänzt durch ArchiMate 3.1 als visuelle Modellierungssprache @opengroup2018togaf @opengroup2019archimate.
+#theorie-anker[Die Arbeit verwendet die TOGAF Architecture Development Method (ADM) als primäres Prozess-Framework, ergänzt durch ArchiMate 3.1 als visuelle Modellierungssprache @opengroup2018togaf @opengroup2019archimate.]
+
 Wo die formale Notation für die Stakeholder-Kommunikation unnötigen Aufwand verursachte, wurden leichtgewichtige Canvas-Modelle als Zwischendarstellung eingesetzt.
-Das Outside-In-Paradigma – die Verankerung architektonischer Veränderung in der Kundenerfahrung statt in internen IT-Belangen – dient durchgehend als übergeordnete Designphilosophie @ross2006enterprise.
+#theorie-anker([Das Outside-In-Paradigma – die Verankerung architektonischer Veränderung in der Kundenerfahrung statt in internen IT-Belangen – dient durchgehend als übergeordnete Designphilosophie @ross2006enterprise.
+])

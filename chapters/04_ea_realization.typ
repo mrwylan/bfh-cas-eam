@@ -1,4 +1,11 @@
 // ── Chapter 4 : EA Realization  ───────────────────
+#import "../markers.typ": theorie-anker, design-entscheid, stolperstein, frage, todo-action;
+
+#frage([1. struktur: 1 Schritt pro Übung, dann 4x die Phasen, jedes mal mit Screenshot?])
+
+
+
+
 
 = Das Inside-Out-Mapping: Realisierung der Enterprise Architecture
 

@@ -1,22 +1,25 @@
-#import "../markers.typ": theorie-anker, design-entscheid, stolperstein
+#import "../markers.typ": theorie-anker, design-entscheid, stolperstein, frage, todo-action;
 // ── 02_customer_journey.typ — Chapter 3: Collaboration Phase: Outside-In Mapping ──
 
 //= Die Kollaborationsphase: Outside-In-Mapping
 
 = Die Reise beginnt: Einigung über die Customer Journey
-Diese Customer Journey dient als Ausgangspunkt für die Modellierungsübung.
+Diese Customer Journey dient als Ausgangspunkt für die Modellierung des gemeinsamen Unternehmens.
 Aus ihr werden die relevanten Business Objects mit ihren Zuständen und Business Events identifiziert und in ArchiMate abgebildet.
 
 == Die Geschichte von Amira
-Amira plant, in der Schweiz ein Catering-Unternehmen zu gründen.
-Sie hat ein grobes Konzept, aber keine Erfahrung mit den formalen Anforderungen einer Betriebsgründung im Gastgewerbe.
-Handelsregistereintrag, Finanzierung, Ressourcenplanung und Beschaffung – sie weiss, dass diese Themen relevant sind, aber nicht, wie sie sie angehen soll.
+Amira, eine 34-jährige Quereinsteigerin, will ein Catering-Unternehmen gründen. 
+Sie hat schon einen Konzept dafür. Sie Googelt “Gastronomie Schweiz gründen”. Sie hat keine Erfahrung, will nichts falsch machen und braucht Orientierung. 
+Sie wünscht sich eine Schritt für Schritt-Anleitung, sie möchte durch das Prozess der Unternehmensgründung geführt werden. 
+Bei der Suche erfährt sie, dass die Punkte Bewilligungen, Finanzierung, Ressourcenplanung und Beschaffung besonders wichtig sind. 
+Sie landet bei “Gastrostart” und erfährt in der kurzen Einführung auf der Startseite, dass dieses Portal sie bei all dem unterstützen kann. 
+Sie ist erleichtert und registriert sich. 
 
 GastroStart ist ein fiktives Portal, das Gründerinnen und Gründer im Gastgewerbe durch die zentralen Phasen der Betriebsgründung führt: von der ersten Orientierung über Registrierung, Geschäftskonzept und Betriebsbewilligung bis hin zur Finanzierung und zum ersten Lieferantenvertrag.
 
 #design-entscheid[Gastrostart bietet auch Dienstleistungen und Funktionalitäten für die Unterstützung des Betriebes eines Gastrounternehmens - unter Anderem Funktionalitäten für die Überwachung von Zahlungsfälligkeiten und ein Einkaufsplanungsmodul. Gemeinsam haben wir uns entschieden, nur das Onboarding von Amira abzubilden, da sonst das Szenario zu gross geworden wäre.]
 
-== 
+== test
 Aufbauend auf dem in Abschnitt 1.2 eingeführten Fall bildet die Kollaborationsphase Amiras Journey über fünf vom GastroStart-Portal definierte Phasen ab.
 Die Journey wurde gemeinsam mit Teilnehmenden aus vier Organisationen entwickelt – der Transgourmet Schweiz AG, FINNOFLEET Schweiz, der Bundeskanzlei und DV Bern –, die jeweils Domänen-Expertise aus ihrem institutionellen Kontext einbrachten.
 
@@ -29,23 +32,25 @@ Die Journey wurde gemeinsam mit Teilnehmenden aus vier Organisationen entwickelt
     clip: true,
   )[
     #block(
-      width: 100%,
-      fill: luma(60),
-      inset: (x: 1em, y: 0.6em),
-    )[
-      #text(fill: white, weight: "bold", size: 1.05em)[Persona: Amira]
-    ]
-    #block(inset: 1em)[
-      #grid(
-        columns: (3cm, 1fr),
-        row-gutter: 0.55em,
-        [*Rolle*],        [Angehende Gründerin, Catering-Branche],
-        [*Kontext*],      [Kein Branchenhintergrund; grobes Geschäftskonzept vorhanden],
-        [*Ziele*],        [Ein rechtskonformes Catering-Unternehmen gründen; nichts Wesentliches verpassen],
-        [*Frustrationen*],[Intransparente Verwaltungsprozesse; Angst vor kostspieligen Fehlern; kein berufliches Netzwerk],
-        [*Bedürfnis*],    [Schritt-für-Schritt-Begleitung über Registrierung, Bewilligungen, Finanzierung und Beschaffung – alles an einem Ort],
-      )
-    ]
+  width: 100%,
+  fill: luma(60),
+  inset: (x: 1em, y: 0.6em),
+  below: 0pt,
+)[
+  #text(fill: white, weight: "bold", size: 1.05em)[Persona: Amira]
+]
+#set par(justify: false)
+    #table(
+      columns: (3cm, 1fr),
+      align: left,
+      stroke: (top: none, x: none, y: 0.5pt + luma(200)),
+      inset: (x: 1em, y: 0.55em),
+      [*Rolle*],         [Angehende Gründerin, Catering-Branche],
+      [*Kontext*],       [Kein Branchenhintergrund; grobes Geschäftskonzept vorhanden],
+      [*Ziele*],         [Ein rechtskonformes Catering-Unternehmen gründen; nichts Wesentliches verpassen],
+      [*Frustrationen*], [Intransparente Verwaltungsprozesse; Angst vor kostspieligen Fehlern; kein berufliches Netzwerk],
+      [*Bedürfnis*],     [Schritt-für-Schritt-Begleitung über Registrierung, Bewilligungen, Finanzierung und Beschaffung – alles an einem Ort],
+    )
   ]
 ) <persona-amira>
 
