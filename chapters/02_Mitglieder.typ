@@ -17,14 +17,18 @@ Jeder Mitglied stellt sein Unternehmen kurz vor.
  * Vorstellung DV Bern
  */
 
-== Finnofleet
-#todo-action([Adrian Anghel's Unternehmen])
-/**
- * Vorstellung Finnofleet
- */
+== FINNOFLEET
 
-== Schweizer öffentliche Verwaltung 
-Die Schwiez ein ein Bundesstaat, welches drei politische - und somit drei Ebenen der öffentlichen Verwaltung kennt. 
+FINNOFLEET Schweiz (#link("https://finnofleet.ch/ch-de/")[finnofleet.ch]) ist ein Softwareunternehmen für die Finanzbranche mit Hauptsitz in Sursee sowie weiteren Standorten in Zürich und Bern. 
+Rund 100 Mitarbeitende betreuen über 80 Kundinnen und Kunden aus dem Banken-, Versicherungs- und Pensionskassenumfeld.
+
+Das Lösungsangebot deckt den gesamten Kreditlebenszyklus ab --- von der Digitalisierung der Kreditberatung und -initiierung über die Portfolio- und Kontoverwaltung bis hin zur elektronischen Pfandbriefverwaltung und der Automatisierung von Refinanzierungsprozessen. 
+Das Produktportfolio umfasst entsprechend *ELA Kredit*, *WinCredit*, Lösungen für *Refinanzierung & Pfandbriefe* sowie die *Hypothekar- und Darlehensverwaltung*. Die Produkte sind in ihrer Architektur weitgehend vergleichbar aufgebaut.
+
+FINNOFLEET Schweiz ist Teil der FINNOFLEET-Gruppe mit über 450 Mitarbeitenden in Zentraleuropa, die entlang der gesamten Kreditwertschöpfungskette tätig ist.
+
+== Öffentliche Verwaltung 
+Die Schwiez ist ein Bundesstaat, welches drei politische Ebenen - und somit drei Ebenen der öffentlichen Verwaltung kennt. 
 Dies Ebenen sind: 
 - Bund 
 - Kantone (26 in Total)

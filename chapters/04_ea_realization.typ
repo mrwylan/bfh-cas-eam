@@ -3,7 +3,14 @@
 
 #frage([1. struktur: 1 Schritt pro Übung, dann 4x die Phasen, jedes mal mit Screenshot?])
 
+pro Ebene - nur da was geändert hat 
+die Granularität ist: 
++ CJ 
++ RIM Version 1 
++ RIM VERSION 2
++ RSM 
 
+Wir verlassen das Tagebuch-Aufbau - und gehen hin zu einem logischen, fliessender Text, dem GFbAU folgend. 
 
 
 

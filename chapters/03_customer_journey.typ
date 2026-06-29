@@ -19,6 +19,19 @@ GastroStart ist ein fiktives Portal, das Gründerinnen und Gründer im Gastgewer
 
 #design-entscheid[Gastrostart bietet auch Dienstleistungen und Funktionalitäten für die Unterstützung des Betriebes eines Gastrounternehmens - unter Anderem Funktionalitäten für die Überwachung von Zahlungsfälligkeiten und ein Einkaufsplanungsmodul. Gemeinsam haben wir uns entschieden, nur das Onboarding von Amira abzubilden, da sonst das Szenario zu gross geworden wäre.]
 
+Appunti: 
+wir lassen die TAbelle CJ weg - dafür gibt es die Phasen
+es sollen gewisse punkte im phasenmodell 
+
+Brücke zu den Phasen 
+- CJ basiert auf eine Theorie 
+- die Persoa hat ihre Wahrnehmung 
+  - orientierung 
+  - Einstieg (Registrierung)
+- die Phasen sind an Wahrnehmung und deren Veränderung der Emotionen der Persona geschnitten - entlang des Erfolg der Mission auf dem Portal 
+- die Phasen sind auch schon in der Default-View grob sichtbar 
+
+
 == test
 Aufbauend auf dem in Abschnitt 1.2 eingeführten Fall bildet die Kollaborationsphase Amiras Journey über fünf vom GastroStart-Portal definierte Phasen ab.
 Die Journey wurde gemeinsam mit Teilnehmenden aus vier Organisationen entwickelt – der Transgourmet Schweiz AG, FINNOFLEET Schweiz, der Bundeskanzlei und DV Bern –, die jeweils Domänen-Expertise aus ihrem institutionellen Kontext einbrachten.
@@ -127,10 +140,10 @@ Die emotionale Kurve über die Journey hinweg offenbart zwei strukturell bedeuts
 Phase 3 (Betriebsbewilligung) markiert mit −2 die tiefste Stimmung, getrieben nicht durch ein Versagen im Prozessdesign, sondern durch den heterogenen Digitalisierungsgrad der kantonalen Behördensysteme – eine architektonische Einschränkung ausserhalb der direkten Kontrolle der Plattform.
 Phase 5 (Erster Vertrag) erreicht mit +2 den Höhepunkt, doch der Übergang vom digitalen Portal zu einem physischen Lieferantenvertrag stellt eine verbleibende analoge Lücke dar, die die Ziel-Architektur adressieren muss @stickdorn2011.
 
-Beide Extreme sind direkte Eingaben für die Pain-Point-Analyse in @sec-pain-points und die Business-Object-Analyse in @sec-business-objects.
 
 
-== Pain Points und Value Drivers <sec-pain-points>
+
+/*== Pain Points und Value Drivers <sec-pain-points>
 Die Journey-Mapping-Übung legte strukturelle Engpässe offen, an denen sich die Kundenerfahrung aufgrund grundlegender Systemlimitierungen statt aufgrund von Fehlern im Prozessdesign verschlechtert.
 Diese Unterscheidung ist architektonisch bedeutsam: Prozessfehler lassen sich durch Schulung und Governance beheben, während systembedingte Reibung eine bewusste architektonische Intervention erfordert @temkin2010.
 
@@ -185,9 +198,15 @@ Der Lieferantenvertrag mit Transgourmet verlangt allenfalls eine physische Unter
     )
   ]
 ) <tbl-value-drivers>
-
+*/
 
 == Business-Object-Analyse <sec-business-objects>
+#todo-action([wir übernehmen Gründungsvorhaben + die Objetke von Adrian])
+
+Wie kommen wir auf die 5 Objekten? 
+Objekte finden und den Weg dazu danch erklären 
+was ist Entity? Und die Phase dazu - reicht 1 BObject dafür? danach die Statuses 
+
 Das Journey Mapping wurde zu einer Business-Object-Analyse erweitert, die dem von @normann2001 eingeführten und von @tercek2015 weiterentwickelten Dematerialisierungs-Framework folgt.
 Das Framework bewertet Informationsartefakte entlang vier Dimensionen: _Liquidität_ (wie frei das Objekt über organisatorische Grenzen hinweg fliessen kann), _Unbundling_ (ob es von seinem physischen Träger getrennt werden kann), _Dichte_ (Wertkonzentration pro Informationseinheit) und _Vaporisierungspotenzial_ (Grad, in dem das Objekt vollständig in einen digitalen Service dematerialisiert werden kann).
 
@@ -256,16 +275,3 @@ Die resultierende Journey Map (@fig-journey-map) ist ein Konsens-Artefakt.
 Die Entscheidung, kantonale analoge Prozesse als _Line of Failure_ statt als ausserhalb des Scopes liegende externe Einschränkung zu behandeln, war die folgenreichste Designentscheidung: Sie hielt das architektonische Problem ehrlich und verhinderte, dass die Gruppe den Dematerialisierungswert künstlich aufblähte, indem sie die schwierigsten Fälle ausschloss.
 Diese ausgehandelte Qualität verleiht dem Artefakt seine architektonische Legitimität: Es repräsentiert ein geteiltes Verständnis und nicht die optimistische Projektion einer einzelnen Person.
 
-#block(
-  width: 100%,
-  inset: (x: 1em, y: 0.8em),
-  radius: 4pt,
-  stroke: 0.4pt,
-  fill: luma(250),
-)[
-  *Persönliche Anmerkung:*
-  Meine individuelle Sicht wich in einem Punkt vom Gruppenkonsens ab: Ich hätte die eID-Barriere (Phase 2) als Pain Point höherer Schwere eingestuft, als die Gruppe ihr zuwies (Stimmung 0).
-  Die Begründung: Eine gescheiterte Registrierung blockiert alle nachgelagerten Phasen und macht sie zu einer strukturellen Abhängigkeit mit höherem Risiko als die analogen Lücken in Phase 3 – die zwar emotional sichtbarer sind, sich aber durch den Fallback-Prozess des Portals teilweise abfedern lassen.
-  Die Gruppe priorisierte emotionale Intensität über das Risiko struktureller Abhängigkeit.
-  Beide Rahmungen sind architektonisch vertretbar; der Unterschied offenbart eine echte Spannung zwischen user-experience-zentrierten und resilienz-zentrierten architektonischen Bewertungskriterien.
-]
