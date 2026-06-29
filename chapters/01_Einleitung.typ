@@ -11,7 +11,16 @@ Dieses Dokument erfüllt zwei explizite Anforderungen des BFH-CAS-Programms Ente
 Erstens dokumentiert die Schrittweise Entwicklung einer Joint-Venture zwischen vier sehr heterogene Parteien. Es handelt sich dabei um ein fiktives Unternehmen, welcher technische wie operative und kommerzielle Aspekte jedes Ursprungsbetretriebs vereint und einzel hervorhebt. 
 
 == Kontext - eine kleine Reise durch Mittelerde
-Die Zusammenarbeit hat Unternehmungscharakter angenommen - durch die iterative Vorgehensweise und die regelmässigen, anfangs etwas erzwungene Übungen 
+Die Zusammenarbeit hat Unternehmungscharakter angenommen: durch die iterative Vorgehensweise und die regelmässigen - anfangs etwas erzwungene Übungen - musste ein gemeinsamer Nenner gefunden werden und eingegrenzt werden. Die Diskussionen betreffend der Schärfung der Mission /*(was macht das Unternehmen? was davon soll abgebildet werden? wo hören wir auf?) */ sowie die wöchentlichen Feedbackrunden haben nach und nach di Zusammenarbeit und die gemeinsame Unternehmensvision gefördert und gefestigt. 
+
+== Bemerkung zu den visuellen Call-outs
+Immer wieder mussten sich die vier Gesellen über etwas einigen oder zwischen mehrere Optionen wählen - oder aber sind mehr oder weniger kurz falsch abgebogen. Diese Momente sind ein wichtiger Teil der gemeinsamen Arbeit und sind entsprechend hervorgehoben: 
+#design-entscheid([Für die Weiterentwicklung wichtige Entscheidungen sind diesem Block entsprechend graphisch hervorgehoben und festgehalten. ])
+test
+
+#stolperstein([Konzept- und Gedankenfehler, die uns während der Arbeit begegnet sind, sind diesem Block entsprechend graphisch hervorgehoben und festgehalten.])
+
+
 
 es das architektonische Artefakt, das während der kollaborativen Projektphase entstanden ist.
 Zweitens hält es den individuellen Lernpfad fest und erfasst die Entwicklung des architektonischen Denkens über die Dauer des CAS hinweg.
