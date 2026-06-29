@@ -2,7 +2,6 @@
 
 
 
-
 #let conf(
   title: "Untitled Blueprint",
   subtitle: none,

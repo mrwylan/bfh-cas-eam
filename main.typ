@@ -30,7 +30,7 @@
     (name: "Giovanna Beier", affiliation: "Bundesverwaltung", email: "..."),
   ),
   eingereicht-von: "Giovanna Beier",   // ändert sich pro abgegebener Kopie
-  kompendium: true,             // false = Abgabeversion, true = persönliches Kompendium
+  kompendium: false,             // false = Abgabeversion, true = persönliches Kompendium
 
 )
 )
