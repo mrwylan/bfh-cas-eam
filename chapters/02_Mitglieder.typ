@@ -4,6 +4,8 @@
 == Übersicht
 Vier ungleiche Gesellen stellen sich vor. Zusammen werden sie sich auf dem Weg machen, ein gemeinsames Unternehmen zu entwerfen und zu modellieren. 
 Jeder Mitglied stellt sein Unternehmen kurz vor. 
+#theorie-anker[klammer auf klammer zu]
+
 
 == Transgourmet
 /*Vorstellung Transgourmet*/

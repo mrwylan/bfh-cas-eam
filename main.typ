@@ -24,12 +24,12 @@
     */
   ],
    authors: (
-    (name: "Mitglied 1", affiliation: "DV Bern", email: "..."),
-    (name: "Mitglied 2", affiliation: "Finnofleet", email: "..."),
-    (name: "Mitglied 3", affiliation: "Transgourmet", email: "..."),
-    (name: "Soucoupe", affiliation: "Bundesverwaltung", email: "..."),
+    (name: "Jan Sohnemann", affiliation: "DV Bern", email: "..."),
+    (name: "Adrian Anghel", affiliation: "Finnofleet", email: "..."),
+    (name: "Jakob Albrecht", affiliation: "Transgourmet", email: "..."),
+    (name: "Giovanna Beier", affiliation: "Bundesverwaltung", email: "..."),
   ),
-  eingereicht-von: "Soucoupe",   // ändert sich pro abgegebener Kopie
+  eingereicht-von: "Giovanna Beier",   // ändert sich pro abgegebener Kopie
   kompendium: true,             // false = Abgabeversion, true = persönliches Kompendium
 
 )
