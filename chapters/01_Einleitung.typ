@@ -18,22 +18,26 @@ Dadurch wird jeder Mitglied der Gruppe seinen individuellen Lernpfad festhalten 
 Die Zusammenarbeit hat Unternehmungscharakter angenommen: durch die iterative Vorgehensweise und die regelmässigen - anfangs etwas erzwungene Übungen - musste ein gemeinsamer Nenner gefunden werden und eingegrenzt werden. 
 Die Diskussionen betreffend der Schärfung der Mission /*(was macht das Unternehmen? was davon soll abgebildet werden? wo hören wir auf?) */ sowie die wöchentlichen Feedbackrunden haben nach und nach die Zusammenarbeit und die gemeinsame Unternehmensvision gefördert und gefestigt. 
 
-== Das organisatorische Rahmen
-Jarkow: "Zunächst ist der organisatorische Rahmen des Joint-Ventures zu definieren."
-
-#frage([Müssen wir hier über das Operating Model schreiben? oder erst sptäer - dafür listen wir unsere Unternehmen und ihre Spezialitäten?])
-
-
-#include "02_Mitglieder.typ"
-
-
 == Bemerkung zu den visuellen Call-outs
-Immer wieder mussten sich die vier Gesellen über etwas einigen oder zwischen mehrere Optionen wählen - oder aber sind mehr oder weniger kurz falsch abgebogen. Diese Momente sind ein wichtiger Teil der gemeinsamen Arbeit und sind entsprechend hervorgehoben: 
+Immer wieder mussten sich die vier Gesellen über etwas einigen oder zwischen mehrere Optionen wählen - oder aber sind mehr oder weniger kurz falsch abgebogen. 
+Diese Momente sind ein wichtiger Teil der gemeinsamen Arbeit und sind entsprechend hervorgehoben: 
 #design-entscheid([Für die Weiterentwicklung wichtige Entscheidungen sind diesem Block entsprechend graphisch wiedergeben und festgehalten. ])
 
 #stolperstein([Konzept- und Gedankenfehler, die wir während der Arbeit begangen haben, sind diesem Block entsprechend graphisch wiedergeben und festgehalten.])
 
 
 /*Die zweigeteilte Struktur spiegelt den Schwerpunkt der BFH auf den Praxis-Transfer wider: die Fähigkeit, theoretische Modelle in realen organisationalen Kontexten zu verankern und diesen Transfer kritisch zu beurteilen.*/
+
+== Das organisatorische Rahmen
+Jarkow: "Zunächst ist der organisatorische Rahmen des Joint-Ventures zu definieren."
+
+#frage([Müssen wir hier über das Operating Model schreiben? oder erst sptäer - dafür listen wir unsere Unternehmen und ihre Spezialitäten?
+Vorschlag: wir übernehmen eine Zusammenfassung aus der Vorstellung des eingenen Unternehmens - das war die erste Übung. ])
+
+
+#include "02_Mitglieder.typ"
+
+
+
 
 
