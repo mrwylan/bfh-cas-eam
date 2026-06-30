@@ -3,7 +3,8 @@
 
 //= Die Kollaborationsphase: Outside-In-Mapping
 
-= Die Reise beginnt: die Customer Journey und Phasenmodell
+= Die Reise beginnt: die Customer Journey
+Customer Journey und Persona - Fester Stand in Outside-In-Fokus 
 In diesem Kapitel wird die Customer Journey erklärt - und wie wir daraus ein Phasenmodell skizziert haben, welches am Kundenerlebnis entlang entstanden ist.
 #todo-action([Zitatintegrieren: @Spichiger2026GFbUA, S. 52 - Start mit der Geschichte]) 
 
@@ -54,3 +55,153 @@ Dies, um der Endkundin konkreter und besser vorstellbar zu gestalten - wodurch s
     )
   ]
 ) <persona-amira>
+
+== Exkurs: das die Phasen Customer Journey
+#todo-action([Jakob: kannst Du hier Literatur / Verweise und dieses Skelett etwas ausbauen?])
+
+Bei der Modellierung der Customer Journey haben wir bemerkt, dass Amira verschiedene Phasen durchgegangen ist. Diese Phasen haben wir nach ihrer Wahrnehmung und nach der Veränderung ihrer Emotionen geschnitten - entlang des Erfolgs ihrer Reise auf dem Portal.  
+- *Orientierung:* Amira findet die Webseite von Gastrostart und informiert sich über die angebotenen Diensten. 
+- *Registrierung:* Amira meldet sich bei Gastrostart an, um von dessen Diensten zu profitieren. 
+- *Unternehmensgründung:* Amira nutzt Gastrostart, um ihr Catering-Unternehmen zu gründen und anzumelden. 
+- *Beantragung der Betriebsbewilligung:* Amira nutzt Gastrostart, um die Betriebsbewilligung für Unternehmen zu beantragen. 
+- *Finanzierung:* über Gastrostart kann Amira einen Finanzierung für die ersten Anschaffungen für ihr Catering erhalten. 
+- *Kunde bei Transgourmet:* über Gastrostart kann Amira ebenfalls ein Kundenkonto bei Transgourmet eröffen - und ihre erste Bestellung absetzen. 
+
+#todo-action([Appunti: 
+wir lassen die TAbelle CJ weg - dafür gibt es die Phasen
+es sollen gewisse punkte im phasenmodell 
+
+Brücke zu den Phasen 
+- CJ basiert auf eine Theorie 
+- die Persoa hat ihre Wahrnehmung  
+- die Phasen sind auch schon in der Default-View grob sichtbar ])
+
+
+Jede Phase wurde in einzelne Touchpoints zerlegt, die festhalten, was Amira tut, mit welchem System sie interagiert, in welchem emotionalen Zustand sie sich befindet und wo die aktuelle oder Ziel-Architektur Reibung oder Chancen erzeugt.
+@fig-journey-map zeigt die konsolidierte Journey Map über alle fünf Phasen.
+
+#todo-action([@ Jakob: bitte Tabelle an @sec-amira-und-ihre-geschichte anpassen. Insbesondere eid Login rausputzen :-) ])
+
+#figure(
+  caption: [Customer Journey Map: Amira auf GastroStart],
+  block(width: 100%, breakable: true)[
+    #set text(size: 7.5pt)
+    #table(
+      columns: (2.3cm, 2.1cm, 2.3cm, 2.3cm, 1.2cm, 2.4cm, 2.4cm),
+      inset: 5pt,
+      stroke: 0.4pt,
+      fill: (x, y) => if y == 0 { luma(210) } else if calc.odd(y) { luma(248) } else { white },
+      align: (left, left, left, left, center, left, left),
+
+      [*Phase*], [*Aktion*], [*Touchpoint*], [*Gedanke / Bedürfnis*], [*Emo.*], [*Pain Point*], [*Chance*],
+
+      [*1. Initiale \ Orientierung*],
+      [Sucht "Gastronomie gründen Schweiz"; wählt Kanton Bern, Betriebstyp Catering],
+      [Suchmaschine → Landingpage; Kantonsauswahl],
+      ["Deckt das speziell meinen Kanton ab?"],
+      [↓ −1],
+      [Anforderungen variieren je Kanton; keine digitale Differenzierung zwischen Kantonen],
+      [Kantonsbewusstes Onboarding: dynamische Anforderungsliste je Kanton × Betriebstyp],
+
+      [*2. Registrierung*],
+      [Erstellt Konto per eID; füllt Gründungsprofil mit Kanton und Gemeinde aus],
+      [eID-Login (Bundeskanzlei EIAM); Profil-Wizard (DV Bern)],
+      ["Warum brauche ich eine eID? Ich habe noch keine."],
+      [→ 0],
+      [eID nicht flächendeckend verbreitet; kein Fallback für Nutzende ohne eID],
+      [Progressive Identitätsprüfung; partielles Profil ohne eID zulassen],
+
+      [*3. Betriebs- \ bewilligung*],
+      [Arbeitet die Bewilligungs-Checkliste ab; reicht den kantonalen Antrag ein],
+      [GastroStart-Wizard (DV Bern); Behörden-API (Bundeskanzlei); kantonale Behördensysteme],
+      ["Welche Kantonsregeln gelten? Wie lange dauert das?"],
+      [↓↓ −2],
+      [Kantonale Systeme haben heterogene Digitalisierungsgrade; einige verlangen physische Einreichung. _Line of Failure:_ analoger kantonaler Prozess unterbricht die digitale Journey],
+      [Integrierter kantonsspezifischer Bewilligungs-Guide; Status-Tracking; expliziter Fallback auf Papier, wo keine API verfügbar ist],
+
+      [*4. Finanzierung*],
+      [Wählt Bankpartner; Bonitätsprüfung läuft im Hintergrund; erhält IBAN],
+      [Bankauswahl-UI; FINNOFLEET-Bonitäts-API; IBAN-Dashboard],
+      ["Was, wenn ich abgelehnt werde? Erfahre ich, warum?"],
+      [↓ −1],
+      [Kreditentscheid ohne Begründung zurückgegeben; keine Verlinkung zu alternativen CH-Förderprogrammen],
+      [Transparentes Scoring-Feedback; vorausgefüllte Vorlagen für CH-Förderprogramme],
+
+      [*5. Erster \ Vertrag*],
+      [Eröffnet Transgourmet-Konto über Portal; durchsucht Katalog; gibt erste Bestellung auf],
+      [Transgourmet-Katalog-API; Bestell-Workflow (DV Bern); Bestellbestätigung],
+      ["Sind die Neukundenkonditionen konkurrenzfähig?"],
+      [↑↑ +2],
+      [Neukunden-Preisgestaltung weniger günstig; Lieferantenvertrag verlangt allenfalls physische Unterschrift],
+      [Ausgehandelte Onboarding-Konditionen für vom Portal vermittelte Gründende; digitale Vertragsunterzeichnung],
+    )
+  ]
+) <fig-journey-map>
+
+#frage([@ Jakob: möchtest du dieses Abschnitt behalten? ])
+Die emotionale Kurve über die Journey hinweg offenbart zwei strukturell bedeutsame Punkte.
+Phase 3 (Betriebsbewilligung) markiert mit −2 die tiefste Stimmung, getrieben nicht durch ein Versagen im Prozessdesign, sondern durch den heterogenen Digitalisierungsgrad der kantonalen Behördensysteme – eine architektonische Einschränkung ausserhalb der direkten Kontrolle der Plattform.
+Phase 5 (Erster Vertrag) erreicht mit +2 den Höhepunkt, doch der Übergang vom digitalen Portal zu einem physischen Lieferantenvertrag stellt eine verbleibende analoge Lücke dar, die die Ziel-Architektur adressieren muss @stickdorn2011.
+
+#design-entscheid([andere CJ Ideen, wie wir analysiert und verworfen haben: 
+- B2B: onboarding Business-Kunde 
+- B2Startup: Marktpotential-Check vor Unternehmensgründung])
+
+
+
+/*== Pain Points und Value Drivers <sec-pain-points>
+Die Journey-Mapping-Übung legte strukturelle Engpässe offen, an denen sich die Kundenerfahrung aufgrund grundlegender Systemlimitierungen statt aufgrund von Fehlern im Prozessdesign verschlechtert.
+Diese Unterscheidung ist architektonisch bedeutsam: Prozessfehler lassen sich durch Schulung und Governance beheben, während systembedingte Reibung eine bewusste architektonische Intervention erfordert @temkin2010.
+
+*1. Regulatorische Fragmentierung (Phase 3, Stimmung −2)*
+
+Administrative Anforderungen variieren je Kanton und sind über digitale Kanäle teilweise nicht zugänglich.
+Von den 18 über die Journey identifizierten Business Objects (siehe @sec-business-objects) sind sechs hybrid und zwei bleiben vollständig analog – beide konzentriert in Phase 3.
+Die Grundursache ist nicht fehlende Regulierung, sondern fehlende API: Kantonale Systeme reichen von vollständig digital (z.~B. Zürich, Basel-Stadt) bis ausschliesslich analog (z.~B. Wallis), ohne föderale Konsolidierungsschicht.
+Das erzeugt eine _Line of Failure_ – einen Punkt, an dem die digitale Journey strukturell nicht ohne manuellen Eingriff fortgesetzt werden kann.
+
+*2. Barriere der Identitätsprüfung (Phase 2, Stimmung 0)*
+
+Die obligatorische eID-Anforderung setzt eine Infrastruktur voraus, die in der Schweiz noch nicht flächendeckend verbreitet ist.
+Gründende ohne eID stossen bereits bei der ersten substanziellen Interaktion mit der Plattform auf eine Registrierungsbarriere.
+
+*3. Intransparenz der Finanzierung (Phase 4, Stimmung −1)*
+
+Amira hat keinen Einblick in die Logik des Credit Scorings und erhält keine umsetzbare Orientierung, falls die Prüfung ein ungünstiges Ergebnis liefert.
+Die Capability-Lücke liegt nicht in der Prüfung selbst, sondern in der Erklärungsschnittstelle zwischen FINNOFLEETs Scoring-Modell und der GastroStart-User-Experience.
+
+*4. Verbleibende analoge Touchpoints (Phase 5, Stimmungslücke)*
+
+Der Lieferantenvertrag mit Transgourmet verlangt allenfalls eine physische Unterschrift und bricht die vollständig digitale Journey in ihrer letzten und ansonsten positivsten Phase.
+
+#figure(
+  caption: [Pain Points und architektonische Value Drivers],
+  block(width: 100%)[
+    #set text(size: 9pt)
+    #table(
+      columns: (3.2cm, 3.5cm, 1fr),
+      inset: 7pt,
+      stroke: 0.4pt,
+      fill: (x, y) => if y == 0 { luma(210) } else if calc.odd(y) { luma(248) } else { white },
+
+      [*Pain Point*], [*Value Driver*], [*Architektonische Antwort*],
+
+      [Regulatorische Fragmentierung],
+      [Konsolidierte, kantonsbewusste Bewilligungs-Guidance],
+      [Regelmatrix Kanton × Betriebstyp, gepflegt von DV Bern; expliziter Fallback-Prozess für analoge Kantone],
+
+      [Barriere der Identitätsprüfung],
+      [Progressives Onboarding ohne harte eID-Abhängigkeit],
+      [Gestufte Identitätsprüfung; eID bei der Registrierung optional, erst bei der Bewilligungseinreichung obligatorisch],
+
+      [Intransparenz der Finanzierung],
+      [Transparente, erklärbare Bonitätsprüfung],
+      [UX-Schicht über der FINNOFLEET-API: Entscheidungs-Feedback in verständlicher Sprache; Links zu alternativen Förderungen],
+
+      [Analoge Vertragslücke],
+      [Vollständig digitales Lieferanten-Onboarding],
+      [Digitale Vertragsunterzeichnung, integriert in den Transgourmet-Portal-Connector],
+    )
+  ]
+) <tbl-value-drivers>
+*/

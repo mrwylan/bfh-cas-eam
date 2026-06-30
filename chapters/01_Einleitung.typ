@@ -19,9 +19,10 @@ Im Verlauf der Studienwochen hat die Zusammenarbeit Unternehmungscharakter angen
 Die Diskussionen betreffend der Schärfung der Mission /*(was macht das Unternehmen? was davon soll abgebildet werden? wo hören wir auf?) */ sowie die wöchentlichen Feedbackrunden haben nach und nach die Zusammenarbeit und die gemeinsame Unternehmensvision der vier Kollegen gefördert und gefestigt. 
 
 == Methode
-=== Struktur und Gestaltung des Artefaktes
+=== Struktur und Gestaltung des Artefaktes <sec-struktur-gestaltung-artefakt>
 Die Gestaltung der Gruppenarbeit folgt dem Windschatten der Vorlesungen und Übungen. 
-+ Outside-In
++ Customer Journey - in Anlehnung an den Vorschlag "Start mit der Geschichte" von @Spichiger2026GFbUA 
++ Erarbeitung des Resource Independent Model (RIM) - Dematerialisierungx
 + vom Abstrakten zum Konkreten 
 + Dematerialisierung 
 + Rematerialisierung
