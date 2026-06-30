@@ -19,7 +19,7 @@ Sie landet bei “Gastrostart” und erfährt in der kurzen Einführung auf der 
 Sie ist erleichtert und registriert sich. 
 
 #design-entscheid[
-  Gastrostart bietet auch Dienstleistungen und Funktionalitäten für die Unterstützung des Betriebes eines Gastrounternehmens - unter Anderem Funktionalitäten für die Überwachung von Zahlungsfälligkeiten und ein Einkaufsplanungsmodul. Gemeinsam haben wir uns entschieden, nur das Onboarding von Amira abzubilden, da sonst das Szenario zu gross geworden wäre.]
+  Gastrostart bietet auch Dienstleistungen und Funktionalitäten für die Unterstützung des Betriebes eines Gastrounternehmens - unter Anderem Funktionalitäten für die Überwachung von Zahlungsfälligkeiten und ein Einkaufsplanungsmodul. Auch kann Gastrostart Unternehmensliquidationen abweickeln. Gemeinsam haben wir uns entschieden, nur das Onboarding von Amira abzubilden, da sonst das Szenario zu gross geworden wäre.]
 
 == Exkurs: die Persona von Amira als Verankerung in die Outside-in-View
 Aufbauend auf der im Abschnitt #ref(<sec-amira-und-ihre-geschichte>, supplement: none) beschriebene Customer Journey wurde Amiras Persona entwickelt. 

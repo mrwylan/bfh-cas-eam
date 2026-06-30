@@ -6,6 +6,12 @@ Dieses Teil der Arbeit bildet der Kern der Überlegungen der Gruppe. Oft mussten
 Die Verfolgung der durch die Übungen vorgegebene Arbeitsschritte haben uns bis zur höchtste Abstraktionsstufe unseres Unternehmens geführt. 
 In nachfolgenden Kapiteln zeigen wir die wichtigsten Etappen unseres gemeinsamen Wegs. 
 
+Appunti: 
+Hier wird kurz die Entwicklugn skizziert 
+- von den identifzierten objetken zu den Porzessen, zu den Fähigkeiten 
+- immer wieder wurde der Einfluss der Teilnehmer der Joint Venture zur Customer Journey 
+- in der Gruppe immer geschaut, ob die einzelne erarbeitete Modelle zueinander passen - oder ob korrekturen 
+
 #frage([1. struktur: 1 Schritt pro Übung, dann 4x die Phasen, jedes mal mit Screenshot?])
 
 pro Ebene - nur da was geändert hat 
@@ -20,7 +26,7 @@ Wir verlassen das Tagebuch-Aufbau - und gehen hin zu einem logischen, fliessende
 
 == Identifikation der Geschäftsobjekte
 
-Diese Übung hat die Gruppe gezwungen, sich mit der Struktur von Amira's Customer Journey auseinanderzusetzen.
+Um Geschäftsobjekte zu identifiziren hat sich die Gruppe mit der Struktur von Amira's Customer Journey ausenandergesetzt.
 Dabei liessen sich Nomen wie "Gründung", "Finanzierung", "Kundenkonto" - diese wurden als Prototypen für mögliche Geschäftsobjekte festgehalten. 
 
  #figure(
@@ -29,9 +35,49 @@ Dabei liessen sich Nomen wie "Gründung", "Finanzierung", "Kundenkonto" - diese 
 ) <fig-customer-journey-view>
 
 
+
+=== Kundenkonto (Regiestrierung)
+    - status: active/inactive
+    - properties: credentials, profile
+
+=== Unternehmen
+    - betrieb/location -  the place where we get the goods and Maria cooks
+    - process: open
+    - properties: neu, in Vorbereitung, in opening / requested, incomplete, active, rejected, cancelled 
+ 
+=== Bewilligung 
+    - properties: Unternehmen
+    - new, requested, incomplete, accepted, rejected, cancel
+ 
+=== Finanzierung
+    - status: new, requested, incomplete, accepted, rejected, cancel
+    - properties: Bonitätsprüfung, Kredit
+    
+=== Lieferantenkonto
+    - properties: Unternehmen, Transgourmet
+
+=== Gründungsvorhaben
+- status:   0 - Initiiert / 1 · Orientiert  / 2 · Registriert  / 3 · Bewilligt / 4 · Finanziert / 5 - Realisiert 
+
 #stolperstein([
   Eine anfängliche Identifikation der Geschäftsobjekt führte die Gruppe zu einer unfangreichere Liste. Physische Artefakte wie "Bewilligung", "Liefervertrag" oder "kantonales Formular" schienen uns vorerst sehr sinnvoll und notwendig. 
 ])
+
+== Events
+
+ #figure(
+  image("../assets/Customer Journey View.svg", width: 80%),
+  caption: [Archimate Modell der Customer Journey von Amira]
+) <fig-customer-journey-view>
+
+
+
+
+
+
+
+
+
 
 == Business-Object-Analyse <sec-business-objects>
 #todo-action([wir übernehmen Gründungsvorhaben + die Objetke von Adrian])
@@ -142,3 +188,17 @@ Die Schichten lesen sich wie folgt:
 - *Technology Layer*: Das Kernsystem wird von einem Application-Server (VM-Hosting) getragen und auf einem Datenbank-Server (RDBMS, zentrale Daten) gehostet.
 
 Die entscheidende architektonische Beobachtung: Der monolithische Dispo-/ERP-Kern realisiert sämtliche Geschäftsfunktionen ohne Anti-Corruption Layer (ACL) und ohne Schnitt in Self-Contained Systems (SCS) @bass2012.
+
+
+
+= Gedanken zum RSM (Goal: User Experience)
+== Ablauforganisation 
+== Rollen
+== Arbeitsplatz
+== Kanäle
+- Web 
+- Mobile first?
+== Interaktionskomponenten 
+- Human Interfaces (HMI
+- Arbeitsplatz berücksichtigen
+- Machine to Machine (MMI)
