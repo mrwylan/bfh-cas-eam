@@ -8,15 +8,15 @@ L'introduzione si focalizza sul giustificare lo studio, evidenziare la "lacuna" 
 == Zielsetzung
 
 Dieses Dokument erfüllt zwei explizite Anforderungen des BFH-CAS-Programms Enterprise Architecture Management.
-Erstens dokumentiert die Schrittweise Entwicklung einer Joint-Venture zwischen vier sehr heterogene Parteien. 
+Erstens dokumentiert es die Schrittweise Entwicklung einer Joint-Venture zwischen vier sehr heterogene Parteien. 
 Es handelt sich dabei um ein fiktives Unternehmen, welcher technische wie operative und kommerzielle Aspekte jedes Ursprungsbetretriebs vereint und einzel hervorhebt. 
 Zweitens bietete das Dokument jedem Mitglied die Möglichkeit, in individuelle (und entsprechend erkennbare) Abschnitte auf die Spezifika des eigenen Unternehmens - resp. des eigenen
 Anteils an der Joint-Venture - einzugehen. 
-Dadurch wird jeder Mitglied der Gruppe seinen individuellen Lernpfad festhalten sowie seine spezifische Vertiefung und Konklusion beisteuern.  u
+Dadurch wird jeder Mitglied der Gruppe seinen individuellen Lernpfad festhalten sowie seine spezifische Vertiefung und Konklusion beisteuern.  
 
 == Kontext - eine kleine Reise durch Mittelerde
-Die Zusammenarbeit hat Unternehmungscharakter angenommen: durch die iterative Vorgehensweise und die regelmässigen - anfangs etwas erzwungene Übungen - musste ein gemeinsamer Nenner gefunden werden und eingegrenzt werden. 
-Die Diskussionen betreffend der Schärfung der Mission /*(was macht das Unternehmen? was davon soll abgebildet werden? wo hören wir auf?) */ sowie die wöchentlichen Feedbackrunden haben nach und nach die Zusammenarbeit und die gemeinsame Unternehmensvision gefördert und gefestigt. 
+Im Verlauf der Studienwochen hat die Zusammenarbeit Unternehmungscharakter angenommen: durch die iterative Vorgehensweise und die regelmässigen - anfangs etwas erzwungene Übungen - musste ein gemeinsamer Nenner gefunden werden und eingegrenzt werden. 
+Die Diskussionen betreffend der Schärfung der Mission /*(was macht das Unternehmen? was davon soll abgebildet werden? wo hören wir auf?) */ sowie die wöchentlichen Feedbackrunden haben nach und nach die Zusammenarbeit und die gemeinsame Unternehmensvision der vier Kollegen gefördert und gefestigt. 
 
 == Methode
 === Struktur und Gestaltung des Artefaktes
@@ -28,10 +28,17 @@ Die Gestaltung der Gruppenarbeit folgt dem Windschatten der Vorlesungen und Übu
 + Kritische Hinterfragung (Übungen vom 17.06., 24.06.)
 
 === Erklärung zum Einsatz von künstlicher Intelligenz 
-*Texte:* Wenn nicht anderweitig deklariert, sind die Texte dieser Arbeit ohne Einsatz generativer künstlicher Intelligenz redigiert. 
 
-*Graphiken und Tabellen:* Um Medienbrüche bei der Integration graphischen Materials zu vermeiden, sind Tabellen und Graphiken soweit wie möglich in Markup-Code übernommen worden. 
-Wir haben künstliche Intelligenz ausschliesslich für die Formattierung eingetzt. 
+#todo-action([Anhang einfügen ])
+
+Die vorliegende Arbeit wurde unter Einsatz eines KI-gestützten Werkzeugs erstellt.
+Statt jede einzelne Textpassage separat zu annotieren, wird die durchgehend angewandte Arbeitsweise in einem Anhang offengelegt: die Texte wurden in einem interaktiven, iterativen Prozess zwischen Autoren und Sprachmodell erstellt, bei dem der jeweilige Autor steuert, prüft und verantwortet.
+
+
+
+*Hinweis zur Deklaration.*
+Die generierten Texte wurden nicht unreflektiert übernommen.
+Die Autoren haben durchgehend steuernd eingegriffen (Prompts, Korrekturen, inhaltliche Validierung) und tragen die Verantwortung für alle Aussagen und Formulierungen.
 
 === Eingesetzte Tools
 *Modellierung:* Archi - und Archimate, Draw.io und UML
@@ -56,9 +63,6 @@ Jarkow: "Zunächst ist der organisatorische Rahmen des Joint-Ventures zu definie
 
 #frage([Müssen wir hier über das Operating Model schreiben? oder erst sptäer - dafür listen wir unsere Unternehmen und ihre Spezialitäten?
 Vorschlag: wir übernehmen eine Zusammenfassung aus der Vorstellung des eingenen Unternehmens - das war die erste Übung. ])
-
-
-#include "02_Mitglieder.typ"
 
 
 

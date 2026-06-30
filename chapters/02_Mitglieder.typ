@@ -2,17 +2,17 @@
 = Die Gesellschaft
 
 == Übersicht
-Vier ungleiche Gesellen stellen sich vor. Zusammen werden sie sich auf dem Weg machen, ein gemeinsames Unternehmen zu entwerfen und zu modellieren. 
+Die vier ungleiche Gesellen stellen sich vor. Zusammen werden sie sich auf dem Weg machen, ein gemeinsames Unternehmen zu entwerfen und zu modellieren. 
 Jeder Mitglied stellt sein Unternehmen kurz vor. 
 
 
 
 == Transgourmet
-#todo-action([Jakob Albrecht's Unternehmen beschreiben])
+#todo-action([Jakob Albrecht's Unternehmen "in a Nutshell" beschreiben - Name, "Mission", Kundschaft, kurzer Abriss über die Unternehmensarchitektur])
 /*Vorstellung Transgourmet*/
 
 == DV Bern
-#todo-action([Jan Sohnemann's Ursprungsunternehmen])
+#todo-action([Jan Sohnemann's Unternehmen "in a Nutshell" beschreiben - Name, "Mission", Kundschaft, kurzer Abriss über die Unternehmensarchitektur])
 /**
  * Vorstellung DV Bern
  */
@@ -33,9 +33,19 @@ Dies Ebenen sind:
 - Bund 
 - Kantone (26 in Total)
 - Gemeinden (aktuell 2110)
-Die drei Verwaltungsebenen sind in Departemente (Bund, Kantone) oder Ressorts (Gemeinde) organisiert und nehmen viele unterschiedlichen Aufgaben wahr. 
+Die drei Verwaltungsebenen sind in Departemente (Bund, Kantone) oder Ressorts (Gemeinde) organisiert und nehmen ihren Kompetenzen entsprechend viele unterschiedlichen Aufgaben wahr. 
 Aus diesem Grund finden sich auf alle drei Ebenen eine Vielzahl von Ämter, Dienste und Stellen - eines pro Aufgabe. 
-Dies prägt nicht nur die (Weiter)Entwicklung der drei Organisationsebenen, sondern auch wie die Unternehmensarchitektur gestaltet und gelebt wird.  Jede Ebenbe ist grunsätzlich für sich unterwegs, wobei die durch gesetzliche Vorgaben, gemeinsame Prinzipien und Standardisierungsbestrebungen für etwas mehr erreichte Vereinheitlichung keine Randerscheinung in der IT Landschaft mehr darstellt. 
+  
+Dies prägt nicht nur die (Weiter)Entwicklung der drei Organisationsebenen, sondern auch wie die Unternehmensarchitektur auf jeder Ebene gestaltet und gelebt wird. 
+Obwohl jede Organisation grunsätzlich für sich unterwegs ist, tragen hierarchisch organisierte Vorgaben (Verfassungen, Gesetze, Verordnungen) dazu bei, dass die drei Ebenen harmonisch und integriert miteinander funktionieren. 
+Zusätzlich sorgen Standardisierungsbestrebungen sowie die Orientierung an gemeinsamen Grundsätzen (bspw. Nutzeroriertierung und Inklusion, Interoperabilität und Mehrfachnutzung, Digital first und Digital only) und deren Beachtung in der Unternehmensarchitektur und -entwicklung für eine kontinuerliche Verbesserung der Durchgängigkeit unter den drei Akteuren bei der Erfüllung von Diensten an jeweiligen Anspruchsgruppen.  
+
+#todo-action([Strategie Digitale Verwaltung Schweiz zitieren.
+Abrufbar unter https://www.fedlex.admin.ch/eli/fga/2024/45/de ])
+
+
+
+
 
 
 #design-entscheid([

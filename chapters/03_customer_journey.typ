@@ -3,21 +3,29 @@
 
 //= Die Kollaborationsphase: Outside-In-Mapping
 
-= Die Reise beginnt: Einigung über die Customer Journey
-Diese Customer Journey dient als Ausgangspunkt für die Modellierung des gemeinsamen Unternehmens.
-Aus ihr werden die relevanten Business Objects mit ihren Zuständen und Business Events identifiziert und in ArchiMate abgebildet.
+= Die Reise beginnt: die Customer Journey und Phasenmodell
+In diesem Kapitel wird die Customer Journey erklärt - und wie wir daraus ein Phasenmodell skizziert haben, welches am Kundenerlebnis entlang entstanden ist. 
 
-== Die Geschichte von Amira
+== Amira und ihre Geschichte
 Amira, eine 34-jährige Quereinsteigerin, will ein Catering-Unternehmen gründen. 
-Sie hat schon einen Konzept dafür. Sie Googelt “Gastronomie Schweiz gründen”. Sie hat keine Erfahrung, will nichts falsch machen und braucht Orientierung. 
-Sie wünscht sich eine Schritt für Schritt-Anleitung, sie möchte durch das Prozess der Unternehmensgründung geführt werden. 
+Sie hat schon einen Konzept dafür. 
+Sie hat keine Erfahrung, will nichts falsch machen und braucht Orientierung. 
+Sie googelt "catering aufmachen schweiz", da sie sich eine Schritt für Schritt-Anleitung wünscht.
+Sie möchte durch das Prozess der Unternehmensgründung geführt werden. 
 Bei der Suche erfährt sie, dass die Punkte Bewilligungen, Finanzierung, Ressourcenplanung und Beschaffung besonders wichtig sind. 
 Sie landet bei “Gastrostart” und erfährt in der kurzen Einführung auf der Startseite, dass dieses Portal sie bei all dem unterstützen kann. 
 Sie ist erleichtert und registriert sich. 
 
-GastroStart ist ein fiktives Portal, das Gründerinnen und Gründer im Gastgewerbe durch die zentralen Phasen der Betriebsgründung führt: von der ersten Orientierung über Registrierung, Geschäftskonzept und Betriebsbewilligung bis hin zur Finanzierung und zum ersten Lieferantenvertrag.
+#design-entscheid[
+  Gastrostart bietet auch Dienstleistungen und Funktionalitäten für die Unterstützung des Betriebes eines Gastrounternehmens - unter Anderem Funktionalitäten für die Überwachung von Zahlungsfälligkeiten und ein Einkaufsplanungsmodul. Gemeinsam haben wir uns entschieden, nur das Onboarding von Amira abzubilden, da sonst das Szenario zu gross geworden wäre.]
 
-#design-entscheid[Gastrostart bietet auch Dienstleistungen und Funktionalitäten für die Unterstützung des Betriebes eines Gastrounternehmens - unter Anderem Funktionalitäten für die Überwachung von Zahlungsfälligkeiten und ein Einkaufsplanungsmodul. Gemeinsam haben wir uns entschieden, nur das Onboarding von Amira abzubilden, da sonst das Szenario zu gross geworden wäre.]
+#todo-action([das hier woanders hinkopieren: 
+
+GastroStart ist ein fiktives Portal, das Gründerinnen und Gründer im Gastgewerbe durch die zentralen Phasen der Betriebsgründung führt: von der ersten Orientierung über Registrierung, Geschäftskonzept und Betriebsbewilligung bis hin zur Finanzierung und zum ersten Lieferantenvertrag.])
+
+==  Das Phasenmodell (Titel tbc)
+Der erste Übersetzungschritt von der Customer Journey weg und hin zur Erarbeitung der Unternehmensarchitektur von Gastrostart hat darin bestanden, 
+
 
 Appunti: 
 wir lassen die TAbelle CJ weg - dafür gibt es die Phasen
