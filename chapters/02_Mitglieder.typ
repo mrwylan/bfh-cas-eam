@@ -5,7 +5,8 @@
 Die vier ungleiche Gesellen stellen sich vor. Zusammen werden sie sich auf dem Weg machen, ein gemeinsames Unternehmen zu entwerfen und zu modellieren. 
 Jeder Mitglied stellt sein Unternehmen kurz vor. 
 
-
+== Amira's Food Affair
+#todo-action([maybe auch Amira's unternehmen erklären?])
 
 == Transgourmet
 #todo-action([Jakob Albrecht's Unternehmen "in a Nutshell" beschreiben - Name, "Mission", Kundschaft, kurzer Abriss über die Unternehmensarchitektur])

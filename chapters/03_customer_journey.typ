@@ -23,8 +23,24 @@ Sie ist erleichtert und registriert sich.
 
 GastroStart ist ein fiktives Portal, das Gründerinnen und Gründer im Gastgewerbe durch die zentralen Phasen der Betriebsgründung führt: von der ersten Orientierung über Registrierung, Geschäftskonzept und Betriebsbewilligung bis hin zur Finanzierung und zum ersten Lieferantenvertrag.])
 
-==  Das Phasenmodell (Titel tbc)
-Der erste Übersetzungschritt von der Customer Journey weg und hin zur Erarbeitung der Unternehmensarchitektur von Gastrostart hat darin bestanden, 
+== Die Modellierung der Customer Journey in Archimate-Notation
+
+Diese Übung hat die Gruppe gezwungen, die Struktur von Amira's Cusotmer Journey 
+
+
+ #figure(
+  image("../assets/Customer Journey View.svg", width: 80%),
+  caption: [Archimate Modell der Customer Journey von Amira]
+) <fig-customer-journey-view>
+
+== Das Phasenmodell (Titel tbc)
+Bei der Modellierung der Customer Journey haben wir bemerkt, dass Amira folgende Phase durchgegangen ist: 
+- *Orientierung:* Amira findet die Webseite von Gastrostart und informiert sich über die angebotenen Diensten. 
+- *Registrierung:* Amira meldet sich bei Gastrostart an, um von dessen Diensten zu profitieren. 
+- *Unternehmensgründung:* Amira nutzt Gastrostart, um ihr Catering-Unternehmen zu gründen und anzumelden. 
+- *Beantragung der Betriebsbewilligung:* Amira nutzt Gastrostart, um die Betriebsbewilligung für Unternehmen zu beantragen. 
+- *Finanzierung:* über Gastrostart kann Amira einen Finanzierung für die ersten Anschaffungen für ihr Catering erhalten. 
+- *Kunde bei Transgourmet:* über Gastrostart kann Amira ebenfalls ein Kundenkonto bei Transgourmet eröffen - und ihre erste Bestellung absetzen. 
 
 
 Appunti: 
