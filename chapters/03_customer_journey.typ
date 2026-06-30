@@ -19,13 +19,11 @@ Sie ist erleichtert und registriert sich.
 #design-entscheid[
   Gastrostart bietet auch Dienstleistungen und Funktionalitäten für die Unterstützung des Betriebes eines Gastrounternehmens - unter Anderem Funktionalitäten für die Überwachung von Zahlungsfälligkeiten und ein Einkaufsplanungsmodul. Gemeinsam haben wir uns entschieden, nur das Onboarding von Amira abzubilden, da sonst das Szenario zu gross geworden wäre.]
 
-#todo-action([das hier woanders hinkopieren: 
 
-GastroStart ist ein fiktives Portal, das Gründerinnen und Gründer im Gastgewerbe durch die zentralen Phasen der Betriebsgründung führt: von der ersten Orientierung über Registrierung, Geschäftskonzept und Betriebsbewilligung bis hin zur Finanzierung und zum ersten Lieferantenvertrag.])
 
 == Die Modellierung der Customer Journey in Archimate-Notation
 
-Diese Übung hat die Gruppe gezwungen, die Struktur von Amira's Cusotmer Journey 
+Diese Übung hat die Gruppe gezwungen, sich mit der Struktur von Amira's Customer Journey auseinanderzusetzen. 
 
 
  #figure(

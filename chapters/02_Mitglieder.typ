@@ -1,24 +1,21 @@
 #import "../markers.typ": theorie-anker, design-entscheid, stolperstein, todo-action, frage;
-= Die Gesellschaft
+= Die Gruppe stellt sich vor
 
-== Übersicht
+== Die Weggefährten
 Die vier ungleiche Gesellen stellen sich vor. Zusammen werden sie sich auf dem Weg machen, ein gemeinsames Unternehmen zu entwerfen und zu modellieren. 
 Jeder Mitglied stellt sein Unternehmen kurz vor. 
 
-== Amira's Food Affair
-#todo-action([maybe auch Amira's unternehmen erklären?])
-
-== Transgourmet
+=== Transgourmet
 #todo-action([Jakob Albrecht's Unternehmen "in a Nutshell" beschreiben - Name, "Mission", Kundschaft, kurzer Abriss über die Unternehmensarchitektur])
 /*Vorstellung Transgourmet*/
 
-== DV Bern
+=== DV Bern
 #todo-action([Jan Sohnemann's Unternehmen "in a Nutshell" beschreiben - Name, "Mission", Kundschaft, kurzer Abriss über die Unternehmensarchitektur])
 /**
  * Vorstellung DV Bern
  */
 
-== FINNOFLEET
+=== FINNOFLEET
 
 FINNOFLEET Schweiz (#link("https://finnofleet.ch/ch-de/")[finnofleet.ch]) ist ein Softwareunternehmen für die Finanzbranche mit Hauptsitz in Sursee sowie weiteren Standorten in Zürich und Bern. 
 Rund 100 Mitarbeitende betreuen über 80 Kundinnen und Kunden aus dem Banken-, Versicherungs- und Pensionskassenumfeld.
@@ -28,7 +25,7 @@ Das Produktportfolio umfasst entsprechend *ELA Kredit*, *WinCredit*, Lösungen f
 
 FINNOFLEET Schweiz ist Teil der FINNOFLEET-Gruppe mit über 450 Mitarbeitenden in Zentraleuropa, die entlang der gesamten Kreditwertschöpfungskette tätig ist.
 
-== Öffentliche Verwaltung 
+=== Öffentliche Verwaltung 
 Die Schwiez ist ein Bundesstaat, welches drei politische Ebenen - und somit drei Ebenen der öffentlichen Verwaltung kennt. 
 Dies Ebenen sind: 
 - Bund 
@@ -45,14 +42,16 @@ Zusätzlich sorgen Standardisierungsbestrebungen sowie die Orientierung an gemei
 Abrufbar unter https://www.fedlex.admin.ch/eli/fga/2024/45/de ])
 
 
-
-
-
-
 #design-entscheid([
 Die Berührungspunkte der Bundeskanzlei - wo Giovanna Beier arbeitet - mit den Unternehmen der anderen Gruppenmitglider wurden für nicht ausreichend bewertet. 
 Aus diesem Grund vertritt Giovanna Beier die jeweilige Ebene der öffentlichen Verwaltung, mit der sich eine Interaktion ergibt, ganz nach dem Motto "wieso einfach wenn es auch kompliziert geht".])
 
-/**
- * Vorstellung Schweizer öffenttliche Verwaltung
- */
+== Zwei imaginäre Freunde
+
+=== Amira's Food Affair
+#todo-action([maybe auch Amira's unternehmen erklären?])
+
+=== Gastrostart 
+#todo-action([gastrostart beschreiben])
+
+GastroStart ist ein fiktives Portal, das Gründerinnen und Gründer im Gastgewerbe durch die zentralen Phasen der Betriebsgründung führt: von der ersten Orientierung über Registrierung, Geschäftskonzept und Betriebsbewilligung bis hin zur Finanzierung und zum ersten Lieferantenvertrag.
