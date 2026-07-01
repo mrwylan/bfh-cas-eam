@@ -1,16 +1,16 @@
-#import "../markers.typ": theorie-anker, design-entscheid, stolperstein, todo-action, frage;
+#import "../markers.typ": theorie-anker, design-entscheid, stolperstein, frage, todo-action, fuehrung
 = Die Gruppe stellt sich vor
 
 == Die Weggefährten
-Die vier ungleiche Gesellen stellen sich vor. Zusammen werden sie sich auf dem Weg machen, ein gemeinsames Unternehmen zu entwerfen und zu modellieren. 
+Die vier ungleiche Gesellen stellen sich vor. Zusammen werden sie sich auf den Weg machen, ein gemeinsames Unternehmen zu entwerfen und zu modellieren. 
 Jeder Mitglied stellt sein Unternehmen kurz vor. 
 
 === Transgourmet
-#todo-action([Jakob Albrecht's Unternehmen "in a Nutshell" beschreiben - Name, "Mission", Kundschaft, kurzer Abriss über die Unternehmensarchitektur])
+#todo-action([Jakob Albrecht's Unternehmen"in a Nutshell" beschreiben - Name, "Mission", Kundschaft, kurzer Abriss über die Unternehmensarchitektur])
 /*Vorstellung Transgourmet*/
 
 === DV Bern
-#todo-action([Jan Sohnemann's Unternehmen "in a Nutshell" beschreiben - Name, "Mission", Kundschaft, kurzer Abriss über die Unternehmensarchitektur])
+#todo-action([Jan Sohnemann's Unternehmen"in a Nutshell" beschreiben - Name, "Mission", Kundschaft, kurzer Abriss über die Unternehmensarchitektur])
 /**
  * Vorstellung DV Bern
  */
@@ -45,6 +45,7 @@ Abrufbar unter https://www.fedlex.admin.ch/eli/fga/2024/45/de ])
 #design-entscheid([
 Die Berührungspunkte der Bundeskanzlei - wo Giovanna Beier arbeitet - mit den Unternehmen der anderen Gruppenmitglider wurden für nicht ausreichend bewertet. 
 Aus diesem Grund vertritt Giovanna Beier die jeweilige Ebene der öffentlichen Verwaltung, mit der sich eine Interaktion ergibt, ganz nach dem Motto "wieso einfach wenn es auch kompliziert geht".])
+#fuehrung([])
 
 == Zwei imaginäre Freunde
 

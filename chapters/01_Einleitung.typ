@@ -1,4 +1,5 @@
-#import "../markers.typ": theorie-anker, design-entscheid, stolperstein, frage, todo-action
+#import "../markers.typ": theorie-anker, design-entscheid, stolperstein, frage, todo-action, fuehrung
+
 /*L'introduzione presenta lo scenario e le motivazioni, ma non rivela i risultati dettagliati
 L'introduzione è molto più lunga ed estesa, occupando diverse pagine a seconda della complessità del lavoro.
 L'introduzione si focalizza sul giustificare lo studio, evidenziare la "lacuna" nella letteratura (gap) e delineare gli obiettivi.*/
@@ -21,7 +22,7 @@ Die Diskussionen betreffend der Schärfung der Mission /*(was macht das Unterneh
 == Methode
 === Struktur und Gestaltung des Artefaktes <sec-struktur-gestaltung-artefakt>
 Die Gestaltung der Gruppenarbeit folgt dem Windschatten der Vorlesungen und Übungen. 
-+ Customer Journey - in Anlehnung an den Vorschlag "Start mit der Geschichte" von @Spichiger2026GFbUA 
++ Customer Journey - in Anlehnung an den Vorschlag "Start mit der Geschichte" von (Zitat Spichiger2026GFbUA)
 + Erarbeitung des Resource Independent Model (RIM) - Dematerialisierungx
 + vom Abstrakten zum Konkreten 
 + Dematerialisierung 
@@ -31,6 +32,9 @@ Die Gestaltung der Gruppenarbeit folgt dem Windschatten der Vorlesungen und Übu
 === Erklärung zum Einsatz von künstlicher Intelligenz 
 
 #todo-action([Anhang einfügen ])
+
+
+
 
 Die vorliegende Arbeit wurde unter Einsatz eines KI-gestützten Werkzeugs erstellt.
 Statt jede einzelne Textpassage separat zu annotieren, wird die durchgehend angewandte Arbeitsweise in einem Anhang offengelegt: die Texte wurden in einem interaktiven, iterativen Prozess zwischen Autoren und Sprachmodell erstellt, bei dem der jeweilige Autor steuert, prüft und verantwortet.

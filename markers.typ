@@ -17,6 +17,7 @@
 #let farbe-entscheid = rgb("#16a34a")
 #let farbe-stolperstein = rgb("#dc2626")
 #let farbe-frage = rgb("#f59e0b")
+#let farbe-fuehrung = rgb("#2563eb")
 
 #let marker-box(titel, farbe, inhalt, icon: none) = block(
   width: 100%,
@@ -43,9 +44,11 @@
   }
 }
 
-#let design-entscheid(inhalt) = marker-box("Design-Entscheid", farbe-entscheid, inhalt, icon: "icon-zauberer.svg")
+#let design-entscheid(inhalt) = marker-box("Design-Entscheid", farbe-entscheid, inhalt, icon: "icon-teamwork.svg")
 
 #let stolperstein(inhalt) = marker-box("Stolperstein", farbe-stolperstein, inhalt, icon: "icon-stein.svg")
+
+#let fuehrung(inhalt) = marker-box("Führung", farbe-fuehrung, inhalt, icon: "icon-zauberer.svg")
 
 #let frage(inhalt) = context {
   if kompendium-modus.get() {
