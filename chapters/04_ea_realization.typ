@@ -65,8 +65,10 @@ Dabei liessen sich Nomen wie "Gründung", "Finanzierung", "Kundenkonto" - diese 
 
 == Events
 
+
+
  #figure(
-  image("../assets/Customer Journey View.svg", width: 80%),
+  image("../assets/GrpA_GP_GastroStart_Albrecht_Jakob.svg", width: 80%),
   caption: [Archimate Modell der Customer Journey von Amira]
 ) <fig-customer-journey-view>
 
