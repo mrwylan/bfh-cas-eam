@@ -80,7 +80,7 @@ Brücke zu den Phasen
 Jede Phase wurde in einzelne Touchpoints zerlegt, die festhalten, was Amira tut, mit welchem System sie interagiert, in welchem emotionalen Zustand sie sich befindet und wo die aktuelle oder Ziel-Architektur Reibung oder Chancen erzeugt.
 @fig-journey-map zeigt die konsolidierte Journey Map über alle fünf Phasen.
 
-#todo-action([@ Jakob: bitte Tabelle an @sec-amira-und-ihre-geschichte anpassen. Insbesondere eid Login rausputzen :-) ])
+#todo-action([Jakob: bitte Tabelle an @sec-amira-und-ihre-geschichte anpassen. Insbesondere eid Login rausputzen :-) ])
 
 #figure(
   caption: [Customer Journey Map: Amira auf GastroStart],
@@ -137,8 +137,8 @@ Jede Phase wurde in einzelne Touchpoints zerlegt, die festhalten, was Amira tut,
     )
   ]
 ) <fig-journey-map>
-
-#frage([@ Jakob: möchtest du dieses Abschnitt behalten? ])
+ 
+#frage([Jakob: möchtest du dieses Abschnitt behalten? ])
 Die emotionale Kurve über die Journey hinweg offenbart zwei strukturell bedeutsame Punkte.
 Phase 3 (Betriebsbewilligung) markiert mit −2 die tiefste Stimmung, getrieben nicht durch ein Versagen im Prozessdesign, sondern durch den heterogenen Digitalisierungsgrad der kantonalen Behördensysteme – eine architektonische Einschränkung ausserhalb der direkten Kontrolle der Plattform.
 Phase 5 (Erster Vertrag) erreicht mit +2 den Höhepunkt, doch der Übergang vom digitalen Portal zu einem physischen Lieferantenvertrag stellt eine verbleibende analoge Lücke dar, die die Ziel-Architektur adressieren muss @stickdorn2011.
