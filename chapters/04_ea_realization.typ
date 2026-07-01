@@ -1,5 +1,5 @@
 // ── Chapter 4 : EA Realization  ───────────────────
-#import "../markers.typ": theorie-anker, design-entscheid, stolperstein, frage, todo-action;
+#import "../markers.typ": theorie-anker, design-entscheid, stolperstein, frage, todo-action, fuehrung
 = Die Realisierung des Resource Independent Model
 
 Dieses Teil der Arbeit bildet der Kern der Überlegungen der Gruppe. Oft mussten wir an das vorgegebene Pfad fest glauben. 

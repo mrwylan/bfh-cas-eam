@@ -48,3 +48,4 @@
 
 // ── References ──────────────────────────────────────────────────────────────
 #bibliography("refs.bib", style: "ieee", title: "Literaturverzeichnis")
+//dieser Styl wird im GFbUA benutzt: #bibliography("refs.bib", style: "apa", title: "Literaturverzeichnis")

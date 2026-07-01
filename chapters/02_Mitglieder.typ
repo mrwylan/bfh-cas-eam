@@ -6,11 +6,11 @@ Die vier ungleiche Gesellen stellen sich vor. Zusammen werden sie sich auf den W
 Jeder Mitglied stellt sein Unternehmen kurz vor. 
 
 === Transgourmet
-#todo-action([Jakob Albrecht's Unternehmen"in a Nutshell" beschreiben - Name, "Mission", Kundschaft, kurzer Abriss über die Unternehmensarchitektur])
+#todo-action([Jakob Albrechts Unternehmen"in a Nutshell" beschreiben - Name, "Mission", Kundschaft, kurzer Abriss über die Unternehmensarchitektur])
 /*Vorstellung Transgourmet*/
 
 === DV Bern
-#todo-action([Jan Sohnemann's Unternehmen"in a Nutshell" beschreiben - Name, "Mission", Kundschaft, kurzer Abriss über die Unternehmensarchitektur])
+#todo-action([Jan Sohnemanns Unternehmen"in a Nutshell" beschreiben - Name, "Mission", Kundschaft, kurzer Abriss über die Unternehmensarchitektur])
 /**
  * Vorstellung DV Bern
  */
@@ -26,17 +26,17 @@ Das Produktportfolio umfasst entsprechend *ELA Kredit*, *WinCredit*, Lösungen f
 FINNOFLEET Schweiz ist Teil der FINNOFLEET-Gruppe mit über 450 Mitarbeitenden in Zentraleuropa, die entlang der gesamten Kreditwertschöpfungskette tätig ist.
 
 === Öffentliche Verwaltung 
-Die Schwiez ist ein Bundesstaat, welches drei politische Ebenen - und somit drei Ebenen der öffentlichen Verwaltung kennt. 
-Dies Ebenen sind: 
+Die Schweiz ist ein Bundesstaat, welches drei politische Ebenen - und somit drei Ebenen der öffentlichen Verwaltung kennt. 
+Diese Ebenen sind: 
 - Bund 
 - Kantone (26 in Total)
 - Gemeinden (aktuell 2110)
-Die drei Verwaltungsebenen sind in Departemente (Bund, Kantone) oder Ressorts (Gemeinde) organisiert und nehmen ihren Kompetenzen entsprechend viele unterschiedlichen Aufgaben wahr. 
-Aus diesem Grund finden sich auf alle drei Ebenen eine Vielzahl von Ämter, Dienste und Stellen - eines pro Aufgabe. 
-  
-Dies prägt nicht nur die (Weiter)Entwicklung der drei Organisationsebenen, sondern auch wie die Unternehmensarchitektur auf jeder Ebene gestaltet und gelebt wird. 
-Obwohl jede Organisation grunsätzlich für sich unterwegs ist, tragen hierarchisch organisierte Vorgaben (Verfassungen, Gesetze, Verordnungen) dazu bei, dass die drei Ebenen harmonisch und integriert miteinander funktionieren. 
-Zusätzlich sorgen Standardisierungsbestrebungen sowie die Orientierung an gemeinsamen Grundsätzen (bspw. Nutzeroriertierung und Inklusion, Interoperabilität und Mehrfachnutzung, Digital first und Digital only) und deren Beachtung in der Unternehmensarchitektur und -entwicklung für eine kontinuerliche Verbesserung der Durchgängigkeit unter den drei Akteuren bei der Erfüllung von Diensten an jeweiligen Anspruchsgruppen.  
+Die drei Verwaltungsebenen ihren Kompetenzen entsprechend viele unterschiedlichen Aufgaben wahr. 
+Die Gesetzgebung verteilt diese Aufgaben auch über mehrere Ebenen an eine Vielzahl von Ämtern, Dienste und Stellen. 
+Diese Komplexität prägt nicht nur die Weiter-Entwicklung der drei Organisationsebenen, sondern auch wie die Unternehmensarchitektur jeder Aufgabe auf jeder Ebene gestaltet und gelebt wird. 
+
+Hierarchisch organisierte Vorgaben (Verfassungen, Gesetze, Verordnungen) dazu bei, dass die drei Ebenen meistens harmonisch und integriert miteinander funktionieren. 
+Zusätzlich sorgen Standardisierungsbestrebungen sowie die Orientierung an gemeinsamen Grundsätzen (bspw. Nutzerorientierung und Inklusion, Interoperabilität und Mehrfachnutzung, Digital first und Digital only) und deren Beachtung in der Unternehmensarchitektur und -entwicklung für eine kontinuierliche Verbesserung der Durchgängigkeit unter den drei Akteuren bei der Erfüllung von Diensten an jeweiligen Anspruchsgruppen.
 
 #todo-action([Strategie Digitale Verwaltung Schweiz zitieren.
 Abrufbar unter https://www.fedlex.admin.ch/eli/fga/2024/45/de ])
@@ -45,14 +45,14 @@ Abrufbar unter https://www.fedlex.admin.ch/eli/fga/2024/45/de ])
 #design-entscheid([
 Die Berührungspunkte der Bundeskanzlei - wo Giovanna Beier arbeitet - mit den Unternehmen der anderen Gruppenmitglider wurden für nicht ausreichend bewertet. 
 Aus diesem Grund vertritt Giovanna Beier die jeweilige Ebene der öffentlichen Verwaltung, mit der sich eine Interaktion ergibt, ganz nach dem Motto "wieso einfach wenn es auch kompliziert geht".])
-#fuehrung([])
+
 
 == Zwei imaginäre Freunde
 
 === Amira's Food Affair
-#todo-action([maybe auch Amira's unternehmen erklären?])
+#frage([maybe auch Amira's unternehmen erklären?])
 
 === Gastrostart 
-#todo-action([gastrostart beschreiben])
+#frage([gastrostart beschreiben])
 
 GastroStart ist ein fiktives Portal, das Gründerinnen und Gründer im Gastgewerbe durch die zentralen Phasen der Betriebsgründung führt: von der ersten Orientierung über Registrierung, Geschäftskonzept und Betriebsbewilligung bis hin zur Finanzierung und zum ersten Lieferantenvertrag.

@@ -1,4 +1,4 @@
-#import "../markers.typ": theorie-anker, design-entscheid, stolperstein, frage, todo-action;
+#import "../markers.typ": theorie-anker, design-entscheid, stolperstein, frage, todo-action, fuehrung
 // ── 02_customer_journey.typ — Chapter 3: Collaboration Phase: Outside-In Mapping ──
 
 //= Die Kollaborationsphase: Outside-In-Mapping
