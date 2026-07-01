@@ -9,7 +9,10 @@
     L'abstract svela tutti i passaggi dello studio, compresi i risultati finali e le conclusioni. 
     L'abstract è molto sintetico, solitamente compreso tra 150 e 250 parole.
     L'abstract segue una struttura logica serrata (Contesto → Problema → Metodo → Risultati → Conclusione).*/
-    Diese Gruppenarbeit berichtet darüber, wie vier Kollegen aus ganz unterschidlichen Unternehmen sich auf einer Idee für ein gemeinesamens Unternehmen geeinigt haben und dieses in iterativen Schritten erarbeitet haben. In der Arbeit wird zunächst die Customer Journey beschrieben und abgegrenzt. DAnach folgt die "Modellierungsreise" enttlang der RIM-Methodik. Anschliessend werden die Ressourcen wieder dazugenommen - wobei jeder der vier Kollegen am Schluss einer Vertiefung seines eigenen Anteils am Unternehmen präsentiert.
+    Diese Gruppenarbeit berichtet darüber, wie vier Kollegen aus ganz unterschidlichen Unternehmen sich auf einer Idee für ein gemeinesamens Unternehmen geeinigt haben und dieses in iterativen Schritten erarbeitet haben. 
+    In der Arbeit wird zunächst die Customer Journey beschrieben und abgegrenzt.
+    Danach folgt die "Modellierungsreise" enttlang der RIM-Methodik. 
+    Anschliessend werden die Ressourcen wieder dazugenommen - wobei jeder der vier Kollegen am Schluss einer Vertiefung seines eigenen Anteils am Unternehmen präsentiert.
 
 
     /*
