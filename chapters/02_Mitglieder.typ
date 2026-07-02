@@ -32,19 +32,16 @@ Diese Ebenen sind:
 - Kantone (26 in Total)
 - Gemeinden (aktuell 2110)
 Die drei Verwaltungsebenen ihren Kompetenzen entsprechend viele unterschiedlichen Aufgaben wahr. 
-Die Gesetzgebung verteilt diese Aufgaben auch über mehrere Ebenen an eine Vielzahl von Ämtern, Dienste und Stellen. 
+Die Gesetzgebung verteilt diese Aufgaben über mehrere Ebenen an eine Vielzahl von Ämtern, Dienste und Stellen. 
 Diese Komplexität prägt nicht nur die Weiter-Entwicklung der drei Organisationsebenen, sondern auch wie die Unternehmensarchitektur jeder Aufgabe auf jeder Ebene gestaltet und gelebt wird. 
 
 Hierarchisch organisierte Vorgaben (Verfassungen, Gesetze, Verordnungen) dazu bei, dass die drei Ebenen meistens harmonisch und integriert miteinander funktionieren. 
-Zusätzlich sorgen Standardisierungsbestrebungen sowie die Orientierung an gemeinsamen Grundsätzen (bspw. Nutzerorientierung und Inklusion, Interoperabilität und Mehrfachnutzung, Digital first und Digital only) und deren Beachtung in der Unternehmensarchitektur und -entwicklung für eine kontinuierliche Verbesserung der Durchgängigkeit unter den drei Akteuren bei der Erfüllung von Diensten an jeweiligen Anspruchsgruppen.
-
-#todo-action([Strategie Digitale Verwaltung Schweiz zitieren.
-Abrufbar unter https://www.fedlex.admin.ch/eli/fga/2024/45/de ])
+Zusätzlich sorgen Standardisierungsbestrebungen sowie die Orientierung an gemeinsamen Grundsätzen (bspw. Nutzerorientierung und Inklusion, Interoperabilität und Mehrfachnutzung, Digital first und Digital only) und deren Beachtung in der Unternehmensarchitektur und -entwicklung für eine kontinuierliche Verbesserung der Durchgängigkeit unter den drei Akteuren bei der Erfüllung von Diensten an jeweiligen Anspruchsgruppen @noauthor_strategie_2023.
 
 
 #design-entscheid([
-Die Berührungspunkte der Bundeskanzlei - wo Giovanna Beier arbeitet - mit den Unternehmen der anderen Gruppenmitglider wurden für nicht ausreichend bewertet. 
-Aus diesem Grund vertritt Giovanna Beier die jeweilige Ebene der öffentlichen Verwaltung, mit der sich eine Interaktion ergibt, ganz nach dem Motto "wieso einfach wenn es auch kompliziert geht".])
+Die Berührungspunkte der Bundeskanzlei - wo Giovanna Beier arbeitet - mit den Unternehmen der anderen Gruppenmitglieder wurden für nicht ausreichend bewertet. 
+Aus diesem Grund vertritt Giovanna Beier die jeweilige Ebene der öffentlichen Verwaltung, mit der sich ind der Customer Journey eine Interaktion ergibt.])
 
 
 == Zwei imaginäre Freunde
@@ -53,6 +50,6 @@ Aus diesem Grund vertritt Giovanna Beier die jeweilige Ebene der öffentlichen V
 #frage([maybe auch Amira's unternehmen erklären?])
 
 === Gastrostart 
-#frage([gastrostart beschreiben])
+#frage([GastroStart beschreiben])
 
 GastroStart ist ein fiktives Portal, das Gründerinnen und Gründer im Gastgewerbe durch die zentralen Phasen der Betriebsgründung führt: von der ersten Orientierung über Registrierung, Geschäftskonzept und Betriebsbewilligung bis hin zur Finanzierung und zum ersten Lieferantenvertrag.

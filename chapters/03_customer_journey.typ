@@ -10,16 +10,21 @@ In diesem Kapitel wird die Customer Journey erklärt - und wie wir daraus ein Ph
 
 == Amira und ihre Geschichte <sec-amira-und-ihre-geschichte>
 Amira, eine 34-jährige Quereinsteigerin, will ein Catering-Unternehmen gründen. 
-Sie hat schon einen Konzept dafür. 
+Sie hat schon ein Konzept dafür. 
 Sie hat keine Erfahrung, will nichts falsch machen und braucht Orientierung. 
-Sie googelt "catering aufmachen schweiz", da sie sich eine Schritt für Schritt-Anleitung wünscht.
-Sie möchte durch das Prozess der Unternehmensgründung geführt werden. 
+Sie googelt "catering aufmachen schweiz", da sie sich eine Schritt für Schritt Anleitung wünscht.
+Sie möchte durch den Prozess der Unternehmensgründung geführt werden. 
 Bei der Suche erfährt sie, dass die Punkte Bewilligungen, Finanzierung, Ressourcenplanung und Beschaffung besonders wichtig sind. 
-Sie landet bei “Gastrostart” und erfährt in der kurzen Einführung auf der Startseite, dass dieses Portal sie bei all dem unterstützen kann. 
+Sie landet bei “GastroStart” und erfährt in der kurzen Einführung auf der Startseite, dass dieses Portal sie bei all dem unterstützen kann. 
 Sie ist erleichtert und registriert sich. 
 
 #design-entscheid[
-  Gastrostart bietet auch Dienstleistungen und Funktionalitäten für die Unterstützung des Betriebes eines Gastrounternehmens - unter Anderem Funktionalitäten für die Überwachung von Zahlungsfälligkeiten und ein Einkaufsplanungsmodul. Auch kann Gastrostart Unternehmensliquidationen abweickeln. Gemeinsam haben wir uns entschieden, nur das Onboarding von Amira abzubilden, da sonst das Szenario zu gross geworden wäre.]
+  Gastrostart bietet auch Dienstleistungen und Funktionalitäten für die Unterstützung des Betriebes eines Gastrounternehmens - unter anderem Funktionalitäten für die Überwachung von Zahlungsfälligkeiten und ein Einkaufsplanungsmodul. Auch kann Gastrostart Unternehmensliquidationen abwickeln. Gemeinsam haben wir uns entschieden, nur das Onboarding von Amira abzubilden, da sonst das Szenario zu gross geworden wäre.]
+
+
+#design-entscheid([Andere CJ Ideen, wie wir analysiert und verworfen haben: 
+- B2B: Onboarding eines bestehenden Business-Kunden bei Transgourmet
+- B2Startup: Marktpotential-Check vor der Unternehmensgründung für ein Gastro-Startup])
 
 == Exkurs: die Persona von Amira als Verankerung in die Outside-in-View
 Aufbauend auf der im Abschnitt #ref(<sec-amira-und-ihre-geschichte>, supplement: none) beschriebene Customer Journey wurde Amiras Persona entwickelt. 
@@ -56,8 +61,16 @@ Dies, um der Endkundin konkreter und besser vorstellbar zu gestalten - wodurch s
   ]
 ) <persona-amira>
 
-== Exkurs: das die Phasen Customer Journey
-#todo-action([Jakob: kannst Du hier Literatur / Verweise und dieses Skelett etwas ausbauen?])
+== Szenarien aus Customer Journey
+/*Übung vom 18.05.2026
+Identifizieren Sie zwei bis drei Szenarien zu Ihrem Unternehmen, wenn möglich mit 
+Bezug zur Customer Journey. (Skizze)
+3. Darstellen der wesentlichsten Geschäftsobjekte und Geschäftsprozesse mit Bezug zu 
+den Szenarien. (Skizze)
+*/
+
+#fuehrung([Als Standardszenarien wird eine möglichst kleine Anzahl von Geschichten gewählt, die die darzustellende Funktionalität möglichst vollständig umfasst. Irrelevantes soll weggelassen werden, damit die Geschichten auch möglichst kurz bleiben.])
+#todo-action([\@Jakob: kannst dieses Skelett etwas ausbauen?])
 
 Bei der Modellierung der Customer Journey haben wir bemerkt, dass Amira verschiedene Phasen durchgegangen ist. Diese Phasen haben wir nach ihrer Wahrnehmung und nach der Veränderung ihrer Emotionen geschnitten - entlang des Erfolgs ihrer Reise auf dem Portal.  
 - *Orientierung:* Amira findet die Webseite von Gastrostart und informiert sich über die angebotenen Diensten. 
@@ -80,7 +93,7 @@ Brücke zu den Phasen
 Jede Phase wurde in einzelne Touchpoints zerlegt, die festhalten, was Amira tut, mit welchem System sie interagiert, in welchem emotionalen Zustand sie sich befindet und wo die aktuelle oder Ziel-Architektur Reibung oder Chancen erzeugt.
 @fig-journey-map zeigt die konsolidierte Journey Map über alle fünf Phasen.
 
-#todo-action([Jakob: bitte Tabelle an @sec-amira-und-ihre-geschichte anpassen. Insbesondere eid Login rausputzen :-) ])
+#todo-action([\@ Jakob: bitte Tabelle an @sec-amira-und-ihre-geschichte löschen (ich habe nicht den Herz dazu)])
 
 #figure(
   caption: [Customer Journey Map: Amira auf GastroStart],
@@ -143,9 +156,6 @@ Die emotionale Kurve über die Journey hinweg offenbart zwei strukturell bedeuts
 Phase 3 (Betriebsbewilligung) markiert mit −2 die tiefste Stimmung, getrieben nicht durch ein Versagen im Prozessdesign, sondern durch den heterogenen Digitalisierungsgrad der kantonalen Behördensysteme – eine architektonische Einschränkung ausserhalb der direkten Kontrolle der Plattform.
 Phase 5 (Erster Vertrag) erreicht mit +2 den Höhepunkt, doch der Übergang vom digitalen Portal zu einem physischen Lieferantenvertrag stellt eine verbleibende analoge Lücke dar, die die Ziel-Architektur adressieren muss @stickdorn2011.
 
-#design-entscheid([andere CJ Ideen, wie wir analysiert und verworfen haben: 
-- B2B: onboarding Business-Kunde 
-- B2Startup: Marktpotential-Check vor Unternehmensgründung])
 
 
 

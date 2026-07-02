@@ -3,8 +3,9 @@
 = Die Realisierung des Resource Independent Model
 
 Dieses Teil der Arbeit bildet der Kern der Überlegungen der Gruppe. Oft mussten wir an das vorgegebene Pfad fest glauben. 
-Die Verfolgung der durch die Übungen vorgegebene Arbeitsschritte haben uns bis zur höchtste Abstraktionsstufe unseres Unternehmens geführt. 
-In nachfolgenden Kapiteln zeigen wir die wichtigsten Etappen unseres gemeinsamen Wegs. 
+Die Verfolgung der durch die Übungen vorgegebene Arbeitsschritte haben uns bis zur höchsten Abstraktionsstufe unseres Unternehmens geführt. 
+In nachfolgenden Kapiteln zeigen wir die wichtigsten Etappen unseres gemeinsamen Wegs.
+
 
 Appunti: 
 Hier wird kurz die Entwicklugn skizziert 
@@ -26,7 +27,11 @@ Wir verlassen das Tagebuch-Aufbau - und gehen hin zu einem logischen, fliessende
 
 == Identifikation der Geschäftsobjekte
 
-Um Geschäftsobjekte zu identifiziren hat sich die Gruppe mit der Struktur von Amira's Customer Journey ausenandergesetzt.
+#fuehrung([*Geschäftsobjekte* 
+
+Aus der Geschichte werden die groben Geschäftsobjekte sowie die Beziehungen zwischen den Geschäftsobjekten identifiziert, die in einer dematerialisierten Umsetzung der Geschichte noch Relevanz haben. @Spichiger2026GFbUA])
+
+Um Geschäftsobjekte zu identifizieren hat sich die Gruppe mit der Struktur von Amiras Customer Journey auseinandergesetzt.
 Dabei liessen sich Nomen wie "Gründung", "Finanzierung", "Kundenkonto" - diese wurden als Prototypen für mögliche Geschäftsobjekte festgehalten. 
 
  #figure(
@@ -36,14 +41,26 @@ Dabei liessen sich Nomen wie "Gründung", "Finanzierung", "Kundenkonto" - diese 
 
 
 
-=== Kundenkonto (Regiestrierung)
-    - status: active/inactive
-    - properties: credentials, profile
+=== Kundenkonto (Registrierung)
+Zugangsberechtigung eines Kunden (oder: Benutzer) im System „GastroStart“. Dient der Identifizierung einer Person, ihres Betriebs (oder Betriebe) und aller, für die in diesem System abgebildeten Prozesse, notwendigen Dokumente und Daten. 
+    - Zustände: aktiv, inaktiv, aktualisiert, registriert
+    - Eigenschaften:
+ #figure(
+  image("../assets/GOKundenkonto.png", width: 80%),
+  caption: [Geschäftsobjekt Kundenkonto und dessen Zustände]
+) <fig-GOKundenkonto>
+#todo-action([\@Jan: Objektbeschreibung nachführen. SVG Screenshot einfügen. ])
 
 === Unternehmen
+
     - betrieb/location -  the place where we get the goods and Maria cooks
     - process: open
-    - properties: neu, in Vorbereitung, in opening / requested, incomplete, active, rejected, cancelled 
+    - Zustände: neu, beurkundet, in opening / requested, incomplete, active, rejected, cancelled 
+
+    #figure(
+  image("../assets/GOUnternehmen.svg", width: 80%),
+  caption: [Geschäftsobjekt Unternehmen und dessen Zustände]
+) <fig-GOUnternehmen>
  
 === Bewilligung 
     - properties: Unternehmen
@@ -63,7 +80,10 @@ Dabei liessen sich Nomen wie "Gründung", "Finanzierung", "Kundenkonto" - diese 
   Eine anfängliche Identifikation der Geschäftsobjekt führte die Gruppe zu einer unfangreichere Liste. Physische Artefakte wie "Bewilligung", "Liefervertrag" oder "kantonales Formular" schienen uns vorerst sehr sinnvoll und notwendig. 
 ])
 
-== Events
+== Identifikation des relevanten Verhaltens: Zustände und Geschäftstransaktionen
+
+=== Zustände
+
 
 
 
@@ -74,8 +94,11 @@ Dabei liessen sich Nomen wie "Gründung", "Finanzierung", "Kundenkonto" - diese 
 
 
 
+=== Geschäftstransaktionen
 
+#fuehrung([*Konkretes Vorgehen* 
 
+In der Geschichte werden die Geschäftsobjekte identifiziert. Wenn man diese hat, stellt sich die Frage nach den Geschäftstransaktionen, die diese Geschäftsobjekte (als Output) verändern. Nächster Schritt ist die Identifikation der relevanten Geschäftsobjekte, die den Transaktionen als Input dienen. Diese Schritte wiederholt man, bis man keine neuen Geschäftsobjekte und -transaktionen mehr findet. @Spichiger2026GFbUA]) 
 
 
 
