@@ -61,7 +61,7 @@ Dies, um der Endkundin konkreter und besser vorstellbar zu gestalten - wodurch s
   ]
 ) <persona-amira>
 
-== Szenarien aus Customer Journey
+== Szenarien aus Customer Journey <sec-szenarien-customer-journey>
 /*Übung vom 18.05.2026
 Identifizieren Sie zwei bis drei Szenarien zu Ihrem Unternehmen, wenn möglich mit 
 Bezug zur Customer Journey. (Skizze)
@@ -70,9 +70,13 @@ den Szenarien. (Skizze)
 */
 === Übersicht
 #fuehrung([Als Standardszenarien wird eine möglichst kleine Anzahl von Geschichten gewählt, die die darzustellende Funktionalität möglichst vollständig umfasst. Irrelevantes soll weggelassen werden, damit die Geschichten auch möglichst kurz bleiben. @Spichiger2026GFbUA, S. 70])
+
 #todo-action([\@Jakob: kannst dieses Skelett etwas ausbauen?])
 
 Bei der Modellierung der Customer Journey haben wir bemerkt, dass Amira verschiedene Phasen durchgegangen ist. Diese Phasen haben wir nach ihrer Wahrnehmung und nach der Veränderung ihrer Emotionen geschnitten - entlang des Erfolgs ihrer Reise auf dem Portal.
+In den nächsten Kapiteln wir auf einer Auswahl dieser Szenarien eingegangen - eines für jeder Partei am Joint-Venture. 
+Jede Phase wurde in einzelne Touchpoints zerlegt, die festhalten, was Amira tut, mit welchem System sie interagiert, in welchem emotionalen Zustand sie sich befindet und wo die aktuelle oder Ziel-Architektur Reibung oder Chancen erzeugt.
+
 - *Initiale Orientierung:* Amira findet die Webseite von Gastrostart und informiert sich über die angebotenen Diensten. 
 - *Registrierung:* Amira meldet sich bei Gastrostart an, um von dessen Diensten zu profitieren. 
 - *Unternehmensgründung:* Amira nutzt Gastrostart, um ihr Catering-Unternehmen zu gründen und anzumelden. 
@@ -80,24 +84,56 @@ Bei der Modellierung der Customer Journey haben wir bemerkt, dass Amira verschie
 - *Finanzierung:* über Gastrostart kann Amira eine Finanzierung für die ersten Anschaffungen für ihr Catering erhalten. 
 - *Kunde bei Transgourmet:* über Gastrostart kann Amira ebenfalls ein Kundenkonto bei Transgourmet eröffnen - und ihre erste Bestellung absetzen. 
 
-In den nächsten Kapiteln wir auf einer Auswahl dieser Szenarien eingegangen - eines für jeder Partei am Joint-Venture. 
-Jede Phase wurde in einzelne Touchpoints zerlegt, die festhalten, was Amira tut, mit welchem System sie interagiert, in welchem emotionalen Zustand sie sich befindet und wo die aktuelle oder Ziel-Architektur Reibung oder Chancen erzeugt.
+#design-entscheid([Die Gruppe hat diese Szenarien als Struktur für die Modellierung von GastroStart gewählt.])
+
 === Amira orientiert sich (oder registriert sich bei GastroStart)
 
 #todo-action([\@ Jan Szenario/Beschreibung (mit oder ohne Bild) einfügen oder alternativ das Szenario der Registrierung])
-
+/*
+Struktur:
++ *Aktion:* 
++ *Touchpoint:* 
++ *Gedanke/Bedürfnis:*
+// ^+ *Emotion:*
++ *Pain Point:*
++ *Chance:*
+*/
 === Amira gründet ihr Unternehmen
-#todo-action([\@ Jakob bitte den Asset schneiden nochmals einfügen - Danke!])
++ *Aktion:* Amira erfasst die Angaben für ihr Unternehmen und liefert die notwendigen Beilagen. 
++ *Touchpoints:* GastroStart, Notar, Behörden-API, Systeme der kantonalen Verwaltungsbehörde, Portal "EasyGov"
++ *Gedanke/Bedürfnis:* Welche Kantonsregeln gelten? Wie lange geht das?
+// ^+ *Emotion:*
++ *Pain Point:* Kantonale Systeme haben heterogene Digitalisierungsgrade; einige verlangen physische Einreichung. _Line of Failure:_ analoger kantonaler Prozess unterbricht die digitale Journey
++ *Chance:* Integrierte Anleitung für jeden Kanton; Status-Tracking; expliziter Fallback auf Papier, wo keine API verfügbar ist.
+
  #figure(
-  image("../assets/GrpA_GP_GastroStart_Albrecht_Jakob.svg", width: 80%),
+  image("../assets/SZ_Unternehmensgruendung.svg", width: 80%),
   caption: [Archimate Modell der Customer Journey von Amira]
-) <fig-customer-journey-view>
+) <fig-szenario-unternehmenesgruendung>
 
 === Amira erhält eine Finanzierung
 #todo-action([\@ Adi Szenario/Beschreibung (mit oder ohne Bild) einfügen])
+/*
+Struktur:
++ *Aktion:* 
++ *Touchpoint:* 
++ *Gedanke/Bedürfnis:*
+// ^+ *Emotion:*
++ *Pain Point:*
++ *Chance:*
+*/
 
 === Amira wird Kunde bei Transgourmet 
 #todo-action([\@ Jakob Szenario/Beschreibung (mit oder ohne Bild) einfügen])
+/*
+Struktur:
++ *Aktion:* 
++ *Touchpoint:* 
++ *Gedanke/Bedürfnis:*
+// ^+ *Emotion:*
++ *Pain Point:*
++ *Chance:*
+*/
 
 
 @fig-journey-map zeigt die konsolidierte Journey Map über alle fünf Phasen.

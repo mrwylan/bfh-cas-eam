@@ -1,13 +1,14 @@
 // ── Chapter 4 : EA Realization  ───────────────────
 #import "../markers.typ": theorie-anker, design-entscheid, stolperstein, frage, todo-action, fuehrung
 = Die Realisierung des Resource Independent Model
-
+/*in Anlehnung an Kapitel 3.4.5. vom Spichiger-Skript*/
+== Allgmeines
 Dieses Teil der Arbeit bildet der Kern der Überlegungen der Gruppe. Oft mussten wir an das vorgegebene Pfad fest glauben. 
 Die Verfolgung der durch die Übungen vorgegebene Arbeitsschritte haben uns bis zur höchsten Abstraktionsstufe unseres Unternehmens geführt. 
-In nachfolgenden Kapiteln zeigen wir die wichtigsten Etappen unseres gemeinsamen Wegs.
+Jeder Entwicklungsschritt bezieht sich auf einem Auftrag (Übung) und folgt die Empfehlung zur Erarbeitung des RIM, die im Skript @Spichiger2026GFbUA, S. 53 ff. beschrieben ist. 
 
 
-Appunti: 
+/*Appunti: 
 Hier wird kurz die Entwicklugn skizziert 
 - von den identifzierten objetken zu den Porzessen, zu den Fähigkeiten 
 - immer wieder wurde der Einfluss der Teilnehmer der Joint Venture zur Customer Journey 
@@ -23,9 +24,9 @@ die Granularität ist:
 + RSM 
 
 Wir verlassen das Tagebuch-Aufbau - und gehen hin zu einem logischen, fliessender Text, dem GFbAU folgend. 
+*/
 
-
-== Identifikation der Geschäftsobjekte
+== Erste Iteration: Identifikation der Geschäftsobjekte
 
 #fuehrung([*Geschäftsobjekte* 
 
@@ -39,14 +40,16 @@ Dabei liessen sich Nomen wie "Gründung", "Finanzierung", "Kundenkonto" - diese 
   caption: [Archimate Modell der Customer Journey von Amira]
 ) <fig-customer-journey-view>
 
+#todo-action([\@ Adi: bitte in Archi ein Objektdiagramm erstellen (unter Views/Assets4Paper/Geschäftsobjekte - Iteration 1/IdentifizierteGeschaefstobjekte), dann als SVG exportieren und hier integrieren. Als Beispiel: Geschäftsobjekte Arthur Reise, S. 46 vom Skript - Abbildung 3.5])
 
 
 === Kundenkonto (Registrierung)
+#todo-action([\@ Jan: bitte allenfalls etwas ausführlicher beschreiben])
 Zugangsberechtigung eines Kunden (oder: Benutzer) im System „GastroStart“. Dient der Identifizierung einer Person, ihres Betriebs (oder Betriebe) und aller, für die in diesem System abgebildeten Prozesse, notwendigen Dokumente und Daten. 
     - Zustände: aktiv, inaktiv, aktualisiert, registriert
     - Eigenschaften:
  #figure(
-  image("../assets/GOKundenkonto.png", width: 80%),
+  image("../assets/GOKundenkonto.svg", width: 50%),
   caption: [Geschäftsobjekt Kundenkonto und dessen Zustände]
 ) <fig-GOKundenkonto>
 #todo-action([\@Jan: Objektbeschreibung nachführen. SVG Screenshot einfügen. ])
@@ -55,34 +58,186 @@ Zugangsberechtigung eines Kunden (oder: Benutzer) im System „GastroStart“. D
 
     - betrieb/location -  the place where we get the goods and Maria cooks
     - process: open
-    - Zustände: neu, beurkundet, in opening / requested, incomplete, active, rejected, cancelled 
+    - Zustände: neu, beurkundet, eingereicht, unvollständig, angenommen, abgelehnt, im Handelsregister eingetragen
 
     #figure(
-  image("../assets/GOUnternehmen.svg", width: 80%),
+  image("../assets/GOUnternehmen.svg", width: 50%),
   caption: [Geschäftsobjekt Unternehmen und dessen Zustände]
 ) <fig-GOUnternehmen>
  
 === Bewilligung 
     - properties: Unternehmen
-    - new, requested, incomplete, accepted, rejected, cancel
+    - Zustände: new, requested, incomplete, accepted, rejected, cancel
+    
+#figure(
+  image("../assets/GOBewilligung.svg", width: 50%),
+  caption: [Geschäftsobjekt Bewilligung und dessen Zustände]
+) <fig-GOBewilligung>
  
 === Finanzierung
+#todo-action([\@ Adi: bitte allenfalls etwas ausführlicher beschreiben])
     - status: new, requested, incomplete, accepted, rejected, cancel
     - properties: Bonitätsprüfung, Kredit
+
+#figure(
+  image("../assets/GOFinanzierung.svg", width: 50%),
+  caption: [Geschäftsobjekt Finanzierung und dessen Zustände]
+) <fig-GOFinanzierung>
     
 === Lieferantenkonto
+#todo-action([\@ Jakob: bitte allenfalls etwas ausführlicher beschreiben])
     - properties: Unternehmen, Transgourmet
+#figure(
+  image("../assets/GOLieferantenkonto.svg", width: 50%),
+  caption: [Geschäftsobjekt Lieferantenkonto und dessen Zustände]
+) <fig-GOLieferantenkonto>
 
 === Gründungsvorhaben
+#todo-action([\@ jan/jakob: könnt ihr bitte dieses Objekt beschreiben?])
+/*ich habe noch 2 Screenshots gemacht, als Jan das Kozept erklärte. sie sind in den Assets, GVH_1.png und GVH_2.png (bitte löschen, falls ihr diese nicht braucht */
 - status:   0 - Initiiert / 1 · Orientiert  / 2 · Registriert  / 3 · Bewilligt / 4 · Finanziert / 5 - Realisiert 
+#figure(
+  image("../assets/GOGruendungsvorhaben.svg", width: 50%),
+  caption: [Geschäftsobjekt Gründungsvorhaben und dessen Zustände]
+) <fig-GOGruendungsvorhaben>
 
+=== Reflektion
 #stolperstein([
-  Eine anfängliche Identifikation der Geschäftsobjekt führte die Gruppe zu einer unfangreichere Liste. Physische Artefakte wie "Bewilligung", "Liefervertrag" oder "kantonales Formular" schienen uns vorerst sehr sinnvoll und notwendig. 
+  Eine anfängliche Identifikation der Geschäftsobjekte führte die Gruppe zu einer umfangreicheren Liste. Physische Artefakte wie "Bewilligung", "Liefervertrag" oder "kantonales Formular" schienen uns vorerst sehr sinnvoll und notwendig. 
+])
+Nachofolgende Tabelle enthält eine Zusammenfassung der anfänglichen Objekte: 
+#figure(
+  caption: [Business-Object-Inventar: GastroStart — nach Kernel Type],
+  block(width: 100%, breakable: true)[
+    #set text(size: 7.5pt)
+    #table(
+      columns: (1.9cm, 1fr),
+      inset: 5pt,
+      stroke: 0.4pt,
+      fill: (x, y) => if y == 0 { luma(210) } else if calc.odd(y) { luma(248) } else { white },
+      align: (left, left),
+      [*Kernel Type*], [*Business Objects*],
+      [Contract],     [Gewerbebewilligung · Alkoholbewilligung · Handelsregistereintrag · Kreditantrag · Liefervertrag (Neukunde)],
+      [Data Object],  [Bonitätsprüfung],
+      [Document],     [Kantonsanforderungskatalog ·Bewilligungsantrag · Bewilligungsübersicht · Identitätsnachweis · Anmeldung Lebensmittelkontrolle · Kantonales Formular · Bestellung],
+      [Entity],       [Betriebstyp-Profil · Gründungsprofil · Nutzerkonto · Geschäftskonto (IBAN) · Lieferantenkonto],
+      [Event],        [Bewilligungsstatus],
+    )
+  ]
+) <tbl-business-objects-grouped>
+
+
+
+/*#figure(
+  caption: [Business-Object-Inventar: GastroStart],
+  block(width: 100%, breakable: true)[
+    #set text(size: 7.5pt)
+    #table(
+      columns: (3.3cm, 1.9cm),
+      inset: 5pt,
+      stroke: 0.4pt,
+      fill: (x, y) => if y == 0 { luma(210) } else if calc.odd(y) { luma(248) } else { white },
+      align: (left, left),
+      [*Business Object*], [*Kernel Type*],
+      [Kantonsanforderungskatalog],    [Document],
+      [Unternehmen],                    [Entity],
+      [Bewilligungsantrag],              [Document],
+      [Bewilligungsübersicht],          [Document],
+      [eID-Identitätsnachweis],         [Document],
+      [Gründungsprofil],               [Entity],
+      [Nutzerkonto],                   [Entity],
+      [Gewerbebewilligung],            [Contract],
+      [Lebensmittelkontroll-Anmeldung],[Document],
+      [Alkoholbewilligung],            [Contract],
+      [Handelsregistereintrag],        [Contract],
+      [Bewilligungsstatus],            [Event],
+      [Kantonales Formular],           [Document],
+      [Bonitätsprüfung],              [Data Object],
+      [Geschäftskonto (IBAN)],         [Entity],
+      [Kreditantrag],                  [Contract],
+      [Lieferantenkonto],              [Entity],
+      [Bestellung],                    [Document],
+      [Liefervertrag (Neukunde)],      [Contract],
+    )
+  ]
+) <tbl-business-objects-kurzform>
+*/
+== Zweite Iteration: Identifikation des relevanten Verhaltens: Zustände und Geschäftstransaktionen
+#fuehrung([
+
+*Zustände:* Zu jedem Geschäftsobjekt werden seine Zustände identifiziert.
+
+*Geschäftstransaktionen:* Entlang der Geschichte werden die Geschäftstransaktionen mit ihren Inputs und Output (Geschäftsobjekte) identifiziert. 
+Sowohl bei Input und Output wird darauf geachtet, dass diese inklusive ihre Zustände (bzw. zugehörige Ereignisse) bezeichnet werden.
 ])
 
-== Identifikation des relevanten Verhaltens: Zustände und Geschäftstransaktionen
+#design-entscheid([
+Wir dokumentieren die Identifikation von Zuständen und Geschäftstransaktionen pro Szenario, um die Lesbarkeit zu erhalten.
+Die Szenarien sind in @sec-szenarien-customer-journey beschrieben und werden einzel aufbereitet. 
+])
+=== Amira orientiert sich
 
-=== Zustände
+#todo-action([\@ Jan Szenario/Beschreibung (mit Bild) einfügen])
+/* 
+1. in Archi die View "GTZ Amira orientiert sich" unter Views / Assets4Paper / Geschäftstransaktionen (Iteration 2) / öffnen 
+2. View wie im Bild 3.9 - Seite 55 vom Skript von Spichiger aufbereiten oder wie ../assets/GrpA_GP_GastroStart_Albrecht_Jakob.svg
+3. als svg ins projekt hier importieren
+4. Beschreiben: 
+  - Events 
+  - Transaktionen
+*/
+
+
+=== Amira registriert sich bei GastroStart
+
+#todo-action([\@ Jan Szenario/Beschreibung (mit Bild) einfügen])
+/* 
+1. in Archi die View "GTZ Amira registriert sich bei Gastrostart" unter Views / Assets4Paper / Geschäftstransaktionen (Iteration 2) / öffnen 
+2. View wie im Bild 3.9 - Seite 55 vom Skript von Spichiger aufbereiten oder wie ../assets/GrpA_GP_GastroStart_Albrecht_Jakob.svg
+3. als svg ins projekt hier importieren
+4. Beschreiben: 
+  - Events 
+  - Transaktionen
+*/
+
+=== Amira gründet ihr Unternehmen
+/* 
+1. in Archi die View "GGTZ Amira gründet ihr Unternehmen" unter Views / Assets4Paper / Geschäftstransaktionen (Iteration 2) / öffnen 
+2. View wie im Bild 3.9 - Seite 55 vom Skript von Spichiger aufbereiten oder wie ../assets/GrpA_GP_GastroStart_Albrecht_Jakob.svg
+3. als svg ins projekt hier importieren
+4. Beschreiben: 
+  - Events 
+  - Transaktionen
+*/
+=== Amira erhält die Bewilligung
+
+/*Amira erhält eine Finanzierung*/
+
+=== Amira erhält eine Finanzierung
+#todo-action([\@ Adi Szenario/Beschreibung (mit Bild) einfügen])
+/* 
+1. in Archi die View "Amira erhält eine Finanzierung" unter Views / Assets4Paper / Geschäftstransaktionen (Iteration 2) / öffnen 
+2. View wie im Bild 3.9 - Seite 55 vom Skript von Spichiger aufbereiten oder wie ../assets/GrpA_GP_GastroStart_Albrecht_Jakob.svg
+3. als svg ins projekt hier importieren
+4. Beschreiben: 
+  - Events 
+  - Transaktionen
+*/
+
+=== Amira wird Kunde bei Transgourmet
+#todo-action([\@ Jakob Szenario/Beschreibung (mit Bild) einfügen])
+
+/* 
+1. in Archi die View "Amira wird Kunde bei Transgourmet" unter Views / Assets4Paper / Geschäftstransaktionen (Iteration 2) / öffnen 
+2. View wie im Bild 3.9 - Seite 55 vom Skript von Spichiger aufbereiten oder wie ../assets/GrpA_GP_GastroStart_Albrecht_Jakob.svg
+3. als svg ins projekt hier importieren
+4. Beschreiben: 
+  - Events 
+  - Transaktionen
+*/
+
+
+
 
 
 
