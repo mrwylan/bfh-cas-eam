@@ -68,29 +68,38 @@ Bezug zur Customer Journey. (Skizze)
 3. Darstellen der wesentlichsten Geschäftsobjekte und Geschäftsprozesse mit Bezug zu 
 den Szenarien. (Skizze)
 */
-
-#fuehrung([Als Standardszenarien wird eine möglichst kleine Anzahl von Geschichten gewählt, die die darzustellende Funktionalität möglichst vollständig umfasst. Irrelevantes soll weggelassen werden, damit die Geschichten auch möglichst kurz bleiben.])
+=== Übersicht
+#fuehrung([Als Standardszenarien wird eine möglichst kleine Anzahl von Geschichten gewählt, die die darzustellende Funktionalität möglichst vollständig umfasst. Irrelevantes soll weggelassen werden, damit die Geschichten auch möglichst kurz bleiben. @Spichiger2026GFbUA, S. 70])
 #todo-action([\@Jakob: kannst dieses Skelett etwas ausbauen?])
 
-Bei der Modellierung der Customer Journey haben wir bemerkt, dass Amira verschiedene Phasen durchgegangen ist. Diese Phasen haben wir nach ihrer Wahrnehmung und nach der Veränderung ihrer Emotionen geschnitten - entlang des Erfolgs ihrer Reise auf dem Portal.  
-- *Orientierung:* Amira findet die Webseite von Gastrostart und informiert sich über die angebotenen Diensten. 
+Bei der Modellierung der Customer Journey haben wir bemerkt, dass Amira verschiedene Phasen durchgegangen ist. Diese Phasen haben wir nach ihrer Wahrnehmung und nach der Veränderung ihrer Emotionen geschnitten - entlang des Erfolgs ihrer Reise auf dem Portal.
+- *Initiale Orientierung:* Amira findet die Webseite von Gastrostart und informiert sich über die angebotenen Diensten. 
 - *Registrierung:* Amira meldet sich bei Gastrostart an, um von dessen Diensten zu profitieren. 
 - *Unternehmensgründung:* Amira nutzt Gastrostart, um ihr Catering-Unternehmen zu gründen und anzumelden. 
 - *Beantragung der Betriebsbewilligung:* Amira nutzt Gastrostart, um die Betriebsbewilligung für Unternehmen zu beantragen. 
-- *Finanzierung:* über Gastrostart kann Amira einen Finanzierung für die ersten Anschaffungen für ihr Catering erhalten. 
-- *Kunde bei Transgourmet:* über Gastrostart kann Amira ebenfalls ein Kundenkonto bei Transgourmet eröffen - und ihre erste Bestellung absetzen. 
+- *Finanzierung:* über Gastrostart kann Amira eine Finanzierung für die ersten Anschaffungen für ihr Catering erhalten. 
+- *Kunde bei Transgourmet:* über Gastrostart kann Amira ebenfalls ein Kundenkonto bei Transgourmet eröffnen - und ihre erste Bestellung absetzen. 
 
-#todo-action([Appunti: 
-wir lassen die TAbelle CJ weg - dafür gibt es die Phasen
-es sollen gewisse punkte im phasenmodell 
-
-Brücke zu den Phasen 
-- CJ basiert auf eine Theorie 
-- die Persoa hat ihre Wahrnehmung  
-- die Phasen sind auch schon in der Default-View grob sichtbar ])
-
-
+In den nächsten Kapiteln wir auf einer Auswahl dieser Szenarien eingegangen - eines für jeder Partei am Joint-Venture. 
 Jede Phase wurde in einzelne Touchpoints zerlegt, die festhalten, was Amira tut, mit welchem System sie interagiert, in welchem emotionalen Zustand sie sich befindet und wo die aktuelle oder Ziel-Architektur Reibung oder Chancen erzeugt.
+=== Amira orientiert sich (oder registriert sich bei GastroStart)
+
+#todo-action([\@ Jan Szenario/Beschreibung (mit oder ohne Bild) einfügen oder alternativ das Szenario der Registrierung])
+
+=== Amira gründet ihr Unternehmen
+#todo-action([\@ Jakob bitte den Asset schneiden nochmals einfügen - Danke!])
+ #figure(
+  image("../assets/GrpA_GP_GastroStart_Albrecht_Jakob.svg", width: 80%),
+  caption: [Archimate Modell der Customer Journey von Amira]
+) <fig-customer-journey-view>
+
+=== Amira erhält eine Finanzierung
+#todo-action([\@ Adi Szenario/Beschreibung (mit oder ohne Bild) einfügen])
+
+=== Amira wird Kunde bei Transgourmet 
+#todo-action([\@ Jakob Szenario/Beschreibung (mit oder ohne Bild) einfügen])
+
+
 @fig-journey-map zeigt die konsolidierte Journey Map über alle fünf Phasen.
 
 #todo-action([\@ Jakob: bitte Tabelle an @sec-amira-und-ihre-geschichte löschen (ich habe nicht den Herz dazu)])
