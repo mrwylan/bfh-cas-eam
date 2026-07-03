@@ -46,6 +46,8 @@
     it
   }
 
+
+
   // --- BLOCCO TITOLO / FRONTESPIZIO (Pagina 1) ---
   align(center)[
     #block(text(weight: "bold", size: 2em, title))
@@ -100,3 +102,5 @@
   // --- CORPO DEL DOCUMENTO ---
   body
 }
+// Inserisci questa riga nel tuo template.typ o in cima a main.typ
+    #show figure.where(kind: table): set block(breakable: true)

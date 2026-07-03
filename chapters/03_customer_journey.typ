@@ -18,10 +18,6 @@ Bei der Suche erfährt sie, dass die Punkte Bewilligungen, Finanzierung, Ressour
 Sie landet bei “GastroStart” und erfährt in der kurzen Einführung auf der Startseite, dass dieses Portal sie bei all dem unterstützen kann. 
 Sie ist erleichtert und registriert sich. 
 
-#design-entscheid[
-  Gastrostart bietet auch Dienstleistungen und Funktionalitäten für die Unterstützung des Betriebes eines Gastrounternehmens - unter anderem Funktionalitäten für die Überwachung von Zahlungsfälligkeiten und ein Einkaufsplanungsmodul. Auch kann Gastrostart Unternehmensliquidationen abwickeln. Gemeinsam haben wir uns entschieden, nur das Onboarding von Amira abzubilden, da sonst das Szenario zu gross geworden wäre.]
-
-
 #design-entscheid([Andere CJ Ideen, wie wir analysiert und verworfen haben: 
 - B2B: Onboarding eines bestehenden Business-Kunden bei Transgourmet
 - B2Startup: Marktpotential-Check vor der Unternehmensgründung für ein Gastro-Startup])

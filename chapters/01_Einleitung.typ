@@ -23,9 +23,8 @@ Die Diskussionen betreffend der Schärfung der Mission /*(was macht das Unterneh
 === Struktur und Gestaltung des Artefaktes <sec-struktur-gestaltung-artefakt>
 Die Gestaltung der Gruppenarbeit folgt dem Windschatten der Vorlesungen und Übungen. 
 + Customer Journey - in Anlehnung an den Vorschlag "Start mit der Geschichte" von (Zitat Spichiger2026GFbUA)
-+ Erarbeitung des Resource Independent Model (RIM) - Dematerialisierungx
-+ vom Abstrakten zum Konkreten 
-+ Dematerialisierung 
++ Erarbeitung des Resource Independent Model (RIM) 
++ vom Abstrakten zum Konkreten / Dematerialisierung 
 + Rematerialisierung
 + Kritische Hinterfragung (Übungen vom 17.06., 24.06.)
 

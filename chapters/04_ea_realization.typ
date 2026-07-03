@@ -2,8 +2,8 @@
 #import "../markers.typ": theorie-anker, design-entscheid, stolperstein, frage, todo-action, fuehrung
 = Die Realisierung des Resource Independent Model
 /*in Anlehnung an Kapitel 3.4.5. vom Spichiger-Skript*/
-== Allgmeines
-Dieses Teil der Arbeit bildet der Kern der Überlegungen der Gruppe. Oft mussten wir an das vorgegebene Pfad fest glauben. 
+== Allgemeines
+Dieses Teil der Arbeit bildet der Kern der Überlegungen der Gruppe. 
 Die Verfolgung der durch die Übungen vorgegebene Arbeitsschritte haben uns bis zur höchsten Abstraktionsstufe unseres Unternehmens geführt. 
 Jeder Entwicklungsschritt bezieht sich auf einem Auftrag (Übung) und folgt die Empfehlung zur Erarbeitung des RIM, die im Skript @Spichiger2026GFbUA, S. 53 ff. beschrieben ist. 
 
@@ -30,75 +30,71 @@ Wir verlassen das Tagebuch-Aufbau - und gehen hin zu einem logischen, fliessende
 
 #fuehrung([*Geschäftsobjekte* 
 
-Aus der Geschichte werden die groben Geschäftsobjekte sowie die Beziehungen zwischen den Geschäftsobjekten identifiziert, die in einer dematerialisierten Umsetzung der Geschichte noch Relevanz haben. @Spichiger2026GFbUA])
+Aus der Geschichte werden die groben Geschäftsobjekte sowie die Beziehungen zwischen den Geschäftsobjekten identifiziert, die in einer dematerialisierten Umsetzung der Geschichte noch Relevanz haben. @Spichiger2026GFbUA]) 
 
+=== Vorgehen
 Um Geschäftsobjekte zu identifizieren hat sich die Gruppe mit der Struktur von Amiras Customer Journey auseinandergesetzt.
 Dabei liessen sich Nomen wie "Gründung", "Finanzierung", "Kundenkonto" - diese wurden als Prototypen für mögliche Geschäftsobjekte festgehalten. 
 
  #figure(
-  image("../assets/Customer Journey View.svg", width: 80%),
-  caption: [Archimate Modell der Customer Journey von Amira]
+  image("../assets/Customer Journey View.svg", width: 40%),
+  caption: [Archimate Modell der Customer Journey von Amira und erste Iteration für die Identifikation der Geschäftsobjekte]
 ) <fig-customer-journey-view>
 
 #todo-action([\@ Adi: bitte in Archi ein Objektdiagramm erstellen (unter Views/Assets4Paper/Geschäftsobjekte - Iteration 1/IdentifizierteGeschaefstobjekte), dann als SVG exportieren und hier integrieren. Als Beispiel: Geschäftsobjekte Arthur Reise, S. 46 vom Skript - Abbildung 3.5])
+#figure(
+  image("../assets/IdentifizierteGeschaefstobjekte.svg", width: 50%),
+  caption: [Geschäftsobjekt Kundenkonto und dessen Zustände]
+) <fig-IdentifizierteGeschaefstobjetke>
 
 
 === Kundenkonto (Registrierung)
 #todo-action([\@ Jan: bitte allenfalls etwas ausführlicher beschreiben])
 Zugangsberechtigung eines Kunden (oder: Benutzer) im System „GastroStart“. Dient der Identifizierung einer Person, ihres Betriebs (oder Betriebe) und aller, für die in diesem System abgebildeten Prozesse, notwendigen Dokumente und Daten. 
-    - Zustände: aktiv, inaktiv, aktualisiert, registriert
-    - Eigenschaften:
- #figure(
-  image("../assets/GOKundenkonto.svg", width: 50%),
-  caption: [Geschäftsobjekt Kundenkonto und dessen Zustände]
+- Zustände: aktiv, inaktiv, aktualisiert, registriert
+- Eigenschaften:
+#figure(
+image("../assets/GOKundenkonto.svg", width: 50%),
+caption: [Geschäftsobjekt Kundenkonto und dessen Zustände]
 ) <fig-GOKundenkonto>
 #todo-action([\@Jan: Objektbeschreibung nachführen. SVG Screenshot einfügen. ])
-
 === Unternehmen
-
-    - betrieb/location -  the place where we get the goods and Maria cooks
-    - process: open
-    - Zustände: neu, beurkundet, eingereicht, unvollständig, angenommen, abgelehnt, im Handelsregister eingetragen
-
-    #figure(
-  image("../assets/GOUnternehmen.svg", width: 50%),
-  caption: [Geschäftsobjekt Unternehmen und dessen Zustände]
-) <fig-GOUnternehmen>
- 
-=== Bewilligung 
-    - properties: Unternehmen
-    - Zustände: new, requested, incomplete, accepted, rejected, cancel
-    
+- betrieb/location -  the place where we get the goods and Maria cooks
+- process: open
+- Zustände: neu, beurkundet, eingereicht, unvollständig, angenommen, abgelehnt, im Handelsregister eingetragen
 #figure(
-  image("../assets/GOBewilligung.svg", width: 50%),
-  caption: [Geschäftsobjekt Bewilligung und dessen Zustände]
+image("../assets/GOUnternehmen.svg", width: 50%),
+caption: [Geschäftsobjekt Unternehmen und dessen Zustände]
+) <fig-GOUnternehmen>
+=== Bewilligung 
+- properties: Unternehmen
+- Zustände: new, requested, incomplete, accepted, rejected, cancel
+#figure(
+image("../assets/GOBewilligung.svg", width: 50%),
+caption: [Geschäftsobjekt Bewilligung und dessen Zustände]
 ) <fig-GOBewilligung>
- 
 === Finanzierung
 #todo-action([\@ Adi: bitte allenfalls etwas ausführlicher beschreiben])
-    - status: new, requested, incomplete, accepted, rejected, cancel
-    - properties: Bonitätsprüfung, Kredit
-
+- status: new, requested, incomplete, accepted, rejected, cancel
+- properties: Bonitätsprüfung, Kredit
 #figure(
-  image("../assets/GOFinanzierung.svg", width: 50%),
-  caption: [Geschäftsobjekt Finanzierung und dessen Zustände]
+image("../assets/GOFinanzierung.svg", width: 50%),
+caption: [Geschäftsobjekt Finanzierung und dessen Zustände]
 ) <fig-GOFinanzierung>
-    
 === Lieferantenkonto
 #todo-action([\@ Jakob: bitte allenfalls etwas ausführlicher beschreiben])
-    - properties: Unternehmen, Transgourmet
+- properties: Unternehmen, Transgourmet
 #figure(
-  image("../assets/GOLieferantenkonto.svg", width: 50%),
-  caption: [Geschäftsobjekt Lieferantenkonto und dessen Zustände]
+image("../assets/GOLieferantenkonto.svg", width: 50%),
+caption: [Geschäftsobjekt Lieferantenkonto und dessen Zustände]
 ) <fig-GOLieferantenkonto>
-
 === Gründungsvorhaben
 #todo-action([\@ jan/jakob: könnt ihr bitte dieses Objekt beschreiben?])
 /*ich habe noch 2 Screenshots gemacht, als Jan das Kozept erklärte. sie sind in den Assets, GVH_1.png und GVH_2.png (bitte löschen, falls ihr diese nicht braucht */
 - status:   0 - Initiiert / 1 · Orientiert  / 2 · Registriert  / 3 · Bewilligt / 4 · Finanziert / 5 - Realisiert 
 #figure(
-  image("../assets/GOGruendungsvorhaben.svg", width: 50%),
-  caption: [Geschäftsobjekt Gründungsvorhaben und dessen Zustände]
+image("../assets/GOGruendungsvorhaben.svg", width: 50%),
+caption: [Geschäftsobjekt Gründungsvorhaben und dessen Zustände]
 ) <fig-GOGruendungsvorhaben>
 
 === Reflektion
@@ -173,6 +169,7 @@ Sowohl bei Input und Output wird darauf geachtet, dass diese inklusive ihre Zust
 
 #design-entscheid([
 Wir dokumentieren die Identifikation von Zuständen und Geschäftstransaktionen pro Szenario, um die Lesbarkeit zu erhalten.
+Die entsprechenden Geschäftsprozesse sind ebenfalls modelliert, auch wenn sie später erklärt werden.
 Die Szenarien sind in @sec-szenarien-customer-journey beschrieben und werden einzel aufbereitet. 
 ])
 === Amira orientiert sich
@@ -201,6 +198,12 @@ Die Szenarien sind in @sec-szenarien-customer-journey beschrieben und werden ein
 */
 
 === Amira gründet ihr Unternehmen
+
+ #figure(
+  image("../assets/GTZ Amira gründet ihr Unternehmen.svg", width: 80%),
+  caption: [Archimate Modell der Customer Journey von Amira]
+) <fig-customer-journey-view>
+
 /* 
 1. in Archi die View "GGTZ Amira gründet ihr Unternehmen" unter Views / Assets4Paper / Geschäftstransaktionen (Iteration 2) / öffnen 
 2. View wie im Bild 3.9 - Seite 55 vom Skript von Spichiger aufbereiten oder wie ../assets/GrpA_GP_GastroStart_Albrecht_Jakob.svg
