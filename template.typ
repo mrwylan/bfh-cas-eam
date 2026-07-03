@@ -1,7 +1,5 @@
 #import "markers.typ": kompendium-modus
 
-
-
 #let conf(
   title: "Untitled Blueprint",
   subtitle: none,
@@ -13,30 +11,42 @@
   body
 ) = {
   kompendium-modus.update(kompendium)
-  // Page setup
+  
+  // 1. Configurazione della pagina e piè di pagina dinamico
   set page(
     paper: "a4",
     margin: (x: 2.5cm, top: 3cm, bottom: 2.5cm),
-    numbering: "1",
-    header: align(right, text(size: 8.5pt, fill: luma(100), title))
+    header: align(right, text(size: 8.5pt, fill: luma(100), title)),
+    
+    // Gestione del piè di pagina in base alla posizione nel documento
+    footer: context {
+      let current_page = here().page()
+      
+      if current_page == 1 {
+        // Il frontespizio (pagina 1) non ha alcuna numerazione
+        none 
+      } else {
+        // Applica lo stile attivo (romano negli indici, arabo nel testo)
+        align(center, counter(page).display())
+      }
+    }
   )
 
-  // Typography layout
+  // Tipografia e layout globale
   set text(font: "New Computer Modern", size: 11pt, lang: "de", region: "CH")
   set par(justify: true, leading: 0.65em)
   set heading(numbering: "1.1.1")
 
-  // Show rules for clean heading layouts
+  // Gestione degli spazi dei titoli
   show heading: it => block(above: 1.5em, below: 1em, it)
-  // Every top-level heading (chapters and the bibliography) starts on a new page.
-  // `weak: true` suppresses the break when a heading already sits at the top of
-  // a page (e.g. the first chapter right after the table of contents).
+  
+  // Ogni titolo di primo livello (capitoli e bibliografia) inizia su una nuova pagina
   show heading.where(level: 1): it => {
     pagebreak(weak: true)
     it
   }
 
-  // Title Block
+  // --- BLOCCO TITOLO / FRONTESPIZIO (Pagina 1) ---
   align(center)[
     #block(text(weight: "bold", size: 2em, title))
     #if subtitle != none {
@@ -45,7 +55,7 @@
     }
     #v(1.5em)
 
- #if eingereicht-von != none {
+    #if eingereicht-von != none {
       block(text(size: 1em, weight: "bold")[Eingereicht von: #eingereicht-von])
       v(0.8em)
     }
@@ -68,7 +78,7 @@
 
   v(2em)
 
-  // Abstract Block
+  // Blocco Abstract
   if abstract != none {
     align(center, block(width: 85%, inset: 1em, radius: 4pt, fill: luma(245))[
       #align(center)[#strong("Abstract")]
@@ -78,13 +88,15 @@
     v(2em)
   }
 
-  // Table of Contents
-  outline(indent: auto, depth: 2)
+  // --- PARTE PREPARATORIA (Attivazione Numeri Romani per gli Indici) ---
   pagebreak()
+  set page(numbering: "I") // Da qui in poi gli indici useranno I, II, III...
 
-
-
-
-
+  // Indice dei contenuti (Table of Contents)
+  outline(indent: auto, depth: 2)
+  
+  // Puoi inserire altri indici qui se necessario (es. immagini, tabelle)
+  
+  // --- CORPO DEL DOCUMENTO ---
   body
 }

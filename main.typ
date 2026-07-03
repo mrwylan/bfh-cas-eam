@@ -39,6 +39,9 @@
 
 
 // ── Chapter Stream ──────────────────────────────────────────────────────────
+#set page(numbering: "1")
+#counter(page).update(1)
+
 #include "chapters/01_Einleitung.typ"
 #include "chapters/02_Mitglieder.typ"
 #include "chapters/03_customer_journey.typ"
