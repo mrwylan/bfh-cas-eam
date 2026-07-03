@@ -99,8 +99,12 @@ caption: [Geschäftsobjekt Gründungsvorhaben und dessen Zustände]
 
 === Reflektion
 #stolperstein([
+  Die Kundensicht ständig zu behalten und Abstand vom eigenen Fachbereich zu halten ist den Gefährten nicht immer gelungen. 
+  ])
+
   Eine anfängliche Identifikation der Geschäftsobjekte führte die Gruppe zu einer umfangreicheren Liste. Physische Artefakte wie "Bewilligung", "Liefervertrag" oder "kantonales Formular" schienen uns vorerst sehr sinnvoll und notwendig. 
-])
+  In einer frühen Phase war es besonders schwierig, die reine Kundensicht einzunehmen - und führte dazu, dass beispielsweise zwischen Bewilligungsantrag und die erteilte Bewilligung (Verfügung) unterschieden wurde.
+
 Nachofolgende Tabelle enthält eine Zusammenfassung der anfänglichen Objekte: 
 #figure(
   caption: [Business-Object-Inventar: GastroStart — nach Kernel Type],
@@ -122,6 +126,8 @@ Nachofolgende Tabelle enthält eine Zusammenfassung der anfänglichen Objekte:
   ]
 ) <tbl-business-objects-grouped>
 
+Die in den Übungen gestellte Frage "Was bleibt, wenn Ihr Unternehmen dematerialisiert wird? Alles wird zur Information, was Information werden kann. 
+Was bleibt physisch vorhanden, was verschwindet?" 
 
 
 /*#figure(
@@ -200,9 +206,30 @@ Die Szenarien sind in @sec-szenarien-customer-journey beschrieben und werden ein
 === Amira gründet ihr Unternehmen
 
  #figure(
-  image("../assets/GTZ Amira gründet ihr Unternehmen.svg", width: 80%),
-  caption: [Archimate Modell der Customer Journey von Amira]
-) <fig-customer-journey-view>
+  image("../assets/GTZ Amira gründet ihr Unternehmen.svg", width: 100%),
+  caption: [Geschäftstransaktionen und Zustände - Szenario Amira gründet ihr Unternehmen]
+) <fig-GTZ-Amira-gründet>
+
+1. Zustände
+#figure(
+image("../assets/GOUnternehmen.svg", width: 50%),
+caption: [Geschäftsobjekt Unternehmen und dessen Zustände]
+) <fig-GOUnternehmen>
+- *neu:* 
+- *beurkundet:*
+- *eingereicht:*
+- *unvollständig:* 
+- *angenommen:*
+- *abgelehnt:*
+- *im Handelsregister eingetragen / registriert:*
+
+2. Geschäftstransaktionen
+- *Gründungsdokumentation vorbereiten:*
+- *Eintrag im Handelsregister beantragen:*
+- *Prüfung durch Handelsregister (abwarten):*
+- *Im Handelsregister eintragen:*
+
+
 
 /* 
 1. in Archi die View "GGTZ Amira gründet ihr Unternehmen" unter Views / Assets4Paper / Geschäftstransaktionen (Iteration 2) / öffnen 
@@ -213,6 +240,38 @@ Die Szenarien sind in @sec-szenarien-customer-journey beschrieben und werden ein
   - Transaktionen
 */
 === Amira erhält die Bewilligung
+
+ #figure(
+  image("../assets/Amira erhält die Bewilligung.svg", width: 100%),
+  caption: [Geschäftstransaktionen und Zustände - Szenario Amira erhält die Bewilligung]
+) <fig-GTZ-Amira-bewilligung>
+
+
+
+1. Zustände
+#figure(
+image("../assets/GOBewilligung.svg", width: 50%),
+caption: [Geschäftsobjekt Bewilligung und dessen Zustände]
+) <fig-GOBewilligung>
+
+- *neu:*
+- *in Vorbereitung:*
+- *eingereicht:*
+- *unvollständig:*
+- *abgelehnt:*
+- *erteilt:* 
+
+
+2. Geschäftstransaktionen
+- *Bewilligungsantrag vorbereiten:*
+- *Bewilligungsantrag einreichen:*
+- *Antrag prüfen:*
+- *Verfügung mitteilen:*
+
+
+
+
+
 
 /*Amira erhält eine Finanzierung*/
 
@@ -240,23 +299,35 @@ Die Szenarien sind in @sec-szenarien-customer-journey beschrieben und werden ein
 */
 
 
-
-
-
-
-
  #figure(
   image("../assets/GrpA_GP_GastroStart_Albrecht_Jakob.svg", width: 80%),
   caption: [Archimate Modell der Customer Journey von Amira]
 ) <fig-customer-journey-view>
 
+=== Reflexion
+#stolperstein([
+  In dieser Phase war es nicht einfach, Abstand von der gewohnte Implementierungsebene zu halten - und Transaktionen nicht wie eine Benutzerführung auf einem Applikations-Frontend zu modelliern. 
+  ])
 
 
-=== Geschäftstransaktionen
+Bestellung und Bestellbestätigung wurden als separate Objekte modelliert - anstatt auf die Sichtbarkeit und Einsehbarkeit des Zustands aufzubauen. 
+Zustände sind absolut und für alle Beteiligten sichtbar - eine separat modellierte  Bestätigung braucht es nicht. 
 
-#fuehrung([*Konkretes Vorgehen* 
 
-In der Geschichte werden die Geschäftsobjekte identifiziert. Wenn man diese hat, stellt sich die Frage nach den Geschäftstransaktionen, die diese Geschäftsobjekte (als Output) verändern. Nächster Schritt ist die Identifikation der relevanten Geschäftsobjekte, die den Transaktionen als Input dienen. Diese Schritte wiederholt man, bis man keine neuen Geschäftsobjekte und -transaktionen mehr findet. @Spichiger2026GFbUA]) 
+ #figure(
+  image("../assets/reflektion.png", width: 80%),
+  caption: [Archimate Modell einer frühen Modellierungsphase]
+) <fig-customer-journey-view>
+
+
+== Dritte Iteration: Geschäftsprozesse und Vollständigkeit des bisherigen Modells
+
+#fuehrung([
+Geschäftstransaktionen, die inhaltlich zusammenhängen, werden zu Geschäftsprozessen aggregiert.
+
+])
+
+== Vierte Iteration: Geschäftsfähigkeiten und Abhängigkeiten unter einander
 
 
 
