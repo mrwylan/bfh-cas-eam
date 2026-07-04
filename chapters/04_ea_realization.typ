@@ -607,10 +607,7 @@ caption: [Geschäftsobjekt Unternehmen und dessen Zustände]
 - *im Handelsregister eingetragen / registriert:*
 
 2. Geschäftstransaktionen
-- *Gründungsdokumentation vorbereiten:*
-- *Eintrag im Handelsregister beantragen:*
-- *Prüfung durch Handelsregister (abwarten):*
-- *Im Handelsregister eintragen:*
+
 #figure(
   caption: [Geschäftstransaktionen: Prozess "Unternehmen gründen"],
   block(
@@ -643,9 +640,10 @@ transaktion],
       fill: (x, y) => if calc.odd(y) { luma(250) } else { white },
       align: (left, left, left),
 
-      [ ], [ ], [ ],
-      [ ], [ ], [ ],
-      [ ], [ ], [ ],
+      [Gründungsdokumentation vorbereiten], [ ], [ ],
+      [Eintrag im Handelsregister beantragen], [ ], [ ],
+      [Prüfung durch Handelsregister (abwarten)], [ ], [ ],
+      [Im Handelsregister eintragen], [ ], [ ],
     )
   ]
 ) <tbl-GT-Unternehmen-gründen>
