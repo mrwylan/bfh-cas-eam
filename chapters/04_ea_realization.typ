@@ -50,37 +50,239 @@ Dabei liessen sich Nomen wie "Gründung", "Finanzierung", "Kundenkonto" - diese 
 
 === Kundenkonto (Registrierung)
 #todo-action([\@ Jan: bitte allenfalls etwas ausführlicher beschreiben])
-Zugangsberechtigung eines Kunden (oder: Benutzer) im System „GastroStart“. Dient der Identifizierung einer Person, ihres Betriebs (oder Betriebe) und aller, für die in diesem System abgebildeten Prozesse, notwendigen Dokumente und Daten. 
-- Zustände: aktiv, inaktiv, aktualisiert, registriert
-- Eigenschaften:
+
 #figure(
 image("../assets/GOKundenkonto.svg", width: 50%),
 caption: [Geschäftsobjekt Kundenkonto und dessen Zustände]
 ) <fig-GOKundenkonto>
 #todo-action([\@Jan: Objektbeschreibung nachführen. SVG Screenshot einfügen. ])
+#figure(
+  caption: [Geschäftsobjekt Kundenkonto],
+  block(
+    width: 100%,
+    radius: 6pt,
+    clip: true,
+    stroke: 0.5pt + luma(225),
+  )[
+    // Kopfzeile als abgerundetes Band
+    #block(
+      width: 100%,
+      fill: luma(70),
+      inset: (x: 10pt, y: 7pt),
+      below: 0pt,
+    )[
+      #grid(
+        columns: (3.2cm, 1fr),
+        gutter: 10pt,
+        text(fill: white, weight: "bold", size: 0.95em)[Merkmal],
+        text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
+      )
+    ]
+    #set par(justify: false)
+    #table(
+      columns: (3.2cm, 1fr),
+      inset: (x: 10pt, y: 7pt),
+      stroke: (x: none, y: 0.5pt + luma(232)),
+      fill: (x, y) => if calc.even(y) { luma(250) } else { white },
+      align: (left, left),
+
+      [Bezeichnung],
+      [Kundenkonto],
+
+      [Definition / Zweck],
+      [Zugangsberechtigung eines Kunden (oder: Benutzer) im System „GastroStart“. Dient der Identifizierung einer Person, ihres Betriebs (oder Betriebe) und aller, für die in diesem System abgebildeten Prozesse, notwendigen Dokumente und Daten. ],
+
+      [Attribute],
+      [wollen wir Attribute? sonst Zeile löschen],
+
+      [Zustände],
+      [aktiv, inaktiv, aktualisiert, registriert],
+
+      [Beziehungen],
+      [ ],
+    )
+  ]
+) <tbl-GO-Kundenkonto>
+
+
+
+
 === Unternehmen
-- betrieb/location -  the place where we get the goods and Maria cooks
-- process: open
-- Zustände: neu, beurkundet, eingereicht, unvollständig, angenommen, abgelehnt, im Handelsregister eingetragen
 #figure(
 image("../assets/GOUnternehmen.svg", width: 50%),
 caption: [Geschäftsobjekt Unternehmen und dessen Zustände]
 ) <fig-GOUnternehmen>
+
+#figure(
+  caption: [Geschäftsobjekt Unternehmen],
+  block(
+    width: 100%,
+    radius: 6pt,
+    clip: true,
+    stroke: 0.5pt + luma(225),
+  )[
+    // Kopfzeile als abgerundetes Band
+    #block(
+      width: 100%,
+      fill: luma(70),
+      inset: (x: 10pt, y: 7pt),
+      below: 0pt,
+    )[
+      #grid(
+        columns: (3.2cm, 1fr),
+        gutter: 10pt,
+        text(fill: white, weight: "bold", size: 0.95em)[Merkmal],
+        text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
+      )
+    ]
+    #set par(justify: false)
+    #table(
+      columns: (3.2cm, 1fr),
+      inset: (x: 10pt, y: 7pt),
+      stroke: (x: none, y: 0.5pt + luma(232)),
+      fill: (x, y) => if calc.even(y) { luma(250) } else { white },
+      align: (left, left),
+
+      [Bezeichnung],
+      [Unternehmen],
+
+      [Definition / Zweck],
+      [
+        Die zu gründende resp. gegründete juristische Person (Betrieb), an der Amiras Gründungsvorhaben ausgerichtet ist. Das Objekt bündelt die für die Gründung wesentlichen Stammdaten der Unternehmung. Der Gründungsverlauf selbst wird nicht als Inhalt abgebildet, sondern über die Zustände des Objekts nachgezeichnet.
+      ],
+
+      [Attribute],
+      [ wollen wir Attribute? 
+
+        Rechtsform, Firmenname, Sitz / Domizil, Zweck, Kapital
+        #linebreak()
+        _(nur Stammdaten; zugehörige Dokumente wie Handelsregistereintrag oder Bewilligung sind eigene Objekte, siehe Beziehungen)_
+      ],
+
+      [Zustände],
+      [neu, beurkundet, eingereicht, unvollständig, angenommen, abgelehnt, im Handelsregister eingetragen],
+
+      [Beziehungen],
+      [
+        - wird referenziert von *Gründungsvorhaben* (ein Vorhaben kann auch ohne Unternehmensgründung bestehen)
+        - steht in Beziehung zu *Bewilligung*, *Lieferantenkonto* und *Finanzierung*
+      ],
+    )
+  ]
+) <tbl-GO-Unternehmen>
+
 === Bewilligung 
-- properties: Unternehmen
-- Zustände: new, requested, incomplete, accepted, rejected, cancel
+
 #figure(
 image("../assets/GOBewilligung.svg", width: 50%),
 caption: [Geschäftsobjekt Bewilligung und dessen Zustände]
 ) <fig-GOBewilligung>
+#figure(
+  caption: [Geschäftsobjekt Bewilligung],
+  block(
+    width: 100%,
+    radius: 6pt,
+    clip: true,
+    stroke: 0.5pt + luma(225),
+  )[
+    // Kopfzeile als abgerundetes Band
+    #block(
+      width: 100%,
+      fill: luma(70),
+      inset: (x: 10pt, y: 7pt),
+      below: 0pt,
+    )[
+      #grid(
+        columns: (3.2cm, 1fr),
+        gutter: 10pt,
+        text(fill: white, weight: "bold", size: 0.95em)[Merkmal],
+        text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
+      )
+    ]
+    #set par(justify: false)
+    #table(
+      columns: (3.2cm, 1fr),
+      inset: (x: 10pt, y: 7pt),
+      stroke: (x: none, y: 0.5pt + luma(232)),
+      fill: (x, y) => if calc.even(y) { luma(250) } else { white },
+      align: (left, left),
+
+      [Bezeichnung],
+      [Bewilligung],
+
+      [Definition / Zweck],
+      [Die Sammlung aller notwendigen Dokumente (inkl. Selbstkontrollkonzept), die für den digitalen Antrag bei der kantonalen Stelle benötigt werden.],
+
+      [Attribute],
+      [ wollen wir Attribute?],
+
+      [Zustände],
+      [neu, in Vorbereitung, eingereicht, unvollständig, abgelehnt, erteilt, abgebrochen],
+
+      [Beziehungen],
+      [ ],
+    )
+  ]
+) <tbl-GO-Bewilligung>
+
 === Finanzierung
 #todo-action([\@ Adi: bitte allenfalls etwas ausführlicher beschreiben])
-- status: new, requested, incomplete, accepted, rejected, cancel
-- properties: Bonitätsprüfung, Kredit
+
+
 #figure(
 image("../assets/GOFinanzierung.svg", width: 50%),
 caption: [Geschäftsobjekt Finanzierung und dessen Zustände]
 ) <fig-GOFinanzierung>
+
+
+#figure(
+  caption: [Geschäftsobjekt Finanzierung],
+  block(
+    width: 100%,
+    radius: 6pt,
+    clip: true,
+    stroke: 0.5pt + luma(225),
+  )[
+    // Kopfzeile als abgerundetes Band
+    #block(
+      width: 100%,
+      fill: luma(70),
+      inset: (x: 10pt, y: 7pt),
+      below: 0pt,
+    )[
+      #grid(
+        columns: (3.2cm, 1fr),
+        gutter: 10pt,
+        text(fill: white, weight: "bold", size: 0.95em)[Merkmal],
+        text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
+      )
+    ]
+    #set par(justify: false)
+    #table(
+      columns: (3.2cm, 1fr),
+      inset: (x: 10pt, y: 7pt),
+      stroke: (x: none, y: 0.5pt + luma(232)),
+      fill: (x, y) => if calc.even(y) { luma(250) } else { white },
+      align: (left, left),
+
+      [Bezeichnung],
+      [Finanzierung],
+
+      [Definition / Zweck],
+      [ ],
+
+      [Attribute],
+      [Löschen?],
+
+      [Zustände],
+      [- status: new, requested, incomplete, accepted, rejected, cancel],
+
+      [Beziehungen],
+      [- properties: Bonitätsprüfung, Kredit],
+    )
+  ]
+) <tbl-GO-Finanzierung>
+
 === Lieferantenkonto
 #todo-action([\@ Jakob: bitte allenfalls etwas ausführlicher beschreiben])
 - properties: Unternehmen, Transgourmet
@@ -88,14 +290,117 @@ caption: [Geschäftsobjekt Finanzierung und dessen Zustände]
 image("../assets/GOLieferantenkonto.svg", width: 50%),
 caption: [Geschäftsobjekt Lieferantenkonto und dessen Zustände]
 ) <fig-GOLieferantenkonto>
+
+#figure(
+  caption: [Geschäftsobjekt Lieferantenkonto],
+  block(
+    width: 100%,
+    radius: 6pt,
+    clip: true,
+    stroke: 0.5pt + luma(225),
+  )[
+    // Kopfzeile als abgerundetes Band
+    #block(
+      width: 100%,
+      fill: luma(70),
+      inset: (x: 10pt, y: 7pt),
+      below: 0pt,
+    )[
+      #grid(
+        columns: (3.2cm, 1fr),
+        gutter: 10pt,
+        text(fill: white, weight: "bold", size: 0.95em)[Merkmal],
+        text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
+      )
+    ]
+    #set par(justify: false)
+    #table(
+      columns: (3.2cm, 1fr),
+      inset: (x: 10pt, y: 7pt),
+      stroke: (x: none, y: 0.5pt + luma(232)),
+      fill: (x, y) => if calc.even(y) { luma(250) } else { white },
+      align: (left, left),
+
+      [Bezeichnung],
+      [Lieferantenkonto],
+
+      [Definition / Zweck],
+      [ ],
+
+      [Attribute],
+      [Löschen?],
+
+      [Zustände],
+      [ ],
+
+      [Beziehungen],
+      [ ],
+    )
+  ]
+) <tbl-GO-Lieferantenkonto>
+
 === Gründungsvorhaben
 #todo-action([\@ jan/jakob: könnt ihr bitte dieses Objekt beschreiben?])
-/*ich habe noch 2 Screenshots gemacht, als Jan das Kozept erklärte. sie sind in den Assets, GVH_1.png und GVH_2.png (bitte löschen, falls ihr diese nicht braucht */
-- status:   0 - Initiiert / 1 · Orientiert  / 2 · Registriert  / 3 · Bewilligt / 4 · Finanziert / 5 - Realisiert 
+
+
 #figure(
 image("../assets/GOGruendungsvorhaben.svg", width: 50%),
 caption: [Geschäftsobjekt Gründungsvorhaben und dessen Zustände]
 ) <fig-GOGruendungsvorhaben>
+
+
+#figure(
+  caption: [Geschäftsobjekt Gründungsvorhaben],
+  block(
+    width: 100%,
+    radius: 6pt,
+    clip: true,
+    stroke: 0.5pt + luma(225),
+  )[
+    // Kopfzeile als abgerundetes Band
+    #block(
+      width: 100%,
+      fill: luma(70),
+      inset: (x: 10pt, y: 7pt),
+      below: 0pt,
+    )[
+      #grid(
+        columns: (3.2cm, 1fr),
+        gutter: 10pt,
+        text(fill: white, weight: "bold", size: 0.95em)[Merkmal],
+        text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
+      )
+    ]
+    #set par(justify: false)
+    #table(
+      columns: (3.2cm, 1fr),
+      inset: (x: 10pt, y: 7pt),
+      stroke: (x: none, y: 0.5pt + luma(232)),
+      fill: (x, y) => if calc.even(y) { luma(250) } else { white },
+      align: (left, left),
+
+      [Bezeichnung],
+      [Gründungsvorhaben],
+
+      [Definition / Zweck],
+      [/*ich habe noch 2 Screenshots gemacht, als Jan das Kozept erklärte. sie sind in den Assets, GVH_1.png und GVH_2.png (bitte löschen, falls ihr diese nicht braucht */],
+
+
+      [Attribute],
+      [ ],
+
+      [Zustände],
+      [- status:   0 - Initiiert / 1 · Orientiert  / 2 · Registriert  / 3 · Bewilligt / 4 · Finanziert / 5 - Realisiert 
+        
+        #frage([
+an alle: ich finde, das Objekt Gründungsvorhaben soll auch ABGEBROCHEN werden können - es fehlt der entsprechende Zustand.) 
+])],
+
+      [Beziehungen],
+      [ ],
+    )
+  ]
+) <tbl-GO-Gründungsvorhaben>
 
 === Reflektion
 #stolperstein([
@@ -189,7 +494,46 @@ Die Szenarien sind in @sec-szenarien-customer-journey beschrieben und werden ein
   - Events 
   - Transaktionen
 */
+1. Zustände 
+2. Geschäftstransaktionen
+#figure(
+  caption: [Geschäftstransaktionen: Prozess "sich orientieren"],
+  block(
+    width: 100%,
+    radius: 6pt,
+    clip: true,
+    stroke: 0.5pt + luma(225),
+  )[
+    #block(
+      width: 100%,
+      fill: luma(70),
+      inset: (x: 10pt, y: 7pt),
+      below: 0pt,
+    )[
+      #grid(
+        columns: (3.8cm, 1fr, 3.2cm),
+        gutter: 10pt,
+        text(fill: white, weight: "bold", size: 0.95em)[Geschäfts-\
+transaktion],
+        text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
+        text(fill: white, weight: "bold", size: 0.95em)[Zustands-\
+übergang],
+      )
+    ]
+    #set par(justify: false)
+    #table(
+      columns: (3.8cm, 1fr, 3.2cm),
+      inset: (x: 10pt, y: 7pt),
+      stroke: (x: none, y: 0.5pt + luma(232)),
+      fill: (x, y) => if calc.odd(y) { luma(250) } else { white },
+      align: (left, left, left),
 
+      [ ], [ ], [ ],
+      [ ], [ ], [ ],
+      [ ], [ ], [ ],
+    )
+  ]
+) <tbl-GT-sich-orientieren>
 
 === Amira registriert sich bei GastroStart
 
@@ -202,7 +546,46 @@ Die Szenarien sind in @sec-szenarien-customer-journey beschrieben und werden ein
   - Events 
   - Transaktionen
 */
++ Zustände 
++ Geschäftstransaktionen
+#figure(
+  caption: [Geschäftstransaktionen: Prozess «sich registrieren»],
+  block(
+    width: 100%,
+    radius: 6pt,
+    clip: true,
+    stroke: 0.5pt + luma(225),
+  )[
+    #block(
+      width: 100%,
+      fill: luma(70),
+      inset: (x: 10pt, y: 7pt),
+      below: 0pt,
+    )[
+      #grid(
+        columns: (3.8cm, 1fr, 3.2cm),
+        gutter: 10pt,
+        text(fill: white, weight: "bold", size: 0.95em)[Geschäfts-\
+transaktion],
+        text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
+        text(fill: white, weight: "bold", size: 0.95em)[Zustands-\
+übergang],
+      )
+    ]
+    #set par(justify: false)
+    #table(
+      columns: (3.8cm, 1fr, 3.2cm),
+      inset: (x: 10pt, y: 7pt),
+      stroke: (x: none, y: 0.5pt + luma(232)),
+      fill: (x, y) => if calc.odd(y) { luma(250) } else { white },
+      align: (left, left, left),
 
+      [ ], [ ], [ ],
+      [ ], [ ], [ ],
+      [ ], [ ], [ ],
+    )
+  ]
+) <tbl-GT-sich-registrieren>
 === Amira gründet ihr Unternehmen
 
  #figure(
@@ -228,7 +611,44 @@ caption: [Geschäftsobjekt Unternehmen und dessen Zustände]
 - *Eintrag im Handelsregister beantragen:*
 - *Prüfung durch Handelsregister (abwarten):*
 - *Im Handelsregister eintragen:*
+#figure(
+  caption: [Geschäftstransaktionen: Prozess "Unternehmen gründen"],
+  block(
+    width: 100%,
+    radius: 6pt,
+    clip: true,
+    stroke: 0.5pt + luma(225),
+  )[
+    #block(
+      width: 100%,
+      fill: luma(70),
+      inset: (x: 10pt, y: 7pt),
+      below: 0pt,
+    )[
+      #grid(
+        columns: (3.8cm, 1fr, 3.2cm),
+        gutter: 10pt,
+        text(fill: white, weight: "bold", size: 0.95em)[Geschäfts-\
+transaktion],
+        text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
+        text(fill: white, weight: "bold", size: 0.95em)[Zustands-\
+übergang],
+      )
+    ]
+    #set par(justify: false)
+    #table(
+      columns: (3.8cm, 1fr, 3.2cm),
+      inset: (x: 10pt, y: 7pt),
+      stroke: (x: none, y: 0.5pt + luma(232)),
+      fill: (x, y) => if calc.odd(y) { luma(250) } else { white },
+      align: (left, left, left),
 
+      [ ], [ ], [ ],
+      [ ], [ ], [ ],
+      [ ], [ ], [ ],
+    )
+  ]
+) <tbl-GT-Unternehmen-gründen>
 
 
 /* 
@@ -241,17 +661,10 @@ caption: [Geschäftsobjekt Unternehmen und dessen Zustände]
 */
 === Amira erhält die Bewilligung
 
- #figure(
-  image("../assets/Amira erhält die Bewilligung.svg", width: 100%),
-  caption: [Geschäftstransaktionen und Zustände - Szenario Amira erhält die Bewilligung]
-) <fig-GTZ-Amira-bewilligung>
-
-
-
 1. Zustände
 #figure(
-image("../assets/GOBewilligung.svg", width: 50%),
-caption: [Geschäftsobjekt Bewilligung und dessen Zustände]
+image("../assets/ZustandGOBewilligung.svg", width: 60%),
+caption: [Zustandsdiagramm des Geschäftsobjekt Bewilligung]
 ) <fig-GOBewilligung>
 
 - *neu:*
@@ -260,13 +673,70 @@ caption: [Geschäftsobjekt Bewilligung und dessen Zustände]
 - *unvollständig:*
 - *abgelehnt:*
 - *erteilt:* 
+- *abgebrochen:* 
 
-
+#design-entscheid([Wir haben uns entschieden, die Frage um das Schicksal des Objekts "Bewilligung" im Fall der Löschung des Benutzerprofils von Amira offenzulassen.])
+ 
+ 
 2. Geschäftstransaktionen
-- *Bewilligungsantrag vorbereiten:*
-- *Bewilligungsantrag einreichen:*
-- *Antrag prüfen:*
-- *Verfügung mitteilen:*
+ #figure(
+  image("../assets/Amira erhält die Bewilligung.svg", width: 100%),
+  caption: [Geschäftstransaktionen und Zustände - Szenario Amira erhält die Bewilligung]
+) <fig-GTZ-Amira-bewilligung>
+
+
+#figure(
+  caption: [Geschäftstransaktionen: "Bewilligung erhalten"],
+  block(
+    width: 100%,
+    radius: 6pt,
+    clip: true,
+    stroke: 0.5pt + luma(225),
+  )[
+    #block(
+      width: 100%,
+      fill: luma(70),
+      inset: (x: 10pt, y: 7pt),
+      below: 0pt,
+    )[
+      #grid(
+        columns: (3.8cm, 1fr, 3.2cm),
+        gutter: 10pt,
+        text(fill: white, weight: "bold", size: 0.95em)[Geschäfts-\ transaktion],
+        text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
+       text(fill: white, weight: "bold", size: 0.95em)[Zustands\u{00AD}übergang],
+      )
+    ]
+    #set par(justify: false)
+    #table(
+      columns: (3.8cm, 1fr, 3.2cm),
+      inset: (x: 10pt, y: 7pt),
+      stroke: (x: none, y: 0.5pt + luma(232)),
+      fill: (x, y) => if calc.odd(y) { luma(250) } else { white },
+      align: (left, left, left),
+
+      [Bewilligungsantrag vorbereiten],
+      [Amira erfasst die erforderlichen Angaben und Unterlagen für den Bewilligungsantrag.],
+      [neu → in Vorbereitung],
+
+      [Bewilligungsantrag einreichen],
+      [Der vorbereitete Antrag wird bei der zuständigen Behörde eingereicht. Ab hier ist kein eigenständiger Rückzug mehr möglich.],
+      [in Vorbereitung → eingereicht],
+
+      [Bewilligungsantrag vervollständigen],
+      [Amira reicht die von der Behörde nachgeforderten Unterlagen nach, damit die Prüfung fortgesetzt werden kann.],
+      [unvollständig → eingereicht],
+
+      [Antrag prüfen],
+      [Die Behörde prüft den Antrag formell und inhaltlich und entscheidet über das weitere Vorgehen.],
+      [eingereicht → erteilt / abgelehnt / unvollständig],
+
+      [Verfügung mitteilen],
+      [Die Behörde teilt Amira das Ergebnis der Prüfung als Verfügung mit.],
+      [erteilt / abgelehnt (terminal)],
+    )
+  ]
+) <tbl-GT-Bewilligung>
 
 
 
@@ -286,6 +756,47 @@ caption: [Geschäftsobjekt Bewilligung und dessen Zustände]
   - Transaktionen
 */
 
++ Zustände
++ Geschäftstransaktionen
+#figure(
+  caption: [Geschäftstransaktionen: Prozess «Finanzierung erhalten»],
+  block(
+    width: 100%,
+    radius: 6pt,
+    clip: true,
+    stroke: 0.5pt + luma(225),
+  )[
+    #block(
+      width: 100%,
+      fill: luma(70),
+      inset: (x: 10pt, y: 7pt),
+      below: 0pt,
+    )[
+      #grid(
+        columns: (3.8cm, 1fr, 3.2cm),
+        gutter: 10pt,
+        text(fill: white, weight: "bold", size: 0.95em)[Geschäfts-\
+transaktion],
+        text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
+        text(fill: white, weight: "bold", size: 0.95em)[Zustands-\
+übergang],
+      )
+    ]
+    #set par(justify: false)
+    #table(
+      columns: (3.8cm, 1fr, 3.2cm),
+      inset: (x: 10pt, y: 7pt),
+      stroke: (x: none, y: 0.5pt + luma(232)),
+      fill: (x, y) => if calc.odd(y) { luma(250) } else { white },
+      align: (left, left, left),
+
+      [ ], [ ], [ ],
+      [ ], [ ], [ ],
+      [ ], [ ], [ ],
+    )
+  ]
+) <tbl-GT-finanzierung-erhalten>
+
 === Amira wird Kunde bei Transgourmet
 #todo-action([\@ Jakob Szenario/Beschreibung (mit Bild) einfügen])
 
@@ -297,7 +808,47 @@ caption: [Geschäftsobjekt Bewilligung und dessen Zustände]
   - Events 
   - Transaktionen
 */
++ Zustände
++ Geschäftstransaktionen
 
+#figure(
+  caption: [Geschäftstransaktionen: Prozess «Kunde bei Transgourmet werden»],
+  block(
+    width: 100%,
+    radius: 6pt,
+    clip: true,
+    stroke: 0.5pt + luma(225),
+  )[
+    #block(
+      width: 100%,
+      fill: luma(70),
+      inset: (x: 10pt, y: 7pt),
+      below: 0pt,
+    )[
+      #grid(
+        columns: (3.8cm, 1fr, 3.2cm),
+        gutter: 10pt,
+        text(fill: white, weight: "bold", size: 0.95em)[Geschäfts-\
+transaktion],
+        text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
+        text(fill: white, weight: "bold", size: 0.95em)[Zustands-\
+übergang],
+      )
+    ]
+    #set par(justify: false)
+    #table(
+      columns: (3.8cm, 1fr, 3.2cm),
+      inset: (x: 10pt, y: 7pt),
+      stroke: (x: none, y: 0.5pt + luma(232)),
+      fill: (x, y) => if calc.odd(y) { luma(250) } else { white },
+      align: (left, left, left),
+
+      [ ], [ ], [ ],
+      [ ], [ ], [ ],
+      [ ], [ ], [ ],
+    )
+  ]
+) <tbl-GT-Kunde-bei-Transgourmet>
 
  #figure(
   image("../assets/GrpA_GP_GastroStart_Albrecht_Jakob.svg", width: 80%),

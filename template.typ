@@ -104,3 +104,4 @@
 }
 // Inserisci questa riga nel tuo template.typ o in cima a main.typ
     #show figure.where(kind: table): set block(breakable: true)
+    

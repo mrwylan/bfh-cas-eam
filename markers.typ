@@ -17,6 +17,7 @@
 #let farbe-entscheid = rgb("#16a34a")
 #let farbe-stolperstein = rgb("#dc2626")
 #let farbe-frage = rgb("#f59e0b")
+#let farbe-action = rgb("#0bc2f5")
 #let farbe-fuehrung = rgb("#2563eb")
 
 #let marker-box(titel, farbe, inhalt, icon: none) = block(
@@ -58,6 +59,6 @@
 
 #let todo-action(inhalt) = context {
   if kompendium-modus.get() {
-    marker-box("TODO / ACTION!", farbe-frage, inhalt)
+    marker-box("TODO / ACTION!", farbe-action, inhalt)
   }
 }
