@@ -42,12 +42,21 @@ Dabei liessen sich Nomen wie "Gründung", "Finanzierung", "Kundenkonto" - diese 
 ) <fig-customer-journey-view>
 
 #todo-action([\@ Adi: bitte in Archi ein Objektdiagramm erstellen (unter Views/Assets4Paper/Geschäftsobjekte - Iteration 1/IdentifizierteGeschaefstobjekte), dann als SVG exportieren und hier integrieren. Als Beispiel: Geschäftsobjekte Arthur Reise, S. 46 vom Skript - Abbildung 3.5])
+
+#frage([brauchen wir nicht das Objekt "Kunde"? was meint ihr?
+wenn nein: bitte begründen :-)])
+
+
+
 #figure(
-  image("../assets/IdentifizierteGeschaefstobjekte.svg", width: 50%),
+  image("../assets/klassenDiagrammGastrostart.svg", width: 50%),
   caption: [Geschäftsobjekt Kundenkonto und dessen Zustände]
 ) <fig-IdentifizierteGeschaefstobjetke>
 
+#design-entscheid([
+Es wurde verzichtet, das Objekt Person zu modellieren. Die Behandlung von personenbezogenen Invarianten wie Domizil in der Schweiz oder Besitz des Wirtepatentes als Voraussetzung für die Gründung des Unternehmens und für den Erhalt der Betriebsbewilligung würden den Rahmen dieser Arbeit sprengen.
 
+])
 === Kundenkonto (Registrierung)
 #todo-action([\@ Jan: bitte allenfalls etwas ausführlicher beschreiben])
 
