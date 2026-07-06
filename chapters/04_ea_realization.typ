@@ -28,9 +28,12 @@ Wir verlassen das Tagebuch-Aufbau - und gehen hin zu einem logischen, fliessende
 
 == Erste Iteration: Identifikation der Geschäftsobjekte
 
+
 #fuehrung([*Geschäftsobjekte* 
 
-Aus der Geschichte werden die groben Geschäftsobjekte sowie die Beziehungen zwischen den Geschäftsobjekten identifiziert, die in einer dematerialisierten Umsetzung der Geschichte noch Relevanz haben. @Spichiger2026GFbUA]) 
+Aus der Geschichte werden die groben Geschäftsobjekte sowie die Beziehungen zwischen den Geschäftsobjekten identifiziert, die in einer dematerialisierten Umsetzung der Geschichte noch Relevanz haben.
+
+Ein Geschäftsobjekt kapselt statische Struktur des RIM. Ein Geschäftsobjekt beschreibt einen zentral wesentlichen Teil des Kontexts einer Unternehmung und abstrahiert vollständig von den Ressourcen der Unternehmung (Dematerialisierung) und dessen Verhalten. @Spichiger2026GFbUA]) 
 
 === Vorgehen
 Um Geschäftsobjekte zu identifizieren hat sich die Gruppe mit der Struktur von Amiras Customer Journey auseinandergesetzt.
@@ -41,17 +44,17 @@ Dabei liessen sich Nomen wie "Gründung", "Finanzierung", "Kundenkonto" - diese 
   caption: [Archimate Modell der Customer Journey von Amira und erste Iteration für die Identifikation der Geschäftsobjekte]
 ) <fig-customer-journey-view>
 
-#todo-action([\@ Adi: bitte in Archi ein Objektdiagramm erstellen (unter Views/Assets4Paper/Geschäftsobjekte - Iteration 1/IdentifizierteGeschaefstobjekte), dann als SVG exportieren und hier integrieren. Als Beispiel: Geschäftsobjekte Arthur Reise, S. 46 vom Skript - Abbildung 3.5])
-
-#frage([brauchen wir nicht das Objekt "Kunde"? was meint ihr?
-wenn nein: bitte begründen :-)])
-
+=== Modell der identifizierten Objekte
+Folgendes Archimate Modell der Geschäftsobjekte von GastroStart, die von der Gruppe identifiziert wurden. 
 
 
 #figure(
-  image("../assets/klassenDiagrammGastrostart.svg", width: 50%),
+  image("../assets/Domain Models - GO diagram.svg", width: 80%),
   caption: [Geschäftsobjekt Kundenkonto und dessen Zustände]
 ) <fig-IdentifizierteGeschaefstobjetke>
+
+#frage([brauchen wir nicht das Objekt "Kunde"? Und Webseite?])
+
 
 #design-entscheid([
 Es wurde verzichtet, das Objekt Person zu modellieren. Die Behandlung von personenbezogenen Invarianten wie Domizil in der Schweiz oder Besitz des Wirtepatentes als Voraussetzung für die Gründung des Unternehmens und für den Erhalt der Betriebsbewilligung würden den Rahmen dieser Arbeit sprengen.
@@ -158,6 +161,7 @@ caption: [Geschäftsobjekt Unternehmen und dessen Zustände]
       [Definition / Zweck],
       [
         Die zu gründende resp. gegründete juristische Person (Betrieb), an der Amiras Gründungsvorhaben ausgerichtet ist. Das Objekt bündelt die für die Gründung wesentlichen Stammdaten der Unternehmung. Der Gründungsverlauf selbst wird nicht als Inhalt abgebildet, sondern über die Zustände des Objekts nachgezeichnet.
+        Die Gründung einer juristischen Person setzt voraus, dass mindestens ein Vertreter Wohnsitz in der Schweiz hat. 
       ],
 
       [Attribute],
@@ -220,13 +224,16 @@ caption: [Geschäftsobjekt Bewilligung und dessen Zustände]
       [Bewilligung],
 
       [Definition / Zweck],
-      [Die Sammlung aller notwendigen Dokumente (inkl. Selbstkontrollkonzept), die für den digitalen Antrag bei der kantonalen Stelle benötigt werden.],
+      [Behördlicher "Vertrag", welcher einer natürlichen oder juristischen Person (_in casu_ das Unternehmen von Amira) erteilt werden kann.
+      Die Erteilung der Bewilligung setzt je nach Kanton ein Fähigkeitsausweis voraus. In Kanton Fribourg muss mindestens eine Person im Betrieb ein Wirtepatent besitzen (vgl. Anmerkung im Klassendiagramm.)],
 
       [Attribute],
       [ wollen wir Attribute?],
 
       [Zustände],
-      [neu, in Vorbereitung, eingereicht, unvollständig, abgelehnt, erteilt, abgebrochen],
+      [neu, in Vorbereitung, eingereicht, unvollständig, abgelehnt, erteilt, abgebrochen.
+
+      Andere Zustände wie erloschen, entzogen, sistiert, sind für die Customer Journey nicht relevant.],
 
       [Beziehungen],
       [ ],
@@ -885,8 +892,31 @@ Geschäftstransaktionen, die inhaltlich zusammenhängen, werden zu Geschäftspro
 
 ])
 
-== Vierte Iteration: Geschäftsfähigkeiten und Abhängigkeiten unter einander
 
+
+
+
+== Vierte Iteration: Geschäftsfähigkeiten und Abhängigkeiten unter einander
+=== Geschäftsfähigkeiten bei der Erstellung des Benutzerprofils in Gastrostart
+1. Identitätsverwaltung 
+• Der Benutzer legt Kennung und Credentials fest.
+• Vergabe und Verwaltung einer eindeutigen Benutzerkennung.
+• Festlegung und sichere Speicherung von Passwort / MFA.
+• Überprüfung der Identität bei späteren Anmeldungen.
+2. Zugangsverwaltung
+• Steuerung, wer auf welche Plattformressourcen zugreifen darf. 
+• Aktivierung des Benutzerkontos (z. B. E-Mail-Verifikation).
+• Vergabe von Rollen (Gründer, Mentor, Investor).
+3. Profilmanagement
+• Der Benutzer erstellt ein Profil seines Gründungsvorhabens. 
+• Aufnahme von Stammdaten zum Gründer und Vorhaben
+• Dokumentation von Idee, Branche, Phase des Start-ups
+• Spätere Änderung und Aktualisierung des Profils.
+4. Datenvalidierung
+• Sicherstellung der Qualität und Vollständigkeit der eingegebenen Daten. 
+• Prüfung auf gültige E-Mail, Kennwortregeln etc.
+• Pflichtfelder im Gründungsprofil
+• Erkennung bereits vorhandener Kennunge
 
 
 
@@ -1001,7 +1031,33 @@ Die Schichten lesen sich wie folgt:
 
 Die entscheidende architektonische Beobachtung: Der monolithische Dispo-/ERP-Kern realisiert sämtliche Geschäftsfunktionen ohne Anti-Corruption Layer (ACL) und ohne Schnitt in Self-Contained Systems (SCS) @bass2012.
 
+== Akteure des öffentlichen Wesen 
+=== Einordung in das Operating System nach Ross / Weill des Schweizer öffentlichen Wesens
 
+Das öffentliche Wesen in der Schweiz ist föderalistisch organisiert und spielt sich auf 3 politischen (und verwaltungstechnischen) Ebenen ab - dies beeinflusst stark die Interaktionen mit den Betroffenen. 
+
+Diese drei Ebenen müssen getrennt betrachtet und eingeordnet werden: 
+
++ *Bundesebene*: ist bei Diversification einzordnune. Das ist nicht überraschend, sondern strukturell angelegt: Die Gesetztgebung gibt den Departementen und Ämtern eigene Vollzugsautonomie für ihre Kernaufgaben. Ist nichts anderes vorgesehen, ist eine Zusammenarbeit nicht erlaubt. Das ist politisch-rechtlich gewollte Dezentralisierung. Eine "dünne" zentrale Schicht basierend u.A. auf Standarddiensten, Produkte- und Prozessstandards und architektonischen Richtlinien erlaubt eine gewisse Interoperabilität. 
++ *Kantonale Ebene*: ist ebenfalls bei Diversification einzuordnen - 26-mal wiederholte Diversification. Die Einhaltung eines allfälligen obligatorischen gesetzlichen Minimums sowie die teil freiwillige Übernahme von eCH Standards erlauben eine ansatzweise Interoperabilität mit den anderen Ebenen. 
++ *Gemeindeebene*: Die Gemeinde gehört ebenfalls in die Diversification. Gemeinden differenzieren sich stark von einander - innerhalb desselben Kantons mit eigenen, oft analoge Prozesse. Und nochmals von Kanton zu Kanton kommen der Gemeinden unterschiedliche Zuständigkeiten zu  (Baubewilligung, Lärmschutz, Ortsplanung, punktuelle Bewilligungen). 
+=== Abbildung des öffentlichen Wesens im Kontext von Gastrostart 
+Das öffentliche Wesen nimmt nur indirekt eine Rolle in unserem Unternehmen Gastrostart. 
+Eher bildet das öffentliche Wesen eine Hürde, die überwunden werden muss. Ein notwendiges Übel an Regulatorien und Vorgaben, welche die Kunden von Gastrostart von ihrem Traum trennt. 
+Das öffentliche Wesen wird sich nicht in die Firma Gastrostart integrieren - es hat weder das Bedürfnis noch die Bestimmung, bei solchen privaten Initiativen mitzumachen. 
+Noch weniger kann Gastrostart den Akteures des öffentlichen Wesens ein Geschäftsmodell (Operating System) aufzwingen.
+
+Mit ihrem Versprechen,  die Kunden erfolgreich bei der Gründung ihres Gastrounternehmens zu unterstützen - von der Einschreibung auf die Plattform über die Firmengründung (inkl. Finanzierung) bis zur ersten Lieferung durch Transgourmet - inklusive Kundenkonto - übernimmt Gastrostart eine sehr komplexe Aufgabe. 
+Die "Sorglosigkeit", die Gastrostart verspricht, sollte vielleicht gar keine Architektureigenschaft sein, sondern eine Dienstleistung von Gastrostart selbst. 
+
+== Feedback Jarchow 
++ Digitalisierung 
++ Integration und STandardisierung - je nach Gebiet (Autos, Karten) fortgeschritten 
++ es geht darum, ob man eine ist, soll oder zielarchitektur beschreibt 
++ Bund soll zu unification streben 
++ Widerspruch von Operating Model und Behörden (kein OM)
++ wer daten standardisiert hat die macht
++ Standards sind am Aufkommen
 
 = Gedanken zum RSM (Goal: User Experience)
 == Ablauforganisation 
