@@ -694,7 +694,7 @@ caption: [Zustandsdiagramm des Geschäftsobjekt Bewilligung]
  
 2. Geschäftstransaktionen
  #figure(
-  image("../assets/.svg", width: 100%),
+  image("../assets/GTZ Amira erhält die Bewilligung.svg", width: 100%),
   caption: [Geschäftstransaktionen und Zustände - Szenario Amira erhält die Bewilligung]
 ) <fig-GTZ-Amira-bewilligung>
 
@@ -739,7 +739,7 @@ caption: [Zustandsdiagramm des Geschäftsobjekt Bewilligung]
 
       [Bewilligungsantrag vervollständigen],
       [Amira reicht die von der Behörde nachgeforderten Unterlagen nach, damit die Prüfung fortgesetzt werden kann.],
-      [unvollständig → eingereicht],
+      [unvollständig → in Vorbereitung],
 
       [Antrag prüfen],
       [Die Behörde prüft den Antrag formell und inhaltlich und entscheidet über das weitere Vorgehen.],
@@ -747,7 +747,7 @@ caption: [Zustandsdiagramm des Geschäftsobjekt Bewilligung]
 
       [Verfügung mitteilen],
       [Die Behörde teilt Amira das Ergebnis der Prüfung als Verfügung mit.],
-      [erteilt / abgelehnt (terminal)],
+      [erteilt / abgelehnt],
     )
   ]
 ) <tbl-GT-Bewilligung>
