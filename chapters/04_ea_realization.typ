@@ -486,6 +486,7 @@ Was bleibt physisch vorhanden, was verschwindet?"
 ) <tbl-business-objects-kurzform>
 */
 == Zweite Iteration: Zustände und Geschäftstransaktionen oder die Identifikation des relevanten Verhaltens
+#frage([an alle: wie findet ihr mein Vorschlag für die Dokumentation der Geschäftstransaktionen und Zustände? ist es ok, immer dasselbe Objekt als in- und output zu haben (bspw. bei bewilligung)])
 
 Wir dokumentieren die Identifikation von Zuständen und Geschäftstransaktionen pro Szenario, um die Lesbarkeit zu erhalten.
 Die entsprechenden Geschäftsprozesse sind ebenfalls modelliert, auch wenn sie später erklärt werden.
@@ -621,6 +622,7 @@ caption: [Geschäftsobjekt Unternehmen und dessen Zustände]
 - *angenommen:*
 - *abgelehnt:*
 - *im Handelsregister eingetragen / registriert:*
+- *abgebrochen:*
 
 2. Geschäftstransaktionen
 
@@ -876,14 +878,23 @@ transaktion],
   ])
 
 
-+ *zu "kleine" Objekte:* Bestellung und Bestellbestätigung wurden als separate Objekte modelliert - anstatt auf die Sichtbarkeit und Einsehbarkeit des Zustands aufzubauen. 
++ *zu "kleine" Objekte:* in einer frühen Phase wurden Bestellung und Bestellbestätigung als separate Objekte modelliert - anstatt auf die Sichtbarkeit und Einsehbarkeit des Zustands aufzubauen. 
+/*Zustände sind absolut und für alle Beteiligten sichtbar - eine separat modellierte  Bestätigung braucht es nicht. 
+*/
 
  #figure(
   image("../assets/reflektion.png", width: 80%),
   caption: [Archimate Modell einer frühen Modellierungsphase]
 ) <fig-reflektion_transgourmet>
 
-Zustände sind absolut und für alle Beteiligten sichtbar - eine separat modellierte  Bestätigung braucht es nicht. 
++ *getrennte Objekte* in einer ebenfalls frühen Phase wurde zwischen zwei Objekten, "Betriebsbewilligungsantrag" und "Betriebsbewilligung" unterscheidet. Dabei benötigt die abstrakte Modellierung nur ein Geschäftsobjekt: die Betriebsbewilligung bleibt bestehen, ihr Zustand gibt Auskunft darauf, ob der "Vertrag" mit der Behörde bereits abgeschlossen ist (Zustand "erteilt") oder eben noch nicht (Zustande "beantragt").
+
+#figure(
+  image("../assets/Betriebsbewilligung beantragen - verfügen.png", width: 80%),
+  caption: [Archimate Modell einer frühen Modellierungsphase von "Betriebsbewilligung erhalten"]
+) 
+
+
 == Dritte Iteration: Geschäftsprozesse und Vollständigkeit des bisherigen Modells
 
 #fuehrung([
@@ -896,6 +907,8 @@ Geschäftstransaktionen, die inhaltlich zusammenhängen, werden zu Geschäftspro
 
 
 == Vierte Iteration: Geschäftsfähigkeiten und Abhängigkeiten untereinander
+
+#fuehrung([Geschäftsfähigkeiten bilden eine stabile, redundanzfreie Baumstruktur der funktionalen Dekomposition einer Unternehmung. Sie abstrahieren von jeglichen Ressourcen, werden aber von diesen unterstützt. Geschäftsfähigkeiten sind in sich stark zusammenhängend während sie mit andern Geschäftsfähigkeiten lose gekoppelt sind. @Spichiger2026GFbUA])
 
 === Geschäftsfähigkeiten für die Orientierung auf der Webseite von Gastrostart
 #todo-action([\@ Jan, bitte nachführen])
@@ -921,8 +934,12 @@ Geschäftstransaktionen, die inhaltlich zusammenhängen, werden zu Geschäftspro
 • Pflichtfelder im Gründungsprofil
 • Erkennung bereits vorhandener Kennunge
 
-=== Geschäftsfähigkeiten Unternehmen gründen
-=== Geschäftsfähigkeiten Bewilligung erhalten
+=== Geschäftsfähigkeiten der Behördeninteraktion: Unternehmen gründen und Bewilligung erhalten
+#figure(
+  image("../assets/GF Behördeninteration.svg", width: 80%),
+  caption: [Archimate Modell der Geschäftsfähigkeiten der Behördeninteraktion]
+) <fig-GF_Behördeninteraktion>
+
 === Geschäftsfähigkeiten Finanzierung erhalten
 
 #todo-action([\@ Adi: bitte erarbeiten.])
@@ -931,11 +948,11 @@ Geschäftstransaktionen, die inhaltlich zusammenhängen, werden zu Geschäftspro
 
 #figure(
   image("../assets/Phase 5 - Kunde bei Transgourmet.svg", width: 80%),
-  caption: [Archimate Modell einer frühen Modellierungsphase]
+  caption: [Archimate Modell TODO]
 ) <fig-phase_5_Kunde_bei_Transgourmet>
 
 
-
+/*
 == Business-Object-Analyse <sec-business-objects>
 #todo-action([wir übernehmen Gründungsvorhaben + die Objetke von Adrian])
 
@@ -987,7 +1004,7 @@ Von den 18 Objekten sind 10 vollständig dematerialisiert (≥ 80 %), 6 sind hyb
 Beide analogen Objekte sind in Phase 3 konzentriert und liegen im Eigentum kantonaler Behörden – was bestätigt, dass die regulatorische Fragmentierung die primäre architektonische Einschränkung der Journey ist und nicht ein Versagen im Prozessdesign.
 
 Im ArchiMate-Modell werden Business Objects über _Access_-Beziehungen (lesend oder schreibend) mit Business Processes verknüpft, wodurch ihre Eigentümerschaft und ihre Zustandsübergänge schichtenübergreifend nachvollziehbar werden.
-
+*/
 
 == Kollaborative Synthese
 Architektonische Entscheidungen im Team sind nicht rein analytisch – sie sind soziale Verhandlungen, geprägt von beruflichem Hintergrund, früheren Erfahrungen und unterschiedlichen mentalen Modellen davon, wozu Architektur dient @bass2012.
