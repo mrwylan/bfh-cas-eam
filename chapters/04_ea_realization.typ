@@ -1032,6 +1032,8 @@ Diese ausgehandelte Qualität verleiht dem Artefakt seine architektonische Legit
 
 = Das Inside-Out-Mapping: Realisierung der Enterprise Architecture
 
+#frage([an alle: beschreiben wir hier das IST? oder die SOLL-Architektur?])
+
 == Operating-Model-Einordnung nach Ross, Weill und Robertson für Transgourmet
 Bevor die Customer Journey auf Capabilities und Systeme heruntergebrochen wird, ist eine grundlegende Einordnung nötig: Welches Operating Model liegt Transgourmet zugrunde?
 Ross, Weill und Robertson unterscheiden vier Operating Models entlang der beiden Achsen Standardisierung der Geschäftsprozesse und Integration der Daten @ross2006enterprise.
@@ -1063,8 +1065,9 @@ Die Schichten lesen sich wie folgt:
 
 Die entscheidende architektonische Beobachtung: Der monolithische Dispo-/ERP-Kern realisiert sämtliche Geschäftsfunktionen ohne Anti-Corruption Layer (ACL) und ohne Schnitt in Self-Contained Systems (SCS) @bass2012.
 
-== Akteure des öffentlichen Wesen 
-=== Einordung in das Operating System nach Ross / Weill des Schweizer öffentlichen Wesens
+== Akteure des öffentlichen Wesens
+
+=== Einordnung in das Operating System nach Ross / Weill des Schweizer öffentlichen Wesens
 
 Das öffentliche Wesen in der Schweiz ist föderalistisch organisiert und spielt sich auf 3 politischen (und verwaltungstechnischen) Ebenen ab - dies beeinflusst stark die Interaktionen mit den Betroffenen. 
 
@@ -1090,6 +1093,20 @@ Die "Sorglosigkeit", die Gastrostart verspricht, sollte vielleicht gar keine Arc
 + Widerspruch von Operating Model und Behörden (kein OM)
 + wer daten standardisiert hat die macht
 + Standards sind am Aufkommen
+
+== Einarbeitung Feedback 
+
+Wie modellieren: 
+
++ Il «partner pubblico» non è un'organizzazione che siede nella JV, è un layer di interoperabilità: interfacce standardizzate (eCH-0258 per lo scambio dati), governate dalla DVS, consumate da GastroStart dall'esterno. La frammentazione (26 Kantone × 2110 Gemeinden) sparisce dietro questo layer nella misura in cui gli standard arrivano — e oggi ci arrivano su base volontaria. In ArchiMate ti servono Application Interfaces/Services esposti dal lato autorità e consumati da GastroStart, con gli standard eCH come Contract/Requirement. I punti d'aggancio concreti li hai già nel tuo §4:, Nutzerkonto (AGOV, il login unico delle autorità), Handelsregistereintrag (Zefix/EHRA). Modelli GastroStart contro questi Basisdienste.
+
++ Ricordi il *contrasto imposte-vs-servizi* che avevamo costruito? Ora si chiude con una precisione quasi imbarazzante. Le imposte funzionano grazie a uno strumento vincolante (StHG, Art. 128/46 BV). I servizi alle imprese non ce l'hanno → oggi solo eCH volontario → la frammentazione trapela (il tuo stesso §4 lo mostra: Bewilligungen cantonali al 30–55%, «grösste Dematerialisierungslücke» nei formulari cantonali). E lo strumento vincolante mancante? Lo stanno decidendo adesso. Alla fine del 2025 Bundesrat e KdK hanno adottato il Zielbild della futura collaborazione federale, prendendo una decisione di principio per sviluppare la DVS verso una piattaforma politica con definizione vincolante degli standard. La Rahmenvereinbarung prevedeva che entro il 2026 fossero sottoposte ai Träger le basi decisionali per uno sviluppo della DVS incentrato su una definizione degli standard vincolante per tutti e tre i livelli statali — e l'evaluazione del 2024 aveva mostrato che il potenziale non è ancora sfruttato, in particolare nella promozione dell'interoperabilità e nella costruzione di infrastrutture e servizi di base condivisi @dvs_organisation_2022, @dvs_organisation_2022
+
++ "was wäre wenn": la sovranità cantonale (Art. 3 BV) e il fatto che gli atti sovrani non si possono delegare a una JV privata sono il terreno che stai analizzando. Falsificarlo nell'Ist rende il modello non mappabile su eCH e DVS — esattamente il timore che esprimi.
+
++ Lösung: *Zielzustand*
+  + «Angenommen, es gäbe ein eServices-Harmonisierungsgesetz analog zum StHG — wie verschiebt sich das Operating Model der öffentlichen Akteure?» 
+
 
 = Gedanken zum RSM (Goal: User Experience)
 == Ablauforganisation 

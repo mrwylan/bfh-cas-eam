@@ -80,11 +80,11 @@ Jede Phase wurde in einzelne Touchpoints zerlegt, die festhalten, was Amira tut,
 - *Finanzierung:* über Gastrostart kann Amira eine Finanzierung für die ersten Anschaffungen für ihr Catering erhalten. 
 - *Kunde bei Transgourmet:* über Gastrostart kann Amira ebenfalls ein Kundenkonto bei Transgourmet eröffnen - und ihre erste Bestellung absetzen. 
 
-#design-entscheid([Die Gruppe hat diese Szenarien als Struktur für die Modellierung von GastroStart gewählt.])
+#design-entscheid([Die Gruppe hat diese Szenarien Input für die Erarbeitung der Iterationen für die Modellierung von GastroStart gewählt.])
 
 === Amira orientiert sich (oder registriert sich bei GastroStart)
 
-#todo-action([\@ Jan Szenario/Beschreibung (mit oder ohne Bild) einfügen oder alternativ das Szenario der Registrierung])
+#todo-action([\@ Jan Szenario/Beschreibung (mit oder ohne Bild) einfügen oder alternativ das Szenario der Registrierung. Aus der Tabelle unten übernehmen])
 /*
 Struktur:
 + *Aktion:* 

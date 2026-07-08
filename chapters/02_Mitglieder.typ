@@ -30,7 +30,7 @@ Das Produktportfolio umfasst entsprechend *ELA Kredit*, *WinCredit*, Lösungen f
 FINNOFLEET Schweiz ist Teil der FINNOFLEET-Gruppe mit über 450 Mitarbeitenden in Zentraleuropa, die entlang der gesamten Kreditwertschöpfungskette tätig ist.
 
 
-=== Öffentliche Verwaltung  //Zwerge
+== Öffentliche Verwaltung  //Zwerge
 
 Die Schweiz ist ein Bundesstaat, welcher drei politische Ebenen - und somit drei Ebenen der öffentlichen Verwaltung kennt. 
 Diese Ebenen sind: 
@@ -54,7 +54,7 @@ Bei anderen Themen der vertikalen Zusammenarbeit sorgen Standardisierungsbestreb
 == Das Joint Venture Gastrostart 
 === Vorstellung des Unternehmens
 
-#frage([GastroStart beschreiben])
+#frage([GastroStart beschreiben: ja oder nein?])
 
 GastroStart ist ein fiktives Portal, das Gründerinnen und Gründer im Gastgewerbe durch die zentralen Phasen der Betriebsgründung führt: von der ersten Orientierung über Registrierung, Unternehmensgründung und Betriebsbewilligung bis hin zur Finanzierung und zum ersten Lieferantenvertrag.
 
@@ -64,18 +64,25 @@ Auch bietet Gastrostart Dienstleistungen und Funktionalitäten für die Unterst�
 #design-entscheid[
   Gemeinsam haben wir uns entschieden, nur das Onboarding von Neukunden abzubilden, da sonst das Szenario zu gross geworden wäre.]
 
-=== Die Rollen der beteiligten Unternehmen im Joint Venture
+== Die Rollen der beteiligten Unternehmen im Joint Venture
 
 === Transgourmet
-#todo-action([Jakob: Rolle TG beschreiben - kurz und knackig])
+#todo-action([Jakob: Rolle TG im Joint Venture beschreiben - kurz und knackig])
 
 === DV Bern
-#todo-action([Jan: Rolle TG beschreiben - kurz und knackig])
+#todo-action([Jan: Rolle DV Bern im Joint Venture beschreiben - kurz und knackig])
 
 === FINNOFLEET
-#todo-action([Adi: Rolle TG beschreiben - kurz und knackig])
+#todo-action([Adi: Rolle FINNOFLEET im Joint Venture beschreiben - kurz und knackig])
 
-=== Öffentliche Verwaltung
-Die Berührungspunkte der Bundeskanzlei mit den Unternehmen der anderen Gruppenmitglieder wurden für nicht ausreichend bewertet. 
-Grund dafür ist, dass die von der Bundeskanzlei vorangetriebene Vorgaben und Standardisierungsbestrebungen für die Privatwirtschaft nicht anwendbar oder nicht relevant sind.
-Aus diesem Grund vertritt Giovanna Beier die jeweilige Ebene der öffentlichen Verwaltung, mit der sich in der Customer Journey eine Interaktion ergibt.
+=== Öffentliche Verwaltung als stiller Partner
+/* Verworfen: Öffentliche Verwaltung als Partei in der JV modellieren - und entsprechende Fiktionen aufstellen])*/
+Die Berührungspunkte der Bundeskanzlei mit den Unternehmen der anderen Gruppenmitglieder wurden als nicht ausreichend bewertet. 
+Grund dafür ist, dass die von der Bundeskanzlei vorangetriebenen Vorgaben und Standardisierungsbestrebungen für die Privatwirtschaft nicht anwendbar sind. 
+ 
+
+#design-entscheid([
+Aus Sicht von Amira und somit auch von Gastrostart wird die öffentliche Verwaltung - ohne besondere Rücksicht auf die jeweilige Ebene - in ihrer Rolle als Interoperabilitätspartner abgebildet und behandelt.
+
+Wie und unter welchen Voraussetzungen ein verbindliches Instrument diesen Rahmen beeinflussen würde, wird in der Analyse des Operating Models diskutiert - 
+])
