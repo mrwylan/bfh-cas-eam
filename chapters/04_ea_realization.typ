@@ -485,7 +485,11 @@ Was bleibt physisch vorhanden, was verschwindet?"
   ]
 ) <tbl-business-objects-kurzform>
 */
-== Zweite Iteration: Identifikation des relevanten Verhaltens: Zustände und Geschäftstransaktionen
+== Zweite Iteration: Zustände und Geschäftstransaktionen oder die Identifikation des relevanten Verhaltens
+
+Wir dokumentieren die Identifikation von Zuständen und Geschäftstransaktionen pro Szenario, um die Lesbarkeit zu erhalten.
+Die entsprechenden Geschäftsprozesse sind ebenfalls modelliert, auch wenn sie später erklärt werden.
+Die Szenarien sind in @sec-szenarien-customer-journey beschrieben und werden einzeln aufbereitet. 
 #fuehrung([
 
 *Zustände:* Zu jedem Geschäftsobjekt werden seine Zustände identifiziert.
@@ -494,11 +498,7 @@ Was bleibt physisch vorhanden, was verschwindet?"
 Sowohl bei Input und Output wird darauf geachtet, dass diese inklusive ihre Zustände (bzw. zugehörige Ereignisse) bezeichnet werden.
 ])
 
-#design-entscheid([
-Wir dokumentieren die Identifikation von Zuständen und Geschäftstransaktionen pro Szenario, um die Lesbarkeit zu erhalten.
-Die entsprechenden Geschäftsprozesse sind ebenfalls modelliert, auch wenn sie später erklärt werden.
-Die Szenarien sind in @sec-szenarien-customer-journey beschrieben und werden einzel aufbereitet. 
-])
+
 === Amira orientiert sich
 
 #todo-action([\@ Jan Szenario/Beschreibung (mit Bild) einfügen])
@@ -694,7 +694,7 @@ caption: [Zustandsdiagramm des Geschäftsobjekt Bewilligung]
  
 2. Geschäftstransaktionen
  #figure(
-  image("../assets/Amira erhält die Bewilligung.svg", width: 100%),
+  image("../assets/.svg", width: 100%),
   caption: [Geschäftstransaktionen und Zustände - Szenario Amira erhält die Bewilligung]
 ) <fig-GTZ-Amira-bewilligung>
 
@@ -871,20 +871,19 @@ transaktion],
 
 === Reflexion
 #stolperstein([
-  In dieser Phase war es nicht einfach, Abstand von der gewohnte Implementierungsebene zu halten - und Transaktionen nicht wie eine Benutzerführung auf einem Applikations-Frontend zu modelliern. 
+  In dieser Phase wurde mehrmals die Modellierungsebene verfehlt.
+  Schwierigkeiten bat es, Abstand von der gewohnte Implementierungsebene zu halten - und Transaktionen nicht wie eine Benutzerführung auf einem Applikations-Frontend zu modellieren. 
   ])
 
 
-Bestellung und Bestellbestätigung wurden als separate Objekte modelliert - anstatt auf die Sichtbarkeit und Einsehbarkeit des Zustands aufzubauen. 
-Zustände sind absolut und für alle Beteiligten sichtbar - eine separat modellierte  Bestätigung braucht es nicht. 
-
++ *zu "kleine" Objekte:* Bestellung und Bestellbestätigung wurden als separate Objekte modelliert - anstatt auf die Sichtbarkeit und Einsehbarkeit des Zustands aufzubauen. 
 
  #figure(
   image("../assets/reflektion.png", width: 80%),
   caption: [Archimate Modell einer frühen Modellierungsphase]
-) <fig-customer-journey-view>
+) <fig-reflektion_transgourmet>
 
-
+Zustände sind absolut und für alle Beteiligten sichtbar - eine separat modellierte  Bestätigung braucht es nicht. 
 == Dritte Iteration: Geschäftsprozesse und Vollständigkeit des bisherigen Modells
 
 #fuehrung([
@@ -896,8 +895,12 @@ Geschäftstransaktionen, die inhaltlich zusammenhängen, werden zu Geschäftspro
 
 
 
-== Vierte Iteration: Geschäftsfähigkeiten und Abhängigkeiten unter einander
-=== Geschäftsfähigkeiten bei der Erstellung des Benutzerprofils in Gastrostart
+== Vierte Iteration: Geschäftsfähigkeiten und Abhängigkeiten untereinander
+
+=== Geschäftsfähigkeiten für die Orientierung auf der Webseite von Gastrostart
+#todo-action([\@ Jan, bitte nachführen])
+
+=== Geschäftsfähigkeiten für die Registrierung bei Gastrostart
 1. Identitätsverwaltung 
 • Der Benutzer legt Kennung und Credentials fest.
 • Vergabe und Verwaltung einer eindeutigen Benutzerkennung.
@@ -918,6 +921,18 @@ Geschäftstransaktionen, die inhaltlich zusammenhängen, werden zu Geschäftspro
 • Pflichtfelder im Gründungsprofil
 • Erkennung bereits vorhandener Kennunge
 
+=== Geschäftsfähigkeiten Unternehmen gründen
+=== Geschäftsfähigkeiten Bewilligung erhalten
+=== Geschäftsfähigkeiten Finanzierung erhalten
+
+#todo-action([\@ Adi: bitte erarbeiten.])
+=== Geschäftsfähigkeiten Kunde bei Transgourmet werden
+#todo-action([\@ Jakob: bitte erarbeiten])
+
+#figure(
+  image("../assets/Phase 5 - Kunde bei Transgourmet.svg", width: 80%),
+  caption: [Archimate Modell einer frühen Modellierungsphase]
+) <fig-phase_5_Kunde_bei_Transgourmet>
 
 
 
