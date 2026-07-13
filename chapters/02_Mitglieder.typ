@@ -52,6 +52,7 @@ Bei anderen Themen der vertikalen Zusammenarbeit sorgen Standardisierungsbestreb
 
 
 == Das Joint Venture Gastrostart 
+#todo-action([verschieben nach der Customer Journey!!])
 === Vorstellung des Unternehmens
 
 #frage([GastroStart beschreiben: ja oder nein?])
@@ -66,6 +67,7 @@ Auch bietet Gastrostart Dienstleistungen und Funktionalitäten für die Unterst�
 
 == Die Rollen der beteiligten Unternehmen im Joint Venture
 
+#todo-action([Verschieben - anch der Customer Journey (vor 3.3.)])
 === Transgourmet
 #todo-action([Jakob: Rolle TG im Joint Venture beschreiben - kurz und knackig])
 

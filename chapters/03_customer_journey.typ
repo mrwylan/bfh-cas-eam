@@ -82,6 +82,11 @@ Jede Phase wurde in einzelne Touchpoints zerlegt, die festhalten, was Amira tut,
 
 #design-entscheid([Die Gruppe hat diese Szenarien Input für die Erarbeitung der Iterationen für die Modellierung von GastroStart gewählt.])
 
+ #figure(
+  image("../assets/Customer Journey View.svg", width: 40%),
+  caption: [Archimate Modell der Customer Journey von Amira und erste Iteration für die Identifikation der Geschäftsobjekte]
+) <fig-customer-journey-view>
+
 === Amira orientiert sich (oder registriert sich bei GastroStart)
 
 #todo-action([\@ Jan Szenario/Beschreibung (mit oder ohne Bild) einfügen oder alternativ das Szenario der Registrierung. Aus der Tabelle unten übernehmen])
@@ -102,10 +107,7 @@ Struktur:
 + *Pain Point:* Kantonale Systeme haben heterogene Digitalisierungsgrade; einige verlangen physische Einreichung. _Line of Failure:_ analoger kantonaler Prozess unterbricht die digitale Journey
 + *Chance:* Integrierte Anleitung für jeden Kanton; Status-Tracking; expliziter Fallback auf Papier, wo keine API verfügbar ist.
 
- #figure(
-  image("../assets/SZ_Unternehmensgruendung.svg", width: 80%),
-  caption: [Archimate Modell der Customer Journey von Amira]
-) <fig-szenario-unternehmenesgruendung>
+
 
 === Amira erhält eine Finanzierung
 #todo-action([\@ Adi Szenario/Beschreibung (mit oder ohne Bild) einfügen])

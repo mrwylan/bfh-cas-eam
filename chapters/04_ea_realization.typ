@@ -409,7 +409,9 @@ caption: [Geschäftsobjekt Gründungsvorhaben und dessen Zustände]
       [- status:   0 - Initiiert / 1 · Orientiert  / 2 · Registriert  / 3 · Bewilligt / 4 · Finanziert / 5 - Realisiert 
         
         #frage([
-an alle: ich finde, das Objekt Gründungsvorhaben soll auch ABGEBROCHEN werden können - es fehlt der entsprechende Zustand.) 
+an alle: ich finde, das Objekt Gründungsvorhaben soll auch ABGEBROCHEN werden können - es fehlt der entsprechende Zustand.
+
+Antwot: ja) 
 ])],
 
       [Beziehungen],
@@ -902,16 +904,33 @@ Geschäftstransaktionen, die inhaltlich zusammenhängen, werden zu Geschäftspro
 
 ])
 
+=== Geschäftsprozesse für die Orientierung auf der Webseite von Gastrostart
+#todo-action([\@ Jan (oder Jakob), bitte erarbeiten])
+
+=== Geschäftsprozess für die Registrierung bei Gastrostart
+#todo-action([[\@ Jan, bitte nachführen])])
 
 
+=== Geschäftsprozess: Unternehmen gründen 
 
+=== Geschäftsprozess Bewilligung erhalten
+
+
+=== Geschäftsprozess Finanzierung erhalten
+
+#todo-action([\@ Adi: bitte erarbeiten.])
+=== Geschäftsfähigkeiten Kunde bei Transgourmet werden
+#todo-action([\@ Jakob: bitte erarbeiten])
+
+=== End-to-End Prozess: Onboarding Gastrounternehmens
+#frage([\@ alle: einverstanden?])
 
 == Vierte Iteration: Geschäftsfähigkeiten und Abhängigkeiten untereinander
 
 #fuehrung([Geschäftsfähigkeiten bilden eine stabile, redundanzfreie Baumstruktur der funktionalen Dekomposition einer Unternehmung. Sie abstrahieren von jeglichen Ressourcen, werden aber von diesen unterstützt. Geschäftsfähigkeiten sind in sich stark zusammenhängend während sie mit andern Geschäftsfähigkeiten lose gekoppelt sind. @Spichiger2026GFbUA])
 
 === Geschäftsfähigkeiten für die Orientierung auf der Webseite von Gastrostart
-#todo-action([\@ Jan, bitte nachführen])
+#todo-action([\@ Jan oder Jakob, bitte nachführen])
 
 === Geschäftsfähigkeiten für die Registrierung bei Gastrostart
 1. Identitätsverwaltung 
