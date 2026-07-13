@@ -65,6 +65,8 @@ Bezug zur Customer Journey. (Skizze)
 den Szenarien. (Skizze)
 */
 === Übersicht
+#todo-action([\@Giovanna / alle:  Ich hätte hier gerne das Gesamtbild mit der Customer Journey. Anstelle von einem Bild pro Phase.])
+
 #fuehrung([Als Standardszenarien wird eine möglichst kleine Anzahl von Geschichten gewählt, die die darzustellende Funktionalität möglichst vollständig umfasst. Irrelevantes soll weggelassen werden, damit die Geschichten auch möglichst kurz bleiben. @Spichiger2026GFbUA, S. 70])
 
 #todo-action([\@Jakob: kannst dieses Skelett etwas ausbauen?])
@@ -110,18 +112,25 @@ Struktur:
 
 
 === Amira erhält eine Finanzierung
-#todo-action([\@ Adi Szenario/Beschreibung (mit oder ohne Bild) einfügen])
-/*
-Struktur:
-+ *Aktion:* 
-+ *Touchpoint:* 
-+ *Gedanke/Bedürfnis:*
-// ^+ *Emotion:*
-+ *Pain Point:*
-+ *Chance:*
-*/
++ *Aktion:* Amira wählt einen Bankpartner, erfasst ihr Finanzierungsgesuch und lädt die Unterlagen hoch; im Hintergrund läuft die Bonitätsprüfung, anschliessend erhält sie den Kreditentscheid und ihre IBAN.
++ *Touchpoints:* GastroStart (Bankauswahl-UI), FINNOFLEET-Bonitäts-API, IBAN-Dashboard.
++ *Gedanke/Bedürfnis:* «Was, wenn ich abgelehnt werde? Erfahre ich, warum?»
+// ^+ *Emotion:* ↓ −1
++ *Pain Point:* Der Kreditentscheid wird ohne Begründung zurückgegeben, und es fehlt eine Verlinkung zu alternativen Schweizer Förderprogrammen.
++ *Chance:* Transparentes Scoring-Feedback in verständlicher Sprache sowie vorausgefüllte Vorlagen für Schweizer Förderprogramme.
 
-=== Amira wird Kunde bei Transgourmet 
+// TODO Adi (Bild): Für dieses Szenario wird eine kompakte Customer-Journey-Grafik
+// benötigt (analog zu assets/SZ_Unternehmensgruendung.svg) — NICHT die
+// Geschäftstransaktionen-Grafik aus Kapitel 4. Die Szenario-View "Amira erhält
+// eine Finanzierung" im Archi-Modell ist noch leer und muss aufgebaut werden.
+// Danach als assets/SZ_Finanzierung.svg exportieren und untenstehendes #figure
+// einkommentieren:
+// #figure(
+//   image("../assets/SZ_Finanzierung.svg", width: 80%),
+//   caption: [Archimate Modell der Customer Journey von Amira]
+// ) <fig-szenario-finanzierung-cj>
+
+=== Amira wird Kunde bei Transgourmet
 #todo-action([\@ Jakob Szenario/Beschreibung (mit oder ohne Bild) einfügen])
 /*
 Struktur:

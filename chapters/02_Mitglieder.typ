@@ -21,7 +21,7 @@ Jedes Mitglied stellt sein Unternehmen kurz vor.
 
 == FINNOFLEET //Menschen
 
-FINNOFLEET Schweiz (#link("https://finnofleet.ch/ch-de/")[finnofleet.ch]) ist ein Softwareunternehmen für die Finanzbranche mit Hauptsitz in Sursee sowie weiteren Standorten in Zürich und Be0rn. 
+FINNOFLEET Schweiz (#link("https://finnofleet.ch/ch-de/")[finnofleet.ch]) ist ein Softwareunternehmen für die Finanzbranche mit Hauptsitz in Sursee sowie weiteren Standorten in Sursee, Zürich und Bern.
 Rund 100 Mitarbeitende betreuen über 80 Kundinnen und Kunden aus dem Banken-, Versicherungs- und Pensionskassenumfeld.
 
 Das Lösungsangebot deckt den gesamten Kreditlebenszyklus ab --- von der Digitalisierung der Kreditberatung und -initiierung über die Portfolio- und Kontoverwaltung bis hin zur elektronischen Pfandbriefverwaltung und der Automatisierung von Refinanzierungsprozessen. 
@@ -75,7 +75,16 @@ Auch bietet Gastrostart Dienstleistungen und Funktionalitäten für die Unterst�
 #todo-action([Jan: Rolle DV Bern im Joint Venture beschreiben - kurz und knackig])
 
 === FINNOFLEET
-#todo-action([Adi: Rolle FINNOFLEET im Joint Venture beschreiben - kurz und knackig])
+FINNOFLEET bringt in das Joint Venture das ein, was es täglich tut: die *Finanzierung*.
+Als Softwareunternehmen für die Kreditwertschöpfungskette ist FINNOFLEET im GastroStart-Verbund der *Finanzierungspartner* --- es verantwortet die Phase, in der aus Amiras Gründungsvorhaben ein finanzierbares Unternehmen wird.
+
+Konkret stellt FINNOFLEET drei Bausteine bereit:
+
+- *Bonitätsprüfung* --- die automatisierte Beurteilung der Kreditwürdigkeit auf Basis der von Amira erfassten Angaben (Scoring).
+- *Kreditentscheid* --- die nachvollziehbare Zusage oder Absage einer Finanzierung, inklusive verständlicher Begründung.
+- *Kontobereitstellung* --- die Eröffnung des Geschäftskontos und die Vergabe der IBAN als Grundlage für den späteren Zahlungsverkehr.
+
+Diese Leistungen werden nicht als eigenständiges Portal, sondern als *API-Dienste* in die GastroStart-Journey eingebunden: GastroStart orchestriert die Kundenerfahrung, FINNOFLEET liefert die Finanzierungs-Capability im Hintergrund.
 
 === Öffentliche Verwaltung als stiller Partner
 /* Verworfen: Öffentliche Verwaltung als Partei in der JV modellieren - und entsprechende Fiktionen aufstellen])*/
