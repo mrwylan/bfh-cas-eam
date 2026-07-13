@@ -242,8 +242,7 @@ caption: [Geschäftsobjekt Bewilligung und dessen Zustände]
 ) <tbl-GO-Bewilligung>
 
 === Finanzierung
-#todo-action([\@ Adi: bitte allenfalls etwas ausführlicher beschreiben])
-
+Das Geschäftsobjekt *Finanzierung* bündelt sämtliche Informationen rund um Amiras Finanzierungsgesuch --- von der Anfrage über die Bonitätsprüfung durch FINNOFLEET bis zum Kreditentscheid. Es ist das informationstragende Artefakt, das den Finanzierungsfall durch seinen Lebenszyklus führt und die Zustandsübergänge dokumentiert.
 
 #figure(
 image("../assets/GOFinanzierung.svg", width: 50%),
@@ -285,16 +284,21 @@ caption: [Geschäftsobjekt Finanzierung und dessen Zustände]
       [Finanzierung],
 
       [Definition / Zweck],
-      [ ],
+      [Repräsentiert das Finanzierungsgesuch, mit dem Amira die Erstinvestitionen für ihr Catering-Unternehmen decken will. Das Objekt hält die Angaben des Gesuchs, das Ergebnis der von FINNOFLEET durchgeführten Bonitätsprüfung sowie den daraus abgeleiteten Kreditentscheid fest. Es ist die gemeinsame Datengrundlage, auf die die Finanzierungs-Transaktionen zugreifen.],
 
       [Attribute],
-      [Löschen?],
+      [Auf Objektebene bewusst nicht ausmodelliert (analog zu den übrigen Geschäftsobjekten). Fachlich relevant wären Betrag, Laufzeit, Kondition/Zinssatz und Verwendungszweck --- #emph[im Team zu bestätigen].],
 
       [Zustände],
-      [- status: new, requested, incomplete, accepted, rejected, cancel],
+      [neu, angefordert, unvollständig, vollständig, angenommen, abgelehnt, abgebrochen.
+
+      Lebenszyklus: von #emph[neu] über #emph[angefordert] zur inhaltlichen Prüfung; bei fehlenden Angaben #emph[unvollständig], nach Nachreichung #emph[vollständig]; abschliessend #emph[angenommen] oder #emph[abgelehnt]. #emph[abgebrochen] beendet den Fall vorzeitig.],
 
       [Beziehungen],
-      [- properties: Bonitätsprüfung, Kredit],
+      [- #emph[Gründungsvorhaben] ist mit der Finanzierung assoziiert (löst das Gesuch aus).
+      - Die Finanzierung ist mit der #emph[Bewilligung] assoziiert (Bewilligungsstand als Voraussetzung).
+      - Das #emph[Unternehmen] ist mit der Finanzierung assoziiert (Empfänger der Mittel).
+      - Zugriff durch die Geschäftstransaktionen #emph[Finanzierung anfordern], #emph[Finanzierung prüfen] und #emph[Finanzierung vorbereiten] (siehe @tbl-GT-finanzierung-erhalten).],
     )
   ]
 ) <tbl-GO-Finanzierung>
@@ -764,18 +768,16 @@ caption: [Zustandsdiagramm des Geschäftsobjekt Bewilligung]
 /*Amira erhält eine Finanzierung*/
 
 === Amira erhält eine Finanzierung
-#todo-action([\@ Adi Szenario/Beschreibung (mit Bild) einfügen])
-/* 
-1. in Archi die View "Amira erhält eine Finanzierung" unter Views / Assets4Paper / Geschäftstransaktionen (Iteration 2) / öffnen 
-2. View wie im Bild 3.9 - Seite 55 vom Skript von Spichiger aufbereiten oder wie ../assets/GrpA_GP_GastroStart_Albrecht_Jakob.svg
-3. als svg ins projekt hier importieren
-4. Beschreiben: 
-  - Events 
-  - Transaktionen
-*/
+Nachdem Amira die Betriebsbewilligung erhalten hat, benötigt sie Kapital für die Erstanschaffungen. In dieser Phase übernimmt FINNOFLEET: Amira stellt über GastroStart ein Finanzierungsgesuch, das anhand ihrer Angaben und einer Bonitätsprüfung beurteilt wird. Das Geschäftsobjekt #emph[Finanzierung] durchläuft dabei drei Geschäftstransaktionen.
 
-+ Zustände
-+ Geschäftstransaktionen
++ Zustände: neu, angefordert, unvollständig, vollständig, angenommen, abgelehnt, abgebrochen (siehe @tbl-GO-Finanzierung).
++ Geschäftstransaktionen: Finanzierung vorbereiten, Finanzierung anfordern, Finanzierung prüfen.
+
+#figure(
+  image("../assets/GTZ Amira erhält eine Finanzierung.svg", width: 100%),
+  caption: [Geschäftstransaktionen der Phase «Amira erhält eine Finanzierung»]
+) <fig-GTZ-finanzierung>
+
 #figure(
   caption: [Geschäftstransaktionen: Prozess «Finanzierung erhalten»],
   block(
@@ -808,9 +810,17 @@ transaktion],
       fill: (x, y) => if calc.odd(y) { luma(250) } else { white },
       align: (left, left, left),
 
-      [ ], [ ], [ ],
-      [ ], [ ], [ ],
-      [ ], [ ], [ ],
+      [Finanzierung vorbereiten],
+      [Amira erfasst ihr Finanzierungsgesuch und lädt die erforderlichen Unterlagen (Businessplan, Kostenaufstellung, Bewilligungsnachweis) hoch. Sind Angaben unvollständig, kehrt der Fall in die Vorbereitung zurück, bis er vollständig ist.],
+      [neu / unvollständig → vollständig (oder abgebrochen)],
+
+      [Finanzierung anfordern],
+      [Das vollständige Gesuch wird über GastroStart an FINNOFLEET übermittelt. Ab hier liegt der Fall zur Beurteilung bei FINNOFLEET.],
+      [vollständig → angefordert],
+
+      [Finanzierung prüfen],
+      [FINNOFLEET führt die Bonitätsprüfung durch und entscheidet über das Gesuch. Bei fehlenden Nachweisen wird der Fall als unvollständig zurückgewiesen; andernfalls wird er angenommen oder abgelehnt. Die Annahme löst das Ereignis #emph[finanziert] aus.],
+      [angefordert → angenommen / abgelehnt / unvollständig],
     )
   ]
 ) <tbl-GT-finanzierung-erhalten>
@@ -961,7 +971,35 @@ Geschäftstransaktionen, die inhaltlich zusammenhängen, werden zu Geschäftspro
 
 === Geschäftsfähigkeiten Finanzierung erhalten
 
-#todo-action([\@ Adi: bitte erarbeiten.])
+Die übergeordnete Geschäftsfähigkeit lautet *Gründungsvorhaben finanzieren*. Sie wird von FINNOFLEET getragen und in fünf Teilfähigkeiten zerlegt:
+
+1. Finanzierungsantrag-Management
+• Erfassung des Finanzierungsgesuchs mit Betrag, Verwendungszweck und Laufzeit.
+• Verwaltung der erforderlichen Unterlagen (Businessplan, Kostenaufstellung, Bewilligungsnachweis).
+• Vollständigkeitsprüfung und Nachforderung fehlender Angaben.
+
+2. Bonitätsprüfung
+• Automatisierte Beurteilung der Kreditwürdigkeit auf Basis der Antragsdaten.
+• Scoring nach definierten Kriterien (u. a. Einkommenssicherheit, Risikoprofil).
+• Bereitstellung eines nachvollziehbaren Prüfergebnisses.
+
+3. Kreditentscheidung
+• Ableitung von Zusage oder Absage aus dem Prüfergebnis.
+• Festlegung der Konditionen (Zinssatz, Laufzeit) bei Zusage.
+• Begründung des Entscheids in verständlicher Sprache.
+
+4. Konto- und IBAN-Bereitstellung
+• Eröffnung des Geschäftskontos nach positivem Entscheid.
+• Vergabe der IBAN als Grundlage für den späteren Zahlungsverkehr.
+
+5. Finanzierungskommunikation
+• Transparente Rückmeldung des Scoring-Ergebnisses an die Kundin.
+• Verweis auf alternative Förderprogramme im Fall einer Absage.
+
+// Optionale Grafik: bei Bedarf ein Capability-View "Gründungsvorhaben finanzieren"
+// in Archi anlegen (fünf Teilfähigkeiten, Composition), als assets/GF_Finanzierung.svg
+// exportieren und als #figure einfügen (analog zu "GF Behördeninteration.svg").
+
 === Geschäftsfähigkeiten Kunde bei Transgourmet werden
 #todo-action([\@ Jakob: bitte erarbeiten])
 
