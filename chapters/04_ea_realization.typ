@@ -61,7 +61,7 @@ Es wurde verzichtet, das Objekt Person zu modellieren. Die Behandlung von person
 
 ])
 === Kundenkonto (Registrierung)
-#todo-action([\@ Jan: bitte allenfalls etwas ausführlicher beschreiben])
+#todo-action([\@ Jan: bitte allenfalls etwas ausführlicher beschreiben - bitte erklären, dass Kundenkonto für Kunde steht / dass wir Kunde nicht abbilden (gemiensame Entscheidung)])
 
 #figure(
 image("../assets/GOKundenkonto.svg", width: 50%),

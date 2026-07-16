@@ -4,15 +4,16 @@
 //= Die Kollaborationsphase: Outside-In-Mapping
 
 = Die Reise beginnt: die Customer Journey
-Customer Journey und Persona - Fester Stand in Outside-In-Fokus 
-In diesem Kapitel wird die Customer Journey erklärt - und wie wir daraus ein Phasenmodell skizziert haben, welches am Kundenerlebnis entlang entstanden ist.
-#todo-action([Zitatintegrieren: @Spichiger2026GFbUA, S. 52 - Start mit der Geschichte]) 
+/*Customer Journey und Persona - Fester Stand in Outside-In-Fokus 
+In diesem Kapitel wird die Customer Journey erklärt - und wie wir daraus ein Phasenmodell skizziert haben, welches am Kundenerlebnis entlang entstanden ist.*/
+#fuehrung([Eine Geschichte in Form einer User Story Map oder einer  Customer Journey erklärt allen Beteiligten, welches Verhalten vom (zukünftigen) System erwartet wird. Die Geschichte wird um Ziele aus Sicht der primären, externen Stakeholder des Unternehmens ergänzt.: @Spichiger2026GFbUA, S. 54]) 
 
 == Amira und ihre Geschichte <sec-amira-und-ihre-geschichte>
+
 Amira, eine 34-jährige Quereinsteigerin, will ein Catering-Unternehmen gründen. 
 Sie hat schon ein Konzept dafür. 
 Sie hat keine Erfahrung, will nichts falsch machen und braucht Orientierung. 
-Sie googelt "catering aufmachen schweiz", da sie sich eine Schritt für Schritt Anleitung wünscht.
+Sie googelt "_catering aufmachen schweiz_", da sie sich eine Schritt für Schritt Anleitung wünscht.
 Sie möchte durch den Prozess der Unternehmensgründung geführt werden. 
 Bei der Suche erfährt sie, dass die Punkte Bewilligungen, Finanzierung, Ressourcenplanung und Beschaffung besonders wichtig sind. 
 Sie landet bei “GastroStart” und erfährt in der kurzen Einführung auf der Startseite, dass dieses Portal sie bei all dem unterstützen kann. 
@@ -56,6 +57,39 @@ Dies, um der Endkundin konkreter und besser vorstellbar zu gestalten - wodurch s
     )
   ]
 ) <persona-amira>
+
+== Das Joint Venture Gastrostart - Vorstellung des Unternehmens
+
+GastroStart ist ein fiktives Portal, das Gründerinnen und Gründer im Gastgewerbe durch die zentralen Phasen der Betriebsgründung führt: von der ersten Orientierung über Registrierung, Unternehmensgründung und Betriebsbewilligung bis hin zur Finanzierung und zum ersten Lieferantenvertrag.
+
+GastroStart erlaubt es seinen Kunden, schnell und ohne langwierige Behördengänge zu einem startbereiten Gastronomieunternehmen zu kommen - ganz unabhängig vom Herkunftskanton. 
+Auch bietet Gastrostart Dienstleistungen und Funktionalitäten für die Unterstützung im Betrieb eines Gastrounternehmens - wie beispielsweise die Überwachung von Zahlungsfälligkeiten und ein Einkaufsplanungsmodul. Über Gastrostart können Unternehmensübergaben und -liquidationen ebenfalls abgewickelt werden.
+
+#design-entscheid[
+  Gemeinsam haben wir uns entschieden, nur das Onboarding von Neukunden abzubilden, da sonst das Szenario zu gross geworden wäre.]
+
+== Die Rollen der beteiligten Unternehmen im Joint Venture
+
+#todo-action([Verschieben - anch der Customer Journey (vor 3.3.)])
+=== Transgourmet
+#todo-action([Jakob: Rolle TG im Joint Venture beschreiben - kurz und knackig])
+
+=== DV Bern
+#todo-action([Jan: Rolle DV Bern im Joint Venture beschreiben - kurz und knackig])
+
+=== FINNOFLEET
+#todo-action([Adi: Rolle FINNOFLEET im Joint Venture beschreiben - kurz und knackig])
+
+=== Öffentliche Verwaltung als stiller Partner
+/* Verworfen: Öffentliche Verwaltung als Partei in der JV modellieren - und entsprechende Fiktionen aufstellen])*/
+Die Berührungspunkte der Bundeskanzlei mit den Unternehmen der anderen Gruppenmitglieder wurden als nicht ausreichend bewertet. 
+Grund dafür ist, dass die von der Bundeskanzlei vorangetriebenen Vorgaben und Standardisierungsbestrebungen für die Privatwirtschaft nicht anwendbar sind. 
+ 
+
+#design-entscheid([
+Aus Sicht von Amira und somit auch von Gastrostart wird die öffentliche Verwaltung - ohne besondere Rücksicht auf die jeweilige Ebene - in ihrer Rolle als Interoperabilitätspartner abgebildet und behandelt.
+ 
+])
 
 == Szenarien aus Customer Journey <sec-szenarien-customer-journey>
 /*Übung vom 18.05.2026

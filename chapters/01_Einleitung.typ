@@ -10,7 +10,7 @@ L'introduzione si focalizza sul giustificare lo studio, evidenziare la "lacuna" 
 
 Dieses Dokument erfüllt zwei explizite Anforderungen des BFH-CAS-Programms Enterprise Architecture Management.
 Erstens dokumentiert es die schrittweise Entwicklung eines Joint-Ventures zwischen vier sehr heterogene Parteien. 
-Es handelt sich dabei um ein fiktives Unternehmen, welches technische wie operative und kommerzielle Aspekte jedes Ursprungsbetriebs vereint und einzel hervorhebt. 
+Es handelt sich dabei um ein fiktives Unternehmen, welches technische wie operative und kommerzielle Aspekte jedes Ursprungsbetriebs vereint und Einzel hervorhebt. 
 Zweitens bietet das Dokument jedem Mitglied die Möglichkeit, in individuelle (und entsprechend erkennbare) Abschnitte auf die Spezifika des eigenen Unternehmens - resp. des eigenen
 Anteils an dem Joint-Venture - einzugehen. 
 Dadurch wird jedes Mitglied der Gruppe seinen individuellen Lernpfad festhalten sowie seine spezifische Vertiefung und Konklusion beisteuern.
@@ -22,9 +22,10 @@ Dadurch wird jedes Mitglied der Gruppe seinen individuellen Lernpfad festhalten 
 
 == Kontext: eine kleine Reise durch Mittelerde
 Im Verlauf der Studienwochen hat unsere Zusammenarbeit unter den Mitgliedern der Gruppe Unternehmungscharakter angenommen: durch die iterative Vorgehensweise und die regelmässigen - anfangs etwas erzwungene Übungen - musste ein gemeinsamer Nenner gefunden und eingegrenzt werden. 
-Die Diskussionen betreffend der Schärfung der Mission /*(was macht das Unternehmen? was davon soll abgebildet werden? wo hören wir auf?) */ sowie die wöchentlichen Feedbackrunden haben nach und nach die Zusammenarbeit und die gemeinsame Unternehmensvision der vier Kollegen gefördert und gefestigt. 
+Die Diskussionen betreffend der Schärfung der Mission (was macht das Unternehmen? was davon soll abgebildet werden? wo hören wir auf?) sowie die wöchentlichen Feedbackrunden haben nach und nach die Zusammenarbeit und die gemeinsame Unternehmensvision der vier Kollegen gefördert und gefestigt. 
 
 == Methode
+
 Die vorliegende Gruppenarbeit ist in mehrere  Gestaltung der Gruppenarbeit folgt dem Windschatten der Vorlesungen und Übungen. 
 + Customer Journey - in Anlehnung an den Vorschlag "Start mit der Geschichte" @Spichiger2026GFbUA
 + Erarbeitung des Resource Independent Model (RIM) 

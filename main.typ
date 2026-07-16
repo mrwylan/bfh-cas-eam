@@ -50,5 +50,5 @@
 #include "chapters/06_learning_path.typ"
 
 // ── References ──────────────────────────────────────────────────────────────
-#bibliography("refs.bib", style: "ieee", title: "Literaturverzeichnis")
+#bibliography("refs.bib", style: "apa", title: "Literaturverzeichnis")
 //dieser Styl wird im GFbUA benutzt: #bibliography("refs.bib", style: "apa", title: "Literaturverzeichnis")
