@@ -116,7 +116,10 @@ caption: [Geschäftsobjekt Kundenkonto und dessen Zustände]
   ]
 ) <tbl-GO-Kundenkonto>
 
-
+#design-entscheid([
+  Wir haben uns die Frage gestellt, ob wir das Objekt "Kunde" auch zusätzlich modellieren sollen. 
+  Wir sind zum Schluss gekommen, dass das Geschäftsobjekt Kundenkonto alle Informationen zum Kunden enthält, weshalb letzteres nicht separat / zusätzlich geführt werden muss.
+])
 
 
 === Unternehmen
@@ -165,7 +168,7 @@ caption: [Geschäftsobjekt Unternehmen und dessen Zustände]
       ],
 
       [Attribute],
-      [ wollen wir Attribute? 
+      [ Unternehmens-ID, Mehrwertsteuer-Nummer, AHV-Anmeldung, Numer der Unfallversicherungspolice
 
         Rechtsform, Firmenname, Sitz / Domizil, Zweck, Kapital
         #linebreak()
@@ -408,11 +411,11 @@ caption: [Geschäftsobjekt Gründungsvorhaben und dessen Zustände]
       [Zustände],
       [- status:   0 - Initiiert / 1 · Orientiert  / 2 · Registriert  / 3 · Bewilligt / 4 · Finanziert / 5 - Realisiert 
         
-        #frage([
+        /*#frage([
 an alle: ich finde, das Objekt Gründungsvorhaben soll auch ABGEBROCHEN werden können - es fehlt der entsprechende Zustand.
 
 Antwot: ja) 
-])],
+])*/],
 
       [Beziehungen],
       [ ],

@@ -52,7 +52,7 @@ Die Autoren haben durchgehend steuernd eingegriffen (Prompts, Korrekturen, inhal
 
 *Textredaktion:* Visual Studio Code mit Typst Plugin, github repository 
 
-*Bibliographie:* Zotero, ieee style
+*Bibliographie:* Zotero, apa style
 
 #frage([Jakob/alle: IMHO ist es besser, wenn wir dieselbe Zitierweise wie bei GFBUA einsetzen.
 Vorschlag: bibliography im main.typ mit apa stat ieee stylen)])

@@ -80,7 +80,7 @@ Auch bietet Gastrostart Dienstleistungen und Funktionalitäten für die Unterst�
 === FINNOFLEET
 #todo-action([Adi: Rolle FINNOFLEET im Joint Venture beschreiben - kurz und knackig])
 
-=== Öffentliche Verwaltung als stiller Partner
+=== Öffentliche Verwaltung als stiller Partner 
 /* Verworfen: Öffentliche Verwaltung als Partei in der JV modellieren - und entsprechende Fiktionen aufstellen])*/
 Die Berührungspunkte der Bundeskanzlei mit den Unternehmen der anderen Gruppenmitglieder wurden als nicht ausreichend bewertet. 
 Grund dafür ist, dass die von der Bundeskanzlei vorangetriebenen Vorgaben und Standardisierungsbestrebungen für die Privatwirtschaft nicht anwendbar sind. 
@@ -101,7 +101,7 @@ den Szenarien. (Skizze)
 === Übersicht
 #fuehrung([Als Standardszenarien wird eine möglichst kleine Anzahl von Geschichten gewählt, die die darzustellende Funktionalität möglichst vollständig umfasst. Irrelevantes soll weggelassen werden, damit die Geschichten auch möglichst kurz bleiben. @Spichiger2026GFbUA, S. 70])
 
-#todo-action([\@Jakob: kannst dieses Skelett etwas ausbauen?])
+#todo-action([ Jakob: kannst dieses Skelett etwas ausbauen?])
 
 Bei der Modellierung der Customer Journey haben wir bemerkt, dass Amira verschiedene Phasen durchgegangen ist. Diese Phasen haben wir nach ihrer Wahrnehmung und nach der Veränderung ihrer Emotionen geschnitten - entlang des Erfolgs ihrer Reise auf dem Portal.
 In den nächsten Kapiteln wir auf einer Auswahl dieser Szenarien eingegangen - eines für jeder Partei am Joint-Venture. 
