@@ -65,6 +65,7 @@ GastroStart ist ein fiktives Portal, das Gründerinnen und Gründer im Gastgewer
 GastroStart erlaubt es seinen Kunden, schnell und ohne langwierige Behördengänge zu einem startbereiten Gastronomieunternehmen zu kommen - ganz unabhängig vom Herkunftskanton. 
 Auch bietet Gastrostart Dienstleistungen und Funktionalitäten für die Unterstützung im Betrieb eines Gastrounternehmens - wie beispielsweise die Überwachung von Zahlungsfälligkeiten und ein Einkaufsplanungsmodul. Über Gastrostart können Unternehmensübergaben und -liquidationen ebenfalls abgewickelt werden.
 
+
 #design-entscheid[
   Gemeinsam haben wir uns entschieden, nur das Onboarding von Neukunden abzubilden, da sonst das Szenario zu gross geworden wäre.]
 
@@ -78,9 +79,18 @@ Auch bietet Gastrostart Dienstleistungen und Funktionalitäten für die Unterst�
 #todo-action([Jan: Rolle DV Bern im Joint Venture beschreiben - kurz und knackig])
 
 === FINNOFLEET
-#todo-action([Adi: Rolle FINNOFLEET im Joint Venture beschreiben - kurz und knackig])
+FINNOFLEET bringt in das Joint Venture das ein, was es täglich tut: die *Finanzierung*.
+Als Softwareunternehmen für die Kreditwertschöpfungskette ist FINNOFLEET im GastroStart-Verbund der *Finanzierungspartner* --- es verantwortet die Phase, in der aus Amiras Gründungsvorhaben ein finanzierbares Unternehmen wird.
 
-=== Öffentliche Verwaltung als stiller Partner 
+Konkret stellt FINNOFLEET drei Bausteine bereit:
+
+- *Bonitätsprüfung* --- die automatisierte Beurteilung der Kreditwürdigkeit auf Basis der von Amira erfassten Angaben (Scoring).
+- *Kreditentscheid* --- die nachvollziehbare Zusage oder Absage einer Finanzierung, inklusive verständlicher Begründung.
+- *Kontobereitstellung* --- die Eröffnung des Geschäftskontos und die Vergabe der IBAN als Grundlage für den späteren Zahlungsverkehr.
+
+Diese Leistungen werden nicht als eigenständiges Portal, sondern als *API-Dienste* in die GastroStart-Journey eingebunden: GastroStart orchestriert die Kundenerfahrung, FINNOFLEET liefert die Finanzierungs-Capability im Hintergrund.
+
+=== Öffentliche Verwaltung als stiller Partner
 /* Verworfen: Öffentliche Verwaltung als Partei in der JV modellieren - und entsprechende Fiktionen aufstellen])*/
 Die Berührungspunkte der Bundeskanzlei mit den Unternehmen der anderen Gruppenmitglieder wurden als nicht ausreichend bewertet. 
 Grund dafür ist, dass die von der Bundeskanzlei vorangetriebenen Vorgaben und Standardisierungsbestrebungen für die Privatwirtschaft nicht anwendbar sind. 
@@ -88,8 +98,11 @@ Grund dafür ist, dass die von der Bundeskanzlei vorangetriebenen Vorgaben und S
 
 #design-entscheid([
 Aus Sicht von Amira und somit auch von Gastrostart wird die öffentliche Verwaltung - ohne besondere Rücksicht auf die jeweilige Ebene - in ihrer Rolle als Interoperabilitätspartner abgebildet und behandelt.
- 
+
+Wie und unter welchen Voraussetzungen ein verbindliches Instrument diesen Rahmen beeinflussen würde, wird in der Analyse des Operating Models diskutiert - se. Kapitel ...
 ])
+ 
+
 
 == Szenarien aus Customer Journey <sec-szenarien-customer-journey>
 /*Übung vom 18.05.2026
@@ -99,6 +112,8 @@ Bezug zur Customer Journey. (Skizze)
 den Szenarien. (Skizze)
 */
 === Übersicht
+#todo-action([\@Giovanna / alle:  Ich hätte hier gerne das Gesamtbild mit der Customer Journey. Anstelle von einem Bild pro Phase.])
+
 #fuehrung([Als Standardszenarien wird eine möglichst kleine Anzahl von Geschichten gewählt, die die darzustellende Funktionalität möglichst vollständig umfasst. Irrelevantes soll weggelassen werden, damit die Geschichten auch möglichst kurz bleiben. @Spichiger2026GFbUA, S. 70])
 
 #todo-action([ Jakob: kannst dieses Skelett etwas ausbauen?])
@@ -194,18 +209,25 @@ Struktur:
 ) <tbl-journey-xyz>
 
 === Amira erhält eine Finanzierung
-#todo-action([\@ Adi Szenario/Beschreibung (mit oder ohne Bild) einfügen])
-/*
-Struktur:
-+ *Aktion:* 
-+ *Touchpoint:* 
-+ *Gedanke/Bedürfnis:*
-// ^+ *Emotion:*
-+ *Pain Point:*
-+ *Chance:*
-*/
++ *Aktion:* Amira wählt einen Bankpartner, erfasst ihr Finanzierungsgesuch und lädt die Unterlagen hoch; im Hintergrund läuft die Bonitätsprüfung, anschliessend erhält sie den Kreditentscheid und ihre IBAN.
++ *Touchpoints:* GastroStart (Bankauswahl-UI), FINNOFLEET-Bonitäts-API, IBAN-Dashboard.
++ *Gedanke/Bedürfnis:* «Was, wenn ich abgelehnt werde? Erfahre ich, warum?»
+// ^+ *Emotion:* ↓ −1
++ *Pain Point:* Der Kreditentscheid wird ohne Begründung zurückgegeben, und es fehlt eine Verlinkung zu alternativen Schweizer Förderprogrammen.
++ *Chance:* Transparentes Scoring-Feedback in verständlicher Sprache sowie vorausgefüllte Vorlagen für Schweizer Förderprogramme.
 
-=== Amira wird Kunde bei Transgourmet 
+// TODO Adi (Bild): Für dieses Szenario wird eine kompakte Customer-Journey-Grafik
+// benötigt (analog zu assets/SZ_Unternehmensgruendung.svg) — NICHT die
+// Geschäftstransaktionen-Grafik aus Kapitel 4. Die Szenario-View "Amira erhält
+// eine Finanzierung" im Archi-Modell ist noch leer und muss aufgebaut werden.
+// Danach als assets/SZ_Finanzierung.svg exportieren und untenstehendes #figure
+// einkommentieren:
+// #figure(
+//   image("../assets/SZ_Finanzierung.svg", width: 80%),
+//   caption: [Archimate Modell der Customer Journey von Amira]
+// ) <fig-szenario-finanzierung-cj>
+
+=== Amira wird Kunde bei Transgourmet
 #todo-action([\@ Jakob Szenario/Beschreibung (mit oder ohne Bild) einfügen])
 /*
 Struktur:

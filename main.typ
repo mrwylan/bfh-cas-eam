@@ -28,7 +28,7 @@
   ],
    authors: (
     (name: "Jan Sohnemann", affiliation: "DV Bern", email: "..."),
-    (name: "Adrian Anghel", affiliation: "Finnofleet", email: "..."),
+    (name: "Adrian Anghel", affiliation: "FINNOFLEET", email: "..."),
     (name: "Jakob Albrecht", affiliation: "Transgourmet", email: "..."),
     (name: "Giovanna Beier", affiliation: "Bundesverwaltung", email: "..."),
   ),
