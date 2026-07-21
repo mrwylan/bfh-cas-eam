@@ -6,7 +6,7 @@
   date: "BFH CAS Enterprise Architecture Management (EAM), 2026",
   abstract: [
     /*nota: L'abstract è un riassunto completo e autonomo dell'intero lavoro (obiettivi, metodi, risultati e conclusioni).
-    L'abstract svela tutti i passaggi dello studio, compresi i risultati finali e le conclusioni. 
+    L'abstr. act svela tutti i passaggi dello studio, compresi i risultati finali e le conclusioni. 
     L'abstract è molto sintetico, solitamente compreso tra 150 e 250 parole.
     L'abstract segue una struttura logica serrata (Contesto → Problema → Metodo → Risultati → Conclusione).*/
     Diese Gruppenarbeit berichtet darüber, wie vier Kollegen aus ganz unterschiedlichen Unternehmen sich auf einer Idee für ein gemeinsames Unternehmen geeinigt haben und dieses in iterativen Schritten erarbeitet haben.

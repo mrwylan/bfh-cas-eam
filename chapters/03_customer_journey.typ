@@ -206,7 +206,9 @@ Struktur:
       [Integrierte Anleitung für jeden Kanton; Status-Tracking; expliziter Fallback auf Papier, wo keine API verfügbar ist.],
     )
   ]
-) <tbl-journey-xyz>
+) <tbl-szenario-unternhemen-gründen>
+
+
 
 === Amira erhält eine Finanzierung
 + *Aktion:* Amira wählt einen Bankpartner, erfasst ihr Finanzierungsgesuch und lädt die Unterlagen hoch; im Hintergrund läuft die Bonitätsprüfung, anschliessend erhält sie den Kreditentscheid und ihre IBAN.

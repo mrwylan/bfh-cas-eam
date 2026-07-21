@@ -86,7 +86,7 @@ caption: [Geschäftsobjekt Kundenkonto und dessen Zustände]
       #grid(
         columns: (3.2cm, 1fr),
         gutter: 10pt,
-        text(fill: white, weight: "bold", size: 0.95em)[Merkmal],
+        text(fill: white, weight: "bold", size: 0.95em)[Angabe],
         text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
       )
     ]
@@ -146,7 +146,7 @@ caption: [Geschäftsobjekt Unternehmen und dessen Zustände]
       #grid(
         columns: (3.2cm, 1fr),
         gutter: 10pt,
-        text(fill: white, weight: "bold", size: 0.95em)[Merkmal],
+        text(fill: white, weight: "bold", size: 0.95em)[Angabe],
         text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
       )
     ]
@@ -211,7 +211,7 @@ caption: [Geschäftsobjekt Bewilligung und dessen Zustände]
       #grid(
         columns: (3.2cm, 1fr),
         gutter: 10pt,
-        text(fill: white, weight: "bold", size: 0.95em)[Merkmal],
+        text(fill: white, weight: "bold", size: 0.95em)[Angabe],
         text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
       )
     ]
@@ -271,7 +271,7 @@ caption: [Geschäftsobjekt Finanzierung und dessen Zustände]
       #grid(
         columns: (3.2cm, 1fr),
         gutter: 10pt,
-        text(fill: white, weight: "bold", size: 0.95em)[Merkmal],
+        text(fill: white, weight: "bold", size: 0.95em)[Angabe],
         text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
       )
     ]
@@ -332,7 +332,7 @@ caption: [Geschäftsobjekt Lieferantenkonto und dessen Zustände]
       #grid(
         columns: (3.2cm, 1fr),
         gutter: 10pt,
-        text(fill: white, weight: "bold", size: 0.95em)[Merkmal],
+        text(fill: white, weight: "bold", size: 0.95em)[Angabe],
         text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
       )
     ]
@@ -390,7 +390,7 @@ caption: [Geschäftsobjekt Gründungsvorhaben und dessen Zustände]
       #grid(
         columns: (3.2cm, 1fr),
         gutter: 10pt,
-        text(fill: white, weight: "bold", size: 0.95em)[Merkmal],
+        text(fill: white, weight: "bold", size: 0.95em)[Angabe],
         text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
       )
     ]
@@ -406,14 +406,15 @@ caption: [Geschäftsobjekt Gründungsvorhaben und dessen Zustände]
       [Gründungsvorhaben],
 
       [Definition / Zweck],
-      [/*ich habe noch 2 Screenshots gemacht, als Jan das Kozept erklärte. sie sind in den Assets, GVH_1.png und GVH_2.png (bitte löschen, falls ihr diese nicht braucht */],
+      [/*ich habe noch 2 Screenshots gemacht, als Jan das Kozept erklärte. sie sind in den Assets, GVH_1.png und GVH_2.png (bitte löschen, falls ihr diese nicht braucht */
+      Das Gründungsvorhaben speichert und persistiert die Resultate der verschiedenen Phase oder Szenarien der Customer Journey des Kunden.],
 
 
       [Attribute],
       [ ],
 
       [Zustände],
-      [- status:   0 - Initiiert / 1 · Orientiert  / 2 · Registriert  / 3 · Bewilligt / 4 · Finanziert / 5 - Realisiert 
+      [initiiert, orientiert, registriert, bewilligt, finanziert, realisiert, abgebrochen
         
         /*#frage([
 an alle: ich finde, das Objekt Gründungsvorhaben soll auch ABGEBROCHEN werden können - es fehlt der entsprechende Zustand.
@@ -688,7 +689,7 @@ transaktion],
 
 1. Zustände
 #figure(
-image("../assets/ZustandGOBewilligung.svg", width: 60%),
+image("../assets/ZustandGOBewilligung-2.svg", width: 60%),
 caption: [Zustandsdiagramm des Geschäftsobjekt Bewilligung]
 ) <fig-GOBewilligung>
 
