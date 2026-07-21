@@ -41,7 +41,7 @@ Die drei Verwaltungsebenen nehmen ihren Kompetenzen entsprechend viele unterschi
 Die Gesetzgebung verteilt diese Aufgaben an eine Vielzahl von Ämtern, Diensten und Stellen. Die Wahrnehmung einer Aufgabe erstreckt sich oft über mehrere Ebenen (beispielsweise Kanton und Bund oder Gemeinde und Kanton). Eine kurze Auswahl unter diese Aufgaben soll dies veranschaulichen: 
 - Umsetzung von Massnahmen zur Wahrung der öffentlichen Gesundheit
 - Führung von Registern 
-- Umsetzung von Regelungen bezüglich das Bankenwesen
+- Umsetzung von Regelungen in Bezug auf das Bankenwesen
 Die daraus resultierende Komplexität prägt nicht nur die öffentlichen Organisationen als solche, sondern wie die Erfüllung unter den verantwortlichen Behördenebenen gestaltet werden kann. 
 
 Hierarchisch organisierte Vorgaben (Verfassungen, Gesetze, Verordnungen) und deren Einhaltung tragen dazu bei, dass die drei Ebenen _meistens_ harmonisch miteinander funktionieren, im Sinne einer vertikalen Zusammenarbeit. Das beste Beispiel für die Zusammenarbeit über alle Ebenen stellen wohl die Steuern dar – auch dank des Steuerharmonisierungsgesetzes.

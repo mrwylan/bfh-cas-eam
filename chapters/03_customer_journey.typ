@@ -141,7 +141,57 @@ Struktur:
 + *Pain Point:* Kantonale Systeme haben heterogene Digitalisierungsgrade; einige verlangen physische Einreichung. _Line of Failure:_ analoger kantonaler Prozess unterbricht die digitale Journey
 + *Chance:* Integrierte Anleitung für jeden Kanton; Status-Tracking; expliziter Fallback auf Papier, wo keine API verfügbar ist.
 
+#frage([variante mit tabelle oder text? ])
+#figure(
+  caption: [Szenario "Amira gründet ihr Unternehmen"],
+  block(
+    width: 100%,
+    radius: 6pt,
+    clip: true,
+    stroke: 0.5pt + luma(225),
+  )[
+    #block(
+      width: 100%,
+      fill: luma(70),
+      inset: (x: 10pt, y: 7pt),
+      below: 0pt,
+    )[
+      #grid(
+        columns: (3.2cm, 1fr),
+        gutter: 10pt,
+        text(fill: white, weight: "bold", size: 0.95em)[Merkmal],
+        text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
+      )
+    ]
+    #set par(justify: false)
+    #table(
+      columns: (3.2cm, 1fr),
+      inset: (x: 10pt, y: 7pt),
+      stroke: (x: none, y: 0.5pt + luma(232)),
+      fill: (x, y) => if calc.even(y) { luma(250) } else { white },
+      align: (left, left),
 
+      [Aktion],
+      [Amira erfasst die Angaben für ihr Unternehmen und liefert die notwendigen Beilagen.],
+
+      [Touchpoints],
+      [GastroStart, Notar, Behörden-API, Systeme der kantonalen Verwaltungsbehörde, Portal «EasyGov»],
+
+      [Gedanke / Bedürfnis],
+      [Welche Kantonsregeln gelten? Wie lange geht das?],
+
+      [Pain Point],
+      [
+        Kantonale Systeme haben heterogene Digitalisierungsgrade; einige verlangen physische Einreichung.
+        #linebreak()
+        _Line of Failure:_ analoger kantonaler Prozess unterbricht die digitale Journey
+      ],
+
+      [Chance],
+      [Integrierte Anleitung für jeden Kanton; Status-Tracking; expliziter Fallback auf Papier, wo keine API verfügbar ist.],
+    )
+  ]
+) <tbl-journey-xyz>
 
 === Amira erhält eine Finanzierung
 #todo-action([\@ Adi Szenario/Beschreibung (mit oder ohne Bild) einfügen])
