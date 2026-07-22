@@ -105,7 +105,7 @@ caption: [Geschäftsobjekt Kundenkonto und dessen Zustände]
       [Zugangsberechtigung eines Kunden (oder: Benutzer) im System „GastroStart“. Dient der Identifizierung einer Person, ihres Betriebs (oder Betriebe) und aller, für die in diesem System abgebildeten Prozesse, notwendigen Dokumente und Daten. ],
 
       [Attribute],
-      [wollen wir Attribute? sonst Zeile löschen],
+      [wie bei Finanzierung ausfüllen],
 
       [Zustände],
       [aktiv, inaktiv, aktualisiert, registriert],
@@ -163,26 +163,41 @@ caption: [Geschäftsobjekt Unternehmen und dessen Zustände]
 
       [Definition / Zweck],
       [
-        Die zu gründende resp. gegründete juristische Person (Betrieb), an der Amiras Gründungsvorhaben ausgerichtet ist. Das Objekt bündelt die für die Gründung wesentlichen Stammdaten der Unternehmung. Der Gründungsverlauf selbst wird nicht als Inhalt abgebildet, sondern über die Zustände des Objekts nachgezeichnet.
-        Die Gründung einer juristischen Person setzt voraus, dass mindestens ein Vertreter Wohnsitz in der Schweiz hat. 
+        Repräsentiert die zu gründende resp. gegründete juristische Person, an der Amiras Gründungsvorhaben ausgerichtet ist.
+        Das Geschäftsobjekt enthält die wesentlichen Stammdaten der Unternehmung. 
+        Der Gründungsverlauf selbst wird nicht als Inhalt abgebildet, sondern ist über die Zustände des Objekts nachzuvollziehen.
+       /* Die Gründung einer juristischen Person setzt voraus, dass mindestens ein Vertreter Wohnsitz in der Schweiz hat. */
+       Die juristische Person ist Empfängerin der Betriebsbewilligung. 
       ],
 
       [Attribute],
-      [ Unternehmens-ID, Mehrwertsteuer-Nummer, AHV-Anmeldung, Numer der Unfallversicherungspolice
+      [Auf Ebene Geschäftsobjekt nicht ausmodelliert. Fachlich relevant wären jedoch: 
+      + Auf die eine Seite Informationen wie Rechtsform, Firmenname, Sitz / Domizil, Zweck, Kapital.
+      + Auf der anderen Seite Identifikatoren für die Interaktion zu den verschiedenen öffentlich-rechtlichen Akteure auf kantonale und Bundesebene wie Unternehmens-ID, Mehrwertsteuer-Nummer, AHV-Nummer, Nummer der Unfallversicherungspolice (SUVA oder private Versicherung).
+      
 
-        Rechtsform, Firmenname, Sitz / Domizil, Zweck, Kapital
+        
         #linebreak()
         _(nur Stammdaten; zugehörige Dokumente wie Handelsregistereintrag oder Bewilligung sind eigene Objekte, siehe Beziehungen)_
       ],
 
       [Zustände],
-      [neu, beurkundet, eingereicht, unvollständig, angenommen, abgelehnt, im Handelsregister eingetragen],
+      [neu, beurkundet, eingereicht, unvollständig, angenommen, abgelehnt, im Handelsregister eingetragen, abgebrochen.
+      
+      Lebenszyklus: von _neu_ über _beurkundet_ zu _eingereicht_ für die Prüfung durch die Behörden; bei fehlenden Angaben _unvollständig_, nach Nachreichung wieder _eingereicht_. Nach dem Erreichen des Status _eingereicht_ geht es je nach Behördenentscheid mit dem Status _abgelehnt_ zum Ende, während bei behördlicher Zustimmung die Status _angenommen_ und _im Handelsregister eingetragen_ erreicht werden. Der Status _abgebrochen_ beendet den Zyklus vorzeitig, solange der Status _eingereicht_ noch nicht erreicht worden ist.],
 
       [Beziehungen],
       [
-        - wird referenziert von *Gründungsvorhaben* (ein Vorhaben kann auch ohne Unternehmensgründung bestehen)
-        - steht in Beziehung zu *Bewilligung*, *Lieferantenkonto* und *Finanzierung*
+        - wird referenziert von *Gründungsvorhaben* (wobei die Gründung der juristischen Person nicht zwingend notwendig ist)
+        - steht in Beziehung zu 
+         - *Kundenkonto*: _TBD_
+         - *Bewilligung*: als Berechtigter
+         - *Lieferantenkonto* als Kunde und Debitor von Transgourmet
+         - und *Finanzierung*: als Empfänger der Mittel
+        - Zugriff über die Geschäftstransaktionen 
+          - Gründungsdokumentation vorbereiten, Eintrag im Handelsregister beantragen, Antrag prüfen, im Handelsregister eintragen und Unterlagen nachreichen (siehe @tbl-GT-Unternehmen-gründen). 
       ],
+    
     )
   ]
 ) <tbl-GO-Unternehmen>
@@ -300,6 +315,7 @@ caption: [Geschäftsobjekt Finanzierung und dessen Zustände]
       [Beziehungen],
       [- #emph[Gründungsvorhaben] ist mit der Finanzierung assoziiert (löst das Gesuch aus).
       - Die Finanzierung ist mit der #emph[Bewilligung] assoziiert (Bewilligungsstand als Voraussetzung).
+      #frage([was wird finanziert? das Vorhaben, NICHT die firmengründung, korrekt?])
       - Das #emph[Unternehmen] ist mit der Finanzierung assoziiert (Empfänger der Mittel).
       - Zugriff durch die Geschäftstransaktionen #emph[Finanzierung anfordern], #emph[Finanzierung prüfen] und #emph[Finanzierung vorbereiten] (siehe @tbl-GT-finanzierung-erhalten).],
     )
@@ -614,6 +630,9 @@ transaktion],
   ]
 ) <tbl-GT-sich-registrieren>
 === Amira gründet ihr Unternehmen
+Amira möchte eine Gesellschaft mit beschränkter Haftung gründen, um sich und ihre Familie finanziell vor einem möglichen Misserfolg ihres Unternehmens zu schützen. 
+In dieser Phase erstellt Amira unter mit der Hilfe der Informationen auf Gastrostart die Unterlagen für die Gründung der "Food Affair GmbH". 
+Diese Unterlagen druckt Amira auch, bevor sie diese zum Notar für die öffentliche Beurkundung bringt. 
 
  #figure(
   image("../assets/GTZ Amira gründet ihr Unternehmen.svg", width: 100%),
