@@ -688,9 +688,9 @@ transaktion],
       fill: (x, y) => if calc.odd(y) { luma(250) } else { white },
       align: (left, left, left),
 
-      [Gründungsdokumentation vorbereiten], [ ], [ ],
-      [Eintrag im Handelsregister beantragen], [ ], [ ],
-      [Prüfung durch Handelsregister (abwarten)], [ ], [ ],
+      [Gründungsdokumentation vorbereiten], [ ], [neu → beurkundet],
+      [Eintrag im Handelsregister beantragen], [ ], [beurkundet → eingereicht],
+      [Prüfung durch Handelsregister (abwarten)], [ ], [eingereicht → angenommen / abgelehnt / unvollständig],
       [Im Handelsregister eintragen], [ ], [ ],
     )
   ]
