@@ -631,8 +631,9 @@ transaktion],
 ) <tbl-GT-sich-registrieren>
 === Amira gründet ihr Unternehmen
 Amira möchte eine Gesellschaft mit beschränkter Haftung gründen, um sich und ihre Familie finanziell vor einem möglichen Misserfolg ihres Unternehmens zu schützen. 
-In dieser Phase erstellt Amira unter mit der Hilfe der Informationen auf Gastrostart die Unterlagen für die Gründung der "Food Affair GmbH". 
-Diese Unterlagen druckt Amira auch, bevor sie diese zum Notar für die öffentliche Beurkundung bringt. 
+Das Geschäftsobjekt Unternehmen durchläuft mehrere Transaktionen: 
+- In einer ersten Phase ist Amira in Führung: sie _bereitet_  mit der Hilfe der Informationen auf Gastrostart die _Unterlagen_ für die Gründung der "Food Affair GmbH _vor_. Nach der öffentlichen Beurkundung _beantragt_ sie den _Eintrag im Handelsregister_ für ihre GmbH. 
+- Danach ist der Ball bei den Behörden: das kantonale Handelsregisteramt _prüft den Antrag_ auf Vollständigkeit, _lehnt es ab_ oder _nimmt es an_ und _trägt die GmbH im Handelsregister ein_. 
 
  #figure(
   image("../assets/GTZ Amira gründet ihr Unternehmen.svg", width: 100%),
