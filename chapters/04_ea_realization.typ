@@ -688,10 +688,11 @@ transaktion],
       fill: (x, y) => if calc.odd(y) { luma(250) } else { white },
       align: (left, left, left),
 
-      [Gründungsdokumentation vorbereiten], [ ], [neu → beurkundet],
-      [Eintrag im Handelsregister beantragen], [ ], [beurkundet → eingereicht],
-      [Prüfung durch Handelsregister (abwarten)], [ ], [eingereicht → angenommen / abgelehnt / unvollständig],
-      [Im Handelsregister eintragen], [ ], [ ],
+      [Gründungs-dokumentation vorbereiten], [Amira sammelt die für die Gründung notwendigen Dokumente und Angaben und bringt diese physisch beim Notar vorbei und beauftragt diesen mit der Gründung der GmbH. Sie zahlt das Gründungskapital ein.], [neu → beurkundet],
+      [Eintrag im Handelsregister beantragen], [Amira meldet ihre GmbH über ihren Notar beim Handelsregisteramt ihres Wohnkantons.], [beurkundet → eingereicht],
+      [Prüfung durch Handelsregister (abwarten)], [ Das Handelsregisteramt prüft den Antrag prüft den Antrag formell und entscheidet über das weitere Vorgehen.
+       ], [eingereicht → angenommen / abgelehnt / unvollständig],
+      [Im Handelsregister eintragen], [Das Handelregisteramt teilt Amira mit, dass der Eintrag im Register erfolgt ist], [angenommen → im Handelsregister eingetragen],
     )
   ]
 ) <tbl-GT-Unternehmen-gründen>
@@ -706,7 +707,7 @@ transaktion],
   - Transaktionen
 */
 === Amira erhält die Bewilligung
-
+Nach der Gründung ihrer Firma, beantragt Amira die Betriebsbewilligung 
 1. Zustände
 #figure(
 image("../assets/ZustandGOBewilligung-2.svg", width: 60%),
@@ -1188,6 +1189,39 @@ Wie modellieren:
 + Lösung: *Zielzustand*
   + «Angenommen, es gäbe ein eServices-Harmonisierungsgesetz analog zum StHG — wie verschiebt sich das Operating Model der öffentlichen Akteure?» 
 
+
+
+
+
+*incapsulabilità: *
+
+digitalieierung pro capability 
+
+
+--> eCH-0258:  
+
+hai eCH-0258 nel materiale di progetto. Ma è pensato per attori che stanno dentro il perimetro delle autorità. Un consorzio privato non ci si può agganciare, non perché manchi la tecnologia, ma perché l'accesso all'infrastruttura di scambio è esso stesso condizionato dallo statuto di diritto pubblico.
+
+Lo standard dichiara fuori perimetro sia l'autorizzazione e l'autenticazione, sia il tipo di integrazione, che va concordato tra i partner. Cioè: eCH-0258 normalizza il formato dei messaggi, ma non dice chi può collegarsi.
+Esempi: e-doc / passar 
+
+distinguo: prestazioni già offerte e "incapsulatili" come IVA, AVS, --> qui potrei scrivere che in un futuro non troppo lontano, queste prestazioni potranno essere incapsulabili perché disponibili tramite interfaccia (ech-0258) tra gastrostart e l'erogatore della prestazione. dentro a gastrostart, amira riceve una conferma "ufficiale" (non so se ci sono già esempi per un'interfaccia di questo tipo)
+
+nella mia visione (che si baserà su una finzione di un futuro con una base legale adatta e operabile), portali come gastrostart potranno incapsulare servizi come l'annuncio AVS/AI e IVA. risolvo con la finzione.
+conferma ufficiale: 
+lavorerò sempre e ancora con finzione, sia legale che tecnica (per esempio ci doteremo di una tecnologia che permette di tracciare l'autenticità degli atti che passano attraverso l'interfaccia)
+aggiunta alla finzione: l'utente sarà messo in condizione di fare un controllo sull'ufficialità dell'interfaccia - ci sono degli esempi per questo? come risolvere l'aspetto della fiducia dell'utente?
+
+*strategia dvs*
+Il BBl 2024 45 (Strategia DVS), cap. 5.2, dice che gli standard aperti devono garantire che le prestazioni amministrative digitali siano in futuro integrabili anche in piattaforme di servizio di operatori privati. È intenzione federale dichiarata. La tua visione non è una finzione a livello di politica: è politica già scritta, senza strumento. E il cap. 5.3 descrive l'infrastruttura di fiducia con Basisregister e Vertrauensregister, utilizzabile da enti pubblici e imprese per emettere e verificare attestati elettronici.
+
+Il *registro di fiducia* è una capability nuova, e cade dritta nella casella in alto a destra della tabella: va unificata e non è incapsulabile. Chi lo tiene deve essere pubblico, e l'esclusione di un operatore è un atto d'autorità. Quindi anche la tua finzione più permissiva — un privato che veicola atti ufficiali — non elimina il sovrano: lo sposta. Non è un dettaglio, è un rafforzamento del tuo argomento. Il coordinamento volontario non può nemmeno produrre il registro che renderebbe credibile il coordinamento volontario.
+
+ *meccanismo*
+ti chiedi come l'utente possa controllare l'ufficialità dell'interfaccia. Il modello svizzero risponde invertendo la domanda: l'app mostra chiaramente quale organizzazione sta facendo la richiesta di dati e se questa è classificata come affidabile nel registro ufficiale della Confederazione. Cioè: l'ancora di fiducia non sta nel portale privato, sta in un componente statale che risiede presso l'utente. GastroStart non deve essere creduta. Deve solo essere riconoscibile da qualcosa che l'utente ha già e di cui si fida.
+
+
+Il *registro di fiducia* è una capability nuova, e cade dritta nella casella in alto a destra della tabella: va unificata e non è incapsulabile. Chi lo tiene deve essere pubblico, e l'esclusione di un operatore è un atto d'autorità. Quindi anche la tua finzione più permissiva — un privato che veicola atti ufficiali — non elimina il sovrano: lo sposta. Non è un dettaglio, è un rafforzamento del tuo argomento. Il coordinamento volontario non può nemmeno produrre il registro che renderebbe credibile il coordinamento volontario.
 
 = Gedanken zum RSM (Goal: User Experience)
 == Ablauforganisation 
