@@ -191,7 +191,7 @@ caption: [Geschäftsobjekt Unternehmen und dessen Zustände]
         - wird referenziert von *Gründungsvorhaben* (wobei die Gründung der juristischen Person nicht zwingend notwendig ist)
         - steht in Beziehung zu 
          - *Kundenkonto*: _TBD_
-         - *Bewilligung*: als Berechtigter
+         - *Bewilligung*: als Empfänger
          - *Lieferantenkonto* als Kunde und Debitor von Transgourmet
          - und *Finanzierung*: als Empfänger der Mittel
         - Zugriff über die Geschäftstransaktionen 
@@ -242,19 +242,24 @@ caption: [Geschäftsobjekt Bewilligung und dessen Zustände]
       [Bewilligung],
 
       [Definition / Zweck],
-      [Behördlicher "Vertrag", welcher einer natürlichen oder juristischen Person (_in casu_ das Unternehmen von Amira) erteilt werden kann.
-      Die Erteilung der Bewilligung setzt je nach Kanton ein Fähigkeitsausweis voraus. In Kanton Fribourg muss mindestens eine Person im Betrieb ein Wirtepatent besitzen (vgl. Anmerkung im Klassendiagramm.)],
+      [Stellt ein behördlicher "Vertrag" dar, welcher einer natürlichen oder juristischen Person (_in casu_ dem Unternehmen von Amira) erteilt werden kann.
+      Die Erteilung der Bewilligung setzt je nach Kanton ein Fähigkeitsausweis voraus. In Kanton Fribourg muss mindestens eine Person im Betrieb ein Wirtepatent besitzen.],
 
       [Attribute],
-      [ wollen wir Attribute?],
+      [fachlich relevante Informationen zum Geschäftsobjekt sind: Typ (mit oder ohne Alkoholausschank), unterliegendes Wirtepatent (insbesondere dessen territoriale Gültigkeit), Standort bzw. Lokal, Datum Bewilligungsbeginn, erteilende Behörde, Datum der Anmeldung bei der kantonalen Lebensmittelbehörde bzw. -labor, Hygienekonzept],
 
       [Zustände],
-      [neu, in Vorbereitung, eingereicht, unvollständig, abgelehnt, erteilt, abgebrochen.
+      [neu, in Vorbereitung, eingereicht, unvollständig, abgelehnt, erteilt, abgebrochen. 
+      
+      Lebenszyklus: von _neu_ über _in Vorbereitung_ zu _eingereicht_ für die Prüfung durch die Behörden; bei fehlenden Angaben _unvollständig_, nach Nachreichung wieder _eingereicht_. Nach dem Erreichen des Status _eingereicht_ geht es je nach Behördenentscheid mit dem Status _abgelehnt_ zum Ende, während bei behördlicher Zustimmung der Status _erteilt_ erreicht wird. Der Status _abgebrochen_ beendet den Zyklus vorzeitig, solange der Status _eingereicht_ noch nicht erreicht worden ist.
 
       Andere Zustände wie erloschen, entzogen, sistiert, sind für die Customer Journey nicht relevant.],
 
       [Beziehungen],
-      [ ],
+      [- wird referenziert von *Gründungsvorhaben* // sagt man das so? ist das korrekt?
+        - steht in Beziehung zu *Unternehmen* als Adressat
+        - Zugriff über die Geschäftstransaktionen 
+          - Bewilligungsantrag vorbereiten, Bewilligungsantrag einreichen, Bewilligungsantrag vervollständigen, Antrag prüfen, Verfügung mitteilen (siehe @tbl-GT-Bewilligung). ],
     )
   ]
 ) <tbl-GO-Bewilligung>
@@ -630,10 +635,7 @@ transaktion],
   ]
 ) <tbl-GT-sich-registrieren>
 === Amira gründet ihr Unternehmen
-Amira möchte eine Gesellschaft mit beschränkter Haftung gründen, um sich und ihre Familie finanziell vor einem möglichen Misserfolg ihres Unternehmens zu schützen. 
-Das Geschäftsobjekt Unternehmen durchläuft mehrere Transaktionen: 
-- In einer ersten Phase ist Amira in Führung: sie _bereitet_  mit der Hilfe der Informationen auf Gastrostart die _Unterlagen_ für die Gründung der "Food Affair GmbH _vor_. Nach der öffentlichen Beurkundung _beantragt_ sie den _Eintrag im Handelsregister_ für ihre GmbH. 
-- Danach ist der Ball bei den Behörden: das kantonale Handelsregisteramt _prüft den Antrag_ auf Vollständigkeit, _lehnt es ab_ oder _nimmt es an_ und _trägt die GmbH im Handelsregister ein_. 
+
 
  #figure(
   image("../assets/GTZ Amira gründet ihr Unternehmen.svg", width: 100%),
@@ -641,20 +643,16 @@ Das Geschäftsobjekt Unternehmen durchläuft mehrere Transaktionen:
 ) <fig-GTZ-Amira-gründet>
 
 1. Zustände
-#figure(
-image("../assets/GOUnternehmen.svg", width: 50%),
-caption: [Geschäftsobjekt Unternehmen und dessen Zustände]
-) <fig-GOUnternehmen>
-- *neu:* 
-- *beurkundet:*
-- *eingereicht:*
-- *unvollständig:* 
-- *angenommen:*
-- *abgelehnt:*
-- *im Handelsregister eingetragen / registriert:*
-- *abgebrochen:*
+
+neu, beurkundet, eingereicht, unvollständig, angenommen, abgelehnt, im Handelsregister eingetragen, abgebrochen.
+      
+Lebenszyklus: von _neu_ über _beurkundet_ zu _eingereicht_ für die Prüfung durch die Behörden; bei fehlenden Angaben _unvollständig_, nach Nachreichung wieder _eingereicht_. Nach dem Erreichen des Status _eingereicht_ geht es je nach Behördenentscheid mit dem Status _abgelehnt_ zum Ende, während bei behördlicher Zustimmung die Status _angenommen_ und _im Handelsregister eingetragen_ erreicht werden. Der Status _abgebrochen_ beendet den Zyklus vorzeitig, solange der Status _eingereicht_ noch nicht erreicht worden ist.
 
 2. Geschäftstransaktionen
+Amira möchte eine Gesellschaft mit beschränkter Haftung gründen, um sich und ihre Familie finanziell vor einem möglichen Misserfolg ihres Unternehmens zu schützen. 
+Das Geschäftsobjekt Unternehmen durchläuft mehrere Transaktionen: 
+- In einer ersten Phase ist Amira in Führung: sie _bereitet_  mit der Hilfe der Informationen auf Gastrostart die _Unterlagen_ für die Gründung der "Food Affair GmbH _vor_. Nach der öffentlichen Beurkundung _beantragt_ sie den _Eintrag im Handelsregister_ für ihre GmbH. 
+- Danach ist der Ball bei den Behörden: das kantonale Handelsregisteramt _prüft den Antrag_ auf Vollständigkeit, _lehnt es ab_ oder _nimmt es an_ und _trägt die GmbH im Handelsregister ein_. 
 
 #figure(
   caption: [Geschäftstransaktionen: Prozess "Unternehmen gründen"],
@@ -708,28 +706,31 @@ transaktion],
 */
 === Amira erhält die Bewilligung
 Nach der Gründung ihrer Firma, beantragt Amira die Betriebsbewilligung 
+ #figure(
+  image("../assets/GTZ Amira erhält die Bewilligung.svg", width: 100%),
+  caption: [Geschäftstransaktionen und Zustände - Szenario Amira erhält die Bewilligung]
+) <fig-GTZ-Amira-bewilligung>
+
 1. Zustände
 #figure(
 image("../assets/ZustandGOBewilligung-2.svg", width: 60%),
 caption: [Zustandsdiagramm des Geschäftsobjekt Bewilligung]
 ) <fig-GOBewilligung>
 
-- *neu:*
-- *in Vorbereitung:*
-- *eingereicht:*
-- *unvollständig:*
-- *abgelehnt:*
-- *erteilt:* 
-- *abgebrochen:* 
+Die Zustände sind: neu, in Vorbereitung, eingereicht, unvollständig, abgelehnt, erteilt, abgebrochen. 
+Lebenszyklus: von _neu_ über _in Vorbereitung_ zu _eingereicht_ für die Prüfung durch die Behörden; bei fehlenden Angaben _unvollständig_, nach Nachreichung wieder _eingereicht_. Nach dem Erreichen des Status _eingereicht_ geht es je nach Behördenentscheid mit dem Status _abgelehnt_ zum Ende, während bei behördlicher Zustimmung der Status _erteilt_ erreicht wird. Der Status _abgebrochen_ beendet den Zyklus vorzeitig, solange der Status _eingereicht_ noch nicht erreicht worden ist.
+
+Andere Zustände wie erloschen, entzogen, sistiert, sind für die Customer Journey nicht relevant.
 
 #design-entscheid([Wir haben uns entschieden, die Frage um das Schicksal des Objekts "Bewilligung" im Fall der Löschung des Benutzerprofils von Amira offenzulassen.])
  
  
 2. Geschäftstransaktionen
- #figure(
-  image("../assets/GTZ Amira erhält die Bewilligung.svg", width: 100%),
-  caption: [Geschäftstransaktionen und Zustände - Szenario Amira erhält die Bewilligung]
-) <fig-GTZ-Amira-bewilligung>
+Amira möchte beantragt im Namen ihres Unternehmens die Bewilligung für den Betrieb von Catering.
+Das Geschäftsobjekt Bewilligung durchläuft mehrere Transaktionen: 
+- In einer ersten Phase ist Amira in Führung: sie _bereitet_  mit der Hilfe der Informationen auf Gastrostart die _Unterlagen_ für den Bewilligungsantrag _vor_. Wenn sie alle Unterlagen gesammelt hat, _reicht_ sie den _Bewilligungsantrag_ bei der zuständigen Behörde _ein_. 
+- Danach ist der Ball bei den Behörden: die Behörde _prüft den Antrag_ auf Vollständigkeit, _lehnt es ab_ oder _erteilt_ der Food Affair GmbH die Betriebsbewilligung. 
+
 
 
 #figure(
