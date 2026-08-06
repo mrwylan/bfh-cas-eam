@@ -712,10 +712,12 @@ Nach der Gründung ihrer Firma, beantragt Amira die Betriebsbewilligung
 ) <fig-GTZ-Amira-bewilligung>
 
 1. Zustände
+/*
 #figure(
 image("../assets/ZustandGOBewilligung-2.svg", width: 60%),
 caption: [Zustandsdiagramm des Geschäftsobjekt Bewilligung]
 ) <fig-GOBewilligung>
+*/
 
 Die Zustände sind: neu, in Vorbereitung, eingereicht, unvollständig, abgelehnt, erteilt, abgebrochen. 
 Lebenszyklus: von _neu_ über _in Vorbereitung_ zu _eingereicht_ für die Prüfung durch die Behörden; bei fehlenden Angaben _unvollständig_, nach Nachreichung wieder _eingereicht_. Nach dem Erreichen des Status _eingereicht_ geht es je nach Behördenentscheid mit dem Status _abgelehnt_ zum Ende, während bei behördlicher Zustimmung der Status _erteilt_ erreicht wird. Der Status _abgebrochen_ beendet den Zyklus vorzeitig, solange der Status _eingereicht_ noch nicht erreicht worden ist.
@@ -929,7 +931,7 @@ transaktion],
 
 #figure(
   image("../assets/Betriebsbewilligung beantragen - verfügen.png", width: 80%),
-  caption: [Archimate Modell einer frühen Modellierungsphase von "Betriebsbewilligung erhalten"]
+  caption: [Archimate Modell einer frühen Modellierungsphase von "Betriebsbewilligung erhalten"]<fig-obs-bewilligung-erhalten>
 ) 
 
 
@@ -938,25 +940,51 @@ transaktion],
 #fuehrung([
 Geschäftstransaktionen, die inhaltlich zusammenhängen, werden zu Geschäftsprozessen aggregiert.
 
+Auf der Basis der In- und Outputs der Geschäftstransaktionen werden für jeden Geschäftsprozess seine Abhängigkeiten zu Geschäftsobjekten identifiziert.
+@Spichiger2026GFbUA
+
 ])
 
 === Geschäftsprozesse für die Orientierung auf der Webseite von Gastrostart
 #todo-action([\@ Jan (oder Jakob), bitte erarbeiten])
+1. Geschäftsprozesse 
+2. Abhängigkeiten von Geschäftsobjekten 
 
 === Geschäftsprozess für die Registrierung bei Gastrostart
 #todo-action([[\@ Jan, bitte nachführen])])
+1. Geschäftsprozesse 
+2. Abhängigkeiten von Geschäftsobjekten 
 
 
-=== Geschäftsprozess: Unternehmen gründen 
+=== Geschäftsprozess: Unternehmen gründen
+
+#figure(
+  image("../assets/GP Amira gründet ihr Unternehmen.svg", width: 80%),
+  caption: [Geschäftsprozess - Szenario Amira gründet ihr Unternehmen]<GP_Amira_gründet_Unternehmen>
+) 
+
+1. Geschäftsprozesse 
+2. Abhängigkeiten von Geschäftsobjekten 
+
 
 === Geschäftsprozess Bewilligung erhalten
+
+1. Geschäftsprozesse 
+2. Abhängigkeiten von Geschäftsobjekten 
 
 
 === Geschäftsprozess Finanzierung erhalten
 
 #todo-action([\@ Adi: bitte erarbeiten.])
+
+1. Geschäftsprozesse 
+2. Abhängigkeiten von Geschäftsobjekten 
+
 === Geschäftsfähigkeiten Kunde bei Transgourmet werden
 #todo-action([\@ Jakob: bitte erarbeiten])
+
+1. Geschäftsprozesse 
+2. Abhängigkeiten von Geschäftsobjekten 
 
 === End-to-End Prozess: Onboarding Gastrounternehmens
 #frage([\@ alle: einverstanden?])
