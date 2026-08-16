@@ -1,7 +1,7 @@
 #import "template.typ": conf
 
 #show: conf.with(
-  title: "Learning-Path-Dokumentation: \ Enterprise Architecture Management in der Praxis",
+  title: "Learning-Path-Dokumentation: \n Enterprise Architecture Management in der Praxis",
   subtitle: "Die Verbindung von Customer Journeys mit Capabilities und Application-Landschaften",
   date: "BFH CAS Enterprise Architecture Management (EAM), 2026",
   abstract: [
