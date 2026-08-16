@@ -931,7 +931,7 @@ transaktion],
 
 #figure(
   image("../assets/Betriebsbewilligung beantragen - verfügen.png", width: 80%),
-  caption: [Archimate Modell einer frühen Modellierungsphase von "Betriebsbewilligung erhalten"]<fig-obs-bewilligung-erhalten>
+  caption: [Archimate Modell einer frühen Modellierungsphase von "Betriebsbewilligung erhalten"] <fig-obs-bewilligung-erhalten>
 ) 
 
 
@@ -960,7 +960,7 @@ Auf der Basis der In- und Outputs der Geschäftstransaktionen werden für jeden 
 
 #figure(
   image("../assets/GP Amira gründet ihr Unternehmen.svg", width: 80%),
-  caption: [Geschäftsprozess - Szenario Amira gründet ihr Unternehmen]<GP_Amira_gründet_Unternehmen>
+  caption: [Geschäftsprozess - Szenario Amira gründet ihr Unternehmen], <GP_Amira_gründet_Unternehmen>
 ) 
 
 

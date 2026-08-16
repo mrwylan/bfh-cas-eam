@@ -39,7 +39,7 @@ Die vorliegende Gruppenarbeit folgt dem Windschatten der Vorlesungen und Übunge
 #todo-action([Jakob: Anhang einfügen ])
 
 === Erklärung 
-Die vorliegende Arbeit wurde unter Einsatz eines KI-gestützten Werkzeugs erstellt.
+Die vorliegende Arbeit wurde _*teilweise*_ unter Einsatz eines KI-gestützten Werkzeugs erstellt.
 Statt jede einzelne Textpassage separat zu annotieren, wird die durchgehend angewandte Arbeitsweise in einem Anhang offengelegt.
 Die Texte wurden in einem interaktiven, iterativen Prozess zwischen Autoren und Sprachmodell erstellt, bei dem der jeweilige Autor steuert, prüft und verantwortet.
 
