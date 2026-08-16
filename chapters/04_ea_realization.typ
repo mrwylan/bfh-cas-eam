@@ -931,8 +931,8 @@ transaktion],
 
 #figure(
   image("../assets/Betriebsbewilligung beantragen - verfügen.png", width: 80%),
-  caption: [Archimate Modell einer frühen Modellierungsphase von "Betriebsbewilligung erhalten"] <fig-obs-bewilligung-erhalten>
-) 
+  caption: [Archimate Modell einer frühen Modellierungsphase von "Betriebsbewilligung erhalten"]
+) <fig-obs-bewilligung-erhalten>
 
 
 == Dritte Iteration: Geschäftsprozesse und Vollständigkeit des bisherigen Modells
@@ -951,7 +951,7 @@ Auf der Basis der In- und Outputs der Geschäftstransaktionen werden für jeden 
 2. Abhängigkeiten von Geschäftsobjekten 
 
 === Geschäftsprozess für die Registrierung bei Gastrostart
-#todo-action([[\@ Jan, bitte nachführen])])
+#todo-action([\@ Jan, bitte nachführen])
 1. Geschäftsprozesse 
 2. Abhängigkeiten von Geschäftsobjekten 
 
@@ -960,8 +960,8 @@ Auf der Basis der In- und Outputs der Geschäftstransaktionen werden für jeden 
 
 #figure(
   image("../assets/GP Amira gründet ihr Unternehmen.svg", width: 80%),
-  caption: [Geschäftsprozess - Szenario Amira gründet ihr Unternehmen], <GP_Amira_gründet_Unternehmen>
-) 
+  caption: [Geschäftsprozess - Szenario Amira gründet ihr Unternehmen]
+) <GP_Amira_gruendet_Unternehmen>
 
 
 1. Geschäftsprozesse 

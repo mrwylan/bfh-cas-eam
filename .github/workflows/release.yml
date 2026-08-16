@@ -16,14 +16,14 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
       - name: Setup Typst
-        uses: typst-community/setup-typst@v4
+        uses: typst-community/setup-typst@v5
         with:
-          typst-version: 0.11.1
+          typst-version: 0.15.1
 
       - name: Extract Version from Tag
         id: version
@@ -57,6 +57,6 @@ jobs:
             ${{ steps.changelog.outputs.log }}
 
             ---
-            Compiled with Typst 0.11.1 · [CI run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
+            Compiled with Typst 0.15.1 · [CI run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
           files: "bfh-cas-eam-${{ steps.version.outputs.tag }}.pdf"
           fail_on_unmatched_files: true
