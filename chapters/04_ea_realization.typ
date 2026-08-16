@@ -963,7 +963,14 @@ Auf der Basis der In- und Outputs der Geschäftstransaktionen werden für jeden 
   caption: [Geschäftsprozess - Szenario Amira gründet ihr Unternehmen]<GP_Amira_gründet_Unternehmen>
 ) 
 
+
 1. Geschäftsprozesse 
+
+Handelsregistereintrag erhalten 
+wichtig, weil der Unternehmen erst dann überhaupt existiert und als solches auch Handlungs- und Geschäftsfähig ist! 
+
+Unternehmen bei Behörde anmelden 
+
 2. Abhängigkeiten von Geschäftsobjekten 
 
 
