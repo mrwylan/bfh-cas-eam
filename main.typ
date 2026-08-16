@@ -9,11 +9,11 @@
     L'abstr. act svela tutti i passaggi dello studio, compresi i risultati finali e le conclusioni. 
     L'abstract è molto sintetico, solitamente compreso tra 150 e 250 parole.
     L'abstract segue una struttura logica serrata (Contesto → Problema → Metodo → Risultati → Conclusione).*/
-    Diese Gruppenarbeit berichtet darüber, wie vier Kollegen aus ganz unterschiedlichen Branchen der Wirtschaft sich auf einer Idee für ein gemeinsames Unternehmen geeinigt haben und dieses in iterativen Schritten erarbeitet haben.
-    In der Arbeit wird zunächst die Customer Journey beschrieben und abgegrenzt.
-    Danach folgt die "Modellierungsreise" entlang der RIM-Methodik. 
-    Anschliessend werden die Ressourcen wieder dazugenommen - wobei jeder der vier Kollegen am Schluss einer Vertiefung seines eigenen Anteils am Unternehmen präsentiert.
 
+Diese Gruppenarbeit beschreibt, wie vier Kollegen aus völlig verschiedenen Branchen sich auf eine Idee für ein gemeinsames Unternehmen geeinigt und dieses in iterativen Schritten erarbeitet haben. 
+Zuerst wird die Customer Journey beschrieben und abgegrenzt. 
+Danach folgt die «Modellierungsreise» entlang der RIM-Methodik. 
+Anschliessend werden die Ressourcen wieder einbezogen, wobei jeder der vier Kollegen am Ende seiner Arbeit seine vertiefte Darstellung seines eigenen Anteils vorstellt.
 
     /*
     Dieses Dokument verfolgt einen doppelten Zweck: Es stellt das architektonische Artefakt vor,
