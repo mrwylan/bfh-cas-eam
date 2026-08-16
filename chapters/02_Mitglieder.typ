@@ -20,7 +20,7 @@ Das Unternehmen ist darauf ausgerichtet, die Herausforderungen der Branche zu me
 
 === Herausforderungen in der Enterprise-Architektur
 
-Die Unternehmensarchitektur von Transgourmet steht vor spezifischen Herausforderungen, die weit über die klassische Großhandelslogistik hinausgehen:
+Die Unternehmensarchitektur von Transgourmet steht vor spezifischen Herausforderungen, die weit über die klassische Grosshandelslogistik hinausgehen:
 
 *Hybrides Logistikmodell:* Die Orchestrierung von 11 zentralen Regionallagern für die Belieferung und 31 dezentralen Prodega-Abholmärkten erfordert eine hochgradig verteilte Supply Chain, um volle Konsistenz zwischen allen Kanälen zu sichern.
 
