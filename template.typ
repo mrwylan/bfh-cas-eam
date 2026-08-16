@@ -50,7 +50,7 @@
 
   // --- BLOCCO TITOLO / FRONTESPIZIO (Pagina 1) ---
   align(center)[
-    #block(text(weight: "bold", size: 2em, title))
+    #block(text(weight: "bold", hyphenate: false, size: 2em, title))
     #if subtitle != none {
       v(0.4em)
       block(text(size: 1.2em, fill: luma(60), style: "italic", subtitle))
