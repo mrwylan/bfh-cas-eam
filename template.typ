@@ -16,7 +16,7 @@
   set page(
     paper: "a4",
     margin: (x: 2.5cm, top: 3cm, bottom: 2.5cm),
-    header: align(right, text(hyphenate: false, size: 8.5pt, fill: luma(100), title)),
+    header: align(right, box(width: auto, text(hyphenate: false, size: 8.5pt, fill: luma(100), title))),
     
     // Gestione del piè di pagina in base alla posizione nel documento
     footer: context {
