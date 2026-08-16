@@ -22,14 +22,14 @@ Sie ist erleichtert und registriert sich.
 #design-entscheid([Andere Customer Journey Ideen, wie wir analysiert und verworfen haben: 
 - B2B: Onboarding eines bestehenden Business-Kunden bei Transgourmet
 - EatSwiss: Digitale Herkunftsplattform für Gastronomie
-- PublicPate: Digitale Beschaffungsplattform für Gemeinschaftsverpflegung
+- PublicPlate: Digitale Beschaffungsplattform für Gemeinschaftsverpflegung
 - B2Startup: Marktpotential-Check vor der Unternehmensgründung für ein Gastro-Startup
 ])
 
 #design-entscheid([Kriterien die für die Wahl von *GastroStart* als Customer Journey ausschlaggebend waren:
 - Die Geschichte von Amira ist nachvollziehbar und realistisch.
-- Die Customer Journey ist in sich konsistent und kann in einem Szenario abgebildet werden.
-- Alle Unternehmen im Joint Venture können in der Customer Journey eine Rolle spielen und ihre Funktionalität einbringen.
+- Die Customer Journey ist in sich konsistent und kann in Szenarien abgebildet werden.
+- Alle Unternehmen im Joint Venture können in der Customer Journey eine Rolle spielen und ihre Dienstleistungen einbringen.
 - Die Komplexität ist überschaubar und kann im Rahmen der Arbeit modelliert werden.
 ])
 
@@ -76,7 +76,7 @@ GastroStart erlaubt es seinen Kunden schweizweit, schnell und ohne langwierige B
 Weitere Dienstleistungen, im Rahmen der Customer Journey nicht berührt, wären unter anderem Funktionen zur Unterstützung des operativen Betriebs eines Gastrounternehmens: Überwachung von Zahlungsfälligkeiten oder ein Einkaufsplanungsmodul. Darüber hinaus könnten über Gastrostart auch Betriebsübergaben und -liquidationen unterstützt werden.
 
 #design-entscheid[
-Entsprechend der gewählten Customer Journey haben wir uns entschieden, nur das Onboarding von Neukunden abzubilden. Das Szenario Rund um die Firmengründung steht im Fokus.
+Entsprechend der gewählten Customer Journey haben wir uns entschieden, nur das Onboarding von Neukunden abzubilden. Die Firmengründung steht im Fokus.
 ]
 
 == Die Rollen der beteiligten Unternehmen im Joint Venture
