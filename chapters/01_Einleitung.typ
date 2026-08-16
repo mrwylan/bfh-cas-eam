@@ -34,6 +34,27 @@ Die vorliegende Gruppenarbeit folgt dem Windschatten der Vorlesungen und Übunge
 + Kritische Hinterfragung (Übungen vom 17.06., 24.06.)
 + Individuelle Anhänge und Reflexionen
 
+== Eingesetzte Tools
+
+*Modellierung:* Archi - und Archimate, Draw.io und UML
+
+*Textredaktion:* Visual Studio Code mit Typst Plugin
+
+*Kolaboration:* GitHub, GitLab, MS Teams
+
+*Bibliographie:* Zotero, apa style
+
+== Bemerkung zu den visuellen Call-outs
+
+Während unseres Projekts musste die Gruppe wiederholt gemeinsame Entscheidungen treffen, zwischen Optionen abwägen oder festgestellte Denkfehler korrigieren.
+Da diese Momente einen wesentlichen Teil unseres Arbeitsprozesses ausmachen, sind sie im Text durch folgende visuelle Bausteine hervorgehoben:
+ 
+#design-entscheid([Hält wichtige, in der Gruppe getroffene Weichenstellungen für die Weiterentwicklung fest.])
+
+#stolperstein([Markiert Konzept- und Denkfehler, die uns während der Erarbeitung unterlaufen sind.])
+
+#fuehrung([Kennzeichnet Passagen und Zitate aus der Fachliteratur. Sie dienen dazu, die theoretische Verankerung der Arbeit direkt nachzuvollziehen.])
+
 == Erklärung zur Nutzung Künstlicher Intelligenz (KI)
 
 === Einsatzgebiet und Entstehungsprozess
@@ -55,24 +76,3 @@ Der Entstehungsprozess umfasste eine systematische Qualitätssicherung durch die
 
 *Ergebniverantwortung:* Die Verantwortung für den Inhalt, die wissenschaftliche Einordnung sowie sämtliche Schlussfolgerungen liegen uneingeschränkt bei den Autoren.
 ]
-
-=== Eingesetzte Tools
-
-*Modellierung:* Archi - und Archimate, Draw.io und UML
-
-*Textredaktion:* Visual Studio Code mit Typst Plugin
-
-*Kolaboration:* GitHub, GitLab, MS Teams
-
-*Bibliographie:* Zotero, apa style
-
-=== Bemerkung zu den visuellen Call-outs
-
-Während unseres Projekts musste die Gruppe wiederholt gemeinsame Entscheidungen treffen, zwischen Optionen abwägen oder festgestellte Denkfehler korrigieren.
-Da diese Momente einen wesentlichen Teil unseres Arbeitsprozesses ausmachen, sind sie im Text durch folgende visuelle Bausteine hervorgehoben:
- 
-#design-entscheid([Hält wichtige, in der Gruppe getroffene Weichenstellungen für die Weiterentwicklung fest.])
-
-#stolperstein([Markiert Konzept- und Denkfehler, die uns während der Erarbeitung unterlaufen sind.])
-
-#fuehrung([Kennzeichnet Passagen und Zitate aus der Fachliteratur. Sie dienen dazu, die theoretische Verankerung der Arbeit direkt nachzuvollziehen.])
