@@ -996,7 +996,7 @@ Unternehmen bei Behörde anmelden
 1. Geschäftsprozesse 
 2. Abhängigkeiten von Geschäftsobjekten 
 
-=== End-to-End Prozess: Onboarding Gastrounternehmens
+== Alles zusammenbauen: End-to-End Prozess: Onboarding Gastrounternehmens
 #frage([\@ alle: einverstanden? note to self: mit Swimmlanes und diese prozessbausteine abbilden])
 
 == Vierte Iteration: Geschäftsfähigkeiten und Abhängigkeiten untereinander
@@ -1128,6 +1128,7 @@ Im ArchiMate-Modell werden Business Objects über _Access_-Beziehungen (lesend o
 */
 
 == Kollaborative Synthese
+#todo-action[Jakob: behalten wir dieses Teil oder nicht]
 Architektonische Entscheidungen im Team sind nicht rein analytisch – sie sind soziale Verhandlungen, geprägt von beruflichem Hintergrund, früheren Erfahrungen und unterschiedlichen mentalen Modellen davon, wozu Architektur dient @bass2012.
 
 *Gruppenzusammensetzung:*
