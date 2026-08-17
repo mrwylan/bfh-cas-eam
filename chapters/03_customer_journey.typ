@@ -170,7 +170,7 @@ Struktur:
 + *Pain Point:* Kantonale Systeme haben heterogene Digitalisierungsgrade; einige verlangen physische Einreichung. _Line of Failure:_ analoger kantonaler Prozess unterbricht die digitale Journey
 + *Chance:* Integrierte Anleitung für jeden Kanton; Status-Tracking; expliziter Fallback auf Papier, wo keine API verfügbar ist.
 
-#frage([variante mit tabelle oder text? ])
+#frage([variante mit tabelle oder text? TABELLE!!! ])
 #figure(
   caption: [Szenario "Amira gründet ihr Unternehmen"],
   block(
@@ -258,7 +258,7 @@ Struktur:
 
 @fig-journey-map zeigt die konsolidierte Journey Map über alle fünf Phasen.
 
-#todo-action([\@ Jakob: bitte Tabelle an @sec-amira-und-ihre-geschichte löschen (ich habe nicht den Herz dazu)])
+#todo-action([\@ Jakob: bitte Tabelle an @sec-amira-und-ihre-geschichte löschen? ODER behalten?])
 
 #figure(
   caption: [Customer Journey Map: Amira auf GastroStart],
@@ -316,7 +316,7 @@ Struktur:
   ]
 ) <fig-journey-map>
  
-#frage([Jakob: möchtest du dieses Abschnitt behalten? ])
+#todo-action([Jakob: möchtest du dieses Abschnitt behalten? ])
 Die emotionale Kurve über die Journey hinweg offenbart zwei strukturell bedeutsame Punkte.
 Phase 3 (Betriebsbewilligung) markiert mit −2 die tiefste Stimmung, getrieben nicht durch ein Versagen im Prozessdesign, sondern durch den heterogenen Digitalisierungsgrad der kantonalen Behördensysteme – eine architektonische Einschränkung ausserhalb der direkten Kontrolle der Plattform.
 Phase 5 (Erster Vertrag) erreicht mit +2 den Höhepunkt, doch der Übergang vom digitalen Portal zu einem physischen Lieferantenvertrag stellt eine verbleibende analoge Lücke dar, die die Ziel-Architektur adressieren muss @stickdorn2011.

@@ -48,12 +48,13 @@ Dabei liessen sich Nomen wie "Gründung", "Finanzierung", "Kundenkonto" - diese 
 Folgendes Archimate Modell der Geschäftsobjekte von GastroStart, die von der Gruppe identifiziert wurden. 
 
 
+
 #figure(
-  image("../assets/Domain Models - GO diagram.svg", width: 80%),
+  image("../assets/GO diagram.svg", width: 80%),
   caption: [Geschäftsobjekt Kundenkonto und dessen Zustände]
 ) <fig-IdentifizierteGeschaefstobjetke>
 
-#frage([brauchen wir nicht das Objekt Webseite?])
+#frage([brauchen wir nicht das Objekt Webseite? hier brauchen wir dieses Objekt nicht - es ist eine RESSOURCE!!!])
 
 
 #design-entscheid([
@@ -191,7 +192,7 @@ caption: [Geschäftsobjekt Unternehmen und dessen Zustände]
       [
         - wird referenziert von *Gründungsvorhaben* (wobei die Gründung der juristischen Person nicht zwingend notwendig ist)
         - steht in Beziehung zu 
-         - *Kundenkonto*: _TBD_
+         - *Kundenkonto*: als Objekt des Gründungsvorhabens
          - *Bewilligung*: als Empfänger
          - *Lieferantenkonto* als Kunde und Debitor von Transgourmet
          - und *Finanzierung*: als Empfänger der Mittel
@@ -323,7 +324,6 @@ caption: [Geschäftsobjekt Finanzierung und dessen Zustände]
       [Beziehungen],
       [- #emph[Gründungsvorhaben] ist mit der Finanzierung assoziiert (löst das Gesuch aus).
       - Die Finanzierung ist mit der #emph[Bewilligung] assoziiert (Bewilligungsstand als Voraussetzung).
-      #frage([was wird finanziert? das Vorhaben, NICHT die firmengründung, korrekt?])
       - Das #emph[Unternehmen] ist mit der Finanzierung assoziiert (Empfänger der Mittel).
       - Zugriff durch die Geschäftstransaktionen #emph[Finanzierung anfordern], #emph[Finanzierung prüfen] und #emph[Finanzierung vorbereiten] (siehe @tbl-GT-finanzierung-erhalten).],
     )
@@ -520,7 +520,7 @@ Was bleibt physisch vorhanden, was verschwindet?"
 ) <tbl-business-objects-kurzform>
 */
 == Zweite Iteration: Zustände und Geschäftstransaktionen oder die Identifikation des relevanten Verhaltens
-#frage([an alle: wie findet ihr mein Vorschlag für die Dokumentation der Geschäftstransaktionen und Zustände? ist es ok, immer dasselbe Objekt als in- und output zu haben (bspw. bei bewilligung)])
+/*#frage([an alle: wie findet ihr mein Vorschlag für die Dokumentation der Geschäftstransaktionen und Zustände? ist es ok, immer dasselbe Objekt als in- und output zu haben (bspw. bei bewilligung)])*/
 
 Wir dokumentieren die Identifikation von Zuständen und Geschäftstransaktionen pro Szenario, um die Lesbarkeit zu erhalten.
 Die entsprechenden Geschäftsprozesse sind ebenfalls modelliert, auch wenn sie später erklärt werden.
