@@ -53,7 +53,7 @@ Folgendes Archimate Modell der Geschäftsobjekte von GastroStart, die von der Gr
   caption: [Geschäftsobjekt Kundenkonto und dessen Zustände]
 ) <fig-IdentifizierteGeschaefstobjetke>
 
-#frage([brauchen wir nicht das Objekt "Kunde"? Und Webseite?])
+#frage([brauchen wir nicht das Objekt Webseite?])
 
 
 #design-entscheid([
@@ -67,7 +67,7 @@ Es wurde verzichtet, das Objekt Person zu modellieren. Die Behandlung von person
 image("../assets/GOKundenkonto.svg", width: 50%),
 caption: [Geschäftsobjekt Kundenkonto und dessen Zustände]
 ) <fig-GOKundenkonto>
-#todo-action([\@Jan: Objektbeschreibung nachführen. SVG Screenshot einfügen. ])
+#todo-action([\@Jan: Objektbeschreibung nachführen. . ])
 #figure(
   caption: [Geschäftsobjekt Kundenkonto],
   block(
@@ -184,7 +184,8 @@ caption: [Geschäftsobjekt Unternehmen und dessen Zustände]
       [Zustände],
       [neu, beurkundet, eingereicht, unvollständig, angenommen, abgelehnt, im Handelsregister eingetragen, abgebrochen.
       
-      Lebenszyklus: von _neu_ über _beurkundet_ zu _eingereicht_ für die Prüfung durch die Behörden; bei fehlenden Angaben _unvollständig_, nach Nachreichung wieder _eingereicht_. Nach dem Erreichen des Status _eingereicht_ geht es je nach Behördenentscheid mit dem Status _abgelehnt_ zum Ende, während bei behördlicher Zustimmung die Status _angenommen_ und _im Handelsregister eingetragen_ erreicht werden. Der Status _abgebrochen_ beendet den Zyklus vorzeitig, solange der Status _eingereicht_ noch nicht erreicht worden ist.],
+      Lebenszyklus: von _neu_ über _beurkundet_ zu _eingereicht_ für die Prüfung durch die Behörden; bei fehlenden Angaben _unvollständig_, nach Nachreichung wieder _eingereicht_. Nach dem Erreichen des Status _eingereicht_ geht es je nach Behördenentscheid mit dem Status _abgelehnt_ zum Ende, während bei behördlicher Zustimmung die Status _angenommen_ und _im Handelsregister eingetragen_ erreicht werden. Der Status _abgebrochen_ beendet den Zyklus vorzeitig, solange der Status _eingereicht_ noch nicht erreicht worden ist. 
+      Für die grafische Aufbereitung der Zustandsübergänge, vgl. @fig-GTZ-Amira-gründet ],
 
       [Beziehungen],
       [

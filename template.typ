@@ -45,7 +45,15 @@
     pagebreak(weak: true)
     it
   }
-
+// Rinvii interni (Abbildungen, Tabellen, Abschnitte) dezent einfärben;
+// bibliografische Zitate bleiben schwarz
+show ref: it => {
+if it.element != none {
+text(fill: rgb("#274690"), it)
+    } else {
+it
+    }
+  }
 
 
   // --- BLOCCO TITOLO / FRONTESPIZIO (Pagina 1) ---
