@@ -962,7 +962,7 @@ Auf der Basis der In- und Outputs der Geschäftstransaktionen werden für jeden 
 #figure(
   image("../assets/GP Amira gründet ihr Unternehmen.svg", width: 80%),
   caption: [Geschäftsprozess - Szenario Amira gründet ihr Unternehmen]
-) <GP_Amira_gruendet_Unternehmen>
+) <GP_Amira_gründet_Unternehmen>
 
 
 1. Geschäftsprozesse 

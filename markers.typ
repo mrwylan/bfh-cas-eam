@@ -27,6 +27,7 @@
   fill: farbe.lighten(92%),
   above: 1em,
   below: 1em,
+  breakable: false, // Prevents page breaks inside the block
 )[
   #grid(
     columns: (auto, 1fr),
