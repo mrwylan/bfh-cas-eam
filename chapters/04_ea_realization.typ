@@ -185,7 +185,7 @@ caption: [Geschäftsobjekt Unternehmen und dessen Zustände]
       [neu, beurkundet, eingereicht, unvollständig, angenommen, abgelehnt, im Handelsregister eingetragen, abgebrochen.
       
       Lebenszyklus: von _neu_ über _beurkundet_ zu _eingereicht_ für die Prüfung durch die Behörden; bei fehlenden Angaben _unvollständig_, nach Nachreichung wieder _eingereicht_. Nach dem Erreichen des Status _eingereicht_ geht es je nach Behördenentscheid mit dem Status _abgelehnt_ zum Ende, während bei behördlicher Zustimmung die Status _angenommen_ und _im Handelsregister eingetragen_ erreicht werden. Der Status _abgebrochen_ beendet den Zyklus vorzeitig, solange der Status _eingereicht_ noch nicht erreicht worden ist. 
-      Für die grafische Aufbereitung der Zustandsübergänge, vgl. @fig-GTZ-Amira-gründet ],
+      Für die grafische Aufbereitung der Zustandsübergänge, vgl. @fig-GTZ-Amira-gründet.],
 
       [Beziehungen],
       [
@@ -247,14 +247,15 @@ caption: [Geschäftsobjekt Bewilligung und dessen Zustände]
       Die Erteilung der Bewilligung setzt je nach Kanton ein Fähigkeitsausweis voraus. In Kanton Fribourg muss mindestens eine Person im Betrieb ein Wirtepatent besitzen.],
 
       [Attribute],
-      [fachlich relevante Informationen zum Geschäftsobjekt sind: Typ (mit oder ohne Alkoholausschank), unterliegendes Wirtepatent (insbesondere dessen territoriale Gültigkeit), Standort bzw. Lokal, Datum Bewilligungsbeginn, erteilende Behörde, Datum der Anmeldung bei der kantonalen Lebensmittelbehörde bzw. -labor, Hygienekonzept],
+      [/*REDEwendung von Adrian übernehmen*/fachlich relevante Informationen zum Geschäftsobjekt sind: Typ (mit oder ohne Alkoholausschank), unterliegendes Wirtepatent (insbesondere dessen territoriale Gültigkeit), Standort bzw. Lokal, Datum Bewilligungsbeginn, erteilende Behörde, Datum der Anmeldung bei der kantonalen Lebensmittelbehörde bzw. -labor, Hygienekonzept],
 
       [Zustände],
       [neu, in Vorbereitung, eingereicht, unvollständig, abgelehnt, erteilt, abgebrochen. 
       
       Lebenszyklus: von _neu_ über _in Vorbereitung_ zu _eingereicht_ für die Prüfung durch die Behörden; bei fehlenden Angaben _unvollständig_, nach Nachreichung wieder _eingereicht_. Nach dem Erreichen des Status _eingereicht_ geht es je nach Behördenentscheid mit dem Status _abgelehnt_ zum Ende, während bei behördlicher Zustimmung der Status _erteilt_ erreicht wird. Der Status _abgebrochen_ beendet den Zyklus vorzeitig, solange der Status _eingereicht_ noch nicht erreicht worden ist.
+      Für die grafische Aufbereitung der Zustandsübergänge, vgl. @fig-GTZ-Amira-bewilligung. 
 
-      Andere Zustände wie erloschen, entzogen, sistiert, sind für die Customer Journey nicht relevant.],
+      Andere Zustände wie erloschen, entzogen, sistiert, sind für die abgebildete Customer Journey nicht relevant.],
 
       [Beziehungen],
       [- wird referenziert von *Gründungsvorhaben* // sagt man das so? ist das korrekt?
@@ -311,12 +312,13 @@ caption: [Geschäftsobjekt Finanzierung und dessen Zustände]
       [Repräsentiert das Finanzierungsgesuch, mit dem Amira die Erstinvestitionen für ihr Catering-Unternehmen decken will. Das Objekt hält die Angaben des Gesuchs, das Ergebnis der von FINNOFLEET durchgeführten Bonitätsprüfung sowie den daraus abgeleiteten Kreditentscheid fest. Es ist die gemeinsame Datengrundlage, auf die die Finanzierungs-Transaktionen zugreifen.],
 
       [Attribute],
-      [Auf Objektebene bewusst nicht ausmodelliert (analog zu den übrigen Geschäftsobjekten). Fachlich relevant wären Betrag, Laufzeit, Kondition/Zinssatz und Verwendungszweck --- #emph[im Team zu bestätigen].],
+      [Auf Objektebene bewusst nicht ausmodelliert (analog zu den übrigen Geschäftsobjekten). Fachlich relevant wären Betrag, Laufzeit, Kondition/Zinssatz und Verwendungszweck.],
 
       [Zustände],
       [neu, angefordert, unvollständig, vollständig, angenommen, abgelehnt, abgebrochen.
 
-      Lebenszyklus: von #emph[neu] über #emph[angefordert] zur inhaltlichen Prüfung; bei fehlenden Angaben #emph[unvollständig], nach Nachreichung #emph[vollständig]; abschliessend #emph[angenommen] oder #emph[abgelehnt]. #emph[abgebrochen] beendet den Fall vorzeitig.],
+      Lebenszyklus: von #emph[neu] über #emph[angefordert] zur inhaltlichen Prüfung; bei fehlenden Angaben #emph[unvollständig], nach Nachreichung #emph[vollständig]; abschliessend #emph[angenommen] oder #emph[abgelehnt]. #emph[abgebrochen] beendet den Fall vorzeitig.
+      /*Vorschlag: Für die graphische Aufbereitung der Zustandsübergänge, vgl. @ig-GTZ-finanzierung. */],
 
       [Beziehungen],
       [- #emph[Gründungsvorhaben] ist mit der Finanzierung assoziiert (löst das Gesuch aus).
@@ -528,7 +530,7 @@ Die Szenarien sind in @sec-szenarien-customer-journey beschrieben und werden ein
 *Zustände:* Zu jedem Geschäftsobjekt werden seine Zustände identifiziert.
 
 *Geschäftstransaktionen:* Entlang der Geschichte werden die Geschäftstransaktionen mit ihren Inputs und Output (Geschäftsobjekte) identifiziert. 
-Sowohl bei Input und Output wird darauf geachtet, dass diese inklusive ihre Zustände (bzw. zugehörige Ereignisse) bezeichnet werden.
+Sowohl bei Input und Output wird darauf geachtet, dass diese inklusive ihre Zustände (bzw. zugehörige Ereignisse) bezeichnet werden. @Spichiger2026GFbUA /*S. 54*/
 ])
 
 
@@ -652,7 +654,7 @@ Lebenszyklus: von _neu_ über _beurkundet_ zu _eingereicht_ für die Prüfung du
 2. Geschäftstransaktionen
 Amira möchte eine Gesellschaft mit beschränkter Haftung gründen, um sich und ihre Familie finanziell vor einem möglichen Misserfolg ihres Unternehmens zu schützen. 
 Das Geschäftsobjekt Unternehmen durchläuft mehrere Transaktionen: 
-- In einer ersten Phase ist Amira in Führung: sie _bereitet_  mit der Hilfe der Informationen auf Gastrostart die _Unterlagen_ für die Gründung der "Food Affair GmbH _vor_. Nach der öffentlichen Beurkundung _beantragt_ sie den _Eintrag im Handelsregister_ für ihre GmbH. 
+- In einer ersten Phase ist Amira in Führung: sie _bereitet_  mit der Hilfe von Informationen und Fachfunktionen auf GastroStart die _Unterlagen_ für die Gründung der "Food Affair GmbH _vor_. Nach der öffentlichen Beurkundung _beantragt_ sie den _Eintrag im Handelsregister_ für ihre GmbH. 
 - Danach ist der Ball bei den Behörden: das kantonale Handelsregisteramt _prüft den Antrag_ auf Vollständigkeit, _lehnt es ab_ oder _nimmt es an_ und _trägt die GmbH im Handelsregister ein_. 
 
 #figure(
@@ -687,7 +689,7 @@ transaktion],
       fill: (x, y) => if calc.odd(y) { luma(250) } else { white },
       align: (left, left, left),
 
-      [Gründungs-dokumentation vorbereiten], [Amira sammelt die für die Gründung notwendigen Dokumente und Angaben und bringt diese physisch beim Notar vorbei und beauftragt diesen mit der Gründung der GmbH. Sie zahlt das Gründungskapital ein.], [neu → beurkundet],
+      [Gründungs-dokumentation vorbereiten], [Amira erstellt die für die Gründung notwendigen Dokumente und sammelt die notwendigen Beilagen  und bringt diese physisch beim Notar vorbei und beauftragt diesen mit der Gründung der GmbH. Sie zahlt das Gründungskapital ein.], [neu → beurkundet],
       [Eintrag im Handelsregister beantragen], [Amira meldet ihre GmbH über ihren Notar beim Handelsregisteramt ihres Wohnkantons.], [beurkundet → eingereicht],
       [Prüfung durch Handelsregister (abwarten)], [ Das Handelsregisteramt prüft den Antrag prüft den Antrag formell und entscheidet über das weitere Vorgehen.
        ], [eingereicht → angenommen / abgelehnt / unvollständig],
@@ -723,7 +725,7 @@ caption: [Zustandsdiagramm des Geschäftsobjekt Bewilligung]
 Die Zustände sind: neu, in Vorbereitung, eingereicht, unvollständig, abgelehnt, erteilt, abgebrochen. 
 Lebenszyklus: von _neu_ über _in Vorbereitung_ zu _eingereicht_ für die Prüfung durch die Behörden; bei fehlenden Angaben _unvollständig_, nach Nachreichung wieder _eingereicht_. Nach dem Erreichen des Status _eingereicht_ geht es je nach Behördenentscheid mit dem Status _abgelehnt_ zum Ende, während bei behördlicher Zustimmung der Status _erteilt_ erreicht wird. Der Status _abgebrochen_ beendet den Zyklus vorzeitig, solange der Status _eingereicht_ noch nicht erreicht worden ist.
 
-Andere Zustände wie erloschen, entzogen, sistiert, sind für die Customer Journey nicht relevant.
+Andere Zustände wie erloschen, entzogen, sistiert, sind für die abgebildete Customer Journey nicht relevant.
 
 #design-entscheid([Wir haben uns entschieden, die Frage um das Schicksal des Objekts "Bewilligung" im Fall der Löschung des Benutzerprofils von Amira offenzulassen.])
  
@@ -962,7 +964,7 @@ Auf der Basis der In- und Outputs der Geschäftstransaktionen werden für jeden 
 #figure(
   image("../assets/GP Amira gründet ihr Unternehmen.svg", width: 80%),
   caption: [Geschäftsprozess - Szenario Amira gründet ihr Unternehmen]
-) <GP_Amira_gründet_Unternehmen>
+) <GP_Amira_gruendet_Unternehmen>
 
 
 1. Geschäftsprozesse 
@@ -995,7 +997,7 @@ Unternehmen bei Behörde anmelden
 2. Abhängigkeiten von Geschäftsobjekten 
 
 === End-to-End Prozess: Onboarding Gastrounternehmens
-#frage([\@ alle: einverstanden?])
+#frage([\@ alle: einverstanden? note to self: mit Swimmlanes und diese prozessbausteine abbilden])
 
 == Vierte Iteration: Geschäftsfähigkeiten und Abhängigkeiten untereinander
 
@@ -1153,6 +1155,34 @@ Diese ausgehandelte Qualität verleiht dem Artefakt seine architektonische Legit
 
 #frage([an alle: beschreiben wir hier das IST? oder die SOLL-Architektur?])
 
+== OM für DV Bern 
+#todo-action([Jan bitte die übung für Finnofleet hier schreiben 
+
+Referenz: es geht um [EAasStrat]
+1. Was ist der Stand betreffend Integration von Prozessen und Standardisierung von Daten 
+für Ihr Unternehmen und für die Customer Journey (siehe [EAasStrat]).
+2. Wählen Sie ein Operating Model für Ihr Unternehmen und begründen Sie Ihre Wahl 
+(siehe [EAasStrat]).
+Bemerkung: bei der Begründung die Rolle, die Ihr Unternehmen im Kontext der 
+Customer Journey wahrnimmt, berücksichtigen.
+3. Aufgrund der Wahl in 1) zeichnen (und erklären) Sie die Enterprise Architecture dazu.
+ Abgabe der nächsten Iteration bis am Montag 06:00
+M])
+
+== Operating Model für FINNOFLEET 
+#todo-action([Adrian bitte die übung für Finnofleet hier schreiben 
+
+Referenz: es geht um [EAasStrat]
+1. Was ist der Stand betreffend Integration von Prozessen und Standardisierung von Daten 
+für Ihr Unternehmen und für die Customer Journey (siehe [EAasStrat]).
+2. Wählen Sie ein Operating Model für Ihr Unternehmen und begründen Sie Ihre Wahl 
+(siehe [EAasStrat]).
+Bemerkung: bei der Begründung die Rolle, die Ihr Unternehmen im Kontext der 
+Customer Journey wahrnimmt, berücksichtigen.
+3. Aufgrund der Wahl in 1) zeichnen (und erklären) Sie die Enterprise Architecture dazu.
+ Abgabe der nächsten Iteration bis am Montag 06:00
+M])
+
 == Operating-Model-Einordnung nach Ross, Weill und Robertson für Transgourmet
 Bevor die Customer Journey auf Capabilities und Systeme heruntergebrochen wird, ist eine grundlegende Einordnung nötig: Welches Operating Model liegt Transgourmet zugrunde?
 Ross, Weill und Robertson unterscheiden vier Operating Models entlang der beiden Achsen Standardisierung der Geschäftsprozesse und Integration der Daten @ross2006enterprise.
@@ -1217,7 +1247,10 @@ Die "Sorglosigkeit", die Gastrostart verspricht, sollte vielleicht gar keine Arc
 
 Wie modellieren: 
 
-+ Il «partner pubblico» non è un'organizzazione che siede nella JV, è un layer di interoperabilità: interfacce standardizzate (eCH-0258 per lo scambio dati), governate dalla DVS, consumate da GastroStart dall'esterno. La frammentazione (26 Kantone × 2110 Gemeinden) sparisce dietro questo layer nella misura in cui gli standard arrivano — e oggi ci arrivano su base volontaria. In ArchiMate ti servono Application Interfaces/Services esposti dal lato autorità e consumati da GastroStart, con gli standard eCH come Contract/Requirement. I punti d'aggancio concreti li hai già nel tuo §4:, Nutzerkonto (AGOV, il login unico delle autorità), Handelsregistereintrag (Zefix/EHRA). Modelli GastroStart contro questi Basisdienste.
++ Il «partner pubblico» non è un'organizzazione che siede nella JV, è un layer di interoperabilità: interfacce standardizzate (eCH-0258 per lo scambio dati), governate dalla DVS, consumate da GastroStart dall'esterno. La frammentazione (26 Kantone × 2110 Gemeinden) sparisce dietro questo layer nella misura in cui gli standard arrivano — e oggi ci arrivano su base volontaria. In ArchiMate ti servono Application Interfaces/Services esposti dal lato autorità e consumati da GastroStart, con gli standard eCH come Contract/Requirement. I punti d'aggancio concreti li hai già nel tuo §4:, Nutzerkonto (AGOV, il login unico delle autorità), Handelsregistereintrag (Zefix/EHRA).
+  
+    Betreibungsregisterauszug / Automatizzare la fornitura di allegati - Vertrauensinfrastruktur che fornisce i documenti validi e certificati. 
+Modelli GastroStart contro questi Basisdienste.
 
 + Ricordi il *contrasto imposte-vs-servizi* che avevamo costruito? Ora si chiude con una precisione quasi imbarazzante. Le imposte funzionano grazie a uno strumento vincolante (StHG, Art. 128/46 BV). I servizi alle imprese non ce l'hanno → oggi solo eCH volontario → la frammentazione trapela (il tuo stesso §4 lo mostra: Bewilligungen cantonali al 30–55%, «grösste Dematerialisierungslücke» nei formulari cantonali). E lo strumento vincolante mancante? Lo stanno decidendo adesso. Alla fine del 2025 Bundesrat e KdK hanno adottato il Zielbild della futura collaborazione federale, prendendo una decisione di principio per sviluppare la DVS verso una piattaforma politica con definizione vincolante degli standard. La Rahmenvereinbarung prevedeva che entro il 2026 fossero sottoposte ai Träger le basi decisionali per uno sviluppo della DVS incentrato su una definizione degli standard vincolante per tutti e tre i livelli statali — e l'evaluazione del 2024 aveva mostrato che il potenziale non è ancora sfruttato, in particolare nella promozione dell'interoperabilità e nella costruzione di infrastrutture e servizi di base condivisi @dvs_organisation_2022, @dvs_organisation_2022
 
