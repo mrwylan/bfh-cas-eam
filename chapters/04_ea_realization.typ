@@ -1,5 +1,8 @@
 // ── Chapter 4 : EA Realization  ───────────────────
-#import "../markers.typ": theorie-anker, design-entscheid, stolperstein, frage, todo-action, fuehrung
+#import "../markers.typ": (
+  theorie-anker, design-entscheid, stolperstein, frage, todo-action, fuehrung,
+  autor-marker, autor-finnofleet, autor-transgourmet, autor-verwaltung, autor-dvbern,
+)
 = Die Realisierung des Resource Independent Model
 /*in Anlehnung an Kapitel 3.4.5. vom Spichiger-Skript*/
 == Allgemeines
@@ -48,12 +51,13 @@ Dabei liessen sich Nomen wie "Gründung", "Finanzierung", "Kundenkonto" - diese 
 Folgendes Archimate Modell der Geschäftsobjekte von GastroStart, die von der Gruppe identifiziert wurden. 
 
 
+
 #figure(
-  image("../assets/Domain Models - GO diagram.svg", width: 80%),
+  image("../assets/GO diagram.svg", width: 80%),
   caption: [Geschäftsobjekt Kundenkonto und dessen Zustände]
 ) <fig-IdentifizierteGeschaefstobjetke>
 
-#frage([brauchen wir nicht das Objekt Webseite?])
+#frage([brauchen wir nicht das Objekt Webseite? hier brauchen wir dieses Objekt nicht - es ist eine RESSOURCE!!!])
 
 
 #design-entscheid([
@@ -185,13 +189,13 @@ caption: [Geschäftsobjekt Unternehmen und dessen Zustände]
       [neu, beurkundet, eingereicht, unvollständig, angenommen, abgelehnt, im Handelsregister eingetragen, abgebrochen.
       
       Lebenszyklus: von _neu_ über _beurkundet_ zu _eingereicht_ für die Prüfung durch die Behörden; bei fehlenden Angaben _unvollständig_, nach Nachreichung wieder _eingereicht_. Nach dem Erreichen des Status _eingereicht_ geht es je nach Behördenentscheid mit dem Status _abgelehnt_ zum Ende, während bei behördlicher Zustimmung die Status _angenommen_ und _im Handelsregister eingetragen_ erreicht werden. Der Status _abgebrochen_ beendet den Zyklus vorzeitig, solange der Status _eingereicht_ noch nicht erreicht worden ist. 
-      Für die grafische Aufbereitung der Zustandsübergänge, vgl. @fig-GTZ-Amira-gründet ],
+      Für die grafische Aufbereitung der Zustandsübergänge, vgl. @fig-GTZ-Amira-gründet.],
 
       [Beziehungen],
       [
         - wird referenziert von *Gründungsvorhaben* (wobei die Gründung der juristischen Person nicht zwingend notwendig ist)
         - steht in Beziehung zu 
-         - *Kundenkonto*: _TBD_
+         - *Kundenkonto*: als Objekt des Gründungsvorhabens
          - *Bewilligung*: als Empfänger
          - *Lieferantenkonto* als Kunde und Debitor von Transgourmet
          - und *Finanzierung*: als Empfänger der Mittel
@@ -247,14 +251,15 @@ caption: [Geschäftsobjekt Bewilligung und dessen Zustände]
       Die Erteilung der Bewilligung setzt je nach Kanton ein Fähigkeitsausweis voraus. In Kanton Fribourg muss mindestens eine Person im Betrieb ein Wirtepatent besitzen.],
 
       [Attribute],
-      [fachlich relevante Informationen zum Geschäftsobjekt sind: Typ (mit oder ohne Alkoholausschank), unterliegendes Wirtepatent (insbesondere dessen territoriale Gültigkeit), Standort bzw. Lokal, Datum Bewilligungsbeginn, erteilende Behörde, Datum der Anmeldung bei der kantonalen Lebensmittelbehörde bzw. -labor, Hygienekonzept],
+      [/*REDEwendung von Adrian übernehmen*/fachlich relevante Informationen zum Geschäftsobjekt sind: Typ (mit oder ohne Alkoholausschank), unterliegendes Wirtepatent (insbesondere dessen territoriale Gültigkeit), Standort bzw. Lokal, Datum Bewilligungsbeginn, erteilende Behörde, Datum der Anmeldung bei der kantonalen Lebensmittelbehörde bzw. -labor, Hygienekonzept],
 
       [Zustände],
       [neu, in Vorbereitung, eingereicht, unvollständig, abgelehnt, erteilt, abgebrochen. 
       
       Lebenszyklus: von _neu_ über _in Vorbereitung_ zu _eingereicht_ für die Prüfung durch die Behörden; bei fehlenden Angaben _unvollständig_, nach Nachreichung wieder _eingereicht_. Nach dem Erreichen des Status _eingereicht_ geht es je nach Behördenentscheid mit dem Status _abgelehnt_ zum Ende, während bei behördlicher Zustimmung der Status _erteilt_ erreicht wird. Der Status _abgebrochen_ beendet den Zyklus vorzeitig, solange der Status _eingereicht_ noch nicht erreicht worden ist.
+      Für die grafische Aufbereitung der Zustandsübergänge, vgl. @fig-GTZ-Amira-bewilligung. 
 
-      Andere Zustände wie erloschen, entzogen, sistiert, sind für die Customer Journey nicht relevant.],
+      Andere Zustände wie erloschen, entzogen, sistiert, sind für die abgebildete Customer Journey nicht relevant.],
 
       [Beziehungen],
       [- wird referenziert von *Gründungsvorhaben* // sagt man das so? ist das korrekt?
@@ -311,17 +316,17 @@ caption: [Geschäftsobjekt Finanzierung und dessen Zustände]
       [Repräsentiert das Finanzierungsgesuch, mit dem Amira die Erstinvestitionen für ihr Catering-Unternehmen decken will. Das Objekt hält die Angaben des Gesuchs, das Ergebnis der von FINNOFLEET durchgeführten Bonitätsprüfung sowie den daraus abgeleiteten Kreditentscheid fest. Es ist die gemeinsame Datengrundlage, auf die die Finanzierungs-Transaktionen zugreifen.],
 
       [Attribute],
-      [Auf Objektebene bewusst nicht ausmodelliert (analog zu den übrigen Geschäftsobjekten). Fachlich relevant wären Betrag, Laufzeit, Kondition/Zinssatz und Verwendungszweck --- #emph[im Team zu bestätigen].],
+      [Auf Objektebene bewusst nicht ausmodelliert (analog zu den übrigen Geschäftsobjekten). Fachlich relevant wären Betrag, Laufzeit, Kondition/Zinssatz und Verwendungszweck.],
 
       [Zustände],
       [neu, angefordert, unvollständig, vollständig, angenommen, abgelehnt, abgebrochen.
 
-      Lebenszyklus: von #emph[neu] über #emph[angefordert] zur inhaltlichen Prüfung; bei fehlenden Angaben #emph[unvollständig], nach Nachreichung #emph[vollständig]; abschliessend #emph[angenommen] oder #emph[abgelehnt]. #emph[abgebrochen] beendet den Fall vorzeitig.],
+      Lebenszyklus: von #emph[neu] über #emph[angefordert] zur inhaltlichen Prüfung; bei fehlenden Angaben #emph[unvollständig], nach Nachreichung #emph[vollständig]; abschliessend #emph[angenommen] oder #emph[abgelehnt]. #emph[abgebrochen] beendet den Fall vorzeitig.
+      /*Vorschlag: Für die graphische Aufbereitung der Zustandsübergänge, vgl. @ig-GTZ-finanzierung. */],
 
       [Beziehungen],
       [- #emph[Gründungsvorhaben] ist mit der Finanzierung assoziiert (löst das Gesuch aus).
       - Die Finanzierung ist mit der #emph[Bewilligung] assoziiert (Bewilligungsstand als Voraussetzung).
-      #frage([was wird finanziert? das Vorhaben, NICHT die firmengründung, korrekt?])
       - Das #emph[Unternehmen] ist mit der Finanzierung assoziiert (Empfänger der Mittel).
       - Zugriff durch die Geschäftstransaktionen #emph[Finanzierung anfordern], #emph[Finanzierung prüfen] und #emph[Finanzierung vorbereiten] (siehe @tbl-GT-finanzierung-erhalten).],
     )
@@ -518,7 +523,7 @@ Was bleibt physisch vorhanden, was verschwindet?"
 ) <tbl-business-objects-kurzform>
 */
 == Zweite Iteration: Zustände und Geschäftstransaktionen oder die Identifikation des relevanten Verhaltens
-#frage([an alle: wie findet ihr mein Vorschlag für die Dokumentation der Geschäftstransaktionen und Zustände? ist es ok, immer dasselbe Objekt als in- und output zu haben (bspw. bei bewilligung)])
+/*#frage([an alle: wie findet ihr mein Vorschlag für die Dokumentation der Geschäftstransaktionen und Zustände? ist es ok, immer dasselbe Objekt als in- und output zu haben (bspw. bei bewilligung)])*/
 
 Wir dokumentieren die Identifikation von Zuständen und Geschäftstransaktionen pro Szenario, um die Lesbarkeit zu erhalten.
 Die entsprechenden Geschäftsprozesse sind ebenfalls modelliert, auch wenn sie später erklärt werden.
@@ -528,22 +533,41 @@ Die Szenarien sind in @sec-szenarien-customer-journey beschrieben und werden ein
 *Zustände:* Zu jedem Geschäftsobjekt werden seine Zustände identifiziert.
 
 *Geschäftstransaktionen:* Entlang der Geschichte werden die Geschäftstransaktionen mit ihren Inputs und Output (Geschäftsobjekte) identifiziert. 
-Sowohl bei Input und Output wird darauf geachtet, dass diese inklusive ihre Zustände (bzw. zugehörige Ereignisse) bezeichnet werden.
+Sowohl bei Input und Output wird darauf geachtet, dass diese inklusive ihre Zustände (bzw. zugehörige Ereignisse) bezeichnet werden. @Spichiger2026GFbUA /*S. 54*/
 ])
 
 
 === Amira orientiert sich
 
-#todo-action([\@ Jan Szenario/Beschreibung (mit Bild) einfügen])
-/* 
-1. in Archi die View "GTZ Amira orientiert sich" unter Views / Assets4Paper / Geschäftstransaktionen (Iteration 2) / öffnen 
-2. View wie im Bild 3.9 - Seite 55 vom Skript von Spichiger aufbereiten oder wie ../assets/GrpA_GP_GastroStart_Albrecht_Jakob.svg
-3. als svg ins projekt hier importieren
-4. Beschreiben: 
-  - Events 
-  - Transaktionen
-*/
-1. Zustände 
+Was bringt potenzielle Kunden auf eine Plattform wie GastroStart? Am Anfang steht sicherlich der Wunsch, einen Gastronomiebetrieb zu gründen.
+Zu diesem Wunsch gehören viele Eigenschaften, zum Beispiel die Art des Betriebs: Handelt es sich um ein Cateringunternehmen, um ein Café oder um eine Bar, in der auch alkoholische Getränke serviert werden?
+Die GründerInnen haben dabei vielleicht zunächst nur ihre Betriebszeiten und ihr Wunschklientel vor Augen.
+Allerdings hat diese Entscheidung auch regulatorische Auswirkungen, die sich an verschiedenen Standorten unterschiedlich auswirken können.
+Von entscheidender Bedeutung ist also auch, wo der Betrieb stattfindet.
+Alle Eigenschaften, die mit der Betriebsgründung zusammenhängen, fassen wir im ressourcenunabhängigen Modell im Geschäftsobjekt *Gründungsvorhaben* zusammen.
+Das Gründungsvorhaben wird in der ersten Phase, Orientierung, entscheidend geprägt und spielt in den folgenden Phasen die zentrale Rolle.
+
+Im ressourcenunabhängigen Modell nach Archi sind die Eigenschaften der Geschäftsobjekte zunächst nicht von Bedeutung. Wir beginnen stattdessen mit der Betrachtung der Zustände, die ein Geschäftsobjekt annimmt, und welche Transaktionen einen Zustandswechsel hervorrufen.
+
+Der Auslöser der Customer Journey ist das Gründungsvorhaben. Indem die GründerInnen die Plattform GastroStart betreten, ist ihr Gründungsvorhaben aus Sicht des Systems *initiiert*. Diesem Zustand folgt die Geschäftstransaktion *Anforderungen ermitteln*. Diese Anforderungen ergeben sich aus den Eigenschaften des Gründungsvorhabens, wie zum Beispiel:
+- Personalien der BetriebsinhaberInnen
+- Betriebs-Typ (Catering, Café, Bar usw.)
+- Ort der Betriebsstätte
+- gegebenenfalls vorhandene Zertifikate und Bewilligungen
+
+Welche Anforderungen jeweils gelten, wird vom *Kantonsanforderungskatalog* bestimmt, dessen fester Bestandteil die *digitale Regelmatrix* ist. Die Voraussetzungen für Küchenbetrieb oder Alkoholausschank können sich kantonal unterscheiden, ebenso die Art und Ausstattung der Betriebsstätte: In Wohngebieten gelten oftmals strengere Auflagen für Lärm- und Geruchsvermeidung als beispielsweise in Industriegebieten. Die digitale Regelmatrix verknüpft die Eigenschaften des Gründungsvorhabens mit den jeweiligen kantonalen Anforderungen.
+Im Rahmen der Geschäftstransaktion *Anforderungen ermitteln* wird mit Hilfe der Regelmatrix und des kantonalen Anforderungskatalogs das Geschäftsobjekt *Bewilligungsübersicht* erstellt. Dieses Objekt enthält alle für das erfasste Gründungsvorhaben geltenden Auflagen und weitere, für eine erfolgreiche Bewilligung wichtige Hinweise.
+
+Mit dem erfolgreichen Abschliessen der Geschäftstransaktion *Anforderungen ermitteln* wechselt das Gründungsvorhaben in den Zustand *orientiert*. Die GründerInnen haben damit alle Informationen, die sie brauchen, um das Bewilligungsverfahren erfolgreich zu durchlaufen.
+
+Die folgende Abbildung stellt die Zusammenhänge der Geschäftsobjekte, Zustände und Transaktionen im ressourcenunabhängigen Modell nach Archi dar. Die hier beschriebene Variante liest sich als Happy Path — also die erfolgreiche Erstellung einer Bewilligungsübersicht —, auch wenn der hier verwendete Zielzustand *orientiert* Raum für Variationen lässt. Sicherlich ist nicht jedes Gründungsvorhaben realisierbar, und der hier beschriebene Prozess kann durchaus komplexer werden. Dass das Gründungsvorhaben nicht realisierbar ist, ist allerdings auch eine Art Orientierung.
+
+#figure(
+  image("../assets/jan/Zustandsübergänge des Gründungsvorhabens in Phase 1 - Orientierung.svg", width: 80%),
+  caption: [Zustandsübergänge des Gründungsvorhabens in Phase 1: Orientierung]
+) <fig-GTZ-orientierung>
+
+1. Zustände
 2. Geschäftstransaktionen
 #figure(
   caption: [Geschäftstransaktionen: Prozess "sich orientieren"],
@@ -577,25 +601,35 @@ transaktion],
       fill: (x, y) => if calc.odd(y) { luma(250) } else { white },
       align: (left, left, left),
 
-      [ ], [ ], [ ],
-      [ ], [ ], [ ],
-      [ ], [ ], [ ],
+      [Anforderungen ermitteln],
+      [Auf Basis der Eigenschaften des Gründungsvorhabens (z. B. Betriebstyp, Standort) werden mit Hilfe des Kantonsanforderungskatalogs und der digitalen Regelmatrix die geltenden Auflagen ermittelt. Das Ergebnis wird in der Bewilligungsübersicht festgehalten.],
+      [initiiert → orientiert],
     )
   ]
 ) <tbl-GT-sich-orientieren>
 
 === Amira registriert sich bei GastroStart
 
-#todo-action([\@ Jan Szenario/Beschreibung (mit Bild) einfügen])
-/* 
-1. in Archi die View "GTZ Amira registriert sich bei Gastrostart" unter Views / Assets4Paper / Geschäftstransaktionen (Iteration 2) / öffnen 
-2. View wie im Bild 3.9 - Seite 55 vom Skript von Spichiger aufbereiten oder wie ../assets/GrpA_GP_GastroStart_Albrecht_Jakob.svg
-3. als svg ins projekt hier importieren
-4. Beschreiben: 
-  - Events 
-  - Transaktionen
-*/
-+ Zustände 
+Der Gründungsprozess lässt sich höchstwahrscheinlich nicht in einer Session abschliessen. Nachdem die GründerInnen mit dem Abschluss der ersten Phase eine Übersicht zu ihren Rechten, Pflichten und Möglichkeiten haben, werden sie in den meisten Fällen Gesuche stellen müssen. Das heisst, sie werden Formulare ausfüllen und als Anträge einreichen müssen. Diese Anträge haben eine Bearbeitungsdauer, die sich in den meisten Fällen über mindestens einige Tage erstreckt. Manche GründerInnen werden wahrscheinlich auch Kenntnisse nachweisen und sich dafür möglicherweise sogar schulen lassen müssen. Damit GründerInnen den Prozess auf GastroStart nicht bei jeder Sitzung von vorn beginnen müssen, macht es Sinn, ihr Gründungsvorhaben und dessen aktuellen Stand mit einem Konto zu verknüpfen. Über ihr Konto können sich alle GastroStart-Benutzenden authentifizieren und Aktualisierungen am Gründungsprozess vornehmen oder einsehen.
+
+Wir betrachten im folgenden Modell im Wesentlichen das Geschäftsobjekt Kundenkonto und den Geschäftsprozess *Kundenkonto verwalten*, der sich in drei Geschäftstransaktionen unterteilt:
+- Konto anlegen
+- Konto löschen
+- Konto aktualisieren
+
+Die drei Transaktionen sind unabhängig voneinander, mit der Ausnahme, dass Löschen und Aktualisieren ein bestehendes Konto voraussetzen. Das Kundenkonto dient einerseits der Authentifizierung, der Autorisierung, der Personalisierung und der Verknüpfung mit dem Gründungsvorhaben. Die dafür notwendigen Eigenschaften werden in den Geschäftstransaktionen *Konto anlegen* und *Konto aktualisieren* definiert. Ein Beispiel für eine Aktualisierung könnte die Änderung der Postanschrift oder Telefonnummer des Gründers oder der Gründerin sein.
+
+Das Löschen eines Kundenkontos darf nicht in jedem Fall zu dessen Verschwinden führen. Erst wenn alle Geschäftstransaktionen, die mit diesem Konto in Verbindung stehen, abgeschlossen sind, ist eine endgültige Löschung möglich — und auch nur dann, wenn ausstehende Verbindlichkeiten der GründerInnen auch ausserhalb der Plattform beglichen werden können. Das Löschen eines Kundenkontos versetzt dieses also im Rahmen dieses Modells zunächst nur in den Zustand *inaktiv*, was bedeutet, dass bereits gestartete Transaktionen abgebrochen werden können, wenn möglich, und keine neuen Transaktionen gestartet werden können.
+
+Dass die Geschäftstransaktion *Konto aktualisieren* das Kundenkonto in einen entsprechenden Zustand überführt, kann in vielen Fällen sinnvoll sein: Laufende Prozesse oder Transaktionen müssen unter Umständen über diese Zustandsänderung informiert werden. Nehmen wir zum Beispiel wieder die Änderung der Postanschrift: Wahrscheinlich werden sich nicht alle Informationsaustauschprozesse digitalisieren lassen, und eine zuständige Behörde sollte in diesen Fällen für den Schriftverkehr über die Änderung der Postanschrift informiert werden.
+
+// TODO: Asset "Zustandsübergänge des Kundenkontos in Phase 2 - Sich registrieren.svg" fehlt noch in assets/jan/ - sobald vorhanden, hier einbinden:
+// #figure(
+//   image("../assets/jan/Zustandsübergänge des Kundenkontos in Phase 2 - Sich registrieren.svg", width: 80%),
+//   caption: [Zustandsübergänge des Kundenkontos in Phase 2: Sich registrieren]
+// ) <fig-GTZ-registrieren>
+
++ Zustände
 + Geschäftstransaktionen
 #figure(
   caption: [Geschäftstransaktionen: Prozess «sich registrieren»],
@@ -629,9 +663,17 @@ transaktion],
       fill: (x, y) => if calc.odd(y) { luma(250) } else { white },
       align: (left, left, left),
 
-      [ ], [ ], [ ],
-      [ ], [ ], [ ],
-      [ ], [ ], [ ],
+      [Konto anlegen],
+      [Die GründerIn erfasst ihre Angaben und legt ein Kundenkonto an, das mit ihrem Gründungsvorhaben verknüpft wird.],
+      [– → aktiv],
+
+      [Konto aktualisieren],
+      [Die GründerIn passt ihre Kontoangaben an (z. B. Postanschrift, Telefonnummer). Betroffene Prozesse oder Behörden werden über die Änderung informiert.],
+      [aktiv → aktualisiert],
+
+      [Konto löschen],
+      [Das Konto wird deaktiviert, sobald alle damit verbundenen Geschäftstransaktionen abgeschlossen und ausstehende Verbindlichkeiten beglichen sind. Bereits gestartete Transaktionen können abgebrochen werden, neue können nicht mehr gestartet werden.],
+      [aktiv → inaktiv],
     )
   ]
 ) <tbl-GT-sich-registrieren>
@@ -652,7 +694,7 @@ Lebenszyklus: von _neu_ über _beurkundet_ zu _eingereicht_ für die Prüfung du
 2. Geschäftstransaktionen
 Amira möchte eine Gesellschaft mit beschränkter Haftung gründen, um sich und ihre Familie finanziell vor einem möglichen Misserfolg ihres Unternehmens zu schützen. 
 Das Geschäftsobjekt Unternehmen durchläuft mehrere Transaktionen: 
-- In einer ersten Phase ist Amira in Führung: sie _bereitet_  mit der Hilfe der Informationen auf Gastrostart die _Unterlagen_ für die Gründung der "Food Affair GmbH _vor_. Nach der öffentlichen Beurkundung _beantragt_ sie den _Eintrag im Handelsregister_ für ihre GmbH. 
+- In einer ersten Phase ist Amira in Führung: sie _bereitet_  mit der Hilfe von Informationen und Fachfunktionen auf GastroStart die _Unterlagen_ für die Gründung der "Food Affair GmbH _vor_. Nach der öffentlichen Beurkundung _beantragt_ sie den _Eintrag im Handelsregister_ für ihre GmbH. 
 - Danach ist der Ball bei den Behörden: das kantonale Handelsregisteramt _prüft den Antrag_ auf Vollständigkeit, _lehnt es ab_ oder _nimmt es an_ und _trägt die GmbH im Handelsregister ein_. 
 
 #figure(
@@ -687,8 +729,8 @@ transaktion],
       fill: (x, y) => if calc.odd(y) { luma(250) } else { white },
       align: (left, left, left),
 
-      [Gründungs-dokumentation vorbereiten], [Amira sammelt die für die Gründung notwendigen Dokumente und Angaben und bringt diese physisch beim Notar vorbei und beauftragt diesen mit der Gründung der GmbH. Sie zahlt das Gründungskapital ein.], [neu → beurkundet],
-      [Eintrag im Handelsregister beantragen], [Amira meldet ihre GmbH über ihren Notar beim Handelsregisteramt ihres Wohnkantons.], [beurkundet → eingereicht],
+      [Gründungs-dokumentation vorbereiten], [Amira erstellt die für die Gründung notwendigen Dokumente und sammelt die notwendigen Beilagen  und bringt diese physisch beim Notar vorbei und beauftragt diesen mit der Gründung der GmbH. Sie zahlt das Gründungskapital ein.], [neu → beurkundet],
+      [Eintrag im Handelsregister beantragen], [Amira meldet ihre GmbH über ihren Notar beim Handelsregisteramt des Kantons, in dem die GmbH ihr Sitz hat.], [beurkundet → eingereicht],
       [Prüfung durch Handelsregister (abwarten)], [ Das Handelsregisteramt prüft den Antrag prüft den Antrag formell und entscheidet über das weitere Vorgehen.
        ], [eingereicht → angenommen / abgelehnt / unvollständig],
       [Im Handelsregister eintragen], [Das Handelregisteramt teilt Amira mit, dass der Eintrag im Register erfolgt ist], [angenommen → im Handelsregister eingetragen],
@@ -723,7 +765,7 @@ caption: [Zustandsdiagramm des Geschäftsobjekt Bewilligung]
 Die Zustände sind: neu, in Vorbereitung, eingereicht, unvollständig, abgelehnt, erteilt, abgebrochen. 
 Lebenszyklus: von _neu_ über _in Vorbereitung_ zu _eingereicht_ für die Prüfung durch die Behörden; bei fehlenden Angaben _unvollständig_, nach Nachreichung wieder _eingereicht_. Nach dem Erreichen des Status _eingereicht_ geht es je nach Behördenentscheid mit dem Status _abgelehnt_ zum Ende, während bei behördlicher Zustimmung der Status _erteilt_ erreicht wird. Der Status _abgebrochen_ beendet den Zyklus vorzeitig, solange der Status _eingereicht_ noch nicht erreicht worden ist.
 
-Andere Zustände wie erloschen, entzogen, sistiert, sind für die Customer Journey nicht relevant.
+Andere Zustände wie erloschen, entzogen, sistiert, sind für die abgebildete Customer Journey nicht relevant.
 
 #design-entscheid([Wir haben uns entschieden, die Frage um das Schicksal des Objekts "Bewilligung" im Fall der Löschung des Benutzerprofils von Amira offenzulassen.])
  
@@ -962,7 +1004,7 @@ Auf der Basis der In- und Outputs der Geschäftstransaktionen werden für jeden 
 #figure(
   image("../assets/GP Amira gründet ihr Unternehmen.svg", width: 80%),
   caption: [Geschäftsprozess - Szenario Amira gründet ihr Unternehmen]
-) <GP_Amira_gründet_Unternehmen>
+) <GP_Amira_gruendet_Unternehmen>
 
 
 1. Geschäftsprozesse 
@@ -994,8 +1036,8 @@ Unternehmen bei Behörde anmelden
 1. Geschäftsprozesse 
 2. Abhängigkeiten von Geschäftsobjekten 
 
-=== End-to-End Prozess: Onboarding Gastrounternehmens
-#frage([\@ alle: einverstanden?])
+== Alles zusammenbauen: End-to-End Prozess: Onboarding Gastrounternehmens
+#frage([\@ alle: einverstanden? note to self: mit Swimmlanes und diese prozessbausteine abbilden])
 
 == Vierte Iteration: Geschäftsfähigkeiten und Abhängigkeiten untereinander
 
@@ -1126,6 +1168,7 @@ Im ArchiMate-Modell werden Business Objects über _Access_-Beziehungen (lesend o
 */
 
 == Kollaborative Synthese
+#todo-action[Jakob: behalten wir dieses Teil oder nicht]
 Architektonische Entscheidungen im Team sind nicht rein analytisch – sie sind soziale Verhandlungen, geprägt von beruflichem Hintergrund, früheren Erfahrungen und unterschiedlichen mentalen Modellen davon, wozu Architektur dient @bass2012.
 
 *Gruppenzusammensetzung:*
@@ -1150,10 +1193,53 @@ Diese ausgehandelte Qualität verleiht dem Artefakt seine architektonische Legit
 
 
 = Das Inside-Out-Mapping: Realisierung der Enterprise Architecture
+#frage([Giovanna hat nun eine neue Version des Kapitels entworfen, die für alle passt. Working Assumption: der Unternehmen, das beschrieben werden muss, ist GastroStart, NICHT das eigene! ])
 
-#frage([an alle: beschreiben wir hier das IST? oder die SOLL-Architektur?])
+GastroStart ist ein enger Schulterschluss unter drei Partner aus der Privatwirtschaft, DV Bern, FINNOFLEET und Transgourmet. 
+Da GastroStart aus einer extrem positiven Dynamik unter den Partner entstanden ist, 
+
+Die Systeme und "Produkte" der öffentlichen Verwaltung - es unter anderem um die Eintragung ihrer GmbH ins kantonale Handelsregister und um die Erteilung der Betriebsbewilligung - werden aus Sicht der Customer Journey aber auch von GastroStart als externe Systemen, die Artefakten mit hoheitlicher Wirkung erzeugen, betrachtet. 
+Dies ist so, da grundsätzlich nur der Staat für solche Handlungen verantwortlich ist und sein darf. 
+Dritte und Private Unternehmen dürfen nur beim Vorhandensein einer Delegationsnorm im Namen einer Behörde handeln. Da GastroStart ein privates Unternehmen ist, 
+
+== Allgemeines
+Dieser Kapitel enthält die separaten Ausführungen der jeweiligen Autoren der Gruppenarbeit zum aktuellen Operating Models des eigenen Ursprungsbetriebs und des Joint Ventures GastroStart. Es kann sein, dass die Autoren zu jeweiligen, unterschiedlichen Schlüsse bezüglich der Gestaltung des Operating Models des Joint Ventures kommen. Dies ist so gewollt.  
+
+== OM für DV Bern 
+#autor-dvbern([Lorem Ipsum/*Absstract*/])
+
+#todo-action([Jan bitte die übung für DVBern hier schreiben 
+
+Referenz: es geht um [EAasStrat]
+1. Was ist der Stand betreffend Integration von Prozessen und Standardisierung von Daten 
+für Ihr Unternehmen und für die Customer Journey (siehe [EAasStrat]).
+2. Wählen Sie ein Operating Model für Ihr Unternehmen und begründen Sie Ihre Wahl 
+(siehe [EAasStrat]).
+Bemerkung: bei der Begründung die Rolle, die Ihr Unternehmen im Kontext der 
+Customer Journey wahrnimmt, berücksichtigen.
+3. Aufgrund der Wahl in 1) zeichnen (und erklären) Sie die Enterprise Architecture dazu.
+ Abgabe der nächsten Iteration bis am Montag 06:00
+M])
+
+== Operating Model für FINNOFLEET
+
+#autor-finnofleet([Hello World! /*Abstract*/])
+
+#todo-action([Adrian bitte die übung für Finnofleet hier schreiben 
+
+Referenz: es geht um [EAasStrat]
+1. Was ist der Stand betreffend Integration von Prozessen und Standardisierung von Daten 
+für Ihr Unternehmen und für die Customer Journey (siehe [EAasStrat]).
+2. Wählen Sie ein Operating Model für Ihr Unternehmen und begründen Sie Ihre Wahl 
+(siehe [EAasStrat]).
+Bemerkung: bei der Begründung die Rolle, die Ihr Unternehmen im Kontext der 
+Customer Journey wahrnimmt, berücksichtigen.
+3. Aufgrund der Wahl in 1) zeichnen (und erklären) Sie die Enterprise Architecture dazu.
+ Abgabe der nächsten Iteration bis am Montag 06:00
+M])
 
 == Operating-Model-Einordnung nach Ross, Weill und Robertson für Transgourmet
+#autor-transgourmet([Fill some text here /*Abstract*/])
 Bevor die Customer Journey auf Capabilities und Systeme heruntergebrochen wird, ist eine grundlegende Einordnung nötig: Welches Operating Model liegt Transgourmet zugrunde?
 Ross, Weill und Robertson unterscheiden vier Operating Models entlang der beiden Achsen Standardisierung der Geschäftsprozesse und Integration der Daten @ross2006enterprise.
 Aus dieser Klassifikation leitet sich ab, wie viel Integration eine Architektur tragen muss und wo Autonomie zulässig bleibt.
@@ -1185,7 +1271,7 @@ Die Schichten lesen sich wie folgt:
 Die entscheidende architektonische Beobachtung: Der monolithische Dispo-/ERP-Kern realisiert sämtliche Geschäftsfunktionen ohne Anti-Corruption Layer (ACL) und ohne Schnitt in Self-Contained Systems (SCS) @bass2012.
 
 == Akteure des öffentlichen Wesens
-
+#autor-verwaltung([Giovanna Beier, Bundeskanzlei])
 === Einordnung in das Operating System nach Ross / Weill des Schweizer öffentlichen Wesens
 
 Das öffentliche Wesen in der Schweiz ist föderalistisch organisiert und spielt sich auf 3 politischen (und verwaltungstechnischen) Ebenen ab - dies beeinflusst stark die Interaktionen mit den Betroffenen. 
@@ -1196,8 +1282,8 @@ Diese drei Ebenen müssen getrennt betrachtet und eingeordnet werden:
 + *Kantonale Ebene*: ist ebenfalls bei Diversification einzuordnen - 26-mal wiederholte Diversification. Die Einhaltung eines allfälligen obligatorischen gesetzlichen Minimums sowie die teil freiwillige Übernahme von eCH Standards erlauben eine ansatzweise Interoperabilität mit den anderen Ebenen. 
 + *Gemeindeebene*: Die Gemeinde gehört ebenfalls in die Diversification. Gemeinden differenzieren sich stark von einander - innerhalb desselben Kantons mit eigenen, oft analoge Prozesse. Und nochmals von Kanton zu Kanton kommen der Gemeinden unterschiedliche Zuständigkeiten zu  (Baubewilligung, Lärmschutz, Ortsplanung, punktuelle Bewilligungen). 
 === Abbildung des öffentlichen Wesens im Kontext von Gastrostart 
-Das öffentliche Wesen nimmt nur indirekt eine Rolle in unserem Unternehmen Gastrostart. 
-Eher bildet das öffentliche Wesen eine Hürde, die überwunden werden muss. Ein notwendiges Übel an Regulatorien und Vorgaben, welche die Kunden von Gastrostart von ihrem Traum trennt. 
+Das öffentliche Wesen nimmt nur indirekt eine Rolle in unserem Unternehmen GastroStart.
+Eher bildet das öffentliche Wesen  mit seinen Vorschriften eine Hürde, die überwunden werden muss. Ein notwendiges Übel an Regulatorien und Vorgaben, welche die Kunden von GastroStart von ihrem Traum trennt. 
 Das öffentliche Wesen wird sich nicht in die Firma Gastrostart integrieren - es hat weder das Bedürfnis noch die Bestimmung, bei solchen privaten Initiativen mitzumachen. 
 Noch weniger kann Gastrostart den Akteures des öffentlichen Wesens ein Geschäftsmodell (Operating System) aufzwingen.
 
@@ -1217,7 +1303,10 @@ Die "Sorglosigkeit", die Gastrostart verspricht, sollte vielleicht gar keine Arc
 
 Wie modellieren: 
 
-+ Il «partner pubblico» non è un'organizzazione che siede nella JV, è un layer di interoperabilità: interfacce standardizzate (eCH-0258 per lo scambio dati), governate dalla DVS, consumate da GastroStart dall'esterno. La frammentazione (26 Kantone × 2110 Gemeinden) sparisce dietro questo layer nella misura in cui gli standard arrivano — e oggi ci arrivano su base volontaria. In ArchiMate ti servono Application Interfaces/Services esposti dal lato autorità e consumati da GastroStart, con gli standard eCH come Contract/Requirement. I punti d'aggancio concreti li hai già nel tuo §4:, Nutzerkonto (AGOV, il login unico delle autorità), Handelsregistereintrag (Zefix/EHRA). Modelli GastroStart contro questi Basisdienste.
++ Il «partner pubblico» non è un'organizzazione che siede nella JV, è un layer di interoperabilità: interfacce standardizzate (eCH-0258 per lo scambio dati), governate dalla DVS, consumate da GastroStart dall'esterno. La frammentazione (26 Kantone × 2110 Gemeinden) sparisce dietro questo layer nella misura in cui gli standard arrivano — e oggi ci arrivano su base volontaria. In ArchiMate ti servono Application Interfaces/Services esposti dal lato autorità e consumati da GastroStart, con gli standard eCH come Contract/Requirement. I punti d'aggancio concreti li hai già nel tuo §4:, Nutzerkonto (AGOV, il login unico delle autorità), Handelsregistereintrag (Zefix/EHRA).
+  
+    Betreibungsregisterauszug / Automatizzare la fornitura di allegati - Vertrauensinfrastruktur che fornisce i documenti validi e certificati. 
+Modelli GastroStart contro questi Basisdienste.
 
 + Ricordi il *contrasto imposte-vs-servizi* che avevamo costruito? Ora si chiude con una precisione quasi imbarazzante. Le imposte funzionano grazie a uno strumento vincolante (StHG, Art. 128/46 BV). I servizi alle imprese non ce l'hanno → oggi solo eCH volontario → la frammentazione trapela (il tuo stesso §4 lo mostra: Bewilligungen cantonali al 30–55%, «grösste Dematerialisierungslücke» nei formulari cantonali). E lo strumento vincolante mancante? Lo stanno decidendo adesso. Alla fine del 2025 Bundesrat e KdK hanno adottato il Zielbild della futura collaborazione federale, prendendo una decisione di principio per sviluppare la DVS verso una piattaforma politica con definizione vincolante degli standard. La Rahmenvereinbarung prevedeva che entro il 2026 fossero sottoposte ai Träger le basi decisionali per uno sviluppo della DVS incentrato su una definizione degli standard vincolante per tutti e tre i livelli statali — e l'evaluazione del 2024 aveva mostrato che il potenziale non è ancora sfruttato, in particolare nella promozione dell'interoperabilità e nella costruzione di infrastrutture e servizi di base condivisi @dvs_organisation_2022, @dvs_organisation_2022
 

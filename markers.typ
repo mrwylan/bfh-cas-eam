@@ -63,3 +63,39 @@
     marker-box("TODO / ACTION!", farbe-action, inhalt)
   }
 }
+
+#let farbe-autor = luma(60)
+#let autor-hoehe-max = 2.4em   // Höhe des Icon-Slots = grösste Figur (gemeinsame Grundlinie)
+
+#let autor-icons = (
+  finnofleet:   "aragorn.svg",   // Adrian Anghel  — Finnofleet
+  transgourmet: "legolas.svg",   // Jakob Albrecht — Transgourmet
+  dvbern:       "hobbit.svg",    // Jan Sohnemann  — DV Bern
+  verwaltung:   "gimli.svg",     // Soucoupe       — öffentliche Verwaltung
+)
+
+#let autor-marker(schluessel, titel, inhalt: none, hoehe: autor-hoehe-max, farbe: farbe-autor) = block(
+  width: 100%,
+  inset: (left: 1em, rest: 0.8em),
+  stroke: (left: 3pt + farbe),
+  fill: farbe.lighten(92%),
+  above: 1em, below: 1em,
+  breakable: false,
+)[
+  #grid(
+    columns: (auto, 1fr),
+    gutter: 0.7em,
+    align: horizon,
+    // fester Slot, Figur unten ausgerichtet -> gemeinsame Grundlinie + konstante Boxhöhe
+    box(height: autor-hoehe-max, align(bottom,
+      image("assets/" + autor-icons.at(schluessel), height: hoehe))),
+    text(weight: "bold", fill: farbe, size: 0.95em)[#titel],
+  )
+  #if inhalt != none { v(0.3em); inhalt }
+]
+
+// Wrapper mit charaktergerechter Standardhöhe (pro Aufruf überschreibbar):
+#let autor-finnofleet(titel, inhalt: none, hoehe: 2.50em)   = autor-marker("finnofleet",   titel, inhalt: inhalt, hoehe: hoehe)  // Mensch
+#let autor-transgourmet(titel, inhalt: none, hoehe: 2.50em) = autor-marker("transgourmet", titel, inhalt: inhalt, hoehe: hoehe)  // Elb
+#let autor-verwaltung(titel, inhalt: none, hoehe: 2.80em)   = autor-marker("verwaltung",   titel, inhalt: inhalt, hoehe: hoehe)  // Zwerg
+#let autor-dvbern(titel, inhalt: none, hoehe: 2.3em)       = autor-marker("dvbern",       titel, inhalt: inhalt, hoehe: hoehe)  // Hobbit
