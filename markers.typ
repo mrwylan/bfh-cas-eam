@@ -95,7 +95,7 @@
 ]
 
 // Wrapper mit charaktergerechter Standardhöhe (pro Aufruf überschreibbar):
-#let autor-finnofleet(titel, inhalt: none, hoehe: 2.40em)   = autor-marker("finnofleet",   titel, inhalt: inhalt, hoehe: hoehe)  // Mensch
-#let autor-transgourmet(titel, inhalt: none, hoehe: 2.40em) = autor-marker("transgourmet", titel, inhalt: inhalt, hoehe: hoehe)  // Elb
-#let autor-verwaltung(titel, inhalt: none, hoehe: 1.85em)   = autor-marker("verwaltung",   titel, inhalt: inhalt, hoehe: hoehe)  // Zwerg
-#let autor-dvbern(titel, inhalt: none, hoehe: 1.60em)       = autor-marker("dvbern",       titel, inhalt: inhalt, hoehe: hoehe)  // Hobbit
+#let autor-finnofleet(titel, inhalt: none, hoehe: 2.50em)   = autor-marker("finnofleet",   titel, inhalt: inhalt, hoehe: hoehe)  // Mensch
+#let autor-transgourmet(titel, inhalt: none, hoehe: 2.50em) = autor-marker("transgourmet", titel, inhalt: inhalt, hoehe: hoehe)  // Elb
+#let autor-verwaltung(titel, inhalt: none, hoehe: 2.80em)   = autor-marker("verwaltung",   titel, inhalt: inhalt, hoehe: hoehe)  // Zwerg
+#let autor-dvbern(titel, inhalt: none, hoehe: 2.3em)       = autor-marker("dvbern",       titel, inhalt: inhalt, hoehe: hoehe)  // Hobbit

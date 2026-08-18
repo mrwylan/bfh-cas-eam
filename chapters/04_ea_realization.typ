@@ -1193,12 +1193,22 @@ Diese ausgehandelte Qualität verleiht dem Artefakt seine architektonische Legit
 
 
 = Das Inside-Out-Mapping: Realisierung der Enterprise Architecture
+#frage([Giovanna hat nun eine neue Version des Kapitels entworfen, die für alle passt. Working Assumption: der Unternehmen, das beschrieben werden muss, ist GastroStart, NICHT das eigene! ])
 
-#frage([an alle: beschreiben wir hier das IST? oder die SOLL-Architektur?])
+GastroStart ist ein enger Schulterschluss unter drei Partner aus der Privatwirtschaft, DV Bern, FINNOFLEET und Transgourmet. 
+Da GastroStart aus einer extrem positiven Dynamik unter den Partner entstanden ist, 
+
+Die Systeme und "Produkte" der öffentlichen Verwaltung - es unter anderem um die Eintragung ihrer GmbH ins kantonale Handelsregister und um die Erteilung der Betriebsbewilligung - werden aus Sicht der Customer Journey aber auch von GastroStart als externe Systemen, die Artefakten mit hoheitlicher Wirkung erzeugen, betrachtet. 
+Dies ist so, da grundsätzlich nur der Staat für solche Handlungen verantwortlich ist und sein darf. 
+Dritte und Private Unternehmen dürfen nur beim Vorhandensein einer Delegationsnorm im Namen einer Behörde handeln. Da GastroStart ein privates Unternehmen ist, 
+
+== Allgemeines
+Dieser Kapitel enthält die separaten Ausführungen der jeweiligen Autoren der Gruppenarbeit zum aktuellen Operating Models des eigenen Ursprungsbetriebs und des Joint Ventures GastroStart. Es kann sein, dass die Autoren zu jeweiligen, unterschiedlichen Schlüsse bezüglich der Gestaltung des Operating Models des Joint Ventures kommen. Dies ist so gewollt.  
 
 == OM für DV Bern 
-#autor-dvbern([test])
-#todo-action([Jan bitte die übung für Finnofleet hier schreiben 
+#autor-dvbern([Lorem Ipsum/*Absstract*/])
+
+#todo-action([Jan bitte die übung für DVBern hier schreiben 
 
 Referenz: es geht um [EAasStrat]
 1. Was ist der Stand betreffend Integration von Prozessen und Standardisierung von Daten 
@@ -1211,7 +1221,10 @@ Customer Journey wahrnimmt, berücksichtigen.
  Abgabe der nächsten Iteration bis am Montag 06:00
 M])
 
-== Operating Model für FINNOFLEET 
+== Operating Model für FINNOFLEET
+
+#autor-finnofleet([Hello World! /*Abstract*/])
+
 #todo-action([Adrian bitte die übung für Finnofleet hier schreiben 
 
 Referenz: es geht um [EAasStrat]
@@ -1226,6 +1239,7 @@ Customer Journey wahrnimmt, berücksichtigen.
 M])
 
 == Operating-Model-Einordnung nach Ross, Weill und Robertson für Transgourmet
+#autor-transgourmet([Fill some text here /*Abstract*/])
 Bevor die Customer Journey auf Capabilities und Systeme heruntergebrochen wird, ist eine grundlegende Einordnung nötig: Welches Operating Model liegt Transgourmet zugrunde?
 Ross, Weill und Robertson unterscheiden vier Operating Models entlang der beiden Achsen Standardisierung der Geschäftsprozesse und Integration der Daten @ross2006enterprise.
 Aus dieser Klassifikation leitet sich ab, wie viel Integration eine Architektur tragen muss und wo Autonomie zulässig bleibt.
@@ -1257,7 +1271,7 @@ Die Schichten lesen sich wie folgt:
 Die entscheidende architektonische Beobachtung: Der monolithische Dispo-/ERP-Kern realisiert sämtliche Geschäftsfunktionen ohne Anti-Corruption Layer (ACL) und ohne Schnitt in Self-Contained Systems (SCS) @bass2012.
 
 == Akteure des öffentlichen Wesens
-
+#autor-verwaltung([Giovanna Beier, Bundeskanzlei])
 === Einordnung in das Operating System nach Ross / Weill des Schweizer öffentlichen Wesens
 
 Das öffentliche Wesen in der Schweiz ist föderalistisch organisiert und spielt sich auf 3 politischen (und verwaltungstechnischen) Ebenen ab - dies beeinflusst stark die Interaktionen mit den Betroffenen. 
