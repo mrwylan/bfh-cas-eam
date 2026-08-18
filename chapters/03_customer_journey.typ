@@ -187,14 +187,68 @@ In den nächsten Kapiteln wir auf einer Auswahl dieser Szenarien eingegangen - e
   caption: [Archimate Modell der Customer Journey von Amira und erste Iteration für die Identifikation der Geschäftsobjekte]
 ) <fig-customer-journey-view>
 
-=== Amira orientiert sich (oder registriert sich bei GastroStart)
+=== Amira orientiert sich
 
-#todo-action([\@ Jan Szenario/Beschreibung (mit oder ohne Bild) einfügen oder alternativ das Szenario der Registrierung. Aus der Tabelle unten übernehmen])
+#figure(
+  caption: [Szenario "Amira orientiert sich"],
+  block(
+    width: 100%,
+    radius: 6pt,
+    clip: true,
+    stroke: 0.5pt + luma(225),
+  )[
+    #block(
+      width: 100%,
+      fill: luma(70),
+      inset: (x: 10pt, y: 7pt),
+      below: 0pt,
+    )[
+      #grid(
+        columns: (3.2cm, 1fr),
+        gutter: 10pt,
+        text(fill: white, weight: "bold", size: 0.95em)[Merkmal],
+        text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
+      )
+    ]
+    #set par(justify: false)
+    #table(
+      columns: (3.2cm, 1fr),
+      inset: (x: 10pt, y: 7pt),
+      stroke: (x: none, y: 0.5pt + luma(232)),
+      fill: (x, y) => if calc.even(y) { luma(250) } else { white },
+      align: (left, left),
+
+      [Aktion],
+      [
+        Amira started eine Web-Suche mit den Begiffen "Gründung", "Catering", "Schweiz", "Vorgehen".
+        Ihre Suche führt sie schnell zur Landingpage von Gastrostart.
+        Sie wird gebeten den Kanton für das Gründungsvorhaben aus einer Liste auszuwählen.
+        Sie wählt aus und bestätigt die Eingabe.
+      ],
+
+      [Touchpoints],
+      [Browser auf Mobile Device, Search Engine, Gastrostart],
+
+      [Gedanke / Bedürfnis],
+      [Unsicherheit: Amira weiss nicht, wie eine Unternehmensgründung funktionert und welche Voraussetzungen sie erfüllen muss, um ihr Geschäft zu betreiben.],
+
+      [Pain Point],
+      [ `-` ],
+
+      [Chance],
+      [Aussicht auf geführte und strukturierte Hilfestellung.],
+    )
+  ]
+) <tbl-szenario-orientierung>
+
 /*
 Struktur:
-+ *Aktion:* 
-+ *Touchpoint:* 
-+ *Gedanke/Bedürfnis:*
++ *Aktion:* Amira started eine Web-Suche mit den Begiffen "Gründung", "Catering", "Schweiz", "Vorgehen". 
+Ihre Suche führt sie schnell zur Landingpage von Gastrostart.
+Sie wird gebeten den Kanton für das Gründungsvorhaben aus einer Liste auszuwählen.
+Sie wählt aus und bestätigt die Eingabe.
++ *Touchpoint:* Browser auf Mobile Device
++ *Gedanke/Bedürfnis:* Amira weiss nicht, wie eine Unternehmensgründung funktionert und welche Voraussetzungen sie erfüllen muss, um ihr Geschäft zu betreiben.
 // ^+ *Emotion:*
 + *Pain Point:*
 + *Chance:*
@@ -259,6 +313,66 @@ Struktur:
   ]
 ) <tbl-szenario-unternhemen-gründen>
 
+=== Amira registriert sich
+
+#figure(
+  caption: [Szenario "Amira registriert sich"],
+  block(
+    width: 100%,
+    radius: 6pt,
+    clip: true,
+    stroke: 0.5pt + luma(225),
+  )[
+    #block(
+      width: 100%,
+      fill: luma(70),
+      inset: (x: 10pt, y: 7pt),
+      below: 0pt,
+    )[
+      #grid(
+        columns: (3.2cm, 1fr),
+        gutter: 10pt,
+        text(fill: white, weight: "bold", size: 0.95em)[Merkmal],
+        text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
+      )
+    ]
+    #set par(justify: false)
+    #table(
+      columns: (3.2cm, 1fr),
+      inset: (x: 10pt, y: 7pt),
+      stroke: (x: none, y: 0.5pt + luma(232)),
+      fill: (x, y) => if calc.even(y) { luma(250) } else { white },
+      align: (left, left),
+
+      [Aktion],
+      [
+        Amira legt ein Benutzerkonto auf Gastrostart an, damit ihr Gründungsvorhaben gespeichert und vor ungewolltem Fremdzugriff geschützt wird.
+      ],
+
+      [Touchpoints],
+      [Gastrostart],
+
+      [Gedanke / Bedürfnis],
+      [
+        Gefordert, Erleichtert, Besorgt: Amira hat im letzten Schritt schon viel mit der Anwendung interagiert. Sie fühlt sich zwar weiter gefordert, doch auch erleichtert.
+        Sie erfährt, dass ihr bisheriger Fortschritt nicht verloren geht und weiss, dass das Anlegen eines Benutzerkontos dafür notwendig ist. 
+        Sie ist aber auch ein bisschen besorgt, da sie nun persönliche Daten preisgeben muss.
+      ],
+
+      [Pain Point],
+      [
+        Das Anlegen eines Benutzerkontos mit der Angabe persönlicher Daten ist ein Hindernis.
+        Es kann im besten Fall als notwendiges Übel hingenommen werden, im ungünstigsten Fall zum Abbruch und Verlassen der Plattform führen.
+      ],
+
+      [Chance],
+      [
+        Der bisherige Fortschritt wird gespeichert.
+        Das Anlegen eines Benutzerkontos kann auch dazu führen, dass die Plattform seriös und nützlicher Eingestuft wird.
+      ],
+    )
+  ]
+) <tbl-szenario-registrierung>
 
 
 === Amira erhält eine Finanzierung
