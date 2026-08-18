@@ -1,4 +1,7 @@
-#import "../markers.typ": theorie-anker, design-entscheid, stolperstein, frage, todo-action, fuehrung
+#import "../markers.typ": (
+  theorie-anker, design-entscheid, stolperstein, frage, todo-action, fuehrung,
+  autor-marker, autor-finnofleet, autor-transgourmet, autor-verwaltung, autor-dvbern,
+)
 = Die Gefährten stellen sich vor
 
 Die vier ungleichen Gefährten stellen sich vor.

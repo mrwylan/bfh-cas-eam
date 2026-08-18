@@ -1,5 +1,8 @@
 // ── Chapter 4 : EA Realization  ───────────────────
-#import "../markers.typ": theorie-anker, design-entscheid, stolperstein, frage, todo-action, fuehrung
+#import "../markers.typ": (
+  theorie-anker, design-entscheid, stolperstein, frage, todo-action, fuehrung,
+  autor-marker, autor-finnofleet, autor-transgourmet, autor-verwaltung, autor-dvbern,
+)
 = Die Realisierung des Resource Independent Model
 /*in Anlehnung an Kapitel 3.4.5. vom Spichiger-Skript*/
 == Allgemeines
@@ -727,7 +730,7 @@ transaktion],
       align: (left, left, left),
 
       [Gründungs-dokumentation vorbereiten], [Amira erstellt die für die Gründung notwendigen Dokumente und sammelt die notwendigen Beilagen  und bringt diese physisch beim Notar vorbei und beauftragt diesen mit der Gründung der GmbH. Sie zahlt das Gründungskapital ein.], [neu → beurkundet],
-      [Eintrag im Handelsregister beantragen], [Amira meldet ihre GmbH über ihren Notar beim Handelsregisteramt ihres Wohnkantons.], [beurkundet → eingereicht],
+      [Eintrag im Handelsregister beantragen], [Amira meldet ihre GmbH über ihren Notar beim Handelsregisteramt des Kantons, in dem die GmbH ihr Sitz hat.], [beurkundet → eingereicht],
       [Prüfung durch Handelsregister (abwarten)], [ Das Handelsregisteramt prüft den Antrag prüft den Antrag formell und entscheidet über das weitere Vorgehen.
        ], [eingereicht → angenommen / abgelehnt / unvollständig],
       [Im Handelsregister eintragen], [Das Handelregisteramt teilt Amira mit, dass der Eintrag im Register erfolgt ist], [angenommen → im Handelsregister eingetragen],
@@ -1194,6 +1197,7 @@ Diese ausgehandelte Qualität verleiht dem Artefakt seine architektonische Legit
 #frage([an alle: beschreiben wir hier das IST? oder die SOLL-Architektur?])
 
 == OM für DV Bern 
+#autor-dvbern([test])
 #todo-action([Jan bitte die übung für Finnofleet hier schreiben 
 
 Referenz: es geht um [EAasStrat]
@@ -1264,8 +1268,8 @@ Diese drei Ebenen müssen getrennt betrachtet und eingeordnet werden:
 + *Kantonale Ebene*: ist ebenfalls bei Diversification einzuordnen - 26-mal wiederholte Diversification. Die Einhaltung eines allfälligen obligatorischen gesetzlichen Minimums sowie die teil freiwillige Übernahme von eCH Standards erlauben eine ansatzweise Interoperabilität mit den anderen Ebenen. 
 + *Gemeindeebene*: Die Gemeinde gehört ebenfalls in die Diversification. Gemeinden differenzieren sich stark von einander - innerhalb desselben Kantons mit eigenen, oft analoge Prozesse. Und nochmals von Kanton zu Kanton kommen der Gemeinden unterschiedliche Zuständigkeiten zu  (Baubewilligung, Lärmschutz, Ortsplanung, punktuelle Bewilligungen). 
 === Abbildung des öffentlichen Wesens im Kontext von Gastrostart 
-Das öffentliche Wesen nimmt nur indirekt eine Rolle in unserem Unternehmen Gastrostart. 
-Eher bildet das öffentliche Wesen eine Hürde, die überwunden werden muss. Ein notwendiges Übel an Regulatorien und Vorgaben, welche die Kunden von Gastrostart von ihrem Traum trennt. 
+Das öffentliche Wesen nimmt nur indirekt eine Rolle in unserem Unternehmen GastroStart.
+Eher bildet das öffentliche Wesen  mit seinen Vorschriften eine Hürde, die überwunden werden muss. Ein notwendiges Übel an Regulatorien und Vorgaben, welche die Kunden von GastroStart von ihrem Traum trennt. 
 Das öffentliche Wesen wird sich nicht in die Firma Gastrostart integrieren - es hat weder das Bedürfnis noch die Bestimmung, bei solchen privaten Initiativen mitzumachen. 
 Noch weniger kann Gastrostart den Akteures des öffentlichen Wesens ein Geschäftsmodell (Operating System) aufzwingen.
 
