@@ -1195,8 +1195,17 @@ Diese ausgehandelte Qualität verleiht dem Artefakt seine architektonische Legit
 = Das Inside-Out-Mapping: Realisierung der Enterprise Architecture
 #frage([Giovanna hat nun eine neue Version des Kapitels entworfen, die für alle passt. Working Assumption: der Unternehmen, das beschrieben werden muss, ist GastroStart, NICHT das eigene! ])
 
-GastroStart ist ein enger Schulterschluss unter drei Partner aus der Privatwirtschaft, DV Bern, FINNOFLEET und Transgourmet. 
-Da GastroStart aus einer extrem positiven Dynamik unter den Partner entstanden ist, 
+GastroStart ist aus einem engen Schulterschluss unter drei Partner aus der Privatwirtschaft entstanden: DV Bern, FINNOFLEET und Transgourmet. 
+Da GastroStart von der extrem positiven Dynamik und Zusammenarbeit unter den Partner profitiert. 
+Die Daten der Kunden sowie die Teilschritte der Customer Journey, die von den Partnern abgedeckt werden, werden zentral im Geschäftsobjekt "Gründungsvorhaben gespeichert". 
+In diesem Sinne ist auf der einen Seite von einer ausgeprägten Datenintegration auszugehen - wobei GastroStart und jeder Partner seine fachspezifischen Prozesse beibehält. Dies erlaubt es auch GastroStart auf jeder neuen Fallkonstellation individuell einzugehen - sei es weil die Kunden nur einen Teil der Customer Journey von Amira - oder aber Bedürfnisse haben, die sich bei einem bereits laufenden Betrieb herauskristallisiert haben. 
+
+Folgt man den Rat der Literatur, so findet man folgende Passage: 
+#fuehrung([*Coordination* calls for high levels of integration but little standardization of processes. Business units in a Coordination company share one or more of the following: customers, products, suppliers, and partners. The benefits of integration can include integrated customer service, cross-selling, and transparency across supply chain processes. @ross2006enterprise
+])
+
+Gastrostart fällt somit unter dem sog. Operating Model "Coordination". 
+
 
 Die Systeme und "Produkte" der öffentlichen Verwaltung - es unter anderem um die Eintragung ihrer GmbH ins kantonale Handelsregister und um die Erteilung der Betriebsbewilligung - werden aus Sicht der Customer Journey aber auch von GastroStart als externe Systemen, die Artefakten mit hoheitlicher Wirkung erzeugen, betrachtet. 
 Dies ist so, da grundsätzlich nur der Staat für solche Handlungen verantwortlich ist und sein darf. 
