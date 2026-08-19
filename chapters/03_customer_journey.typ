@@ -70,13 +70,13 @@ In enger Verbindung mit der Customer Journey #ref(<sec-amira-und-ihre-geschichte
   ]
 ) <persona-amira>
 
-== Das Joint Venture Gastrostart - Vorstellung des Unternehmens
+== Das Joint Venture GastroStart - Vorstellung des Unternehmens
 
 GastroStart ist ein fiktives Portal, das Gründerinnen und Gründer im Gastgewerbe durch die zentralen Phasen der Betriebsgründung führt: von der ersten Orientierung über Registrierung, Unternehmensgründung und Betriebsbewilligung bis hin zur Finanzierung und zum ersten Lieferantenvertrag.
 
 GastroStart erlaubt es seinen Kunden schweizweit, schnell und ohne langwierige Behördengänge zu einem startbereiten Gastronomieunternehmen zu kommen - ganz unabhängig vom Herkunftskanton.
 
-Weitere Dienstleistungen, im Rahmen der Customer Journey nicht berührt, wären unter anderem Funktionen zur Unterstützung des operativen Betriebs eines Gastrounternehmens: Überwachung von Zahlungsfälligkeiten oder ein Einkaufsplanungsmodul. Darüber hinaus könnten über Gastrostart auch Betriebsübergaben und -liquidationen unterstützt werden.
+Weitere Dienstleistungen, im Rahmen der Customer Journey nicht berührt, wären unter anderem Funktionen zur Unterstützung des operativen Betriebs eines Gastrounternehmens: Überwachung von Zahlungsfälligkeiten oder ein Einkaufsplanungsmodul. Darüber hinaus könnten über GastroStart auch Betriebsübergaben und -liquidationen unterstützt werden.
 
 #design-entscheid[
 Entsprechend der gewählten Customer Journey haben wir uns entschieden, nur das Onboarding von Neukunden abzubilden. Die Firmengründung steht im Fokus.
@@ -142,7 +142,7 @@ Grund dafür ist, dass die von der Bundeskanzlei vorangetriebenen Vorgaben und S
  
 
 #design-entscheid([
-Aus Sicht von Amira und somit auch von Gastrostart wird die öffentliche Verwaltung - ohne besondere Rücksicht auf die jeweilige Ebene - in ihrer Rolle als Interoperabilitätspartner abgebildet und behandelt.
+Aus Sicht von Amira und somit auch von GastroStart wird die öffentliche Verwaltung - ohne besondere Rücksicht auf die jeweilige Ebene - in ihrer Rolle als Interoperabilitätspartner abgebildet und behandelt.
 
 Wie und unter welchen Voraussetzungen ein verbindliches Instrument diesen Rahmen beeinflussen würde, wird in der Analyse des Operating Models diskutiert - se. Kapitel ...
 ])
@@ -173,12 +173,12 @@ In den nächsten Kapiteln wir auf einer Auswahl dieser Szenarien eingegangen - e
 
 === Szenarien entlang der Customer Journey von GastroStart
 
-- *Initiale Orientierung:* Amira findet die Webseite von Gastrostart und informiert sich über die angebotenen Dienste. 
-- *Registrierung:* Amira meldet sich bei Gastrostart an, um von dessen Diensten zu profitieren. 
-- *Unternehmensgründung:* Amira nutzt Gastrostart, um ihr Catering-Unternehmen zu gründen und anzumelden. 
-- *Beantragung der Betriebsbewilligung:* Amira nutzt Gastrostart, um die Betriebsbewilligung für Unternehmen zu beantragen. 
-- *Finanzierung:* über Gastrostart kann Amira eine Finanzierung für die ersten Anschaffungen für ihr Catering erhalten. 
-- *Kunde bei Transgourmet:* über Gastrostart kann Amira ebenfalls ein Kundenkonto bei Transgourmet eröffnen - und ihre erste Bestellung absetzen. Der Übergang von der Firmengründung in den operativen Betrieb ist gelungen. 
+- *Initiale Orientierung:* Amira findet die Webseite von GastroStart und informiert sich über die angebotenen Dienste. 
+- *Registrierung:* Amira meldet sich bei GastroStart an, um von dessen Diensten zu profitieren. 
+- *Unternehmensgründung:* Amira nutzt GastroStart, um ihr Catering-Unternehmen zu gründen und anzumelden. 
+- *Beantragung der Betriebsbewilligung:* Amira nutzt GastroStart, um die Betriebsbewilligung für Unternehmen zu beantragen. 
+- *Finanzierung:* über GastroStart kann Amira eine Finanzierung für die ersten Anschaffungen für ihr Catering erhalten. 
+- *Kunde bei Transgourmet:* über GastroStart kann Amira ebenfalls ein Kundenkonto bei Transgourmet eröffnen - und ihre erste Bestellung absetzen. Der Übergang von der Firmengründung in den operativen Betrieb ist gelungen. 
 
 #design-entscheid([Die Gruppe hat diese Szenarien Input für die Erarbeitung der Iterationen für die Modellierung von GastroStart gewählt.])
 

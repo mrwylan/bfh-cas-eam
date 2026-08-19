@@ -1,7 +1,5 @@
-#import "../markers.typ": (
-  theorie-anker, design-entscheid, stolperstein, frage, todo-action, fuehrung,
-  autor-marker, autor-finnofleet, autor-transgourmet, autor-verwaltung, autor-dvbern,
-)
+#import "../markers.typ": theorie-anker, design-entscheid, stolperstein, frage, todo-action, fuehrung
+
 
 /*L'introduzione presenta lo scenario e le motivazioni, ma non rivela i risultati dettagliati
 L'introduzione è molto più lunga ed estesa, occupando diverse pagine a seconda della complessità del lavoro.
