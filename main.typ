@@ -52,3 +52,6 @@ Anschliessend werden die Ressourcen wieder einbezogen, wobei jeder der vier Koll
 // ── References ──────────────────────────────────────────────────────────────
 #bibliography("refs.bib", style: "apa", title: "Literaturverzeichnis")
 //dieser Styl wird im GFbUA benutzt: #bibliography("refs.bib", style: "apa", title: "Literaturverzeichnis")
+
+// ── Anhang ───────────────────────────────────────────────────────────────────
+#include "glossary.typ"
