@@ -1,8 +1,9 @@
 // ── Chapter 4 : EA Realization  ───────────────────
 #import "../markers.typ": (
   theorie-anker, design-entscheid, stolperstein, frage, todo-action, fuehrung,
-  autor-marker, autor-finnofleet, autor-transgourmet, autor-verwaltung, autor-dvbern,
+  autor-marker, autor-finnofleet, autor-transgourmet, autor-verwaltung, autor-dvbern, mit-lead
 )
+
 = Die Realisierung des Resource Independent Model
 /*in Anlehnung an Kapitel 3.4.5. vom Spichiger-Skript*/
 == Allgemeines
@@ -1195,60 +1196,11 @@ Diese ausgehandelte Qualität verleiht dem Artefakt seine architektonische Legit
 = Das Inside-Out-Mapping: Realisierung der Enterprise Architecture
 #frage([Giovanna hat nun eine neue Version des Kapitels entworfen, die für alle passt. Working Assumption: der Unternehmen, das beschrieben werden muss, ist GastroStart, NICHT das eigene! ])
 
-GastroStart ist aus einem engen Schulterschluss unter drei Partner aus der Privatwirtschaft entstanden: DV Bern, FINNOFLEET und Transgourmet. 
-Da GastroStart von der extrem positiven Dynamik und Zusammenarbeit unter den Partner profitiert. 
-Die Daten der Kunden sowie die Teilschritte der Customer Journey, die von den Partnern abgedeckt werden, werden zentral im Geschäftsobjekt "Gründungsvorhaben gespeichert". 
-In diesem Sinne ist auf der einen Seite von einer ausgeprägten Datenintegration auszugehen - wobei GastroStart und jeder Partner seine fachspezifischen Prozesse beibehält. Dies erlaubt es auch GastroStart auf jeder neuen Fallkonstellation individuell einzugehen - sei es weil die Kunden nur einen Teil der Customer Journey von Amira - oder aber Bedürfnisse haben, die sich bei einem bereits laufenden Betrieb herauskristallisiert haben. 
-
-Folgt man den Rat der Literatur, so findet man folgende Passage: 
-#fuehrung([*Coordination* calls for high levels of integration but little standardization of processes. Business units in a Coordination company share one or more of the following: customers, products, suppliers, and partners. The benefits of integration can include integrated customer service, cross-selling, and transparency across supply chain processes. @ross2006enterprise
-])
-
-Gastrostart fällt somit unter dem sog. Operating Model "Coordination". 
-
-
-Die Systeme und "Produkte" der öffentlichen Verwaltung - es unter anderem um die Eintragung ihrer GmbH ins kantonale Handelsregister und um die Erteilung der Betriebsbewilligung - werden aus Sicht der Customer Journey aber auch von GastroStart als externe Systemen, die Artefakten mit hoheitlicher Wirkung erzeugen, betrachtet. 
-Dies ist so, da grundsätzlich nur der Staat für solche Handlungen verantwortlich ist und sein darf. 
-Dritte und Private Unternehmen dürfen nur beim Vorhandensein einer Delegationsnorm im Namen einer Behörde handeln. Da GastroStart ein privates Unternehmen ist, 
-
 == Allgemeines
 Dieser Kapitel enthält die separaten Ausführungen der jeweiligen Autoren der Gruppenarbeit zum aktuellen Operating Models des eigenen Ursprungsbetriebs und des Joint Ventures GastroStart. Es kann sein, dass die Autoren zu jeweiligen, unterschiedlichen Schlüsse bezüglich der Gestaltung des Operating Models des Joint Ventures kommen. Dies ist so gewollt.  
 
-== OM für DV Bern 
-#autor-dvbern([Lorem Ipsum/*Absstract*/])
-
-#todo-action([Jan bitte die übung für DVBern hier schreiben 
-
-Referenz: es geht um [EAasStrat]
-1. Was ist der Stand betreffend Integration von Prozessen und Standardisierung von Daten 
-für Ihr Unternehmen und für die Customer Journey (siehe [EAasStrat]).
-2. Wählen Sie ein Operating Model für Ihr Unternehmen und begründen Sie Ihre Wahl 
-(siehe [EAasStrat]).
-Bemerkung: bei der Begründung die Rolle, die Ihr Unternehmen im Kontext der 
-Customer Journey wahrnimmt, berücksichtigen.
-3. Aufgrund der Wahl in 1) zeichnen (und erklären) Sie die Enterprise Architecture dazu.
- Abgabe der nächsten Iteration bis am Montag 06:00
-M])
-
-== Operating Model für FINNOFLEET
-
-#autor-finnofleet([Hello World! /*Abstract*/])
-
-#todo-action([Adrian bitte die übung für Finnofleet hier schreiben 
-
-Referenz: es geht um [EAasStrat]
-1. Was ist der Stand betreffend Integration von Prozessen und Standardisierung von Daten 
-für Ihr Unternehmen und für die Customer Journey (siehe [EAasStrat]).
-2. Wählen Sie ein Operating Model für Ihr Unternehmen und begründen Sie Ihre Wahl 
-(siehe [EAasStrat]).
-Bemerkung: bei der Begründung die Rolle, die Ihr Unternehmen im Kontext der 
-Customer Journey wahrnimmt, berücksichtigen.
-3. Aufgrund der Wahl in 1) zeichnen (und erklären) Sie die Enterprise Architecture dazu.
- Abgabe der nächsten Iteration bis am Montag 06:00
-M])
-
 == Operating-Model-Einordnung nach Ross, Weill und Robertson für Transgourmet
-#autor-transgourmet([Fill some text here /*Abstract*/])
+#autor-transgourmet("Beitrag von Jakob Albrecht", inhalt: [Fill some text here /*Abstract*/])
 Bevor die Customer Journey auf Capabilities und Systeme heruntergebrochen wird, ist eine grundlegende Einordnung nötig: Welches Operating Model liegt Transgourmet zugrunde?
 Ross, Weill und Robertson unterscheiden vier Operating Models entlang der beiden Achsen Standardisierung der Geschäftsprozesse und Integration der Daten @ross2006enterprise.
 Aus dieser Klassifikation leitet sich ab, wie viel Integration eine Architektur tragen muss und wo Autonomie zulässig bleibt.
@@ -1263,6 +1215,8 @@ Aus dieser Klassifikation leitet sich ab, wie viel Integration eine Architektur 
 - *Ebene Customer Journey — Federation*: Für die akteursübergreifende Sicht existiert keine Entsprechung im Ross/W/R-Schema; die Klassifikation adressiert Ebenen *innerhalb* einer Organisation (Enterprise, Division, Business Unit), nicht autonome Akteure. Die beteiligten Akteure (Gründer, Behörde, Finanzpartner, Transgourmet) sind autonom und betreiben ihre eigenen Systeme. Eine geteilte Datenhaltung über die Akteursgrenzen hinweg ist nicht vorgesehen. Die Durchgängigkeit der Journey entsteht, wo möglich, über standardisierten Kontrakte: das GastroStart-Portal koordiniert die Gründungsphasen über eCH-konforme Schnittstellen zu Behörden und Finanzpartner. Transgourmet wird über EDIFACT/GS1-Kontrakte für Bestellungen und Lieferantungen angebunden. Die Integration der Daten ist auf die Schnittstellen beschränkt, die Prozesse sind nicht standardisiert, und die Systeme sind autonom.
 
 == ArchiMate-Modell des Ist-Zustands von Transgourmet
+
+
 Die konsolidierte Sicht auf den Ist-Zustand der Transgourmet-B2B-Belieferung wurde als ArchiMate-Modell über die drei Schichten Business, Application und Technology erstellt @opengroup2019archimate.
 Das Modell macht das Unification-Operating-Model aus @fig-operating-model-matrix-with-federation-layer konkret sichtbar.
 
@@ -1279,25 +1233,89 @@ Die Schichten lesen sich wie folgt:
 
 Die entscheidende architektonische Beobachtung: Der monolithische Dispo-/ERP-Kern realisiert sämtliche Geschäftsfunktionen ohne Anti-Corruption Layer (ACL) und ohne Schnitt in Self-Contained Systems (SCS) @bass2012.
 
-== Akteure des öffentlichen Wesens
-#autor-verwaltung([Giovanna Beier, Bundeskanzlei])
-=== Einordnung in das Operating System nach Ross / Weill des Schweizer öffentlichen Wesens
+== OM für DV Bern 
+#autor-dvbern("Beitrag von Jan Sohnemann, DVBern", inhalt: [Lorem Ipsum/*Absstract*/])
 
-Das öffentliche Wesen in der Schweiz ist föderalistisch organisiert und spielt sich auf 3 politischen (und verwaltungstechnischen) Ebenen ab - dies beeinflusst stark die Interaktionen mit den Betroffenen. 
+#todo-action([Jan bitte die übung für DVBern hier schreiben 
+
+Referenz: es geht um [EAasStrat]
+1. Was ist der Stand betreffend Integration von Prozessen und Standardisierung von Daten 
+für Ihr Unternehmen und für die Customer Journey (siehe [EAasStrat]).
+2. Wählen Sie ein Operating Model für Ihr Unternehmen und begründen Sie Ihre Wahl 
+(siehe [EAasStrat]).
+Bemerkung: bei der Begründung die Rolle, die Ihr Unternehmen im Kontext der 
+Customer Journey wahrnimmt, berücksichtigen.
+3. Aufgrund der Wahl in 1) zeichnen (und erklären) Sie die Enterprise Architecture dazu.
+ Abgabe der nächsten Iteration bis am Montag 06:00
+M])
+
+== Operating Model für FINNOFLEET
+
+#autor-finnofleet("Beitrag von Adrian Anghel, FINNOFLEET", inhalt: [Hello World! /*Abstract*/])
+
+#todo-action([Adrian bitte die übung für Finnofleet hier schreiben 
+
+Referenz: es geht um [EAasStrat]
+1. Was ist der Stand betreffend Integration von Prozessen und Standardisierung von Daten 
+für Ihr Unternehmen und für die Customer Journey (siehe [EAasStrat]).
+2. Wählen Sie ein Operating Model für Ihr Unternehmen und begründen Sie Ihre Wahl 
+(siehe [EAasStrat]).
+Bemerkung: bei der Begründung die Rolle, die Ihr Unternehmen im Kontext der 
+Customer Journey wahrnimmt, berücksichtigen.
+3. Aufgrund der Wahl in 1) zeichnen (und erklären) Sie die Enterprise Architecture dazu.
+ Abgabe der nächsten Iteration bis am Montag 06:00
+M])
+
+== Einordnung von GastroStart und der Akteure des öffentlichen Wesens in das Operating System nach Ross/Weill et al.
+
+#autor-verwaltung("Beitrag von Giovanna Beier, Bundeskanzlei", inhalt: [
+  Mit ihrem Versprechen, die Kunden erfolgreich bei der Gründung ihres
+  Gastrounternehmens zu unterstützen - von der Einschreibung auf die Plattform
+  über die Firmengründung (inkl. Finanzierung) bis zur ersten Lieferung durch
+  Transgourmet - übernimmt GastroStart eine sehr komplexe Aufgabe.
+
+  Die "Sorglosigkeit", die GastroStart verspricht, ist Architektureigenschaft
+  und Dienstleistung von GastroStart zugleich.
+])
+=== Einordnung von GastroStart in das Operating System nach Ross / Weill et al.
+
+GastroStart ist aus einem engen Schulterschluss unter drei Partner aus der Privatwirtschaft entstanden: DV Bern, FINNOFLEET und Transgourmet. 
+Da GastroStart von der extrem positiven Dynamik und Zusammenarbeit unter den Partner profitiert. 
+Die Daten der Kunden sowie die Teilschritte der Customer Journey, die von den Partnern abgedeckt werden, werden zentral im Geschäftsobjekt "Gründungsvorhaben" gespeichert. 
+In diesem Sinne ist auf der einen Seite von einer ausgeprägten Datenintegration auszugehen - wobei GastroStart und jeder Partner seine fachspezifischen Prozesse beibehält. Dies erlaubt es auch GastroStart auf jeder neuen Fallkonstellation individuell einzugehen - sei es, weil die Kunden nur einen Teil der Customer Journey von Amira erleben - oder aber Bedürfnisse haben, die sich bei einem bereits laufenden Betrieb herauskristallisiert haben und ganz andere (nicht abgebildete) Bereiche von GastroStart beanspruchen.
+
+Folgt man den Rat der Literatur, so findet man folgende Passage: 
+#fuehrung([*Coordination* calls for high levels of integration but little standardization of processes. Business units in a Coordination company share one or more of the following: customers, products, suppliers, and partners. The benefits of integration can include integrated customer service, cross-selling, and transparency across supply chain processes. @ross2006enterprise
+])
+
+Gastrostart fällt somit unter dem sog. Operating Model "Coordination". 
+Durch die hohe, clevere Datenintegration unter den aktiven Partner erlebt Amira eine "Façade" die weitgehende einheitlich und frei von Medienbrüchen ist, ähnlich wie wenn sie im Kundenbereich eines grossen Anbieters von Fernmeldediensten Unification-Modells aussieht. 
+Das hinter dem User Interface jedoch ein verschiedene, ad-hoc-Prozesse laufen könnten, bekommt Amira nur teilweise mit. 
+
+Wo sind diese Brüche?
+Die Systeme und "Produkte", resp. Dienstleistungen der öffentlichen Verwaltung - unter anderem um die Eintragung ihrer GmbH ins kantonale Handelsregister und um die Erteilung der Betriebsbewilligung - werden aus Sicht der Customer Journey und von GastroStart als externe Systemen, die Artefakten mit hoheitlicher Wirkung erzeugen, betrachtet. 
+Dies ist so, da grundsätzlich nur der Staat für solche Handlungen verantwortlich ist und sein darf. 
+Dritte und Private Unternehmen dürfen nur beim Vorhandensein einer Delegationsnorm im Namen einer Behörde handeln. 
+Da GastroStart ein privates Unternehmen ist, kann es nicht den Eintrag ins Handelsregister vornehmen oder die Betriebsbewilligung für Amiras GmbH erteilen.
+
+=== Einordnung des Schweizer öffentlichen Wesens in das Operating System nach Ross / Weill 
+
+Das öffentliche Wesen in der Schweiz ist föderalistisch organisiert und spielt sich auf drei politischen (und verwaltungstechnischen) Ebenen ab - dies beeinflusst stark die Interaktionen mit den Betroffenen. 
 
 Diese drei Ebenen müssen getrennt betrachtet und eingeordnet werden: 
 
 + *Bundesebene*: ist bei Diversification einzordnune. Das ist nicht überraschend, sondern strukturell angelegt: Die Gesetztgebung gibt den Departementen und Ämtern eigene Vollzugsautonomie für ihre Kernaufgaben. Ist nichts anderes vorgesehen, ist eine Zusammenarbeit nicht erlaubt. Das ist politisch-rechtlich gewollte Dezentralisierung. Eine "dünne" zentrale Schicht basierend u.A. auf Standarddiensten, Produkte- und Prozessstandards und architektonischen Richtlinien erlaubt eine gewisse Interoperabilität. 
 + *Kantonale Ebene*: ist ebenfalls bei Diversification einzuordnen - 26-mal wiederholte Diversification. Die Einhaltung eines allfälligen obligatorischen gesetzlichen Minimums sowie die teil freiwillige Übernahme von eCH Standards erlauben eine ansatzweise Interoperabilität mit den anderen Ebenen. 
 + *Gemeindeebene*: Die Gemeinde gehört ebenfalls in die Diversification. Gemeinden differenzieren sich stark von einander - innerhalb desselben Kantons mit eigenen, oft analoge Prozesse. Und nochmals von Kanton zu Kanton kommen der Gemeinden unterschiedliche Zuständigkeiten zu  (Baubewilligung, Lärmschutz, Ortsplanung, punktuelle Bewilligungen). 
-=== Abbildung des öffentlichen Wesens im Kontext von Gastrostart 
-Das öffentliche Wesen nimmt nur indirekt eine Rolle in unserem Unternehmen GastroStart.
-Eher bildet das öffentliche Wesen  mit seinen Vorschriften eine Hürde, die überwunden werden muss. Ein notwendiges Übel an Regulatorien und Vorgaben, welche die Kunden von GastroStart von ihrem Traum trennt. 
-Das öffentliche Wesen wird sich nicht in die Firma Gastrostart integrieren - es hat weder das Bedürfnis noch die Bestimmung, bei solchen privaten Initiativen mitzumachen. 
-Noch weniger kann Gastrostart den Akteures des öffentlichen Wesens ein Geschäftsmodell (Operating System) aufzwingen.
 
-Mit ihrem Versprechen,  die Kunden erfolgreich bei der Gründung ihres Gastrounternehmens zu unterstützen - von der Einschreibung auf die Plattform über die Firmengründung (inkl. Finanzierung) bis zur ersten Lieferung durch Transgourmet - inklusive Kundenkonto - übernimmt Gastrostart eine sehr komplexe Aufgabe. 
-Die "Sorglosigkeit", die Gastrostart verspricht, sollte vielleicht gar keine Architektureigenschaft sein, sondern eine Dienstleistung von Gastrostart selbst. 
+=== Abbildung des öffentlichen Wesens im Kontext von GastroStart 
+
+Das öffentliche Wesen nimmt nur indirekt eine Rolle im Unternehmen GastroStart.
+Aus der Perspektive von Amira und ihrer Customer Journey bildet das öffentliche Wesen mit seinen Vorschriften eine Hürde, die überwunden werden muss. Die jeweilige Staatsebene stellt oft eine Sammlung an Regulatorien und Vorgaben dar, welche Amira von ihrem Traum trennt. 
+
+Es ist nicht sinnvoll, das öffentliche Wesen - respektive dessen jeweiligen Systemen in GastroStartc zu integrieren - sondern werden als externe Systeme und bewusste "Absprünge" weg von GastroStart prozedural wie technisch in den betroffenen Customer Journeys implementieren. 
+
+ 
 
 == Feedback Jarchow 
 + Digitalisierung 
