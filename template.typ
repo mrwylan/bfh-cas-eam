@@ -55,6 +55,10 @@ it
     }
   }
 
+  // Tabellen-Figuren dürfen über Seitengrenzen umbrechen (z. B. lange Glossar-
+  // oder Inventar-Tabellen), statt als Ganzes auf die nächste Seite zu springen.
+  show figure.where(kind: table): set block(breakable: true)
+
 
   // --- BLOCCO TITOLO / FRONTESPIZIO (Pagina 1) ---
   align(center)[
@@ -110,6 +114,3 @@ it
   // --- CORPO DEL DOCUMENTO ---
   body
 }
-// Inserisci questa riga nel tuo template.typ o in cima a main.typ
-    #show figure.where(kind: table): set block(breakable: true)
-    
