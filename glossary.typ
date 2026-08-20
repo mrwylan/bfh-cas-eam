@@ -85,6 +85,9 @@ Dieses Glossar erklärt die im Dokument verwendeten fachlichen und methodischen 
       [Enterprise Architecture Management (EAM)],
       [Die Disziplin, mit der eine Unternehmensarchitektur geplant, gesteuert und weiterentwickelt wird.],
 
+      [FINMA #linebreak() (Eidgenössische Finanzmarktaufsicht)],
+      [Aufsichtsbehörde über Banken, Versicherungen und weitere Finanzintermediäre in der Schweiz. Sie stellt eigene Anforderungen und anerkennt zusätzlich Selbstregulierungen der Branche als verbindlichen Mindeststandard; im Dokument im Kontext der regulatorischen Vorgaben an die Kreditanbahnung genannt. Siehe auch #emph[SBVg].],
+
       [Geschäftsfähigkeit],
       [Stabiler, redundanzfreier Baustein der funktionalen Dekomposition einer Unternehmung; abstrahiert von den sie unterstützenden Ressourcen, wird aber von diesen unterstützt @Spichiger2026GFbUA. #emph[Syn.: Business Capability, Fähigkeit.]],
 
@@ -153,6 +156,9 @@ Dieses Glossar erklärt die im Dokument verwendeten fachlichen und methodischen 
 
       [SaaS #linebreak() (Software as a Service)],
       [Betriebsmodell, bei dem Software zentral betrieben und den Kundinnen und Kunden als Dienst zur Nutzung bereitgestellt wird.],
+
+      [SBVg #linebreak() (Schweizerische Bankiervereinigung)],
+      [Branchenverband der Schweizer Banken. Ihre #emph[Richtlinien] sind Selbstregulierung der Branche --- für die Kreditanbahnung namentlich die Mindestanforderungen bei Hypothekarfinanzierungen sowie die Richtlinien zur Prüfung, Bewertung und Abwicklung grundpfandgesicherter Kredite. Von der #emph[FINMA] anerkannte Richtlinien gelten als verbindlicher Mindeststandard und werden aufsichtsrechtlich durchgesetzt.],
 
       [Self-Contained System (SCS)],
       [Architekturmuster, bei dem eine fachliche Domäne inklusive Benutzeroberfläche, Logik und Daten als eigenständiges, lose gekoppeltes System realisiert wird.],
