@@ -548,7 +548,8 @@ Von entscheidender Bedeutung ist also auch, wo der Betrieb stattfindet.
 Alle Eigenschaften, die mit der Betriebsgründung zusammenhängen, fassen wir im ressourcenunabhängigen Modell im Geschäftsobjekt *Gründungsvorhaben* zusammen.
 Das Gründungsvorhaben wird in der ersten Phase, Orientierung, entscheidend geprägt und spielt in den folgenden Phasen die zentrale Rolle.
 
-Im ressourcenunabhängigen Modell nach Archi sind die Eigenschaften der Geschäftsobjekte zunächst nicht von Bedeutung. Wir beginnen stattdessen mit der Betrachtung der Zustände, die ein Geschäftsobjekt annimmt, und welche Transaktionen einen Zustandswechsel hervorrufen.
+#todo-action([Jan: bitte svg vom Geschäftsobjekt einfügen?])
+Im ressourcenunabhängigen Modell nach Archimate sind die Eigenschaften der Geschäftsobjekte zunächst nicht von Bedeutung. Wir beginnen stattdessen mit der Betrachtung der Zustände, die ein Geschäftsobjekt annimmt, und welche Transaktionen einen Zustandswechsel hervorrufen.
 
 Der Auslöser der Customer Journey ist das Gründungsvorhaben. Indem die GründerInnen die Plattform GastroStart betreten, ist ihr Gründungsvorhaben aus Sicht des Systems *initiiert*. Diesem Zustand folgt die Geschäftstransaktion *Anforderungen ermitteln*. Diese Anforderungen ergeben sich aus den Eigenschaften des Gründungsvorhabens, wie zum Beispiel:
 - Personalien der BetriebsinhaberInnen
@@ -561,7 +562,7 @@ Im Rahmen der Geschäftstransaktion *Anforderungen ermitteln* wird mit Hilfe der
 
 Mit dem erfolgreichen Abschliessen der Geschäftstransaktion *Anforderungen ermitteln* wechselt das Gründungsvorhaben in den Zustand *orientiert*. Die GründerInnen haben damit alle Informationen, die sie brauchen, um das Bewilligungsverfahren erfolgreich zu durchlaufen.
 
-Die folgende Abbildung stellt die Zusammenhänge der Geschäftsobjekte, Zustände und Transaktionen im ressourcenunabhängigen Modell nach Archi dar. Die hier beschriebene Variante liest sich als Happy Path — also die erfolgreiche Erstellung einer Bewilligungsübersicht —, auch wenn der hier verwendete Zielzustand *orientiert* Raum für Variationen lässt. Sicherlich ist nicht jedes Gründungsvorhaben realisierbar, und der hier beschriebene Prozess kann durchaus komplexer werden. Dass das Gründungsvorhaben nicht realisierbar ist, ist allerdings auch eine Art Orientierung.
+Die folgende Abbildung stellt die Zusammenhänge der Geschäftsobjekte, Zustände und Transaktionen im ressourcenunabhängigen Modell nach Archimate dar. Die hier beschriebene Variante liest sich als Happy Path — also die erfolgreiche Erstellung einer Bewilligungsübersicht —, auch wenn der hier verwendete Zielzustand *orientiert* Raum für Variationen lässt. Sicherlich ist nicht jedes Gründungsvorhaben realisierbar, und der hier beschriebene Prozess kann durchaus komplexer werden. Dass das Gründungsvorhaben nicht realisierbar ist, ist allerdings auch eine Art Orientierung.
 
 #figure(
   image("../assets/jan/Zustandsübergänge des Gründungsvorhabens in Phase 1 - Orientierung.svg", width: 80%),
@@ -679,6 +680,34 @@ transaktion],
   ]
 ) <tbl-GT-sich-registrieren>
 === Amira gründet ihr Unternehmen
+=== Amira gründet ihr Unternehmen 
+- warum gründet Amira ein Unternehmen? Was sind ihre Beweggründe? 
+- was gehört zum Gründungsprozess? 
+	- Statuten / Zweck 
+	- Beilagen / Belege / Einzahlung des Gründungskapital 
+	- Wahl des Gründungskanton 
+	- Gang zum Notar 
+	- Anmeldung beim Handelsregister 
+Alles wird der initialen Orientierung entsprechend im Gründungsvorhaben festgehalten - respektive dort von Amira hochgeladen und dokumentiert. So stehen alle Informationen in GastroStart zur Verfügung und können inhaltlich und formell validiert werden. 
+- erst nach dem Eintrag im HReg existiert die GmbH wirklich und kann rechtlich wirksam agieren: 
+	- Bewilligung empfangen 
+	- Finanzierung erhalten 
+Das Geschäftsobjekt Unternehmen wird angelegt - Status neu 
+
+
+--- Status und Transaktionen erzählen ---
+
+	- Amira sammelt Informationen, Belege gem. den Vorgaben die aus der Orientierung hervorgegangen sind. —> Unvollständig (in Vorbereitung) 
+	- Amira hat sich durch die Gründungsdokumente geackert und hat alles beisammen und geht zum Notar —> Beurkundet 
+	- Der Notar reicht für Amira die Daten beim kantonalen Handelregisteramt. 
+	—> eingereicht 
+Bei Erfolg … bei negativer Feedback … 
+
+<> Tabelle der Geschäftstransaktionen 
+
+
+Die folgende Abbildung stellt die Zusammenhänge der Geschäftsobjekte, Zustände und Transaktionen im ressourcenunabhängigen Modell nach Archimate dar. 
+Die abgebildete Variante erwähnt noch die Möglichkeiten des Abbruches der Firmengründung durch Amira oder dass die kantonale Behörde den Eintrag ins Handelsregister nicht vornimmt. 
 
 
  #figure(
