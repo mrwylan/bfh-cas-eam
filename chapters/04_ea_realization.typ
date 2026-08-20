@@ -329,7 +329,7 @@ caption: [Geschäftsobjekt Finanzierung und dessen Zustände]
       [- #emph[Gründungsvorhaben] ist mit der Finanzierung assoziiert (löst das Gesuch aus).
       - Die Finanzierung ist mit der #emph[Bewilligung] assoziiert (Bewilligungsstand als Voraussetzung).
       - Das #emph[Unternehmen] ist mit der Finanzierung assoziiert (Empfänger der Mittel).
-      - Zugriff durch die Geschäftstransaktionen #emph[Finanzierung anfordern], #emph[Finanzierung prüfen] und #emph[Finanzierung vorbereiten] (siehe @tbl-GT-finanzierung-erhalten).],
+      - Zugriff durch alle vier Geschäftstransaktionen: #emph[Finanzierung vorbereiten], #emph[Finanzierung anfordern], #emph[Finanzierung prüfen] und #emph[Finanzierung zusagen]. Die letzte greift zusätzlich auf das #emph[Gründungsvorhaben] zu, dessen Zustand sie auf #emph[finanziert] setzt (siehe @tbl-GT-finanzierung-erhalten).],
     )
   ]
 ) <tbl-GO-Finanzierung>
@@ -869,10 +869,11 @@ Das Geschäftsobjekt Bewilligung durchläuft mehrere Transaktionen:
 /*Amira erhält eine Finanzierung*/
 
 === Amira erhält eine Finanzierung
-Nachdem Amira die Betriebsbewilligung erhalten hat, benötigt sie Kapital für die Erstanschaffungen. In dieser Phase übernimmt FINNOFLEET: Amira stellt über GastroStart ein Finanzierungsgesuch, das anhand ihrer Angaben und einer Bonitätsprüfung beurteilt wird. Das Geschäftsobjekt #emph[Finanzierung] durchläuft dabei drei Geschäftstransaktionen.
+Nachdem Amira die Betriebsbewilligung erhalten hat, benötigt sie Kapital für die Erstanschaffungen. In dieser Phase übernimmt FINNOFLEET: Amira stellt über GastroStart ein Finanzierungsgesuch, das anhand ihrer Angaben und einer Bonitätsprüfung beurteilt wird. Das Geschäftsobjekt #emph[Finanzierung] durchläuft dabei vier Geschäftstransaktionen. Die letzte davon überschreitet die Objektgrenze: Sie schliesst den Finanzierungsfall ab und versetzt das #emph[Gründungsvorhaben] in den Zustand #emph[finanziert].
 
-+ Zustände: neu, angefordert, unvollständig, vollständig, angenommen, abgelehnt, abgebrochen (siehe @tbl-GO-Finanzierung).
-+ Geschäftstransaktionen: Finanzierung vorbereiten, Finanzierung anfordern, Finanzierung prüfen.
++ Zustände der Finanzierung: neu, angefordert, unvollständig, vollständig, angenommen, abgelehnt, abgebrochen (siehe @tbl-GO-Finanzierung).
++ Zustand des Gründungsvorhabens: finanziert (siehe #ref(<tbl-GO-Gründungsvorhaben>)).
++ Geschäftstransaktionen: Finanzierung vorbereiten, Finanzierung anfordern, Finanzierung prüfen, Finanzierung zusagen.
 
 #figure(
   image("../assets/GTZ Amira erhält eine Finanzierung.svg", width: 100%),
@@ -880,7 +881,7 @@ Nachdem Amira die Betriebsbewilligung erhalten hat, benötigt sie Kapital für d
 ) <fig-GTZ-finanzierung>
 
 #figure(
-  caption: [Geschäftstransaktionen: Prozess «Finanzierung erhalten»],
+  caption: [Geschäftstransaktionen der Phase «Amira erhält eine Finanzierung»],
   block(
     width: 100%,
     radius: 6pt,
@@ -920,8 +921,12 @@ transaktion],
       [vollständig → angefordert],
 
       [Finanzierung prüfen],
-      [FINNOFLEET führt die Bonitätsprüfung durch und entscheidet über das Gesuch. Bei fehlenden Nachweisen wird der Fall als unvollständig zurückgewiesen; andernfalls wird er angenommen oder abgelehnt. Die Annahme löst das Ereignis #emph[finanziert] aus.],
+      [FINNOFLEET führt die Bonitätsprüfung durch und entscheidet über das Gesuch. Bei fehlenden Nachweisen wird der Fall als unvollständig zurückgewiesen; andernfalls wird er angenommen oder abgelehnt.],
       [angefordert → angenommen / abgelehnt / unvollständig],
+
+      [Finanzierung zusagen],
+      [FINNOFLEET sagt die angenommene Finanzierung verbindlich zu, eröffnet das Geschäftskonto und stellt die IBAN bereit. Die Transaktion greift auf beide Objekte zu: sie schliesst den Finanzierungsfall ab und setzt den Zustand #emph[finanziert] auf dem #emph[Gründungsvorhaben].],
+      [angenommen → finanziert (Gründungsvorhaben)],
     )
   ]
 ) <tbl-GT-finanzierung-erhalten>
@@ -1055,10 +1060,26 @@ Unternehmen bei Behörde anmelden
 
 === Geschäftsprozess Finanzierung erhalten
 
-#todo-action([\@ Adi: bitte erarbeiten.])
+#figure(
+  image("../assets/GP Amira erhält eine Finanzierung.svg", width: 100%),
+  caption: [Geschäftsprozesse - Szenario Amira erhält eine Finanzierung]
+) <GP_Amira_erhaelt_Finanzierung>
 
-1. Geschäftsprozesse 
-2. Abhängigkeiten von Geschäftsobjekten 
+1. Geschäftsprozesse
+
+Die vier Geschäftstransaktionen der Phase (siehe @tbl-GT-finanzierung-erhalten) aggregieren zu zwei Geschäftsprozessen. Die Trennlinie liegt dort, wo die Verantwortung wechselt: solange Amira ihr Gesuch aufbaut und einreicht, liegt der Fall bei ihr; ab der Beurteilung liegt er bei FINNOFLEET.
+
+Finanzierung initiieren
+umfasst die Geschäftstransaktionen #emph[Finanzierung vorbereiten] und #emph[Finanzierung anfordern]. Der Prozess führt das Geschäftsobjekt #emph[Finanzierung] von #emph[neu] über #emph[vollständig] nach #emph[angefordert] und endet mit der Übergabe des Gesuchs an FINNOFLEET. Wichtig ist die Schleife über #emph[unvollständig]: fehlende Nachweise führen zurück in die Vorbereitung, ohne dass der Fall verloren geht; #emph[abgebrochen] beendet ihn vorzeitig. Dieser Prozess gehört fachlich zu GastroStart, weil hier die Kundeninteraktion stattfindet.
+
+Finanzierung erhalten
+umfasst die Geschäftstransaktionen #emph[Finanzierung prüfen] und #emph[Finanzierung zusagen]. Der Prozess führt die Finanzierung von #emph[angefordert] nach #emph[angenommen] --- oder nach #emph[abgelehnt], respektive bei fehlenden Nachweisen zurück nach #emph[unvollständig]. Mit der Zusage wechselt der Zustand die Objektgrenze: nicht die Finanzierung, sondern das #emph[Gründungsvorhaben] wird #emph[finanziert]. Er ist der eigentliche Beitrag von FINNOFLEET zum Joint Venture und der Punkt, an dem aus Amiras Gründungsvorhaben ein finanziertes Unternehmen wird. Beide Prozesse zusammen realisieren die Geschäftsfähigkeit #emph[Gründungsvorhaben finanzieren], die im Abschnitt «Geschäftsfähigkeiten Finanzierung erhalten» in Teilfähigkeiten zerlegt wird.
+
+2. Abhängigkeiten von Geschäftsobjekten
+
+- #emph[Finanzierung] --- das zentrale Objekt beider Prozesse: alle vier Geschäftstransaktionen greifen darauf zu, und die Zustände des Objekts sind die Fortschrittsanzeige des Gesamtprozesses (siehe @tbl-GO-Finanzierung).
+- #emph[Gründungsvorhaben] --- fachlicher Auslöser und Empfänger des Prozessergebnisses: die abschliessende Transaktion #emph[Finanzierung zusagen] greift auch auf dieses Objekt zu und versetzt es in den Zustand #emph[finanziert]. Sie ist damit die einzige Transaktion der Phase, die auf zwei Geschäftsobjekte wirkt.
+- Indirekt, über das Objektmodell der Finanzierung: #emph[Bewilligung] als Voraussetzung (ohne Betriebsbewilligung kein Gesuch) und #emph[Unternehmen] als Empfänger der Mittel und Inhaber des Geschäftskontos.
 
 === Geschäftsfähigkeiten Kunde bei Transgourmet werden
 #todo-action([\@ Jakob: bitte erarbeiten])
