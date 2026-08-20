@@ -1126,7 +1126,7 @@ umfasst die Geschäftstransaktionen #emph[Finanzierung prüfen] und #emph[Finanz
 
 === Geschäftsfähigkeiten Finanzierung erhalten
 
-Die übergeordnete Geschäftsfähigkeit lautet *Gründungsvorhaben finanzieren*. Sie wird von FINNOFLEET getragen und in fünf Teilfähigkeiten zerlegt:
+Die übergeordnete Geschäftsfähigkeit lautet *Gründungsvorhaben finanzieren*. Sie wird im Joint Venture arbeitsteilig getragen: FINNOFLEET verantwortet den Finanzierungskern --- Prüfung, Entscheid und Kontobereitstellung ---, während die kundenzugewandte Antragserfassung bei GastroStart liegt. Die Fähigkeit zerfällt in vier Teilfähigkeiten:
 
 1. Finanzierungsantrag-Management
 • Erfassung des Finanzierungsgesuchs mit Betrag, Verwendungszweck und Laufzeit.
@@ -1147,12 +1147,12 @@ Die übergeordnete Geschäftsfähigkeit lautet *Gründungsvorhaben finanzieren*.
 • Eröffnung des Geschäftskontos nach positivem Entscheid.
 • Vergabe der IBAN als Grundlage für den späteren Zahlungsverkehr.
 
-5. Finanzierungskommunikation
-• Transparente Rückmeldung des Scoring-Ergebnisses an die Kundin.
-• Verweis auf alternative Förderprogramme im Fall einer Absage.
+*Zuordnung zu den Geschäftsprozessen.* Teilfähigkeit 1 stützt den Prozess *Finanzierung initiieren* und liegt bei GastroStart, weil dort die Kundeninteraktion stattfindet. Die Teilfähigkeiten 2 bis 4 stützen den Prozess *Finanzierung erhalten* und liegen damit bei FINNOFLEET (siehe @GP_Amira_erhaelt_Finanzierung).
+
+Die letzten beiden Punkte von Teilfähigkeit 3 --- verständliche Begründung und Verweis auf Förderprogramme --- leiten sich aus der Chance des Szenarios #emph[Amira erhält eine Finanzierung] ab (siehe @tbl-szenario-finanzierung) und beschreiben einen Soll-Zustand. Bewusst nicht als eigene Geschäftsfähigkeit geführt wird die Kommunikation dieses Entscheids: Wie das Ergebnis Amira präsentiert wird, ist eine Frage der Kanäle und Interaktionskomponenten und gehört damit ins RSM, nicht in die ressourcenunabhängige Fähigkeitsstruktur.
 
 // Optionale Grafik: bei Bedarf ein Capability-View "Gründungsvorhaben finanzieren"
-// in Archi anlegen (fünf Teilfähigkeiten, Composition), als assets/GF_Finanzierung.svg
+// in Archi anlegen (vier Teilfähigkeiten, Composition), als assets/GF_Finanzierung.svg
 // exportieren und als #figure einfügen (analog zu "GF Behördeninteration.svg").
 
 === Geschäftsfähigkeiten Kunde bei Transgourmet werden
