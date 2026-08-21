@@ -193,6 +193,12 @@ In den nächsten Kapiteln wir auf einer Auswahl dieser Szenarien eingegangen - e
 
 === Amira orientiert sich 
 
+ #figure(
+  image("../assets/cj_orientierung.svg", width: 70%),
+  caption: [Archimate Szenario "Amira orientiert sich"]
+) <fig-customer-journey-orientierung>
+
+
 #todo-action([\@ Jan Szenario/Beschreibung - bitte mit Tabelle wie bei Finanzierung])
 /*
 Struktur:
@@ -207,7 +213,17 @@ Struktur:
 === Amira registriert sich bei Gastrostart
 #todo-action([\@ Jan Szenario/Beschreibung - bitte mit Tabelle wie bei Finanzierung])
 
+ #figure(
+  image("../assets/cj_registrierung.svg", width: 70%),
+  caption: [Archimate Szenario "Amira registriert sich"]
+) <fig-customer-journey-registrierung>
+
 === Amira gründet ihr Unternehmen
+ #figure(
+  image("../assets/cj_gründung und bewilligung.svg", width: 70%),
+  caption: [Archimate Szenario "Amira gründet ihr Unternehmen"]
+) <fig-customer-journey-grüdndung-bewilligungg>
+
 
 #figure(
   caption: [Szenario "Amira gründet ihr Unternehmen"],
@@ -263,6 +279,14 @@ Struktur:
 
 === Amira erhält die Bewilligung
 
+ #figure(
+  image("../assets/cj_verträge.svg", width: 70%),
+  caption: [Archimate Szenario "Amira erhält die Bewilligung"]
+) <fig-cj-verträge>
+
+
+
+
 #figure(
   caption: [Szenario "Amira gründet ihr Unternehmen"],
   block(
@@ -315,6 +339,12 @@ Struktur:
 ) <tbl-szenario-unternhemen-gründen>
 
 === Amira erhält eine Finanzierung
+
+ #figure(
+  image("../assets/cj_verträge.svg", width: 70%),
+  caption: [Archimate Szenario "Amira erhält die Finanzierung"]
+) <fig-cj-verträge>
+
 
 #figure(
   caption: [Szenario "Amira erhält eine Finanzierung"],
@@ -379,6 +409,12 @@ Struktur:
 // ) <fig-szenario-finanzierung-cj>
 
 === Amira wird Kunde bei Transgourmet
+
+ #figure(
+  image("../assets/cj_verträge.svg", width: 70%),
+  caption: [Archimate Szenario "Amira wird Kunde bei Transgourmet"]
+) <fig-cj-verträge>
+
 
 #todo-action([\@ Jakob: Szenario/Beschreibung - bitte mit Tabelle wie bei Finanzierung])
 /*
