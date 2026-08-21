@@ -33,45 +33,12 @@ Wir verlassen das Tagebuch-Aufbau - und gehen hin zu einem logischen, fliessende
 == Erste Iteration: Identifikation der Geschäftsobjekte
 
 
-#fuehrung([*Geschäftsobjekte* 
-
-Aus der Geschichte werden die groben Geschäftsobjekte sowie die Beziehungen zwischen den Geschäftsobjekten identifiziert, die in einer dematerialisierten Umsetzung der Geschichte noch Relevanz haben.
-
-Ein Geschäftsobjekt kapselt statische Struktur des RIM. Ein Geschäftsobjekt beschreibt einen zentral wesentlichen Teil des Kontexts einer Unternehmung und abstrahiert vollständig von den Ressourcen der Unternehmung (Dematerialisierung) und dessen Verhalten. @Spichiger2026GFbUA]) 
-
-=== Vorgehen
-Um Geschäftsobjekte zu identifizieren hat sich die Gruppe mit der Struktur von Amiras Customer Journey auseinandergesetzt.
-Dabei liessen sich Nomen wie "Gründung", "Finanzierung", "Kundenkonto" - diese wurden als Prototypen für mögliche Geschäftsobjekte festgehalten. 
-
- #figure(
-  image("../assets/Customer Journey View.svg", width: 40%),
-  caption: [Archimate Modell der Customer Journey von Amira und erste Iteration für die Identifikation der Geschäftsobjekte]
-) <fig-customer-journey-view>
-
-=== Modell der identifizierten Objekte
-Folgendes Archimate Modell der Geschäftsobjekte von GastroStart, die von der Gruppe identifiziert wurden. 
 
 
 
-#figure(
-  image("../assets/GO diagram.svg", width: 80%),
-  caption: [Geschäftsobjekt Kundenkonto und dessen Zustände]
-) <fig-IdentifizierteGeschaefstobjetke>
-
-/*#frage([brauchen wir nicht das Objekt Webseite? hier brauchen wir dieses Objekt nicht - es ist eine RESSOURCE!!!])*/
+=== [LEER] Kundenkonto (Registrierung)
 
 
-#design-entscheid([
-Es wurde verzichtet, das Objekt Person zu modellieren. Die Behandlung von personenbezogenen Invarianten wie Domizil in der Schweiz oder Besitz des Wirtepatentes als Voraussetzung für die Gründung des Unternehmens und für den Erhalt der Betriebsbewilligung würden den Rahmen dieser Arbeit sprengen.
-
-])
-=== Kundenkonto (Registrierung)
-#todo-action([\@ Jan: bitte allenfalls etwas ausführlicher beschreiben - bitte erklären, dass Kundenkonto für Kunde steht / dass wir Kunde nicht abbilden (gemiensame Entscheidung)])
-
-#figure(
-image("../assets/GOKundenkonto.svg", width: 50%),
-caption: [Geschäftsobjekt Kundenkonto und dessen Zustände]
-) <fig-GOKundenkonto>
 
 
 
@@ -478,6 +445,11 @@ Wir dokumentieren die Identifikation von Zuständen und Geschäftstransaktionen 
 Die entsprechenden Geschäftsprozesse sind ebenfalls modelliert, auch wenn sie später erklärt werden.
 Die Szenarien sind in @sec-szenarien-customer-journey beschrieben und werden einzeln aufbereitet. 
 #fuehrung([
+*Geschäftsobjekte* 
+
+Aus der Geschichte werden die groben Geschäftsobjekte sowie die Beziehungen zwischen den Geschäftsobjekten identifiziert, die in einer dematerialisierten Umsetzung der Geschichte noch Relevanz haben.
+
+Ein Geschäftsobjekt kapselt statische Struktur des RIM. Ein Geschäftsobjekt beschreibt einen zentral wesentlichen Teil des Kontexts einer Unternehmung und abstrahiert vollständig von den Ressourcen der Unternehmung (Dematerialisierung) und dessen Verhalten.
 
 *Zustände:* Zu jedem Geschäftsobjekt werden seine Zustände identifiziert.
 
@@ -485,6 +457,32 @@ Die Szenarien sind in @sec-szenarien-customer-journey beschrieben und werden ein
 Sowohl bei Input und Output wird darauf geachtet, dass diese inklusive ihre Zustände (bzw. zugehörige Ereignisse) bezeichnet werden. @Spichiger2026GFbUA /*S. 54*/
 ])
 
+=== Vorgehen
+Um Geschäftsobjekte zu identifizieren hat sich die Gruppe mit der Struktur von Amiras Customer Journey auseinandergesetzt.
+Dabei liessen sich Nomen wie "Gründung", "Finanzierung", "Kundenkonto" - diese wurden als Prototypen für mögliche Geschäftsobjekte festgehalten. 
+
+ #figure(
+  image("../assets/Customer Journey View.svg", width: 40%),
+  caption: [Archimate Modell der Customer Journey von Amira und erste Iteration für die Identifikation der Geschäftsobjekte]
+) <fig-customer-journey-view>
+
+=== Modell der identifizierten Objekte
+Folgendes Archimate Modell der Geschäftsobjekte von GastroStart, die von der Gruppe identifiziert wurden. 
+
+
+
+#figure(
+  image("../assets/GO diagram.svg", width: 80%),
+  caption: [Geschäftsobjekt Kundenkonto und dessen Zustände]
+) <fig-IdentifizierteGeschaefstobjetke>
+
+#frage([brauchen wir nicht das Objekt Webseite? hier brauchen wir dieses Objekt nicht - es ist eine RESSOURCE!!!])
+
+
+#design-entscheid([
+Es wurde verzichtet, das Objekt Person zu modellieren. Die Behandlung von personenbezogenen Invarianten wie Domizil in der Schweiz oder Besitz des Wirtepatentes als Voraussetzung für die Gründung des Unternehmens und für den Erhalt der Betriebsbewilligung würden den Rahmen dieser Arbeit sprengen.
+
+])
 
 === Amira orientiert sich
 
@@ -562,11 +560,29 @@ transaktion],
 
 Der Gründungsprozess lässt sich höchstwahrscheinlich nicht in einer Session abschliessen. Nachdem die GründerInnen mit dem Abschluss der ersten Phase eine Übersicht zu ihren Rechten, Pflichten und Möglichkeiten haben, werden sie in den meisten Fällen Gesuche stellen müssen. Das heisst, sie werden Formulare ausfüllen und als Anträge einreichen müssen. Diese Anträge haben eine Bearbeitungsdauer, die sich in den meisten Fällen über mindestens einige Tage erstreckt. Manche GründerInnen werden wahrscheinlich auch Kenntnisse nachweisen und sich dafür möglicherweise sogar schulen lassen müssen. Damit GründerInnen den Prozess auf GastroStart nicht bei jeder Sitzung von vorn beginnen müssen, macht es Sinn, ihr Gründungsvorhaben und dessen aktuellen Stand mit einem Konto zu verknüpfen. Über ihr Konto können sich alle GastroStart-Benutzenden authentifizieren und Aktualisierungen am Gründungsprozess vornehmen oder einsehen.
 
+Wir betrachten im folgenden Modell im Wesentlichen das Geschäftsobjekt Kundenkonto und den Geschäftsprozess *Kundenkonto verwalten*, der sich in drei Geschäftstransaktionen unterteilt:
+- Konto anlegen
+- Konto löschen
+- Konto aktualisieren
+
+Die drei Transaktionen sind unabhängig voneinander, mit der Ausnahme, dass Löschen und Aktualisieren ein bestehendes Konto voraussetzen. Das Kundenkonto dient einerseits der Authentifizierung, der Autorisierung, der Personalisierung und der Verknüpfung mit dem Gründungsvorhaben. Die dafür notwendigen Eigenschaften werden in den Geschäftstransaktionen *Konto anlegen* und *Konto aktualisieren* definiert. Ein Beispiel für eine Aktualisierung könnte die Änderung der Postanschrift oder Telefonnummer des Gründers oder der Gründerin sein.
+
+Das Löschen eines Kundenkontos darf nicht in jedem Fall zu dessen Verschwinden führen. Erst wenn alle Geschäftstransaktionen, die mit diesem Konto in Verbindung stehen, abgeschlossen sind, ist eine endgültige Löschung möglich — und auch nur dann, wenn ausstehende Verbindlichkeiten der GründerInnen auch ausserhalb der Plattform beglichen werden können. Das Löschen eines Kundenkontos versetzt dieses also im Rahmen dieses Modells zunächst nur in den Zustand *inaktiv*, was bedeutet, dass bereits gestartete Transaktionen abgebrochen werden können, wenn möglich, und keine neuen Transaktionen gestartet werden können.
+
+Dass die Geschäftstransaktion *Konto aktualisieren* das Kundenkonto in einen entsprechenden Zustand überführt, kann in vielen Fällen sinnvoll sein: Laufende Prozesse oder Transaktionen müssen unter Umständen über diese Zustandsänderung informiert werden. Nehmen wir zum Beispiel wieder die Änderung der Postanschrift: Wahrscheinlich werden sich nicht alle Informationsaustauschprozesse digitalisieren lassen, und eine zuständige Behörde sollte in diesen Fällen für den Schriftverkehr über die Änderung der Postanschrift informiert werden.
+
+// TODO: Asset "Zustandsübergänge des Kundenkontos in Phase 2 - Sich registrieren.svg" fehlt noch in assets/jan/ - sobald vorhanden, hier einbinden:
+// #figure(
+//   image("../assets/jan/Zustandsübergänge des Kundenkontos in Phase 2 - Sich registrieren.svg", width: 80%),
+//   caption: [Zustandsübergänge des Kundenkontos in Phase 2: Sich registrieren]
+// ) <fig-GTZ-registrieren>
++ Geschäftobjekt 
+#todo-action([\@ Jan: ich habe diese TAbelle + bild aus dem alten Kapitel "Iteration 1" übernommen. Schau bitte, wie Bild und Tabelle gut ins Kapitel eingepette werden können. Merci, Gio)])
+
 #figure(
 image("../assets/GOKundenkonto.svg", width: 50%),
 caption: [Geschäftsobjekt Kundenkonto und dessen Zustände]
 ) <fig-GOKundenkonto>
-
 #todo-action([\@Jan: Objektbeschreibung nachführen. . ])
 #figure(
   caption: [Geschäftsobjekt Kundenkonto],
@@ -621,23 +637,6 @@ caption: [Geschäftsobjekt Kundenkonto und dessen Zustände]
   Wir sind zum Schluss gekommen, dass das Geschäftsobjekt Kundenkonto alle Informationen zum Kunden enthält, weshalb letzteres nicht separat / zusätzlich geführt werden muss.
 ])
 
-Wir betrachten im folgenden Modell im Wesentlichen das Geschäftsobjekt Kundenkonto und den Geschäftsprozess *Kundenkonto verwalten*, der sich in drei Geschäftstransaktionen unterteilt:
-- Konto anlegen
-- Konto löschen
-- Konto aktualisieren
-
-Die drei Transaktionen sind unabhängig voneinander, mit der Ausnahme, dass Löschen und Aktualisieren ein bestehendes Konto voraussetzen. Das Kundenkonto dient einerseits der Authentifizierung, der Autorisierung, der Personalisierung und der Verknüpfung mit dem Gründungsvorhaben. Die dafür notwendigen Eigenschaften werden in den Geschäftstransaktionen *Konto anlegen* und *Konto aktualisieren* definiert. Ein Beispiel für eine Aktualisierung könnte die Änderung der Postanschrift oder Telefonnummer des Gründers oder der Gründerin sein.
-
-Das Löschen eines Kundenkontos darf nicht in jedem Fall zu dessen Verschwinden führen. Erst wenn alle Geschäftstransaktionen, die mit diesem Konto in Verbindung stehen, abgeschlossen sind, ist eine endgültige Löschung möglich — und auch nur dann, wenn ausstehende Verbindlichkeiten der GründerInnen auch ausserhalb der Plattform beglichen werden können. Das Löschen eines Kundenkontos versetzt dieses also im Rahmen dieses Modells zunächst nur in den Zustand *inaktiv*, was bedeutet, dass bereits gestartete Transaktionen abgebrochen werden können, wenn möglich, und keine neuen Transaktionen gestartet werden können.
-
-Dass die Geschäftstransaktion *Konto aktualisieren* das Kundenkonto in einen entsprechenden Zustand überführt, kann in vielen Fällen sinnvoll sein: Laufende Prozesse oder Transaktionen müssen unter Umständen über diese Zustandsänderung informiert werden. Nehmen wir zum Beispiel wieder die Änderung der Postanschrift: Wahrscheinlich werden sich nicht alle Informationsaustauschprozesse digitalisieren lassen, und eine zuständige Behörde sollte in diesen Fällen für den Schriftverkehr über die Änderung der Postanschrift informiert werden.
-
-// TODO: Asset "Zustandsübergänge des Kundenkontos in Phase 2 - Sich registrieren.svg" fehlt noch in assets/jan/ - sobald vorhanden, hier einbinden:
-// #figure(
-//   image("../assets/jan/Zustandsübergänge des Kundenkontos in Phase 2 - Sich registrieren.svg", width: 80%),
-//   caption: [Zustandsübergänge des Kundenkontos in Phase 2: Sich registrieren]
-// ) <fig-GTZ-registrieren>
-
 + Zustände
 + Geschäftstransaktionen
 #figure(
@@ -686,33 +685,20 @@ transaktion],
     )
   ]
 ) <tbl-GT-sich-registrieren>
-
 === Amira gründet ihr Unternehmen 
 
-- warum gründet Amira ein Unternehmen? Was sind ihre Beweggründe? 
-- was gehört zum Gründungsprozess? 
-	- Statuten / Zweck 
-	- Beilagen / Belege / Einzahlung des Gründungskapital 
-	- Wahl des Gründungskanton 
-	- Gang zum Notar 
-	- Anmeldung beim Handelsregister 
-Alles wird der initialen Orientierung entsprechend im Gründungsvorhaben festgehalten - respektive dort von Amira hochgeladen und dokumentiert. So stehen alle Informationen in GastroStart zur Verfügung und können inhaltlich und formell validiert werden. 
-- erst nach dem Eintrag im HReg existiert die GmbH wirklich und kann rechtlich wirksam agieren: 
-	- Bewilligung empfangen 
-	- Finanzierung erhalten 
-Das Geschäftsobjekt Unternehmen wird angelegt - Status neu 
+Amira möchte für den Betrieb des Caterings eine Gesellschaft mit beschränkter Haftung (GmbH) oder eine Aktiengesellschaft (AG) gründen, um sich und ihre Familie finanziell vor einem möglichen Misserfolg ihres Unternehmens zu schützen. 
+GastroStart hat Amira hingewiesen, dass eine GmbH sich besonders für kleinere und mittlere Unternehmen eignet. Sie ist einfacher und günstiger zu gründen und deshalb für viele Familienbetriebe oder Restaurants eine gute Wahl.
+Die GmbH wir es ihr ermöglichen, zwischen Privatvermögen und Geschäft zu trennen - was im Falle des Eintritts von unvorhergesehenen Risiken wie Haftungsfälle oder Überschuldung zu einer Einschränkung der finanziellen Auswirkungen bringen wird. 
 
+Nach der initialen Orientierung und Registrierung auf GastroStart wurden die Wünsche von Amira auf der Plattform festgehalten. 
+Wie beim Ausfüllen der Steuererklärung bietet GastroStart eine Anleitung zur Vorbereitung der notwendigen Dokumentation, sodass die Notariatskosten möglichst tief gehalten werden können. 
+Dazu gehören Angaben wie der gewünschte Firmennamen, den Sitz und Adresse der Firma, persönliche Informationen zu den Anteilhabenden, die Einzahlung des Gründungskapitals, die Formulierung von Statuten und Lieferung von Identifikationsdokumenten. 
 
---- Status und Transaktionen erzählen ---
-
-	- Amira sammelt Informationen, Belege gem. den Vorgaben die aus der Orientierung hervorgegangen sind. —> Unvollständig (in Vorbereitung) 
-	- Amira hat sich durch die Gründungsdokumente geackert und hat alles beisammen und geht zum Notar —> Beurkundet 
-	- Der Notar reicht für Amira die Daten beim kantonalen Handelregisteramt. 
-	—> eingereicht 
-Bei Erfolg … bei negativer Feedback … 
-
-<> Tabelle der Geschäftstransaktionen 
-
+Alles, was Amira Schritt für Schritt vorbereitet wird entsprechend im Gründungsvorhaben festgehalten - respektive kann dort hochgeladen und dokumentiert werden. 
+So stehen alle Informationen in GastroStart zur Verfügung und können jederzeit inhaltlich und formell validiert werden. 
+Wenn die Checkliste für die Gründung des *Unternehmens* erfolgreich durchgearbeitet worden ist, kann Amira ein Termin beim Notar abmachen und dort die nötigen offiziellen Schritte: die öffentliche Beurkundung durch den Notar und die darauffolgende Anmeldung beim kantonalen Handelsregister. 
+Diese Schritte sind notwendig, damit das Unternehmen überhaupt rechtlich existiert und als solches von den Behörden und Wirtschaftspartner anerkannt werden kann, beispielsweise um eine Betriebsbewilligung und eine Finanzierung zu erhalten. 
 
 Die folgende Abbildung stellt die Zusammenhänge der Geschäftsobjekte, Zustände und Transaktionen im ressourcenunabhängigen Modell nach Archimate dar. 
 Die abgebildete Variante erwähnt noch die Möglichkeiten des Abbruches der Firmengründung durch Amira oder dass die kantonale Behörde den Eintrag ins Handelsregister nicht vornimmt. 
@@ -723,13 +709,85 @@ Die abgebildete Variante erwähnt noch die Möglichkeiten des Abbruches der Firm
   caption: [Geschäftstransaktionen und Zustände - Szenario Amira gründet ihr Unternehmen]
 ) <fig-GTZ-Amira-gründet>
 
-1. Zustände
+Nachfolgend wird auf die einzelnen Elemente der Grafik erklärt:
 
-neu, beurkundet, eingereicht, unvollständig, angenommen, abgelehnt, im Handelsregister eingetragen, abgebrochen.
-      
-Lebenszyklus: von _neu_ über _beurkundet_ zu _eingereicht_ für die Prüfung durch die Behörden; bei fehlenden Angaben _unvollständig_, nach Nachreichung wieder _eingereicht_. Nach dem Erreichen des Status _eingereicht_ geht es je nach Behördenentscheid mit dem Status _abgelehnt_ zum Ende, während bei behördlicher Zustimmung die Status _angenommen_ und _im Handelsregister eingetragen_ erreicht werden. Der Status _abgebrochen_ beendet den Zyklus vorzeitig, solange der Status _eingereicht_ noch nicht erreicht worden ist.
++ *Geschäftsobjekt*: 
+#figure(
+image("../assets/GOUnternehmen.svg", width: 50%),
+caption: [Geschäftsobjekt Unternehmen und dessen Zustände]
+) <fig-GOUnternehmen>
 
-2. Geschäftstransaktionen
+#figure(
+  caption: [Geschäftsobjekt Unternehmen],
+  block(
+    width: 100%,
+    radius: 6pt,
+    clip: true,
+    stroke: 0.5pt + luma(225),
+  )[
+    // Kopfzeile als abgerundetes Band
+    #block(
+      width: 100%,
+      fill: luma(70),
+      inset: (x: 10pt, y: 7pt),
+      below: 0pt,
+    )[
+      #grid(
+        columns: (3.2cm, 1fr),
+        gutter: 10pt,
+        text(fill: white, weight: "bold", size: 0.95em)[Angabe],
+        text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
+      )
+    ]
+    #set par(justify: false)
+    #table(
+      columns: (3.2cm, 1fr),
+      inset: (x: 10pt, y: 7pt),
+      stroke: (x: none, y: 0.5pt + luma(232)),
+      fill: (x, y) => if calc.even(y) { luma(250) } else { white },
+      align: (left, left),
+
+      [Bezeichnung],
+      [Unternehmen],
+
+      [Definition / Zweck],
+      [
+        Repräsentiert die zu gründende resp. gegründete juristische Person, an der Amiras Gründungsvorhaben ausgerichtet ist.
+        Das Geschäftsobjekt enthält die wesentlichen Stammdaten der Unternehmung. 
+        Der Gründungsverlauf selbst wird nicht als Inhalt abgebildet, sondern ist über die Zustände des Objekts nachzuvollziehen.
+       /* Die Gründung einer juristischen Person setzt voraus, dass mindestens ein Vertreter Wohnsitz in der Schweiz hat. */
+       Die juristische Person ist Empfängerin der Betriebsbewilligung. 
+      ],
+
+      [Attribute],
+      [Auf Ebene Geschäftsobjekt nicht ausmodelliert. Fachlich relevant wären jedoch: 
+      + Auf die eine Seite Informationen wie Rechtsform, Firmenname, Sitz / Domizil, Zweck, Kapital.
+      + Auf der anderen Seite Identifikatoren für die Interaktion zu den verschiedenen öffentlich-rechtlichen Akteure auf kantonale und Bundesebene wie Unternehmens-ID, Mehrwertsteuer-Nummer, AHV-Nummer, Nummer der Unfallversicherungspolice (SUVA oder private Versicherung).
+    
+        _(nur Stammdaten; zugehörige Dokumente wie Handelsregistereintrag oder Bewilligung sind eigene Objekte, siehe Beziehungen)_
+      ],
+
+      [Beziehungen],
+      [
+        - wird referenziert von *Gründungsvorhaben* (wobei die Gründung der juristischen Person nicht zwingend notwendig ist)
+        - steht in Beziehung zu 
+         - *Kundenkonto*: als Objekt des Gründungsvorhabens
+         - *Bewilligung*: als Empfänger
+         - *Lieferantenkonto* als Kunde und Debitor von Transgourmet
+         - und *Finanzierung*: als Empfänger der Mittel
+        - Zugriff über die Geschäftstransaktionen 
+          - Gründungsdokumentation vorbereiten, Eintrag im Handelsregister beantragen, Antrag prüfen, im Handelsregister eintragen und Unterlagen nachreichen (siehe @tbl-GT-Unternehmen-gründen). 
+      ],
+    
+    )
+  ]
+) <tbl-GO-Unternehmen>
+
++ *Zustände*: neu, beurkundet, eingereicht, unvollständig, angenommen, abgelehnt, im Handelsregister eingetragen, abgebrochen.
+
++ *Lebenszyklus*: von _neu_ über _beurkundet_ zu _eingereicht_ für die Prüfung durch die Behörden; bei fehlenden Angaben _unvollständig_, nach Nachreichung wieder _eingereicht_. Nach dem Erreichen des Status _eingereicht_ geht es je nach Behördenentscheid mit dem Status _abgelehnt_ zum Ende, während bei behördlicher Zustimmung die Status _angenommen_ und _im Handelsregister eingetragen_ erreicht werden. Der Status _abgebrochen_ beendet den Zyklus vorzeitig, solange der Status _eingereicht_ noch nicht erreicht worden ist. 
+
++ *Geschäftstransaktionen*: 
 Amira möchte eine Gesellschaft mit beschränkter Haftung gründen, um sich und ihre Familie finanziell vor einem möglichen Misserfolg ihres Unternehmens zu schützen. 
 Das Geschäftsobjekt Unternehmen durchläuft mehrere Transaktionen: 
 - In einer ersten Phase ist Amira in Führung: sie _bereitet_  mit der Hilfe von Informationen und Fachfunktionen auf GastroStart die _Unterlagen_ für die Gründung der "Food Affair GmbH _vor_. Nach der öffentlichen Beurkundung _beantragt_ sie den _Eintrag im Handelsregister_ für ihre GmbH. 
@@ -786,13 +844,85 @@ transaktion],
   - Transaktionen
 */
 === Amira erhält die Bewilligung
-Nach der Gründung ihrer Firma, beantragt Amira die Betriebsbewilligung 
+
+Nach der Gründung ihrer GmbH, die übrigens "Amiras' FoodAffairs GmbH" heisst, kann unsere Heldin den nächsten Hürdenlauf vornehmen. 
+So wie mit der Gründung des Unternehmens bereits erfolgt, unterstützt GastroStart Amira dabei, alle Unterlagen, Bestätigungen und Nachweise vorzubereiten oder einzuholen, die für die Erteilung der Betriebsbewilligung durch die zuständige Behörde am gewählten Standort gefordert sind. 
+
+GastroStart gibt Amira über jedes Lieferobjekt Auskunft, zeigt auf, wo welcher Nachweis einholt werden kann.
+Dank GastroStart kann Amira der Sinn hinter jeder behördlichen Anforderung nachvollziehen, und die motiviert sie bei der zeitaufwändigen Zusammenstellung. Denn die Anforderungen an die Erteilung der Betriebsbewilligung dienen dem Schutz der Gäste, denn die Vorschriften decken Bereiche ab wie Hygiene und Lebensmittelsicherheit, Bau- und Brandschutz und nicht zuletzt die persönliche Eignung von Amira für die Führung des Caterings. 
+
+Bemerkung: Eigentlich ist nicht Amira die Empfängerin der Betriebsbewilligung für das Catering, sondern diese wird ihrer FoodAffairs GmbH ausgestellt.
+
+Die folgende Abbildung stellt die Zusammenhänge der Geschäftsobjekte, Zustände und Transaktionen im ressourcenunabhängigen Modell nach Archimate dar. 
+
  #figure(
   image("../assets/GTZ Amira erhält die Bewilligung.svg", width: 100%),
-  caption: [Geschäftstransaktionen und Zustände - Szenario Amira erhält die Bewilligung]
+  caption: [Geschäftstransaktionen und Zustände - Szenario "Amira erhält die Bewilligung"]
 ) <fig-GTZ-Amira-bewilligung>
 
-1. Zustände
+Nachfolgend wird auf die einzelnen Elemente der Grafik erklärt:
+
+± *Geschäftsobjekt*:
+#figure(
+image("../assets/GOBewilligung.svg", width: 50%),
+caption: [Geschäftsobjekt Bewilligung und dessen Zustände]
+) <fig-GOBewilligung>
+
+#figure(
+  caption: [Geschäftsobjekt Bewilligung],
+  block(
+    width: 100%,
+    radius: 6pt,
+    clip: true,
+    stroke: 0.5pt + luma(225),
+  )[
+    // Kopfzeile als abgerundetes Band
+    #block(
+      width: 100%,
+      fill: luma(70),
+      inset: (x: 10pt, y: 7pt),
+      below: 0pt,
+    )[
+      #grid(
+        columns: (3.2cm, 1fr),
+        gutter: 10pt,
+        text(fill: white, weight: "bold", size: 0.95em)[Angabe],
+        text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
+      )
+    ]
+    #set par(justify: false)
+    #table(
+      columns: (3.2cm, 1fr),
+      inset: (x: 10pt, y: 7pt),
+      stroke: (x: none, y: 0.5pt + luma(232)),
+      fill: (x, y) => if calc.even(y) { luma(250) } else { white },
+      align: (left, left),
+
+      [Bezeichnung],
+      [Bewilligung],
+
+      [Definition / Zweck],
+      [Stellt ein behördlicher "Vertrag" dar, welcher einer natürlichen oder juristischen Person (_in casu_ dem Unternehmen von Amira) erteilt werden kann.
+      Die Erteilung der Bewilligung setzt je nach Kanton ein Fähigkeitsausweis voraus. In Kanton Fribourg muss mindestens eine Person im Betrieb ein Wirtepatent besitzen.],
+            [Attribute],
+      [/*REDEwendung von Adrian übernehmen*/fachlich relevante Informationen zum Geschäftsobjekt sind: Typ (mit oder ohne Alkoholausschank), unterliegendes Wirtepatent (insbesondere dessen territoriale Gültigkeit), Standort bzw. Lokal, Datum Bewilligungsbeginn, erteilende Behörde, Datum der Anmeldung bei der kantonalen Lebensmittelbehörde bzw. -labor, Hygienekonzept],
+
+      [Beziehungen],
+      [- wird referenziert von *Gründungsvorhaben* // sagt man das so? ist das korrekt?
+        - steht in Beziehung zu *Unternehmen* als Adressat
+        - Zugriff über die Geschäftstransaktionen 
+          - Bewilligungsantrag vorbereiten, Bewilligungsantrag einreichen, Bewilligungsantrag vervollständigen, Antrag prüfen, Verfügung mitteilen (siehe @tbl-GT-Bewilligung). ],
+    )
+  ]
+) <tbl-GO-Bewilligung>
+
++ *Zustände*: neu, in Vorbereitung, eingereicht, unvollständig, abgelehnt, erteilt, abgebrochen. 
+
++ *Lebenszyklus*: von _neu_ über _in Vorbereitung_ zu _eingereicht_ für die Prüfung durch die Behörden; bei fehlenden Angaben _unvollständig_, nach Nachreichung wieder _eingereicht_. Nach dem Erreichen des Status _eingereicht_ geht es je nach Behördenentscheid mit dem Status _abgelehnt_ zum Ende, während bei behördlicher Zustimmung der Status _erteilt_ erreicht wird. Der Status _abgebrochen_ beendet den Zyklus vorzeitig, solange der Status _eingereicht_ noch nicht erreicht worden ist.
+
+Andere Zustände wie erloschen, entzogen, sistiert, sind für die abgebildete Customer Journey nicht relevant.
+
+#design-entscheid([Wir haben uns entschieden, die Frage um das Schicksal des Objekts "Bewilligung" im Fall der Löschung des Benutzerprofils von Amira offenzulassen.])
 /*
 #figure(
 image("../assets/ZustandGOBewilligung-2.svg", width: 60%),
@@ -808,7 +938,7 @@ Andere Zustände wie erloschen, entzogen, sistiert, sind für die abgebildete Cu
 #design-entscheid([Wir haben uns entschieden, die Frage um das Schicksal des Objekts "Bewilligung" im Fall der Löschung des Benutzerprofils von Amira offenzulassen.])
  
  
-2. Geschäftstransaktionen
+ + *Geschäftstransaktionen*:
 Amira möchte beantragt im Namen ihres Unternehmens die Bewilligung für den Betrieb von Catering.
 Das Geschäftsobjekt Bewilligung durchläuft mehrere Transaktionen: 
 - In einer ersten Phase ist Amira in Führung: sie _bereitet_  mit der Hilfe der Informationen auf Gastrostart die _Unterlagen_ für den Bewilligungsantrag _vor_. Wenn sie alle Unterlagen gesammelt hat, _reicht_ sie den _Bewilligungsantrag_ bei der zuständigen Behörde _ein_. 
