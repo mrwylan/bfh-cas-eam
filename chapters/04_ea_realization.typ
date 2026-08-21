@@ -329,7 +329,7 @@ caption: [Geschäftsobjekt Finanzierung und dessen Zustände]
       [- #emph[Gründungsvorhaben] ist mit der Finanzierung assoziiert (löst das Gesuch aus).
       - Die Finanzierung ist mit der #emph[Bewilligung] assoziiert (Bewilligungsstand als Voraussetzung).
       - Das #emph[Unternehmen] ist mit der Finanzierung assoziiert (Empfänger der Mittel).
-      - Zugriff durch die Geschäftstransaktionen #emph[Finanzierung anfordern], #emph[Finanzierung prüfen] und #emph[Finanzierung vorbereiten] (siehe @tbl-GT-finanzierung-erhalten).],
+      - Zugriff durch alle vier Geschäftstransaktionen: #emph[Finanzierung vorbereiten], #emph[Finanzierung anfordern], #emph[Finanzierung prüfen] und #emph[Finanzierung zusagen]. Die letzte greift zusätzlich auf das #emph[Gründungsvorhaben] zu, dessen Zustand sie auf #emph[finanziert] setzt (siehe @tbl-GT-finanzierung-erhalten).],
     )
   ]
 ) <tbl-GO-Finanzierung>
@@ -869,10 +869,11 @@ Das Geschäftsobjekt Bewilligung durchläuft mehrere Transaktionen:
 /*Amira erhält eine Finanzierung*/
 
 === Amira erhält eine Finanzierung
-Nachdem Amira die Betriebsbewilligung erhalten hat, benötigt sie Kapital für die Erstanschaffungen. In dieser Phase übernimmt FINNOFLEET: Amira stellt über GastroStart ein Finanzierungsgesuch, das anhand ihrer Angaben und einer Bonitätsprüfung beurteilt wird. Das Geschäftsobjekt #emph[Finanzierung] durchläuft dabei drei Geschäftstransaktionen.
+Nachdem Amira die Betriebsbewilligung erhalten hat, benötigt sie Kapital für die Erstanschaffungen. In dieser Phase übernimmt FINNOFLEET: Amira stellt über GastroStart ein Finanzierungsgesuch, das anhand ihrer Angaben und einer Bonitätsprüfung beurteilt wird. Das Geschäftsobjekt #emph[Finanzierung] durchläuft dabei vier Geschäftstransaktionen. Die letzte davon überschreitet die Objektgrenze: Sie schliesst den Finanzierungsfall ab und versetzt das #emph[Gründungsvorhaben] in den Zustand #emph[finanziert].
 
-+ Zustände: neu, angefordert, unvollständig, vollständig, angenommen, abgelehnt, abgebrochen (siehe @tbl-GO-Finanzierung).
-+ Geschäftstransaktionen: Finanzierung vorbereiten, Finanzierung anfordern, Finanzierung prüfen.
++ Zustände der Finanzierung: neu, angefordert, unvollständig, vollständig, angenommen, abgelehnt, abgebrochen (siehe @tbl-GO-Finanzierung).
++ Zustand des Gründungsvorhabens: finanziert (siehe #ref(<tbl-GO-Gründungsvorhaben>)).
++ Geschäftstransaktionen: Finanzierung vorbereiten, Finanzierung anfordern, Finanzierung prüfen, Finanzierung zusagen.
 
 #figure(
   image("../assets/GTZ Amira erhält eine Finanzierung.svg", width: 100%),
@@ -880,7 +881,7 @@ Nachdem Amira die Betriebsbewilligung erhalten hat, benötigt sie Kapital für d
 ) <fig-GTZ-finanzierung>
 
 #figure(
-  caption: [Geschäftstransaktionen: Prozess «Finanzierung erhalten»],
+  caption: [Geschäftstransaktionen der Phase «Amira erhält eine Finanzierung»],
   block(
     width: 100%,
     radius: 6pt,
@@ -920,8 +921,12 @@ transaktion],
       [vollständig → angefordert],
 
       [Finanzierung prüfen],
-      [FINNOFLEET führt die Bonitätsprüfung durch und entscheidet über das Gesuch. Bei fehlenden Nachweisen wird der Fall als unvollständig zurückgewiesen; andernfalls wird er angenommen oder abgelehnt. Die Annahme löst das Ereignis #emph[finanziert] aus.],
+      [FINNOFLEET führt die Bonitätsprüfung durch und entscheidet über das Gesuch. Bei fehlenden Nachweisen wird der Fall als unvollständig zurückgewiesen; andernfalls wird er angenommen oder abgelehnt.],
       [angefordert → angenommen / abgelehnt / unvollständig],
+
+      [Finanzierung zusagen],
+      [FINNOFLEET sagt die angenommene Finanzierung verbindlich zu, eröffnet das Geschäftskonto und stellt die IBAN bereit. Die Transaktion greift auf beide Objekte zu: sie schliesst den Finanzierungsfall ab und setzt den Zustand #emph[finanziert] auf dem #emph[Gründungsvorhaben].],
+      [angenommen → finanziert (Gründungsvorhaben)],
     )
   ]
 ) <tbl-GT-finanzierung-erhalten>
@@ -1055,10 +1060,26 @@ Unternehmen bei Behörde anmelden
 
 === Geschäftsprozess Finanzierung erhalten
 
-#todo-action([\@ Adi: bitte erarbeiten.])
+#figure(
+  image("../assets/GP Amira erhält eine Finanzierung.svg", width: 100%),
+  caption: [Geschäftsprozesse - Szenario Amira erhält eine Finanzierung]
+) <GP_Amira_erhaelt_Finanzierung>
 
-1. Geschäftsprozesse 
-2. Abhängigkeiten von Geschäftsobjekten 
+1. Geschäftsprozesse
+
+Die vier Geschäftstransaktionen der Phase (siehe @tbl-GT-finanzierung-erhalten) aggregieren zu zwei Geschäftsprozessen. Die Trennlinie liegt dort, wo die Verantwortung wechselt: solange Amira ihr Gesuch aufbaut und einreicht, liegt der Fall bei ihr; ab der Beurteilung liegt er bei FINNOFLEET.
+
+Finanzierung initiieren
+umfasst die Geschäftstransaktionen #emph[Finanzierung vorbereiten] und #emph[Finanzierung anfordern]. Der Prozess führt das Geschäftsobjekt #emph[Finanzierung] von #emph[neu] über #emph[vollständig] nach #emph[angefordert] und endet mit der Übergabe des Gesuchs an FINNOFLEET. Wichtig ist die Schleife über #emph[unvollständig]: fehlende Nachweise führen zurück in die Vorbereitung, ohne dass der Fall verloren geht; #emph[abgebrochen] beendet ihn vorzeitig. Dieser Prozess gehört fachlich zu GastroStart, weil hier die Kundeninteraktion stattfindet.
+
+Finanzierung erhalten
+umfasst die Geschäftstransaktionen #emph[Finanzierung prüfen] und #emph[Finanzierung zusagen]. Der Prozess führt die Finanzierung von #emph[angefordert] nach #emph[angenommen] --- oder nach #emph[abgelehnt], respektive bei fehlenden Nachweisen zurück nach #emph[unvollständig]. Mit der Zusage wechselt der Zustand die Objektgrenze: nicht die Finanzierung, sondern das #emph[Gründungsvorhaben] wird #emph[finanziert]. Er ist der eigentliche Beitrag von FINNOFLEET zum Joint Venture und der Punkt, an dem aus Amiras Gründungsvorhaben ein finanziertes Unternehmen wird. Beide Prozesse zusammen realisieren die Geschäftsfähigkeit #emph[Gründungsvorhaben finanzieren], die im Abschnitt «Geschäftsfähigkeiten Finanzierung erhalten» in Teilfähigkeiten zerlegt wird.
+
+2. Abhängigkeiten von Geschäftsobjekten
+
+- #emph[Finanzierung] --- das zentrale Objekt beider Prozesse: alle vier Geschäftstransaktionen greifen darauf zu, und die Zustände des Objekts sind die Fortschrittsanzeige des Gesamtprozesses (siehe @tbl-GO-Finanzierung).
+- #emph[Gründungsvorhaben] --- fachlicher Auslöser und Empfänger des Prozessergebnisses: die abschliessende Transaktion #emph[Finanzierung zusagen] greift auch auf dieses Objekt zu und versetzt es in den Zustand #emph[finanziert]. Sie ist damit die einzige Transaktion der Phase, die auf zwei Geschäftsobjekte wirkt.
+- Indirekt, über das Objektmodell der Finanzierung: #emph[Bewilligung] als Voraussetzung (ohne Betriebsbewilligung kein Gesuch) und #emph[Unternehmen] als Empfänger der Mittel und Inhaber des Geschäftskontos.
 
 === Geschäftsfähigkeiten Kunde bei Transgourmet werden
 #todo-action([\@ Jakob: bitte erarbeiten])
@@ -1105,7 +1126,7 @@ Unternehmen bei Behörde anmelden
 
 === Geschäftsfähigkeiten Finanzierung erhalten
 
-Die übergeordnete Geschäftsfähigkeit lautet *Gründungsvorhaben finanzieren*. Sie wird von FINNOFLEET getragen und in fünf Teilfähigkeiten zerlegt:
+Die übergeordnete Geschäftsfähigkeit lautet *Gründungsvorhaben finanzieren*. Sie wird im Joint Venture arbeitsteilig getragen: FINNOFLEET verantwortet den Finanzierungskern --- Prüfung, Entscheid und Kontobereitstellung ---, während die kundenzugewandte Antragserfassung bei GastroStart liegt. Die Fähigkeit zerfällt in vier Teilfähigkeiten:
 
 1. Finanzierungsantrag-Management
 • Erfassung des Finanzierungsgesuchs mit Betrag, Verwendungszweck und Laufzeit.
@@ -1126,12 +1147,12 @@ Die übergeordnete Geschäftsfähigkeit lautet *Gründungsvorhaben finanzieren*.
 • Eröffnung des Geschäftskontos nach positivem Entscheid.
 • Vergabe der IBAN als Grundlage für den späteren Zahlungsverkehr.
 
-5. Finanzierungskommunikation
-• Transparente Rückmeldung des Scoring-Ergebnisses an die Kundin.
-• Verweis auf alternative Förderprogramme im Fall einer Absage.
+*Zuordnung zu den Geschäftsprozessen.* Teilfähigkeit 1 stützt den Prozess *Finanzierung initiieren* und liegt bei GastroStart, weil dort die Kundeninteraktion stattfindet. Die Teilfähigkeiten 2 bis 4 stützen den Prozess *Finanzierung erhalten* und liegen damit bei FINNOFLEET (siehe @GP_Amira_erhaelt_Finanzierung).
+
+Die letzten beiden Punkte von Teilfähigkeit 3 --- verständliche Begründung und Verweis auf Förderprogramme --- leiten sich aus der Chance des Szenarios #emph[Amira erhält eine Finanzierung] ab (siehe @tbl-szenario-finanzierung) und beschreiben einen Soll-Zustand. Bewusst nicht als eigene Geschäftsfähigkeit geführt wird die Kommunikation dieses Entscheids: Wie das Ergebnis Amira präsentiert wird, ist eine Frage der Kanäle und Interaktionskomponenten und gehört damit ins RSM, nicht in die ressourcenunabhängige Fähigkeitsstruktur.
 
 // Optionale Grafik: bei Bedarf ein Capability-View "Gründungsvorhaben finanzieren"
-// in Archi anlegen (fünf Teilfähigkeiten, Composition), als assets/GF_Finanzierung.svg
+// in Archi anlegen (vier Teilfähigkeiten, Composition), als assets/GF_Finanzierung.svg
 // exportieren und als #figure einfügen (analog zu "GF Behördeninteration.svg").
 
 === Geschäftsfähigkeiten Kunde bei Transgourmet werden
@@ -1235,7 +1256,7 @@ Ross, Weill und Robertson unterscheiden vier Operating Models entlang der beiden
 Aus dieser Klassifikation leitet sich ab, wie viel Integration eine Architektur tragen muss und wo Autonomie zulässig bleibt.
 
 #figure(
-  caption: [Operating-Model-Matrix nach Ross, Weill und Robertson @ross2006enterprise mit Verortung der Transgourmet-B2B-Belieferung (Unification) und der übergreifenden Customer Journey (Federation)],
+  caption: [Operating-Model-Matrix nach Ross, Weill und Robertson @ross2006enterprise[Abb. 2-1, S. 30] mit Verortung der Transgourmet-B2B-Belieferung (Unification) und der übergreifenden Customer Journey (Federation). Matrix #sym.copyright 2005 MIT Sloan Center for Information Systems Research, mit Genehmigung verwendet.],
   image("../assets/operating_model_matrix_mit_federation_layer.svg", width: 92%),
 ) <fig-operating-model-matrix-with-federation-layer>
 
@@ -1280,20 +1301,157 @@ M])
 
 == Operating Model für FINNOFLEET
 
-#autor-finnofleet("Beitrag von Adrian Anghel, FINNOFLEET", inhalt: [Hello World! /*Abstract*/])
+#autor-finnofleet("Beitrag von Adrian Anghel, FINNOFLEET", inhalt: [
+  FINNOFLEET bringt in GastroStart die Finanzierung ein --- einen einzigen,
+  spezialisierten Schritt der Customer Journey, der aber über jeden Kanal
+  hinweg als eine durchgängige Kundenerfahrung erbracht werden muss.
 
-#todo-action([Adrian bitte die übung für Finnofleet hier schreiben 
+  Damit stellt sich zuerst die Frage, wo dieser Schritt sein Operating Model
+  überhaupt hat: im Softwarehaus, das das Produkt baut, oder im Institut, das
+  es betreibt.
+])
 
-Referenz: es geht um [EAasStrat]
-1. Was ist der Stand betreffend Integration von Prozessen und Standardisierung von Daten 
-für Ihr Unternehmen und für die Customer Journey (siehe [EAasStrat]).
-2. Wählen Sie ein Operating Model für Ihr Unternehmen und begründen Sie Ihre Wahl 
-(siehe [EAasStrat]).
-Bemerkung: bei der Begründung die Rolle, die Ihr Unternehmen im Kontext der 
-Customer Journey wahrnimmt, berücksichtigen.
-3. Aufgrund der Wahl in 1) zeichnen (und erklären) Sie die Enterprise Architecture dazu.
- Abgabe der nächsten Iteration bis am Montag 06:00
-M])
+Betrachtet wird nicht das Softwarehaus FINNOFLEET, sondern das Operating Model, das sein Produkt beim Kunden durchsetzt: die Kreditanbahnung einer Bank mit *ELA Kredit*. Diese Perspektive ist die für GastroStart relevante, denn genau diese Fähigkeit bringt FINNOFLEET als Finanzierungspartner in das Joint Venture ein (siehe @GP_Amira_erhaelt_Finanzierung).
+
+=== Ist-Zustand: Standardisierung der Prozesse und Integration der Daten
+
+*Integration der Daten --- hoch.* ELA Kredit ist um ein zentrales Backend als Single Source of Truth gebaut; die Daten werden konsolidiert und über alle Kanäle hinweg verfügbar gehalten. Dieselben Kunden- und Antragsdaten fliessen von der Beratung in Vorprüfung, Scoring und Entscheiddossier und weiter in die umliegenden Systeme (Kernbankensystem, Auskunfteien, Bewertungsdaten). Ein Antrag entspricht einem gemeinsamen Datenfall über Kanäle und Funktionen hinweg.
+
+*Standardisierung der Geschäftsprozesse --- hoch.* Das Produkt erzwingt einen strukturierten Anbahnungsprozess für jeden Falltyp --- Neugeschäft, Refinanzierung, Mutation und Verlängerung, für Privat- und Firmenkunden --- unter einheitlichen regulatorischen Regeln (Richtlinien der SBVg, Anforderungen der FINMA). Schnittstellen werden einmal angebunden und systemweit genutzt, was redundante Daten und inkonsistente Prozessvarianten vermeidet.
+
+Der Ist-Zustand entlang der Journey ist somit ein standardisierter Omnichannel-Anbahnungsprozess auf einem gemeinsamen Datenkern, der bewusst in die bestehenden Kernsysteme der Bank integriert wird --- und diese nicht ersetzt.
+
+=== Wahl des Operating Models: Unification
+
+#fuehrung([When organizational units are tightly integrated around a standardized set of processes, companies benefit from a *Unification* model. Companies applying this model find little benefit in business unit autonomy. They maximize efficiencies and customer services by presenting integrated data and driving variability out of business processes. @ross2006enterprise[S. 37 f.]])
+
+Der Fall fällt damit unter das Operating Model *Unification*. Die drei übrigen Quadranten wurden geprüft und verworfen:
+
+#figure(
+  caption: [Prüfung der vier Operating Models nach Ross, Weill und Robertson @ross2006enterprise für die Kreditanbahnung mit ELA Kredit],
+  block(
+    width: 100%,
+    radius: 6pt,
+    clip: true,
+    stroke: 0.5pt + luma(225),
+  )[
+    #block(
+      width: 100%,
+      fill: luma(70),
+      inset: (x: 10pt, y: 7pt),
+      below: 0pt,
+    )[
+      #grid(
+        columns: (3.4cm, 1fr),
+        gutter: 10pt,
+        text(fill: white, weight: "bold", size: 0.95em)[Operating Model],
+        text(fill: white, weight: "bold", size: 0.95em)[Beurteilung],
+      )
+    ]
+    #set par(justify: false)
+    #table(
+      columns: (3.4cm, 1fr),
+      inset: (x: 10pt, y: 7pt),
+      stroke: (x: none, y: 0.5pt + luma(232)),
+      fill: (x, y) => if calc.even(y) { luma(250) } else { white },
+      align: (left, left),
+
+      [Diversification],
+      [Verworfen. Wenige gemeinsame Kunden, unabhängige Transaktionen, kaum Datenstandards --- das Gegenteil eines Omnichannel-Single-Source-of-Truth.],
+
+      [Replication],
+      [Verworfen. Standardisiert, aber mit lokal gehaltenen Daten je isolierter Einheit oder Filiale. ELA Kredit zentralisiert die Daten in einem Backend, die Kanäle sind daher nicht datenisoliert.],
+
+      [Coordination],
+      [Verworfen. Würde passen, wenn die Kanäle Kundendaten teilten, aber unterschiedliche Anbahnungsprozesse führten. ELA Kredit führt einen standardisierten Prozess, damit ist Coordination zu locker.],
+
+      [Unification],
+      [*Gewählt.* Ein Prozess, ein Datenkern, zentral gesetzte Regeln.],
+    )
+  ]
+) <tbl-OM-quadranten-ela>
+
+Die Begründung ist unmittelbar an die Rolle in der Customer Journey gebunden:
+
+- Die Bank besetzt einen einzigen spezialisierten Schritt --- die Kreditanbahnung ---, muss ihn aber über alle Kanäle hinweg als eine konsistente Kundenerfahrung liefern. Diese geteilte Erfahrung verlangt hohe Integration.
+- Jeder Anbahnungsfall folgt unabhängig von Kanal und Produktvariante demselben regulierten Prozess und Datenmodell, was hohe Standardisierung verlangt.
+- Hohe Integration und hohe Standardisierung zusammen ergeben den Unification-Quadranten.
+
+_Anmerkung zum Architekturstil:_ ELA Kredit setzt auf eine lose gekoppelte Architektur, in der Komponenten unabhängig arbeiten und dennoch intelligent vernetzt bleiben. Die lose technische Kopplung schwächt die Einordnung nicht ab: Auf der Ebene der Geschäftsprozesse und Daten bleibt es Unification (geteilte Daten, standardisierter Prozess): die lose Kopplung ist lediglich der Implementierungsstil, der das Modell flexibel hält.
+
+#figure(
+  caption: [Merkmale des Unification-Modells nach Ross, Weill und Robertson @ross2006enterprise[Abb. 2-1, S. 30] --- übersetzt --- und ihre Ausprägung im Fall der Kreditanbahnung mit ELA Kredit. Merkmale #sym.copyright 2005 MIT Sloan Center for Information Systems Research, mit Genehmigung verwendet.],
+  block(
+    width: 100%,
+    radius: 6pt,
+    clip: true,
+    stroke: 0.5pt + luma(225),
+  )[
+    #block(
+      width: 100%,
+      fill: luma(70),
+      inset: (x: 10pt, y: 7pt),
+      below: 0pt,
+    )[
+      #grid(
+        columns: (1fr, 1fr),
+        gutter: 10pt,
+        text(fill: white, weight: "bold", size: 0.95em)[Merkmal (Matrix)],
+        text(fill: white, weight: "bold", size: 0.95em)[Ausprägung im Fall],
+      )
+    ]
+    #set par(justify: false)
+    #table(
+      columns: (1fr, 1fr),
+      inset: (x: 10pt, y: 7pt),
+      stroke: (x: none, y: 0.5pt + luma(232)),
+      fill: (x, y) => if calc.even(y) { luma(250) } else { white },
+      align: (left, left),
+
+      [Kunden und Lieferanten können lokal oder global sein],
+      [Privat- und Firmenkunden werden über alle Kanäle konsistent bedient],
+
+      [Global integrierte Geschäftsprozesse, häufig gestützt auf Enterprise-Systeme],
+      [Ein Anbahnungsprozess, integriert über Filiale, Beraterarbeitsplatz und Online-Portal, auf Unternehmenssoftware],
+
+      [Geschäftseinheiten mit ähnlichen oder überlappenden Tätigkeiten],
+      [Alle Kanäle erfüllen dieselbe Anbahnungsfunktion --- überlappend, nicht getrennt],
+
+      [Zentralisierte Führung, häufig mit Funktions-, Prozess- und Geschäftseinheitsmatrizen],
+      [Der Prozess wird zentral unter einem Operating Model geführt],
+
+      [Prozessverantwortliche auf oberer Ebene entwerfen standardisierte Prozesse],
+      [Ein strukturierter Anbahnungsprozess für alle Falltypen (Neugeschäft, Refinanzierung, Mutation, Verlängerung)],
+
+      [Zentral vorgegebene Datenbanken],
+      [Zentrales Backend als Single Source of Truth; Schnittstellen einmal angebunden und systemweit genutzt],
+
+      [IT-Entscheide werden zentral getroffen],
+      [Architektur, Schnittstellen (Finnova/Avaloq, CRIF/ZEK, IAZI/Terravis) und Regelwerke (SBVg/FINMA) werden zentral verantwortet],
+    )
+  ]
+) <tbl-OM-unification-merkmale>
+
+=== Enterprise Architecture zur getroffenen Wahl
+
+Die folgende Architektur zeigt ELA Kredit konkret. Die Kanäle gehören der Bank und bringen keine eigene Prozesslogik mit: Sie rufen dieselben APIs auf. Dahinter liegen der standardisierte Anbahnungsprozess und ein zentrales Backend als Single Source of Truth, das in die bestehenden Systeme der Bank integriert ist und diese nicht ersetzt --- alles unter einem einzigen regulatorischen Regelwerk.
+
+#figure(
+  image("../assets/EA_ELA_Kredit_Unification.svg", width: 92%),
+  caption: [Enterprise Architecture der Kreditanbahnung mit ELA Kredit: Die Kanäle der Bank treffen an einer gemeinsamen API-Grenze auf denselben standardisierten Anbahnungsprozess (Standardisierungsachse) und dasselbe zentrale Backend (Integrationsachse). Die Bestandssysteme sind bidirektional angebunden, nicht ersetzt; die Governance spannt sich über alle Schichten.],
+) <fig-EA-ela-kredit>
+
+Von oben nach unten gelesen:
+
+- *Kanalschicht*: Alle Eintrittspunkte rufen dieselbe API-Oberfläche auf, statt je eigene Abläufe zu implementieren --- die Omnichannel-Front der Customer Journey. Genau darin liegt die Standardisierung: Ein Kanal kann gar keine abweichende Prozessvariante bilden, weil er keine eigene Logik besitzt.
+- *Prozessschicht*: Ein standardisierter Anbahnungs-Workflow (Beratung → Antrag → Vorprüfung → Entscheidvorbereitung), identisch über Kanäle und Produktvarianten hinweg --- die Standardisierungsachse.
+- *Zentrales Backend*: Der Single Source of Truth; jeder Aufruf liest und schreibt denselben Fall in Echtzeit, unabhängig davon, aus welchem Kanal er kommt; Schnittstellen werden einmal angebunden und wiederverwendet --- die Integrationsachse. Dieser geteilte Kern ist es, der das Modell zu Unification macht.
+- *Integrationsschicht*: ELA Kredit ersetzt die Kernsysteme nicht, sondern dockt an Finnova/Avaloq, CRIF/ZEK, IAZI/Terravis und Dokumentensysteme an --- die Anbahnung als ein spezialisiertes Modul, verdrahtet in die weitere Banklandschaft.
+- *Governance*: Ein regulatorisches Regelwerk (SBVg/FINMA) über den gesamten Prozess --- der Ausdruck hoher Standardisierung auf Führungsebene.
+
+Weil ELA Kredit ausschliesslich die Anbahnung abdeckt, konzentriert sich der architektonische Wert im geteilten Backend und im standardisierten, über APIs konsumierten Prozess. Die Bank erbringt einen einzigen spezialisierten Schritt der Journey --- aber sie erbringt ihn als vereinheitlichten Single-Source-of-Truth-Prozess und nicht als Kanalsilos. Genau das ist das Unification-Operating-Model.
+
+Auf der Ebene des Joint Ventures gilt diese Einordnung nicht: GastroStart verbindet autonome Partner ohne geteilte Prozesse und fällt deshalb unter *Coordination* --- diese Ebene wird im folgenden Abschnitt eingeordnet. Unification gilt innerhalb des Finanzierungsbeitrags, Coordination zwischen den Partnern; die Grenze zwischen den beiden Modellen verläuft genau an der API, über die FINNOFLEET seine Fähigkeit in die Journey einbringt.
 
 == Einordnung von GastroStart und der Akteure des öffentlichen Wesens in das Operating System nach Ross/Weill et al.
 
