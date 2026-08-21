@@ -58,7 +58,7 @@ Folgendes Archimate Modell der Geschäftsobjekte von GastroStart, die von der Gr
   caption: [Geschäftsobjekt Kundenkonto und dessen Zustände]
 ) <fig-IdentifizierteGeschaefstobjetke>
 
-#frage([brauchen wir nicht das Objekt Webseite? hier brauchen wir dieses Objekt nicht - es ist eine RESSOURCE!!!])
+/*#frage([brauchen wir nicht das Objekt Webseite? hier brauchen wir dieses Objekt nicht - es ist eine RESSOURCE!!!])*/
 
 
 #design-entscheid([
@@ -72,59 +72,7 @@ Es wurde verzichtet, das Objekt Person zu modellieren. Die Behandlung von person
 image("../assets/GOKundenkonto.svg", width: 50%),
 caption: [Geschäftsobjekt Kundenkonto und dessen Zustände]
 ) <fig-GOKundenkonto>
-#todo-action([\@Jan: Objektbeschreibung nachführen. . ])
-#figure(
-  caption: [Geschäftsobjekt Kundenkonto],
-  block(
-    width: 100%,
-    radius: 6pt,
-    clip: true,
-    stroke: 0.5pt + luma(225),
-  )[
-    // Kopfzeile als abgerundetes Band
-    #block(
-      width: 100%,
-      fill: luma(70),
-      inset: (x: 10pt, y: 7pt),
-      below: 0pt,
-    )[
-      #grid(
-        columns: (3.2cm, 1fr),
-        gutter: 10pt,
-        text(fill: white, weight: "bold", size: 0.95em)[Angabe],
-        text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
-      )
-    ]
-    #set par(justify: false)
-    #table(
-      columns: (3.2cm, 1fr),
-      inset: (x: 10pt, y: 7pt),
-      stroke: (x: none, y: 0.5pt + luma(232)),
-      fill: (x, y) => if calc.even(y) { luma(250) } else { white },
-      align: (left, left),
 
-      [Bezeichnung],
-      [Kundenkonto],
-
-      [Definition / Zweck],
-      [Zugangsberechtigung eines Kunden (oder: Benutzer) im System „GastroStart“. Dient der Identifizierung einer Person, ihres Betriebs (oder Betriebe) und aller, für die in diesem System abgebildeten Prozesse, notwendigen Dokumente und Daten. ],
-
-      [Attribute],
-      [wie bei Finanzierung ausfüllen],
-
-      [Zustände],
-      [aktiv, inaktiv, aktualisiert, registriert],
-
-      [Beziehungen],
-      [ ],
-    )
-  ]
-) <tbl-GO-Kundenkonto>
-
-#design-entscheid([
-  Wir haben uns die Frage gestellt, ob wir das Objekt "Kunde" auch zusätzlich modellieren sollen. 
-  Wir sind zum Schluss gekommen, dass das Geschäftsobjekt Kundenkonto alle Informationen zum Kunden enthält, weshalb letzteres nicht separat / zusätzlich geführt werden muss.
-])
 
 
 === Unternehmen
@@ -614,6 +562,65 @@ transaktion],
 
 Der Gründungsprozess lässt sich höchstwahrscheinlich nicht in einer Session abschliessen. Nachdem die GründerInnen mit dem Abschluss der ersten Phase eine Übersicht zu ihren Rechten, Pflichten und Möglichkeiten haben, werden sie in den meisten Fällen Gesuche stellen müssen. Das heisst, sie werden Formulare ausfüllen und als Anträge einreichen müssen. Diese Anträge haben eine Bearbeitungsdauer, die sich in den meisten Fällen über mindestens einige Tage erstreckt. Manche GründerInnen werden wahrscheinlich auch Kenntnisse nachweisen und sich dafür möglicherweise sogar schulen lassen müssen. Damit GründerInnen den Prozess auf GastroStart nicht bei jeder Sitzung von vorn beginnen müssen, macht es Sinn, ihr Gründungsvorhaben und dessen aktuellen Stand mit einem Konto zu verknüpfen. Über ihr Konto können sich alle GastroStart-Benutzenden authentifizieren und Aktualisierungen am Gründungsprozess vornehmen oder einsehen.
 
+#figure(
+image("../assets/GOKundenkonto.svg", width: 50%),
+caption: [Geschäftsobjekt Kundenkonto und dessen Zustände]
+) <fig-GOKundenkonto>
+
+#todo-action([\@Jan: Objektbeschreibung nachführen. . ])
+#figure(
+  caption: [Geschäftsobjekt Kundenkonto],
+  block(
+    width: 100%,
+    radius: 6pt,
+    clip: true,
+    stroke: 0.5pt + luma(225),
+  )[
+    // Kopfzeile als abgerundetes Band
+    #block(
+      width: 100%,
+      fill: luma(70),
+      inset: (x: 10pt, y: 7pt),
+      below: 0pt,
+    )[
+      #grid(
+        columns: (3.2cm, 1fr),
+        gutter: 10pt,
+        text(fill: white, weight: "bold", size: 0.95em)[Angabe],
+        text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
+      )
+    ]
+    #set par(justify: false)
+    #table(
+      columns: (3.2cm, 1fr),
+      inset: (x: 10pt, y: 7pt),
+      stroke: (x: none, y: 0.5pt + luma(232)),
+      fill: (x, y) => if calc.even(y) { luma(250) } else { white },
+      align: (left, left),
+
+      [Bezeichnung],
+      [Kundenkonto],
+
+      [Definition / Zweck],
+      [Zugangsberechtigung eines Kunden (oder: Benutzer) im System „GastroStart“. Dient der Identifizierung einer Person, ihres Betriebs (oder Betriebe) und aller, für die in diesem System abgebildeten Prozesse, notwendigen Dokumente und Daten. ],
+
+      [Attribute],
+      [wie bei Finanzierung ausfüllen],
+
+      [Zustände],
+      [aktiv, inaktiv, aktualisiert, registriert],
+
+      [Beziehungen],
+      [ ],
+    )
+  ]
+) <tbl-GO-Kundenkonto>
+
+#design-entscheid([
+  Wir haben uns die Frage gestellt, ob wir das Objekt "Kunde" auch zusätzlich modellieren sollen. 
+  Wir sind zum Schluss gekommen, dass das Geschäftsobjekt Kundenkonto alle Informationen zum Kunden enthält, weshalb letzteres nicht separat / zusätzlich geführt werden muss.
+])
+
 Wir betrachten im folgenden Modell im Wesentlichen das Geschäftsobjekt Kundenkonto und den Geschäftsprozess *Kundenkonto verwalten*, der sich in drei Geschäftstransaktionen unterteilt:
 - Konto anlegen
 - Konto löschen
@@ -679,8 +686,9 @@ transaktion],
     )
   ]
 ) <tbl-GT-sich-registrieren>
-=== Amira gründet ihr Unternehmen
+
 === Amira gründet ihr Unternehmen 
+
 - warum gründet Amira ein Unternehmen? Was sind ihre Beweggründe? 
 - was gehört zum Gründungsprozess? 
 	- Statuten / Zweck 
@@ -1485,18 +1493,23 @@ Dies ist so, da grundsätzlich nur der Staat für solche Handlungen verantwortli
 Dritte und Private Unternehmen dürfen nur beim Vorhandensein einer Delegationsnorm im Namen einer Behörde handeln. 
 Da GastroStart ein privates Unternehmen ist, kann es nicht den Eintrag ins Handelsregister vornehmen oder die Betriebsbewilligung für Amiras GmbH erteilen.
 
-=== Einordnung des Schweizer öffentlichen Wesens in das Operating System nach Ross / Weill 
+=== Einordnung der Schweizer öffentlichen Verwaltung in das Operating System nach Ross / Weill 
 
 Das öffentliche Wesen in der Schweiz ist föderalistisch organisiert und spielt sich auf drei politischen (und verwaltungstechnischen) Ebenen ab - dies beeinflusst stark die Interaktionen mit den Betroffenen. 
 
 Diese drei Ebenen müssen getrennt betrachtet und eingeordnet werden: 
 
 + *Bundesebene*: ist bei Diversification einzordnune. Das ist nicht überraschend, sondern strukturell angelegt: das Departement-Prinzip sowie die Gesetzgebung geben den Departementen und Ämtern eigene Vollzugsautonomie für ihre Kernaufgaben. Ist nichts anderes vorgesehen, ist eine Zusammenarbeit nicht erlaubt. Das ist politisch-rechtlich gewollte Dezentralisierung. Eine "dünne" zentrale Schicht basierend u.A. auf Standarddiensten, Produkte- und Prozessstandards und architektonischen Richtlinien erlaubt eine gewisse Interoperabilität und die Schaffung von Datenökosysteme. 
+
+#figure(
+  image("../assets/EABund.png", width: 92%),
+  caption: [Grobe Skizze der aktuellen Unternehmensarchitektur der Bundesverwaltung, unterteilt - von oben nach unten - in "Kernaufgabenbereiche", "übergreifenden Aufgaben" und "aufgabenneutralen IKT-Grundleistungen".],
+) <fig-EA-Bund>
+
 + *Kantonale Ebene*: ist ebenfalls bei Diversification einzuordnen - 26-mal wiederholte Diversification. Die Einhaltung eines allfälligen obligatorischen gesetzlichen Minimums sowie die teil freiwillige Übernahme von eCH Standards erlauben eine ansatzweise Interoperabilität mit den anderen Ebenen. 
 + *Gemeindeebene*: Die Gemeinde gehört ebenfalls in die Diversification. Gemeinden differenzieren sich stark von einander - innerhalb desselben Kantons mit eigenen, oft analoge Prozesse. Und nochmals von Kanton zu Kanton kommen der Gemeinden unterschiedliche Zuständigkeiten zu  (Baubewilligung, Lärmschutz, Ortsplanung, punktuelle Bewilligungen). 
 
-=== Abbildung des öffentlichen Wesens im Kontext von GastroStart 
-
+=== Abbildung des öffentlichen Wesens im Kontext von GastroStart <sec-Verwaltung-GastroSTart-EARolle>
 Das öffentliche Wesen nimmt nur indirekt eine Rolle im Unternehmen GastroStart.
 Aus der Perspektive von Amira und ihrer Customer Journey bildet das öffentliche Wesen mit seinen Vorschriften eine Hürde, die überwunden werden muss. Die jeweilige Staatsebene stellt oft eine Sammlung an Regulatorien und Vorgaben dar, welche Amira von ihrem Traum trennt. 
 

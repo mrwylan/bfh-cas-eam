@@ -135,6 +135,12 @@ Konkret stellt FINNOFLEET drei Bausteine bereit:
 
 Diese Leistungen werden nicht als eigenständiges Portal, sondern als *API-Dienste* in die GastroStart-Journey eingebunden: GastroStart orchestriert die Kundenerfahrung, FINNOFLEET liefert die Finanzierungs-Capability im Hintergrund.
 
+=== Transgourmet
+
+Als letzter Player im Joint Venture bringt Transgourmet die *Lieferfähigkeit* ein. 
+Als führender Schweizer Grosshändler für Gastronomie und Hotellerie ist Transgourmet der Partner, der Amira nach der Gründung ihres Unternehmens mit den notwendigen Lebensmitteln und Zutaten beliefert. 
+Die Eröffnung eines Kundenkontos bei Transgourmet ist die letzte Phase der Customer Journey und steht am Übergang von der Gründungsphase in den operativen Betrieb. 
+
 === Öffentliche Verwaltung als stiller Partner
 /* Verworfen: Öffentliche Verwaltung als Partei in der JV modellieren - und entsprechende Fiktionen aufstellen])*/
 Die Berührungspunkte der Bundeskanzlei mit den Unternehmen der anderen Gruppenmitglieder wurden als nicht ausreichend bewertet. 
@@ -144,14 +150,10 @@ Grund dafür ist, dass die von der Bundeskanzlei vorangetriebenen Vorgaben und S
 #design-entscheid([
 Aus Sicht von Amira und somit auch von GastroStart wird die öffentliche Verwaltung - ohne besondere Rücksicht auf die jeweilige Ebene - in ihrer Rolle als Interoperabilitätspartner abgebildet und behandelt.
 
-Wie und unter welchen Voraussetzungen ein verbindliches Instrument diesen Rahmen beeinflussen würde, wird in der Analyse des Operating Models diskutiert - se. Kapitel ...
+Wie und unter welchen Voraussetzungen ein verbindliches Instrument diesen Rahmen beeinflussen würde, wird in der Analyse des Operating Models diskutiert - se. <sec-Verwaltung-GastroSTart-EARolle>
 ])
 
-=== Transgourmet
 
-Als letzter Player im Joint Venture bringt Transgourmet die *Lieferfähigkeit* ein. 
-Als führender Schweizer Grosshändler für Gastronomie und Hotellerie ist Transgourmet der Partner, der Amira nach der Gründung ihres Unternehmens mit den notwendigen Lebensmitteln und Zutaten beliefert. 
-Die Eröffnung eines Kundenkontos bei Transgourmet ist die letzte Phase der Customer Journey und steht am Übergang von der Gründungsphase in den operativen Betrieb. 
 
 == Szenarien als Teilgeschichten aus der Customer Journey <sec-szenarien-customer-journey>
 /*Übung vom 18.05.2026
@@ -173,6 +175,12 @@ In den nächsten Kapiteln wir auf einer Auswahl dieser Szenarien eingegangen - e
 
 === Szenarien entlang der Customer Journey von GastroStart
 
+ #figure(
+  image("../assets/Customer Journey View.svg", width: 40%),
+  caption: [Archimate Modell der Customer Journey von Amira und erste Iteration für die Identifikation der Geschäftsobjekte]
+) <fig-customer-journey-view>
+
+
 - *Initiale Orientierung:* Amira findet die Webseite von GastroStart und informiert sich über die angebotenen Dienste. 
 - *Registrierung:* Amira meldet sich bei GastroStart an, um von dessen Diensten zu profitieren. 
 - *Unternehmensgründung:* Amira nutzt GastroStart, um ihr Catering-Unternehmen zu gründen und anzumelden. 
@@ -182,14 +190,10 @@ In den nächsten Kapiteln wir auf einer Auswahl dieser Szenarien eingegangen - e
 
 #design-entscheid([Die Gruppe hat diese Szenarien Input für die Erarbeitung der Iterationen für die Modellierung von GastroStart gewählt.])
 
- #figure(
-  image("../assets/Customer Journey View.svg", width: 40%),
-  caption: [Archimate Modell der Customer Journey von Amira und erste Iteration für die Identifikation der Geschäftsobjekte]
-) <fig-customer-journey-view>
 
-=== Amira orientiert sich (oder registriert sich bei GastroStart)
+=== Amira orientiert sich 
 
-#todo-action([\@ Jan Szenario/Beschreibung (mit oder ohne Bild) einfügen oder alternativ das Szenario der Registrierung. Aus der Tabelle unten übernehmen])
+#todo-action([\@ Jan Szenario/Beschreibung - bitte mit Tabelle wie bei Finanzierung])
 /*
 Struktur:
 + *Aktion:* 
@@ -199,15 +203,12 @@ Struktur:
 + *Pain Point:*
 + *Chance:*
 */
-=== Amira gründet ihr Unternehmen
-+ *Aktion:* Amira erfasst die Angaben für ihr Unternehmen und liefert die notwendigen Beilagen. 
-+ *Touchpoints:* GastroStart, Notar, Behörden-API, Systeme der kantonalen Verwaltungsbehörde, Portal "EasyGov"
-+ *Gedanke/Bedürfnis:* Welche Kantonsregeln gelten? Wie lange geht das?
-// ^+ *Emotion:*
-+ *Pain Point:* Kantonale Systeme haben heterogene Digitalisierungsgrade; einige verlangen physische Einreichung. _Line of Failure:_ analoger kantonaler Prozess unterbricht die digitale Journey
-+ *Chance:* Integrierte Anleitung für jeden Kanton; Status-Tracking; expliziter Fallback auf Papier, wo keine API verfügbar ist.
 
-#frage([variante mit tabelle oder text? TABELLE!!! ])
+=== Amira registriert sich bei Gastrostart
+#todo-action([\@ Jan Szenario/Beschreibung - bitte mit Tabelle wie bei Finanzierung])
+
+=== Amira gründet ihr Unternehmen
+
 #figure(
   caption: [Szenario "Amira gründet ihr Unternehmen"],
   block(
@@ -244,7 +245,7 @@ Struktur:
       [GastroStart, Notar, Behörden-API, Systeme der kantonalen Verwaltungsbehörde, Portal «EasyGov»],
 
       [Gedanke / Bedürfnis],
-      [Welche Kantonsregeln gelten? Wie lange geht das?],
+      [Wie viel kostet der Notar? Wie lange geht das?],
 
       [Pain Point],
       [
@@ -260,6 +261,58 @@ Struktur:
 ) <tbl-szenario-unternhemen-gründen>
 
 
+=== Amira erhält die Bewilligung
+
+#figure(
+  caption: [Szenario "Amira gründet ihr Unternehmen"],
+  block(
+    width: 100%,
+    radius: 6pt,
+    clip: true,
+    stroke: 0.5pt + luma(225),
+  )[
+    #block(
+      width: 100%,
+      fill: luma(70),
+      inset: (x: 10pt, y: 7pt),
+      below: 0pt,
+    )[
+      #grid(
+        columns: (3.2cm, 1fr),
+        gutter: 10pt,
+        text(fill: white, weight: "bold", size: 0.95em)[Merkmal],
+        text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
+      )
+    ]
+    #set par(justify: false)
+    #table(
+      columns: (3.2cm, 1fr),
+      inset: (x: 10pt, y: 7pt),
+      stroke: (x: none, y: 0.5pt + luma(232)),
+      fill: (x, y) => if calc.even(y) { luma(250) } else { white },
+      align: (left, left),
+
+      [Aktion],
+      [Amira sammelt alle notwendigen Belege und Ausweise, welche für die Erteilung der Betriebsbewilligung vorausgesetzt sind.],
+
+      [Touchpoints],
+      [GastroStart, Verschiedene Behördenportale für Registerauszüge, Architektur- und Technikplanungsbüro, Vermieter],
+
+      [Gedanke / Bedürfnis],
+      [Welche Kantonsregeln gelten? Wie lange geht das? Bin beim richtigen Amt?],
+
+      [Pain Point],
+      [
+        Mehrere Behörden auf kantonaler und kommunaler Ebene involviert, unklare, oft nicht digitalisierte Prozesse und Eindruck von Unsicherheit auf Kundenseite.
+        #linebreak()
+        _Line of Failure:_ analoger kantonaler Prozess unterbricht die digitale Journey
+      ],
+
+      [Chance],
+      [Integrierte Anleitung für jeden Kanton; Status-Tracking; expliziter Fallback auf Papier, Unterstützung bei der Herstellung von Selbstdeklarationen.],
+    )
+  ]
+) <tbl-szenario-unternhemen-gründen>
 
 === Amira erhält eine Finanzierung
 
@@ -326,7 +379,8 @@ Struktur:
 // ) <fig-szenario-finanzierung-cj>
 
 === Amira wird Kunde bei Transgourmet
-#todo-action([\@ Jakob Szenario/Beschreibung (mit oder ohne Bild) einfügen])
+
+#todo-action([\@ Jakob: Szenario/Beschreibung - bitte mit Tabelle wie bei Finanzierung])
 /*
 Struktur:
 + *Aktion:* 
