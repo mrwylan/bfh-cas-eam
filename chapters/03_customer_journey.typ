@@ -70,13 +70,13 @@ In enger Verbindung mit der Customer Journey #ref(<sec-amira-und-ihre-geschichte
   ]
 ) <persona-amira>
 
-== Das Joint Venture Gastrostart - Vorstellung des Unternehmens
+== Das Joint Venture GastroStart - Vorstellung des Unternehmens
 
 GastroStart ist ein fiktives Portal, das Gründerinnen und Gründer im Gastgewerbe durch die zentralen Phasen der Betriebsgründung führt: von der ersten Orientierung über Registrierung, Unternehmensgründung und Betriebsbewilligung bis hin zur Finanzierung und zum ersten Lieferantenvertrag.
 
 GastroStart erlaubt es seinen Kunden schweizweit, schnell und ohne langwierige Behördengänge zu einem startbereiten Gastronomieunternehmen zu kommen - ganz unabhängig vom Herkunftskanton.
 
-Weitere Dienstleistungen, im Rahmen der Customer Journey nicht berührt, wären unter anderem Funktionen zur Unterstützung des operativen Betriebs eines Gastrounternehmens: Überwachung von Zahlungsfälligkeiten oder ein Einkaufsplanungsmodul. Darüber hinaus könnten über Gastrostart auch Betriebsübergaben und -liquidationen unterstützt werden.
+Weitere Dienstleistungen, im Rahmen der Customer Journey nicht berührt, wären unter anderem Funktionen zur Unterstützung des operativen Betriebs eines Gastrounternehmens: Überwachung von Zahlungsfälligkeiten oder ein Einkaufsplanungsmodul. Darüber hinaus könnten über GastroStart auch Betriebsübergaben und -liquidationen unterstützt werden.
 
 #design-entscheid[
 Entsprechend der gewählten Customer Journey haben wir uns entschieden, nur das Onboarding von Neukunden abzubilden. Die Firmengründung steht im Fokus.
@@ -135,6 +135,12 @@ Konkret stellt FINNOFLEET drei Bausteine bereit:
 
 Diese Leistungen werden nicht als eigenständiges Portal, sondern als *API-Dienste* in die GastroStart-Journey eingebunden: GastroStart orchestriert die Kundenerfahrung, FINNOFLEET liefert die Finanzierungs-Capability im Hintergrund.
 
+=== Transgourmet
+
+Als letzter Player im Joint Venture bringt Transgourmet die *Lieferfähigkeit* ein. 
+Als führender Schweizer Grosshändler für Gastronomie und Hotellerie ist Transgourmet der Partner, der Amira nach der Gründung ihres Unternehmens mit den notwendigen Lebensmitteln und Zutaten beliefert. 
+Die Eröffnung eines Kundenkontos bei Transgourmet ist die letzte Phase der Customer Journey und steht am Übergang von der Gründungsphase in den operativen Betrieb. 
+
 === Öffentliche Verwaltung als stiller Partner
 /* Verworfen: Öffentliche Verwaltung als Partei in der JV modellieren - und entsprechende Fiktionen aufstellen])*/
 Die Berührungspunkte der Bundeskanzlei mit den Unternehmen der anderen Gruppenmitglieder wurden als nicht ausreichend bewertet. 
@@ -142,16 +148,12 @@ Grund dafür ist, dass die von der Bundeskanzlei vorangetriebenen Vorgaben und S
  
 
 #design-entscheid([
-Aus Sicht von Amira und somit auch von Gastrostart wird die öffentliche Verwaltung - ohne besondere Rücksicht auf die jeweilige Ebene - in ihrer Rolle als Interoperabilitätspartner abgebildet und behandelt.
+Aus Sicht von Amira und somit auch von GastroStart wird die öffentliche Verwaltung - ohne besondere Rücksicht auf die jeweilige Ebene - in ihrer Rolle als Interoperabilitätspartner abgebildet und behandelt.
 
-Wie und unter welchen Voraussetzungen ein verbindliches Instrument diesen Rahmen beeinflussen würde, wird in der Analyse des Operating Models diskutiert - se. Kapitel ...
+Wie und unter welchen Voraussetzungen ein verbindliches Instrument diesen Rahmen beeinflussen würde, wird in der Analyse des Operating Models diskutiert - se. <sec-Verwaltung-GastroSTart-EARolle>
 ])
 
-=== Transgourmet
 
-Als letzter Player im Joint Venture bringt Transgourmet die *Lieferfähigkeit* ein. 
-Als führender Schweizer Grosshändler für Gastronomie und Hotellerie ist Transgourmet der Partner, der Amira nach der Gründung ihres Unternehmens mit den notwendigen Lebensmitteln und Zutaten beliefert. 
-Die Eröffnung eines Kundenkontos bei Transgourmet ist die letzte Phase der Customer Journey und steht am Übergang von der Gründungsphase in den operativen Betrieb. 
 
 == Szenarien als Teilgeschichten aus der Customer Journey <sec-szenarien-customer-journey>
 /*Übung vom 18.05.2026
@@ -173,23 +175,31 @@ In den nächsten Kapiteln wir auf einer Auswahl dieser Szenarien eingegangen - e
 
 === Szenarien entlang der Customer Journey von GastroStart
 
-- *Initiale Orientierung:* Amira findet die Webseite von Gastrostart und informiert sich über die angebotenen Dienste. 
-- *Registrierung:* Amira meldet sich bei Gastrostart an, um von dessen Diensten zu profitieren. 
-- *Unternehmensgründung:* Amira nutzt Gastrostart, um ihr Catering-Unternehmen zu gründen und anzumelden. 
-- *Beantragung der Betriebsbewilligung:* Amira nutzt Gastrostart, um die Betriebsbewilligung für Unternehmen zu beantragen. 
-- *Finanzierung:* über Gastrostart kann Amira eine Finanzierung für die ersten Anschaffungen für ihr Catering erhalten. 
-- *Kunde bei Transgourmet:* über Gastrostart kann Amira ebenfalls ein Kundenkonto bei Transgourmet eröffnen - und ihre erste Bestellung absetzen. Der Übergang von der Firmengründung in den operativen Betrieb ist gelungen. 
-
-#design-entscheid([Die Gruppe hat diese Szenarien Input für die Erarbeitung der Iterationen für die Modellierung von GastroStart gewählt.])
-
  #figure(
   image("../assets/Customer Journey View.svg", width: 40%),
   caption: [Archimate Modell der Customer Journey von Amira und erste Iteration für die Identifikation der Geschäftsobjekte]
 ) <fig-customer-journey-view>
 
-=== Amira orientiert sich (oder registriert sich bei GastroStart)
 
-#todo-action([\@ Jan Szenario/Beschreibung (mit oder ohne Bild) einfügen oder alternativ das Szenario der Registrierung. Aus der Tabelle unten übernehmen])
+- *Initiale Orientierung:* Amira findet die Webseite von GastroStart und informiert sich über die angebotenen Dienste. 
+- *Registrierung:* Amira meldet sich bei GastroStart an, um von dessen Diensten zu profitieren. 
+- *Unternehmensgründung:* Amira nutzt GastroStart, um ihr Catering-Unternehmen zu gründen und anzumelden. 
+- *Beantragung der Betriebsbewilligung:* Amira nutzt GastroStart, um die Betriebsbewilligung für Unternehmen zu beantragen. 
+- *Finanzierung:* über GastroStart kann Amira eine Finanzierung für die ersten Anschaffungen für ihr Catering erhalten. 
+- *Kunde bei Transgourmet:* über GastroStart kann Amira ebenfalls ein Kundenkonto bei Transgourmet eröffnen - und ihre erste Bestellung absetzen. Der Übergang von der Firmengründung in den operativen Betrieb ist gelungen. 
+
+#design-entscheid([Die Gruppe hat diese Szenarien Input für die Erarbeitung der Iterationen für die Modellierung von GastroStart gewählt.])
+
+
+=== Amira orientiert sich 
+
+ #figure(
+  image("../assets/cj_orientierung.svg", width: 70%),
+  caption: [Archimate Szenario "Amira orientiert sich"]
+) <fig-customer-journey-orientierung>
+
+
+#todo-action([\@ Jan Szenario/Beschreibung - bitte mit Tabelle wie bei Finanzierung])
 /*
 Struktur:
 + *Aktion:* 
@@ -199,15 +209,22 @@ Struktur:
 + *Pain Point:*
 + *Chance:*
 */
-=== Amira gründet ihr Unternehmen
-+ *Aktion:* Amira erfasst die Angaben für ihr Unternehmen und liefert die notwendigen Beilagen. 
-+ *Touchpoints:* GastroStart, Notar, Behörden-API, Systeme der kantonalen Verwaltungsbehörde, Portal "EasyGov"
-+ *Gedanke/Bedürfnis:* Welche Kantonsregeln gelten? Wie lange geht das?
-// ^+ *Emotion:*
-+ *Pain Point:* Kantonale Systeme haben heterogene Digitalisierungsgrade; einige verlangen physische Einreichung. _Line of Failure:_ analoger kantonaler Prozess unterbricht die digitale Journey
-+ *Chance:* Integrierte Anleitung für jeden Kanton; Status-Tracking; expliziter Fallback auf Papier, wo keine API verfügbar ist.
 
-#frage([variante mit tabelle oder text? TABELLE!!! ])
+=== Amira registriert sich bei Gastrostart
+#todo-action([\@ Jan Szenario/Beschreibung - bitte mit Tabelle wie bei Finanzierung])
+
+ #figure(
+  image("../assets/cj_registrierung.svg", width: 70%),
+  caption: [Archimate Szenario "Amira registriert sich"]
+) <fig-customer-journey-registrierung>
+
+=== Amira gründet ihr Unternehmen
+ #figure(
+  image("../assets/cj_gründung und bewilligung.svg", width: 70%),
+  caption: [Archimate Szenario "Amira gründet ihr Unternehmen"]
+) <fig-customer-journey-grüdndung-bewilligungg>
+
+
 #figure(
   caption: [Szenario "Amira gründet ihr Unternehmen"],
   block(
@@ -244,7 +261,7 @@ Struktur:
       [GastroStart, Notar, Behörden-API, Systeme der kantonalen Verwaltungsbehörde, Portal «EasyGov»],
 
       [Gedanke / Bedürfnis],
-      [Welche Kantonsregeln gelten? Wie lange geht das?],
+      [Wie viel kostet der Notar? Wie lange geht das?],
 
       [Pain Point],
       [
@@ -260,14 +277,125 @@ Struktur:
 ) <tbl-szenario-unternhemen-gründen>
 
 
+=== Amira erhält die Bewilligung
+
+ #figure(
+  image("../assets/cj_verträge.svg", width: 70%),
+  caption: [Archimate Szenario "Amira erhält die Bewilligung"]
+) <fig-cj-verträge>
+
+
+
+
+#figure(
+  caption: [Szenario "Amira gründet ihr Unternehmen"],
+  block(
+    width: 100%,
+    radius: 6pt,
+    clip: true,
+    stroke: 0.5pt + luma(225),
+  )[
+    #block(
+      width: 100%,
+      fill: luma(70),
+      inset: (x: 10pt, y: 7pt),
+      below: 0pt,
+    )[
+      #grid(
+        columns: (3.2cm, 1fr),
+        gutter: 10pt,
+        text(fill: white, weight: "bold", size: 0.95em)[Merkmal],
+        text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
+      )
+    ]
+    #set par(justify: false)
+    #table(
+      columns: (3.2cm, 1fr),
+      inset: (x: 10pt, y: 7pt),
+      stroke: (x: none, y: 0.5pt + luma(232)),
+      fill: (x, y) => if calc.even(y) { luma(250) } else { white },
+      align: (left, left),
+
+      [Aktion],
+      [Amira sammelt alle notwendigen Belege und Ausweise, welche für die Erteilung der Betriebsbewilligung vorausgesetzt sind.],
+
+      [Touchpoints],
+      [GastroStart, Verschiedene Behördenportale für Registerauszüge, Architektur- und Technikplanungsbüro, Vermieter],
+
+      [Gedanke / Bedürfnis],
+      [Welche Kantonsregeln gelten? Wie lange geht das? Bin beim richtigen Amt?],
+
+      [Pain Point],
+      [
+        Mehrere Behörden auf kantonaler und kommunaler Ebene involviert, unklare, oft nicht digitalisierte Prozesse und Eindruck von Unsicherheit auf Kundenseite.
+        #linebreak()
+        _Line of Failure:_ analoger kantonaler Prozess unterbricht die digitale Journey
+      ],
+
+      [Chance],
+      [Integrierte Anleitung für jeden Kanton; Status-Tracking; expliziter Fallback auf Papier, Unterstützung bei der Herstellung von Selbstdeklarationen.],
+    )
+  ]
+) <tbl-szenario-unternhemen-gründen>
 
 === Amira erhält eine Finanzierung
-+ *Aktion:* Amira wählt einen Bankpartner, erfasst ihr Finanzierungsgesuch und lädt die Unterlagen hoch; im Hintergrund läuft die Bonitätsprüfung, anschliessend erhält sie den Kreditentscheid und ihre IBAN.
-+ *Touchpoints:* GastroStart (Bankauswahl-UI), FINNOFLEET-Bonitäts-API, IBAN-Dashboard.
-+ *Gedanke/Bedürfnis:* «Was, wenn ich abgelehnt werde? Erfahre ich, warum?»
-// ^+ *Emotion:* ↓ −1
-+ *Pain Point:* Der Kreditentscheid wird ohne Begründung zurückgegeben, und es fehlt eine Verlinkung zu alternativen Schweizer Förderprogrammen.
-+ *Chance:* Transparentes Scoring-Feedback in verständlicher Sprache sowie vorausgefüllte Vorlagen für Schweizer Förderprogramme.
+
+ #figure(
+  image("../assets/cj_verträge.svg", width: 70%),
+  caption: [Archimate Szenario "Amira erhält die Finanzierung"]
+) <fig-cj-verträge>
+
+
+#figure(
+  caption: [Szenario "Amira erhält eine Finanzierung"],
+  block(
+    width: 100%,
+    radius: 6pt,
+    clip: true,
+    stroke: 0.5pt + luma(225),
+  )[
+    #block(
+      width: 100%,
+      fill: luma(70),
+      inset: (x: 10pt, y: 7pt),
+      below: 0pt,
+    )[
+      #grid(
+        columns: (3.2cm, 1fr),
+        gutter: 10pt,
+        text(fill: white, weight: "bold", size: 0.95em)[Merkmal],
+        text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
+      )
+    ]
+    #set par(justify: false)
+    #table(
+      columns: (3.2cm, 1fr),
+      inset: (x: 10pt, y: 7pt),
+      stroke: (x: none, y: 0.5pt + luma(232)),
+      fill: (x, y) => if calc.even(y) { luma(250) } else { white },
+      align: (left, left),
+
+      [Aktion],
+      [Amira wählt einen Bankpartner, erfasst ihr Finanzierungsgesuch und lädt die Unterlagen hoch; im Hintergrund läuft die Bonitätsprüfung, anschliessend erhält sie den Kreditentscheid und ihre IBAN.],
+
+      [Touchpoints],
+      [GastroStart (Bankauswahl-UI), FINNOFLEET-Bonitäts-API, IBAN-Dashboard],
+
+      [Gedanke / Bedürfnis],
+      [«Was, wenn ich abgelehnt werde? Erfahre ich, warum?»],
+
+      [Pain Point],
+      [
+        Der Kreditentscheid wird ohne Begründung zurückgegeben, und es fehlt eine Verlinkung zu alternativen Schweizer Förderprogrammen.
+        #linebreak()
+        _Line of Failure:_ intransparente Absage ohne Anschlussoption beendet die Journey
+      ],
+
+      [Chance],
+      [Transparentes Scoring-Feedback in verständlicher Sprache sowie vorausgefüllte Vorlagen für Schweizer Förderprogramme.],
+    )
+  ]
+) <tbl-szenario-finanzierung>
 
 // TODO Adi (Bild): Für dieses Szenario wird eine kompakte Customer-Journey-Grafik
 // benötigt (analog zu assets/SZ_Unternehmensgruendung.svg) — NICHT die
@@ -281,7 +409,14 @@ Struktur:
 // ) <fig-szenario-finanzierung-cj>
 
 === Amira wird Kunde bei Transgourmet
-#todo-action([\@ Jakob Szenario/Beschreibung (mit oder ohne Bild) einfügen])
+
+ #figure(
+  image("../assets/cj_verträge.svg", width: 70%),
+  caption: [Archimate Szenario "Amira wird Kunde bei Transgourmet"]
+) <fig-cj-verträge>
+
+
+#todo-action([\@ Jakob: Szenario/Beschreibung - bitte mit Tabelle wie bei Finanzierung])
 /*
 Struktur:
 + *Aktion:* 

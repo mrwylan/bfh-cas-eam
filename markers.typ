@@ -86,7 +86,6 @@
     columns: (auto, 1fr),
     gutter: 0.7em,
     align: horizon,
-    // fester Slot, Figur unten ausgerichtet -> gemeinsame Grundlinie + konstante Boxhöhe
     box(height: autor-hoehe-max, align(bottom,
       image("assets/" + autor-icons.at(schluessel), height: hoehe))),
     text(weight: "bold", fill: farbe, size: 0.95em)[#titel],
@@ -99,3 +98,7 @@
 #let autor-transgourmet(titel, inhalt: none, hoehe: 2.50em) = autor-marker("transgourmet", titel, inhalt: inhalt, hoehe: hoehe)  // Elb
 #let autor-verwaltung(titel, inhalt: none, hoehe: 2.80em)   = autor-marker("verwaltung",   titel, inhalt: inhalt, hoehe: hoehe)  // Zwerg
 #let autor-dvbern(titel, inhalt: none, hoehe: 2.3em)       = autor-marker("dvbern",       titel, inhalt: inhalt, hoehe: hoehe)  // Hobbit
+#let mit-lead(lead, rest) = [
+  #text(weight: "bold")[#lead] \
+  #text(weight: "regular")[#rest]
+]
