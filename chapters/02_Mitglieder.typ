@@ -132,33 +132,111 @@ Die grössten Herausforderungen liegen aktuell bei der Skalierbarkeit und dem Le
 
 == FINNOFLEET //Menschen
 
-FINNOFLEET Schweiz (#link("https://finnofleet.ch/ch-de/")[finnofleet.ch]) ist ein Softwareunternehmen für die Finanzbranche mit Hauptsitz in Sursee sowie weiteren Standorten in Sursee, Zürich und Bern.
-Rund 100 Mitarbeitende betreuen über 80 Kundinnen und Kunden aus dem Banken-, Versicherungs- und Pensionskassenumfeld.
+FINNOFLEET Schweiz (#link("https://finnofleet.ch/ch-de/")[finnofleet.ch]) ist ein Softwareunternehmen für die Finanzbranche mit Hauptsitz in Sursee sowie weiteren Standorten in Zürich und Bern.
+Rund 100 Mitarbeitende betreuen über 80 Kundinnen und Kunden aus dem Banken-, Versicherungs- und Pensionskassenumfeld. @FinnofleetCH2026
 
-Das Lösungsangebot deckt den gesamten Kreditlebenszyklus ab --- von der Digitalisierung der Kreditberatung und -initiierung über die Portfolio- und Kontoverwaltung bis hin zur elektronischen Pfandbriefverwaltung und der Automatisierung von Refinanzierungsprozessen. 
+Das Lösungsangebot deckt den gesamten Kreditlebenszyklus ab --- von der Digitalisierung der Kreditberatung und -initiierung über die Portfolio- und Kontoverwaltung bis hin zur elektronischen Pfandbriefverwaltung und der Automatisierung von Refinanzierungsprozessen.
 Das Produktportfolio umfasst entsprechend *ELA Kredit*, *WinCredit*, Lösungen für *Refinanzierung & Pfandbriefe* sowie die *Hypothekar- und Darlehensverwaltung*. Die Produkte sind in ihrer Architektur weitgehend vergleichbar aufgebaut.
 
 FINNOFLEET Schweiz ist Teil der FINNOFLEET-Gruppe mit über 450 Mitarbeitenden in Zentraleuropa, die entlang der gesamten Kreditwertschöpfungskette tätig ist.
 
+=== Geschäftsarchitektur
+
+Prägend ist die Doppelrolle als *Produkthersteller* und als *Projektpartner* der eigenen Kundschaft: Ausgeliefert wird ein Standardprodukt, das anschliessend pro Institut parametrisiert, erweitert und in eine bestehende Systemlandschaft eingebettet wird.
+
+*Domänen*: Der Zuschnitt folgt dem Kreditlebenszyklus --- Beratung und Initiierung, Kreditentscheid, Auszahlung, Portfolio- und Kontoverwaltung, Refinanzierung und Pfandbriefe. Die Domänengrenzen sind zugleich die Grenzen, an denen die Produkte des Portfolios aneinander anschliessen.
+
+*Prozesse*: Eingespielt sind Solution Architecture, Estimation und Technical Review als wiederkehrende Stationen jedes Vorhabens. Die Weiterentwicklung erfolgt agil in Produktteams; die Enterprise Architektur sorgt dafür, dass Bausteine, die in mehreren Produkten gebraucht werden (Berechtigungen, Dokumentenverwaltung, Schnittstellen zu Kernbankensystemen), nicht mehrfach entstehen.
+
+*Ökosystem*: Die Kundschaft besteht aus Banken, Versicherungen und Pensionskassen --- also aus Organisationen, die ihrerseits stark reguliert sind. Anforderungen aus Aufsicht, interner Revision und Bankkundengeheimnis wirken damit direkt in die Architektur hinein und sind nicht verhandelbare Randbedingungen.
+
+=== Anwendungsarchitektur
+
+Da alle Produkte denselben fachlichen Zyklus in unterschiedlichen Ausschnitten abbilden, ist die *architektonische Vergleichbarkeit* des Portfolios ein bewusst gepflegtes Gut: Sie erlaubt es, Muster, Bausteine und Betriebswissen zwischen den Produkten zu übertragen.
+
+*Architekturstil*: Modular geschnittene Applikationen mit einem gemeinsamen Kern und produktspezifischen Modulen. Der Stil ist bewusst nicht Microservice-getrieben, sondern auf Auslieferbarkeit als installierbares Produkt ausgelegt --- ein Institut muss die Lösung im eigenen Umfeld betreiben und über Jahre versioniert weiterführen können.
+
+*Technologie-Stack*: Standardisierung auf Java im Backend und Angular im Frontend; die Chapter-Struktur (Architecture, Java, Frontend, DevOps) spiegelt diesen Stack organisatorisch.
+
+*Mandanten- und Ausprägungsfähigkeit*: Dasselbe Produkt erscheint bei verschiedenen Instituten unter unterschiedlicher fachlicher und visueller Ausprägung. Konfiguration statt Fork ist deshalb ein tragendes Architekturprinzip --- andernfalls vervielfacht sich der Wartungsaufwand mit jedem Kunden.
+
+*Integration*: Die Lösungen stehen selten allein, sondern integrieren sich in Kernbankensysteme, Zahlungsverkehr, Dokumenten- und Archivsysteme sowie in externe Auskunfts- und Scoring-Dienste. Schnittstellen sind damit weniger ein technisches Detail als das eigentliche Produktversprechen.
+
+=== Datenarchitektur
+
+*Datenhoheit*: Die Daten sind Kundendaten und verbleiben in der Hoheit des jeweiligen Instituts. Das schliesst eine zentrale, herstellerseitige Datenhaltung über alle Kunden hinweg aus und verlagert Themen wie Auswertung und Monitoring in die Verantwortung des Betreibers.
+
+*Datenhaltung*: Relationale Persistenz mit einem fachlich stabilen Kernmodell. Da die Datenbankplattform häufig durch das Institut vorgegeben ist, müssen mehrere Dialekte (Oracle, MS SQL Server, PostgreSQL) parallel unterstützt werden --- Schemaänderungen sind entsprechend versioniert und für jede Plattform gleichwertig zu führen.
+
+*Compliance*: Bankkundengeheimnis, revidiertes Datenschutzgesetz (nDSG) und Nachvollziehbarkeitspflichten verlangen durchgängige Historisierung und Protokollierung fachlicher Entscheide. Ein Kreditentscheid muss Jahre später noch begründbar sein.
+
+=== Technologiearchitektur
+
+*Betriebsmodell*: Der Betrieb erfolgt überwiegend im Rechenzentrum des Kunden oder bei dessen Provider, ergänzt um Hosting-Varianten. Daraus folgt die für einen Produkthersteller typische Konsequenz: Es sind stets mehrere Versionsstände gleichzeitig im Feld, und Wartung wie Support müssen über lange Zeiträume für alle davon gewährleistet sein.
+
+*DevOps/CI/CD*: Automatisierte Build-, Test- und Auslieferungspipelines pro Produkt, getragen vom DevOps-Chapter. Weil das Deployment beim Kunden liegt, endet die Pipeline nicht im Betrieb, sondern in einem reproduzierbaren Releasepaket.
+
+*Sicherheit*: Identity & Access Management, Verschlüsselung und Berechtigungskonzepte sind Produktbestandteil, nicht Betriebsdetail --- sie werden im Rahmen von Audits und Revisionen des Kunden regelmässig geprüft.
+
+=== Governance und Rolle der EA
+
+Die Architekturarbeit ist dezentral organisiert und lebt von «Working Architects», die im Produktteam mitarbeiten.
+
+*Chapter-Modell*: Vier Chapter (Architecture, Java, Frontend, DevOps) treffen sich in monatlichem Rhythmus und dienen als beratende Instanzen, die Leitplanken setzen, ohne den Teams die Umsetzungsfreiheit zu nehmen.
+
+*Architecture Decision Records*: Architekturentscheide werden als ADRs festgehalten und erhalten ihren Input aus den Chaptern. Diese Praxis ist etabliert und bildet heute das Rückgrat der explizit dokumentierten Architektur.
+
+*Explizite Dokumentation*: Pro Produkt existiert eine Produktarchitektur-Übersicht (heute in Miro); weitere technische Inhalte finden sich in Vertriebsdokumenten.
+
+*Technische Schulden als geführtes Portfolio*: Ein dediziertes Tech-Debt-Team steuert Roadmap (Epics) und Backlog (Daily Work) --- technische Schuld ist damit nicht Nebenprodukt, sondern ein bewirtschafteter Gegenstand der Architekturarbeit.
+
+=== Herausforderungen in der Enterprise-Architektur
+
+Der Reifegrad ist auf Produkt- und Entscheidebene hoch, auf Portfolioebene dagegen deutlich geringer. Daraus ergeben sich vier Herausforderungen:
+
+*Fehlende Portfolio-Sicht*: Es gibt keinen zentralen Überblick über alle Produkte, keinen Funktions- bzw. Bereichskatalog und kein zentrales API- und Integrationsverzeichnis. Gerade weil die Produkte architektonisch vergleichbar aufgebaut sind, bleibt Wiederverwendungspotenzial ungenutzt, solange niemand portfolioweit sehen kann, welche Fähigkeit wo bereits existiert.
+
+*Implizites Wissen*: Wesentliches Integrations- und Datenflusswissen sowie das historische «Warum haben wir das so gemacht» liegen bei langjährigen Engineers mit über zehn Jahren Erfahrung. Ein strukturierter Knowledge Transfer fehlt --- das macht diese Personen zu einem Architekturrisiko, ohne dass es ihnen anzulasten wäre.
+
+*Kein formaler EAM-Rahmen*: TOGAF und ArchiMate sind nicht etabliert; ebenso fehlen ein gepflegtes Tech-Radar und ein Reporting, das die Entwicklung der Architektur über die Zeit sichtbar macht. Architekturarbeit ist damit gut dokumentiert, aber schwer steuerbar.
+
+*Inkonsistente Aussenkommunikation*: Weil technische Inhalte auch in Vertriebsdokumenten entstehen, kursieren voneinander abweichende Beschreibungen derselben Lösung. Eine zentrale Quelle für die Ist-Architektur würde diese Inkonsistenzen an der Wurzel auflösen.
 
 == Öffentliche Verwaltung  //Zwerge
 
-Die Schweiz ist ein Bundesstaat, welcher drei politische Ebenen - und somit drei Ebenen der öffentlichen Verwaltung kennt. 
-Diese Ebenen sind: 
-- Bund 
-- Kantone (insgesamt 26)
-- Gemeinden (aktuell 2110)
-Die drei Verwaltungsebenen nehmen ihren Kompetenzen entsprechend viele unterschiedliche Aufgaben wahr. 
-Die Gesetzgebung verteilt diese Aufgaben an eine Vielzahl von Ämtern, Diensten und Stellen. Die Wahrnehmung einer Aufgabe erstreckt sich oft über mehrere Ebenen (beispielsweise Kanton und Bund oder Gemeinde und Kanton). Eine kurze Auswahl unter diese Aufgaben soll dies veranschaulichen: 
-- Umsetzung von Massnahmen zur Wahrung der öffentlichen Gesundheit
-- Führung von Registern 
-- Umsetzung von Regelungen in Bezug auf das Bankenwesen
-Die daraus resultierende Komplexität prägt nicht nur die öffentlichen Organisationen als solche, sondern wie die Erfüllung unter den verantwortlichen Behördenebenen gestaltet werden kann. 
+=== Arbeitsannahme
 
-Hierarchisch organisierte Vorgaben (Verfassungen, Gesetze, Verordnungen) und deren Einhaltung tragen dazu bei, dass die drei Ebenen _meistens_ harmonisch miteinander funktionieren, im Sinne einer vertikalen Zusammenarbeit. Das beste Beispiel für die Zusammenarbeit über alle Ebenen stellen wohl die Steuern dar – auch dank des Steuerharmonisierungsgesetzes.
+Die folgenden Aussagen zur Unternehmensarchitektur der öffentlichen Verwaltung stützen sich primär auf dokumentierte Quellen der Bundesebene. 
+Es wird angenommen, dass sich Bund und Kantone am Departementalprinzip orientieren — an der Gliederung der Verwaltung in eigenständig verantwortete Departemente beziehungsweise Direktionen. 
+Dieses Prinzip führt zu einem föderierten Ansatz mit dezentral verantworteten Kernaufgaben, wobei ebenfalls angenommen wird, dass auf beiden Ebenen gemeinsam genutzte Grundleistungen vorhanden sind. Auf Gemeindeebene lässt sich dasselbe Muster beobachten: Sowohl grössere Städte als auch kleinere Gemeinden gliedern sich in Ressorts oder Bereiche, die eigenständig arbeiten.
+Auf dieser Annahme zur Organisation der Verwaltung basieren die folgenden Überlegungen zur angewandten Unternehmensarchitektur.
 
-Bei anderen Themen der vertikalen Zusammenarbeit sorgen Standardisierungsbestrebungen sowie die Orientierung an gemeinsamen Grundsätzen (bspw. Nutzerorientierung und Inklusion, Interoperabilität und Mehrfachnutzung, Digital first und Digital only) für eine kontinuierliche Verbesserung der Durchgängigkeit unter den drei Ebenen bei der Erbringung von Diensten an die jeweiligen Anspruchsgruppen @noauthor_strategie_2023. Dabei handelt es sich jedoch nicht um verbindliche Vorgaben und deren Einhaltung ist *freiwillig*. 
+=== Unternehmensarchitektur Bund
 
+Die Entwicklung der Bundesarchitektur geschieht in einem föderierten Ansatz durch den Bereich Digitale Transformation und IKT-Lenkung der Bundeskanzlei (DTI), die Departemente, Ämter und Leistungserbringer @bk_unternehmensarchitektur_bund: 
++ die Unternehmensarchitektur für die jeweiligen *Kernaufgabenbereiche* wird von den Departementen und Verwaltungseinheiten dezentral entwickelt.
++ Bundesämter mit *übergreifenden Aufgaben*, definieren und koordinieren die Unternehmensarchitektur für die übergreifenden Aspekte in ihrem Verantwortungsbereich.
++ die Unternehmensarchitektur der *aufgabenneutralen IKT-Grundleistungen* - soweit diese von der Mehrheit der Departemente benötigt werden -  fällt in der Verantwortung des Bereichs DTI. 
+
+=== Governance und Rolle der Unternehmungsarchitektur 
+
+Die Unternehmensarchitektur wird je nach Aufgabentyp unterschiedlich gelebt - und ist auch unterschiedlich bindend. 
+Wer für die Governance zuständig ist und wie sich diese auf die Bundesverwaltung auswirkt, ist je nach fall unterschiedlich: 
++ die Unternehmensarchitektur für die Kernbereiche von Departementen ist nur für die betroffenen Organisationseinheiten verbindlich. 
++ Ämter mit übergreifenden Aufgaben bestimmen die Unternehmensarchitektur für diese spezifischen Bereiche - diese ist dann für die restliche Bundesverwaltung _verbindlich_. 
++ Bundesweit gibt es zwei Goverance-Mechanismen: 
+  - das Architekturboard Bund, bei dem alle Departemente und interne Erbringer von IKT-Leistungen vertreten sind, dient der gegenseitigen Abstimmung der Architekturen und der Methoden sowie der Hilfsmittel zu deren Erstellung @bk_unternehmensarchitektur_bund. 
+  - Der Bereich DTI ist als einziger Akteur befugt, bundesweit verbindliche Vorgaben und Standards zu erlassen, im Bereich der sogenannten aufgabenneutralen IKT-Grundleistungen (Standarddienste) — und dies nur, soweit diese von der Mehrheit der Departemente benötigt werden @bk_unternehmensarchitektur_bund.
+
+=== Herausforderungen in der Unternehmensarchitektur
+
++ *Fehlende ebenenübergreifende Gesamtsicht*: Föderalismus zwischen den Ebenen und Departementalprinzip innerhalb jeder Ebene verteilen die Verantwortung auf viele eigenständige Einheiten. Dadurch fehlt eine übergreifende Sicht darauf, welche Fähigkeit wo bereits besteht — und damit auch die Grundlage, um zu erkennen, welche Bereiche sich überhaupt für eine gemeinsame Regelung durch EA und Governance eignen.
+
++ *Unverbindliche Steuerungsinstrumente*: Die ebenenübergreifende Zusammenarbeit stützt sich heute auf Standards, deren Übernahme freiwillig ist, oder auf Grundsätze wie Nutzerorientierung und Interoperabilität, deren Umsetzung einen erheblichen Interpretationsspielraum lässt. Beides gibt Orientierung, schafft aber keine Durchsetzbarkeit — die Durchgängigkeit bleibt vom Goodwill der einzelnen Einheiten abhängig.
+
++ *Rechtsgrundlage als Vorbedingung* Die Schaffung der Voraussetzungen für die Governance liegt ausserhalb der Kompetenz der Unternehmensarchitektur: Behörden sind in all ihrem Handeln an das Legalitätsprinzip gebunden. 
+Damit die Behörden — innerhalb derselben Ebene oder ebenenübergreifend (etwa zwischen Kanton und Gemeinden) — verbindlich zusammenarbeiten und Daten austauschen können, braucht es daher eine entsprechende gesetzliche Grundlage. 
+Fehlt eine solche, bleibt die Unternehmensarchitektur in diesem Bereich ein zahnloser Tiger: Sie kann Interoperabilität fordern oder gar gestalten, die rechtliche Voraussetzung dafür aber nicht selbst schaffen.
 
 
 
