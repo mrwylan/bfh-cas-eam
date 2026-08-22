@@ -1391,20 +1391,22 @@ Die Schichten lesen sich wie folgt:
 Die entscheidende architektonische Beobachtung: Der monolithische Dispo-/ERP-Kern realisiert sämtliche Geschäftsfunktionen ohne Anti-Corruption Layer (ACL) und ohne Schnitt in Self-Contained Systems (SCS) @bass2012.
 
 == OM für DV Bern 
-#autor-dvbern("Beitrag von Jan Sohnemann, DVBern", inhalt: [Lorem Ipsum/*Absstract*/])
+#autor-dvbern("Beitrag von Jan Sohnemann, DVBern", inhalt: [])
 
-#todo-action([Jan bitte die übung für DVBern hier schreiben 
+DVBern ist ein IT-Dienstleister ca. 200 Mitarbeitern an einem Standort. 
+Das Hauptgeschäft ist Individual-Softwareentwicklung und Hauptkunden sind öffentliche Verwaltungen. 
+Neben Geschäftsführung, Finanzen, HR, Gebäude- und Material-Managemant sind die Abteilungen zur Erbringung der Kundenleistungen nach Sektoren eingeteilt wie z.B.: 
+Care & Education, Gesundheit und Steuern. 
+Diese Abteilungen können sich Kunden teilen, z.B. die Stadt Luzern oder den Kanton Bern und es kann auch Schittstellen zwischen den Applikation geben, die verschiedene Abteilungen für verschiedene Kunden bereitstellen. 
+Alle Abteilungen sind Kunden der Abteilung IT-Servives und die Prozesse sind hier weitesgehend für alle Abteilungen standardisiert. 
+Die IT-Services stellen nicht nur Arbeitsgeräte zur Verfügung, sondern sichern auch den Betrieb von intern oder extern gehosteten Kundenanwendugen. 
+Davon und von einigen, wenigen Vorgaben und Best Practices abgesehen haben die Abteilungen weitesgehend Autonomie.
 
-Referenz: es geht um [EAasStrat]
-1. Was ist der Stand betreffend Integration von Prozessen und Standardisierung von Daten 
-für Ihr Unternehmen und für die Customer Journey (siehe [EAasStrat]).
-2. Wählen Sie ein Operating Model für Ihr Unternehmen und begründen Sie Ihre Wahl 
-(siehe [EAasStrat]).
-Bemerkung: bei der Begründung die Rolle, die Ihr Unternehmen im Kontext der 
-Customer Journey wahrnimmt, berücksichtigen.
-3. Aufgrund der Wahl in 1) zeichnen (und erklären) Sie die Enterprise Architecture dazu.
- Abgabe der nächsten Iteration bis am Montag 06:00
-M])
+Es gibt also wenig Geschäftsprozess-Standardisierung, aber dort wo es standardisierte Prozesse gibt, sind diese meist sehr stark integriert. 
+Ich würde DVBern im Operating Model unter «Koordination» einordnen. 
+Für die Customer Journey «Gastro Start» macht das auch Sinn. DVBern spielt hier eine Schlüsselrolle bei der Integration verschiedener Services. 
+Ein gewisses Rahmenwerk bei der Erbringung von Software-Dienstleistungen ist unabdingbar, insbesondere bei der Zusammenarbeit mit öffentlichen Verwaltungen, wo  Complience und Verfügbarkeit eine grosse Rolle spielen. 
+Andererseits benötigen Inidividuallösungen auch Freiheitsgrade, damit schnell auf Unvohersehbarkeiten reagiert werden kann.
 
 == Operating Model für FINNOFLEET
 
