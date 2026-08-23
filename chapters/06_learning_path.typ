@@ -1,4 +1,8 @@
 // ── Chapter 6 & 7: Methodological Reflection and Conclusion ─────────────────
+#import "../markers.typ": (
+  theorie-anker, design-entscheid, stolperstein, frage, todo-action, fuehrung,
+  autor-marker, autor-finnofleet, autor-transgourmet, autor-verwaltung, autor-dvbern, mit-lead
+)
 
 = Methodische Reflexion und der individuelle Lernpfad
 
