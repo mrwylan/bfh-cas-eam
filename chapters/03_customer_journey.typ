@@ -180,31 +180,68 @@ In den nächsten Kapiteln wir auf einer Auswahl dieser Szenarien eingegangen - e
   caption: [Archimate Modell der Customer Journey von Amira und erste Iteration für die Identifikation der Geschäftsobjekte]
 ) <fig-customer-journey-view>
 
+=== Amira orientiert sich
 
-- *Initiale Orientierung:* Amira findet die Webseite von GastroStart und informiert sich über die angebotenen Dienste. 
-- *Registrierung:* Amira meldet sich bei GastroStart an, um von dessen Diensten zu profitieren. 
-- *Unternehmensgründung:* Amira nutzt GastroStart, um ihr Catering-Unternehmen zu gründen und anzumelden. 
-- *Beantragung der Betriebsbewilligung:* Amira nutzt GastroStart, um die Betriebsbewilligung für Unternehmen zu beantragen. 
-- *Finanzierung:* über GastroStart kann Amira eine Finanzierung für die ersten Anschaffungen für ihr Catering erhalten. 
-- *Kunde bei Transgourmet:* über GastroStart kann Amira ebenfalls ein Kundenkonto bei Transgourmet eröffnen - und ihre erste Bestellung absetzen. Der Übergang von der Firmengründung in den operativen Betrieb ist gelungen. 
+#figure(
+  caption: [Szenario "Amira orientiert sich"],
+  block(
+    width: 100%,
+    radius: 6pt,
+    clip: true,
+    stroke: 0.5pt + luma(225),
+  )[
+    #block(
+      width: 100%,
+      fill: luma(70),
+      inset: (x: 10pt, y: 7pt),
+      below: 0pt,
+    )[
+      #grid(
+        columns: (3.2cm, 1fr),
+        gutter: 10pt,
+        text(fill: white, weight: "bold", size: 0.95em)[Merkmal],
+        text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
+      )
+    ]
+    #set par(justify: false)
+    #table(
+      columns: (3.2cm, 1fr),
+      inset: (x: 10pt, y: 7pt),
+      stroke: (x: none, y: 0.5pt + luma(232)),
+      fill: (x, y) => if calc.even(y) { luma(250) } else { white },
+      align: (left, left),
 
-#design-entscheid([Die Gruppe hat diese Szenarien Input für die Erarbeitung der Iterationen für die Modellierung von GastroStart gewählt.])
+      [Aktion],
+      [
+        Amira started eine Web-Suche mit den Begiffen "Gründung", "Catering", "Schweiz", "Vorgehen".
+        Ihre Suche führt sie schnell zur Landingpage von Gastrostart.
+        Sie wird gebeten den Kanton für das Gründungsvorhaben aus einer Liste auszuwählen.
+        Sie wählt aus und bestätigt die Eingabe.
+      ],
 
+      [Touchpoints],
+      [Browser auf Mobile Device, Search Engine, Gastrostart],
 
-=== Amira orientiert sich 
+      [Gedanke / Bedürfnis],
+      [Unsicherheit: Amira weiss nicht, wie eine Unternehmensgründung funktionert und welche Voraussetzungen sie erfüllen muss, um ihr Geschäft zu betreiben.],
 
- #figure(
-  image("../assets/cj_orientierung.svg", width: 70%),
-  caption: [Archimate Szenario "Amira orientiert sich"]
-) <fig-customer-journey-orientierung>
+      [Pain Point],
+      [ `-` ],
 
+      [Chance],
+      [Aussicht auf geführte und strukturierte Hilfestellung.],
+    )
+  ]
+) <tbl-szenario-orientierung>
 
-#todo-action([\@ Jan Szenario/Beschreibung - bitte mit Tabelle wie bei Finanzierung])
 /*
 Struktur:
-+ *Aktion:* 
-+ *Touchpoint:* 
-+ *Gedanke/Bedürfnis:*
++ *Aktion:* Amira started eine Web-Suche mit den Begiffen "Gründung", "Catering", "Schweiz", "Vorgehen". 
+Ihre Suche führt sie schnell zur Landingpage von Gastrostart.
+Sie wird gebeten den Kanton für das Gründungsvorhaben aus einer Liste auszuwählen.
+Sie wählt aus und bestätigt die Eingabe.
++ *Touchpoint:* Browser auf Mobile Device
++ *Gedanke/Bedürfnis:* Amira weiss nicht, wie eine Unternehmensgründung funktionert und welche Voraussetzungen sie erfüllen muss, um ihr Geschäft zu betreiben.
 // ^+ *Emotion:*
 + *Pain Point:*
 + *Chance:*
