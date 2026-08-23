@@ -180,7 +180,27 @@ In den nächsten Kapiteln wir auf einer Auswahl dieser Szenarien eingegangen - e
   caption: [Archimate Modell der Customer Journey von Amira und erste Iteration für die Identifikation der Geschäftsobjekte]
 ) <fig-customer-journey-view>
 
-=== Amira orientiert sich
+=== Amira orientiert sich <head-scenarios-orientation>
+
+#autor-dvbern("Beitrag von Jan Sohnemann, DVBern", inhalt: [])
+
+Unser Angebot soll sich insbesondere an jede GründerInnen richten, die noch keine Erfährung mit Unternehmensgründungen haben.
+Und wir gehen davon aus, dass viele betroffene schon eine konkrete Idee dessen haben, was sie Anbieten möchten.
+Unsere GründerInnen sollen sich auf eben diese Idee fokussieren können und sich nicht mit den Details einer Unternehmensgründung herumschlagen müssen.
+Entsprechend gehen wir davon aus, dass sie bei ihrer initialen Recherche ihr Vorhaben mehr oder weniger Konkret beschreiben können.
+Weniger konkret dagegen können sie die Details zur Umsetzung bennennen. 
+Ihr Suchtext würde also wahrscheinlich die geplante Unternehmensart enthalten, zum Beispiel "Catering" oder "Familien-Café", anstelle von "Gastronomie".
+Weniger wahrscheinlich ist, dass die, bei zur Betriebsbewilligung notwendigen Details bereits bekannt sind.
+Zum Beispiel ist der Ort der Betriebsstätte auch auf nationaler Ebene sehr von Bedeutung, da es kantonale Unterschiede bei den Bewilligungsverfahren und der Regulierung gibt.
+Das Ausarbeiten der Details des Gründungsvorhabens nennen wir "Orientierung".
+
+
+Die folgende Tabelle beschreibt ein Szenario für die Orientierung als Teil unserer Customer Journey.
+Der Eintritt in die Orientierungsphase ist eine *Aktion* der GründerInnen.
+Über *Touchpoints* treten sie mit unserem Produkt in Verbindung.
+Die *Aktion* wird ausgelöst durch einen *Gedanken* oder ein *Bedürfnis*.
+Jede Phase kann die GründerInnen mit *Painpoints* konfrontieren, die auch zum Abbruch der Produktnutzung führen.
+Und schliesslich bietet jede Phase *Chancen*, die die *Bedürnisse* befriedigen und zur Weiternutzung einladen.
 
 #figure(
   caption: [Szenario "Amira orientiert sich"],
@@ -234,26 +254,74 @@ In den nächsten Kapiteln wir auf einer Auswahl dieser Szenarien eingegangen - e
   ]
 ) <tbl-szenario-orientierung>
 
-/*
-Struktur:
-+ *Aktion:* Amira started eine Web-Suche mit den Begiffen "Gründung", "Catering", "Schweiz", "Vorgehen". 
-Ihre Suche führt sie schnell zur Landingpage von Gastrostart.
-Sie wird gebeten den Kanton für das Gründungsvorhaben aus einer Liste auszuwählen.
-Sie wählt aus und bestätigt die Eingabe.
-+ *Touchpoint:* Browser auf Mobile Device
-+ *Gedanke/Bedürfnis:* Amira weiss nicht, wie eine Unternehmensgründung funktionert und welche Voraussetzungen sie erfüllen muss, um ihr Geschäft zu betreiben.
-// ^+ *Emotion:*
-+ *Pain Point:*
-+ *Chance:*
-*/
 
 === Amira registriert sich bei Gastrostart
-#todo-action([\@ Jan Szenario/Beschreibung - bitte mit Tabelle wie bei Finanzierung])
+
+#autor-dvbern("Beitrag von Jan Sohnemann, DVBern", inhalt: [])
+
+Im Anschluss an die Orientierung sollte eine Registrierung erfolgen. 
+Das Ziel der Registrierung ist es, das Gründungsvorhaben auf der Plattform mit einem Konto zu verknüpfen, so dass es gepeichert, den Erstellenden exklusiv zugänglich gemacht und zu einem späteren Zeitpunkt weitergeführt werden kann.
+Dies ist ein notwendiges Übel, das alle Benutzenden hinnehmen müssen und die wenigsten verstehen vermutlich den Zweck und Nutzen dieses Vorgangs.
+Die Gefahr eines Abbruchs der Produktnutzung stufen wir als hoch ein, es ist also wichtig den Benutzenden im Vorfeld zu vermitteln, dass eine Nutzung ohne Kundenkonto von hier an nicht mehr möglich ist und dass sie davon profitieren.
+Wenn die Orientierungsphase erfolgreich war und das auslösende Bedürfnis befriedig wurde, ist die Chance gross, dass die Benutzenden hier fortfahren.
+
+Die folgende Abbildung zeigt einen den Teil des Szenarios als Modell in Archimate, der die Registrierung auslöst.
+An dieser Stelle des Entwicklungsprozesses war die Bedeutung der Phase "Orientierung" noch nicht ersichtlich.
+Tatsächlich verbirgt sich dahinter ein komplexerer Prozess, den wir - nach der kurzen Einführung im letzten Kapitel - in späteren Kapiteln aufgreifen.
 
  #figure(
   image("../assets/cj_registrierung.svg", width: 70%),
   caption: [Archimate Szenario "Amira registriert sich"]
 ) <fig-customer-journey-registrierung>
+
+Die folgende Tabelle kennen die Leser schon aus dem letzten Kapitel. Wir wiederholen den Aufbau an dieser Stelle und in den Folgenden Kapiteln nicht erneut und verweisen auf @head-scenarios-orientation.
+
+#figure(
+  caption: [Szenario "Amira Registriert sich"],
+  block(
+    width: 100%,
+    radius: 6pt,
+    clip: true,
+    stroke: 0.5pt + luma(225),
+  )[
+    #block(
+      width: 100%,
+      fill: luma(70),
+      inset: (x: 10pt, y: 7pt),
+      below: 0pt,
+    )[
+      #grid(
+        columns: (3.2cm, 1fr),
+        gutter: 10pt,
+        text(fill: white, weight: "bold", size: 0.95em)[Merkmal],
+        text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
+      )
+    ]
+    #set par(justify: false)
+    #table(
+      columns: (3.2cm, 1fr),
+      inset: (x: 10pt, y: 7pt),
+      stroke: (x: none, y: 0.5pt + luma(232)),
+      fill: (x, y) => if calc.even(y) { luma(250) } else { white },
+      align: (left, left),
+
+      [Aktion],
+      [Amira wählt eine E-Mailadresse und ein Passwort als Zugangsdaten. Sie bestätigt ihre E-Mailadresse mit einem Code, den sie zuvor vom System erhalten hat. Als zweiten Faktor für die Authentifizierung wählt sie einen Authenticator, den sie bereits auf ihrem Smartphone für andere Applikationen verwendet.],
+
+      [Touchpoints],
+      [GastroStart],
+
+      [Gedanke / Bedürfnis],
+      [Dauerhaftes Speichern des aktuellen Fortschritts.],
+
+      [Pain Point],
+      [Unterbrechung des Beratungsprozesses, Medienbruch (E-Mail, Smartphone, Passwormanager)],
+
+      [Chance],
+      [Gründungsvorhaben und Fortschritt sind nun dauerhaft gespeichert und können exklusiv verwaltet werden.],
+    )
+  ]
+) <tbl-szenario-registrierung>
 
 === Amira gründet ihr Unternehmen
  #figure(
@@ -263,7 +331,7 @@ Sie wählt aus und bestätigt die Eingabe.
 
 
 #figure(
-  caption: [Szenario "Amira gründet ihr Unternehmen"],
+  caption: [Szenario "Amira gründet ihr Unternehmen (Tabellenaufbau, siehe @head-scenarios-orientation")],
   block(
     width: 100%,
     radius: 6pt,
@@ -384,7 +452,7 @@ Sie wählt aus und bestätigt die Eingabe.
 
 
 #figure(
-  caption: [Szenario "Amira erhält eine Finanzierung"],
+  caption: [Szenario "Amira erhält eine Finanzierung" (Tabellenaufbau, siehe @head-scenarios-orientation")],
   block(
     width: 100%,
     radius: 6pt,

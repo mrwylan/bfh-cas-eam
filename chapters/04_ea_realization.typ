@@ -7,10 +7,22 @@
 = Die Realisierung des Resource Independent Model
 /*in Anlehnung an Kapitel 3.4.5. vom Spichiger-Skript*/
 == Allgemeines
-Dieses Teil der Arbeit bildet der Kern der Überlegungen der Gruppe. 
-Die Verfolgung der durch die Übungen vorgegebene Arbeitsschritte haben uns bis zur höchsten Abstraktionsstufe unseres Unternehmens geführt. 
-Jeder Entwicklungsschritt bezieht sich auf einem Auftrag (Übung) und folgt die Empfehlung zur Erarbeitung des RIM, die im Skript @Spichiger2026GFbUA, S. 53 ff. beschrieben ist. 
+Dieser Teil der Arbeit bildet der Kern der Überlegungen der Gruppe. 
+Die Verfolgung der durch die Übungen vorgegebenen Arbeitsschritte haben uns bis zur höchsten Abstraktionsstufe unseres Unternehmens geführt. 
+Jeder Entwicklungsschritt bezieht sich auf einem Auftrag (Übung) und folgt der Empfehlung zur Erarbeitung des RIM, die im Skript @Spichiger2026GFbUA, S. 53 ff. beschrieben ist. 
+Die Modellierung erfolgt mit Archimate. Die Darstellung der Symbole kann aufgrund der Vorlieben der einzelnen Verfasser voneinander abweichen, orientiert sich aber an den zwei Varianten, die das Modellierungswerkzeug bietet.
+Die von uns verwendeten Symbole sind in der folgenden Abbildung, in der jeweiligen Variante dargstellt.
 
+#figure(
+  image("../assets/jan/Notation-Archimate-Symbole.svg", width: 50%),
+  caption: ["Notation der verwendeten Archimate Symbolik"]
+) <fig-notation-archimate-symbole>
+
+Die folgenden Kapitel orientieren sich wie gehabt an den fünf Phasen der Customer Journey.
+Zunächst beschreiben wir die wesentlichen Geschäftsobjekte und ihre möglichen Zustände, die in der jeweiligen Phase die entscheidende Rolle spielen.
+Anschliessend erweitern wir das Modell um Geschäftstransaktionen und die Beziehungen der Geschäftsobjekte zu diesen und untereinander.
+Weiter werden die Geschäftstransaktion zu Geschäftsprozessen zusammengeführt und schliesslich die wesentlichen Geschäftsfähigkeiten der jeweiligen Prozesse identifiziert und in das Modell integriert.
+Im letzten Kapitel der Modellentwicklung beschreiben wir den Übergang vom RIM ins ressourcen-spezifische Modell anhand der IDEAL Informationssystemarchitektur.
 
 /*Appunti: 
 Hier wird kurz die Entwicklugn skizziert 
@@ -30,17 +42,24 @@ die Granularität ist:
 Wir verlassen das Tagebuch-Aufbau - und gehen hin zu einem logischen, fliessender Text, dem GFbAU folgend. 
 */
 
-== Erste Iteration: Identifikation der Geschäftsobjekte
+== Erste Iteration: Identifikation der Geschäftsobjekte <head-identifikation-der-bos>
+In dieser Iteration haben wir die wesentlichen Geschäftsobjekte sowie die, für die alle Phasen in der Customer Journey, relevanten Zustände identifiziert und definiert. 
+Für die Darstellung der Zustände verwenden wir das Symbol *Business Event*, siehe @fig-notation-archimate-symbole.
+Die Geschäftsobjekte selber konnten wir anhand der Szenarios, welche sich aus der Customer Journey ergeben, identifizieren.
+Im weiteren Diskurs und mit fortschreitender Entwicklung des Modells wurden allerdings auch weitere Geschäftsobjekte identifiziert oder bestehende verworfen.
+Die folgende Abbildung zeigt, wie wir Geschäftsobjekte durch die Zerlegung der Custoner Journey in Szenarios, identifiziert haben.
 
+#figure(
+  image("../assets/jan/BOs-aus-Szenario-Customer-Journey.svg", width: 100%),
+  caption: ["Geschäftsobjekte in der Customer Journey identifizieren"]
+) <fig-bo-aus-szenarios-customer-journey>
 
+=== Kundenkonto (Registrierung)
 
+#autor-dvbern("Beitrag von Jan Sohnemann, DVBern", inhalt: [])
+TBC
 
-
-=== [LEER] Kundenkonto (Registrierung)
-
-
-
-
+#frage([*Von Jan*: Warum führen wir an dieser Stelle schon alle Zustände mit ein? Ich habe mich in der Einleitung etwas schwer getan, dieses Vorgehen zu begründen. Die Zustände ergeben sich ja erst aus den Geschäftstransaktionen (GTZ). Ich würde mich hier lieber rein auf die BOs konzentrieren und die Zustände dann in der jeweils besprochenen Phase einführen, wenn die GTZ eingeführt werden z.B. in @fig-gtz-registrierung. ])
 
 === Unternehmen
 #figure(
@@ -306,8 +325,11 @@ caption: [Geschäftsobjekt Lieferantenkonto und dessen Zustände]
 ) <tbl-GO-Lieferantenkonto>
 
 === Gründungsvorhaben
-#todo-action([\@ jan/jakob: könnt ihr bitte dieses Objekt beschreiben?])
 
+#autor-dvbern("Beitrag von Jan Sohnemann, DVBern", inhalt: [TBC!])
+
+Das naheliegendste und auch umfangreichste Geschäftsobjekt, dass sich aus der Betrachtung der Customer Journey ergeben hat, ist das *Gründungsvorhaben*.
+Dieses Objekt ist in den ersten vier Phasen der Customer Journey von Relevanz und seine Entstehung liegt in der ersten Phase, der *Orientierung*.
 
 #figure(
 image("../assets/GOGruendungsvorhaben.svg", width: 50%),
@@ -458,6 +480,9 @@ Sowohl bei Input und Output wird darauf geachtet, dass diese inklusive ihre Zust
 ])
 
 === Vorgehen
+
+#frage([*Von Jan*: Wir haben im letzten Kapitel alle BOs mit ihren Zuständen eingeführt. Im Nachgang zu erklären, wie wir überhaupt auf diese BOs gekommen sind finde ich zu spät. Dieses Kapitel fände ich in der Einleitung von @head-identifikation-der-bos besser aufgehoben. Ich dort eine Einleitung geschrieben, bevor ich dieses Kapitel gesehen habe. Ich lasse jetzt erstmal beides stehen.])
+
 Um Geschäftsobjekte zu identifizieren hat sich die Gruppe mit der Struktur von Amiras Customer Journey auseinandergesetzt.
 Dabei liessen sich Nomen wie "Gründung", "Finanzierung", "Kundenkonto" - diese wurden als Prototypen für mögliche Geschäftsobjekte festgehalten. 
 
@@ -616,7 +641,7 @@ Die folgende Abbildung stellt den Prozess *Kundenkonto verwalten* im Archimate M
 #figure(
   image("../assets/jan/Zustandsübergänge des Kundenkontos in Phase 2 - Sich registrieren.svg", width: 100%),
   caption: [Zustandsübergänge des Gründungsvorhabens in Phase 1: Orientierung]
-) <fig-GTZ-orientierung>
+) <fig-gtz-registrierung>
 
 #design-entscheid([
   Wir haben uns die Frage gestellt, ob wir das Objekt "Kunde" auch zusätzlich modellieren sollen. 
