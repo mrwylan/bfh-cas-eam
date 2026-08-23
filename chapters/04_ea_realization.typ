@@ -1279,12 +1279,16 @@ Die letzten beiden Punkte von Teilfähigkeit 3 --- verständliche Begründung un
 
 === Geschäftsfähigkeiten Kunde bei Transgourmet werden
 
-#figure(
-  image("../assets/Kunde bei Transgourmet.svg", width: 80%),
-  caption: [Archimate Modell TODO]
-) <fig-phase_5_Kunde_bei_Transgourmet>
+Die Geschäftsfähigkeit die im Szenario *Kunde bei Transgourmet werden* tragend werden, wurden als *Lieferantenkonto* und *Bestellung* identifiziert.
+Das Einordnen gelingt am Besten anhand der Geschäftstransaktionen, wie sie in der Phase *Amira wird Kunde bei Transgourmet* beschrieben sind (siehe @tbl-GT-Kunde-bei-Transgourmet). Die Geschäftstransaktionen werden zu zwei Geschäftsprozessen aggregiert, die wiederum die beiden Geschäftsfähigkeiten stützen.
 
+1. Lieferantenkonto
 
+Ein erfolgreicher Gastronomiebetrieb benötigt ein Lieferantenkonto, um Waren zu beziehen. Die Geschäftsfähigkeit *Lieferantenkonto* umfasst die Eröffnung und Verwaltung dieses Kontos. Sie wird durch die Geschäftsprozesse *Lieferantenkonto beantragen* und *Lieferantenkonto eröffnen* unterstützt.
+
+2. Bestellung
+
+Die Geschäftsfähigkeit *Bestellung* umfasst die Erfassung und Verwaltung von Bestellungen beim Lieferanten. Die Geschäftsprozesse *Bestellung aufgeben* und *Wareneingang erfassen* sind Teil der *Bestellung* Geschäftsfähigkeit.
 
 /*
 == Business-Object-Analyse <sec-business-objects>
