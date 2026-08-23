@@ -42,149 +42,10 @@ Wir verlassen das Tagebuch-Aufbau - und gehen hin zu einem logischen, fliessende
 
 
 
-=== Unternehmen
-#figure(
-image("../assets/GOUnternehmen.svg", width: 50%),
-caption: [Geschäftsobjekt Unternehmen und dessen Zustände]
-) <fig-GOUnternehmen>
+=== [LEER] Unternehmen
 
-#figure(
-  caption: [Geschäftsobjekt Unternehmen],
-  block(
-    width: 100%,
-    radius: 6pt,
-    clip: true,
-    stroke: 0.5pt + luma(225),
-  )[
-    // Kopfzeile als abgerundetes Band
-    #block(
-      width: 100%,
-      fill: luma(70),
-      inset: (x: 10pt, y: 7pt),
-      below: 0pt,
-    )[
-      #grid(
-        columns: (3.2cm, 1fr),
-        gutter: 10pt,
-        text(fill: white, weight: "bold", size: 0.95em)[Angabe],
-        text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
-      )
-    ]
-    #set par(justify: false)
-    #table(
-      columns: (3.2cm, 1fr),
-      inset: (x: 10pt, y: 7pt),
-      stroke: (x: none, y: 0.5pt + luma(232)),
-      fill: (x, y) => if calc.even(y) { luma(250) } else { white },
-      align: (left, left),
 
-      [Bezeichnung],
-      [Unternehmen],
-
-      [Definition / Zweck],
-      [
-        Repräsentiert die zu gründende resp. gegründete juristische Person, an der Amiras Gründungsvorhaben ausgerichtet ist.
-        Das Geschäftsobjekt enthält die wesentlichen Stammdaten der Unternehmung. 
-        Der Gründungsverlauf selbst wird nicht als Inhalt abgebildet, sondern ist über die Zustände des Objekts nachzuvollziehen.
-       /* Die Gründung einer juristischen Person setzt voraus, dass mindestens ein Vertreter Wohnsitz in der Schweiz hat. */
-       Die juristische Person ist Empfängerin der Betriebsbewilligung. 
-      ],
-
-      [Attribute],
-      [Auf Ebene Geschäftsobjekt nicht ausmodelliert. Fachlich relevant wären jedoch: 
-      + Auf die eine Seite Informationen wie Rechtsform, Firmenname, Sitz / Domizil, Zweck, Kapital.
-      + Auf der anderen Seite Identifikatoren für die Interaktion zu den verschiedenen öffentlich-rechtlichen Akteure auf kantonale und Bundesebene wie Unternehmens-ID, Mehrwertsteuer-Nummer, AHV-Nummer, Nummer der Unfallversicherungspolice (SUVA oder private Versicherung).
-      
-
-        
-        #linebreak()
-        _(nur Stammdaten; zugehörige Dokumente wie Handelsregistereintrag oder Bewilligung sind eigene Objekte, siehe Beziehungen)_
-      ],
-
-      [Zustände],
-      [neu, beurkundet, eingereicht, unvollständig, angenommen, abgelehnt, im Handelsregister eingetragen, abgebrochen.
-      
-      Lebenszyklus: von _neu_ über _beurkundet_ zu _eingereicht_ für die Prüfung durch die Behörden; bei fehlenden Angaben _unvollständig_, nach Nachreichung wieder _eingereicht_. Nach dem Erreichen des Status _eingereicht_ geht es je nach Behördenentscheid mit dem Status _abgelehnt_ zum Ende, während bei behördlicher Zustimmung die Status _angenommen_ und _im Handelsregister eingetragen_ erreicht werden. Der Status _abgebrochen_ beendet den Zyklus vorzeitig, solange der Status _eingereicht_ noch nicht erreicht worden ist. 
-      Für die grafische Aufbereitung der Zustandsübergänge, vgl. @fig-GTZ-Amira-gründet.],
-
-      [Beziehungen],
-      [
-        - wird referenziert von *Gründungsvorhaben* (wobei die Gründung der juristischen Person nicht zwingend notwendig ist)
-        - steht in Beziehung zu 
-         - *Kundenkonto*: als Objekt des Gründungsvorhabens
-         - *Bewilligung*: als Empfänger
-         - *Lieferantenkonto* als Kunde und Debitor von Transgourmet
-         - und *Finanzierung*: als Empfänger der Mittel
-        - Zugriff über die Geschäftstransaktionen 
-          - Gründungsdokumentation vorbereiten, Eintrag im Handelsregister beantragen, Antrag prüfen, im Handelsregister eintragen und Unterlagen nachreichen (siehe @tbl-GT-Unternehmen-gründen). 
-      ],
-    
-    )
-  ]
-) <tbl-GO-Unternehmen>
-
-=== Bewilligung 
-
-#figure(
-image("../assets/GOBewilligung.svg", width: 50%),
-caption: [Geschäftsobjekt Bewilligung und dessen Zustände]
-) <fig-GOBewilligung>
-#figure(
-  caption: [Geschäftsobjekt Bewilligung],
-  block(
-    width: 100%,
-    radius: 6pt,
-    clip: true,
-    stroke: 0.5pt + luma(225),
-  )[
-    // Kopfzeile als abgerundetes Band
-    #block(
-      width: 100%,
-      fill: luma(70),
-      inset: (x: 10pt, y: 7pt),
-      below: 0pt,
-    )[
-      #grid(
-        columns: (3.2cm, 1fr),
-        gutter: 10pt,
-        text(fill: white, weight: "bold", size: 0.95em)[Angabe],
-        text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
-      )
-    ]
-    #set par(justify: false)
-    #table(
-      columns: (3.2cm, 1fr),
-      inset: (x: 10pt, y: 7pt),
-      stroke: (x: none, y: 0.5pt + luma(232)),
-      fill: (x, y) => if calc.even(y) { luma(250) } else { white },
-      align: (left, left),
-
-      [Bezeichnung],
-      [Bewilligung],
-
-      [Definition / Zweck],
-      [Stellt ein behördlicher "Vertrag" dar, welcher einer natürlichen oder juristischen Person (_in casu_ dem Unternehmen von Amira) erteilt werden kann.
-      Die Erteilung der Bewilligung setzt je nach Kanton ein Fähigkeitsausweis voraus. In Kanton Fribourg muss mindestens eine Person im Betrieb ein Wirtepatent besitzen.],
-
-      [Attribute],
-      [/*REDEwendung von Adrian übernehmen*/fachlich relevante Informationen zum Geschäftsobjekt sind: Typ (mit oder ohne Alkoholausschank), unterliegendes Wirtepatent (insbesondere dessen territoriale Gültigkeit), Standort bzw. Lokal, Datum Bewilligungsbeginn, erteilende Behörde, Datum der Anmeldung bei der kantonalen Lebensmittelbehörde bzw. -labor, Hygienekonzept],
-
-      [Zustände],
-      [neu, in Vorbereitung, eingereicht, unvollständig, abgelehnt, erteilt, abgebrochen. 
-      
-      Lebenszyklus: von _neu_ über _in Vorbereitung_ zu _eingereicht_ für die Prüfung durch die Behörden; bei fehlenden Angaben _unvollständig_, nach Nachreichung wieder _eingereicht_. Nach dem Erreichen des Status _eingereicht_ geht es je nach Behördenentscheid mit dem Status _abgelehnt_ zum Ende, während bei behördlicher Zustimmung der Status _erteilt_ erreicht wird. Der Status _abgebrochen_ beendet den Zyklus vorzeitig, solange der Status _eingereicht_ noch nicht erreicht worden ist.
-      Für die grafische Aufbereitung der Zustandsübergänge, vgl. @fig-GTZ-Amira-bewilligung. 
-
-      Andere Zustände wie erloschen, entzogen, sistiert, sind für die abgebildete Customer Journey nicht relevant.],
-
-      [Beziehungen],
-      [- wird referenziert von *Gründungsvorhaben* // sagt man das so? ist das korrekt?
-        - steht in Beziehung zu *Unternehmen* als Adressat
-        - Zugriff über die Geschäftstransaktionen 
-          - Bewilligungsantrag vorbereiten, Bewilligungsantrag einreichen, Bewilligungsantrag vervollständigen, Antrag prüfen, Verfügung mitteilen (siehe @tbl-GT-Bewilligung). ],
-    )
-  ]
-) <tbl-GO-Bewilligung>
+=== [LEER] Bewilligung 
 
 === Finanzierung
 Das Geschäftsobjekt *Finanzierung* bündelt sämtliche Informationen rund um Amiras Finanzierungsgesuch --- von der Anfrage über die Bonitätsprüfung durch FINNOFLEET bis zum Kreditentscheid. Es ist das informationstragende Artefakt, das den Finanzierungsfall durch seinen Lebenszyklus führt und die Zustandsübergänge dokumentiert.
@@ -371,73 +232,6 @@ Antwot: ja)
   ]
 ) <tbl-GO-Gründungsvorhaben>
 
-=== Reflektion
-#stolperstein([
-  Die Kundensicht ständig zu behalten und Abstand vom eigenen Fachbereich zu halten ist den Gefährten nicht immer gelungen. 
-  ])
-
-  Eine anfängliche Identifikation der Geschäftsobjekte führte die Gruppe zu einer umfangreicheren Liste. Physische Artefakte wie "Bewilligung", "Liefervertrag" oder "kantonales Formular" schienen uns vorerst sehr sinnvoll und notwendig. 
-  In einer frühen Phase war es besonders schwierig, die reine Kundensicht einzunehmen - und führte dazu, dass beispielsweise zwischen Bewilligungsantrag und die erteilte Bewilligung (Verfügung) unterschieden wurde.
-
-Nachofolgende Tabelle enthält eine Zusammenfassung der anfänglichen Objekte: 
-#figure(
-  caption: [Business-Object-Inventar: GastroStart — nach Kernel Type],
-  block(width: 100%, breakable: true)[
-    #set text(size: 7.5pt)
-    #table(
-      columns: (1.9cm, 1fr),
-      inset: 5pt,
-      stroke: 0.4pt,
-      fill: (x, y) => if y == 0 { luma(210) } else if calc.odd(y) { luma(248) } else { white },
-      align: (left, left),
-      [*Kernel Type*], [*Business Objects*],
-      [Contract],     [Gewerbebewilligung · Alkoholbewilligung · Handelsregistereintrag · Kreditantrag · Liefervertrag (Neukunde)],
-      [Data Object],  [Bonitätsprüfung],
-      [Document],     [Kantonsanforderungskatalog ·Bewilligungsantrag · Bewilligungsübersicht · Identitätsnachweis · Anmeldung Lebensmittelkontrolle · Kantonales Formular · Bestellung],
-      [Entity],       [Betriebstyp-Profil · Gründungsprofil · Nutzerkonto · Geschäftskonto (IBAN) · Lieferantenkonto],
-      [Event],        [Bewilligungsstatus],
-    )
-  ]
-) <tbl-business-objects-grouped>
-
-Die in den Übungen gestellte Frage "Was bleibt, wenn Ihr Unternehmen dematerialisiert wird? Alles wird zur Information, was Information werden kann. 
-Was bleibt physisch vorhanden, was verschwindet?" 
-
-
-/*#figure(
-  caption: [Business-Object-Inventar: GastroStart],
-  block(width: 100%, breakable: true)[
-    #set text(size: 7.5pt)
-    #table(
-      columns: (3.3cm, 1.9cm),
-      inset: 5pt,
-      stroke: 0.4pt,
-      fill: (x, y) => if y == 0 { luma(210) } else if calc.odd(y) { luma(248) } else { white },
-      align: (left, left),
-      [*Business Object*], [*Kernel Type*],
-      [Kantonsanforderungskatalog],    [Document],
-      [Unternehmen],                    [Entity],
-      [Bewilligungsantrag],              [Document],
-      [Bewilligungsübersicht],          [Document],
-      [eID-Identitätsnachweis],         [Document],
-      [Gründungsprofil],               [Entity],
-      [Nutzerkonto],                   [Entity],
-      [Gewerbebewilligung],            [Contract],
-      [Lebensmittelkontroll-Anmeldung],[Document],
-      [Alkoholbewilligung],            [Contract],
-      [Handelsregistereintrag],        [Contract],
-      [Bewilligungsstatus],            [Event],
-      [Kantonales Formular],           [Document],
-      [Bonitätsprüfung],              [Data Object],
-      [Geschäftskonto (IBAN)],         [Entity],
-      [Kreditantrag],                  [Contract],
-      [Lieferantenkonto],              [Entity],
-      [Bestellung],                    [Document],
-      [Liefervertrag (Neukunde)],      [Contract],
-    )
-  ]
-) <tbl-business-objects-kurzform>
-*/
 == [titel tbd] Zweite Iteration: Zustände und Geschäftstransaktionen oder die Identifikation des relevanten Verhaltens
 /*#frage([an alle: wie findet ihr mein Vorschlag für die Dokumentation der Geschäftstransaktionen und Zustände? ist es ok, immer dasselbe Objekt als in- und output zu haben (bspw. bei bewilligung)])*/
 
@@ -696,12 +490,87 @@ Die abgebildete Variante erwähnt noch die Möglichkeiten des Abbruches der Firm
 
 Nachfolgend wird auf die einzelnen Elemente der Grafik erklärt:
 
-+ *Geschäftsobjekt*: 
+1. *Geschäftsobjekt und Zustände*: 
+#figure(
+  caption: [Geschäftsobjekt Unternehmen],
+  block(
+    width: 100%,
+    radius: 6pt,
+    clip: true,
+    stroke: 0.5pt + luma(225),
+  )[
+    // Kopfzeile als abgerundetes Band
+    #block(
+      width: 100%,
+      fill: luma(70),
+      inset: (x: 10pt, y: 7pt),
+      below: 0pt,
+    )[
+      #grid(
+        columns: (3.2cm, 1fr),
+        gutter: 10pt,
+        text(fill: white, weight: "bold", size: 0.95em)[Angabe],
+        text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
+      )
+    ]
+    #set par(justify: false)
+    #table(
+      columns: (3.2cm, 1fr),
+      inset: (x: 10pt, y: 7pt),
+      stroke: (x: none, y: 0.5pt + luma(232)),
+      fill: (x, y) => if calc.even(y) { luma(250) } else { white },
+      align: (left, left),
+
+      [Bezeichnung],
+      [Unternehmen],
+
+      [Definition / Zweck],
+      [
+        Repräsentiert die zu gründende resp. gegründete juristische Person, an der Amiras Gründungsvorhaben ausgerichtet ist.
+        Das Geschäftsobjekt enthält die wesentlichen Stammdaten der Unternehmung. 
+        Der Gründungsverlauf selbst wird nicht als Inhalt abgebildet, sondern ist über die Zustände des Objekts nachzuvollziehen.
+       /* Die Gründung einer juristischen Person setzt voraus, dass mindestens ein Vertreter Wohnsitz in der Schweiz hat. */
+       Die juristische Person ist Empfängerin der Betriebsbewilligung. 
+      ],
+
+      [Attribute],
+      [Auf Ebene Geschäftsobjekt nicht ausmodelliert. Fachlich relevant wären jedoch: 
+      + Auf die eine Seite Informationen wie Rechtsform, Firmenname, Sitz / Domizil, Zweck, Kapital.
+      + Auf der anderen Seite Identifikatoren für die Interaktion zu den verschiedenen öffentlich-rechtlichen Akteure auf kantonale und Bundesebene wie Unternehmens-ID, Mehrwertsteuer-Nummer, AHV-Nummer, Nummer der Unfallversicherungspolice (SUVA oder private Versicherung).
+      
+        _(nur Stammdaten; zugehörige Dokumente wie Handelsregistereintrag oder Bewilligung sind eigene Objekte, siehe Beziehungen)_
+      ],
+
+      [Zustände],
+      [neu, beurkundet, eingereicht, unvollständig, angenommen, abgelehnt, im Handelsregister eingetragen, abgebrochen.
+      
+      Lebenszyklus: von _neu_ über _beurkundet_ zu _eingereicht_ für die Prüfung durch die Behörden; bei fehlenden Angaben _unvollständig_, nach Nachreichung wieder _eingereicht_. Nach dem Erreichen des Status _eingereicht_ geht es je nach Behördenentscheid mit dem Status _abgelehnt_ zum Ende, während bei behördlicher Zustimmung die Status _angenommen_ und _im Handelsregister eingetragen_ erreicht werden. Der Status _abgebrochen_ beendet den Zyklus vorzeitig, solange der Status _eingereicht_ noch nicht erreicht worden ist. 
+      Für die grafische Aufbereitung der Zustandsübergänge, vgl. @fig-GTZ-Amira-gründet.],
+
+      [Beziehungen],
+      [
+        - wird referenziert von *Gründungsvorhaben* (wobei die Gründung der juristischen Person nicht zwingend notwendig ist)
+        - steht in Beziehung zu 
+         - *Kundenkonto*: als Objekt des Gründungsvorhabens
+         - *Bewilligung*: als Empfänger
+         - *Lieferantenkonto* als Kunde und Debitor von Transgourmet
+         - und *Finanzierung*: als Empfänger der Mittel
+        - Zugriff über die Geschäftstransaktionen 
+          - Gründungsdokumentation vorbereiten, Eintrag im Handelsregister beantragen, Antrag prüfen, im Handelsregister eintragen und Unterlagen nachreichen (siehe @tbl-GT-Unternehmen-gründen). 
+      ],
+    
+    )
+  ]
+) <tbl-GO-Unternehmen>
+
+/*
 #figure(
 image("../assets/GOUnternehmen.svg", width: 50%),
 caption: [Geschäftsobjekt Unternehmen und dessen Zustände]
 ) <fig-GOUnternehmen>
+*/
 
+/*
 #figure(
   caption: [Geschäftsobjekt Unternehmen],
   block(
@@ -771,9 +640,9 @@ caption: [Geschäftsobjekt Unternehmen und dessen Zustände]
 + *Zustände*: neu, beurkundet, eingereicht, unvollständig, angenommen, abgelehnt, im Handelsregister eingetragen, abgebrochen.
 
 + *Lebenszyklus*: von _neu_ über _beurkundet_ zu _eingereicht_ für die Prüfung durch die Behörden; bei fehlenden Angaben _unvollständig_, nach Nachreichung wieder _eingereicht_. Nach dem Erreichen des Status _eingereicht_ geht es je nach Behördenentscheid mit dem Status _abgelehnt_ zum Ende, während bei behördlicher Zustimmung die Status _angenommen_ und _im Handelsregister eingetragen_ erreicht werden. Der Status _abgebrochen_ beendet den Zyklus vorzeitig, solange der Status _eingereicht_ noch nicht erreicht worden ist. 
+*/
 
-+ *Geschäftstransaktionen*: 
-Amira möchte eine Gesellschaft mit beschränkter Haftung gründen, um sich und ihre Familie finanziell vor einem möglichen Misserfolg ihres Unternehmens zu schützen. 
+2. *Geschäftstransaktionen*: 
 Das Geschäftsobjekt Unternehmen durchläuft mehrere Transaktionen: 
 - In einer ersten Phase ist Amira in Führung: sie _bereitet_  mit der Hilfe von Informationen und Fachfunktionen auf GastroStart die _Unterlagen_ für die Gründung der "Food Affair GmbH _vor_. Nach der öffentlichen Beurkundung _beantragt_ sie den _Eintrag im Handelsregister_ für ihre GmbH. 
 - Danach ist der Ball bei den Behörden: das kantonale Handelsregisteramt _prüft den Antrag_ auf Vollständigkeit, _lehnt es ab_ oder _nimmt es an_ und _trägt die GmbH im Handelsregister ein_. 
@@ -839,12 +708,70 @@ Die folgende Abbildung stellt die Zusammenhänge der Geschäftsobjekte, Zuständ
 
 Nachfolgend wird auf die einzelnen Elemente der Grafik erklärt:
 
-± *Geschäftsobjekt*:
-#figure(
+1. *Geschäftsobjekt und Zustände*:
+/*#figure(
 image("../assets/GOBewilligung.svg", width: 50%),
 caption: [Geschäftsobjekt Bewilligung und dessen Zustände]
 ) <fig-GOBewilligung>
+*/
 
+#figure(
+  caption: [Geschäftsobjekt Bewilligung],
+  block(
+    width: 100%,
+    radius: 6pt,
+    clip: true,
+    stroke: 0.5pt + luma(225),
+  )[
+    // Kopfzeile als abgerundetes Band
+    #block(
+      width: 100%,
+      fill: luma(70),
+      inset: (x: 10pt, y: 7pt),
+      below: 0pt,
+    )[
+      #grid(
+        columns: (3.2cm, 1fr),
+        gutter: 10pt,
+        text(fill: white, weight: "bold", size: 0.95em)[Angabe],
+        text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
+      )
+    ]
+    #set par(justify: false)
+    #table(
+      columns: (3.2cm, 1fr),
+      inset: (x: 10pt, y: 7pt),
+      stroke: (x: none, y: 0.5pt + luma(232)),
+      fill: (x, y) => if calc.even(y) { luma(250) } else { white },
+      align: (left, left),
+
+      [Bezeichnung],
+      [Bewilligung],
+
+      [Definition / Zweck],
+      [Stellt ein behördlicher "Vertrag" dar, welcher einer natürlichen oder juristischen Person (_in casu_ dem Unternehmen von Amira) erteilt werden kann.
+      Die Erteilung der Bewilligung setzt je nach Kanton ein Fähigkeitsausweis voraus. In Kanton Fribourg muss mindestens eine Person im Betrieb ein Wirtepatent besitzen.],
+
+      [Attribute],
+      [/*REDEwendung von Adrian übernehmen*/fachlich relevante Informationen zum Geschäftsobjekt sind: Typ (mit oder ohne Alkoholausschank), unterliegendes Wirtepatent (insbesondere dessen territoriale Gültigkeit), Standort bzw. Lokal, Datum Bewilligungsbeginn, erteilende Behörde, Datum der Anmeldung bei der kantonalen Lebensmittelbehörde bzw. -labor, Hygienekonzept],
+
+      [Zustände],
+      [neu, in Vorbereitung, eingereicht, unvollständig, abgelehnt, erteilt, abgebrochen. 
+      
+      Lebenszyklus: von _neu_ über _in Vorbereitung_ zu _eingereicht_ für die Prüfung durch die Behörden; bei fehlenden Angaben _unvollständig_, nach Nachreichung wieder _eingereicht_. Nach dem Erreichen des Status _eingereicht_ geht es je nach Behördenentscheid mit dem Status _abgelehnt_ zum Ende, während bei behördlicher Zustimmung der Status _erteilt_ erreicht wird. Der Status _abgebrochen_ beendet den Zyklus vorzeitig, solange der Status _eingereicht_ noch nicht erreicht worden ist.
+      Für die grafische Aufbereitung der Zustandsübergänge, vgl. @fig-GTZ-Amira-bewilligung. 
+
+      Andere Zustände wie erloschen, entzogen, sistiert, sind für die abgebildete Customer Journey nicht relevant.],
+      [Beziehungen],
+      [- wird referenziert von *Gründungsvorhaben* // sagt man das so? ist das korrekt?
+        - steht in Beziehung zu *Unternehmen* als Adressat
+        - Zugriff über die Geschäftstransaktionen 
+          - Bewilligungsantrag vorbereiten, Bewilligungsantrag einreichen, Bewilligungsantrag vervollständigen, Antrag prüfen, Verfügung mitteilen (siehe @tbl-GT-Bewilligung). ],
+    )
+  ]
+) <tbl-GO-Bewilligung>
+
+/*
 #figure(
   caption: [Geschäftsobjekt Bewilligung],
   block(
@@ -901,7 +828,7 @@ caption: [Geschäftsobjekt Bewilligung und dessen Zustände]
 Andere Zustände wie erloschen, entzogen, sistiert, sind für die abgebildete Customer Journey nicht relevant.
 
 #design-entscheid([Wir haben uns entschieden, die Frage um das Schicksal des Objekts "Bewilligung" im Fall der Löschung des Benutzerprofils von Amira offenzulassen.])
-/*
+
 #figure(
 image("../assets/ZustandGOBewilligung-2.svg", width: 60%),
 caption: [Zustandsdiagramm des Geschäftsobjekt Bewilligung]
@@ -911,7 +838,7 @@ caption: [Zustandsdiagramm des Geschäftsobjekt Bewilligung]
 #design-entscheid([Wir haben uns entschieden, die Frage um das Schicksal des Objekts "Bewilligung" im Fall der Löschung des Benutzerprofils von Amira offenzulassen.])
  
  
- + *Geschäftstransaktionen*:
+ 2. *Geschäftstransaktionen*:
 Amira möchte beantragt im Namen ihres Unternehmens die Bewilligung für den Betrieb von Catering.
 Das Geschäftsobjekt Bewilligung durchläuft mehrere Transaktionen: 
 - In einer ersten Phase ist Amira in Führung: sie _bereitet_  mit der Hilfe der Informationen auf Gastrostart die _Unterlagen_ für den Bewilligungsantrag _vor_. Wenn sie alle Unterlagen gesammelt hat, _reicht_ sie den _Bewilligungsantrag_ bei der zuständigen Behörde _ein_. 
@@ -1049,7 +976,7 @@ transaktion],
   - Events 
   - Transaktionen
 */
-+ Zustände
++ Geschäftsobjekt und Zustände
 + Geschäftstransaktionen
 
 #figure(
@@ -1097,6 +1024,74 @@ transaktion],
 ) <fig-customer-journey-view>
 
 === Reflexion
+
+#stolperstein([
+  Die Kundensicht ständig zu behalten und Abstand vom eigenen Fachbereich zu halten ist den Gefährten nicht immer gelungen. 
+  ])
+
+  Eine anfängliche Identifikation der Geschäftsobjekte führte die Gruppe zu einer umfangreicheren Liste. Physische Artefakte wie "Bewilligung", "Liefervertrag" oder "kantonales Formular" schienen uns vorerst sehr sinnvoll und notwendig. 
+  In einer frühen Phase war es besonders schwierig, die reine Kundensicht einzunehmen - und führte dazu, dass beispielsweise zwischen Bewilligungsantrag und die erteilte Bewilligung (Verfügung) unterschieden wurde.
+
+Nachofolgende Tabelle enthält eine Zusammenfassung der anfänglichen Objekte: 
+#figure(
+  caption: [Business-Object-Inventar: GastroStart — nach Kernel Type],
+  block(width: 100%, breakable: true)[
+    #set text(size: 7.5pt)
+    #table(
+      columns: (1.9cm, 1fr),
+      inset: 5pt,
+      stroke: 0.4pt,
+      fill: (x, y) => if y == 0 { luma(210) } else if calc.odd(y) { luma(248) } else { white },
+      align: (left, left),
+      [*Kernel Type*], [*Business Objects*],
+      [Contract],     [Gewerbebewilligung · Alkoholbewilligung · Handelsregistereintrag · Kreditantrag · Liefervertrag (Neukunde)],
+      [Data Object],  [Bonitätsprüfung],
+      [Document],     [Kantonsanforderungskatalog ·Bewilligungsantrag · Bewilligungsübersicht · Identitätsnachweis · Anmeldung Lebensmittelkontrolle · Kantonales Formular · Bestellung],
+      [Entity],       [Betriebstyp-Profil · Gründungsprofil · Nutzerkonto · Geschäftskonto (IBAN) · Lieferantenkonto],
+      [Event],        [Bewilligungsstatus],
+    )
+  ]
+) <tbl-business-objects-grouped>
+
+Die in den Übungen gestellte Frage "Was bleibt, wenn Ihr Unternehmen dematerialisiert wird? Alles wird zur Information, was Information werden kann. 
+Was bleibt physisch vorhanden, was verschwindet?" 
+
+
+/*#figure(
+  caption: [Business-Object-Inventar: GastroStart],
+  block(width: 100%, breakable: true)[
+    #set text(size: 7.5pt)
+    #table(
+      columns: (3.3cm, 1.9cm),
+      inset: 5pt,
+      stroke: 0.4pt,
+      fill: (x, y) => if y == 0 { luma(210) } else if calc.odd(y) { luma(248) } else { white },
+      align: (left, left),
+      [*Business Object*], [*Kernel Type*],
+      [Kantonsanforderungskatalog],    [Document],
+      [Unternehmen],                    [Entity],
+      [Bewilligungsantrag],              [Document],
+      [Bewilligungsübersicht],          [Document],
+      [eID-Identitätsnachweis],         [Document],
+      [Gründungsprofil],               [Entity],
+      [Nutzerkonto],                   [Entity],
+      [Gewerbebewilligung],            [Contract],
+      [Lebensmittelkontroll-Anmeldung],[Document],
+      [Alkoholbewilligung],            [Contract],
+      [Handelsregistereintrag],        [Contract],
+      [Bewilligungsstatus],            [Event],
+      [Kantonales Formular],           [Document],
+      [Bonitätsprüfung],              [Data Object],
+      [Geschäftskonto (IBAN)],         [Entity],
+      [Kreditantrag],                  [Contract],
+      [Lieferantenkonto],              [Entity],
+      [Bestellung],                    [Document],
+      [Liefervertrag (Neukunde)],      [Contract],
+    )
+  ]
+) <tbl-business-objects-kurzform>
+*/
+
 #stolperstein([
   In dieser Phase wurde mehrmals die Modellierungsebene verfehlt.
   Schwierigkeiten bat es, Abstand von der gewohnte Implementierungsebene zu halten - und Transaktionen nicht wie eine Benutzerführung auf einem Applikations-Frontend zu modellieren. 

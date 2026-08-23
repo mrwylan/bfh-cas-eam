@@ -22,6 +22,8 @@ Bei der Suche erfährt sie, dass die Punkte Bewilligungen, Finanzierung, Ressour
 Sie landet bei *“GastroStart”* und erfährt in der kurzen Einführung auf der Startseite, dass dieses Portal sie bei all dem unterstützen kann. 
 Sie ist erleichtert und registriert sich. 
 
+#frage([which box do we keep.])
+
 #design-entscheid([Andere Customer Journey Ideen, wie wir analysiert und verworfen haben: 
 - B2B: Onboarding eines bestehenden Business-Kunden bei Transgourmet
 - EatSwiss: Digitale Herkunftsplattform für Gastronomie
@@ -36,7 +38,6 @@ Sie ist erleichtert und registriert sich.
 - Die Komplexität ist überschaubar und kann im Rahmen der Arbeit modelliert werden.
 ])
 
-=== Die Persona Amira als Anker der Outside-in-Perspektive
 In enger Verbindung mit der Customer Journey #ref(<sec-amira-und-ihre-geschichte>, supplement: none) wird die Persona „Amira“ erarbeitet. Sie dient dazu, unsere Endkundin konkret greifbar und emotional verankert zu machen. Die Bedürfnisse und Kontexte von Amira bilden den zentralen Ausgangspunkt für die Modellierung des Produkts "GastroStart".
 
 #figure(
@@ -84,7 +85,7 @@ Entsprechend der gewählten Customer Journey haben wir uns entschieden, nur das 
 
 == Die Rollen der beteiligten Unternehmen im Joint Venture
 
-#todo-action([Verschieben - anch der Customer Journey (vor 3.3.)])
+#frage([wollen wir uns hier knapper halten? Wegen Spoilern von dem was nachher kommt.(se beiträge Transgourmet und öffentliche Verwaltung)])
 
 === DV Bern
 
@@ -164,7 +165,6 @@ den Szenarien. (Skizze)
 */
 === Aus Phasen werden Szenarien
 
-#todo-action([\@Giovanna / alle:  Ich hätte hier gerne das Gesamtbild mit der Customer Journey. Anstelle von einem Bild pro Phase.])
 
 #fuehrung([Als Standardszenarien wird eine möglichst kleine Anzahl von Geschichten gewählt, die die darzustellende Funktionalität möglichst vollständig umfasst. Irrelevantes soll weggelassen werden, damit die Geschichten auch möglichst kurz bleiben. @Spichiger2026GFbUA, S. 70])
 
