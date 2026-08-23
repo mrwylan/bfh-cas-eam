@@ -520,140 +520,51 @@ Die folgende Tabelle kennen die Leser schon aus dem letzten Kapitel. Wir wiederh
   caption: [Archimate Szenario "Amira wird Kunde bei Transgourmet"]
 ) <fig-cj-verträge>
 
-
-#todo-action([\@ Jakob: Szenario/Beschreibung - bitte mit Tabelle wie bei Finanzierung])
-/*
-Struktur:
-+ *Aktion:* 
-+ *Touchpoint:* 
-+ *Gedanke/Bedürfnis:*
-// ^+ *Emotion:*
-+ *Pain Point:*
-+ *Chance:*
-*/
-
-
-@fig-journey-map zeigt die konsolidierte Journey Map über alle fünf Phasen.
-
-#todo-action([\@ Jakob: bitte Tabelle an @sec-amira-und-ihre-geschichte löschen? ODER behalten?])
-
 #figure(
-  caption: [Customer Journey Map: Amira auf GastroStart],
-  block(width: 100%, breakable: true)[
-    #set text(size: 7.5pt)
+  caption: [Szenario "Amira erhält eine Finanzierung"],
+  block(
+    width: 100%,
+    radius: 6pt,
+    clip: true,
+    stroke: 0.5pt + luma(225),
+  )[
+    #block(
+      width: 100%,
+      fill: luma(70),
+      inset: (x: 10pt, y: 7pt),
+      below: 0pt,
+    )[
+      #grid(
+        columns: (3.2cm, 1fr),
+        gutter: 10pt,
+        text(fill: white, weight: "bold", size: 0.95em)[Merkmal],
+        text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
+      )
+    ]
+    #set par(justify: false)
     #table(
-      columns: (2.3cm, 2.1cm, 2.3cm, 2.3cm, 1.2cm, 2.4cm, 2.4cm),
-      inset: 5pt,
-      stroke: 0.4pt,
-      fill: (x, y) => if y == 0 { luma(210) } else if calc.odd(y) { luma(248) } else { white },
-      align: (left, left, left, left, center, left, left),
+      columns: (3.2cm, 1fr),
+      inset: (x: 10pt, y: 7pt),
+      stroke: (x: none, y: 0.5pt + luma(232)),
+      fill: (x, y) => if calc.even(y) { luma(250) } else { white },
+      align: (left, left),
 
-      [*Phase*], [*Aktion*], [*Touchpoint*], [*Gedanke / Bedürfnis*], [*Emo.*], [*Pain Point*], [*Chance*],
+      [Aktion],
+      [Amira eröffnet Transgourmet-Konto über Portal, durchsucht Katalog, gibt erste Bestellung auf.],
 
-      [*1. Initiale \ Orientierung*],
-      [Sucht "Gastronomie gründen Schweiz"; wählt Kanton Bern, Betriebstyp Catering],
-      [Suchmaschine → Landingpage; Kantonsauswahl],
-      ["Deckt das speziell meinen Kanton ab?"],
-      [↓ −1],
-      [Anforderungen variieren je Kanton; keine digitale Differenzierung zwischen Kantonen],
-      [Kantonsbewusstes Onboarding: dynamische Anforderungsliste je Kanton × Betriebstyp],
+      [Touchpoints],
+      [GastroStart (Lieferantenwahl-UI), Transgourmet-Katalog-API, Bestell-Workflow (DV Bern), Bestellbestätigung],
 
-      [*2. Registrierung*],
-      [Erstellt Konto per eID; füllt Gründungsprofil mit Kanton und Gemeinde aus],
-      [eID-Login (Bundeskanzlei EIAM); Profil-Wizard (DV Bern)],
-      ["Warum brauche ich eine eID? Ich habe noch keine."],
-      [→ 0],
-      [eID nicht flächendeckend verbreitet; kein Fallback für Nutzende ohne eID],
-      [Progressive Identitätsprüfung; partielles Profil ohne eID zulassen],
+      [Gedanke / Bedürfnis],
+      [«Sind die Neukundenkonditionen konkurrenzfähig?»],
 
-      [*3. Betriebs- \ bewilligung*],
-      [Arbeitet die Bewilligungs-Checkliste ab; reicht den kantonalen Antrag ein],
-      [GastroStart-Wizard (DV Bern); Behörden-API (Bundeskanzlei); kantonale Behördensysteme],
-      ["Welche Kantonsregeln gelten? Wie lange dauert das?"],
-      [↓↓ −2],
-      [Kantonale Systeme haben heterogene Digitalisierungsgrade; einige verlangen physische Einreichung. _Line of Failure:_ analoger kantonaler Prozess unterbricht die digitale Journey],
-      [Integrierter kantonsspezifischer Bewilligungs-Guide; Status-Tracking; expliziter Fallback auf Papier, wo keine API verfügbar ist],
+      [Pain Point],
+      [
+        Neukunden-Preisgestaltung weniger günstig        
+      ],
 
-      [*4. Finanzierung*],
-      [Wählt Bankpartner; Bonitätsprüfung läuft im Hintergrund; erhält IBAN],
-      [Bankauswahl-UI; FINNOFLEET-Bonitäts-API; IBAN-Dashboard],
-      ["Was, wenn ich abgelehnt werde? Erfahre ich, warum?"],
-      [↓ −1],
-      [Kreditentscheid ohne Begründung zurückgegeben; keine Verlinkung zu alternativen CH-Förderprogrammen],
-      [Transparentes Scoring-Feedback; vorausgefüllte Vorlagen für CH-Förderprogramme],
-
-      [*5. Erster \ Vertrag*],
-      [Eröffnet Transgourmet-Konto über Portal; durchsucht Katalog; gibt erste Bestellung auf],
-      [Transgourmet-Katalog-API; Bestell-Workflow (DV Bern); Bestellbestätigung],
-      ["Sind die Neukundenkonditionen konkurrenzfähig?"],
-      [↑↑ +2],
-      [Neukunden-Preisgestaltung weniger günstig; Lieferantenvertrag verlangt allenfalls physische Unterschrift],
-      [Ausgehandelte Onboarding-Konditionen für vom Portal vermittelte Gründende; digitale Vertragsunterzeichnung],
+      [Chance],
+      [Ausgehandelte Onboarding-Konditionen für vom Portal vermittelte Gründende, digitale Vertragsunterzeichnung.],
     )
   ]
-) <fig-journey-map>
- 
-#todo-action([Jakob: möchtest du dieses Abschnitt behalten? ])
-Die emotionale Kurve über die Journey hinweg offenbart zwei strukturell bedeutsame Punkte.
-Phase 3 (Betriebsbewilligung) markiert mit −2 die tiefste Stimmung, getrieben nicht durch ein Versagen im Prozessdesign, sondern durch den heterogenen Digitalisierungsgrad der kantonalen Behördensysteme – eine architektonische Einschränkung ausserhalb der direkten Kontrolle der Plattform.
-Phase 5 (Erster Vertrag) erreicht mit +2 den Höhepunkt, doch der Übergang vom digitalen Portal zu einem physischen Lieferantenvertrag stellt eine verbleibende analoge Lücke dar, die die Ziel-Architektur adressieren muss @stickdorn2011.
-
-
-
-
-/*== Pain Points und Value Drivers <sec-pain-points>
-Die Journey-Mapping-Übung legte strukturelle Engpässe offen, an denen sich die Kundenerfahrung aufgrund grundlegender Systemlimitierungen statt aufgrund von Fehlern im Prozessdesign verschlechtert.
-Diese Unterscheidung ist architektonisch bedeutsam: Prozessfehler lassen sich durch Schulung und Governance beheben, während systembedingte Reibung eine bewusste architektonische Intervention erfordert @temkin2010.
-
-*1. Regulatorische Fragmentierung (Phase 3, Stimmung −2)*
-
-Administrative Anforderungen variieren je Kanton und sind über digitale Kanäle teilweise nicht zugänglich.
-Von den 18 über die Journey identifizierten Business Objects (siehe @sec-business-objects) sind sechs hybrid und zwei bleiben vollständig analog – beide konzentriert in Phase 3.
-Die Grundursache ist nicht fehlende Regulierung, sondern fehlende API: Kantonale Systeme reichen von vollständig digital (z.~B. Zürich, Basel-Stadt) bis ausschliesslich analog (z.~B. Wallis), ohne föderale Konsolidierungsschicht.
-Das erzeugt eine _Line of Failure_ – einen Punkt, an dem die digitale Journey strukturell nicht ohne manuellen Eingriff fortgesetzt werden kann.
-
-*2. Barriere der Identitätsprüfung (Phase 2, Stimmung 0)*
-
-Die obligatorische eID-Anforderung setzt eine Infrastruktur voraus, die in der Schweiz noch nicht flächendeckend verbreitet ist.
-Gründende ohne eID stossen bereits bei der ersten substanziellen Interaktion mit der Plattform auf eine Registrierungsbarriere.
-
-*3. Intransparenz der Finanzierung (Phase 4, Stimmung −1)*
-
-Amira hat keinen Einblick in die Logik des Credit Scorings und erhält keine umsetzbare Orientierung, falls die Prüfung ein ungünstiges Ergebnis liefert.
-Die Capability-Lücke liegt nicht in der Prüfung selbst, sondern in der Erklärungsschnittstelle zwischen FINNOFLEETs Scoring-Modell und der GastroStart-User-Experience.
-
-*4. Verbleibende analoge Touchpoints (Phase 5, Stimmungslücke)*
-
-Der Lieferantenvertrag mit Transgourmet verlangt allenfalls eine physische Unterschrift und bricht die vollständig digitale Journey in ihrer letzten und ansonsten positivsten Phase.
-
-#figure(
-  caption: [Pain Points und architektonische Value Drivers],
-  block(width: 100%)[
-    #set text(size: 9pt)
-    #table(
-      columns: (3.2cm, 3.5cm, 1fr),
-      inset: 7pt,
-      stroke: 0.4pt,
-      fill: (x, y) => if y == 0 { luma(210) } else if calc.odd(y) { luma(248) } else { white },
-
-      [*Pain Point*], [*Value Driver*], [*Architektonische Antwort*],
-
-      [Regulatorische Fragmentierung],
-      [Konsolidierte, kantonsbewusste Bewilligungs-Guidance],
-      [Regelmatrix Kanton × Betriebstyp, gepflegt von DV Bern; expliziter Fallback-Prozess für analoge Kantone],
-
-      [Barriere der Identitätsprüfung],
-      [Progressives Onboarding ohne harte eID-Abhängigkeit],
-      [Gestufte Identitätsprüfung; eID bei der Registrierung optional, erst bei der Bewilligungseinreichung obligatorisch],
-
-      [Intransparenz der Finanzierung],
-      [Transparente, erklärbare Bonitätsprüfung],
-      [UX-Schicht über der FINNOFLEET-API: Entscheidungs-Feedback in verständlicher Sprache; Links zu alternativen Förderungen],
-
-      [Analoge Vertragslücke],
-      [Vollständig digitales Lieferanten-Onboarding],
-      [Digitale Vertragsunterzeichnung, integriert in den Transgourmet-Portal-Connector],
-    )
-  ]
-) <tbl-value-drivers>
-*/
+) <tbl-szenario-lieferantenvertrag>

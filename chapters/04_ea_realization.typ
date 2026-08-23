@@ -991,18 +991,11 @@ transaktion],
 ) <tbl-GT-finanzierung-erhalten>
 
 === Amira wird Kunde bei Transgourmet
-#todo-action([\@ Jakob Szenario/Beschreibung (mit Bild) einfügen])
 
-/* 
-1. in Archi die View "Amira wird Kunde bei Transgourmet" unter Views / Assets4Paper / Geschäftstransaktionen (Iteration 2) / öffnen 
-2. View wie im Bild 3.9 - Seite 55 vom Skript von Spichiger aufbereiten oder wie ../assets/GrpA_GP_GastroStart_Albrecht_Jakob.svg
-3. als svg ins projekt hier importieren
-4. Beschreiben: 
-  - Events 
-  - Transaktionen
-*/
-+ Geschäftsobjekt und Zustände
-+ Geschäftstransaktionen
+#figure(
+  image("../assets/Kunde bei Transgourmet.svg", width: 100%),
+  caption: [Geschäftstransaktionen des Szenarios «Amira wird Kunde bei Transgourmet»]
+) <fig-GTZ-kunde-bei-transgourmet>
 
 #figure(
   caption: [Geschäftstransaktionen: Prozess «Kunde bei Transgourmet werden»],
@@ -1036,9 +1029,11 @@ transaktion],
       fill: (x, y) => if calc.odd(y) { luma(250) } else { white },
       align: (left, left, left),
 
-      [ ], [ ], [ ],
-      [ ], [ ], [ ],
-      [ ], [ ], [ ],
+      [ Gastrobetrieb erfassen ], [ Das Gründungsvorhaben ist als Gastrobetrieb realisiert ], [ -> aktiv Gastrobetrieb ],
+      [ Lieferantenkonto beantragen ], [ Die Geschäftsbeziehung zum Lieferanten wird aufgebaut ], [ -> pendent Lieferantenkonto ],
+      [ Lieferantenkonto eröffnen ], [ Die Geschäftsbeziehung zum Lieferanten ist aufgebaut ], [ pendent -> aktiv Lieferantenkonto ],
+      [ Bestellung aufgeben ], [ Die erste Bestellung wird aufgegeben ], [ erfasst -> gesendet Bestellung ],
+      [ Wareneingang erfassen ], [ Der erwarteteWareneingang wird erfasst ], [ -> offen Wareneingang ],
     )
   ]
 ) <tbl-GT-Kunde-bei-Transgourmet>
@@ -1283,12 +1278,12 @@ Die letzten beiden Punkte von Teilfähigkeit 3 --- verständliche Begründung un
 // exportieren und als #figure einfügen (analog zu "GF Behördeninteration.svg").
 
 === Geschäftsfähigkeiten Kunde bei Transgourmet werden
-#todo-action([\@ Jakob: bitte erarbeiten])
 
 #figure(
-  image("../assets/Phase 5 - Kunde bei Transgourmet.svg", width: 80%),
+  image("../assets/Kunde bei Transgourmet.svg", width: 80%),
   caption: [Archimate Modell TODO]
 ) <fig-phase_5_Kunde_bei_Transgourmet>
+
 
 
 /*
@@ -1364,7 +1359,7 @@ Die Gruppe löste die Spannung, indem sie die analytischen Ebenen trennte: Die C
 Diese Trennung – die direkt auf die ArchiMate-Unterscheidung zwischen Business Process (Journey) und Application Service (Backstage) abbildet – erlaubte es beiden Perspektiven, beizutragen, ohne sich gegenseitig zu überschreiben.
 
 *Synthese-Ergebnis:*
-Die resultierende Journey Map (@fig-journey-map) ist ein Konsens-Artefakt.
+Die resultierende Journey Map ist ein Konsens-Artefakt.
 Die Entscheidung, kantonale analoge Prozesse als _Line of Failure_ statt als ausserhalb des Scopes liegende externe Einschränkung zu behandeln, war die folgenreichste Designentscheidung: Sie hielt das architektonische Problem ehrlich und verhinderte, dass die Gruppe den Dematerialisierungswert künstlich aufblähte, indem sie die schwierigsten Fälle ausschloss.
 Diese ausgehandelte Qualität verleiht dem Artefakt seine architektonische Legitimität: Es repräsentiert ein geteiltes Verständnis und nicht die optimistische Projektion einer einzelnen Person.
 
