@@ -1118,9 +1118,9 @@ Was bleibt physisch vorhanden, was verschwindet?"
 == Dritte Iteration: Geschäftsprozesse und Vollständigkeit des bisherigen Modells
 
 #fuehrung([
-Geschäftstransaktionen, die inhaltlich zusammenhängen, werden zu Geschäftsprozessen aggregiert.
+Geschäftstransaktionen, die inhaltlich zusammenhängen, werden zu *Geschäftsprozessen* aggregiert.
 
-Auf der Basis der In- und Outputs der Geschäftstransaktionen werden für jeden Geschäftsprozess seine Abhängigkeiten zu Geschäftsobjekten identifiziert.
+Auf der Basis der In- und Outputs der Geschäftstransaktionen werden für jeden Geschäftsprozess seine *Abhängigkeiten zu Geschäftsobjekten* identifiziert.
 @Spichiger2026GFbUA
 
 ])
@@ -1139,9 +1139,9 @@ Auf der Basis der In- und Outputs der Geschäftstransaktionen werden für jeden 
 === Geschäftsprozess: Unternehmen gründen
 
 #figure(
-  image("../assets/GP Amira gründet ihr Unternehmen.svg", width: 80%),
-  caption: [Geschäftsprozess - Szenario Amira gründet ihr Unternehmen]
-) <GP_Amira_gruendet_Unternehmen>
+  image("../assets/GP+GF Amira gründet ihr Unternehmen.svg", width: 100%),
+  caption: [Geschäftsprozesse - Szenario Amira gründet ihr Unternehmen]
+) <GPGF_Amira_gründet_Unternehmen>
 
 
 1. Geschäftsprozesse 
