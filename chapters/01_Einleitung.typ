@@ -25,7 +25,7 @@ Wie bauen wir eine Enterprise-Architektur für das Joint Venture auf, die die un
 Im Verlauf der Studienwochen hat unsere Zusammenarbeit unter den Mitgliedern der Gruppe Unternehmungscharakter angenommen: durch die iterative Vorgehensweise und die regelmässigen - anfangs etwas erzwungene Übungen - musste ein gemeinsamer Nenner gefunden und eingegrenzt werden. 
 Die Diskussionen betreffend der Schärfung der Mission (was macht das Joint-Venture? was davon soll abgebildet werden? wo hören wir auf?) sowie die wöchentlichen Feedbackrunden haben nach und nach die Zusammenarbeit und die gemeinsame Unternehmensvision der vier Kollegen gefördert und gefestigt. 
 
-== Methode und Struktur
+== [DELETE?] Methode und Struktur
 
 Die vorliegende Gruppenarbeit folgt dem Windschatten der Vorlesungen und Übungen. 
 + Customer Journey - in Anlehnung an den Vorschlag "Start mit der Geschichte" @Spichiger2026GFbUA
@@ -35,7 +35,7 @@ Die vorliegende Gruppenarbeit folgt dem Windschatten der Vorlesungen und Übunge
 + Kritische Hinterfragung (Übungen vom 17.06., 24.06.)
 + Individuelle Anhänge und Reflexionen
 
-== Eingesetzte Tools
+== [DELETE?] Eingesetzte Tools
 
 *Modellierung:* Archi - und Archimate, Draw.io und UML
 
@@ -56,7 +56,7 @@ Da diese Momente einen wesentlichen Teil unseres Arbeitsprozesses ausmachen, sin
 
 #fuehrung([Kennzeichnet Passagen und Zitate aus der Fachliteratur. Sie dienen dazu, die theoretische Verankerung der Arbeit direkt nachzuvollziehen.])
 
-== Erklärung zur Nutzung Künstlicher Intelligenz (KI)
+== [kürzen?] Erklärung zur Nutzung Künstlicher Intelligenz (KI)
 
 === Einsatzgebiet und Entstehungsprozess
 

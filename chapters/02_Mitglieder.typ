@@ -9,7 +9,7 @@ Zusammen werden sie sich auf den Weg machen, ein gemeinsames Unternehmen zu entw
 Jedes Mitglied stellt sein Unternehmen kurz vor. 
 
 == Transgourmet
-
+#autor-transgourmet([Beitrag von Jakob Albrecht])
 *Transgourmet Schweiz: Ein Marktführer, der das Lebensmittelgeschäft transformiert.*
 
 === Firmenporträt
@@ -33,6 +33,7 @@ Die Unternehmensarchitektur von Transgourmet steht vor spezifischen Herausforder
 *Eigenentwickeltes ERP-System:* Die technologische Basis bildet eine massgeschneiderte Eigenentwicklung für Schweizer Grosshandelsprozesse und Regulierungen. Die nachhaltige Modernisierung dieses Kernsystems bei laufendem Betrieb ist eine der grössten architektonischen Herkulesaufgaben.
 
 == DV Bern // Hobbits
+#autor-dvbern([Beitrag von Jan Sohnemann])
 
 DV steht für digital Value - was man als "wertschöpfende Digitalisierung" verstehen kann.
 Digitalisierungsprojekte, vorwiegend für die öffentliche Verwaltung, bilden das grösste Standbein des Unternehmens.
@@ -131,6 +132,7 @@ Das Projekt kiBon existiert seit mehr als 10 Jahren und hat zwischenzeitlich eno
 Die grössten Herausforderungen liegen aktuell bei der Skalierbarkeit und dem Legacy-Management.
 
 == FINNOFLEET //Menschen
+#autor-finnofleet([Beitrag von Adrian Anghel])
 
 FINNOFLEET Schweiz (#link("https://finnofleet.ch/ch-de/")[finnofleet.ch]) ist ein Softwareunternehmen für die Finanzbranche mit Hauptsitz in Sursee sowie weiteren Standorten in Zürich und Bern.
 Rund 100 Mitarbeitende betreuen über 80 Kundinnen und Kunden aus dem Banken-, Versicherungs- und Pensionskassenumfeld. @FinnofleetCH2026
@@ -202,7 +204,8 @@ Der Reifegrad ist auf Produkt- und Entscheidebene hoch, auf Portfolioebene dageg
 
 *Inkonsistente Aussenkommunikation*: Weil technische Inhalte auch in Vertriebsdokumenten entstehen, kursieren voneinander abweichende Beschreibungen derselben Lösung. Eine zentrale Quelle für die Ist-Architektur würde diese Inkonsistenzen an der Wurzel auflösen.
 
-== Öffentliche Verwaltung  //Zwerge
+== Öffentliche Verwaltung 
+#autor-verwaltung([Beitrag von Giovanna Beier])//Zwerge
 
 === Arbeitsannahme
 
