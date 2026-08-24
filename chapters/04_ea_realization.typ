@@ -1040,21 +1040,23 @@ transaktion],
   ]
 ) <tbl-GT-Kunde-bei-Transgourmet>
 
+=== Reflexion
+
  #figure(
   image("../assets/GrpA_GP_GastroStart_Albrecht_Jakob.svg", width: 80%),
   caption: [Archimate Modell der Customer Journey von Amira]
 ) <fig-customer-journey-view>
 
-=== Reflexion
-
 #stolperstein([
   Die Kundensicht ständig zu behalten und Abstand vom eigenen Fachbereich zu halten ist den Gefährten nicht immer gelungen. 
   ])
 
-  Eine anfängliche Identifikation der Geschäftsobjekte führte die Gruppe zu einer umfangreicheren Liste. Physische Artefakte wie "Bewilligung", "Liefervertrag" oder "kantonales Formular" schienen uns vorerst sehr sinnvoll und notwendig. 
-  In einer frühen Phase war es besonders schwierig, die reine Kundensicht einzunehmen - und führte dazu, dass beispielsweise zwischen Bewilligungsantrag und die erteilte Bewilligung (Verfügung) unterschieden wurde.
+Eine anfängliche Identifikation der Geschäftsobjekte führte die Gruppe zu einer umfangreicheren Liste.
+Physische Artefakte wie "Bewilligung", "Liefervertrag" oder "kantonales Formular" schienen uns vorerst sehr sinnvoll und notwendig. 
+In einer frühen Phase war es besonders schwierig, die reine Kundensicht einzunehmen - und führte dazu, dass beispielsweise zwischen Bewilligungsantrag und die erteilte Bewilligung (Verfügung) unterschieden wurde.
 
 Nachofolgende Tabelle enthält eine Zusammenfassung der anfänglichen Objekte: 
+
 #figure(
   caption: [Business-Object-Inventar: GastroStart — nach Kernel Type],
   block(width: 100%, breakable: true)[
@@ -1115,10 +1117,11 @@ Was bleibt physisch vorhanden, was verschwindet?"
 */
 
 #stolperstein([
-  In dieser Phase wurde mehrmals die Modellierungsebene verfehlt.
-  Schwierigkeiten bat es, Abstand von der gewohnte Implementierungsebene zu halten - und Transaktionen nicht wie eine Benutzerführung auf einem Applikations-Frontend zu modellieren. 
-  ])
 
+In dieser Phase wurde mehrmals die Modellierungsebene verfehlt.
+Schwierigkeiten bat es, Abstand von der gewohnte Implementierungsebene zu halten - und Transaktionen nicht wie eine Benutzerführung auf einem Applikations-Frontend zu modellieren. 
+
+])
 
 + *zu "kleine" Objekte:* in einer frühen Phase wurden Bestellung und Bestellbestätigung als separate Objekte modelliert - anstatt auf die Sichtbarkeit und Einsehbarkeit des Zustands aufzubauen. 
 /*Zustände sind absolut und für alle Beteiligten sichtbar - eine separat modellierte  Bestätigung braucht es nicht. 
@@ -1140,23 +1143,24 @@ Was bleibt physisch vorhanden, was verschwindet?"
 == Dritte Iteration: Geschäftsprozesse und Vollständigkeit des bisherigen Modells
 
 #fuehrung([
-Geschäftstransaktionen, die inhaltlich zusammenhängen, werden zu *Geschäftsprozessen* aggregiert.
 
+Geschäftstransaktionen, die inhaltlich zusammenhängen, werden zu *Geschäftsprozessen* aggregiert.
 Auf der Basis der In- und Outputs der Geschäftstransaktionen werden für jeden Geschäftsprozess seine *Abhängigkeiten zu Geschäftsobjekten* identifiziert.
 @Spichiger2026GFbUA
 
 ])
 
 === Geschäftsprozesse für die Orientierung auf der Webseite von Gastrostart
+
 #todo-action([\@ Jan (oder Jakob), bitte erarbeiten])
 1. Geschäftsprozesse 
 2. Abhängigkeiten von Geschäftsobjekten 
 
 === Geschäftsprozess für die Registrierung bei Gastrostart
+
 #todo-action([\@ Jan, bitte nachführen])
 1. Geschäftsprozesse 
 2. Abhängigkeiten von Geschäftsobjekten 
-
 
 === Geschäftsprozess: Unternehmen gründen
 
@@ -1164,7 +1168,6 @@ Auf der Basis der In- und Outputs der Geschäftstransaktionen werden für jeden 
   image("../assets/GP+GF Amira gründet ihr Unternehmen.svg", width: 100%),
   caption: [Geschäftsprozesse - Szenario Amira gründet ihr Unternehmen]
 ) <GPGF_Amira_gründet_Unternehmen>
-
 
 1. Geschäftsprozesse 
 
@@ -1175,12 +1178,10 @@ Unternehmen bei Behörde anmelden
 
 2. Abhängigkeiten von Geschäftsobjekten 
 
-
 === Geschäftsprozess Bewilligung erhalten
 
 1. Geschäftsprozesse 
 2. Abhängigkeiten von Geschäftsobjekten 
-
 
 === Geschäftsprozess Finanzierung erhalten
 
@@ -1205,11 +1206,17 @@ umfasst die Geschäftstransaktionen #emph[Finanzierung prüfen] und #emph[Finanz
 - #emph[Gründungsvorhaben] --- fachlicher Auslöser und Empfänger des Prozessergebnisses: die abschliessende Transaktion #emph[Finanzierung zusagen] greift auch auf dieses Objekt zu und versetzt es in den Zustand #emph[finanziert]. Sie ist damit die einzige Transaktion der Phase, die auf zwei Geschäftsobjekte wirkt.
 - Indirekt, über das Objektmodell der Finanzierung: #emph[Bewilligung] als Voraussetzung (ohne Betriebsbewilligung kein Gesuch) und #emph[Unternehmen] als Empfänger der Mittel und Inhaber des Geschäftskontos.
 
-=== Geschäftsfähigkeiten Kunde bei Transgourmet werden
-#todo-action([\@ Jakob: bitte erarbeiten])
+=== Geschäftsprozesse Kunde bei Transgourmet werden
 
 1. Geschäftsprozesse 
+
+Über die Geschäftsobjekte #emph[Lieferantenkonto] und #emph[Bestellung] werden die Geschäftstransaktionen in diesem Szenario zu zwei Geschäftsprozessen aggregiert:
+- Lieferantenkonto beantragen und eröffnen
+- Bestellung aufgeben und Wareneingang erfassen
+
 2. Abhängigkeiten von Geschäftsobjekten 
+
+Diese Geschäftsprozesse bilden das letze Szenario der Customer Journey ab. Eine erfolgreiche Realisation des Gründungsvorhabens von Amira ist die Voraussetzung.
 
 == Alles zusammenbauen: End-to-End Prozess: Onboarding Gastrounternehmens
 #frage([\@ alle: einverstanden? note to self: mit Swimmlanes und diese prozessbausteine abbilden])
