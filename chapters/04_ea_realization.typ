@@ -1217,6 +1217,7 @@ umfasst die Geschäftstransaktionen #emph[Finanzierung prüfen] und #emph[Finanz
 Diese Geschäftsprozesse bilden das letze Szenario der Customer Journey ab. Eine erfolgreiche Realisation des Gründungsvorhabens von Amira ist die Voraussetzung.
 
 == Alles zusammenbauen: End-to-End Prozess: Onboarding Gastrounternehmens
+
 #frage([\@ alle: einverstanden? note to self: mit Swimmlanes und diese prozessbausteine abbilden])
 
 == Vierte Iteration: Geschäftsfähigkeiten und Abhängigkeiten untereinander
@@ -1225,7 +1226,7 @@ Diese Geschäftsprozesse bilden das letze Szenario der Customer Journey ab. Eine
 
 === Geschäftsfähigkeiten für die Orientierung auf der Webseite von Gastrostart
 
-Die Geschäftsfähigkeit, die im Szenario *Orientierung auf der Webseite von Gastrostart* tragend wird, wurde als *GastroStart vorstellen* identifiziert. Sie bildet die Grundlage für die Entscheidung, ob Amira ihr Gründungsvorhaben über GastroStart realisieren möchte.
+#todo-action([\@ Jan, bitte nachführen])
 
 === Geschäftsfähigkeiten für die Registrierung bei Gastrostart
 
