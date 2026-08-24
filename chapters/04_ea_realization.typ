@@ -284,20 +284,24 @@ Dabei liessen sich Nomen wie "Gründung", "Finanzierung", "Kundenkonto" - diese 
 ) <fig-customer-journey-view>
 
 === Modell der identifizierten Objekte
+
+#stolperstein([
+
+Brauchen wir ein Objekt Webseite? Das Modellieren nach RIM fordert Disziplin im identifizieren von Objekten, die als Ressourcen (Teil vom RSM) gelten. Diese werden erst im RSM modelliert. 
+  
+])
+
 Folgendes Archimate Modell der Geschäftsobjekte von GastroStart, die von der Gruppe identifiziert wurden. 
-
-
 
 #figure(
   image("../assets/GO diagram.svg", width: 80%),
   caption: [Geschäftsobjekt Kundenkonto und dessen Zustände]
 ) <fig-IdentifizierteGeschaefstobjetke>
 
-#frage([brauchen wir nicht das Objekt Webseite? hier brauchen wir dieses Objekt nicht - es ist eine RESSOURCE!!!])
-
-
 #design-entscheid([
-Es wurde verzichtet, das Objekt Person zu modellieren. Die Behandlung von personenbezogenen Invarianten wie Domizil in der Schweiz oder Besitz des Wirtepatentes als Voraussetzung für die Gründung des Unternehmens und für den Erhalt der Betriebsbewilligung würden den Rahmen dieser Arbeit sprengen.
+
+Es wurde verzichtet, das Objekt Person zu modellieren. 
+Die Behandlung von personenbezogenen Invarianten wie Domizil in der Schweiz oder Besitz des Wirtepatentes als Voraussetzung für die Gründung des Unternehmens und für den Erhalt der Betriebsbewilligung würden den Rahmen dieser Arbeit sprengen.
 
 ])
 
