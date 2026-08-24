@@ -25,26 +25,6 @@ Wie bauen wir eine Enterprise-Architektur für das Joint Venture auf, die die un
 Im Verlauf der Studienwochen hat unsere Zusammenarbeit unter den Mitgliedern der Gruppe Unternehmungscharakter angenommen: durch die iterative Vorgehensweise und die regelmässigen - anfangs etwas erzwungene Übungen - musste ein gemeinsamer Nenner gefunden und eingegrenzt werden. 
 Die Diskussionen betreffend der Schärfung der Mission (was macht das Joint-Venture? was davon soll abgebildet werden? wo hören wir auf?) sowie die wöchentlichen Feedbackrunden haben nach und nach die Zusammenarbeit und die gemeinsame Unternehmensvision der vier Kollegen gefördert und gefestigt. 
 
-== [DELETE?] Methode und Struktur
-
-Die vorliegende Gruppenarbeit folgt dem Windschatten der Vorlesungen und Übungen. 
-+ Customer Journey - in Anlehnung an den Vorschlag "Start mit der Geschichte" @Spichiger2026GFbUA
-+ Erarbeitung des Resource Independent Model (RIM) 
-+ Vom Abstrakten zum Konkreten / Dematerialisierung 
-+ Rematerialisierung, ausgehend vom Operating Model @ross2006enterprise
-+ Kritische Hinterfragung (Übungen vom 17.06., 24.06.)
-+ Individuelle Anhänge und Reflexionen
-
-== [DELETE?] Eingesetzte Tools
-
-*Modellierung:* Archi - und Archimate, Draw.io und UML
-
-*Textredaktion:* Visual Studio Code mit Typst Plugin
-
-*Kolaboration:* GitHub, GitLab, MS Teams
-
-*Bibliographie:* Zotero, apa style
-
 == Bemerkung zu den visuellen Call-outs
 
 Während unseres Projekts musste die Gruppe wiederholt gemeinsame Entscheidungen treffen, zwischen Optionen abwägen oder festgestellte Denkfehler korrigieren.
@@ -56,7 +36,7 @@ Da diese Momente einen wesentlichen Teil unseres Arbeitsprozesses ausmachen, sin
 
 #fuehrung([Kennzeichnet Passagen und Zitate aus der Fachliteratur. Sie dienen dazu, die theoretische Verankerung der Arbeit direkt nachzuvollziehen.])
 
-== [kürzen?] Erklärung zur Nutzung Künstlicher Intelligenz (KI)
+== Erklärung zur Nutzung Künstlicher Intelligenz (KI)
 
 === Einsatzgebiet und Entstehungsprozess
 
