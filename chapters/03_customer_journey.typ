@@ -521,7 +521,7 @@ Die folgende Tabelle kennen die Leser schon aus dem letzten Kapitel. Wir wiederh
 ) <fig-cj-verträge>
 
 #figure(
-  caption: [Szenario "Amira erhält eine Finanzierung"],
+  caption: [Szenario "Amira wird Kunde bei Transgourmet"],
   block(
     width: 100%,
     radius: 6pt,
