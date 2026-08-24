@@ -45,6 +45,7 @@ Anschliessend werden die Ressourcen wieder dazugenommen - wobei jeder der vier K
 
 #pagebreak()
 #counter(page).update(1)
+#counter(heading).update(0)
 #anhang-modus.update(true)
 
 #include "appendix/a1_glossary.typ"

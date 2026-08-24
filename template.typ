@@ -38,7 +38,36 @@
   // Tipografia e layout globale
   set text(font: "New Computer Modern", size: 11pt, lang: "de", region: "CH")
   set par(justify: true, leading: 0.65em)
-  set heading(numbering: "1.1.1")
+  // Kapitelnummerierung: im Anhang wird die Stufe-1-Überschrift dynamisch als
+  // "Anhang N:" dargestellt (N = eigener, im Anhang zurückgesetzter Zähler),
+  // im übrigen Dokument bleibt die reguläre "1.1.1"-Nummerierung bestehen.
+  set heading(numbering: (..nums) => context {
+    let ebenen = nums.pos()
+    if anhang-modus.get() and ebenen.len() == 1 {
+      "Anhang " + str(ebenen.at(0)) + ":"
+    } else {
+      numbering("1.1.1", ..ebenen)
+    }
+  })
+
+  // Dasselbe Präfix auch im Inhaltsverzeichnis: der Eintrag wird an der
+  // tatsächlichen Position der Überschrift ausgewertet (nicht an der
+  // Position von #outline() selbst), damit der Anhang-Status korrekt
+  // erkannt wird.
+  show outline.entry: it => context {
+    if it.element.numbering == none {
+      // Überschriften ohne Nummerierung (z. B. Literaturverzeichnis) unverändert lassen
+      it
+    } else {
+      let ort = it.element.location()
+      let praefix = if anhang-modus.at(ort) and it.element.level == 1 {
+        "Anhang " + str(counter(heading).at(ort).at(0)) + ":"
+      } else {
+        numbering("1.1.1", ..counter(heading).at(ort))
+      }
+      link(ort, it.indented(praefix, it.inner()))
+    }
+  }
 
   // Gestione degli spazi dei titoli
   show heading: it => block(above: 1.5em, below: 1em, it)
