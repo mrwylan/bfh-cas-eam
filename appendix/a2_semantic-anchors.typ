@@ -15,4 +15,4 @@ Das Konzept der Semantic Anchors hat sich als hilfreiches Kommunikationsmittel e
 Semantic Anchors sind etablierte Fachbegriffe, Methodologien und Frameworks, die als präzise Referenzpunkte in der Kommunikation mit Large Language Models dienen. Statt umständlicher Erklärungen aktiviert ein einzelner, wohldefinierter Begriff ein ganzes Netzwerk an zugehörigem Wissen im Modell. 
 Dieses Referenzdokument ordnet die Anchors den acht Modulen des CAS Enterprise Architecture Management zu, dokumentiert ihre Schlüsselautoren und aktivierten Konzepte und gibt Hinweise zu ihrem Einsatz in Prompts und im Lernbericht.
 
-@bfh-cas-eam-semantic-anchors
+@bfh-cas-eam-semantic-anchors (#link("https://github.com/mrwylan/bfh-cas-eam-semantic-anchors/releases"))
