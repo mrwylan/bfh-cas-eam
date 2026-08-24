@@ -130,8 +130,9 @@ caption: [Geschäftsobjekt Finanzierung und dessen Zustände]
 ) <tbl-GO-Finanzierung>
 
 === Lieferantenkonto
-#todo-action([\@ Jakob: bitte allenfalls etwas ausführlicher beschreiben])
-- properties: Unternehmen, Transgourmet
+
+Das Lieferantenkonto ist ein Geschäftsobjekt, das die Beziehung zwischen dem Gastronomiebetrieb und seinen Lieferanten abbildet. Es enthält Informationen über die Lieferanten, die Konditionen der Zusammenarbeit und den Status der Geschäftsbeziehung. Das Lieferantenkonto ist entscheidend für die effiziente Abwicklung von Bestellungen und die Verwaltung von Lieferantenbeziehungen.
+
 #figure(
 image("../assets/GOLieferantenkonto.svg", width: 50%),
 caption: [Geschäftsobjekt Lieferantenkonto und dessen Zustände]
@@ -171,16 +172,13 @@ caption: [Geschäftsobjekt Lieferantenkonto und dessen Zustände]
       [Lieferantenkonto],
 
       [Definition / Zweck],
-      [ ],
-
-      [Attribute],
-      [Löschen?],
+      [Beziehung zwischen dem Gastronomiebetrieb und seinen Lieferanten],
 
       [Zustände],
-      [ ],
+      [pendent, aktiv, inaktiv, gelöscht],
 
       [Beziehungen],
-      [ ],
+      [Das Lieferantenkonto ist mit den Geschäftsobjekten *Bestellung* und *Gastronomiebetrieb* assoziiert.],
     )
   ]
 ) <tbl-GO-Lieferantenkonto>
