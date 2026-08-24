@@ -33,7 +33,7 @@ Anschliessend werden die Ressourcen wieder dazugenommen - wobei jeder der vier K
 #include "chapters/02_Mitglieder.typ"
 #include "chapters/03_customer_journey.typ"
 #include "chapters/04_ea_realization.typ"
-#include "chapters/05_ea_target-architecture.typ"
+//#include "draft/jakob/05_ea_target-architecture.typ"
 #include "chapters/06_learning_path.typ"
 
 // ── References ──────────────────────────────────────────────────────────────
