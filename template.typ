@@ -1,4 +1,4 @@
-#import "markers.typ": kompendium-modus
+#import "markers.typ": kompendium-modus, anhang-modus
 
 #let conf(
   title: "Untitled Blueprint",
@@ -24,7 +24,10 @@
       
       if current_page == 1 {
         // Il frontespizio (pagina 1) non ha alcuna numerazione
-        none 
+        none
+      } else if anhang-modus.get() {
+        // Nell'appendice: numerazione propria con prefisso "A-"
+        align(center, "A-" + counter(page).display())
       } else {
         // Applica lo stile attivo (romano negli indici, arabo nel testo)
         align(center, counter(page).display())

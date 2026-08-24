@@ -1,4 +1,5 @@
 #import "template.typ": conf
+#import "markers.typ": anhang-modus
 
 #show: conf.with(
   title: "Learning-Path-Dokumentation: Enterprise Architecture Management in der Praxis",
@@ -41,6 +42,10 @@ Anschliessend werden die Ressourcen wieder dazugenommen - wobei jeder der vier K
 //dieser Styl wird im GFbUA benutzt: #bibliography("refs.bib", style: "apa", title: "Literaturverzeichnis")
 
 // ── Anhang ───────────────────────────────────────────────────────────────────
+
+#pagebreak()
+#counter(page).update(1)
+#anhang-modus.update(true)
 
 #include "appendix/a1_glossary.typ"
 #include "appendix/a2_semantic-anchors.typ"

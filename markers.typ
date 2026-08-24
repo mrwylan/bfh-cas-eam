@@ -12,6 +12,7 @@
 // - TODO / ACTION!:        konkrete Aufgabe, die noch zu erledigen ist
 
 #let kompendium-modus = state("kompendium-modus", true)
+#let anhang-modus = state("anhang-modus", false)
 
 #let farbe-theorie = rgb("#2563eb")
 #let farbe-entscheid = rgb("#16a34a")

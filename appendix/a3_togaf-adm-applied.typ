@@ -43,7 +43,7 @@ ADM benennt, in welchen Konzern- und Entscheidungssphären Architekturarbeit üb
 Die folgende Tabelle bündelt jene Limitationen, die sich entweder aus dem Studium der TOGAF-Quellentexte oder aus der Sekundärliteratur (Kotusev, Lapalme, Ross et al.) ergeben.
 Jeder Limitation ist eine konkrete Mitigationsoption beigestellt.
 
-#include "a2_togaf-adm-limitationen_table.typ"
+#include "a3_togaf-adm-limitationen_table.typ"
 
 Die meisten Mitigationen laufen darauf hinaus, ADM nicht als Konstruktionsmethode zu verwenden, sondern als prozessuale Hülle für Architekturentscheidungen.
 Diese Sicht erlaubt es, TOGAF pragmatisch einzusetzen, ohne sich seinen Schwächen auszuliefern.
