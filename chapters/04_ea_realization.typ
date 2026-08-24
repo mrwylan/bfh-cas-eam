@@ -1226,23 +1226,28 @@ Diese Geschäftsprozesse bilden das letze Szenario der Customer Journey ab. Eine
 #fuehrung([Geschäftsfähigkeiten bilden eine stabile, redundanzfreie Baumstruktur der funktionalen Dekomposition einer Unternehmung. Sie abstrahieren von jeglichen Ressourcen, werden aber von diesen unterstützt. Geschäftsfähigkeiten sind in sich stark zusammenhängend während sie mit andern Geschäftsfähigkeiten lose gekoppelt sind. @Spichiger2026GFbUA])
 
 === Geschäftsfähigkeiten für die Orientierung auf der Webseite von Gastrostart
-#todo-action([\@ Jan oder Jakob, bitte nachführen])
+
+Die Geschäftsfähigkeit, die im Szenario *Orientierung auf der Webseite von Gastrostart* tragend wird, wurde als *GastroStart vorstellen* identifiziert. Sie bildet die Grundlage für die Entscheidung, ob Amira ihr Gründungsvorhaben über GastroStart realisieren möchte.
 
 === Geschäftsfähigkeiten für die Registrierung bei Gastrostart
+
 1. Identitätsverwaltung 
 • Der Benutzer legt Kennung und Credentials fest.
 • Vergabe und Verwaltung einer eindeutigen Benutzerkennung.
 • Festlegung und sichere Speicherung von Passwort / MFA.
 • Überprüfung der Identität bei späteren Anmeldungen.
+
 2. Zugangsverwaltung
 • Steuerung, wer auf welche Plattformressourcen zugreifen darf. 
 • Aktivierung des Benutzerkontos (z. B. E-Mail-Verifikation).
 • Vergabe von Rollen (Gründer, Mentor, Investor).
+
 3. Profilmanagement
 • Der Benutzer erstellt ein Profil seines Gründungsvorhabens. 
 • Aufnahme von Stammdaten zum Gründer und Vorhaben
 • Dokumentation von Idee, Branche, Phase des Start-ups
 • Spätere Änderung und Aktualisierung des Profils.
+
 4. Datenvalidierung
 • Sicherstellung der Qualität und Vollständigkeit der eingegebenen Daten. 
 • Prüfung auf gültige E-Mail, Kennwortregeln etc.
@@ -1250,6 +1255,7 @@ Diese Geschäftsprozesse bilden das letze Szenario der Customer Journey ab. Eine
 • Erkennung bereits vorhandener Kennunge
 
 === Geschäftsfähigkeiten der Behördeninteraktion: Unternehmen gründen und Bewilligung erhalten
+
 #figure(
   image("../assets/GF Behördeninteration.svg", width: 80%),
   caption: [Archimate Modell der Geschäftsfähigkeiten der Behördeninteraktion]
@@ -1353,35 +1359,9 @@ Beide analogen Objekte sind in Phase 3 konzentriert und liegen im Eigentum kanto
 Im ArchiMate-Modell werden Business Objects über _Access_-Beziehungen (lesend oder schreibend) mit Business Processes verknüpft, wodurch ihre Eigentümerschaft und ihre Zustandsübergänge schichtenübergreifend nachvollziehbar werden.
 */
 
-== Kollaborative Synthese
-#todo-action[Jakob: behalten wir dieses Teil oder nicht]
-Architektonische Entscheidungen im Team sind nicht rein analytisch – sie sind soziale Verhandlungen, geprägt von beruflichem Hintergrund, früheren Erfahrungen und unterschiedlichen mentalen Modellen davon, wozu Architektur dient @bass2012.
-
-*Gruppenzusammensetzung:*
-An der Kollaboration beteiligt waren Teilnehmende aus vier Organisationen: Transgourmet Schweiz AG (Grosshandel), FINNOFLEET Schweiz (standardisierte und individuell entwickelte Lösungen für Banken, Pensionskassen und Versicherungen), die Bundeskanzlei (öffentliche Verwaltung) und DV Bern (Softwareentwicklung öffentliche Hand).
-Diese Breite spiegelte das bewusste Design des GastroStart-Falls wider: ein Produkt, dessen Leistungskette private Logistik, regulierte Finanzdienstleistungen, föderale Identitätsinfrastruktur und Software-Bereitstellung der öffentlichen Hand umspannt.
-
-*Divergenz:*
-Früh traten zwei strukturelle Spannungen auf.
-Technisch orientierte Teilnehmende neigten zu Datenflüssen und API-Grenzen und rahmten die Journey als Integrationsproblem zwischen vier organisatorischen Systemen.
-Geschäftsorientierte Teilnehmende fokussierten auf die emotionale Realität von Amiras Erfahrung und argumentierten, dass der Stimmungseinbruch in Phase 3 (−2) das zentrale architektonische Problem sei, ungeachtet seiner technischen Ursache.
-Die umstrittenste Frage war, ob die kantonale Heterogenität in Phase 3 _im Scope_ der Plattform-Architektur liege oder als externe Einschränkung klassifiziert und zurückgestellt werden solle.
-
-*Konsensmechanismus:*
-Die Gruppe löste die Spannung, indem sie die analytischen Ebenen trennte: Die Customer Journey wurde als reines Outside-In-Artefakt geführt (Amiras Erfahrung, ungeachtet der Ursache), während das Service Blueprint die Inside-Out-Schicht einführte (was jede Organisation im Backstage tut) @stickdorn2011.
-Diese Trennung – die direkt auf die ArchiMate-Unterscheidung zwischen Business Process (Journey) und Application Service (Backstage) abbildet – erlaubte es beiden Perspektiven, beizutragen, ohne sich gegenseitig zu überschreiben.
-
-*Synthese-Ergebnis:*
-Die resultierende Journey Map ist ein Konsens-Artefakt.
-Die Entscheidung, kantonale analoge Prozesse als _Line of Failure_ statt als ausserhalb des Scopes liegende externe Einschränkung zu behandeln, war die folgenreichste Designentscheidung: Sie hielt das architektonische Problem ehrlich und verhinderte, dass die Gruppe den Dematerialisierungswert künstlich aufblähte, indem sie die schwierigsten Fälle ausschloss.
-Diese ausgehandelte Qualität verleiht dem Artefakt seine architektonische Legitimität: Es repräsentiert ein geteiltes Verständnis und nicht die optimistische Projektion einer einzelnen Person.
-
-
-
 = Das Inside-Out-Mapping: Realisierung der Enterprise Architecture
 #frage([Giovanna hat nun eine neue Version des Kapitels entworfen, die für alle passt. Working Assumption: der Unternehmen, das beschrieben werden muss, ist GastroStart, NICHT das eigene! ])
 
-== Allgemeines
 Dieser Kapitel enthält die separaten Ausführungen der jeweiligen Autoren der Gruppenarbeit zum aktuellen Operating Models des eigenen Ursprungsbetriebs und des Joint Ventures GastroStart. Es kann sein, dass die Autoren zu jeweiligen, unterschiedlichen Schlüsse bezüglich der Gestaltung des Operating Models des Joint Ventures kommen. Dies ist so gewollt.  
 
 == Operating-Model-Einordnung nach Ross, Weill und Robertson für Transgourmet
