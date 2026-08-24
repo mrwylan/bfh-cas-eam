@@ -995,7 +995,7 @@ transaktion],
 === Amira wird Kunde bei Transgourmet
 
 #figure(
-  image("../assets/Kunde bei Transgourmet.svg", width: 100%),
+  image("../assets/Phase 5 - Kunde bei Transgourmet.svg", width: 100%),
   caption: [Geschäftstransaktionen des Szenarios «Amira wird Kunde bei Transgourmet»]
 ) <fig-GTZ-kunde-bei-transgourmet>
 
