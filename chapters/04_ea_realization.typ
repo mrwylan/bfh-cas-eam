@@ -1152,9 +1152,7 @@ Auf der Basis der In- und Outputs der Geschäftstransaktionen werden für jeden 
 
 === Geschäftsprozesse für die Orientierung auf der Webseite von Gastrostart
 
-#todo-action([\@ Jan (oder Jakob), bitte erarbeiten])
-1. Geschäftsprozesse 
-2. Abhängigkeiten von Geschäftsobjekten 
+Während der Orientierung auf der Webseite von GastroStart sind keine Geschäftsprozesse zu identifizieren, da die Orientierung auf der Webseite keine Geschäftstransaktionen beinhaltet. Die Orientierung dient der Informationsbeschaffung und der Vorbereitung von Geschäftstransaktionen, die in den nachfolgenden Phasen stattfinden.
 
 === Geschäftsprozess für die Registrierung bei Gastrostart
 
