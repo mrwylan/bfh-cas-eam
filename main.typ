@@ -2,8 +2,8 @@
 #import "markers.typ": anhang-modus
 
 #show: conf.with(
-  title: "Learning-Path-Dokumentation: Enterprise Architecture Management in der Praxis",
-  subtitle: "Die Verbindung von Customer Journeys mit Capabilities und Application-Landschaften",
+  title: "GastroStart – vom Gründungsvorhaben zur Unternehmensarchitektur",
+  subtitle: "Anwendung der GFbUA-Methodik auf ein organisationsübergreifendes Gründungsportal für die Gastronomie",
   date: "BFH CAS Enterprise Architecture Management (EAM), 2026",
   abstract: [
 
