@@ -72,11 +72,6 @@
   // Gestione degli spazi dei titoli
   show heading: it => block(above: 1.5em, below: 1em, it)
   
-  // Ogni titolo di primo livello (capitoli e bibliografia) inizia su una nuova pagina
-  show heading.where(level: 1): it => {
-    pagebreak(weak: true)
-    it
-  }
 // Rinvii interni (Abbildungen, Tabellen, Abschnitte) dezent einfärben;
 // bibliografische Zitate bleiben schwarz
 show ref: it => {
