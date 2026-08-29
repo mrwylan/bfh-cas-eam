@@ -51,3 +51,4 @@ Anschliessend werden die Ressourcen wieder dazugenommen - wobei jeder der vier K
 #include "appendix/a1_glossary.typ"
 #include "appendix/a2_semantic-anchors.typ"
 #include "appendix/a3_togaf-adm-applied.typ"
+#include "appendix/a4_werkzeug_reflexion.typ"

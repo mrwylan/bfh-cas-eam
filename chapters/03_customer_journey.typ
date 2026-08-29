@@ -22,20 +22,14 @@ Bei der Suche erfährt sie, dass die Punkte Bewilligungen, Finanzierung, Ressour
 Sie landet bei *“GastroStart”* und erfährt in der kurzen Einführung auf der Startseite, dass dieses Portal sie bei all dem unterstützen kann. 
 Sie ist erleichtert und registriert sich. 
 
-#frage([which box do we keep.])
+#design-entscheid([
+  Bei der *Wahl der Customer Journey* haben wir folgende Alternativen in Betracht gezogen: 
+  
+  B2B (Onboarding bestehender Transgourmet-Kunden), EatSwiss (digitale Herkunftsplattform), PublicPlate (Beschaffungsplattform für Gemeinschaftsverpflegung) und B2Startup (Marktpotential-Check vor der Gründung).
 
-#design-entscheid([Andere Customer Journey Ideen, wie wir analysiert und verworfen haben: 
-- B2B: Onboarding eines bestehenden Business-Kunden bei Transgourmet
-- EatSwiss: Digitale Herkunftsplattform für Gastronomie
-- PublicPlate: Digitale Beschaffungsplattform für Gemeinschaftsverpflegung
-- B2Startup: Marktpotential-Check vor der Unternehmensgründung für ein Gastro-Startup
-])
-
-#design-entscheid([Kriterien die für die Wahl von *GastroStart* als Customer Journey ausschlaggebend waren:
-- Die Geschichte von Amira ist nachvollziehbar und realistisch.
-- Die Customer Journey ist in sich konsistent und kann in Szenarien abgebildet werden.
-- Alle Unternehmen im Joint Venture können in der Customer Journey eine Rolle spielen und ihre Dienstleistungen einbringen.
-- Die Komplexität ist überschaubar und kann im Rahmen der Arbeit modelliert werden.
+  Für *GastroStart* sprachen: 
+  
+  Eine nachvollziehbare und realistische Persona (Amira), eine in sich konsistente, in Szenarien abbildbare Journey, eine sinnvolle Rolle für jeden Partner des Joint Ventures sowie eine im Rahmen der Arbeit beherrschbare Modellierungskomplexität.
 ])
 
 In enger Verbindung mit der Customer Journey #ref(<sec-amira-und-ihre-geschichte>, supplement: none) wird die Persona „Amira“ erarbeitet. Sie dient dazu, unsere Endkundin konkret greifbar und emotional verankert zu machen. Die Bedürfnisse und Kontexte von Amira bilden den zentralen Ausgangspunkt für die Modellierung des Produkts "GastroStart".
