@@ -212,35 +212,36 @@ Der Reifegrad ist auf Produkt- und Entscheidebene hoch, auf Portfolioebene dageg
 
 === Ausgangslage
 
-Bund, Kantone und Gemeinden in der Schweiz orientieren sich für ihre Organisation am Departementalprinzip — an der Gliederung der Verwaltung in eigenständig verantwortete Departemente beziehungsweise Direktionen.
+Bund, Kantone und Gemeinden in der Schweiz orientieren sich für ihre Organisation am Departementalprinzip — an der Gliederung der Verwaltung in eigenständig verantwortete Departemente (Bund) beziehungsweise Direktionen (Kanton) oder Ressorts (Gemeindeebene).
 
-Dieses Prinzip führt zu einem föderierten Ansatz mit dezentral verantworteten Kernaufgaben, wobei ebenfalls angenommen wird, dass auf allen Ebenen gemeinsam genutzte Grundleistungen vorhanden sind. Auf Gemeindeebene lässt sich dasselbe Muster beobachten: Sowohl grössere Städte als auch kleinere Gemeinden gliedern sich in Ressorts oder Bereiche, die eigenständig arbeiten.
-Auf dieser Annahme zur Organisation der Verwaltung basieren die folgenden Überlegungen zur angewandten Unternehmensarchitektur.
+Diese organisatorische Eigenschaft führt dazu, dass auf jede Staatsebene eine Art interne Föderation besteht: die Kernaufgaben werden dabei dezentral verantwortet und wahrgenommen und Leistungen mit Grundcharakter wie beispielsweise Logistik oder Infrastruktur werden gemeinsam genutzt. 
 
-=== Unternehmensarchitektur Bund
+Auf dieser Ausgangslage zur Organisation der Verwaltung basieren die folgenden Überlegungen zur angewendeten  Unternehmensarchitektur auf Bundesebene. 
+
+=== Unternehmensarchitektur auf Bundesebene [löschen?]
 
 Die Entwicklung der Bundesarchitektur geschieht in einem föderierten Ansatz durch den Bereich Digitale Transformation und IKT-Lenkung der Bundeskanzlei (DTI), die Departemente, Ämter und Leistungserbringer @bk_unternehmensarchitektur_bund: 
 + die Unternehmensarchitektur für die jeweiligen *Kernaufgabenbereiche* wird von den Departementen und Verwaltungseinheiten dezentral entwickelt.
 + Bundesämter mit *übergreifenden Aufgaben*, definieren und koordinieren die Unternehmensarchitektur für die übergreifenden Aspekte in ihrem Verantwortungsbereich.
-+ die Unternehmensarchitektur der *aufgabenneutralen IKT-Grundleistungen* - soweit diese von der Mehrheit der Departemente benötigt werden -  fällt in der Verantwortung des Bereichs DTI. 
++ die Unternehmensarchitektur der *aufgabenneutralen IKT-Grundleistungen* - soweit diese von der Mehrheit der Departemente benötigt werden - fällt in der Verantwortung des Bereichs DTI. 
 
-=== Governance und Rolle der Unternehmungsarchitektur 
+=== Governance und Rolle der Unternehmungsarchitektur [löschen?]
 
 Die Unternehmensarchitektur wird je nach Aufgabentyp unterschiedlich gelebt - und ist auch unterschiedlich bindend. 
-Wer für die Governance zuständig ist und wie sich diese auf die Bundesverwaltung auswirkt, ist je nach fall unterschiedlich: 
-+ die Unternehmensarchitektur für die Kernbereiche von Departementen ist nur für die betroffenen Organisationseinheiten verbindlich. 
-+ Ämter mit übergreifenden Aufgaben bestimmen die Unternehmensarchitektur für diese spezifischen Bereiche - diese ist dann für die restliche Bundesverwaltung _verbindlich_. 
-+ Bundesweit gibt es zwei Goverance-Mechanismen: 
-  - das Architekturboard Bund, bei dem alle Departemente und interne Erbringer von IKT-Leistungen vertreten sind, dient der gegenseitigen Abstimmung der Architekturen und der Methoden sowie der Hilfsmittel zu deren Erstellung @bk_unternehmensarchitektur_bund. 
+Wer für die Governance zuständig ist und wie sich diese auf die Bundesverwaltung auswirkt, ist je nach Fall unterschiedlich: 
++ die Unternehmensarchitektur für die *Kernbereiche von Departementen* ist nur für die betroffenen Organisationseinheiten verbindlich. 
++ Ämter mit *übergreifenden Aufgaben* bestimmen die Unternehmensarchitektur für diese spezifischen Bereiche - diese ist dann für die restliche Bundesverwaltung _verbindlich_. 
++ Betreffend den *aufgabenneutralen IKT-Grundleistungen* Bundesweit gibt es zwei Goverance-Mechanismen: 
+  - das Architekturboard Bund, bei dem alle Departemente und interne Erbringer von IKT-Leistungen vertreten sind, dient der gegenseitigen Abstimmung der Architekturen und der Methoden sowie der Bestimmung Hilfsmittel zu deren Erstellung @bk_unternehmensarchitektur_bund. 
   - Der Bereich DTI ist als einziger Akteur befugt, bundesweit verbindliche Vorgaben und Standards zu erlassen, im Bereich der sogenannten aufgabenneutralen IKT-Grundleistungen (Standarddienste) — und dies nur, soweit diese von der Mehrheit der Departemente benötigt werden @bk_unternehmensarchitektur_bund.
 
 === Herausforderungen in der Unternehmensarchitektur
 
 + *Fehlende ebenenübergreifende Gesamtsicht*: Föderalismus zwischen den Ebenen und Departementalprinzip innerhalb jeder Ebene verteilen die Verantwortung auf viele eigenständige Einheiten. Dadurch fehlt eine übergreifende Sicht darauf, welche Fähigkeit wo bereits besteht — und damit auch die Grundlage, um zu erkennen, welche Bereiche sich überhaupt für eine gemeinsame Regelung durch EA und Governance eignen.
 
-+ *Unverbindliche Steuerungsinstrumente*: Die ebenenübergreifende Zusammenarbeit stützt sich heute auf Standards, deren Übernahme freiwillig ist, oder auf Grundsätze wie Nutzerorientierung und Interoperabilität, deren Umsetzung einen erheblichen Interpretationsspielraum lässt. Beides gibt Orientierung, schafft aber keine Durchsetzbarkeit — die Durchgängigkeit bleibt vom Goodwill der einzelnen Einheiten abhängig.
++ *Unverbindliche Steuerungsinstrumente*: Die ebenenübergreifende Zusammenarbeit stützt sich heute auf Standards, deren Übernahme freiwillig ist, oder auf Grundsätze wie Nutzerorientierung und Interoperabilität, deren Umsetzung einen erheblichen Interpretationsspielraum lässt. Beides gibt Orientierung, schafft aber keine konkrete Durchsetzbarkeit — die Durchgängigkeit einer gegebenen Lösung bleibt vom Goodwill der einzelnen Einheiten abhängig.
 
-+ *Rechtsgrundlage als Vorbedingung* Die Schaffung der Voraussetzungen für die Governance liegt ausserhalb der Kompetenz der Unternehmensarchitektur: Behörden sind in all ihrem Handeln an das Legalitätsprinzip gebunden. 
++ *Rechtsgrundlage als Vorbedingung* Die Schaffung der Voraussetzungen für eine durchsetzbare Governance liegt ausserhalb der Kompetenz der Unternehmensarchitektur: Behörden sind in all ihrem Handeln an das Legalitätsprinzip gebunden. 
 Damit die Behörden — innerhalb derselben Ebene oder ebenenübergreifend (etwa zwischen Kanton und Gemeinden) — verbindlich zusammenarbeiten und Daten austauschen können, braucht es daher eine entsprechende gesetzliche Grundlage. 
 Fehlt eine solche, bleibt die Unternehmensarchitektur in diesem Bereich ein zahnloser Tiger: Sie kann Interoperabilität fordern oder gar gestalten, die rechtliche Voraussetzung dafür aber nicht selbst schaffen.
 
