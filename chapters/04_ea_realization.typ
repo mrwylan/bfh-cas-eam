@@ -18,7 +18,7 @@ Dabei orientieren wir uns am der Archimate-Modellierung des RIM und zeigen die w
 Am Ende des Kapitels sollten die Leser ein grundlegendes Verständnis der wesentlichen Abläufe der hier entwickelten Lösung haben.
 Die darauf folgenden Kapitel bauen auf den hier vorgestellten Modellen auf und erweitern diese um Geschäftsprozesse und Geschäftsfähigkeiten.
 
-== Vorgehen
+== Geschäftsobjekte und Geschäftstransaktionen
 
 Um Geschäftsobjekte zu identifizieren hat sich die Gruppe mit der Struktur von Amiras Customer Journey auseinandergesetzt.
 Die Customer Jouney haben wir in Szenarios aufgeteilt und in jedem Szenario. Jedes Szenario ist ein Arbeitsschritt in der Customer Journey, der sich von anderen Arbeitsschritten abgrenzen lässt.
@@ -35,49 +35,54 @@ In der Modellierung verwenden wir zur Darstellung der Beziehnung "löst aus" imm
 Für die Darstellung der Zustände verwenden wir das Symbol *Business Event*.
 In der Modellierung verwenden wir für die Zugriffsbeziehung von Geschäftsobjekt nach Zustand immer die "lesende" Variante. Dabei zeigt der Pfeil vom Geschäftsobjekt zum Zusand.
 
-=== Phase 1: Orientierung
+=== Phase 1: Orientierung <head-phase1-orientierung-1>
 
 #autor-dvbern("Beitrag von Jan Sohnemann, DVBern", inhalt: [])
 
-Was bringt potenzielle Kunden auf eine Plattform wie GastroStart? Am Anfang steht sicherlich der Wunsch, einen Gastronomiebetrieb zu gründen.
-Zu diesem Wunsch gehören viele Eigenschaften, zum Beispiel die Art des Betriebs: Handelt es sich um ein Cateringunternehmen, um ein Café oder um eine Bar, in der auch alkoholische Getränke serviert werden?
+In @head-scenarios-orientation haben wir einen Einstieg in die erste Phase der Customer Journey beschrieben. Hier wollen wir den Ablauf der Phase nun vollständig beschreiben.
+
+Was bringt potenzielle Kunden auf eine Plattform wie GastroStart? 
+Am Anfang steht sicherlich der Wunsch, einen Gastronomiebetrieb zu gründen.
+Zu diesem Wunsch gehören viele Eigenschaften, zum Beispiel die Art des Betriebs: 
+Handelt es sich um ein Cateringunternehmen, um ein Café oder um eine Bar, in der auch alkoholische Getränke serviert werden?
 Die GründerInnen haben dabei vielleicht zunächst nur ihre Betriebszeiten und ihr Wunschklientel vor Augen.
 Allerdings hat diese Entscheidung auch regulatorische Auswirkungen, die sich an verschiedenen Standorten unterschiedlich auswirken können.
 Von entscheidender Bedeutung ist also auch, wo der Betrieb stattfindet.
 Alle Eigenschaften, die mit der Betriebsgründung zusammenhängen, fassen wir im ressourcenunabhängigen Modell im Geschäftsobjekt *Gründungsvorhaben* zusammen.
 Das Gründungsvorhaben wird in der ersten Phase, Orientierung, entscheidend geprägt und spielt in den folgenden Phasen die zentrale Rolle.
 
-Im ressourcenunabhängigen Modell nach Archimate sind die Eigenschaften der Geschäftsobjekte zunächst nicht von Bedeutung. Wir beginnen stattdessen mit der Betrachtung der Zustände, die ein Geschäftsobjekt annimmt, und welche Transaktionen einen Zustandswechsel hervorrufen.
+Im ressourcenunabhängigen Modell (RIM) nach Archimate sind die Eigenschaften der Geschäftsobjekte zunächst nicht von Bedeutung. 
+Wir beginnen stattdessen mit der Betrachtung der Zustände, die ein Geschäftsobjekt annimmt, und welche Transaktionen einen Zustandswechsel hervorrufen. 
+Der folgende Absatz beschreibt ein entsprechendes RIM für diese Phase der Customer Journey, welches in @fig-GTZ-orientierung am Ende des folgenden Absatzes realisiert wurde.
 
-Der Auslöser der Customer Journey ist das Gründungsvorhaben. Indem die GründerInnen die Plattform GastroStart betreten, ist ihr Gründungsvorhaben aus Sicht des Systems *initiiert*. 
-Diesem Zustand folgt die Geschäftstransaktion *Anforderungen ermitteln*. 
-Diese Anforderungen ergeben sich aus den Eigenschaften des Gründungsvorhabens, wie zum Beispiel:
-- Personalien der BetriebsinhaberInnen
-- Betriebs-Typ (Catering, Café, Bar usw.)
-- Ort der Betriebsstätte
-- gegebenenfalls vorhandene Zertifikate und Bewilligungen
-
-Welche Anforderungen jeweils gelten, wird vom *Kantonsanforderungskatalog* bestimmt, dessen fester Bestandteil die *digitale Regelmatrix* ist. 
-Die Voraussetzungen für Küchenbetrieb oder Alkoholausschank können sich kantonal unterscheiden, ebenso die Art und Ausstattung der Betriebsstätte: 
-In Wohngebieten gelten oftmals strengere Auflagen für Lärm- und Geruchsvermeidung als beispielsweise in Industriegebieten. 
-Die digitale Regelmatrix verknüpft die Eigenschaften des Gründungsvorhabens mit den jeweiligen kantonalen Anforderungen.
-Im Rahmen der Geschäftstransaktion *Anforderungen ermitteln* wird mit Hilfe der Regelmatrix und des kantonalen Anforderungskatalogs das Geschäftsobjekt *Bewilligungsübersicht* erstellt. 
-Dieses Objekt enthält alle für das erfasste Gründungsvorhaben geltenden Auflagen und weitere, für eine erfolgreiche Bewilligung wichtige Hinweise.
-
-Mit dem erfolgreichen Abschliessen der Geschäftstransaktion *Anforderungen ermitteln* wechselt das Gründungsvorhaben in den Zustand *orientiert*. 
+Der Auslöser der Customer Journey ist das Gründungsvorhaben. 
+Indem die GründerInnen die Plattform GastroStart betreten, ist ihr Gründungsvorhaben aus Sicht des Systems *initiiert*. 
+Nachdem die GründerInnen sich in einer Einführung mit der Plattform vertraut gemacht haben - das kann Text, ein Einführungsvideo oder ein Chat-Bot sein; 
+wir lassen das an dieser stelle offen - ist ihre erste Aktion, den Standort für ihr Gründungsvorhaben zu wählen. 
+Diese Aktion wird durch die Geschäftstransaktion *Standort festlegen* realisiert.
+Im Anschluss wechselt das Gründungsvorhaben in den Zustand *lokalisiert*.
+Ausserdem wird durch das Festlegen des Standortes auf Basis einer digitalen Regelmatrix das Geschäftsobjekt *Kantonsanforderungskatalog* definiert.
+Dieser Katalog beschreibt alle, für die Realisierung des Gründungsvorhabens, zu erfüllenden Kriterien, den gewählten Standort betreffend.
+Diese Kriterien können z.B. erforderliche Bewilligungen, einzuhaltende Auflagen oder nachzuweistende Kenntnisse und Fähigkeiten sein und sie entstammen dem Geschäftsobjekt *digitale Regelmatrix*. 
+Man kann sich dieses Objekt wie eine Tabelle vorstellen: Jede Spalte repräsentiert einen Standort (Kanton) und jede Zeile repräsentiert ein zu erfüllendes Kriterium.
+Eine Zelle mit dem Wert "1" oder "true", bzw. "wahr" bedeutet, dass das durch die Zelle, mit dem Standort verknüpfte Kriterium, bei einem Gründungsvorhaben relevant ist.
+Mit dem erfolgreichen Abschliessen der Geschäftstransaktion *Anforderungen ermitteln* wechselt das Gründungsvorhaben in den Zustand *orientiert*.
+Zusätzlich wird das Geschäftsobjekt *Bewilligungsübersicht* erstellt, das Teil einer Komposition mit dem Gründungsvorhaben ist. 
+Diese Übersicht enthält alle, Kriterien, die für eine Betriebsgenehmigung zu erfüllen sind.
 Die GründerInnen haben damit alle Informationen, die sie brauchen, um das Bewilligungsverfahren erfolgreich zu durchlaufen.
 
-Die folgende Abbildung stellt die Zusammenhänge der Geschäftsobjekte, Zustände und Transaktionen im ressourcenunabhängigen Modell nach Archimate dar. 
+#figure(
+  image("../assets/jan/Zustandsübergänge des Gründungsvorhabens in Phase 1 - Orientierung v2.0.svg", width: 100%),
+  caption: [Zustandsübergänge des Gründungsvorhabens in Phase 1: Orientierung]
+) <fig-GTZ-orientierung>
+
 Die hier beschriebene Variante liest sich als Happy Path — also die erfolgreiche Erstellung einer Bewilligungsübersicht —, auch wenn der hier verwendete Zielzustand *orientiert* Raum für Variationen lässt. 
 Sicherlich ist nicht jedes Gründungsvorhaben realisierbar, und der hier beschriebene Prozess kann durchaus komplexer werden. 
 Dass das Gründungsvorhaben nicht realisierbar ist, ist allerdings auch eine Art Orientierung.
-
-Die folgende Abbildung stellt die Geschäftstransaktion mit ihren Verknüpfungen im Archimate Modell.
-
-#figure(
-  image("../assets/jan/Zustandsübergänge des Gründungsvorhabens in Phase 1 - Orientierung.svg", width: 100%),
-  caption: [Zustandsübergänge des Gründungsvorhabens in Phase 1: Orientierung]
-) <fig-GTZ-orientierung>
+Wie im zweiten Absatz dieses Abschnitts angemerkt, spielt das Gründungsvorhaben in allen Phasen der Customer Journey eine entscheiden Rolle.
+Die folgende Tabelle gibt darum noch mal einen Überblick über das Objekt.
+Für ein besseres Verständnis wurden hier auch einige Attribute (im Text auch als "Eigenschaften" bezeichnet) angegeben.
+Die hier aufgezählten Zustände sind vollständig für alle Phasen der Customer Journey und auch wenn deren Einfürung noch offen ist, tragen sie an dieser Stelle aus unserer Sicht zum Verständnis bei.
 
 #figure(
   caption: [Geschäftsobjekt Gründungsvorhaben],
@@ -114,30 +119,33 @@ Die folgende Abbildung stellt die Geschäftstransaktion mit ihren Verknüpfungen
 
       [Definition / Zweck],
       [/*ich habe noch 2 Screenshots gemacht, als Jan das Kozept erklärte. sie sind in den Assets, GVH_1.png und GVH_2.png (bitte löschen, falls ihr diese nicht braucht */
-      Das Gründungsvorhaben speichert und persistiert die Resultate der verschiedenen Phase oder Szenarien der Customer Journey des Kunden.],
+      Das Gründungsvorhaben ist ein Objekt, das alle für das Vorhaben relevanten Eigenschaften verwaltet. 
+      Dieses Objekt hat in unterschiedlichen Phasen der Customer Journey unterschiedliche Zustände und entsprechend kommen in späteren Phasen weitere Eigenschaften hinzu.
+      ],
 
 
       [Attribute],
-      [ ],
+      [Beispiele: Standort, Angebot, Inhaber, Öffnungszeiten],
 
       [Zustände],
-      [initiiert, orientiert, registriert, bewilligt, finanziert, realisiert, abgebrochen],
+      [initiiert, lokalisiert, orientiert, registriert, bewilligt, finanziert, realisiert, abgebrochen],
 
       [Beziehungen],
-      [ ],
+      [Bewilligungsübersicht],
     )
   ]
 ) <tbl-GO-Gründungsvorhaben>
 
-=== Phase 2: Registrierung
+=== Phase 2: Registrierung <head-phase2-registrierung>
 
 #autor-dvbern("Beitrag von Jan Sohnemann, DVBern", inhalt: [])
 
-Der Gründungsprozess lässt sich höchstwahrscheinlich nicht in einer Session abschliessen. 
+Der Gründungsprozess lässt sich höchstwahrscheinlich nicht in einer Sitzung abschliessen. 
 Nachdem die GründerInnen mit dem Abschluss der ersten Phase eine Übersicht zu ihren Rechten, Pflichten und Möglichkeiten haben, werden sie in den meisten Fällen Gesuche stellen müssen.
 Das heisst, sie werden Formulare ausfüllen und als Anträge einreichen müssen. 
-Diese Anträge haben eine Bearbeitungsdauer, die sich in den meisten Fällen über mindestens einige Tage erstreckt. 
-Manche GründerInnen werden wahrscheinlich auch Kenntnisse nachweisen und sich dafür möglicherweise sogar schulen lassen müssen. Damit GründerInnen den Prozess auf GastroStart nicht bei jeder Sitzung von vorn beginnen müssen, macht es Sinn, ihr Gründungsvorhaben und dessen aktuellen Stand mit einem Konto zu verknüpfen. 
+Diese Anträge können eine Bearbeitungsdauer haben, die sich über Tage oder gar Wochen erstreckt. 
+Manche GründerInnen werden wahrscheinlich auch Kenntnisse nachweisen und sich diese zunächst erarbeiten müssen. 
+Damit GründerInnen den Prozess auf GastroStart nicht bei jeder Sitzung von vorn beginnen müssen, macht es Sinn, ihr Gründungsvorhaben und dessen aktuellen Stand mit einem Konto zu verknüpfen. 
 Über ihr Konto können sich alle GastroStart-Benutzenden authentifizieren und Aktualisierungen am Gründungsprozess vornehmen oder einsehen.
 
 #design-entscheid([
@@ -145,17 +153,22 @@ Manche GründerInnen werden wahrscheinlich auch Kenntnisse nachweisen und sich d
   Wir sind zum Schluss gekommen, dass das Geschäftsobjekt Kundenkonto alle Informationen zum Kunden enthält, weshalb letzteres nicht separat / zusätzlich geführt werden muss.
 ])
 
-Wir betrachten im folgenden Modell im Wesentlichen das Geschäftsobjekt Kundenkonto und den Geschäftsprozess *Kundenkonto verwalten*, der sich in drei Geschäftstransaktionen unterteilt:
+Wir betrachten im folgenden Modell im Wesentlichen das Geschäftsobjekt Kundenkonto, das durch drei Geschäftstransaktionen geprägt wird:
 - Konto anlegen
 - Konto löschen
 - Konto aktualisieren
 
 Die drei Transaktionen sind unabhängig voneinander, mit der Ausnahme, dass Löschen und Aktualisieren ein bestehendes Konto voraussetzen. 
 Das Kundenkonto dient einerseits der Authentifizierung, der Autorisierung, der Personalisierung und der Verknüpfung mit dem Gründungsvorhaben. 
-Die dafür notwendigen Eigenschaften werden in den Geschäftstransaktionen *Konto anlegen* und *Konto aktualisieren* definiert. 
+Diese Verknüpfung ist eine Aggregation. 
+Wie im ersten Absatz dieses Abschnitts erklärt, dient das Kundenkonto in erster Linie dem Speichern des Gründungsvorhabens.
+Wird das Kundenkonto gelöscht, lässt sich das Gründungsvorhaben niemandem mehr zuordnen und kann ebendfalls entfernt werden.
+Wir kommen weiter unten im Text noch mal auf das Löschen des Kundenkontos zu sprechen.
+Das Kundenkonto wird in den Geschäftstransaktionen *Konto anlegen* und *Konto aktualisieren* definiert. 
 Ein Beispiel für eine Aktualisierung könnte die Änderung der Postanschrift oder Telefonnummer des Gründers oder der Gründerin sein.
 
 Die folgende Tabelle definiert das Geschäftsobjekt Kundenkonto und zeigt expemparische Attribute, sowie seine Zustände und Beziehungen.
+Die Tabelle entspricht dem Aufbau der Tabelle: @tbl-GO-Gründungsvorhaben aus Abschnitt @head-phase1-orientierung-1.
 
 #figure(
   caption: [Geschäftsobjekt Kundenkonto],
@@ -206,17 +219,30 @@ Die folgende Tabelle definiert das Geschäftsobjekt Kundenkonto und zeigt expemp
 ) <tbl-GO-Kundenkonto>
 
 Das Löschen eines Kundenkontos darf nicht in jedem Fall zu dessen Verschwinden führen. Erst wenn alle Geschäftstransaktionen, die mit diesem Konto in Verbindung stehen, abgeschlossen sind, ist eine endgültige Löschung möglich — und auch nur dann, wenn ausstehende Verbindlichkeiten der GründerInnen auch ausserhalb der Plattform beglichen werden können. 
-Das Löschen eines Kundenkontos versetzt dieses also im Rahmen dieses Modells zunächst nur in den Zustand *inaktiv*, was bedeutet, dass bereits gestartete Transaktionen abgebrochen werden können, wenn möglich, und keine neuen Transaktionen gestartet werden können.
+Das Löschen eines Kundenkontos versetzt dieses also im Rahmen dieses Modells zunächst nur in den Zustand *inaktiv*, was bedeutet, dass bereits gestartete Transaktionen abgebrochen werden können - wenn möglich, und dass keine neuen Transaktionen gestartet werden können.
 
-Dass die Geschäftstransaktion *Konto aktualisieren* das Kundenkonto in einen entsprechenden Zustand überführt, kann in vielen Fällen sinnvoll sein: 
+Dass die Geschäftstransaktion *Konto aktualisieren* das Kundenkonto in einen neuen Zustand überführt (*aktualisiert*), kann in vielen Fällen sinnvoll sein: 
 Laufende Prozesse oder Transaktionen müssen unter Umständen über diese Zustandsänderung informiert werden. 
 Nehmen wir zum Beispiel wieder die Änderung der Postanschrift: Wahrscheinlich werden sich nicht alle Informationsaustauschprozesse digitalisieren lassen, und eine zuständige Behörde sollte in diesen Fällen für den Schriftverkehr über die Änderung der Postanschrift informiert werden.
+Aber auch in einem voll digitalisierten System ist dieser Zustand sinnvoll, z.B. wenn dieses System einer Event-orientierten Architektur folgt.
+Wann dieser Zustand (*aktualisiert*) endet, darüber sprechen wir in diesem Abschnitt nicht.
+Wir weisen hier lediglich darauf hin, dass Abhängigkeiten zu diesem Zustand systemabhängig gegebenenfalls präziser definiert werden muss.
 
-Die folgende Abbildung stellt den Prozess *Kundenkonto verwalten* im Archimate Modell dar.
+Die ausschliessliche Verwaltung des Kundenkontos erfüllt noch keinen Zweck. 
+Diesen Zweck haben wir im ersten Absatz diesen Abschnitts beschrieben: Authenfizierung.
+Für die Authentifizierung haben wir dem Modell in @fig-gtz-registrierung noch zwei weitere Geschäftstransaktionen hinzugefügt:
+*Kunde anmelden* und *Kunde abmelden*.
+Beide Transaktionen versetzen das Kundenkonto in einen entsprechenden Zustand.
+Diese Zustände sind relevant, weil sie das Verhalten der sie auslösenden Geschäftstransaktion beeinflussen.
+So wird die Transaktion *Kunde anmelden* nicht zur Eingabe von Benutzername und Passwort führen, wenn der Kunde bereits angemeldet ist.
+Idealerweise ist diese Transaktion für ein angemeldetes Kundenkonto gar nicht erreichbar.
+Dafür muss das System den Zustand des Kundenkontos allerdings kennen.
+
+Die folgende Abbildung zeigt das Geschäftsobjekt *Kundenkonto* und seine Beziehungen im RMI nach Archimate.
 
 #figure(
   image("../assets/jan/Zustandsübergänge des Kundenkontos in Phase 2 - Sich registrieren.svg", width: 100%),
-  caption: [Zustandsübergänge des Gründungsvorhabens in Phase 1: Orientierung]
+  caption: [Zustandsübergänge des Kundenkontos in Phase 2: Sich registrieren]
 ) <fig-gtz-registrierung>
 
 === Phase 3: Bewilligung
@@ -846,23 +872,90 @@ Schwierigkeiten bat es, Abstand von der gewohnte Implementierungsebene zu halten
 
 == Geschäftsprozesse und Geschäftsfähigkeiten
 
-#fuehrung([
+Auf den folgenden Seiten wollen die die Modelle aus den letzten Abschnitten noch einmal aufgreifen und um Geschäftsfähigkeiten erweitern. 
+Damit vervollständigen wir unser RIM und bilden die Grundlage für den Einstieg ins ressourcespezifische Modell (RSM). 
+Die Identifikation der Geschäftsfähigkeiten spielt dabei die wesentliche Rolle, denn sie befähigen uns unsere Dienstleistung - oder allgemeiner: Die vorgenommene Wertschöpfung zu erbringen.
+Neben den Geschäftsfähigkeiten werden die Leser in den folgenden Modellen auch die, sich aus den Geschäftstransaktionen ergebenen Geschäftsprozesse wiederfinden.
 
+
+#fuehrung([
 Geschäftstransaktionen, die inhaltlich zusammenhängen, werden zu *Geschäftsprozessen* aggregiert.
 Auf der Basis der In- und Outputs der Geschäftstransaktionen werden für jeden Geschäftsprozess seine *Abhängigkeiten zu Geschäftsobjekten* identifiziert.
 @Spichiger2026GFbUA
-
 ])
 
-=== Geschäftsprozesse für die Orientierung auf der Webseite von Gastrostart
+=== Geschäftsprozesse und Geschäftsfähigkeiten für die Orientierung des Gründungsvorhabens
 
-Während der Orientierung auf der Webseite von GastroStart sind keine Geschäftsprozesse zu identifizieren, da die Orientierung auf der Webseite keine Geschäftstransaktionen beinhaltet. Die Orientierung dient der Informationsbeschaffung und der Vorbereitung von Geschäftstransaktionen, die in den nachfolgenden Phasen stattfinden.
+#autor-dvbern("Beitrag von Jan Sohnemann, DVBern", inhalt: [])
 
-=== Geschäftsprozess für die Registrierung bei Gastrostart
+Greifen wir noch einmal das Modell in @fig-GTZ-orientierung aus @head-phase1-orientierung-1 auf. Bei der Orientierung sollte das Gründungsvorhaben definiert und die zur Realisierung notwendigen Schritte identifiziert werden. 
+Realisierung heisst im Rahmen der Orientierung "Bewilligung", also die, durch die zuständigen Behörden erteilte Erlaubnis, den Betrieb aufnehmen zu dürfen.
+Eine Bewilligung ist noch kein Garant für ein erfolgreiches Unternehmen.
+Diesem Aspekt können wir uns im Rahmen dieser Arbeit aber nicht vollumfänglich widmen.
+Die zur Bewilligung notwendigen Schritte - wir bezeichnen sie im folgenden als "Bewilligungskriterien" - ergeben sich aus dem Wissen heraus, welche das sind.
+Dieses Wissen muss erarbeitet und gepflegt werden. Das erfordert Ressourcen und resultiert in einer Fähigkeit, nämlich *regulatorisches Wissen verwalten*.
+Dieses Wissen ist in den Geschäftsobjekten *Digitale Regelmatrix* und *Kantonsanforderungskatalog* abgelegt.
+Da nicht alle Bewilligungskriterien für jedes Gründungsvorhaben relevant sind, ist es für die GründerInnen vorteilhaft, ihren konkreten Bedarf zu kennen.
+Diesen Bedarf aus allen möglichen Bewilligungskriterien ermitteln zu können resultiert in einer weiteren Geschäftsfähigkeit, nämlich *Bewilligungsbedarf ermitteln*.
+Und schliesslich muss dieser Bedarf so aufbereitet werden, dass die GründerInnen ihn problemlos erfüllen können.
+Der ganze Prozess resultiert also in der Geschäftsfähigkeit *Gründungsorientierung bereitstellen*.
+Das kling zunächst abstakt und man könnte argumentieren, dass die zuvor genannten Geschäftsfähigkeiten *regulatorisches Wissen verwalten* und *Bewilligungsbedarf ermitteln* in dieser Fähigkeit vereint werden können.
+Wir würden argumentieren, dass das Bereitstellen dieser Orientierung, als das für den Kunden (Gründer/in) sichtbare Ergebnis, von besonderer Bedeutung ist und besonderer Aufmerksamkeit bedarf.
+Man könnte den Kunden an dieser Stelle entwerder die - wie in @head-phase1-orientierung-1 beschrieben - ausgefüllte Regelmatrix überlassen.
+Unser Fokus wäre allerdings, diese Matix in eine Form zu übersetzten, die ein geringes Risko der Überforderung hat, die beherrschbar und ermutigend erscheint.
+Wir wollen schliesslich möglichst viele Kunden durch alle Phasen der Customer Jouney auf unserer Plattform begleiten.
+Das zu realisieren, verbirgt sich also hinter der Geschäftsfähigkeit *Gründungsorientierung bereitstellen*.
 
-#todo-action([\@ Jan, bitte nachführen])
-1. Geschäftsprozesse 
-2. Abhängigkeiten von Geschäftsobjekten 
+In @fig-bp-and-bc-phase1 sind neben der Einführung der Geschäftsfähigkeiten auch die beiden Geschäftstransaktion *Standort festlegen* und *Anforderungen ermitteln* in einem Geschäftsprozess aggregiert.
+Diesen Prozess haben wir naheliegenderweise *Gründungsvorhaben orientieren* genannt. 
+
+#figure(
+  image("../assets/jan/Geschäftsfähigkeiten in Phase 1 - Orientierung.svg", width: 100%),
+  caption: [Geschäftsfähigkeiten in Phase 1: Orientierung"]
+) <fig-bp-and-bc-phase1>
+
+=== Geschäftsprozesse und Geschäftsfähigkeiten für die Benutzer-Registrierung bei Gastrostart
+
+#autor-dvbern("Beitrag von Jan Sohnemann, DVBern", inhalt: [])
+
+In @head-phase2-registrierung haben wir den Zweck der Einführung eines Kundenkontos beschrieben und in @fig-gtz-registrierung die Zustandsübergänge dieses Geschäftsobjektes erörtert. 
+Wir haben ausserdem die drei Geschäftstransaktionen *Konto anlegen*, *Konto aktualisieren* und *Konto löschen* identifiziert, welche Einfluss auf das Kundenkonto nehmen.
+Hier wollen wir nun die Geschäftsfähigkeiten identifizieren, die sich aus den Erklärungen in @head-phase2-registrierung ergeben.
+Zunächst aggregrieren wir die drei oben genannten Geschäftstransaktionen in einem Geschäftsprozess: *Kundenkonto verwalten*.
+Dieser Prozess erfordert eine langfristige Speicherung sensibler Daten, wie zum Beispiel Name und Adresse und Zugangsdaten der Benutzer unserer Plattform.
+Diese Daten sind besonders schützenswert und erfordern einen entsprechenden Umgang. 
+Und dieser Umgang erfordert besondere Fähigkeiten.
+Da wir uns hier noch im RIM befinden, möchten wir nicht zu sehr in Detail gehen, aber zwei Beispiele seinen hier genannt: 
+- Verschlüsselung sensibler Daten bei der Übertragung.
+- Schützen sensibler Daten vor unberechtigtem Zugriff.
+Schützenswerte, beziehungsweise sensible Daten fassen wir unter dem Begriff "Kundendaten" zusammen.
+Und die für den Umgang mit diesen notwendige Geschäftsfähigkeit nennen wir *Kundendaten verwalten*.
+
+Das letzte Beispiel, das Schützen der Daten, führt uns zu einer weiteren Geschäftsfähigkeit.
+Wenn wir unberechtige Zugriffe verhindern wollen, wie setzen wir das um?
+Dafür gibt verschiedene Möglichkeiten und diese zu kennen und gegeneinander abzuwägen, um eine für unseren Kontext geignete Methode zu finden, erfordert ebenfalls besondere Fähigkeiten.
+Die Voraussetzung zu deren Erfüllung ist wieder das Kundenkonto.
+Dieses enthält Daten, die nur seine Besitzer kennen sollten (zum Beispiel Benutzername & Passwort).
+Mit diesen Daten wird eine Authentifizierung möglich.
+Die Benutzer melden sich damit am System an und bestätigen mit diesem geschützten Wissen ihre Identität.
+In @fig-gtz-registrierung haben wir zu diesem Zweck die beiden Geschäftstransaktion *Kunde anmelden* und *Kunde abmelden* vorgestellt.
+Diese haben wir hier in @fig-bp-and-bc-phase2 in dem Geschäftsprozess *Kundensession verwalten* aggregiert.
+Die Kundensession ist die Möglichkeit des authentifizierten Benutzers, das System seiner Autorität entsprechend zu benutzen.
+Und zwar in der Zeit von seiner Anmeldung bis zu seiner Abmeldung.
+Autorität bedeutet hier eine definierte Anzahl von Rechten auszuüben.
+So haben z.B. alle GründerInnen das Recht ihre Gründungsvorhaben abzubrechen.
+GründerInnen sind aber nicht die einzigen Benutzer des Systems.
+Ein Mitarbeiter der Verwaltung, der das Ergebnism eines Bewillungungsverfahrens für ein Gründungsvorhaben eintägt, darf dieses nicht abbrechen.
+Alle Benutzer dürfen ihr eigenes Passwort zurücksetzen.
+Aber nur ein Systemadministrator darf das Passwort für andere Benutzer zurücksetzen.
+Die Fähigkeiten sicherzustellen, dass Authenfizierung und Autorisierung sicher funktionieren, haben wir in der Geschäftsfähigkeit *Benutzer authentifizieren und autorisieren* zusammengefasst.
+
+Die folgende Abbildung zeigt wie die in diesem Abschnitt besprochenen Prozesse und Fähigkeiten in das RMI nach Archimate eingebettet sind.
+
+#figure(
+  image("../assets/jan/Geschäftsfähigkeiten in Phase 2 - Sich registrieren.svg", width: 100%),
+  caption: [Geschäftsfähigkeiten in Phase 2: Sich registrieren"]
+) <fig-bp-and-bc-phase2>
 
 === Geschäftsprozess: Unternehmen gründen
 

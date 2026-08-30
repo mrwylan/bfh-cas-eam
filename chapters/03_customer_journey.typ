@@ -165,7 +165,7 @@ den Szenarien. (Skizze)
 Wir haben bei der Modellierung der Customer Journey festgestellt, dass sich Amiras Weg nicht in starre Phasen einteilen lässt. Stattdessen verstehen wir ihn als eine Abfolge von Szenarien: narrative Ausschnitte aus einer Story Map, die eine Outside-In-Perspektive einnehmen. Den Schnitt zwischen den Szenarien haben wir entlang Amiras Wahrnehmung und der Veränderung ihrer Emotionen gelegt. Erfolg oder Misserfolg auf ihrer Reise durch das Portal entscheidet sich an diesen Schnittstellen.
 
 In den folgenden Kapiteln gehen wir auf eine Auswahl dieser Szenarien ein, je eines pro Partei im Joint-Venture. Jedes Szenario ist in einzelne Touchpoints zerlegt: Sie halten fest, was Amira tut, mit welchem System sie interagiert, in welchem emotionalen Zustand sie sich befindet, und wo die aktuelle oder die Ziel-Architektur Reibung oder Chancen erzeugt.
-In den nächsten Kapiteln wir auf einer Auswahl dieser Szenarien eingegangen - eines für jeder Partei am Joint-Venture.
+In den nächsten Kapiteln wird auf einer Auswahl dieser Szenarien eingegangen - eines für jede Partei am Joint-Venture.
 
 === Szenarien entlang der Customer Journey von GastroStart
 
@@ -179,13 +179,13 @@ In den nächsten Kapiteln wir auf einer Auswahl dieser Szenarien eingegangen - e
 #autor-dvbern("Beitrag von Jan Sohnemann, DVBern", inhalt: [])
 
 Unser Angebot soll sich insbesondere an jede GründerInnen richten, die noch keine Erfährung mit Unternehmensgründungen haben.
-Und wir gehen davon aus, dass viele betroffene schon eine konkrete Idee dessen haben, was sie Anbieten möchten.
+Und wir gehen davon aus, dass viele Betroffene schon eine konkrete Idee dessen haben, was sie Anbieten möchten.
 Unsere GründerInnen sollen sich auf eben diese Idee fokussieren können und sich nicht mit den Details einer Unternehmensgründung herumschlagen müssen.
 Entsprechend gehen wir davon aus, dass sie bei ihrer initialen Recherche ihr Vorhaben mehr oder weniger Konkret beschreiben können.
-Weniger konkret dagegen können sie die Details zur Umsetzung bennennen. 
+Weniger konkret dagegen können sie die Details zur Umsetzung bennennen - jedenfalls gehen wir davon aus. 
 Ihr Suchtext würde also wahrscheinlich die geplante Unternehmensart enthalten, zum Beispiel "Catering" oder "Familien-Café", anstelle von "Gastronomie".
-Weniger wahrscheinlich ist, dass die, bei zur Betriebsbewilligung notwendigen Details bereits bekannt sind.
-Zum Beispiel ist der Ort der Betriebsstätte auch auf nationaler Ebene sehr von Bedeutung, da es kantonale Unterschiede bei den Bewilligungsverfahren und der Regulierung gibt.
+Weniger wahrscheinlich ist, dass die, zur Betriebsbewilligung notwendigen Details bereits bekannt sind.
+Zum Beispiel ist der Ort der Betriebsstätte auch auf nationaler Ebene sehr von Bedeutung, da es kantonale Unterschiede bei den Bewilligungsverfahren und bei der Regulierung gibt.
 Das Ausarbeiten der Details des Gründungsvorhabens nennen wir "Orientierung".
 
 
@@ -193,7 +193,7 @@ Die folgende Tabelle beschreibt ein Szenario für die Orientierung als Teil unse
 Der Eintritt in die Orientierungsphase ist eine *Aktion* der GründerInnen.
 Über *Touchpoints* treten sie mit unserem Produkt in Verbindung.
 Die *Aktion* wird ausgelöst durch einen *Gedanken* oder ein *Bedürfnis*.
-Jede Phase kann die GründerInnen mit *Painpoints* konfrontieren, die auch zum Abbruch der Produktnutzung führen.
+Jede Phase kann die GründerInnen mit *Painpoints* konfrontieren, die zum Abbruch der Produktnutzung führen können.
 Und schliesslich bietet jede Phase *Chancen*, die die *Bedürnisse* befriedigen und zur Weiternutzung einladen.
 
 #figure(
