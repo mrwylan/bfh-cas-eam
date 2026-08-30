@@ -8,6 +8,7 @@ Die vier ungleichen Gefährten stellen sich vor.
 Zusammen werden sie sich auf den Weg machen, ein gemeinsames Unternehmen zu entwerfen und zu modellieren. 
 Jedes Mitglied stellt sein Unternehmen kurz vor. 
 
+
 == Transgourmet
 #autor-transgourmet([Beitrag von Jakob Albrecht])
 *Transgourmet Schweiz: Ein Marktführer, der das Lebensmittelgeschäft transformiert.*
@@ -34,6 +35,7 @@ Die Unternehmensarchitektur von Transgourmet steht vor spezifischen Herausforder
 
 == DV Bern // Hobbits
 #autor-dvbern([Beitrag von Jan Sohnemann])
+#todo-action([Vorstellung kurz halten])
 
 DV steht für digital Value - was man als "wertschöpfende Digitalisierung" verstehen kann.
 Digitalisierungsprojekte, vorwiegend für die öffentliche Verwaltung, bilden das grösste Standbein des Unternehmens.
@@ -133,6 +135,7 @@ Die grössten Herausforderungen liegen aktuell bei der Skalierbarkeit und dem Le
 
 == FINNOFLEET //Menschen
 #autor-finnofleet([Beitrag von Adrian Anghel])
+#todo-action([bitte: Vorstellung kurz halten])
 
 FINNOFLEET Schweiz (#link("https://finnofleet.ch/ch-de/")[finnofleet.ch]) ist ein Softwareunternehmen für die Finanzbranche mit Hauptsitz in Sursee sowie weiteren Standorten in Zürich und Bern.
 Rund 100 Mitarbeitende betreuen über 80 Kundinnen und Kunden aus dem Banken-, Versicherungs- und Pensionskassenumfeld. @FinnofleetCH2026
@@ -207,11 +210,11 @@ Der Reifegrad ist auf Produkt- und Entscheidebene hoch, auf Portfolioebene dageg
 == Öffentliche Verwaltung 
 #autor-verwaltung([Beitrag von Giovanna Beier])//Zwerge
 
-=== Arbeitsannahme
+=== Ausgangslage
 
-Die folgenden Aussagen zur Unternehmensarchitektur der öffentlichen Verwaltung stützen sich primär auf dokumentierte Quellen der Bundesebene. 
-Es wird angenommen, dass sich Bund und Kantone am Departementalprinzip orientieren — an der Gliederung der Verwaltung in eigenständig verantwortete Departemente beziehungsweise Direktionen. 
-Dieses Prinzip führt zu einem föderierten Ansatz mit dezentral verantworteten Kernaufgaben, wobei ebenfalls angenommen wird, dass auf beiden Ebenen gemeinsam genutzte Grundleistungen vorhanden sind. Auf Gemeindeebene lässt sich dasselbe Muster beobachten: Sowohl grössere Städte als auch kleinere Gemeinden gliedern sich in Ressorts oder Bereiche, die eigenständig arbeiten.
+Bund, Kantone und Gemeinden in der Schweiz orientieren sich für ihre Organisation am Departementalprinzip — an der Gliederung der Verwaltung in eigenständig verantwortete Departemente beziehungsweise Direktionen.
+
+Dieses Prinzip führt zu einem föderierten Ansatz mit dezentral verantworteten Kernaufgaben, wobei ebenfalls angenommen wird, dass auf allen Ebenen gemeinsam genutzte Grundleistungen vorhanden sind. Auf Gemeindeebene lässt sich dasselbe Muster beobachten: Sowohl grössere Städte als auch kleinere Gemeinden gliedern sich in Ressorts oder Bereiche, die eigenständig arbeiten.
 Auf dieser Annahme zur Organisation der Verwaltung basieren die folgenden Überlegungen zur angewandten Unternehmensarchitektur.
 
 === Unternehmensarchitektur Bund
