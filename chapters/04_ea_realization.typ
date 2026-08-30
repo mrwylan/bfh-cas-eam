@@ -61,6 +61,13 @@ TBC
 
 #frage([*Von Jan*: Warum führen wir an dieser Stelle schon alle Zustände mit ein? Ich habe mich in der Einleitung etwas schwer getan, dieses Vorgehen zu begründen. Die Zustände ergeben sich ja erst aus den Geschäftstransaktionen (GTZ). Ich würde mich hier lieber rein auf die BOs konzentrieren und die Zustände dann in der jeweils besprochenen Phase einführen, wenn die GTZ eingeführt werden z.B. in @fig-gtz-registrierung. ])
 
+#todo-action([Antwort: weil wir das RIM wie folgt aufbauen: 
+
++ Parte UNO: Geschäftsobjekte und das relevante Verhalten (Zustände, Transaktionen)
++ Parte DOS: Geschäftsprozesse und Geschäftsfäghigkeiten 
+
+warum ist es so: weil Jan for 2 Wochen ein geiles Kapitel geliefert hat, wo alles zusammen war :D])
+
 === [LEER] Unternehmen
 
 
@@ -252,10 +259,11 @@ Antwot: ja)
   ]
 ) <tbl-GO-Gründungsvorhaben>
 
-== [titel tbd] Zweite Iteration: Zustände und Geschäftstransaktionen oder die Identifikation des relevanten Verhaltens
+/*== [titel tbd] Zweite Iteration: Zustände und Geschäftstransaktionen oder die Identifikation des relevanten Verhaltens*/
+== Geschäftsobjekte und die Identifikation deren relevanten Verhaltens
 /*#frage([an alle: wie findet ihr mein Vorschlag für die Dokumentation der Geschäftstransaktionen und Zustände? ist es ok, immer dasselbe Objekt als in- und output zu haben (bspw. bei bewilligung)])*/
 
-Wir dokumentieren die Identifikation von Zuständen und Geschäftstransaktionen pro Szenario, um die Lesbarkeit zu erhalten.
+In diesem ersten Teil der Realisierung des ressourcenunabhängigen Modells identifizieren wir die relevanten Geschäftsobjekte und dokumentieren deren Zustände und Geschäftstransaktionen pro Szenario, um die Lesbarkeit zu erhalten.
 Die entsprechenden Geschäftsprozesse sind ebenfalls modelliert, auch wenn sie später erklärt werden.
 Die Szenarien sind in @sec-szenarien-customer-journey beschrieben und werden einzeln aufbereitet. 
 #fuehrung([
@@ -274,6 +282,7 @@ Sowohl bei Input und Output wird darauf geachtet, dass diese inklusive ihre Zust
 === Vorgehen
 
 #frage([*Von Jan*: Wir haben im letzten Kapitel alle BOs mit ihren Zuständen eingeführt. Im Nachgang zu erklären, wie wir überhaupt auf diese BOs gekommen sind finde ich zu spät. Dieses Kapitel fände ich in der Einleitung von @head-identifikation-der-bos besser aufgehoben. Ich dort eine Einleitung geschrieben, bevor ich dieses Kapitel gesehen habe. Ich lasse jetzt erstmal beides stehen.])
+#todo-action([kann ich einen Anfall haben? nur ein kleines? Abschnitt 4.2. soll verschwinden - respektive desssen beginn genau *hier* übernommen werden .])
 
 Um Geschäftsobjekte zu identifizieren hat sich die Gruppe mit der Struktur von Amiras Customer Journey auseinandergesetzt.
 Dabei liessen sich Nomen wie "Gründung", "Finanzierung", "Kundenkonto" - diese wurden als Prototypen für mögliche Geschäftsobjekte festgehalten. 
@@ -375,7 +384,7 @@ Das Kundenkonto dient einerseits der Authentifizierung, der Autorisierung, der P
 Die dafür notwendigen Eigenschaften werden in den Geschäftstransaktionen *Konto anlegen* und *Konto aktualisieren* definiert. 
 Ein Beispiel für eine Aktualisierung könnte die Änderung der Postanschrift oder Telefonnummer des Gründers oder der Gründerin sein.
 
-Die folgende Tabelle definiert das Geschäftsobjekt Kundenkonto und zeigt expemparische Attribute, sowie seine Zustände und Beziehungen.
+Die folgende @tbl-GO-Kundenkonto definiert das Geschäftsobjekt Kundenkonto und zeigt expemparische Attribute, sowie seine Zustände und Beziehungen.
 
 #figure(
   caption: [Geschäftsobjekt Kundenkonto],
@@ -432,7 +441,7 @@ Dass die Geschäftstransaktion *Konto aktualisieren* das Kundenkonto in einen en
 Laufende Prozesse oder Transaktionen müssen unter Umständen über diese Zustandsänderung informiert werden. 
 Nehmen wir zum Beispiel wieder die Änderung der Postanschrift: Wahrscheinlich werden sich nicht alle Informationsaustauschprozesse digitalisieren lassen, und eine zuständige Behörde sollte in diesen Fällen für den Schriftverkehr über die Änderung der Postanschrift informiert werden.
 
-Die folgende Abbildung stellt den Prozess *Kundenkonto verwalten* im Archimate Modell dar.
+Die folgende @fig-gtz-registrierung stellt den Prozess *Kundenkonto verwalten* im Archimate Modell dar.
 
 #figure(
   image("../assets/jan/Zustandsübergänge des Kundenkontos in Phase 2 - Sich registrieren.svg", width: 100%),
@@ -506,7 +515,7 @@ So stehen alle Informationen in GastroStart zur Verfügung und können jederzeit
 Wenn die Checkliste für die Gründung des *Unternehmens* erfolgreich durchgearbeitet worden ist, kann Amira ein Termin beim Notar abmachen und dort die nötigen offiziellen Schritte: die öffentliche Beurkundung durch den Notar und die darauffolgende Anmeldung beim kantonalen Handelsregister. 
 Diese Schritte sind notwendig, damit das Unternehmen überhaupt rechtlich existiert und als solches von den Behörden und Wirtschaftspartner anerkannt werden kann, beispielsweise um eine Betriebsbewilligung und eine Finanzierung zu erhalten. 
 
-Die folgende Abbildung stellt die Zusammenhänge der Geschäftsobjekte, Zustände und Transaktionen im ressourcenunabhängigen Modell nach Archimate dar. 
+Die folgende @fig-GTZ-Amira-gründet stellt die Zusammenhänge der Geschäftsobjekte, Zustände und Transaktionen im ressourcenunabhängigen Modell nach Archimate dar. 
 Die abgebildete Variante erwähnt noch die Möglichkeiten des Abbruches der Firmengründung durch Amira oder dass die kantonale Behörde den Eintrag ins Handelsregister nicht vornimmt. 
 
 
@@ -517,7 +526,7 @@ Die abgebildete Variante erwähnt noch die Möglichkeiten des Abbruches der Firm
 
 Nachfolgend wird auf die einzelnen Elemente der Grafik erklärt:
 
-1. *Geschäftsobjekt und Zustände*: 
+==== *Geschäftsobjekt und Zustände* 
 #figure(
   caption: [Geschäftsobjekt Unternehmen],
   block(
@@ -669,7 +678,7 @@ caption: [Geschäftsobjekt Unternehmen und dessen Zustände]
 + *Lebenszyklus*: von _neu_ über _beurkundet_ zu _eingereicht_ für die Prüfung durch die Behörden; bei fehlenden Angaben _unvollständig_, nach Nachreichung wieder _eingereicht_. Nach dem Erreichen des Status _eingereicht_ geht es je nach Behördenentscheid mit dem Status _abgelehnt_ zum Ende, während bei behördlicher Zustimmung die Status _angenommen_ und _im Handelsregister eingetragen_ erreicht werden. Der Status _abgebrochen_ beendet den Zyklus vorzeitig, solange der Status _eingereicht_ noch nicht erreicht worden ist. 
 */
 
-2. *Geschäftstransaktionen*: 
+==== Geschäftstransaktionen
 Das Geschäftsobjekt Unternehmen durchläuft mehrere Transaktionen: 
 - In einer ersten Phase ist Amira in Führung: sie _bereitet_  mit der Hilfe von Informationen und Fachfunktionen auf GastroStart die _Unterlagen_ für die Gründung der "Food Affair GmbH _vor_. Nach der öffentlichen Beurkundung _beantragt_ sie den _Eintrag im Handelsregister_ für ihre GmbH. 
 - Danach ist der Ball bei den Behörden: das kantonale Handelsregisteramt _prüft den Antrag_ auf Vollständigkeit, _lehnt es ab_ oder _nimmt es an_ und _trägt die GmbH im Handelsregister ein_. 
@@ -865,7 +874,7 @@ caption: [Zustandsdiagramm des Geschäftsobjekt Bewilligung]
 #design-entscheid([Wir haben uns entschieden, die Frage um das Schicksal des Objekts "Bewilligung" im Fall der Löschung des Benutzerprofils von Amira offenzulassen.])
  
  
- 2. *Geschäftstransaktionen*:
+ ==== Geschäftstransaktionen
 Amira möchte beantragt im Namen ihres Unternehmens die Bewilligung für den Betrieb von Catering.
 Das Geschäftsobjekt Bewilligung durchläuft mehrere Transaktionen: 
 - In einer ersten Phase ist Amira in Führung: sie _bereitet_  mit der Hilfe der Informationen auf Gastrostart die _Unterlagen_ für den Bewilligungsantrag _vor_. Wenn sie alle Unterlagen gesammelt hat, _reicht_ sie den _Bewilligungsantrag_ bei der zuständigen Behörde _ein_. 
