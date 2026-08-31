@@ -66,6 +66,10 @@ In enger Verbindung mit der Customer Journey #ref(<sec-amira-und-ihre-geschichte
 ) <persona-amira>
 
 == Das Joint Venture GastroStart - Vorstellung des Unternehmens
+#frage([
+  ich möchte dieses Kapitel verschieben, da das Teil hier "Customer Journey" heisst.
+])
+
 
 GastroStart ist ein fiktives Portal, das Gründerinnen und Gründer im Gastgewerbe durch die zentralen Phasen der Betriebsgründung führt: von der ersten Orientierung über Registrierung, Unternehmensgründung und Betriebsbewilligung bis hin zur Finanzierung und zum ersten Lieferantenvertrag.
 
@@ -78,8 +82,9 @@ Entsprechend der gewählten Customer Journey haben wir uns entschieden, nur das 
 ]
 
 == Die Rollen der beteiligten Unternehmen im Joint Venture
-
-#frage([wollen wir uns hier knapper halten? Wegen Spoilern von dem was nachher kommt.(se beiträge Transgourmet und öffentliche Verwaltung)])
+#frage([
+  ich möchte dieses Kapitel verschieben, da das Teil hier "Customer Journey" heisst.
+])
 
 === DV Bern
 
@@ -88,6 +93,8 @@ Das Portal wird im Folgenden auch als "Plattform" bezeichnet.
 Das Produkt als Ganzes, inklusive aller fachlichen Aspekte, wird, wenn nicht explizit als GastroStart benannt, auch als "System" bezeichnet.
 
 Für die fünf Phasen der Customer Journey: Orientierung, Registrierung, Bewilligung, Finanzierung, erster Einkauf - sind die einzelnen Beiträge seitens DV Bern wie folgt beschrieben.
+
+#frage([wollen wir uns hier knapper halten? Wegen Spoilern von dem was nachher kommt.(se beiträge Transgourmet und öffentliche Verwaltung)])
 
 ==== Orientierung
 Für diese Phase wird eine kantonale Regelmatrix benötigt.
@@ -137,20 +144,12 @@ Als führender Schweizer Grosshändler für Gastronomie und Hotellerie ist Trans
 Die Eröffnung eines Kundenkontos bei Transgourmet ist die letzte Phase der Customer Journey und steht am Übergang von der Gründungsphase in den operativen Betrieb. 
 
 === Öffentliche Verwaltung als stiller Partner
-/* Verworfen: Öffentliche Verwaltung als Partei in der JV modellieren - und entsprechende Fiktionen aufstellen])*/
-Die Berührungspunkte der Bundeskanzlei mit den Unternehmen der anderen Gruppenmitglieder wurden als nicht ausreichend bewertet. 
-Grund dafür ist, dass die von der Bundeskanzlei vorangetriebenen Vorgaben und Standardisierungsbestrebungen für die Privatwirtschaft nicht anwendbar sind. 
- 
 
-#design-entscheid([
 Aus Sicht von Amira und somit auch von GastroStart wird die öffentliche Verwaltung - ohne besondere Rücksicht auf die jeweilige Ebene - in ihrer Rolle als Interoperabilitätspartner abgebildet und behandelt.
-
-Wie und unter welchen Voraussetzungen ein verbindliches Instrument diesen Rahmen beeinflussen würde, wird in der Analyse des Operating Models diskutiert - se. <sec-Verwaltung-GastroSTart-EARolle>
-])
-
 
 
 == Szenarien als Teilgeschichten aus der Customer Journey <sec-szenarien-customer-journey>
+#frage([ich mnöchte diess Kapitel als 3.2. haben])
 /*Übung vom 18.05.2026
 Identifizieren Sie zwei bis drei Szenarien zu Ihrem Unternehmen, wenn möglich mit 
 Bezug zur Customer Journey. (Skizze)
@@ -189,7 +188,7 @@ Zum Beispiel ist der Ort der Betriebsstätte auch auf nationaler Ebene sehr von 
 Das Ausarbeiten der Details des Gründungsvorhabens nennen wir "Orientierung".
 
 
-Die folgende Tabelle beschreibt ein Szenario für die Orientierung als Teil unserer Customer Journey.
+Die folgende @tbl-szenario-orientierung beschreibt ein Szenario für die Orientierung als Teil unserer Customer Journey.
 Der Eintritt in die Orientierungsphase ist eine *Aktion* der GründerInnen.
 Über *Touchpoints* treten sie mit unserem Produkt in Verbindung.
 Die *Aktion* wird ausgelöst durch einen *Gedanken* oder ein *Bedürfnis*.
@@ -259,7 +258,7 @@ Dies ist ein notwendiges Übel, das alle Benutzenden hinnehmen müssen und die w
 Die Gefahr eines Abbruchs der Produktnutzung stufen wir als hoch ein, es ist also wichtig den Benutzenden im Vorfeld zu vermitteln, dass eine Nutzung ohne Kundenkonto von hier an nicht mehr möglich ist und dass sie davon profitieren.
 Wenn die Orientierungsphase erfolgreich war und das auslösende Bedürfnis befriedig wurde, ist die Chance gross, dass die Benutzenden hier fortfahren.
 
-Die folgende Abbildung zeigt einen den Teil des Szenarios als Modell in Archimate, der die Registrierung auslöst.
+Die folgende  @fig-customer-journey-registrierung zeigt einen den Teil des Szenarios als Modell in Archimate, der die Registrierung auslöst.
 An dieser Stelle des Entwicklungsprozesses war die Bedeutung der Phase "Orientierung" noch nicht ersichtlich.
 Tatsächlich verbirgt sich dahinter ein komplexerer Prozess, den wir - nach der kurzen Einführung im letzten Kapitel - in späteren Kapiteln aufgreifen.
 
@@ -268,7 +267,7 @@ Tatsächlich verbirgt sich dahinter ein komplexerer Prozess, den wir - nach der 
   caption: [Archimate Szenario "Amira registriert sich"]
 ) <fig-customer-journey-registrierung>
 
-Die folgende Tabelle kennen die Leser schon aus dem letzten Kapitel. Wir wiederholen den Aufbau an dieser Stelle und in den Folgenden Kapiteln nicht erneut und verweisen auf @head-scenarios-orientation.
+Die folgende @tbl-szenario-registrierung kennen die Leser schon aus dem letzten Kapitel. Wir wiederholen den Aufbau an dieser Stelle und in den Folgenden Kapiteln nicht erneut und verweisen auf @head-scenarios-orientation.
 
 #figure(
   caption: [Szenario "Amira Registriert sich"],
