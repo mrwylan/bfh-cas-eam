@@ -28,7 +28,7 @@ Die Diskussionen betreffend der Schärfung der Mission (was macht das Joint-Vent
 == Bemerkung zu den visuellen Call-outs
 
 Im Verlauf der Projektarbeit musste die Gruppe wiederholt gemeinsame Entscheidungen treffen, zwischen Optionen abwägen oder festgestellte Denkfehler korrigieren.
-Da diese Momente einen wesentlichen Teil unseres Arbeitsprozesses ausmachen, sind sie im Text durch folgende visuelle Bausteine hervorgehoben:
+Da diese Momente einen wesentlichen Teil des Arbeitsprozesses ausmachen, sind sie im Text durch folgende visuelle Bausteine hervorgehoben:
  
 #design-entscheid([Hält wichtige, in der Gruppe getroffene Weichenstellungen für die Weiterentwicklung fest.])
 
