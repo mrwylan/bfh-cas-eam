@@ -22,12 +22,12 @@ Wie bauen wir eine Enterprise-Architektur für das Joint Venture auf, die die un
 
 == Kontext: eine kleine Reise durch Mittelerde
 
-Im Verlauf der Studienwochen hat unsere Zusammenarbeit unter den Mitgliedern der Gruppe Unternehmungscharakter angenommen: durch die iterative Vorgehensweise und die regelmässigen - anfangs etwas erzwungene Übungen - musste ein gemeinsamer Nenner gefunden und eingegrenzt werden. 
+Im Verlauf der Studienwochen hat die Zusammenarbeit unter den Mitgliedern der Gruppe Unternehmungscharakter angenommen: durch die iterative Vorgehensweise und die regelmässigen - anfangs etwas erzwungene Übungen - musste ein gemeinsamer Nenner gefunden und eingegrenzt werden. 
 Die Diskussionen betreffend der Schärfung der Mission (was macht das Joint-Venture? was davon soll abgebildet werden? wo hören wir auf?) sowie die wöchentlichen Feedbackrunden haben nach und nach die Zusammenarbeit und die gemeinsame Unternehmensvision der vier Kollegen gefördert und gefestigt. 
 
 == Bemerkung zu den visuellen Call-outs
 
-Während unseres Projekts musste die Gruppe wiederholt gemeinsame Entscheidungen treffen, zwischen Optionen abwägen oder festgestellte Denkfehler korrigieren.
+Im Verlauf der Projektarbeit musste die Gruppe wiederholt gemeinsame Entscheidungen treffen, zwischen Optionen abwägen oder festgestellte Denkfehler korrigieren.
 Da diese Momente einen wesentlichen Teil unseres Arbeitsprozesses ausmachen, sind sie im Text durch folgende visuelle Bausteine hervorgehoben:
  
 #design-entscheid([Hält wichtige, in der Gruppe getroffene Weichenstellungen für die Weiterentwicklung fest.])
