@@ -140,7 +140,6 @@ Die grössten Herausforderungen liegen aktuell bei der Skalierbarkeit und dem Le
 
 == FINNOFLEET //Menschen
 #autor-finnofleet([Beitrag von Adrian Anghel])
-#todo-action([bitte: Vorstellung kurz halten])
 
 FINNOFLEET Schweiz (#link("https://finnofleet.ch/ch-de/")[finnofleet.ch]) ist ein Softwareunternehmen für die Finanzbranche mit Hauptsitz in Sursee sowie weiteren Standorten in Zürich und Bern.
 Rund 100 Mitarbeitende betreuen über 80 Kundinnen und Kunden aus dem Banken-, Versicherungs- und Pensionskassenumfeld. @FinnofleetCH2026
@@ -150,67 +149,21 @@ Das Produktportfolio umfasst entsprechend *ELA Kredit*, *WinCredit*, Lösungen f
 
 FINNOFLEET Schweiz ist Teil der FINNOFLEET-Gruppe mit über 450 Mitarbeitenden in Zentraleuropa, die entlang der gesamten Kreditwertschöpfungskette tätig ist.
 
-=== Geschäftsarchitektur
+=== Architektur
 
-Prägend ist die Doppelrolle als *Produkthersteller* und als *Projektpartner* der eigenen Kundschaft: Ausgeliefert wird ein Standardprodukt, das anschliessend pro Institut parametrisiert, erweitert und in eine bestehende Systemlandschaft eingebettet wird.
+Prägend ist die Doppelrolle als *Produkthersteller* und als *Projektpartner*: Ausgeliefert wird ein Standardprodukt, das anschliessend pro Institut parametrisiert, erweitert und in eine bestehende Systemlandschaft eingebettet wird. Der Domänenzuschnitt folgt dem Kreditlebenszyklus --- Beratung und Initiierung, Kreditentscheid, Auszahlung, Portfolio- und Kontoverwaltung, Refinanzierung und Pfandbriefe ---, und an genau diesen Grenzen schliessen die Produkte des Portfolios aneinander an. Weil die Kundschaft aus Banken, Versicherungen und Pensionskassen besteht, wirken Aufsicht, interne Revision und Bankkundengeheimnis als nicht verhandelbare Randbedingungen direkt in die Architektur hinein.
 
-*Domänen*: Der Zuschnitt folgt dem Kreditlebenszyklus --- Beratung und Initiierung, Kreditentscheid, Auszahlung, Portfolio- und Kontoverwaltung, Refinanzierung und Pfandbriefe. Die Domänengrenzen sind zugleich die Grenzen, an denen die Produkte des Portfolios aneinander anschliessen.
+Alle Produkte bilden denselben fachlichen Zyklus in unterschiedlichen Ausschnitten ab; ihre architektonische Vergleichbarkeit ist deshalb ein bewusst gepflegtes Gut, weil sie Muster, Bausteine und Betriebswissen übertragbar macht. Der Stil ist modular --- ein gemeinsamer Kern mit produktspezifischen Modulen --- und bewusst nicht Microservice-getrieben, sondern auf Auslieferbarkeit als installierbares Produkt ausgelegt, standardisiert auf Java im Backend und Angular im Frontend. Weil dasselbe Produkt bei jedem Institut fachlich und visuell anders ausgeprägt erscheint, gilt Konfiguration statt Fork als tragendes Prinzip; und weil die Lösungen sich in Kernbankensysteme, Zahlungsverkehr, Dokumentenarchive und externe Scoring-Dienste integrieren, sind Schnittstellen weniger ein technisches Detail als das eigentliche Produktversprechen.
 
-*Prozesse*: Eingespielt sind Solution Architecture, Estimation und Technical Review als wiederkehrende Stationen jedes Vorhabens. Die Weiterentwicklung erfolgt agil in Produktteams; die Enterprise Architektur sorgt dafür, dass Bausteine, die in mehreren Produkten gebraucht werden (Berechtigungen, Dokumentenverwaltung, Schnittstellen zu Kernbankensystemen), nicht mehrfach entstehen.
+Die Daten sind Kundendaten und verbleiben in der Hoheit des jeweiligen Instituts --- eine herstellerseitige Datenhaltung über alle Kunden hinweg ist damit ausgeschlossen. Persistiert wird relational auf einem fachlich stabilen Kernmodell, wobei die Datenbankplattform meist vom Institut vorgegeben ist und Oracle, MS SQL Server und PostgreSQL gleichwertig zu führen sind. Bankkundengeheimnis, revidiertes Datenschutzgesetz und Nachvollziehbarkeitspflichten verlangen durchgängige Historisierung: Ein Kreditentscheid muss Jahre später noch begründbar sein.
 
-*Ökosystem*: Die Kundschaft besteht aus Banken, Versicherungen und Pensionskassen --- also aus Organisationen, die ihrerseits stark reguliert sind. Anforderungen aus Aufsicht, interner Revision und Bankkundengeheimnis wirken damit direkt in die Architektur hinein und sind nicht verhandelbare Randbedingungen.
+Betrieben wird überwiegend im Rechenzentrum des Kunden oder bei dessen Provider. Daraus folgt die für einen Produkthersteller typische Konsequenz: Mehrere Versionsstände sind gleichzeitig im Feld und über lange Zeiträume zu warten, und die automatisierte Auslieferungspipeline endet nicht im Betrieb, sondern in einem reproduzierbaren Releasepaket. Identity und Access Management, Verschlüsselung und Berechtigungskonzepte sind Produktbestandteil und werden in Audits und Revisionen des Kunden geprüft.
 
-=== Anwendungsarchitektur
+=== Governance und Herausforderungen
 
-Da alle Produkte denselben fachlichen Zyklus in unterschiedlichen Ausschnitten abbilden, ist die *architektonische Vergleichbarkeit* des Portfolios ein bewusst gepflegtes Gut: Sie erlaubt es, Muster, Bausteine und Betriebswissen zwischen den Produkten zu übertragen.
+Die Architekturarbeit ist dezentral organisiert und lebt von «Working Architects», die im Produktteam mitarbeiten. Vier Chapter --- Architecture, Java, Frontend und DevOps --- treffen sich monatlich und dienen als beratende Instanzen, die Leitplanken setzen, ohne den Teams die Umsetzungsfreiheit zu nehmen; Architekturentscheide werden als Architecture Decision Records festgehalten und bilden heute das Rückgrat der explizit dokumentierten Architektur. Technische Schuld ist dabei nicht Nebenprodukt, sondern wird von einem dedizierten Tech-Debt-Team über Roadmap und Backlog bewirtschaftet.
 
-*Architekturstil*: Modular geschnittene Applikationen mit einem gemeinsamen Kern und produktspezifischen Modulen. Der Stil ist bewusst nicht Microservice-getrieben, sondern auf Auslieferbarkeit als installierbares Produkt ausgelegt --- ein Institut muss die Lösung im eigenen Umfeld betreiben und über Jahre versioniert weiterführen können.
-
-*Technologie-Stack*: Standardisierung auf Java im Backend und Angular im Frontend; die Chapter-Struktur (Architecture, Java, Frontend, DevOps) spiegelt diesen Stack organisatorisch.
-
-*Mandanten- und Ausprägungsfähigkeit*: Dasselbe Produkt erscheint bei verschiedenen Instituten unter unterschiedlicher fachlicher und visueller Ausprägung. Konfiguration statt Fork ist deshalb ein tragendes Architekturprinzip --- andernfalls vervielfacht sich der Wartungsaufwand mit jedem Kunden.
-
-*Integration*: Die Lösungen stehen selten allein, sondern integrieren sich in Kernbankensysteme, Zahlungsverkehr, Dokumenten- und Archivsysteme sowie in externe Auskunfts- und Scoring-Dienste. Schnittstellen sind damit weniger ein technisches Detail als das eigentliche Produktversprechen.
-
-=== Datenarchitektur
-
-*Datenhoheit*: Die Daten sind Kundendaten und verbleiben in der Hoheit des jeweiligen Instituts. Das schliesst eine zentrale, herstellerseitige Datenhaltung über alle Kunden hinweg aus und verlagert Themen wie Auswertung und Monitoring in die Verantwortung des Betreibers.
-
-*Datenhaltung*: Relationale Persistenz mit einem fachlich stabilen Kernmodell. Da die Datenbankplattform häufig durch das Institut vorgegeben ist, müssen mehrere Dialekte (Oracle, MS SQL Server, PostgreSQL) parallel unterstützt werden --- Schemaänderungen sind entsprechend versioniert und für jede Plattform gleichwertig zu führen.
-
-*Compliance*: Bankkundengeheimnis, revidiertes Datenschutzgesetz (nDSG) und Nachvollziehbarkeitspflichten verlangen durchgängige Historisierung und Protokollierung fachlicher Entscheide. Ein Kreditentscheid muss Jahre später noch begründbar sein.
-
-=== Technologiearchitektur
-
-*Betriebsmodell*: Der Betrieb erfolgt überwiegend im Rechenzentrum des Kunden oder bei dessen Provider, ergänzt um Hosting-Varianten. Daraus folgt die für einen Produkthersteller typische Konsequenz: Es sind stets mehrere Versionsstände gleichzeitig im Feld, und Wartung wie Support müssen über lange Zeiträume für alle davon gewährleistet sein.
-
-*DevOps/CI/CD*: Automatisierte Build-, Test- und Auslieferungspipelines pro Produkt, getragen vom DevOps-Chapter. Weil das Deployment beim Kunden liegt, endet die Pipeline nicht im Betrieb, sondern in einem reproduzierbaren Releasepaket.
-
-*Sicherheit*: Identity & Access Management, Verschlüsselung und Berechtigungskonzepte sind Produktbestandteil, nicht Betriebsdetail --- sie werden im Rahmen von Audits und Revisionen des Kunden regelmässig geprüft.
-
-=== Governance und Rolle der EA
-
-Die Architekturarbeit ist dezentral organisiert und lebt von «Working Architects», die im Produktteam mitarbeiten.
-
-*Chapter-Modell*: Vier Chapter (Architecture, Java, Frontend, DevOps) treffen sich in monatlichem Rhythmus und dienen als beratende Instanzen, die Leitplanken setzen, ohne den Teams die Umsetzungsfreiheit zu nehmen.
-
-*Architecture Decision Records*: Architekturentscheide werden als ADRs festgehalten und erhalten ihren Input aus den Chaptern. Diese Praxis ist etabliert und bildet heute das Rückgrat der explizit dokumentierten Architektur.
-
-*Explizite Dokumentation*: Pro Produkt existiert eine Produktarchitektur-Übersicht (heute in Miro); weitere technische Inhalte finden sich in Vertriebsdokumenten.
-
-*Technische Schulden als geführtes Portfolio*: Ein dediziertes Tech-Debt-Team steuert Roadmap (Epics) und Backlog (Daily Work) --- technische Schuld ist damit nicht Nebenprodukt, sondern ein bewirtschafteter Gegenstand der Architekturarbeit.
-
-=== Herausforderungen in der Enterprise-Architektur
-
-Der Reifegrad ist auf Produkt- und Entscheidebene hoch, auf Portfolioebene dagegen deutlich geringer. Daraus ergeben sich vier Herausforderungen:
-
-*Fehlende Portfolio-Sicht*: Es gibt keinen zentralen Überblick über alle Produkte, keinen Funktions- bzw. Bereichskatalog und kein zentrales API- und Integrationsverzeichnis. Gerade weil die Produkte architektonisch vergleichbar aufgebaut sind, bleibt Wiederverwendungspotenzial ungenutzt, solange niemand portfolioweit sehen kann, welche Fähigkeit wo bereits existiert.
-
-*Implizites Wissen*: Wesentliches Integrations- und Datenflusswissen sowie das historische «Warum haben wir das so gemacht» liegen bei langjährigen Engineers mit über zehn Jahren Erfahrung. Ein strukturierter Knowledge Transfer fehlt --- das macht diese Personen zu einem Architekturrisiko, ohne dass es ihnen anzulasten wäre.
-
-*Kein formaler EAM-Rahmen*: TOGAF und ArchiMate sind nicht etabliert; ebenso fehlen ein gepflegtes Tech-Radar und ein Reporting, das die Entwicklung der Architektur über die Zeit sichtbar macht. Architekturarbeit ist damit gut dokumentiert, aber schwer steuerbar.
-
-*Inkonsistente Aussenkommunikation*: Weil technische Inhalte auch in Vertriebsdokumenten entstehen, kursieren voneinander abweichende Beschreibungen derselben Lösung. Eine zentrale Quelle für die Ist-Architektur würde diese Inkonsistenzen an der Wurzel auflösen.
+Der Reifegrad ist damit auf Produkt- und Entscheidebene hoch, auf Portfolioebene dagegen deutlich geringer. Es fehlt eine Portfolio-Sicht --- kein zentraler Überblick über alle Produkte, kein Funktionskatalog, kein API- und Integrationsverzeichnis ---, weshalb Wiederverwendungspotenzial ungenutzt bleibt, obwohl die Produkte architektonisch vergleichbar aufgebaut sind. Wesentliches Integrations- und Datenflusswissen liegt implizit bei langjährigen Engineers, ohne strukturierten Knowledge Transfer; das macht diese Personen zu einem Architekturrisiko, ohne dass es ihnen anzulasten wäre. Und es gibt keinen formalen EAM-Rahmen: TOGAF und ArchiMate sind nicht etabliert, ein gepflegtes Tech-Radar und ein Reporting über die Entwicklung der Architektur fehlen. Architekturarbeit ist damit gut dokumentiert, aber schwer steuerbar --- was sich bis in die Aussenkommunikation zieht, wo technische Inhalte auch in Vertriebsdokumenten entstehen und voneinander abweichende Beschreibungen derselben Lösung kursieren.
 
 == Öffentliche Verwaltung 
 #autor-verwaltung([Beitrag von Giovanna Beier])//Zwerge
