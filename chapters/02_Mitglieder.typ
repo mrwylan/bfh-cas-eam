@@ -102,6 +102,8 @@ Sie dient als Fundament, um massgeschneiderte Lösungen effizient zu erstellen u
 
 === Beispiel der EA-Integration im Produkt kiBon
 
+#todo-action([jan, bitte diesen Teil in einem Anhang verfrachten])
+
 kiBon ist eine digitale Verwaltungsplattform für Betreuungsgutscheine.
 Das Projekt wurde ursprünglich mit der Stadt Bern initiiert, inzwischen wurde das System aber im ganzen Kanton ausgerollt und wird massgeblich vom Kanton Bern finanziert.
 Mittlerweise sind auch andere Kontone und Gemeinden ausserhalb des Kantons Bern Nutzter und Financiers der Plattform.
@@ -230,7 +232,7 @@ Die Entwicklung der Bundesarchitektur geschieht in einem föderierten Ansatz dur
 
 === Governance und Rolle der Unternehmungsarchitektur [löschen?]
 
-Die Unternehmensarchitektur wird je nach Aufgabentyp unterschiedlich gelebt - und ist auch unterschiedlich bindend. 
+Die Unternehmensarchitektur auf Bundesebene wird je nach Aufgabentyp unterschiedlich gelebt - und ist auch unterschiedlich bindend. 
 Wer für die Governance zuständig ist und wie sich diese auf die Bundesverwaltung auswirkt, ist je nach Fall unterschiedlich: 
 + die Unternehmensarchitektur für die *Kernbereiche von Departementen* ist nur für die betroffenen Organisationseinheiten verbindlich. 
 + Ämter mit *übergreifenden Aufgaben* bestimmen die Unternehmensarchitektur für diese spezifischen Bereiche - diese ist dann für die restliche Bundesverwaltung _verbindlich_. 

@@ -32,7 +32,7 @@ Sie ist erleichtert und registriert sich.
   Eine nachvollziehbare und realistische Persona (Amira), eine in sich konsistente, in Szenarien abbildbare Journey, eine sinnvolle Rolle für jeden Partner des Joint Ventures sowie eine im Rahmen der Arbeit beherrschbare Modellierungskomplexität.
 ])
 
-In enger Verbindung mit der Customer Journey #ref(<sec-amira-und-ihre-geschichte>, supplement: none) wird die Persona „Amira“ erarbeitet. Sie dient dazu, unsere Endkundin konkret greifbar und emotional verankert zu machen. Die Bedürfnisse und Kontexte von Amira bilden den zentralen Ausgangspunkt für die Modellierung des Produkts "GastroStart".
+In enger Verbindung mit der Customer Journey wird die Persona „Amira“ erarbeitet. Sie dient dazu, unsere Endkundin konkret greifbar und emotional verankert zu machen. Die Bedürfnisse und Kontexte von Amira bilden den zentralen Ausgangspunkt für die Modellierung des Produkts "GastroStart".
 
 #figure(
   caption: [Persona-Profil: Amira],
@@ -78,12 +78,26 @@ den Szenarien. (Skizze)
 
 #fuehrung([Als Standardszenarien wird eine möglichst kleine Anzahl von Geschichten gewählt, die die darzustellende Funktionalität möglichst vollständig umfasst. Irrelevantes soll weggelassen werden, damit die Geschichten auch möglichst kurz bleiben. @Spichiger2026GFbUA, S. 70])
 
-Wir haben bei der Modellierung der Customer Journey festgestellt, dass sich Amiras Weg nicht in starre Phasen einteilen lässt. Stattdessen verstehen wir ihn als eine Abfolge von Szenarien: narrative Ausschnitte aus einer Story Map, die eine Outside-In-Perspektive einnehmen. Den Schnitt zwischen den Szenarien haben wir entlang Amiras Wahrnehmung und der Veränderung ihrer Emotionen gelegt. Erfolg oder Misserfolg auf ihrer Reise durch das Portal entscheidet sich an diesen Schnittstellen.
+Wir haben bei der Modellierung der Customer Journey festgestellt, dass sich Amiras Weg nicht in starre Phasen einteilen lässt. Stattdessen verstehen wir ihn als eine Abfolge von Szenarien: narrative Ausschnitte aus einer Story Map, die eine Outside-In-Perspektive beschreiben. Den Schnitt zwischen den Szenarien haben wir entlang Amiras Wahrnehmung und der Veränderung ihrer Emotionen gelegt. Erfolg oder Misserfolg auf ihrer Reise durch das Portal entscheidet sich an diesen Schnittstellen.
 
 In den folgenden Kapiteln gehen wir auf eine Auswahl dieser Szenarien ein, je eines pro Partei im Joint-Venture. Jedes Szenario ist in einzelne Touchpoints zerlegt: Sie halten fest, was Amira tut, mit welchem System sie interagiert, in welchem emotionalen Zustand sie sich befindet, und wo die aktuelle oder die Ziel-Architektur Reibung oder Chancen erzeugt.
-In den nächsten Kapiteln wird auf einer Auswahl dieser Szenarien eingegangen - eines für jede Partei am Joint-Venture.
 
-=== Szenarien entlang der Customer Journey von GastroStart
+Die Szenarien sind: 
+- Amira orientiert sich 
+- Amira registriet sich bei GastroStart
+- Amira gründet ihr Unternehmen
+- Amira erhält die Bewilligung
+- Amira erhält die Finanzierung
+- Amira wird Kunde bei Transgourmet
+
+In den nächsten Kapiteln wird auf einer Auswahl dieser Szenarien eingegangen - eines für jede Partei am Joint-Venture.
+Die Beschreibung des Szenarios wird jeweils in einer Tabelle zusammengefasst. 
+Der Eintritt in das jeweilige Szenario ist eine *Aktion* der GründerInnen.
+Über *Touchpoints* treten sie mit unserem Produkt in Verbindung.
+Die *Aktion* wird ausgelöst durch einen *Gedanken* oder ein *Bedürfnis*.
+Jede Phase kann die GründerInnen mit *Painpoints* konfrontieren, die zum Abbruch der Produktnutzung führen können.
+Und schliesslich bietet jede Phase *Chancen*, die die *Bedürnisse* befriedigen und zur Weiternutzung einladen.
+
 
  #figure(
   image("../assets/Customer Journey View.svg", width: 40%),
@@ -105,12 +119,7 @@ Zum Beispiel ist der Ort der Betriebsstätte auch auf nationaler Ebene sehr von 
 Das Ausarbeiten der Details des Gründungsvorhabens nennen wir "Orientierung".
 
 
-Die folgende @tbl-szenario-orientierung beschreibt ein Szenario für die Orientierung als Teil unserer Customer Journey.
-Der Eintritt in die Orientierungsphase ist eine *Aktion* der GründerInnen.
-Über *Touchpoints* treten sie mit unserem Produkt in Verbindung.
-Die *Aktion* wird ausgelöst durch einen *Gedanken* oder ein *Bedürfnis*.
-Jede Phase kann die GründerInnen mit *Painpoints* konfrontieren, die zum Abbruch der Produktnutzung führen können.
-Und schliesslich bietet jede Phase *Chancen*, die die *Bedürnisse* befriedigen und zur Weiternutzung einladen.
+
 
 #figure(
   caption: [Szenario "Amira orientiert sich"],
@@ -184,7 +193,11 @@ Tatsächlich verbirgt sich dahinter ein komplexerer Prozess, den wir - nach der 
   caption: [Archimate Szenario "Amira registriert sich"]
 ) <fig-customer-journey-registrierung>
 
-Die folgende @tbl-szenario-registrierung kennen die Leser schon aus dem letzten Kapitel. Wir wiederholen den Aufbau an dieser Stelle und in den Folgenden Kapiteln nicht erneut und verweisen auf @head-scenarios-orientation.
+
+#todo-action([JAN: bitte die folgenden Sätze umformulieren, ich habe die Erklärung zur Tabelle im vorgehenden Kapitel verschoben, da sie für alle Szenarien gelten.(sorry)])
+Die folgende @tbl-szenario-registrierung kennen die Leser schon aus dem letzten Kapitel. 
+
+Wir wiederholen den Aufbau an dieser Stelle und in den Folgenden Kapiteln nicht erneut und verweisen auf @head-scenarios-orientation.
 
 #figure(
   caption: [Szenario "Amira Registriert sich"],
@@ -234,6 +247,9 @@ Die folgende @tbl-szenario-registrierung kennen die Leser schon aus dem letzten 
 ) <tbl-szenario-registrierung>
 
 === Amira gründet ihr Unternehmen
+
+#todo-action([Szenario erklären, so wie Jan für Orientierung und Registrierung gemacht hat])
+
  #figure(
   image("../assets/cj_gründung und bewilligung.svg", width: 70%),
   caption: [Archimate Szenario "Amira gründet ihr Unternehmen"]
@@ -241,7 +257,7 @@ Die folgende @tbl-szenario-registrierung kennen die Leser schon aus dem letzten 
 
 
 #figure(
-  caption: [Szenario "Amira gründet ihr Unternehmen (Tabellenaufbau, siehe @head-scenarios-orientation")],
+  caption: [Szenario "Amira gründet ihr Unternehmen],
   block(
     width: 100%,
     radius: 6pt,
@@ -293,6 +309,10 @@ Die folgende @tbl-szenario-registrierung kennen die Leser schon aus dem letzten 
 
 
 === Amira erhält die Bewilligung
+
+#todo-action([Szenario erklären, so wie Jan für Orientierung und Registrierung gemacht hat])
+
+
 
  #figure(
   image("../assets/cj_verträge.svg", width: 70%),
@@ -355,6 +375,9 @@ Die folgende @tbl-szenario-registrierung kennen die Leser schon aus dem letzten 
 
 === Amira erhält eine Finanzierung
 
+#todo-action([Adi: Szenario erklären, so wie Jan für Orientierung und Registrierung gemacht hat])
+
+
  #figure(
   image("../assets/cj_verträge.svg", width: 70%),
   caption: [Archimate Szenario "Amira erhält die Finanzierung"]
@@ -362,7 +385,7 @@ Die folgende @tbl-szenario-registrierung kennen die Leser schon aus dem letzten 
 
 
 #figure(
-  caption: [Szenario "Amira erhält eine Finanzierung" (Tabellenaufbau, siehe @head-scenarios-orientation")],
+  caption: [Szenario "Amira erhält eine Finanzierung"],
   block(
     width: 100%,
     radius: 6pt,
@@ -424,6 +447,9 @@ Die folgende @tbl-szenario-registrierung kennen die Leser schon aus dem letzten 
 // ) <fig-szenario-finanzierung-cj>
 
 === Amira wird Kunde bei Transgourmet
+
+#todo-action([Szenario erklären, so wie Jan für Orientierung und Registrierung gemacht hat])
+
 
  #figure(
   image("../assets/cj_verträge.svg", width: 70%),
@@ -488,7 +514,7 @@ Die folgende @tbl-szenario-registrierung kennen die Leser schon aus dem letzten 
 ])
 
 
-GastroStart ist ein fiktives Portal, das Gründerinnen und Gründer im Gastgewerbe durch die zentralen Phasen der Betriebsgründung führt: von der ersten Orientierung über Registrierung, Unternehmensgründung und Betriebsbewilligung bis hin zur Finanzierung und zum ersten Lieferantenvertrag.
+GastroStart ist ein fiktives Portal, das Gründerinnen und Gründer im Gastgewerbe durch die zentralen Szenarien der Betriebsgründung führt: von der ersten Orientierung über Registrierung, Unternehmensgründung und Betriebsbewilligung bis hin zur Finanzierung und zum ersten Lieferantenvertrag.
 
 GastroStart erlaubt es seinen Kunden schweizweit, schnell und ohne langwierige Behördengänge zu einem startbereiten Gastronomieunternehmen zu kommen - ganz unabhängig vom Herkunftskanton.
 
@@ -499,9 +525,6 @@ Entsprechend der gewählten Customer Journey haben wir uns entschieden, nur das 
 ]
 
 == Die Rollen der beteiligten Unternehmen im Joint Venture
-#frage([
-  ich möchte dieses Kapitel verschieben, da das Teil hier "Customer Journey" heisst.
-])
 
 === DV Bern
 
@@ -511,7 +534,9 @@ Das Produkt als Ganzes, inklusive aller fachlichen Aspekte, wird, wenn nicht exp
 
 Für die fünf Phasen der Customer Journey: Orientierung, Registrierung, Bewilligung, Finanzierung, erster Einkauf - sind die einzelnen Beiträge seitens DV Bern wie folgt beschrieben.
 
-#frage([wollen wir uns hier knapper halten? Wegen Spoilern von dem was nachher kommt.(se beiträge Transgourmet und öffentliche Verwaltung)])
+#frage([wollen wir uns hier knapper halten? Wegen Spoilern von dem was nachher kommt.(se beiträge Transgourmet und öffentliche Verwaltung
+
+Frage 2: sind die folgenden Kapiteln am richtigen Ort? Vielleicht sollten Sie unter dem RSM verfrachet werden?)])
 
 ==== Orientierung
 Für diese Phase wird eine kantonale Regelmatrix benötigt.

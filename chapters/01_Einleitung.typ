@@ -38,6 +38,8 @@ Da diese Momente einen wesentlichen Teil des Arbeitsprozesses ausmachen, sind si
 
 == Erklärung zur Nutzung Künstlicher Intelligenz (KI)
 
+#frage([Styl-Frage: überall benutzen wir Präsens oder Perfekt. Hier ist hingegen die Wahl auf dem Präteritum gefallen. belassen wir das so? ])
+
 === Einsatzgebiet und Entstehungsprozess
 
 Diese Arbeit entstand unter teilweiser Nutzung KI-gestützter Werkzeuge.

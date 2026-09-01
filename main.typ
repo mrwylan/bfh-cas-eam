@@ -17,7 +17,7 @@ Anschliessend werden die Ressourcen wieder dazugenommen - wobei jeder der vier K
     (name: "Jan Sohnemann", affiliation: "DV Bern", email: "..."),
     (name: "Adrian Anghel", affiliation: "FINNOFLEET", email: "..."),
     (name: "Jakob Albrecht", affiliation: "Transgourmet", email: "..."),
-    (name: "Giovanna Beier", affiliation: "Bundesverwaltung", email: "..."),
+    (name: "Giovanna Beier", affiliation: "Digitale Transformation und IKT-Lenkung, Bundeskanzlei", email: "giovanna.meier@gmail.com"),
   ),
   eingereicht-von: "Giovanna Beier",   // ändert sich pro abgegebener Kopie
   kompendium: true,             // false = Abgabeversion, true = persönliches Kompendium
