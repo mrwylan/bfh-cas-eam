@@ -189,6 +189,8 @@ Die hier aufgezählten Zustände sind vollständig für alle Phasen der Customer
   ]
 ) <tbl-GO-Gründungsvorhaben>
 
+#todo-action([Geschäftstransaktionen fehlen - nachführen - wie im Abschnitt Registrierung ])
+
 === Registrierung <head-phase2-registrierung>
 #todo-action([Titel umschreiben - wie die anderen Szenarien])
 /*
@@ -732,8 +734,73 @@ Die folgende @tbl-GT-Bewilligung fasst diese Punkte zusammen:
 
 === Amira erhält eine Finanzierung
 
+#todo-action([entschuldige adi, aber ich musste ein Kapitel auflösten und hierhin kopieren. ich habe ein kommentar im Quelltext hinterlassen von wo bis wo ich übernommen habe. ])
 
 Nachdem Amira die Betriebsbewilligung erhalten hat, benötigt sie Kapital für die Erstanschaffungen. In dieser Phase übernimmt FINNOFLEET: Amira stellt über GastroStart ein Finanzierungsgesuch, das anhand ihrer Angaben und einer Bonitätsprüfung beurteilt wird. Das Geschäftsobjekt #emph[Finanzierung] durchläuft dabei vier Geschäftstransaktionen. Die letzte davon überschreitet die Objektgrenze: Sie schliesst den Finanzierungsfall ab und versetzt das #emph[Gründungsvorhaben] in den Zustand #emph[finanziert].
+
+/*hier beginnt der kopierte Teil*/
+Das Geschäftsobjekt *Finanzierung* bündelt sämtliche Informationen rund um Amiras Finanzierungsgesuch --- von der Anfrage über die Bonitätsprüfung durch FINNOFLEET bis zum Kreditentscheid. Es ist das informationstragende Artefakt, das den Finanzierungsfall durch seinen Lebenszyklus führt und die Zustandsübergänge dokumentiert.
+/*
+#figure(
+image("../assets/GOFinanzierung.svg", width: 50%),
+caption: [Geschäftsobjekt Finanzierung und dessen Zustände]
+) <fig-GOFinanzierung>
+*/
+
+#figure(
+  caption: [Geschäftsobjekt Finanzierung],
+  block(
+    width: 100%,
+    radius: 6pt,
+    clip: true,
+    stroke: 0.5pt + luma(225),
+  )[
+    // Kopfzeile als abgerundetes Band
+    #block(
+      width: 100%,
+      fill: luma(70),
+      inset: (x: 10pt, y: 7pt),
+      below: 0pt,
+    )[
+      #grid(
+        columns: (3.2cm, 1fr),
+        gutter: 10pt,
+        text(fill: white, weight: "bold", size: 0.95em)[Angabe],
+        text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
+      )
+    ]
+    #set par(justify: false)
+    #table(
+      columns: (3.2cm, 1fr),
+      inset: (x: 10pt, y: 7pt),
+      stroke: (x: none, y: 0.5pt + luma(232)),
+      fill: (x, y) => if calc.even(y) { luma(250) } else { white },
+      align: (left, left),
+
+      [Bezeichnung],
+      [Finanzierung],
+
+      [Definition / Zweck],
+      [Repräsentiert das Finanzierungsgesuch, mit dem Amira die Erstinvestitionen für ihr Catering-Unternehmen decken will. Das Objekt hält die Angaben des Gesuchs, das Ergebnis der von FINNOFLEET durchgeführten Bonitätsprüfung sowie den daraus abgeleiteten Kreditentscheid fest. Es ist die gemeinsame Datengrundlage, auf die die Finanzierungs-Transaktionen zugreifen.],
+
+      [Attribute],
+      [Auf Objektebene bewusst nicht ausmodelliert (analog zu den übrigen Geschäftsobjekten). Fachlich relevant wären Betrag, Laufzeit, Kondition/Zinssatz und Verwendungszweck.],
+
+      [Zustände],
+      [neu, angefordert, unvollständig, vollständig, angenommen, abgelehnt, abgebrochen.
+
+      Lebenszyklus: von #emph[neu] über #emph[angefordert] zur inhaltlichen Prüfung; bei fehlenden Angaben #emph[unvollständig], nach Nachreichung #emph[vollständig]; abschliessend #emph[angenommen] oder #emph[abgelehnt]. #emph[abgebrochen] beendet den Fall vorzeitig.
+      /*Vorschlag: Für die graphische Aufbereitung der Zustandsübergänge, vgl. @ig-GTZ-finanzierung. */],
+
+      [Beziehungen],
+      [- #emph[Gründungsvorhaben] ist mit der Finanzierung assoziiert (löst das Gesuch aus).
+      - Die Finanzierung ist mit der #emph[Bewilligung] assoziiert (Bewilligungsstand als Voraussetzung).
+      - Das #emph[Unternehmen] ist mit der Finanzierung assoziiert (Empfänger der Mittel).
+      - Zugriff durch alle vier Geschäftstransaktionen: #emph[Finanzierung vorbereiten], #emph[Finanzierung anfordern], #emph[Finanzierung prüfen] und #emph[Finanzierung zusagen]. Die letzte greift zusätzlich auf das #emph[Gründungsvorhaben] zu, dessen Zustand sie auf #emph[finanziert] setzt (siehe @tbl-GT-finanzierung-erhalten).],
+    )
+  ]
+) <tbl-GO-Finanzierung>
+/*hier endet der kopierte Teil*/
 
 + Zustände der Finanzierung: neu, angefordert, unvollständig, vollständig, angenommen, abgelehnt, abgebrochen (siehe @tbl-GO-Finanzierung).
 + Zustand des Gründungsvorhabens: finanziert (siehe #ref(<tbl-GO-Gründungsvorhaben>)).
@@ -797,119 +864,7 @@ transaktion],
 
 === Amira wird Kunde bei Transgourmet
 
-#todo-action([Jakob: bitte vervollständigen])
-
-#figure(
-  image("../assets/Phase 5 - Kunde bei Transgourmet.svg", width: 100%),
-  caption: [Geschäftstransaktionen des Szenarios «Amira wird Kunde bei Transgourmet»]
-) <fig-GTZ-kunde-bei-transgourmet>
-
-#figure(
-  caption: [Geschäftstransaktionen: Prozess «Kunde bei Transgourmet werden»],
-  block(
-    width: 100%,
-    radius: 6pt,
-    clip: true,
-    stroke: 0.5pt + luma(225),
-  )[
-    #block(
-      width: 100%,
-      fill: luma(70),
-      inset: (x: 10pt, y: 7pt),
-      below: 0pt,
-    )[
-      #grid(
-        columns: (3.8cm, 1fr, 3.2cm),
-        gutter: 10pt,
-        text(fill: white, weight: "bold", size: 0.95em)[Geschäfts-\
-transaktion],
-        text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
-        text(fill: white, weight: "bold", size: 0.95em)[Zustands-\
-übergang],
-      )
-    ]
-    #set par(justify: false)
-    #table(
-      columns: (3.8cm, 1fr, 3.2cm),
-      inset: (x: 10pt, y: 7pt),
-      stroke: (x: none, y: 0.5pt + luma(232)),
-      fill: (x, y) => if calc.odd(y) { luma(250) } else { white },
-      align: (left, left, left),
-
-      [ Gastrobetrieb erfassen ], [ Das Gründungsvorhaben ist als Gastrobetrieb realisiert ], [ -> aktiv Gastrobetrieb ],
-      [ Lieferantenkonto beantragen ], [ Die Geschäftsbeziehung zum Lieferanten wird aufgebaut ], [ -> pendent Lieferantenkonto ],
-      [ Lieferantenkonto eröffnen ], [ Die Geschäftsbeziehung zum Lieferanten ist aufgebaut ], [ pendent -> aktiv Lieferantenkonto ],
-      [ Bestellung aufgeben ], [ Die erste Bestellung wird aufgegeben ], [ erfasst -> gesendet Bestellung ],
-      [ Wareneingang erfassen ], [ Der erwarteteWareneingang wird erfasst ], [ -> offen Wareneingang ],
-    )
-  ]
-) <tbl-GT-Kunde-bei-Transgourmet>
-
-
-=== Finanzierung
-Das Geschäftsobjekt *Finanzierung* bündelt sämtliche Informationen rund um Amiras Finanzierungsgesuch --- von der Anfrage über die Bonitätsprüfung durch FINNOFLEET bis zum Kreditentscheid. Es ist das informationstragende Artefakt, das den Finanzierungsfall durch seinen Lebenszyklus führt und die Zustandsübergänge dokumentiert.
-
-#figure(
-image("../assets/GOFinanzierung.svg", width: 50%),
-caption: [Geschäftsobjekt Finanzierung und dessen Zustände]
-) <fig-GOFinanzierung>
-
-
-#figure(
-  caption: [Geschäftsobjekt Finanzierung],
-  block(
-    width: 100%,
-    radius: 6pt,
-    clip: true,
-    stroke: 0.5pt + luma(225),
-  )[
-    // Kopfzeile als abgerundetes Band
-    #block(
-      width: 100%,
-      fill: luma(70),
-      inset: (x: 10pt, y: 7pt),
-      below: 0pt,
-    )[
-      #grid(
-        columns: (3.2cm, 1fr),
-        gutter: 10pt,
-        text(fill: white, weight: "bold", size: 0.95em)[Angabe],
-        text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
-      )
-    ]
-    #set par(justify: false)
-    #table(
-      columns: (3.2cm, 1fr),
-      inset: (x: 10pt, y: 7pt),
-      stroke: (x: none, y: 0.5pt + luma(232)),
-      fill: (x, y) => if calc.even(y) { luma(250) } else { white },
-      align: (left, left),
-
-      [Bezeichnung],
-      [Finanzierung],
-
-      [Definition / Zweck],
-      [Repräsentiert das Finanzierungsgesuch, mit dem Amira die Erstinvestitionen für ihr Catering-Unternehmen decken will. Das Objekt hält die Angaben des Gesuchs, das Ergebnis der von FINNOFLEET durchgeführten Bonitätsprüfung sowie den daraus abgeleiteten Kreditentscheid fest. Es ist die gemeinsame Datengrundlage, auf die die Finanzierungs-Transaktionen zugreifen.],
-
-      [Attribute],
-      [Auf Objektebene bewusst nicht ausmodelliert (analog zu den übrigen Geschäftsobjekten). Fachlich relevant wären Betrag, Laufzeit, Kondition/Zinssatz und Verwendungszweck.],
-
-      [Zustände],
-      [neu, angefordert, unvollständig, vollständig, angenommen, abgelehnt, abgebrochen.
-
-      Lebenszyklus: von #emph[neu] über #emph[angefordert] zur inhaltlichen Prüfung; bei fehlenden Angaben #emph[unvollständig], nach Nachreichung #emph[vollständig]; abschliessend #emph[angenommen] oder #emph[abgelehnt]. #emph[abgebrochen] beendet den Fall vorzeitig.
-      /*Vorschlag: Für die graphische Aufbereitung der Zustandsübergänge, vgl. @ig-GTZ-finanzierung. */],
-
-      [Beziehungen],
-      [- #emph[Gründungsvorhaben] ist mit der Finanzierung assoziiert (löst das Gesuch aus).
-      - Die Finanzierung ist mit der #emph[Bewilligung] assoziiert (Bewilligungsstand als Voraussetzung).
-      - Das #emph[Unternehmen] ist mit der Finanzierung assoziiert (Empfänger der Mittel).
-      - Zugriff durch alle vier Geschäftstransaktionen: #emph[Finanzierung vorbereiten], #emph[Finanzierung anfordern], #emph[Finanzierung prüfen] und #emph[Finanzierung zusagen]. Die letzte greift zusätzlich auf das #emph[Gründungsvorhaben] zu, dessen Zustand sie auf #emph[finanziert] setzt (siehe @tbl-GT-finanzierung-erhalten).],
-    )
-  ]
-) <tbl-GO-Finanzierung>
-
-=== Lieferantenkonto
+#todo-action([Jakob: bitte vervollständigen - bspw. so wie Adi mit der Registrierung])
 
 Das Lieferantenkonto ist ein Geschäftsobjekt, das die Beziehung zwischen dem Gastronomiebetrieb und seinen Lieferanten abbildet. Es enthält Informationen über die Lieferanten, die Konditionen der Zusammenarbeit und den Status der Geschäftsbeziehung. Das Lieferantenkonto ist entscheidend für die effiziente Abwicklung von Bestellungen und die Verwaltung von Lieferantenbeziehungen.
 
@@ -963,7 +918,54 @@ caption: [Geschäftsobjekt Lieferantenkonto und dessen Zustände]
   ]
 ) <tbl-GO-Lieferantenkonto>
 
-/*== [titel tbd] Zweite Iteration: Zustände und Geschäftstransaktionen oder die Identifikation des relevanten Verhaltens*/
+#figure(
+  image("../assets/Phase 5 - Kunde bei Transgourmet.svg", width: 100%),
+  caption: [Geschäftstransaktionen des Szenarios «Amira wird Kunde bei Transgourmet»]
+) <fig-GTZ-kunde-bei-transgourmet>
+
+#figure(
+  caption: [Geschäftstransaktionen: Prozess «Kunde bei Transgourmet werden»],
+  block(
+    width: 100%,
+    radius: 6pt,
+    clip: true,
+    stroke: 0.5pt + luma(225),
+  )[
+    #block(
+      width: 100%,
+      fill: luma(70),
+      inset: (x: 10pt, y: 7pt),
+      below: 0pt,
+    )[
+      #grid(
+        columns: (3.8cm, 1fr, 3.2cm),
+        gutter: 10pt,
+        text(fill: white, weight: "bold", size: 0.95em)[Geschäfts-\
+transaktion],
+        text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
+        text(fill: white, weight: "bold", size: 0.95em)[Zustands-\
+übergang],
+      )
+    ]
+    #set par(justify: false)
+    #table(
+      columns: (3.8cm, 1fr, 3.2cm),
+      inset: (x: 10pt, y: 7pt),
+      stroke: (x: none, y: 0.5pt + luma(232)),
+      fill: (x, y) => if calc.odd(y) { luma(250) } else { white },
+      align: (left, left, left),
+
+      [ Gastrobetrieb erfassen ], [ Das Gründungsvorhaben ist als Gastrobetrieb realisiert ], [ -> aktiv Gastrobetrieb ],
+      [ Lieferantenkonto beantragen ], [ Die Geschäftsbeziehung zum Lieferanten wird aufgebaut ], [ -> pendent Lieferantenkonto ],
+      [ Lieferantenkonto eröffnen ], [ Die Geschäftsbeziehung zum Lieferanten ist aufgebaut ], [ pendent -> aktiv Lieferantenkonto ],
+      [ Bestellung aufgeben ], [ Die erste Bestellung wird aufgegeben ], [ erfasst -> gesendet Bestellung ],
+      [ Wareneingang erfassen ], [ Der erwarteteWareneingang wird erfasst ], [ -> offen Wareneingang ],
+    )
+  ]
+) <tbl-GT-Kunde-bei-Transgourmet>
+
+
+
 
 === Reflexion
 
