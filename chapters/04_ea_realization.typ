@@ -13,13 +13,17 @@ Die Verfolgung der durch die Übungen vorgegebenen Arbeitsschritte haben uns bis
 Jeder Entwicklungsschritt bezieht sich auf einem Auftrag (Übung) und folgt der Empfehlung zur Erarbeitung des RIM, die im Skript @Spichiger2026GFbUA, S. 53 ff. beschrieben ist. 
 Die Modellierung erfolgt mit Archimate.
 
+#todo-action([nachfolgende Sätze ändern um folgendes zu spigeln: 
+1. Geschäftobjete, Zustände und Transaktionen werden unter 4.2. behandelt. 
+2. Geschäftsprozesse und - fähigkeiten unter 4.3 ])
+
 Die folgenden Kapitel orientieren sich wie gehabt an den fünf Szenarien der Customer Journey.
 Zunächst beschreiben wir die wesentlichen Geschäftsobjekte und ihre möglichen Zustände, die in der jeweiligen Phase die entscheidende Rolle spielen.
 Anschliessend erweitern wir das Modell um Geschäftstransaktionen und die Beziehungen der Geschäftsobjekte zu diesen und untereinander.
 Weiter werden die Geschäftstransaktion zu Geschäftsprozessen zusammengeführt und schliesslich die wesentlichen Geschäftsfähigkeiten der jeweiligen Prozesse identifiziert und in das Modell integriert.
 Im letzten Kapitel der Modellentwicklung beschreiben wir den Übergang vom RIM ins ressourcenspezifische Modell anhand der IDEAL Informationssystemarchitektur.
 
-== Geschäftsobjekte und Geschäftstransaktionen
+== Geschäftsobjekte und die Identifikation deren relevanten Verhaltens (statt: Geschäftsobjekte und Geschäftstransaktionen)
 
 === Identifizierte Geschäftsobjekte
 Um Geschäftsobjekte zu identifizieren hat sich die Gruppe mit der Struktur von Amiras Customer Journey auseinandergesetzt.
@@ -27,6 +31,13 @@ Die Customer Journey haben wir in Szenarios aufgeteilt und in jedem Szenario ist
 Arbeitsschritte resultieren in Ergebnissen oder bauen auf ihnen auf. Das Szenario: "Eine Quereinsteigerin möchte ein Unternehmen gründen.", baut also auf einem Gründungsvorhaben auf und resultiert idealerweise in einem Unternehmen. 
 Diese Ergebnisse dieses Vorgehen bilden die Grundlage für mögliche Geschäftsobjekte.
 Die folgende Abbildung zeigt ein mögliches Ergebnis aus dieser Vorgehensweise.
+
+
+In diesem ersten Teil der Realisierung des ressourcenunabhängigen Modells identifizieren wir die relevanten Geschäftsobjekte und dokumentieren deren Zustände und Geschäftstransaktionen pro Szenario, um die Lesbarkeit zu erhalten.
+Die entsprechenden Geschäftsprozesse sind ebenfalls modelliert, auch wenn sie später erklärt werden.
+Die Szenarien sind in @sec-szenarien-customer-journey beschrieben und werden einzeln aufbereitet. 
+
+
 
  #figure(
   image("../assets/Customer Journey View.svg", width: 100%),
@@ -948,22 +959,6 @@ caption: [Geschäftsobjekt Lieferantenkonto und dessen Zustände]
 ) <tbl-GO-Lieferantenkonto>
 
 /*== [titel tbd] Zweite Iteration: Zustände und Geschäftstransaktionen oder die Identifikation des relevanten Verhaltens*/
-== Geschäftsobjekte und die Identifikation deren relevanten Verhaltens
-/*#frage([an alle: wie findet ihr mein Vorschlag für die Dokumentation der Geschäftstransaktionen und Zustände? ist es ok, immer dasselbe Objekt als in- und output zu haben (bspw. bei bewilligung)])*/
-
-In diesem ersten Teil der Realisierung des ressourcenunabhängigen Modells identifizieren wir die relevanten Geschäftsobjekte und dokumentieren deren Zustände und Geschäftstransaktionen pro Szenario, um die Lesbarkeit zu erhalten.
-Die entsprechenden Geschäftsprozesse sind ebenfalls modelliert, auch wenn sie später erklärt werden.
-Die Szenarien sind in @sec-szenarien-customer-journey beschrieben und werden einzeln aufbereitet. 
-
-=== Vorgehen
-
-Um Geschäftsobjekte zu identifizieren hat sich die Gruppe mit der Struktur von Amiras Customer Journey auseinandergesetzt.
-Dabei liessen sich Nomen wie "Gründung", "Finanzierung", "Kundenkonto" - diese wurden als Prototypen für mögliche Geschäftsobjekte festgehalten. 
-
- #figure(
-  image("../assets/Customer Journey View.svg", width: 40%),
-  caption: [Archimate Modell der Customer Journey von Amira und erste Iteration für die Identifikation der Geschäftsobjekte]
-) <fig-customer-journey-view>
 
 === Reflexion
 
