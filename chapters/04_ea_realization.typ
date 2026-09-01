@@ -13,7 +13,7 @@ Die Verfolgung der durch die Übungen vorgegebenen Arbeitsschritte haben uns bis
 Jeder Entwicklungsschritt bezieht sich auf einem Auftrag (Übung) und folgt der Empfehlung zur Erarbeitung des RIM, die im Skript @Spichiger2026GFbUA, S. 53 ff. beschrieben ist. 
 Die Modellierung erfolgt mit Archimate.
 
-Die folgenden Kapitel orientieren sich wie gehabt an den fünf Phasen der Customer Journey.
+Die folgenden Kapitel orientieren sich wie gehabt an den fünf Szenarien der Customer Journey.
 Zunächst beschreiben wir die wesentlichen Geschäftsobjekte und ihre möglichen Zustände, die in der jeweiligen Phase die entscheidende Rolle spielen.
 Anschliessend erweitern wir das Modell um Geschäftstransaktionen und die Beziehungen der Geschäftsobjekte zu diesen und untereinander.
 Weiter werden die Geschäftstransaktion zu Geschäftsprozessen zusammengeführt und schliesslich die wesentlichen Geschäftsfähigkeiten der jeweiligen Prozesse identifiziert und in das Modell integriert.
@@ -21,17 +21,53 @@ Im letzten Kapitel der Modellentwicklung beschreiben wir den Übergang vom RIM i
 
 == Geschäftsobjekte und Geschäftstransaktionen
 
-#todo-action([giovanna: mit Kapitel 4.3. vergleichen und fusionieren])
-
+=== Identifizierte Geschäftsobjekte
 Um Geschäftsobjekte zu identifizieren hat sich die Gruppe mit der Struktur von Amiras Customer Journey auseinandergesetzt.
-Die Customer Jouney haben wir in Szenarios aufgeteilt und in jedem Szenario. Jedes Szenario ist ein Arbeitsschritt in der Customer Journey, der sich von anderen Arbeitsschritten abgrenzen lässt.
-Arbeitsschritte resultieren in Ergebnissen oder bauen auf ihnen auf. Das Szenario: "Eine Quereinsteigerin möchte ein Unternehmen gründen.", baut also auf einem Gründungvorhaben auf und resultiert idealerweise in einem Unternehmen. Diese Ergebnisse bilden die Grundlage für mögliche Geschäftsobjekte.
+Die Customer Journey haben wir in Szenarios aufgeteilt und in jedem Szenario ist ein Arbeitsschritt, der sich von anderen Arbeitsschritten abgrenzen lässt (vlg. @sec-szenarien-customer-journey).
+Arbeitsschritte resultieren in Ergebnissen oder bauen auf ihnen auf. Das Szenario: "Eine Quereinsteigerin möchte ein Unternehmen gründen.", baut also auf einem Gründungsvorhaben auf und resultiert idealerweise in einem Unternehmen. 
+Diese Ergebnisse dieses Vorgehen bilden die Grundlage für mögliche Geschäftsobjekte.
 Die folgende Abbildung zeigt ein mögliches Ergebnis aus dieser Vorgehensweise.
 
  #figure(
   image("../assets/Customer Journey View.svg", width: 100%),
   caption: [Archimate Modell der Customer Journey von Amira und erste Iteration für die Identifikation der Geschäftsobjekte]
 ) <fig-customer-journey-view>
+
+In den nächsten Abschnitten folgen wir das empfohlene Vorgehen und beschreiben für jedes Szenario das Geschäftsobjekt, seine Zustände sowie die Transaktionen, die diese hervorrufen:
+
+Im ressourcenunabhängigen Modell (RIM) nach Archimate sind die Eigenschaften der Geschäftsobjekte zunächst nicht von Bedeutung. 
+Wir beginnen stattdessen mit der Betrachtung der Zustände, die ein Geschäftsobjekt annimmt, und welche Transaktionen einen Zustandswechsel hervorrufen. 
+Die nächsten Abschnitte  beschreiben ein entsprechendes RIM für die Szenarien der Customer Journey,
+
+#fuehrung([
+*Geschäftsobjekte:* Aus der Geschichte werden die groben Geschäftsobjekte sowie die Beziehungen zwischen den Geschäftsobjekten identifiziert, die in einer dematerialisierten Umsetzung der Geschichte noch Relevanz haben.
+Ein Geschäftsobjekt kapselt statische Struktur des RIM. Ein Geschäftsobjekt beschreibt einen zentral wesentlichen Teil des Kontexts einer Unternehmung und abstrahiert vollständig von den Ressourcen der Unternehmung (Dematerialisierung) und dessen Verhalten.
+
+*Zustände:* Zu jedem Geschäftsobjekt werden seine Zustände identifiziert.
+
+*Geschäftstransaktionen:* Entlang der Geschichte werden die Geschäftstransaktionen mit ihren Inputs und Output (Geschäftsobjekte) identifiziert. 
+Sowohl bei Input und Output wird darauf geachtet, dass diese inklusive ihre Zustände (bzw. zugehörige Ereignisse) bezeichnet werden. @Spichiger2026GFbUA /*S. 54*/
+])
+
+
+
+=== Modell der identifizierten Objekte
+
+#frage([wo packen wir dieses Modell hin? ist es hier an der richtigen stelle?])
+
+Folgendes Archimate Modell der Geschäftsobjekte von GastroStart, die von der Gruppe identifiziert wurden. 
+
+#figure(
+  image("../assets/GO diagram.svg", width: 80%),
+  caption: [Geschäftsobjekt Kundenkonto und dessen Zustände]
+) <fig-IdentifizierteGeschaefstobjetke>
+
+#design-entscheid([
+
+Es wurde verzichtet, das Objekt Person zu modellieren. 
+Die Behandlung von personenbezogenen Invarianten wie Domizil in der Schweiz oder Besitz des Wirtepatentes als Voraussetzung für die Gründung des Unternehmens und für den Erhalt der Betriebsbewilligung würden den Rahmen dieser Arbeit sprengen.
+
+])
 
 #frage([können wir diesen Absatz weglassen?])
 Die Szenarios lassen sich Geschäftstransaktionen darstellen. Geschäftstransaktionen werden durch Zustände von Geschäftsobjekten ausgelöst und sie verändern die Zustände der gleichen oder anderer Geschäftsobjekte.
@@ -41,7 +77,6 @@ In der Modellierung verwenden wir für die Zugriffsbeziehung von Geschäftsobjek
 
 === Orientierung<head-phase1-orientierung-1>
 
-#todo-action([unter Kapitel 4.3. verschieben! ])
 /*
 #autor-dvbern("Beitrag von Jan Sohnemann, DVBern", inhalt: [])*/
 
@@ -56,10 +91,6 @@ Allerdings hat diese Entscheidung auch regulatorische Auswirkungen, die sich an 
 Von entscheidender Bedeutung ist also auch, wo der Betrieb stattfindet.
 Alle Eigenschaften, die mit der Betriebsgründung zusammenhängen, fassen wir im ressourcenunabhängigen Modell im Geschäftsobjekt *Gründungsvorhaben* zusammen.
 Das Gründungsvorhaben wird in der ersten Phase, Orientierung, entscheidend geprägt und spielt in den folgenden Phasen die zentrale Rolle.
-
-Im ressourcenunabhängigen Modell (RIM) nach Archimate sind die Eigenschaften der Geschäftsobjekte zunächst nicht von Bedeutung. 
-Wir beginnen stattdessen mit der Betrachtung der Zustände, die ein Geschäftsobjekt annimmt, und welche Transaktionen einen Zustandswechsel hervorrufen. 
-Der folgende Absatz beschreibt ein entsprechendes RIM für diese Phase der Customer Journey, welches in @fig-GTZ-orientierung am Ende des folgenden Absatzes realisiert wurde.
 
 Der Auslöser der Customer Journey ist das Gründungsvorhaben. 
 Indem die GründerInnen die Plattform GastroStart betreten, ist ihr Gründungsvorhaben aus Sicht des Systems *initiiert*. 
@@ -79,14 +110,14 @@ Die GründerInnen haben damit alle Informationen, die sie brauchen, um das Bewil
 
 #figure(
   image("../assets/jan/Zustandsübergänge des Gründungsvorhabens in Phase 1 - Orientierung v2.0.svg", width: 100%),
-  caption: [Zustandsübergänge des Gründungsvorhabens in Phase 1: Orientierung]
+  caption: [Zustandsübergänge des Gründungsvorhabens im Szenario "Orientierung"]
 ) <fig-GTZ-orientierung>
 
 Die hier beschriebene Variante liest sich als Happy Path — also die erfolgreiche Erstellung einer Bewilligungsübersicht —, auch wenn der hier verwendete Zielzustand *orientiert* Raum für Variationen lässt. 
 Sicherlich ist nicht jedes Gründungsvorhaben realisierbar, und der hier beschriebene Prozess kann durchaus komplexer werden. 
 Dass das Gründungsvorhaben nicht realisierbar ist, ist allerdings auch eine Art Orientierung.
 Wie im zweiten Absatz dieses Abschnitts angemerkt, spielt das Gründungsvorhaben in allen Phasen der Customer Journey eine entscheiden Rolle.
-Die folgende Tabelle gibt darum noch mal einen Überblick über das Objekt.
+Die folgende @tbl-GO-Gründungsvorhaben gibt darum noch mal einen Überblick über das Objekt.
 Für ein besseres Verständnis wurden hier auch einige Attribute (im Text auch als "Eigenschaften" bezeichnet) angegeben.
 Die hier aufgezählten Zustände sind vollständig für alle Phasen der Customer Journey und auch wenn deren Einfürung noch offen ist, tragen sie an dieser Stelle aus unserer Sicht zum Verständnis bei.
 
@@ -147,7 +178,6 @@ Die hier aufgezählten Zustände sind vollständig für alle Phasen der Customer
 /*
 #autor-dvbern("Beitrag von Jan Sohnemann, DVBern", inhalt: [])*/
 
-#todo-action([unter Kapitel 4.3. verschieben! ])
 
 Der Gründungsprozess lässt sich höchstwahrscheinlich nicht in einer Sitzung abschliessen. 
 Nachdem die GründerInnen mit dem Abschluss der ersten Phase eine Übersicht zu ihren Rechten, Pflichten und Möglichkeiten haben, werden sie in den meisten Fällen Gesuche stellen müssen.
@@ -156,11 +186,6 @@ Diese Anträge können eine Bearbeitungsdauer haben, die sich über Tage oder ga
 Manche GründerInnen werden wahrscheinlich auch Kenntnisse nachweisen und sich diese zunächst erarbeiten müssen. 
 Damit GründerInnen den Prozess auf GastroStart nicht bei jeder Sitzung von vorn beginnen müssen, macht es Sinn, ihr Gründungsvorhaben und dessen aktuellen Stand mit einem Konto zu verknüpfen. 
 Über ihr Konto können sich alle GastroStart-Benutzenden authentifizieren und Aktualisierungen am Gründungsprozess vornehmen oder einsehen.
-
-#design-entscheid([
-  Wir haben uns die Frage gestellt, ob wir das Objekt "Kunde" auch zusätzlich modellieren sollen. 
-  Wir sind zum Schluss gekommen, dass das Geschäftsobjekt Kundenkonto alle Informationen zum Kunden enthält, weshalb letzteres nicht separat / zusätzlich geführt werden muss.
-])
 
 Wir betrachten im folgenden Modell im Wesentlichen das Geschäftsobjekt Kundenkonto, das durch drei Geschäftstransaktionen geprägt wird:
 - Konto anlegen
@@ -249,17 +274,14 @@ So wird die Transaktion *Kunde anmelden* nicht zur Eingabe von Benutzername und 
 Idealerweise ist diese Transaktion für ein angemeldetes Kundenkonto gar nicht erreichbar.
 Dafür muss das System den Zustand des Kundenkontos allerdings kennen.
 
-Die folgende Abbildung zeigt das Geschäftsobjekt *Kundenkonto* und seine Beziehungen im RMI nach Archimate.
+Die folgende @fig-gtz-registrierung zeigt das Geschäftsobjekt *Kundenkonto* und seine Beziehungen im RMI nach Archimate.
 
 #figure(
   image("../assets/jan/Zustandsübergänge des Kundenkontos in Phase 2 - Sich registrieren.svg", width: 100%),
-  caption: [Zustandsübergänge des Kundenkontos in Phase 2: Sich registrieren]
+  caption: [Zustandsübergänge des Kundenkontos im Szenario "Sich registrieren"]
 ) <fig-gtz-registrierung>
 
-#design-entscheid([
-  Wir haben uns die Frage gestellt, ob wir das Objekt "Kunde" auch zusätzlich modellieren sollen. 
-  Wir sind zum Schluss gekommen, dass das Geschäftsobjekt Kundenkonto alle Informationen zum Kunden enthält, weshalb letzteres nicht separat / zusätzlich geführt werden muss.
-])
+#todo-action([jan: noch ein wörtchen als übergang zu dieser Tagbelle?])
 
 #figure(
   caption: [Geschäftstransaktionen: Prozess «sich registrieren»],
@@ -308,179 +330,11 @@ transaktion],
   ]
 ) <tbl-GT-sich-registrieren>
 
-=== [LEER] Unternehmen
-
-
-=== [LEER] Bewilligung 
-
-=== Finanzierung
-Das Geschäftsobjekt *Finanzierung* bündelt sämtliche Informationen rund um Amiras Finanzierungsgesuch --- von der Anfrage über die Bonitätsprüfung durch FINNOFLEET bis zum Kreditentscheid. Es ist das informationstragende Artefakt, das den Finanzierungsfall durch seinen Lebenszyklus führt und die Zustandsübergänge dokumentiert.
-
-#figure(
-image("../assets/GOFinanzierung.svg", width: 50%),
-caption: [Geschäftsobjekt Finanzierung und dessen Zustände]
-) <fig-GOFinanzierung>
-
-
-#figure(
-  caption: [Geschäftsobjekt Finanzierung],
-  block(
-    width: 100%,
-    radius: 6pt,
-    clip: true,
-    stroke: 0.5pt + luma(225),
-  )[
-    // Kopfzeile als abgerundetes Band
-    #block(
-      width: 100%,
-      fill: luma(70),
-      inset: (x: 10pt, y: 7pt),
-      below: 0pt,
-    )[
-      #grid(
-        columns: (3.2cm, 1fr),
-        gutter: 10pt,
-        text(fill: white, weight: "bold", size: 0.95em)[Angabe],
-        text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
-      )
-    ]
-    #set par(justify: false)
-    #table(
-      columns: (3.2cm, 1fr),
-      inset: (x: 10pt, y: 7pt),
-      stroke: (x: none, y: 0.5pt + luma(232)),
-      fill: (x, y) => if calc.even(y) { luma(250) } else { white },
-      align: (left, left),
-
-      [Bezeichnung],
-      [Finanzierung],
-
-      [Definition / Zweck],
-      [Repräsentiert das Finanzierungsgesuch, mit dem Amira die Erstinvestitionen für ihr Catering-Unternehmen decken will. Das Objekt hält die Angaben des Gesuchs, das Ergebnis der von FINNOFLEET durchgeführten Bonitätsprüfung sowie den daraus abgeleiteten Kreditentscheid fest. Es ist die gemeinsame Datengrundlage, auf die die Finanzierungs-Transaktionen zugreifen.],
-
-      [Attribute],
-      [Auf Objektebene bewusst nicht ausmodelliert (analog zu den übrigen Geschäftsobjekten). Fachlich relevant wären Betrag, Laufzeit, Kondition/Zinssatz und Verwendungszweck.],
-
-      [Zustände],
-      [neu, angefordert, unvollständig, vollständig, angenommen, abgelehnt, abgebrochen.
-
-      Lebenszyklus: von #emph[neu] über #emph[angefordert] zur inhaltlichen Prüfung; bei fehlenden Angaben #emph[unvollständig], nach Nachreichung #emph[vollständig]; abschliessend #emph[angenommen] oder #emph[abgelehnt]. #emph[abgebrochen] beendet den Fall vorzeitig.
-      /*Vorschlag: Für die graphische Aufbereitung der Zustandsübergänge, vgl. @ig-GTZ-finanzierung. */],
-
-      [Beziehungen],
-      [- #emph[Gründungsvorhaben] ist mit der Finanzierung assoziiert (löst das Gesuch aus).
-      - Die Finanzierung ist mit der #emph[Bewilligung] assoziiert (Bewilligungsstand als Voraussetzung).
-      - Das #emph[Unternehmen] ist mit der Finanzierung assoziiert (Empfänger der Mittel).
-      - Zugriff durch alle vier Geschäftstransaktionen: #emph[Finanzierung vorbereiten], #emph[Finanzierung anfordern], #emph[Finanzierung prüfen] und #emph[Finanzierung zusagen]. Die letzte greift zusätzlich auf das #emph[Gründungsvorhaben] zu, dessen Zustand sie auf #emph[finanziert] setzt (siehe @tbl-GT-finanzierung-erhalten).],
-    )
-  ]
-) <tbl-GO-Finanzierung>
-
-=== Lieferantenkonto
-
-Das Lieferantenkonto ist ein Geschäftsobjekt, das die Beziehung zwischen dem Gastronomiebetrieb und seinen Lieferanten abbildet. Es enthält Informationen über die Lieferanten, die Konditionen der Zusammenarbeit und den Status der Geschäftsbeziehung. Das Lieferantenkonto ist entscheidend für die effiziente Abwicklung von Bestellungen und die Verwaltung von Lieferantenbeziehungen.
-
-#figure(
-image("../assets/GOLieferantenkonto.svg", width: 50%),
-caption: [Geschäftsobjekt Lieferantenkonto und dessen Zustände]
-) <fig-GOLieferantenkonto>
-
-#figure(
-  caption: [Geschäftsobjekt Lieferantenkonto],
-  block(
-    width: 100%,
-    radius: 6pt,
-    clip: true,
-    stroke: 0.5pt + luma(225),
-  )[
-    // Kopfzeile als abgerundetes Band
-    #block(
-      width: 100%,
-      fill: luma(70),
-      inset: (x: 10pt, y: 7pt),
-      below: 0pt,
-    )[
-      #grid(
-        columns: (3.2cm, 1fr),
-        gutter: 10pt,
-        text(fill: white, weight: "bold", size: 0.95em)[Angabe],
-        text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
-      )
-    ]
-    #set par(justify: false)
-    #table(
-      columns: (3.2cm, 1fr),
-      inset: (x: 10pt, y: 7pt),
-      stroke: (x: none, y: 0.5pt + luma(232)),
-      fill: (x, y) => if calc.even(y) { luma(250) } else { white },
-      align: (left, left),
-
-      [Bezeichnung],
-      [Lieferantenkonto],
-
-      [Definition / Zweck],
-      [Beziehung zwischen dem Gastronomiebetrieb und seinen Lieferanten],
-
-      [Zustände],
-      [pendent, aktiv, inaktiv, gelöscht],
-
-      [Beziehungen],
-      [Das Lieferantenkonto ist mit den Geschäftsobjekten *Bestellung* und *Gastronomiebetrieb* assoziiert.],
-    )
-  ]
-) <tbl-GO-Lieferantenkonto>
-
-/*== [titel tbd] Zweite Iteration: Zustände und Geschäftstransaktionen oder die Identifikation des relevanten Verhaltens*/
-== Geschäftsobjekte und die Identifikation deren relevanten Verhaltens
-/*#frage([an alle: wie findet ihr mein Vorschlag für die Dokumentation der Geschäftstransaktionen und Zustände? ist es ok, immer dasselbe Objekt als in- und output zu haben (bspw. bei bewilligung)])*/
-
-In diesem ersten Teil der Realisierung des ressourcenunabhängigen Modells identifizieren wir die relevanten Geschäftsobjekte und dokumentieren deren Zustände und Geschäftstransaktionen pro Szenario, um die Lesbarkeit zu erhalten.
-Die entsprechenden Geschäftsprozesse sind ebenfalls modelliert, auch wenn sie später erklärt werden.
-Die Szenarien sind in @sec-szenarien-customer-journey beschrieben und werden einzeln aufbereitet. 
-#fuehrung([
-*Geschäftsobjekte* 
-
-Aus der Geschichte werden die groben Geschäftsobjekte sowie die Beziehungen zwischen den Geschäftsobjekten identifiziert, die in einer dematerialisierten Umsetzung der Geschichte noch Relevanz haben.
-
-Ein Geschäftsobjekt kapselt statische Struktur des RIM. Ein Geschäftsobjekt beschreibt einen zentral wesentlichen Teil des Kontexts einer Unternehmung und abstrahiert vollständig von den Ressourcen der Unternehmung (Dematerialisierung) und dessen Verhalten.
-
-*Zustände:* Zu jedem Geschäftsobjekt werden seine Zustände identifiziert.
-
-*Geschäftstransaktionen:* Entlang der Geschichte werden die Geschäftstransaktionen mit ihren Inputs und Output (Geschäftsobjekte) identifiziert. 
-Sowohl bei Input und Output wird darauf geachtet, dass diese inklusive ihre Zustände (bzw. zugehörige Ereignisse) bezeichnet werden. @Spichiger2026GFbUA /*S. 54*/
-])
-
-=== Vorgehen
-
-Um Geschäftsobjekte zu identifizieren hat sich die Gruppe mit der Struktur von Amiras Customer Journey auseinandergesetzt.
-Dabei liessen sich Nomen wie "Gründung", "Finanzierung", "Kundenkonto" - diese wurden als Prototypen für mögliche Geschäftsobjekte festgehalten. 
-
- #figure(
-  image("../assets/Customer Journey View.svg", width: 40%),
-  caption: [Archimate Modell der Customer Journey von Amira und erste Iteration für die Identifikation der Geschäftsobjekte]
-) <fig-customer-journey-view>
-
-=== Modell der identifizierten Objekte
-
-#stolperstein([
-
-Brauchen wir ein Objekt Webseite? Das Modellieren nach RIM fordert Disziplin im identifizieren von Objekten, die als Ressourcen (Teil vom RSM) gelten. Diese werden erst im RSM modelliert. 
-  
-])
-
-Folgendes Archimate Modell der Geschäftsobjekte von GastroStart, die von der Gruppe identifiziert wurden. 
-
-#figure(
-  image("../assets/GO diagram.svg", width: 80%),
-  caption: [Geschäftsobjekt Kundenkonto und dessen Zustände]
-) <fig-IdentifizierteGeschaefstobjetke>
-
 #design-entscheid([
-
-Es wurde verzichtet, das Objekt Person zu modellieren. 
-Die Behandlung von personenbezogenen Invarianten wie Domizil in der Schweiz oder Besitz des Wirtepatentes als Voraussetzung für die Gründung des Unternehmens und für den Erhalt der Betriebsbewilligung würden den Rahmen dieser Arbeit sprengen.
-
+  Wir haben uns die Frage gestellt, ob wir das Objekt "Kunde" auch zusätzlich modellieren sollen. 
+  Wir sind zum Schluss gekommen, dass das Geschäftsobjekt Kundenkonto alle Informationen zum Kunden enthält, weshalb letzteres nicht separat / zusätzlich geführt werden muss.
 ])
+
 
 === Amira gründet ihr Unternehmen 
 
@@ -665,6 +519,8 @@ Das Geschäftsobjekt Unternehmen durchläuft mehrere Transaktionen:
 - In einer ersten Phase ist Amira in Führung: sie _bereitet_  mit der Hilfe von Informationen und Fachfunktionen auf GastroStart die _Unterlagen_ für die Gründung der "Food Affair GmbH _vor_. Nach der öffentlichen Beurkundung _beantragt_ sie den _Eintrag im Handelsregister_ für ihre GmbH. 
 - Danach ist der Ball bei den Behörden: das kantonale Handelsregisteramt _prüft den Antrag_ auf Vollständigkeit, _lehnt es ab_ oder _nimmt es an_ und _trägt die GmbH im Handelsregister ein_. 
 
+Die folgende @tbl-GT-Unternehmen-gründen fasst diese Punkte zusammen:
+
 #figure(
   caption: [Geschäftstransaktionen: Prozess "Unternehmen gründen"],
   block(
@@ -726,7 +582,7 @@ Die folgende Abbildung stellt die Zusammenhänge der Geschäftsobjekte, Zuständ
 
 Nachfolgend wird auf die einzelnen Elemente der Grafik erklärt:
 
-1. *Geschäftsobjekt und Zustände*:
+==== Geschäftsobjekt und Zustände
 /*#figure(
 image("../assets/GOBewilligung.svg", width: 50%),
 caption: [Geschäftsobjekt Bewilligung und dessen Zustände]
@@ -789,69 +645,6 @@ caption: [Geschäftsobjekt Bewilligung und dessen Zustände]
   ]
 ) <tbl-GO-Bewilligung>
 
-/*
-#figure(
-  caption: [Geschäftsobjekt Bewilligung],
-  block(
-    width: 100%,
-    radius: 6pt,
-    clip: true,
-    stroke: 0.5pt + luma(225),
-  )[
-    // Kopfzeile als abgerundetes Band
-    #block(
-      width: 100%,
-      fill: luma(70),
-      inset: (x: 10pt, y: 7pt),
-      below: 0pt,
-    )[
-      #grid(
-        columns: (3.2cm, 1fr),
-        gutter: 10pt,
-        text(fill: white, weight: "bold", size: 0.95em)[Angabe],
-        text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
-      )
-    ]
-    #set par(justify: false)
-    #table(
-      columns: (3.2cm, 1fr),
-      inset: (x: 10pt, y: 7pt),
-      stroke: (x: none, y: 0.5pt + luma(232)),
-      fill: (x, y) => if calc.even(y) { luma(250) } else { white },
-      align: (left, left),
-
-      [Bezeichnung],
-      [Bewilligung],
-
-      [Definition / Zweck],
-      [Stellt ein behördlicher "Vertrag" dar, welcher einer natürlichen oder juristischen Person (_in casu_ dem Unternehmen von Amira) erteilt werden kann.
-      Die Erteilung der Bewilligung setzt je nach Kanton ein Fähigkeitsausweis voraus. In Kanton Fribourg muss mindestens eine Person im Betrieb ein Wirtepatent besitzen.],
-
-[Attribute],
-      [/*REDEwendung von Adrian übernehmen*/fachlich relevante Informationen zum Geschäftsobjekt sind: Typ (mit oder ohne Alkoholausschank), unterliegendes Wirtepatent (insbesondere dessen territoriale Gültigkeit), Standort bzw. Lokal, Datum Bewilligungsbeginn, erteilende Behörde, Datum der Anmeldung bei der kantonalen Lebensmittelbehörde bzw. -labor, Hygienekonzept],
-
-      [Beziehungen],
-      [- wird referenziert von *Gründungsvorhaben* // sagt man das so? ist das korrekt?
-        - steht in Beziehung zu *Unternehmen* als Adressat
-        - Zugriff über die Geschäftstransaktionen 
-          - Bewilligungsantrag vorbereiten, Bewilligungsantrag einreichen, Bewilligungsantrag vervollständigen, Antrag prüfen, Verfügung mitteilen (siehe @tbl-GT-Bewilligung). ],
-    )
-  ]
-) <tbl-GO-Bewilligung>
-
-+ *Zustände*: neu, in Vorbereitung, eingereicht, unvollständig, abgelehnt, erteilt, abgebrochen. 
-
-+ *Lebenszyklus*: von _neu_ über _in Vorbereitung_ zu _eingereicht_ für die Prüfung durch die Behörden; bei fehlenden Angaben _unvollständig_, nach Nachreichung wieder _eingereicht_. Nach dem Erreichen des Status _eingereicht_ geht es je nach Behördenentscheid mit dem Status _abgelehnt_ zum Ende, während bei behördlicher Zustimmung der Status _erteilt_ erreicht wird. Der Status _abgebrochen_ beendet den Zyklus vorzeitig, solange der Status _eingereicht_ noch nicht erreicht worden ist.
-
-Andere Zustände wie erloschen, entzogen, sistiert, sind für die abgebildete Customer Journey nicht relevant.
-
-#design-entscheid([Wir haben uns entschieden, die Frage um das Schicksal des Objekts "Bewilligung" im Fall der Löschung des Benutzerprofils von Amira offenzulassen.])
-
-#figure(
-image("../assets/ZustandGOBewilligung-2.svg", width: 60%),
-caption: [Zustandsdiagramm des Geschäftsobjekt Bewilligung]
-) <fig-GOBewilligung>
-*/
 
 #design-entscheid([Wir haben uns entschieden, die Frage um das Schicksal des Objekts "Bewilligung" im Fall der Löschung des Benutzerprofils von Amira offenzulassen.])
  
@@ -862,6 +655,7 @@ Das Geschäftsobjekt Bewilligung durchläuft mehrere Transaktionen:
 - In einer ersten Phase ist Amira in Führung: sie _bereitet_  mit der Hilfe der Informationen auf Gastrostart die _Unterlagen_ für den Bewilligungsantrag _vor_. Wenn sie alle Unterlagen gesammelt hat, _reicht_ sie den _Bewilligungsantrag_ bei der zuständigen Behörde _ein_. 
 - Danach ist der Ball bei den Behörden: die Behörde _prüft den Antrag_ auf Vollständigkeit, _lehnt es ab_ oder _erteilt_ der Food Affair GmbH die Betriebsbewilligung. 
 
+Die folgende @tbl-GT-Bewilligung fasst diese Punkte zusammen:
 
 
 #figure(
@@ -987,6 +781,8 @@ transaktion],
 
 === Amira wird Kunde bei Transgourmet
 
+#todo-action([Jakob: bitte vervollständigen])
+
 #figure(
   image("../assets/Phase 5 - Kunde bei Transgourmet.svg", width: 100%),
   caption: [Geschäftstransaktionen des Szenarios «Amira wird Kunde bei Transgourmet»]
@@ -1032,6 +828,142 @@ transaktion],
     )
   ]
 ) <tbl-GT-Kunde-bei-Transgourmet>
+
+
+=== Finanzierung
+Das Geschäftsobjekt *Finanzierung* bündelt sämtliche Informationen rund um Amiras Finanzierungsgesuch --- von der Anfrage über die Bonitätsprüfung durch FINNOFLEET bis zum Kreditentscheid. Es ist das informationstragende Artefakt, das den Finanzierungsfall durch seinen Lebenszyklus führt und die Zustandsübergänge dokumentiert.
+
+#figure(
+image("../assets/GOFinanzierung.svg", width: 50%),
+caption: [Geschäftsobjekt Finanzierung und dessen Zustände]
+) <fig-GOFinanzierung>
+
+
+#figure(
+  caption: [Geschäftsobjekt Finanzierung],
+  block(
+    width: 100%,
+    radius: 6pt,
+    clip: true,
+    stroke: 0.5pt + luma(225),
+  )[
+    // Kopfzeile als abgerundetes Band
+    #block(
+      width: 100%,
+      fill: luma(70),
+      inset: (x: 10pt, y: 7pt),
+      below: 0pt,
+    )[
+      #grid(
+        columns: (3.2cm, 1fr),
+        gutter: 10pt,
+        text(fill: white, weight: "bold", size: 0.95em)[Angabe],
+        text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
+      )
+    ]
+    #set par(justify: false)
+    #table(
+      columns: (3.2cm, 1fr),
+      inset: (x: 10pt, y: 7pt),
+      stroke: (x: none, y: 0.5pt + luma(232)),
+      fill: (x, y) => if calc.even(y) { luma(250) } else { white },
+      align: (left, left),
+
+      [Bezeichnung],
+      [Finanzierung],
+
+      [Definition / Zweck],
+      [Repräsentiert das Finanzierungsgesuch, mit dem Amira die Erstinvestitionen für ihr Catering-Unternehmen decken will. Das Objekt hält die Angaben des Gesuchs, das Ergebnis der von FINNOFLEET durchgeführten Bonitätsprüfung sowie den daraus abgeleiteten Kreditentscheid fest. Es ist die gemeinsame Datengrundlage, auf die die Finanzierungs-Transaktionen zugreifen.],
+
+      [Attribute],
+      [Auf Objektebene bewusst nicht ausmodelliert (analog zu den übrigen Geschäftsobjekten). Fachlich relevant wären Betrag, Laufzeit, Kondition/Zinssatz und Verwendungszweck.],
+
+      [Zustände],
+      [neu, angefordert, unvollständig, vollständig, angenommen, abgelehnt, abgebrochen.
+
+      Lebenszyklus: von #emph[neu] über #emph[angefordert] zur inhaltlichen Prüfung; bei fehlenden Angaben #emph[unvollständig], nach Nachreichung #emph[vollständig]; abschliessend #emph[angenommen] oder #emph[abgelehnt]. #emph[abgebrochen] beendet den Fall vorzeitig.
+      /*Vorschlag: Für die graphische Aufbereitung der Zustandsübergänge, vgl. @ig-GTZ-finanzierung. */],
+
+      [Beziehungen],
+      [- #emph[Gründungsvorhaben] ist mit der Finanzierung assoziiert (löst das Gesuch aus).
+      - Die Finanzierung ist mit der #emph[Bewilligung] assoziiert (Bewilligungsstand als Voraussetzung).
+      - Das #emph[Unternehmen] ist mit der Finanzierung assoziiert (Empfänger der Mittel).
+      - Zugriff durch alle vier Geschäftstransaktionen: #emph[Finanzierung vorbereiten], #emph[Finanzierung anfordern], #emph[Finanzierung prüfen] und #emph[Finanzierung zusagen]. Die letzte greift zusätzlich auf das #emph[Gründungsvorhaben] zu, dessen Zustand sie auf #emph[finanziert] setzt (siehe @tbl-GT-finanzierung-erhalten).],
+    )
+  ]
+) <tbl-GO-Finanzierung>
+
+=== Lieferantenkonto
+
+Das Lieferantenkonto ist ein Geschäftsobjekt, das die Beziehung zwischen dem Gastronomiebetrieb und seinen Lieferanten abbildet. Es enthält Informationen über die Lieferanten, die Konditionen der Zusammenarbeit und den Status der Geschäftsbeziehung. Das Lieferantenkonto ist entscheidend für die effiziente Abwicklung von Bestellungen und die Verwaltung von Lieferantenbeziehungen.
+
+#figure(
+image("../assets/GOLieferantenkonto.svg", width: 50%),
+caption: [Geschäftsobjekt Lieferantenkonto und dessen Zustände]
+) <fig-GOLieferantenkonto>
+
+#figure(
+  caption: [Geschäftsobjekt Lieferantenkonto],
+  block(
+    width: 100%,
+    radius: 6pt,
+    clip: true,
+    stroke: 0.5pt + luma(225),
+  )[
+    // Kopfzeile als abgerundetes Band
+    #block(
+      width: 100%,
+      fill: luma(70),
+      inset: (x: 10pt, y: 7pt),
+      below: 0pt,
+    )[
+      #grid(
+        columns: (3.2cm, 1fr),
+        gutter: 10pt,
+        text(fill: white, weight: "bold", size: 0.95em)[Angabe],
+        text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
+      )
+    ]
+    #set par(justify: false)
+    #table(
+      columns: (3.2cm, 1fr),
+      inset: (x: 10pt, y: 7pt),
+      stroke: (x: none, y: 0.5pt + luma(232)),
+      fill: (x, y) => if calc.even(y) { luma(250) } else { white },
+      align: (left, left),
+
+      [Bezeichnung],
+      [Lieferantenkonto],
+
+      [Definition / Zweck],
+      [Beziehung zwischen dem Gastronomiebetrieb und seinen Lieferanten],
+
+      [Zustände],
+      [pendent, aktiv, inaktiv, gelöscht],
+
+      [Beziehungen],
+      [Das Lieferantenkonto ist mit den Geschäftsobjekten *Bestellung* und *Gastronomiebetrieb* assoziiert.],
+    )
+  ]
+) <tbl-GO-Lieferantenkonto>
+
+/*== [titel tbd] Zweite Iteration: Zustände und Geschäftstransaktionen oder die Identifikation des relevanten Verhaltens*/
+== Geschäftsobjekte und die Identifikation deren relevanten Verhaltens
+/*#frage([an alle: wie findet ihr mein Vorschlag für die Dokumentation der Geschäftstransaktionen und Zustände? ist es ok, immer dasselbe Objekt als in- und output zu haben (bspw. bei bewilligung)])*/
+
+In diesem ersten Teil der Realisierung des ressourcenunabhängigen Modells identifizieren wir die relevanten Geschäftsobjekte und dokumentieren deren Zustände und Geschäftstransaktionen pro Szenario, um die Lesbarkeit zu erhalten.
+Die entsprechenden Geschäftsprozesse sind ebenfalls modelliert, auch wenn sie später erklärt werden.
+Die Szenarien sind in @sec-szenarien-customer-journey beschrieben und werden einzeln aufbereitet. 
+
+=== Vorgehen
+
+Um Geschäftsobjekte zu identifizieren hat sich die Gruppe mit der Struktur von Amiras Customer Journey auseinandergesetzt.
+Dabei liessen sich Nomen wie "Gründung", "Finanzierung", "Kundenkonto" - diese wurden als Prototypen für mögliche Geschäftsobjekte festgehalten. 
+
+ #figure(
+  image("../assets/Customer Journey View.svg", width: 40%),
+  caption: [Archimate Modell der Customer Journey von Amira und erste Iteration für die Identifikation der Geschäftsobjekte]
+) <fig-customer-journey-view>
 
 === Reflexion
 

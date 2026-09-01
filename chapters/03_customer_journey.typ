@@ -448,7 +448,7 @@ Wir wiederholen den Aufbau an dieser Stelle und in den Folgenden Kapiteln nicht 
 
 === Amira wird Kunde bei Transgourmet
 
-#todo-action([Szenario erklären, so wie Jan für Orientierung und Registrierung gemacht hat])
+#todo-action([Jakob: Szenario erklären, so wie Jan für Orientierung und Registrierung gemacht hat])
 
 
  #figure(
