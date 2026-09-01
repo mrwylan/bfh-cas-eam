@@ -6,7 +6,7 @@
 
 = Methodische Reflexion und der individuelle Lernpfad
 
-#autor-transgourmet("Beitrag von Jakob Albrecht", inhalt: [Reflexion über die Anwendung der EAM-Frameworks im Projekt GastroStart, Lernprozess und Perspektive],)
+#autor-transgourmet("Beitrag von Jakob Albrecht", inhalt: [Reflexion über die Anwendung der EAM-Frameworks im Projekt GastroStart, Lernprozess und Perspektive für die Tätigkeit bei Transgourmet],)
 
 == Beurteilung der EAM-Frameworks
 
@@ -23,26 +23,27 @@ In einer realeren Situation, gehe ich davon aus, dass aufgrund der vorhandenen A
 
 Im Team Setting erlebten wir, dass die Architekturarbeit nicht nur eine technische, sondern auch eine soziale Dimension hat. 
 Nicht jeder hatte zu jedem Zeitpunkt die gleiche Sicht auf die Architektur, den selben Stand im Unterrichtsstoff, oder die gleiche Erfahrung mit den eingesetzten Frameworks.
-Das schaffen von Konsens, itartiv, in Abstimmungsmeetings, war ein zentraler Bestandteil der Arbeit.
+Das schaffen von Konsens, iterativ, in Abstimmungsmeetings, war ein zentraler Bestandteil der Arbeit.
 Die Suche nach dem geeigneten Glossar, die Definition von Begriffen, die Auswahl der richtigen Modellierungstiefe, Abgrenzungen und das Abwägen von Kompromissen zwischen den Teammitgliedern waren entscheidend für die Qualität der Architekturarbeit.
-Die Gruppe erreichte Konsens durch Diskussion, Argumentation, Abstimmung und Kompromissfindung. Das Arbeiten an der gemeinsamen Wissensbasis war entscheidend, um die Architekturarbeit voranzutreiben.
+Die Gruppe erreichte Konsens durch Diskussion, Argumentation, Abstimmung und Kompromissfindung.
+Das Arbeiten an der gemeinsamen Wissensbasis war entscheidend, um die Architekturarbeit voranzutreiben.
 
 == Individueller Kompetenzwandel
 
-Zu Beginn des CAS war mein primärer Rahmen für Architekturarbeit auf den Bereich der Softwareentwicklung begrenzt.
-Technische Qualität – Performance, Skalierbarkeit, Wartbarkeit – sind bestimmende Bewertungskriterium, die ich als Architekt anlege, um die Qualität von Softwarelösungen zu beurteilen.
+Vor dem CAS EAM war meine Erfahrungsbasis auf Architekturarbeit in der Softwareentwicklung begrenzt.
+Technische Qualität – Performance, Skalierbarkeit, Wartbarkeit – sind bestimmende Bewertungskriterium, die ich als Architekt bisher anwandte, um die Qualität von Softwarelösungen zu beurteilen.
 Die Arbeit im CAS hat mir gezeigt, dass die Bewertung von Architektur aus der Perspektive von Business Value und Lebenszykluskosten mindestens genauso wichtig ist, um so die Langlebigkeit und den Erfolg von Softwarelösungen auch in einem wirtschaftlichen Kontext zu sichern.
-Die Outside-In-Mapping-Übung machte das konkret: Das architektonische Problem als Customer-Journey-Problem zu rahmen, zwang mich, Wert in Begriffen zu artikulieren, die nicht-technische Stakeholder beurteilen und hinterfragen konnten. 
+Die Outside-In-Mapping-Übung machte das konkret: Das architektonische Problem als Customer-Journey-Problem zu rahmen, zwang mich, Lösungsaspekte zu modellieren, die nicht-technische Stakeholder beurteilen und hinterfragen können. 
 
-Auch mein Umgang mit technischer Schuld hat sich weiterentwickelt.
-Früher behandelte ich Schuld als Folge von Lieferdruck – einen notwendigen Kompromiss.
-Das CAS rahmte Schuld neu als strategische Variable mit expliziten künftigen Kostenfolgen, die im Reporting auf Führungsebene sichtbar gemacht werden können und sollten @fowler2018 @zachman1987.
+Weiter hat sich mein Umgang mit technischen Schulden weiterentwickelt.
+Früher behandelte ich diese als Folge von Lieferdruck und Rahmenbedingungen als notwendige Kompromisse.
+Das CAS rahmte technischen Schulden neu als strategische Variable mit expliziten künftigen Kostenfolgen, die im Reporting auf Führungsebene sichtbar gemacht werden können und sollten @fowler2018 @zachman1987.
 
 == Zusammenfassung der Erkenntnisse
 
 Diese Gruppenarbeit hat einen vollständigen Bogen von Outside-In zum Inside-Out einer Applikationslandschaft geschlagen.
 Eine Customer Journey wurde auf Business Capabilities abgebildet, die Capabilities wurden zur Application-Landschaft zurückverfolgt.
-Reibungszonen wurden früh identifiziert und bestimmen die Ziel-Architektur, liefern Chancen und Risiken sowie Ausganspunkte für mögliche Migrationspfade.
+Reibungszonen wurden früh identifiziert und bestimmen die Ziel-Architektur, lieferten Chancen und Risiken sowie Ausganspunkte für mögliche Migrationspfade.
 
 Die zentralen Erkenntnisse sind:
 
@@ -53,8 +54,6 @@ Die zentralen Erkenntnisse sind:
 
 Die im CAS entwickelten Praktiken werde ich wie folgt in meine Arbeitsweise einbinden:
 
-+ Vorhaben werde ich mit den Geschäftsfähigkeiten von Trasngourmet in Verbindung bringen, um die Wertschöpfung zu fokussieren und die Architekturarbeit auf die Bedürfnisse des Kunden auszurichten.
-+ Die RIM Methodik werde ich in der Architekturarbeit einsetzen, um eine erste Distanz zu bereits gemachten Technischen Lösungen zu schaffen und so die Basis für eine offenere Diskussion von Architekturentscheidungen zu schaffen.
-+ Zielgruppenorientierte Architekturarbeit, Perspektivenwechsel und isolierte Modellierung von Szenarien in der jeweiligen Tiefe, die den Stakeholdern entspricht, wird meine Qualität der Architekturarbeit verbessern und die Akzeptanz der Architekturentscheidungen erhöhen.
-
-
++ Vorhaben werde ich mit den Geschäftsfähigkeiten von Transgourmet in Verbindung bringen, um die Wertschöpfung zu fokussieren und die Architekturarbeit auf die Bedürfnisse der Kunden und Anwender auszurichten.
++ Die RIM Methodik werde ich in der Architekturarbeit einsetzen, um eine erste Distanz zu bereits gemachten technischen Lösungen zu schaffen und so die Basis für eine offenere Diskussion von Architekturentscheidungen zu legen.
++ Zielgruppenorientierte Architekturarbeit, Perspektivenwechsel und isolierte Modellierung von Szenarien in der jeweiligen Tiefe, die den Stakeholdern entspricht, wird meine Qualität der Architekturarbeit verbessern und die Akzeptanz der resultierenden Architekturentscheidungen erhöhen.

@@ -34,7 +34,7 @@ Anschliessend werden die Ressourcen wieder dazugenommen - wobei jeder der vier K
 #include "chapters/03_customer_journey.typ"
 #include "chapters/04_ea_realization.typ"
 //#include "draft/jakob/05_ea_target-architecture.typ"
-#include "chapters/06_learning_path.typ"
+
 
 // ── References ──────────────────────────────────────────────────────────────
 
@@ -52,3 +52,4 @@ Anschliessend werden die Ressourcen wieder dazugenommen - wobei jeder der vier K
 #include "appendix/a2_semantic-anchors.typ"
 #include "appendix/a3_togaf-adm-applied.typ"
 #include "appendix/a4_werkzeug_reflexion.typ"
+#include "appendix/a5_learning_path.typ"
