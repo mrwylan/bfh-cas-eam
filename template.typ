@@ -102,14 +102,16 @@ it
     }
 
     #grid(
-      columns: calc.min(authors.len(), 3),
-      gutter: 2em,
+      columns: (6cm, 6cm),
+      column-gutter: 1em,
+      row-gutter: 1.5em,
       ..authors.map(author => align(center)[
         #strong(author.name) \
         #text(size: 9pt, fill: luma(80), author.affiliation) \
-        #link(author.email)
+        #text(size: 9pt, fill: luma(80))[#link(author.email)]
       ])
     )
+
 
     #v(1em)
     #if date != none {
@@ -134,7 +136,7 @@ it
   set page(numbering: "I") // Da qui in poi gli indici useranno I, II, III...
 
   // Indice dei contenuti (Table of Contents)
-  outline(indent: auto, depth: 2)
+  outline(indent: 1.5em, depth: 4)
   
   // Puoi inserire altri indici qui se necessario (es. immagini, tabelle)
   

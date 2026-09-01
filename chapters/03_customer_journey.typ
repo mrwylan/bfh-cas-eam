@@ -21,16 +21,10 @@ Sie möchte durch den Prozess der Unternehmensgründung geführt werden.
 Bei der Suche erfährt sie, dass die Punkte Bewilligungen, Finanzierung, Ressourcenplanung und Beschaffung besonders wichtig sind. 
 Sie landet bei *“GastroStart”* und erfährt in der kurzen Einführung auf der Startseite, dass dieses Portal sie bei all dem unterstützen kann. 
 Sie ist erleichtert und registriert sich. 
-
-#design-entscheid([
-  Bei der *Wahl der Customer Journey* haben wir folgende Alternativen in Betracht gezogen: 
-  
-  B2B (Onboarding bestehender Transgourmet-Kunden), EatSwiss (digitale Herkunftsplattform), PublicPlate (Beschaffungsplattform für Gemeinschaftsverpflegung) und B2Startup (Marktpotential-Check vor der Gründung).
-
-  Für *GastroStart* sprachen: 
-  
-  Eine nachvollziehbare und realistische Persona (Amira), eine in sich konsistente, in Szenarien abbildbare Journey, eine sinnvolle Rolle für jeden Partner des Joint Ventures sowie eine im Rahmen der Arbeit beherrschbare Modellierungskomplexität.
-])
+ #figure(
+  image("../assets/Customer Journey View.svg", width: 60%),
+  caption: [Archimate Modell der Customer Journey von Amira und erste Iteration für die Identifikation der Geschäftsobjekte]
+) <fig-customer-journey-view>
 
 In enger Verbindung mit der Customer Journey wird die Persona „Amira“ erarbeitet. Sie dient dazu, unsere Endkundin konkret greifbar und emotional verankert zu machen. Die Bedürfnisse und Kontexte von Amira bilden den zentralen Ausgangspunkt für die Modellierung des Produkts "GastroStart".
 
@@ -65,6 +59,16 @@ In enger Verbindung mit der Customer Journey wird die Persona „Amira“ erarbe
   ]
 ) <persona-amira>
 
+#design-entscheid([
+  Bei der *Wahl der Customer Journey* haben wir folgende Alternativen in Betracht gezogen: 
+  
+  B2B (Onboarding bestehender Transgourmet-Kunden), EatSwiss (digitale Herkunftsplattform), PublicPlate (Beschaffungsplattform für Gemeinschaftsverpflegung) und B2Startup (Marktpotential-Check vor der Gründung).
+
+  Für *GastroStart* sprachen: 
+  
+  Eine nachvollziehbare und realistische Persona (Amira), eine in sich konsistente, in Szenarien abbildbare Journey, eine sinnvolle Rolle für jeden Partner des Joint Ventures sowie eine im Rahmen der Arbeit beherrschbare Modellierungskomplexität.
+])
+
 == Szenarien als Teilgeschichten aus der Customer Journey <sec-szenarien-customer-journey>
 
 /*Übung vom 18.05.2026
@@ -98,11 +102,6 @@ Die *Aktion* wird ausgelöst durch einen *Gedanken* oder ein *Bedürfnis*.
 Jede Phase kann die GründerInnen mit *Painpoints* konfrontieren, die zum Abbruch der Produktnutzung führen können.
 Und schliesslich bietet jede Phase *Chancen*, die die *Bedürnisse* befriedigen und zur Weiternutzung einladen.
 
-
- #figure(
-  image("../assets/Customer Journey View.svg", width: 40%),
-  caption: [Archimate Modell der Customer Journey von Amira und erste Iteration für die Identifikation der Geschäftsobjekte]
-) <fig-customer-journey-view>
 
 === Amira orientiert sich <head-scenarios-orientation>
 /*
@@ -197,7 +196,7 @@ Tatsächlich verbirgt sich dahinter ein komplexerer Prozess, den wir - nach der 
 #todo-action([JAN: bitte die folgenden Sätze umformulieren, ich habe die Erklärung zur Tabelle im vorgehenden Kapitel verschoben, da sie für alle Szenarien gelten.(sorry)])
 Die folgende @tbl-szenario-registrierung kennen die Leser schon aus dem letzten Kapitel. 
 
-Wir wiederholen den Aufbau an dieser Stelle und in den Folgenden Kapiteln nicht erneut und verweisen auf @head-scenarios-orientation.
+/*Wir wiederholen den Aufbau an dieser Stelle und in den Folgenden Kapiteln nicht erneut und verweisen auf @head-scenarios-orientation.*/
 
 #figure(
   caption: [Szenario "Amira Registriert sich"],
@@ -248,7 +247,15 @@ Wir wiederholen den Aufbau an dieser Stelle und in den Folgenden Kapiteln nicht 
 
 === Amira gründet ihr Unternehmen
 
-#todo-action([Szenario erklären, so wie Jan für Orientierung und Registrierung gemacht hat])
+Mit der Registrierung können die Benutzer auf den digitalen Begleiter für die Gründung des Unternehmens zugreifen. 
+Aufgrund der Informationen aus dem Gründungsvorhaben können die Benutzer der Plattform durch Anweisungen, Empfehlungen und vorgefertigte Texte geführt werden, mit denen sie ohne teure Beratung selber die Unterlagen für die gewünschte Firmengründung zusammenstellen oder gar erstellen. 
+Die Informationen auf der Plattform helfen den Benutzern dabei, sich entlang der Gründung ihres Unternehmens zu orientieren und der Sinn hinter der Notwendigkeit hinter der mühseligen Sammlung von Ausweisen und Dokumenten. 
+
+Durch die enge Begleitung und das Abnehmen von einfachen Aufgaben und die Erfolgserfahrung mit der Anzeige des Fortschrittes können die Kunden bestärkt werden und zum Abschluss des komplizierten Prozesses motiviert werden. 
+
+Da die Benutzer bereits seit der Orientierung wissen, dass am gewünschten Standort mit einem Medienbruch zu rechnen ist, stufen wir die Wahrscheinlichkeit eines Abbruches als tief ein. 
+
+
 
  #figure(
   image("../assets/cj_gründung und bewilligung.svg", width: 70%),
@@ -257,7 +264,7 @@ Wir wiederholen den Aufbau an dieser Stelle und in den Folgenden Kapiteln nicht 
 
 
 #figure(
-  caption: [Szenario "Amira gründet ihr Unternehmen],
+  caption: [Szenario "Amira gründet ihr Unternehmen"],
   block(
     width: 100%,
     radius: 6pt,
@@ -292,7 +299,7 @@ Wir wiederholen den Aufbau an dieser Stelle und in den Folgenden Kapiteln nicht 
       [GastroStart, Notar, Behörden-API, Systeme der kantonalen Verwaltungsbehörde, Portal «EasyGov»],
 
       [Gedanke / Bedürfnis],
-      [Wie viel kostet der Notar? Wie lange geht das?],
+      [Wie viel kostet der Notar? Wie lange geht das? Brauche ich einen Drucker?],
 
       [Pain Point],
       [

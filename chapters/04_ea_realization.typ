@@ -364,7 +364,9 @@ Nach der initialen Orientierung und Registrierung auf GastroStart wurden die Wü
 Wie beim Ausfüllen der Steuererklärung bietet GastroStart eine Anleitung zur Vorbereitung der notwendigen Dokumentation, sodass die Notariatskosten möglichst tief gehalten werden können. 
 Dazu gehören Angaben wie der gewünschte Firmennamen, den Sitz und Adresse der Firma, persönliche Informationen zu den Anteilhabenden, die Einzahlung des Gründungskapitals, die Formulierung von Statuten und Lieferung von Identifikationsdokumenten. 
 
-Alles, was Amira Schritt für Schritt vorbereitet wird entsprechend im Gründungsvorhaben festgehalten - respektive kann dort hochgeladen und dokumentiert werden. 
+
+#frage([\@ Cheffen: stimmt die folgende Aussage?])
+_Alles, was Amira Schritt für Schritt vorbereitet wird entsprechend im Gründungsvorhaben festgehalten - respektive kann dort hochgeladen und dokumentiert werden. _
 So stehen alle Informationen in GastroStart zur Verfügung und können jederzeit inhaltlich und formell validiert werden. 
 Wenn die Checkliste für die Gründung des *Unternehmens* erfolgreich durchgearbeitet worden ist, kann Amira ein Termin beim Notar abmachen und dort die nötigen offiziellen Schritte: die öffentliche Beurkundung durch den Notar und die darauffolgende Anmeldung beim kantonalen Handelsregister. 
 Diese Schritte sind notwendig, damit das Unternehmen überhaupt rechtlich existiert und als solches von den Behörden und Wirtschaftspartner anerkannt werden kann, beispielsweise um eine Betriebsbewilligung und eine Finanzierung zu erhalten. 
@@ -378,9 +380,9 @@ Die abgebildete Variante erwähnt noch die Möglichkeiten des Abbruches der Firm
   caption: [Geschäftstransaktionen und Zustände - Szenario Amira gründet ihr Unternehmen]
 ) <fig-GTZ-Amira-gründet>
 
-Nachfolgend wird auf die einzelnen Elemente der Grafik erklärt:
+Nachfolgend wird auf die einzelnen Elemente der Grafik eingegangen.
 
-==== *Geschäftsobjekt und Zustände* 
+==== Geschäftsobjekt und Zustände 
 #figure(
   caption: [Geschäftsobjekt Unternehmen],
   block(
