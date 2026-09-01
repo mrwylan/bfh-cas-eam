@@ -17,7 +17,7 @@ Die folgenden Kapitel orientieren sich wie gehabt an den fünf Phasen der Custom
 Zunächst beschreiben wir die wesentlichen Geschäftsobjekte und ihre möglichen Zustände, die in der jeweiligen Phase die entscheidende Rolle spielen.
 Anschliessend erweitern wir das Modell um Geschäftstransaktionen und die Beziehungen der Geschäftsobjekte zu diesen und untereinander.
 Weiter werden die Geschäftstransaktion zu Geschäftsprozessen zusammengeführt und schliesslich die wesentlichen Geschäftsfähigkeiten der jeweiligen Prozesse identifiziert und in das Modell integriert.
-Im letzten Kapitel der Modellentwicklung beschreiben wir den Übergang vom RIM ins ressourcen-spezifische Modell anhand der IDEAL Informationssystemarchitektur.
+Im letzten Kapitel der Modellentwicklung beschreiben wir den Übergang vom RIM ins ressourcenspezifische Modell anhand der IDEAL Informationssystemarchitektur.
 
 == Geschäftsobjekte und Geschäftstransaktionen
 
@@ -1129,7 +1129,7 @@ Schwierigkeiten bat es, Abstand von der gewohnte Implementierungsebene zu halten
 == Dritte Iteration: Geschäftsprozesse und Vollständigkeit des bisherigen Modells
 
 Auf den folgenden Seiten wollen die die Modelle aus den letzten Abschnitten noch einmal aufgreifen und um Geschäftsfähigkeiten erweitern. 
-Damit vervollständigen wir unser RIM und bilden die Grundlage für den Einstieg ins ressourcespezifische Modell (RSM). 
+Damit vervollständigen wir unser RIM und bilden die Grundlage für den Einstieg ins ressourcenspezifische Modell (RSM). 
 Die Identifikation der Geschäftsfähigkeiten spielt dabei die wesentliche Rolle, denn sie befähigen uns unsere Dienstleistung - oder allgemeiner: Die vorgenommene Wertschöpfung zu erbringen.
 Neben den Geschäftsfähigkeiten werden die Leser in den folgenden Modellen auch die, sich aus den Geschäftstransaktionen ergebenen Geschäftsprozesse wiederfinden.
 
@@ -1623,9 +1623,32 @@ Weil ELA Kredit ausschliesslich die Anbahnung abdeckt, konzentriert sich der arc
 
 Auf der Ebene des Joint Ventures gilt diese Einordnung nicht: GastroStart verbindet autonome Partner ohne geteilte Prozesse und fällt deshalb unter *Coordination* --- diese Ebene wird im folgenden Abschnitt eingeordnet. Unification gilt innerhalb des Finanzierungsbeitrags, Coordination zwischen den Partnern; die Grenze zwischen den beiden Modellen verläuft genau an der API, über die FINNOFLEET seine Fähigkeit in die Journey einbringt.
 
-=== Domenänenmodell 
+=== Domänenmodell: die Finanzierung im RSM <sec-domaenenmodell-finanzierung>
 
-#todo-action([Adi: Bild und ein Paar Worte])
+Die bisherigen Abschnitte bleiben auf der Ebene des Operating Models und der Architekturschichten. Der letzte Schritt führt das RIM der Finanzierung in ein RSM über und beantwortet zwei Fragen: Welche Bausteine der Anwendungslandschaft realisieren die Geschäftstransaktionen der Phase, und wo genau verläuft die Grenze zwischen FINNOFLEET und GastroStart?
+
+#figure(
+  image("../assets/RSM Amira erhält eine Finanzierung.svg", width: 100%),
+  caption: [RSM der Phase «Amira erhält eine Finanzierung»],
+) <fig-RSM-finanzierung>
+
+Das Modell ist in drei Ebenen zu lesen:
+
+- *Unten das RIM, auf den Erfolgsfall verkürzt*: die vier Geschäftstransaktionen mit der Zustandskette der Finanzierung von #emph[neu] bis #emph[finanziert] sowie die beiden Geschäftsobjekte #emph[Finanzierung] und #emph[Gründungsvorhaben]. Die Rückläufe über #emph[unvollständig], #emph[abgelehnt] und #emph[abgebrochen] sind der Lesbarkeit zuliebe weggelassen; sie stehen vollständig in @fig-GTZ-finanzierung. Fachlich wird diese Ebene durch die Ressourcenzuordnung nicht angetastet --- das ist der Zweck der Trennung von RIM und RSM.
+- *Oben zwei Domänen*: in der Domäne #emph[Gastrostart] liegen die Komponenten #emph[Finanzierung] und #emph[Orientierung] mit ihren Datenobjekten #emph[Finanzierung] respektive #emph[Gründungsvorhaben]. Jede Komponente ist über eine gleichnamige Schnittstelle erreichbar, die dem Service #emph[AL- Finanzierung] beziehungsweise #emph[AL- Orientierung] zugewiesen ist. In der Domäne #emph[FINNOFLEET -- Partner] steht eine einzige Komponente, #emph[ELA Kredit], mit einer einzigen Schnittstelle: #emph[Tragbarkeit].
+- *Dazwischen die Trace-Beziehungen*: die Services sind mit den Geschäftstransaktionen verbunden, die sie realisieren, die Datenobjekte mit den Geschäftsobjekten, deren Bestand sie führen. Sie sind die Nachweiskette zwischen den beiden Modellen und der Grund, warum sich zu jedem Element der Anwendungslandschaft die fachliche Herkunft angeben lässt.
+
+Vier Beobachtungen tragen die Architekturaussage:
+
+1. *Die Domänengrenze ist ein einzelnes Element.* FINNOFLEET erscheint in der Journey ausschliesslich über die Schnittstelle #emph[Tragbarkeit]. Alles, was der vorangehende Abschnitt als hoch standardisiert und hoch integriert beschreibt --- der Anbahnungsprozess, das zentrale Backend, die Anbindung der Bestandssysteme (siehe @fig-EA-ela-kredit) --- liegt hinter dieser einen Schnittstelle und ist von aussen nicht sichtbar.
+
+2. *Integriert wird über Daten, nicht über Prozesse.* GastroStart meldet den Fall über die Schnittstelle #emph[Tragbarkeit] an und fragt anschliessend regelmässig nach dem Stand, bis die Prüfung abgeschlossen ist. Eine gemeinsame Prozesssteuerung über die Organisationsgrenze gibt es nicht: die Geschäftstransaktion #emph[Finanzierung prüfen] läuft auf der Partnerplattform von FINNOFLEET und nicht bei GastroStart.
+
+3. *Ein Bestand, nicht zwei.* Das Geschäftsobjekt #emph[Finanzierung] hat im RSM genau einen Bestand: das Datenobjekt #emph[Finanzierung] in der Domäne Gastrostart. Im organisationsübergreifenden Kontext könnte aus diesem einen Geschäftsobjekt durchaus mehr als ein Bestand entstehen --- dann wäre zu klären, welcher Partner den Fall führt und wie die Bestände abgeglichen werden. Hier fällt die Entscheidung bewusst anders: der Fall wird einmal geführt, FINNOFLEET greift über die Schnittstelle darauf zu und hält im Modell keine zweite Kopie. Wie viel das wert ist, zeigt der Rücklauf: weist die Prüfung das Gesuch als #emph[unvollständig] zurück, kehrt derselbe Fall in die Vorbereitung zurück und läuft die Kette erneut (siehe @fig-GTZ-finanzierung). Bei zwei Beständen wäre jeder dieser Rückläufe ein Abgleich zwischen den Partnern; bei einem Bestand ist er nur ein Zustandswechsel. Die interne Aktenführung von ELA Kredit ist Innensicht und in @fig-EA-ela-kredit dargestellt, nicht hier.
+
+4. *Die Orientierung schliesst die Kette.* Das Datenobjekt #emph[Gründungsvorhaben] liegt in der Komponente #emph[Orientierung], und der Service #emph[AL- Orientierung] ist mit der Transaktion #emph[Finanzierung zusagen] verbunden --- jener Transaktion, die als einzige der Phase auf zwei Geschäftsobjekte wirkt und das Gründungsvorhaben auf #emph[finanziert] setzt (siehe @tbl-GT-finanzierung-erhalten). Der Zustandswechsel über die Objektgrenze ist damit im RSM an genau der Stelle wieder auffindbar, an der er im RIM entstanden ist.
+
+Damit ist die Einordnung des vorangehenden Abschnitts nicht mehr nur behauptet, sondern am Modell ablesbar: Unification gilt innerhalb des Finanzierungsbeitrags, Coordination zwischen den Partnern --- und die Grenze zwischen den beiden Operating Models ist im Bild kein Bereich, sondern ein Element.
 
 == Einordnung von GastroStart und der Akteure des öffentlichen Wesens in das Operating System nach Ross/Weill et al.
 
