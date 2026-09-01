@@ -153,13 +153,13 @@ Das Ausarbeiten der Details des Gründungsvorhabens nennen wir "Orientierung".
       [Aktion],
       [
         Amira started eine Web-Suche mit den Begiffen "Gründung", "Catering", "Schweiz", "Vorgehen".
-        Ihre Suche führt sie schnell zur Landingpage von Gastrostart.
+        Ihre Suche führt sie schnell zur Landingpage von GastroStart.
         Sie wird gebeten den Kanton für das Gründungsvorhaben aus einer Liste auszuwählen.
         Sie wählt aus und bestätigt die Eingabe.
       ],
 
       [Touchpoints],
-      [Browser auf Mobile Device, Search Engine, Gastrostart],
+      [Browser auf Mobile Device, Search Engine, GastroStart],
 
       [Gedanke / Bedürfnis],
       [Unsicherheit: Amira weiss nicht, wie eine Unternehmensgründung funktionert und welche Voraussetzungen sie erfüllen muss, um ihr Geschäft zu betreiben.],
@@ -174,7 +174,7 @@ Das Ausarbeiten der Details des Gründungsvorhabens nennen wir "Orientierung".
 ) <tbl-szenario-orientierung>
 
 
-=== Amira registriert sich bei Gastrostart
+=== Amira registriert sich bei GastroStart
 
 /*#autor-dvbern("Beitrag von Jan Sohnemann, DVBern", inhalt: [])*/
 

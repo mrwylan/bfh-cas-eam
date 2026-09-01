@@ -859,7 +859,7 @@ caption: [Zustandsdiagramm des Geschäftsobjekt Bewilligung]
  ==== Geschäftstransaktionen
 Amira möchte beantragt im Namen ihres Unternehmens die Bewilligung für den Betrieb von Catering.
 Das Geschäftsobjekt Bewilligung durchläuft mehrere Transaktionen: 
-- In einer ersten Phase ist Amira in Führung: sie _bereitet_  mit der Hilfe der Informationen auf Gastrostart die _Unterlagen_ für den Bewilligungsantrag _vor_. Wenn sie alle Unterlagen gesammelt hat, _reicht_ sie den _Bewilligungsantrag_ bei der zuständigen Behörde _ein_. 
+- In einer ersten Phase ist Amira in Führung: sie _bereitet_  mit der Hilfe der Informationen auf GastroStart die _Unterlagen_ für den Bewilligungsantrag _vor_. Wenn sie alle Unterlagen gesammelt hat, _reicht_ sie den _Bewilligungsantrag_ bei der zuständigen Behörde _ein_. 
 - Danach ist der Ball bei den Behörden: die Behörde _prüft den Antrag_ auf Vollständigkeit, _lehnt es ab_ oder _erteilt_ der Food Affair GmbH die Betriebsbewilligung. 
 
 
@@ -1177,7 +1177,7 @@ Diesen Prozess haben wir naheliegenderweise *Gründungsvorhaben orientieren* gen
   caption: [Geschäftsfähigkeiten in Phase 1: Orientierung"]
 ) <fig-bp-and-bc-phase1>
 
-=== Geschäftsprozesse und Geschäftsfähigkeiten für die Benutzer-Registrierung bei Gastrostart
+=== Geschäftsprozesse und Geschäftsfähigkeiten für die Benutzer-Registrierung bei GastroStart
 
 #autor-dvbern("Beitrag von Jan Sohnemann, DVBern", inhalt: [])
 
@@ -1283,11 +1283,11 @@ Diese Geschäftsprozesse bilden das letze Szenario der Customer Journey ab. Eine
 
 #fuehrung([Geschäftsfähigkeiten bilden eine stabile, redundanzfreie Baumstruktur der funktionalen Dekomposition einer Unternehmung. Sie abstrahieren von jeglichen Ressourcen, werden aber von diesen unterstützt. Geschäftsfähigkeiten sind in sich stark zusammenhängend während sie mit andern Geschäftsfähigkeiten lose gekoppelt sind. @Spichiger2026GFbUA])
 
-=== Geschäftsfähigkeiten für die Orientierung auf der Webseite von Gastrostart
+=== Geschäftsfähigkeiten für die Orientierung auf der Webseite von GastroStart
 
-Die Geschäftsfähigkeit, die im Szenario *Orientierung auf der Webseite von Gastrostart* tragend wird, wurde als *GastroStart vorstellen* identifiziert. Sie bildet die Grundlage für die Entscheidung, ob Amira ihr Gründungsvorhaben über GastroStart realisieren möchte.
+Die Geschäftsfähigkeit, die im Szenario *Orientierung auf der Webseite von GastroStart* tragend wird, wurde als *GastroStart vorstellen* identifiziert. Sie bildet die Grundlage für die Entscheidung, ob Amira ihr Gründungsvorhaben über GastroStart realisieren möchte.
 
-=== Geschäftsfähigkeiten für die Registrierung bei Gastrostart
+=== Geschäftsfähigkeiten für die Registrierung bei GastroStart
 
 1. Identitätsverwaltung 
 • Der Benutzer legt Kennung und Credentials fest.
@@ -1642,7 +1642,7 @@ Die bisherigen Abschnitte bleiben auf der Ebene des Operating Models und der Arc
 Das Modell ist in drei Ebenen zu lesen:
 
 - *Unten das RIM, auf den Erfolgsfall verkürzt*: die vier Geschäftstransaktionen mit der Zustandskette der Finanzierung von #emph[neu] bis #emph[finanziert] sowie die beiden Geschäftsobjekte #emph[Finanzierung] und #emph[Gründungsvorhaben]. Die Rückläufe über #emph[unvollständig], #emph[abgelehnt] und #emph[abgebrochen] sind der Lesbarkeit zuliebe weggelassen; sie stehen vollständig in @fig-GTZ-finanzierung. Fachlich wird diese Ebene durch die Ressourcenzuordnung nicht angetastet --- das ist der Zweck der Trennung von RIM und RSM.
-- *Oben zwei Domänen*: in der Domäne #emph[Gastrostart] liegen die Komponenten #emph[Finanzierung] und #emph[Orientierung] mit ihren Datenobjekten #emph[Finanzierung] respektive #emph[Gründungsvorhaben]. Jede Komponente ist über eine gleichnamige Schnittstelle erreichbar, die dem Service #emph[AL- Finanzierung] beziehungsweise #emph[AL- Orientierung] zugewiesen ist. In der Domäne #emph[FINNOFLEET -- Partner] steht eine einzige Komponente, #emph[ELA Kredit], mit einer einzigen Schnittstelle: #emph[Tragbarkeit].
+- *Oben zwei Domänen*: in der Domäne #emph[GastroStart] liegen die Komponenten #emph[Finanzierung] und #emph[Orientierung] mit ihren Datenobjekten #emph[Finanzierung] respektive #emph[Gründungsvorhaben]. Jede Komponente ist über eine gleichnamige Schnittstelle erreichbar, die dem Service #emph[AL- Finanzierung] beziehungsweise #emph[AL- Orientierung] zugewiesen ist. In der Domäne #emph[FINNOFLEET -- Partner] steht eine einzige Komponente, #emph[ELA Kredit], mit einer einzigen Schnittstelle: #emph[Tragbarkeit].
 - *Dazwischen die Trace-Beziehungen*: die Services sind mit den Geschäftstransaktionen verbunden, die sie realisieren, die Datenobjekte mit den Geschäftsobjekten, deren Bestand sie führen. Sie sind die Nachweiskette zwischen den beiden Modellen und der Grund, warum sich zu jedem Element der Anwendungslandschaft die fachliche Herkunft angeben lässt.
 
 Vier Beobachtungen tragen die Architekturaussage:
@@ -1651,7 +1651,7 @@ Vier Beobachtungen tragen die Architekturaussage:
 
 2. *Integriert wird über Daten, nicht über Prozesse.* GastroStart meldet den Fall über die Schnittstelle #emph[Tragbarkeit] an und fragt anschliessend regelmässig nach dem Stand, bis die Prüfung abgeschlossen ist. Eine gemeinsame Prozesssteuerung über die Organisationsgrenze gibt es nicht: die Geschäftstransaktion #emph[Finanzierung prüfen] läuft auf der Partnerplattform von FINNOFLEET und nicht bei GastroStart.
 
-3. *Ein Bestand, nicht zwei.* Das Geschäftsobjekt #emph[Finanzierung] hat im RSM genau einen Bestand: das Datenobjekt #emph[Finanzierung] in der Domäne Gastrostart. Im organisationsübergreifenden Kontext könnte aus diesem einen Geschäftsobjekt durchaus mehr als ein Bestand entstehen --- dann wäre zu klären, welcher Partner den Fall führt und wie die Bestände abgeglichen werden. Hier fällt die Entscheidung bewusst anders: der Fall wird einmal geführt, FINNOFLEET greift über die Schnittstelle darauf zu und hält im Modell keine zweite Kopie. Wie viel das wert ist, zeigt der Rücklauf: weist die Prüfung das Gesuch als #emph[unvollständig] zurück, kehrt derselbe Fall in die Vorbereitung zurück und läuft die Kette erneut (siehe @fig-GTZ-finanzierung). Bei zwei Beständen wäre jeder dieser Rückläufe ein Abgleich zwischen den Partnern; bei einem Bestand ist er nur ein Zustandswechsel. Die interne Aktenführung von ELA Kredit ist Innensicht und in @fig-EA-ela-kredit dargestellt, nicht hier.
+3. *Ein Bestand, nicht zwei.* Das Geschäftsobjekt #emph[Finanzierung] hat im RSM genau einen Bestand: das Datenobjekt #emph[Finanzierung] in der Domäne GastroStart. Im organisationsübergreifenden Kontext könnte aus diesem einen Geschäftsobjekt durchaus mehr als ein Bestand entstehen --- dann wäre zu klären, welcher Partner den Fall führt und wie die Bestände abgeglichen werden. Hier fällt die Entscheidung bewusst anders: der Fall wird einmal geführt, FINNOFLEET greift über die Schnittstelle darauf zu und hält im Modell keine zweite Kopie. Wie viel das wert ist, zeigt der Rücklauf: weist die Prüfung das Gesuch als #emph[unvollständig] zurück, kehrt derselbe Fall in die Vorbereitung zurück und läuft die Kette erneut (siehe @fig-GTZ-finanzierung). Bei zwei Beständen wäre jeder dieser Rückläufe ein Abgleich zwischen den Partnern; bei einem Bestand ist er nur ein Zustandswechsel. Die interne Aktenführung von ELA Kredit ist Innensicht und in @fig-EA-ela-kredit dargestellt, nicht hier.
 
 4. *Die Orientierung schliesst die Kette.* Das Datenobjekt #emph[Gründungsvorhaben] liegt in der Komponente #emph[Orientierung], und der Service #emph[AL- Orientierung] ist mit der Transaktion #emph[Finanzierung zusagen] verbunden --- jener Transaktion, die als einzige der Phase auf zwei Geschäftsobjekte wirkt und das Gründungsvorhaben auf #emph[finanziert] setzt (siehe @tbl-GT-finanzierung-erhalten). Der Zustandswechsel über die Objektgrenze ist damit im RSM an genau der Stelle wieder auffindbar, an der er im RIM entstanden ist.
 
@@ -1679,7 +1679,7 @@ Folgt man den Rat der Literatur, so findet man folgende Passage:
 #fuehrung([*Coordination* calls for high levels of integration but little standardization of processes. Business units in a Coordination company share one or more of the following: customers, products, suppliers, and partners. The benefits of integration can include integrated customer service, cross-selling, and transparency across supply chain processes. @ross2006enterprise
 ])
 
-Gastrostart fällt somit unter dem sog. Operating Model "Coordination". 
+GastroStart fällt somit unter dem sog. Operating Model "Coordination". 
 Durch die hohe, clevere Datenintegration unter den aktiven Partner erlebt Amira eine "Façade" die weitgehende einheitlich und frei von Medienbrüchen ist, ähnlich wie wenn sie im Kundenbereich eines grossen Anbieters von Fernmeldediensten Unification-Modells aussieht. 
 Das hinter dem User Interface jedoch ein verschiedene, ad-hoc-Prozesse laufen könnten, bekommt Amira nur teilweise mit. 
 
