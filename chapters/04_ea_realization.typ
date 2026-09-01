@@ -24,18 +24,20 @@ Weiter werden die Geschäftstransaktion zu Geschäftsprozessen zusammengeführt 
 Im letzten Kapitel der Modellentwicklung beschreiben wir den Übergang vom RIM ins ressourcenspezifische Modell anhand der IDEAL Informationssystemarchitektur.
 
 == Geschäftsobjekte und die Identifikation deren relevanten Verhaltens (statt: Geschäftsobjekte und Geschäftstransaktionen)
+=== Vorgehen 
+In diesem ersten Teil der Realisierung des ressourcenunabhängigen Modells identifizieren wir die relevanten Geschäftsobjekte und dokumentieren deren Zustände und Geschäftstransaktionen pro Szenario, um die Lesbarkeit zu erhalten.
+Die entsprechenden Geschäftsprozesse sind ebenfalls modelliert, auch wenn sie später erklärt werden.
+Die Szenarien sind in @sec-szenarien-customer-journey beschrieben und werden einzeln aufbereitet. 
 
 === Identifizierte Geschäftsobjekte
 Um Geschäftsobjekte zu identifizieren hat sich die Gruppe mit der Struktur von Amiras Customer Journey auseinandergesetzt.
-Die Customer Journey haben wir in Szenarios aufgeteilt und in jedem Szenario ist ein Arbeitsschritt, der sich von anderen Arbeitsschritten abgrenzen lässt (vlg. @sec-szenarien-customer-journey).
+Die Customer Journey haben wir in Szenarios aufgeteilt und in jedem Szenario ist ein Arbeitsschritt, der sich von anderen Arbeitsschritten abgrenzen lässt.
 Arbeitsschritte resultieren in Ergebnissen oder bauen auf ihnen auf. Das Szenario: "Eine Quereinsteigerin möchte ein Unternehmen gründen.", baut also auf einem Gründungsvorhaben auf und resultiert idealerweise in einem Unternehmen. 
 Diese Ergebnisse dieses Vorgehen bilden die Grundlage für mögliche Geschäftsobjekte.
 Die folgende Abbildung zeigt ein mögliches Ergebnis aus dieser Vorgehensweise.
 
 
-In diesem ersten Teil der Realisierung des ressourcenunabhängigen Modells identifizieren wir die relevanten Geschäftsobjekte und dokumentieren deren Zustände und Geschäftstransaktionen pro Szenario, um die Lesbarkeit zu erhalten.
-Die entsprechenden Geschäftsprozesse sind ebenfalls modelliert, auch wenn sie später erklärt werden.
-Die Szenarien sind in @sec-szenarien-customer-journey beschrieben und werden einzeln aufbereitet. 
+
 
 
 
@@ -87,7 +89,7 @@ Für die Darstellung der Zustände verwenden wir das Symbol *Business Event*.
 In der Modellierung verwenden wir für die Zugriffsbeziehung von Geschäftsobjekt nach Zustand immer die "lesende" Variante. Dabei zeigt der Pfeil vom Geschäftsobjekt zum Zusand.
 
 === Orientierung<head-phase1-orientierung-1>
-
+#todo-action([Titel umschreiben - wie bei den anderen Szenarien])
 /*
 #autor-dvbern("Beitrag von Jan Sohnemann, DVBern", inhalt: [])*/
 
@@ -186,6 +188,7 @@ Die hier aufgezählten Zustände sind vollständig für alle Phasen der Customer
 ) <tbl-GO-Gründungsvorhaben>
 
 === Registrierung <head-phase2-registrierung>
+#todo-action([Titel umschreiben - wie die anderen Szenarien])
 /*
 #autor-dvbern("Beitrag von Jan Sohnemann, DVBern", inhalt: [])*/
 
