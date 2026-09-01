@@ -3,7 +3,7 @@
   theorie-anker, design-entscheid, stolperstein, frage, todo-action, fuehrung,
   autor-marker, autor-finnofleet, autor-transgourmet, autor-verwaltung, autor-dvbern, mit-lead
 )
-
+#pagebreak()
 = Die Realisierung des Resource Independent Model
 /*in Anlehnung an Kapitel 3.4.5. vom Spichiger-Skript*/
 == Allgemeines
@@ -21,6 +21,8 @@ Im letzten Kapitel der Modellentwicklung beschreiben wir den Übergang vom RIM i
 
 == Geschäftsobjekte und Geschäftstransaktionen
 
+#todo-action([giovanna: mit Kapitel 4.3. vergleichen und fusionieren])
+
 Um Geschäftsobjekte zu identifizieren hat sich die Gruppe mit der Struktur von Amiras Customer Journey auseinandergesetzt.
 Die Customer Jouney haben wir in Szenarios aufgeteilt und in jedem Szenario. Jedes Szenario ist ein Arbeitsschritt in der Customer Journey, der sich von anderen Arbeitsschritten abgrenzen lässt.
 Arbeitsschritte resultieren in Ergebnissen oder bauen auf ihnen auf. Das Szenario: "Eine Quereinsteigerin möchte ein Unternehmen gründen.", baut also auf einem Gründungvorhaben auf und resultiert idealerweise in einem Unternehmen. Diese Ergebnisse bilden die Grundlage für mögliche Geschäftsobjekte.
@@ -31,14 +33,17 @@ Die folgende Abbildung zeigt ein mögliches Ergebnis aus dieser Vorgehensweise.
   caption: [Archimate Modell der Customer Journey von Amira und erste Iteration für die Identifikation der Geschäftsobjekte]
 ) <fig-customer-journey-view>
 
+#frage([können wir diesen Absatz weglassen?])
 Die Szenarios lassen sich Geschäftstransaktionen darstellen. Geschäftstransaktionen werden durch Zustände von Geschäftsobjekten ausgelöst und sie verändern die Zustände der gleichen oder anderer Geschäftsobjekte.
 In der Modellierung verwenden wir zur Darstellung der Beziehnung "löst aus" immer die "Auslöser-Beziehung", die vom Zustand zur Geschäftstransaktion zeigt, beziehungsweise von der Geschäftstransaktion zum Zustand, wenn dieser das Resultat der Transaktion ist.
 Für die Darstellung der Zustände verwenden wir das Symbol *Business Event*.
 In der Modellierung verwenden wir für die Zugriffsbeziehung von Geschäftsobjekt nach Zustand immer die "lesende" Variante. Dabei zeigt der Pfeil vom Geschäftsobjekt zum Zusand.
 
-=== Orientierung <head-phase1-orientierung-1>
+=== Orientierung<head-phase1-orientierung-1>
 
-#autor-dvbern("Beitrag von Jan Sohnemann, DVBern", inhalt: [])
+#todo-action([unter Kapitel 4.3. verschieben! ])
+/*
+#autor-dvbern("Beitrag von Jan Sohnemann, DVBern", inhalt: [])*/
 
 In @head-scenarios-orientation haben wir einen Einstieg in die erste Phase der Customer Journey beschrieben. Hier wollen wir den Ablauf der Phase nun vollständig beschreiben.
 
@@ -139,8 +144,10 @@ Die hier aufgezählten Zustände sind vollständig für alle Phasen der Customer
 ) <tbl-GO-Gründungsvorhaben>
 
 === Registrierung <head-phase2-registrierung>
+/*
+#autor-dvbern("Beitrag von Jan Sohnemann, DVBern", inhalt: [])*/
 
-#autor-dvbern("Beitrag von Jan Sohnemann, DVBern", inhalt: [])
+#todo-action([unter Kapitel 4.3. verschieben! ])
 
 Der Gründungsprozess lässt sich höchstwahrscheinlich nicht in einer Sitzung abschliessen. 
 Nachdem die GründerInnen mit dem Abschluss der ersten Phase eine Übersicht zu ihren Rechten, Pflichten und Möglichkeiten haben, werden sie in den meisten Fällen Gesuche stellen müssen.
