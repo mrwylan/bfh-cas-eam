@@ -248,7 +248,7 @@ Die folgende @tbl-szenario-registrierung kennen die Leser schon aus dem letzten 
 === Amira gründet ihr Unternehmen
 
 Mit der Registrierung können die Benutzer auf den digitalen Begleiter für die Gründung des Unternehmens zugreifen. 
-Aufgrund der Informationen aus dem Gründungsvorhaben können die Benutzer der Plattform durch Anweisungen, Empfehlungen und vorgefertigte Texte geführt werden, mit denen sie ohne teure Beratung selber die Unterlagen für die gewünschte Firmengründung zusammenstellen oder gar erstellen. 
+Aufgrund der Informationen aus der Orientierung können die Benutzer der Plattform durch Anweisungen, Empfehlungen und vorgefertigte Texte geführt werden, mit denen sie ohne teure Beratung selber die Unterlagen für die gewünschte Firmengründung zusammenstellen oder gar erstellen. 
 Die Informationen auf der Plattform helfen den Benutzern dabei, sich entlang der Gründung ihres Unternehmens zu orientieren und der Sinn hinter der Notwendigkeit hinter der mühseligen Sammlung von Ausweisen und Dokumenten. 
 
 Durch die enge Begleitung und das Abnehmen von einfachen Aufgaben und die Erfolgserfahrung mit der Anzeige des Fortschrittes können die Kunden bestärkt werden und zum Abschluss des komplizierten Prozesses motiviert werden. 
@@ -546,6 +546,7 @@ Für die fünf Phasen der Customer Journey: Orientierung, Registrierung, Bewilli
 Frage 2: sind die folgenden Kapiteln am richtigen Ort? Vielleicht sollten Sie unter dem RSM verfrachet werden?)])
 
 ==== Orientierung
+
 Für diese Phase wird eine kantonale Regelmatrix benötigt.
 Diese Matrix verknüpft alle Kantone mit den dort geltenden Regeln zur Gründung eines Gastronomiebetriebes.
 Die GastroStart-Benutzer brauchen also eine Möglichkeit, den sie betreffenden Kanton auszuwählen und die für sie geltenden Regeln angezeigt zu bekommen.
@@ -555,7 +556,8 @@ Die Kantone brauchen eine Möglichkeit, Abweichungen in ihrem Regelwerk, die sic
 Die Registrierung erfordert, dass jeder Benutzer sich ein Profil im System erstellt, mit dem sie ihre Gründungsprozesse speichern, einsehen und verwalten können.
 Das System muss sicherstellen, dass jeder Benutzer authentifiziert und autorisiert und jeder Gründungsprozess mit genau einem Benutzerprofil verknüpft wird.
 
-==== Bewilligung
+==== Bewilligung<sec-rolle-dv-bern-bewilligung>
+#frage([\@jan: gio möchte gerne das bild in deinem kopf verstehen - Frage 2: kann die Unternehmensgründung dazugenommen werden? ])
 Die Bewilligung erfordert Möglichkeiten, den für die Betriebsgründung notwendigen Behörden alle benötigten Daten zur Verfügung stellen zu können.
 Das beinhaltet das Anbinden externer APIs, wenn vorhanden, oder Darstellung und Verwaltung der entsprechenden Dokumente, sowie Übertragungs- und Speichermöglichkeiten für diese.
 Zudem soll den Benutzern der Status der einzelnen Schritte angezeigt (z.B. offen, bearbeitet, eingereicht, bewilligt), sowie ein Benachrichtigungssystem für die Kommunikation der Beteiligten untereinander, sowie von Statusupdates implementiert werden.
@@ -592,8 +594,11 @@ Als letzter Player im Joint Venture bringt Transgourmet die *Lieferfähigkeit* e
 Als führender Schweizer Grosshändler für Gastronomie und Hotellerie ist Transgourmet der Partner, der Amira nach der Gründung ihres Unternehmens mit den notwendigen Lebensmitteln und Zutaten beliefert. 
 Die Eröffnung eines Kundenkontos bei Transgourmet ist die letzte Phase der Customer Journey und steht am Übergang von der Gründungsphase in den operativen Betrieb. 
 
-=== Öffentliche Verwaltung als stiller Partner
+=== Öffentliche Verwaltung als Interoperabilitätspartner
 
 Aus Sicht von Amira und somit auch von GastroStart wird die öffentliche Verwaltung - ohne besondere Rücksicht auf die jeweilige Ebene - in ihrer Rolle als Interoperabilitätspartner abgebildet und behandelt.
+Dies, weil die öffentliche Hand ihre hoheitlichen Handlungen nicht im Sinne eines wirtschaftlichen Angebots wie die anderen Mitglieder der Joint Venture zur Verfügung stellt. 
+Diese hoheitlichen Akten (bspw. der Eintrag im Handelsregister oder die Erteilung einer Betriebsbewilligung) und die Fähigkeit, diese zu vollziehen, sind auf der einen Seite ausserhalb des Wirkungsbereichs von GastroStart anzusiedeln. 
+Auf der anderen Seite bildet GastroStart eine spezialisierte Schnittstelle für die Vorbereitung hin auf diesen Akten. 
 
 

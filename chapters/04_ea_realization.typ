@@ -1069,7 +1069,7 @@ Schwierigkeiten bat es, Abstand von der gewohnte Implementierungsebene zu halten
 ) <fig-obs-bewilligung-erhalten>
 
 
-== Dritte Iteration: Geschäftsprozesse und Vollständigkeit des bisherigen Modells
+== Abstraktion: Geschäftsprozesse und Geschäftsfähigkeiten
 
 Auf den folgenden Seiten wollen die die Modelle aus den letzten Abschnitten noch einmal aufgreifen und um Geschäftsfähigkeiten erweitern. 
 Damit vervollständigen wir unser RIM und bilden die Grundlage für den Einstieg ins ressourcenspezifische Modell (RSM). 
@@ -1256,6 +1256,7 @@ Die Geschäftsfähigkeit, die im Szenario *Orientierung auf der Webseite von Gas
 ) <fig-GF_Behördeninteraktion>
 
 === Geschäftsfähigkeiten Finanzierung erhalten
+#todo-action([sorry, my bad: can you merge this chapter with the one about "Geschäftsprozesse" in the section above?])
 
 Die übergeordnete Geschäftsfähigkeit lautet *Gründungsvorhaben finanzieren*. Sie wird im Joint Venture arbeitsteilig getragen: FINNOFLEET verantwortet den Finanzierungskern --- Prüfung, Entscheid und Kontobereitstellung ---, während die kundenzugewandte Antragserfassung bei GastroStart liegt. Die Fähigkeit zerfällt in vier Teilfähigkeiten:
 

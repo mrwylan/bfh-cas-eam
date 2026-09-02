@@ -11,6 +11,7 @@ Die vier ungleichen Gefährten stellen sich vor.
 Zusammen werden sie sich auf den Weg machen, ein gemeinsames Unternehmen zu entwerfen und zu modellieren. 
 Jedes Mitglied stellt sein Unternehmen kurz vor. 
 
+#todo-action([Hint \@alle: überlegen, ob den Teil mit den Heruasforderungen in EA mit dem eigenen Unternehmen mit den Ausführungen zum OM der eigenen Firma gemerged werden kann])
 
 == Transgourmet
 #autor-transgourmet([Beitrag von Jakob Albrecht])
