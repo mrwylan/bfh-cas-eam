@@ -312,7 +312,7 @@ Da die Benutzer bereits seit der Orientierung wissen, dass am gewünschten Stand
       [Integrierte Anleitung für jeden Kanton; Status-Tracking; expliziter Fallback auf Papier, wo keine API verfügbar ist.],
     )
   ]
-) <tbl-szenario-unternhemen-gründen>
+) <tbl-szenario-unternehmen-gruenden>
 
 
 === Amira erhält die Bewilligung
@@ -324,7 +324,7 @@ Da die Benutzer bereits seit der Orientierung wissen, dass am gewünschten Stand
  #figure(
   image("../assets/cj_verträge.svg", width: 70%),
   caption: [Archimate Szenario "Amira erhält die Bewilligung"]
-) <fig-cj-verträge>
+) <fig-cj-bewilligung>
 
 
 
@@ -378,7 +378,7 @@ Da die Benutzer bereits seit der Orientierung wissen, dass am gewünschten Stand
       [Integrierte Anleitung für jeden Kanton; Status-Tracking; expliziter Fallback auf Papier, Unterstützung bei der Herstellung von Selbstdeklarationen.],
     )
   ]
-) <tbl-szenario-unternhemen-gründen>
+) <tbl-szenario-bewilligung>
 
 === Amira erhält eine Finanzierung
 
@@ -388,7 +388,7 @@ Da die Benutzer bereits seit der Orientierung wissen, dass am gewünschten Stand
  #figure(
   image("../assets/cj_verträge.svg", width: 70%),
   caption: [Archimate Szenario "Amira erhält die Finanzierung"]
-) <fig-cj-verträge>
+) <fig-cj-finanzierung>
 
 
 #figure(

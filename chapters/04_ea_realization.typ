@@ -56,7 +56,7 @@ Die folgende Abbildung zeigt ein mögliches Ergebnis aus dieser Vorgehensweise.
  #figure(
   image("../assets/Customer Journey View.svg", width: 60%),
   caption: [Archimate Modell der Customer Journey von Amira und erste Iteration für die Identifikation der Geschäftsobjekte]
-) <fig-customer-journey-view>
+) <fig-cj-view-iteration1>
 
 In den nächsten Abschnitten folgen wir das empfohlene Vorgehen und beschreiben für jedes Szenario das Geschäftsobjekt, seine Zustände sowie die Transaktionen, die diese hervorrufen:
 
@@ -189,6 +189,13 @@ Die hier aufgezählten Zustände sind vollständig für alle Phasen der Customer
   ]
 ) <tbl-GO-Gründungsvorhaben>
 
+@fig-GOGruendungsvorhaben zeigt das Geschäftsobjekt mit seinen sieben Zuständen.
+
+#figure(
+image("../assets/GOGruendungsvorhaben.svg", width: 50%),
+caption: [Geschäftsobjekt Gründungsvorhaben und dessen Zustände]
+) <fig-GOGruendungsvorhaben>
+
 #todo-action([Geschäftstransaktionen fehlen - nachführen - wie im Abschnitt Registrierung ])
 
 === Registrierung <head-phase2-registrierung>
@@ -269,6 +276,13 @@ Die Tabelle entspricht dem Aufbau der Tabelle: @tbl-GO-Gründungsvorhaben aus Ab
     )
   ]
 ) <tbl-GO-Kundenkonto>
+
+@fig-GOKundenkonto zeigt das Geschäftsobjekt mit seinen vier Zuständen.
+
+#figure(
+image("../assets/GOKundenkonto.svg", width: 50%),
+caption: [Geschäftsobjekt Kundenkonto und dessen Zustände]
+) <fig-GOKundenkonto>
 
 Das Löschen eines Kundenkontos darf nicht in jedem Fall zu dessen Verschwinden führen. Erst wenn alle Geschäftstransaktionen, die mit diesem Konto in Verbindung stehen, abgeschlossen sind, ist eine endgültige Löschung möglich — und auch nur dann, wenn ausstehende Verbindlichkeiten der GründerInnen auch ausserhalb der Plattform beglichen werden können. 
 Das Löschen eines Kundenkontos versetzt dieses also im Rahmen dieses Modells zunächst nur in den Zustand *inaktiv*, was bedeutet, dass bereits gestartete Transaktionen abgebrochen werden können - wenn möglich, und dass keine neuen Transaktionen gestartet werden können.
@@ -455,12 +469,12 @@ Nachfolgend wird auf die einzelnen Elemente der Grafik eingegangen.
   ]
 ) <tbl-GO-Unternehmen>
 
-/*
+@fig-GOUnternehmen zeigt das Geschäftsobjekt Unternehmen mit seinen acht Zuständen.
+
 #figure(
 image("../assets/GOUnternehmen.svg", width: 50%),
 caption: [Geschäftsobjekt Unternehmen und dessen Zustände]
 ) <fig-GOUnternehmen>
-*/
 
 /*
 #figure(
@@ -603,11 +617,12 @@ Die folgende Abbildung stellt die Zusammenhänge der Geschäftsobjekte, Zuständ
 Nachfolgend wird auf die einzelnen Elemente der Grafik erklärt:
 
 ==== Geschäftsobjekt und Zustände
-/*#figure(
+@fig-GOBewilligung zeigt das Geschäftsobjekt Bewilligung mit seinen sieben Zuständen.
+
+#figure(
 image("../assets/GOBewilligung.svg", width: 50%),
 caption: [Geschäftsobjekt Bewilligung und dessen Zustände]
 ) <fig-GOBewilligung>
-*/
 
 #figure(
   caption: [Geschäftsobjekt Bewilligung],
@@ -742,12 +757,12 @@ Nachdem Amira die Betriebsbewilligung erhalten hat, benötigt sie Kapital für d
 
 /*hier beginnt der kopierte Teil*/
 Das Geschäftsobjekt *Finanzierung* bündelt sämtliche Informationen rund um Amiras Finanzierungsgesuch --- von der Anfrage über die Bonitätsprüfung durch FINNOFLEET bis zum Kreditentscheid. Es ist das informationstragende Artefakt, das den Finanzierungsfall durch seinen Lebenszyklus führt und die Zustandsübergänge dokumentiert.
-/*
+@fig-GOFinanzierung zeigt das Objekt mit seinen sieben Zuständen.
+
 #figure(
 image("../assets/GOFinanzierung.svg", width: 50%),
 caption: [Geschäftsobjekt Finanzierung und dessen Zustände]
 ) <fig-GOFinanzierung>
-*/
 
 #figure(
   caption: [Geschäftsobjekt Finanzierung],
@@ -974,7 +989,7 @@ transaktion],
  #figure(
   image("../assets/GrpA_GP_GastroStart_Albrecht_Jakob.svg", width: 80%),
   caption: [Archimate Modell der Customer Journey von Amira]
-) <fig-customer-journey-view>
+) <fig-cj-gesamtprozess>
 
 #stolperstein([
   Die Kundensicht ständig zu behalten und Abstand vom eigenen Fachbereich zu halten ist den Gefährten nicht immer gelungen. 
