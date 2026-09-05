@@ -77,7 +77,7 @@ Bezug zur Customer Journey. (Skizze)
 3. Darstellen der wesentlichsten Geschäftsobjekte und Geschäftsprozesse mit Bezug zu 
 den Szenarien. (Skizze)
 */
-=== Aus Phasen werden Szenarien
+=== Aus Phasen werden Szenarien <aus-phasen-werden-szenarien>
 
 
 #fuehrung([Als Standardszenarien wird eine möglichst kleine Anzahl von Geschichten gewählt, die die darzustellende Funktionalität möglichst vollständig umfasst. Irrelevantes soll weggelassen werden, damit die Geschichten auch möglichst kurz bleiben. @Spichiger2026GFbUA, S. 70])
@@ -105,7 +105,7 @@ Und schliesslich bietet jede Phase *Chancen*, die die *Bedürnisse* befriedigen 
 
 === Amira orientiert sich <head-scenarios-orientation>
 /*
-#autor-dvbern("Beitrag von Jan Sohnemann, DVBern", inhalt: [])*/
+#autor-dvbern("Beitrag von Jan Sohnemann, DV Bern", inhalt: [])*/
 
 Unser Angebot soll sich insbesondere an jede GründerInnen richten, die noch keine Erfahrung mit Unternehmensgründungen haben.
 Und wir gehen davon aus, dass viele Betroffene schon eine konkrete Idee dessen haben, was sie Anbieten möchten.
@@ -117,7 +117,7 @@ Weniger wahrscheinlich ist, dass die, zur Betriebsbewilligung notwendigen Detail
 Zum Beispiel ist der Ort der Betriebsstätte auch auf nationaler Ebene sehr von Bedeutung, da es kantonale Unterschiede bei den Bewilligungsverfahren und bei der Regulierung gibt.
 Das Ausarbeiten der Details des Gründungsvorhabens nennen wir "Orientierung".
 
-
+Die folgende Tabelle fasst die wesentlichen Merkmale dieser Phase der Customer-Jouney noch einmal zusammen. Ihr Aufbau ist am Ende der Einführung dieses Hauptkapitels beschrieben (@aus-phasen-werden-szenarien).
 
 
 #figure(
@@ -175,7 +175,7 @@ Das Ausarbeiten der Details des Gründungsvorhabens nennen wir "Orientierung".
 
 === Amira registriert sich 
 
-/*#autor-dvbern("Beitrag von Jan Sohnemann, DVBern", inhalt: [])*/
+/*#autor-dvbern("Beitrag von Jan Sohnemann, DV Bern", inhalt: [])*/
 
 Im Anschluss an die Orientierung sollte eine Registrierung erfolgen. 
 Das Ziel der Registrierung ist es, das Gründungsvorhaben auf der Plattform mit einem Konto zu verknüpfen, sodass es gespeichert, den Erstellenden exklusiv zugänglich gemacht und zu einem späteren Zeitpunkt weitergeführt werden kann.
@@ -185,7 +185,7 @@ Wenn die Orientierungsphase erfolgreich war und das auslösende Bedürfnis befri
 
 Die folgende  @fig-customer-journey-registrierung zeigt einen den Teil des Szenarios als Modell in Archimate, der die Registrierung auslöst.
 An dieser Stelle des Entwicklungsprozesses war die Bedeutung der Phase "Orientierung" noch nicht ersichtlich.
-Tatsächlich verbirgt sich dahinter ein komplexerer Prozess, den wir - nach der kurzen Einführung im letzten Kapitel - in späteren Kapiteln aufgreifen.
+Tatsächlich verbirgt sich dahinter ein komplexerer Prozess, den wir - nach der kurzen Einführung im letzten Kapitel - in späteren Kapiteln nochmals detaillierter aufgreifen.
 
  #figure(
   image("../assets/cj_registrierung.svg", width: 70%),
@@ -193,8 +193,7 @@ Tatsächlich verbirgt sich dahinter ein komplexerer Prozess, den wir - nach der 
 ) <fig-customer-journey-registrierung>
 
 
-#todo-action([JAN: bitte die folgenden Sätze umformulieren, ich habe die Erklärung zur Tabelle im vorgehenden Kapitel verschoben, da sie für alle Szenarien gelten.(sorry)])
-Die folgende @tbl-szenario-registrierung kennen die Leser schon aus dem letzten Kapitel. 
+Die folgende Tabelle fasst die wesentlichen Merkmale dieser Phase der Customer-Jouney noch einmal zusammen. Ihr Aufbau ist am Ende der Einführung dieses Hauptkapitels beschrieben (@aus-phasen-werden-szenarien).
 
 /*Wir wiederholen den Aufbau an dieser Stelle und in den Folgenden Kapiteln nicht erneut und verweisen auf @head-scenarios-orientation.*/
 

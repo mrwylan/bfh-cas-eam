@@ -90,10 +90,9 @@ In der Modellierung verwenden wir zur Darstellung der Beziehnung "löst aus" imm
 Für die Darstellung der Zustände verwenden wir das Symbol *Business Event*.
 In der Modellierung verwenden wir für die Zugriffsbeziehung von Geschäftsobjekt nach Zustand immer die "lesende" Variante. Dabei zeigt der Pfeil vom Geschäftsobjekt zum Zusand.
 
-=== Orientierung<head-phase1-orientierung-1>
+=== Amira orientiert sich <head-phase1-orientierung-1>
 
-/*
-#autor-dvbern("Beitrag von Jan Sohnemann, DVBern", inhalt: [])*/
+#autor-dvbern("Beitrag von Jan Sohnemann, DV Bern", inhalt: [])
 
 In @head-scenarios-orientation haben wir einen Einstieg in die erste Phase der Customer Journey beschrieben. Hier wollen wir den Ablauf der Phase nun vollständig beschreiben.
 
@@ -132,7 +131,7 @@ Die hier beschriebene Variante liest sich als Happy Path — also die erfolgreic
 Sicherlich ist nicht jedes Gründungsvorhaben realisierbar, und der hier beschriebene Prozess kann durchaus komplexer werden. 
 Dass das Gründungsvorhaben nicht realisierbar ist, ist allerdings auch eine Art Orientierung.
 Wie im zweiten Absatz dieses Abschnitts angemerkt, spielt das Gründungsvorhaben in allen Phasen der Customer Journey eine entscheiden Rolle.
-Die folgende @tbl-GO-Gründungsvorhaben gibt darum noch mal einen Überblick über das Objekt.
+Die folgende Tabelle fasst die wesentlichen Kriterien für dieses wichtige Geschäftsobjekt zusammen.
 Für ein besseres Verständnis wurden hier auch einige Attribute (im Text auch als "Eigenschaften" bezeichnet) angegeben.
 Die hier aufgezählten Zustände sind vollständig für alle Phasen der Customer Journey und auch wenn deren Einfürung noch offen ist, tragen sie an dieser Stelle aus unserer Sicht zum Verständnis bei.
 
@@ -189,12 +188,54 @@ Die hier aufgezählten Zustände sind vollständig für alle Phasen der Customer
   ]
 ) <tbl-GO-Gründungsvorhaben>
 
-#todo-action([Geschäftstransaktionen fehlen - nachführen - wie im Abschnitt Registrierung ])
+Und schliessich geben wir in der nächsten Tabelle einen Überblick über die hier erwähnten Geschäftstransaktion. Bei der Auflistung der Zustandsübergänge beschränken wir uns auf die Zustände des Gründungsvorhabens.
 
-=== Registrierung <head-phase2-registrierung>
+#figure(
+  caption: [Geschäftstransaktionen: Prozess «sich orientieren],
+  block(
+    width: 100%,
+    radius: 6pt,
+    clip: true,
+    stroke: 0.5pt + luma(225),
+  )[
+    #block(
+      width: 100%,
+      fill: luma(70),
+      inset: (x: 10pt, y: 7pt),
+      below: 0pt,
+    )[
+      #grid(
+        columns: (3.8cm, 1fr, 3.2cm),
+        gutter: 10pt,
+        text(fill: white, weight: "bold", size: 0.95em)[Geschäfts-\
+transaktion],
+        text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
+        text(fill: white, weight: "bold", size: 0.95em)[Zustands-\
+übergang],
+      )
+    ]
+    #set par(justify: false)
+    #table(
+      columns: (3.8cm, 1fr, 3.2cm),
+      inset: (x: 10pt, y: 7pt),
+      stroke: (x: none, y: 0.5pt + luma(232)),
+      fill: (x, y) => if calc.odd(y) { luma(250) } else { white },
+      align: (left, left, left),
 
-/*
-#autor-dvbern("Beitrag von Jan Sohnemann, DVBern", inhalt: [])*/
+      [Standort festlegen],
+      [Die GründerIn legt den Standort ihres Gründungsvorhabens fest. Im Rahmen dieser Arbeit sind diese Standorte die 26 Schweizer Kantone.],
+      [initiiert → lokalisiert],
+
+      [Anforderungen ermitteln],
+      [Aus dem Kantonsanforderungskatalog, der durch die Standortfestlegung bestimmt wird, werden die, für das jeweilige Gründungsvorhaben wesentlichen Kriterien ermittelt.],
+      [lokalisiert → orientiert]
+    )
+  ]
+) <tbl-GT-sich-registrieren>
+
+=== Amirta registriert sich <head-phase2-registrierung>
+
+#autor-dvbern("Beitrag von Jan Sohnemann, DV Bern", inhalt: [])
 
 
 Der Gründungsprozess lässt sich höchstwahrscheinlich nicht in einer Sitzung abschliessen. 
@@ -299,7 +340,7 @@ Die folgende @fig-gtz-registrierung zeigt das Geschäftsobjekt *Kundenkonto* und
   caption: [Zustandsübergänge des Kundenkontos im Szenario "Sich registrieren"]
 ) <fig-gtz-registrierung>
 
-#todo-action([jan: noch ein wörtchen als übergang zu dieser Tagbelle?])
+Die folgende Tabelle fasst die hier erwähnten Geschäftstransaktion noch einmal zusammen.
 
 #figure(
   caption: [Geschäftstransaktionen: Prozess «sich registrieren»],
@@ -334,16 +375,29 @@ transaktion],
       align: (left, left, left),
 
       [Konto anlegen],
-      [Die GründerIn erfasst ihre Angaben und legt ein Kundenkonto an, das mit ihrem Gründungsvorhaben verknüpft wird.],
-      [– → aktiv],
+      [Die GründerIn legt ein Kundenkonto an, mit dem sie auf der Plattform identifiziert und autorisiert werden kann. Das Kundenkonto wird mit ihrem Gründungsvorhaben verknüpft.],
+      [– → registriert],
 
       [Konto aktualisieren],
-      [Die GründerIn passt ihre Kontoangaben an (z. B. Postanschrift, Telefonnummer). Betroffene Prozesse oder Behörden werden über die Änderung informiert.],
-      [aktiv → aktualisiert],
+      [Die GründerIn aktualisiert ihre persönlichen oder Zugangsdaten (z. B. Postanschrift, E-Mailadresse, Passwort).],
+      [registriert → aktualisiert],
 
       [Konto löschen],
-      [Das Konto wird deaktiviert, sobald alle damit verbundenen Geschäftstransaktionen abgeschlossen und ausstehende Verbindlichkeiten beglichen sind. Bereits gestartete Transaktionen können abgebrochen werden, neue können nicht mehr gestartet werden.],
-      [aktiv → inaktiv],
+      [Das Konto wird deaktiviert. Bereits gestartete Transaktionen können abgebrochen werden, wenn möglich. Neue Transaktionen können nicht mehr gestartet werden.],
+      [
+        registriert → inaktiv,
+        aktualisiert → inaktiv
+      ],
+      [Kunde anmelden],
+      [Der Benutzer, hier der/die GründerIn als Kunde, identifiziert sich gegenüber der Plattform (durch Eingabe von Benutzername und Passwort z.B.) und wird vom System autorisiert.],
+      [
+        abgemeldet → angemeldet
+      ],
+      [Kunde abmelden],
+      [Der Benutzer, hier der/die GründerIn als Kunde, beendet seine Sitzung auf der Plattform. Zugriffe auf das Kundenkonto sind in dieser Benutzerrolle ohne erneute Anmeldung nicht mehr möglich.],
+      [
+        angemeldet → abgemeldet
+      ],
     )
   ]
 ) <tbl-GT-sich-registrieren>
@@ -1006,25 +1060,25 @@ Auf der Basis der In- und Outputs der Geschäftstransaktionen werden für jeden 
 
 === Geschäftsprozesse und Geschäftsfähigkeiten für die Orientierung des Gründungsvorhabens
 
-#autor-dvbern("Beitrag von Jan Sohnemann, DVBern", inhalt: [])
+#autor-dvbern("Beitrag von Jan Sohnemann, DV Bern", inhalt: [])
 
 Greifen wir noch einmal das Modell in @fig-GTZ-orientierung aus @head-phase1-orientierung-1 auf. Bei der Orientierung sollte das Gründungsvorhaben definiert und die zur Realisierung notwendigen Schritte identifiziert werden. 
 Realisierung heisst im Rahmen der Orientierung "Bewilligung", also die, durch die zuständigen Behörden erteilte Erlaubnis, den Betrieb aufnehmen zu dürfen.
 Eine Bewilligung ist noch kein Garant für ein erfolgreiches Unternehmen.
 Diesem Aspekt können wir uns im Rahmen dieser Arbeit aber nicht vollumfänglich widmen.
 Die zur Bewilligung notwendigen Schritte - wir bezeichnen sie im folgenden als "Bewilligungskriterien" - ergeben sich aus dem Wissen heraus, welche das sind.
-Dieses Wissen muss erarbeitet und gepflegt werden. Das erfordert Ressourcen und resultiert in einer Fähigkeit, nämlich *regulatorisches Wissen verwalten*.
+Dieses Wissen muss erarbeitet und gepflegt werden. Das erfordert Ressourcen und resultiert in einer Fähigkeit, nämlich *Regulatorisches Wissen*.
 Dieses Wissen ist in den Geschäftsobjekten *Digitale Regelmatrix* und *Kantonsanforderungskatalog* abgelegt.
 Da nicht alle Bewilligungskriterien für jedes Gründungsvorhaben relevant sind, ist es für die GründerInnen vorteilhaft, ihren konkreten Bedarf zu kennen.
-Diesen Bedarf aus allen möglichen Bewilligungskriterien ermitteln zu können resultiert in einer weiteren Geschäftsfähigkeit, nämlich *Bewilligungsbedarf ermitteln*.
+Diesen Bedarf aus allen möglichen Bewilligungskriterien ermitteln zu können resultiert in einer weiteren Geschäftsfähigkeit, nämlich *Bewilligungsbedarf*.
 Und schliesslich muss dieser Bedarf so aufbereitet werden, dass die GründerInnen ihn problemlos erfüllen können.
-Der ganze Prozess resultiert also in der Geschäftsfähigkeit *Gründungsorientierung bereitstellen*.
-Das kling zunächst abstakt und man könnte argumentieren, dass die zuvor genannten Geschäftsfähigkeiten *regulatorisches Wissen verwalten* und *Bewilligungsbedarf ermitteln* in dieser Fähigkeit vereint werden können.
+Der ganze Prozess resultiert also in der Geschäftsfähigkeit *Gründungsorientierung*.
+Das kling zunächst abstakt und man könnte argumentieren, dass die zuvor genannten Geschäftsfähigkeiten *Regulatorisches Wissen* und *Bewilligungsbedarf* in dieser Fähigkeit vereint werden können.
 Wir würden argumentieren, dass das Bereitstellen dieser Orientierung, als das für den Kunden (Gründer/in) sichtbare Ergebnis, von besonderer Bedeutung ist und besonderer Aufmerksamkeit bedarf.
 Man könnte den Kunden an dieser Stelle entwerder die - wie in @head-phase1-orientierung-1 beschrieben - ausgefüllte Regelmatrix überlassen.
 Unser Fokus wäre allerdings, diese Matix in eine Form zu übersetzten, die ein geringes Risko der Überforderung hat, die beherrschbar und ermutigend erscheint.
 Wir wollen schliesslich möglichst viele Kunden durch alle Phasen der Customer Jouney auf unserer Plattform begleiten.
-Das zu realisieren, verbirgt sich also hinter der Geschäftsfähigkeit *Gründungsorientierung bereitstellen*.
+Das zu realisieren, verbirgt sich also hinter der Geschäftsfähigkeit *Gründungsorientierung*.
 
 In @fig-bp-and-bc-phase1 sind neben der Einführung der Geschäftsfähigkeiten auch die beiden Geschäftstransaktion *Standort festlegen* und *Anforderungen ermitteln* in einem Geschäftsprozess aggregiert.
 Diesen Prozess haben wir naheliegenderweise *Gründungsvorhaben orientieren* genannt. 
@@ -1036,7 +1090,7 @@ Diesen Prozess haben wir naheliegenderweise *Gründungsvorhaben orientieren* gen
 
 === Geschäftsprozesse und Geschäftsfähigkeiten für die Benutzer-Registrierung bei GastroStart
 
-#autor-dvbern("Beitrag von Jan Sohnemann, DVBern", inhalt: [])
+#autor-dvbern("Beitrag von Jan Sohnemann, DV Bern", inhalt: [])
 
 In @head-phase2-registrierung haben wir den Zweck der Einführung eines Kundenkontos beschrieben und in @fig-gtz-registrierung die Zustandsübergänge dieses Geschäftsobjektes erörtert. 
 Wir haben ausserdem die drei Geschäftstransaktionen *Konto anlegen*, *Konto aktualisieren* und *Konto löschen* identifiziert, welche Einfluss auf das Kundenkonto nehmen.
@@ -1049,7 +1103,7 @@ Da wir uns hier noch im RIM befinden, möchten wir nicht zu sehr in Detail gehen
 - Verschlüsselung sensibler Daten bei der Übertragung.
 - Schützen sensibler Daten vor unberechtigtem Zugriff.
 Schützenswerte, beziehungsweise sensible Daten fassen wir unter dem Begriff "Kundendaten" zusammen.
-Und die für den Umgang mit diesen notwendige Geschäftsfähigkeit nennen wir *Kundendaten verwalten*.
+Und die für den Umgang mit diesen notwendige Geschäftsfähigkeit nennen wir *Kundendaten*.
 
 Das letzte Beispiel, das Schützen der Daten, führt uns zu einer weiteren Geschäftsfähigkeit.
 Wenn wir unberechtige Zugriffe verhindern wollen, wie setzen wir das um?
@@ -1065,10 +1119,10 @@ Und zwar in der Zeit von seiner Anmeldung bis zu seiner Abmeldung.
 Autorität bedeutet hier eine definierte Anzahl von Rechten auszuüben.
 So haben z.B. alle GründerInnen das Recht ihre Gründungsvorhaben abzubrechen.
 GründerInnen sind aber nicht die einzigen Benutzer des Systems.
-Ein Mitarbeiter der Verwaltung, der das Ergebnism eines Bewillungungsverfahrens für ein Gründungsvorhaben eintägt, darf dieses nicht abbrechen.
+Ein Mitarbeiter der Verwaltung, der das Ergebnis eines Bewillungungsverfahrens für ein Gründungsvorhaben eintägt, darf dieses nicht abbrechen.
 Alle Benutzer dürfen ihr eigenes Passwort zurücksetzen.
 Aber nur ein Systemadministrator darf das Passwort für andere Benutzer zurücksetzen.
-Die Fähigkeiten sicherzustellen, dass Authenfizierung und Autorisierung sicher funktionieren, haben wir in der Geschäftsfähigkeit *Benutzer authentifizieren und autorisieren* zusammengefasst.
+Die Fähigkeiten sicherzustellen, dass Authenfizierung und Autorisierung sicher funktionieren, haben wir in der Geschäftsfähigkeit *Authentifizierung und Autorisierung* zusammengefasst.
 
 Die folgende Abbildung zeigt wie die in diesem Abschnitt besprochenen Prozesse und Fähigkeiten in das RMI nach Archimate eingebettet sind.
 
@@ -1332,12 +1386,11 @@ Die Geschäftstransaktion *Bestellung senden* wird im RSM bis auf Stufe Technolo
 
 Die Domänen GastroStart und Transgourmet werden über den Technologie Layer mit EDIFACT Order Sender und Empfänger verbunden, so dass die Bestellabwicklung über die Akteursgrenzen hinweg standardisiert ist (siehe @fig-RSM-Bestellabwicklung).
 
-#design-entscheid([Weitere Technologien und Kommunikationsknoten, die in der Übertragung und Persistenz eine Rolle spielen, sind hier bewusst ausgeblendet, da sie auf dieser Stufe der Lösungsfindung für den Kommunikationsprozess keinen Mehrwert bieten.])
 
-== OM für DV Bern 
-#autor-dvbern("Beitrag von Jan Sohnemann, DVBern", inhalt: [])
+== Operating Model für DV Bern 
+#autor-dvbern("Beitrag von Jan Sohnemann, DV Bern", inhalt: [])
 
-DVBern ist ein IT-Dienstleister ca. 200 Mitarbeitern an einem Standort. 
+DV Bern ist ein IT-Dienstleister ca. 200 Mitarbeitern an einem Standort. 
 Das Hauptgeschäft ist Individual-Softwareentwicklung und Hauptkunden sind öffentliche Verwaltungen. 
 Neben Geschäftsführung, Finanzen, HR, Gebäude- und Material-Managemant sind die Abteilungen zur Erbringung der Kundenleistungen nach Sektoren eingeteilt wie z.B.: 
 Care & Education, Gesundheit und Steuern. 
@@ -1347,10 +1400,68 @@ Die IT-Services stellen nicht nur Arbeitsgeräte zur Verfügung, sondern sichern
 Davon und von einigen, wenigen Vorgaben und Best Practices abgesehen haben die Abteilungen weitesgehend Autonomie.
 
 Es gibt also wenig Geschäftsprozess-Standardisierung, aber dort wo es standardisierte Prozesse gibt, sind diese meist sehr stark integriert. 
-Ich würde DVBern im Operating Model unter «Koordination» einordnen. 
-Für die Customer Journey «Gastro Start» macht das auch Sinn. DVBern spielt hier eine Schlüsselrolle bei der Integration verschiedener Services. 
+Ich würde DV Bern im Operating Model unter «Koordination» einordnen. 
+Für die Customer Journey «Gastro Start» macht das auch Sinn. DV Bern spielt hier eine Schlüsselrolle bei der Integration verschiedener Services. 
 Ein gewisses Rahmenwerk bei der Erbringung von Software-Dienstleistungen ist unabdingbar, insbesondere bei der Zusammenarbeit mit öffentlichen Verwaltungen, wo  Complience und Verfügbarkeit eine grosse Rolle spielen. 
 Andererseits benötigen Inidividuallösungen auch Freiheitsgrade, damit schnell auf Unvohersehbarkeiten reagiert werden kann.
+
+=== Die Orientierung im RSM <sec-domaenenmodell-orientierung>
+
+#autor-dvbern("Beitrag von Jan Sohnemann, DV Bern", inhalt: [])
+
+Wir betrachten an dieser Stelle den Übergang vom RIM in das ressourcenspezifische Modell (RSM) für die Phase: Orientierung.
+Das hier beschriebene, in @fig-RSM-orientierung dargestellte Modell basiert auf @fig-GTZ-orientierung, allerdings haben wir aus diesem, der Übersichtlichkeit halber nur noch Geschäftsprozess und Geschäftsobjekte übernommen.
+
+Das RSM basiert auf der Applikationskomponente *Gründungsverwaltung*. Diese Komponente stellt wohldefinierte Verfahren für das Erstellen, Modifizieren und Löschen von Gründungsvorhaben.
+Wir beschränken den Rahmen dieser Ausführungen wie in den Abschnitten zuvor auf das Erstellen von Gründungsvorhaben.
+Für die Orientierung des Gründungsvorhabens benötigen wir zwei Applikationsfunktionen:
+Die *Bedarfsermittlung* hat die Aufgabe den regulatorischen Bedarf zu ermitteln.
+Dazu benötigt sie einerseits die dafür relevanten Informationen aus dem Datenobjekt *Gründungsvorhaben*, sowie die regulatorischen Kriterien aus dem Datenobjekt *Regelmatrix*.
+Beide Objeke erfüllen den Zweck der von ihnen realisierten, gleichnamigen Geschäftsobjekte.
+Diese haben wir in @head-phase1-orientierung-1 ausführlich beschrieben.
+Die Bedarfsermittlung realisiert einen Service, den wir *Bewilligungsbedarfsermittung* genannt haben.
+Dieser Service bietet über die Schnittstelle *Bewilligungs-API* zugriff auf die Applikationskomponente.
+Die Applikationsfunktion *Anforderungsermittlung* hat die Aufgabe das Gründungsvorhaben zu definieren.
+Diese Funktion realisiert den Applikationsservice *Gründungsorientierung*, der über die Schnittstelle *Orientierungs-API* Zugriff auf die Applikationskomponente gewährt.
+
+Die Realisierung des Geschäftsobjektes *Bewilligungsübersicht* geschieht hier durch das Datenobjekt *Bewilligungsverfahren*.
+Die Namensabweichung steht dafür, dass dieses Datenobjekt keine finale Liste ist, sondern später im Bewilligungsverfahren auch die Zustände einzelner Bewilligungen oder allgemeiner: Bewilligungskriterien, verfolgen soll. Das Kriterium "Wirtepatent" zum Beispiel könnte folgende Zustände haben:
+- offen
+- umsetzung
+- erhalten
+- eingereicht
+- aktzeptiert
+
+Die folgende Abbildung zeigt das RSM der Phase "Orientierung" und dessen Beziehungen zum RIM.
+
+#figure(
+  image("../assets/jan/Phase 1c - Orientierung - (RSM).svg", width: 100%),
+  caption: [RSM der Phase «Amira orientiert sich»],
+) <fig-RSM-orientierung>
+
+=== Die Registrierung im RSM <sec-domaenenmodell-registrierung>
+#autor-dvbern("Beitrag von Jan Sohnemann, DV Bern", inhalt: [])
+
+Betrachten wir nun den Übergang vom RIM ins RSM für die Phase: Registrierung.
+Das hier beschriebene, in @fig-RSM-registrierung dargestellte Modell basiert auf @fig-gtz-registrierung und auch hier haben wir, der Übersichtlichkeit halber nur noch Geschäftsprozesse und -objekte übernommen.
+
+Oben im, in @fig-RSM-registrierung gezeigten Modell taucht wieder die Applikationskomponente *Gründungsverwaltung* auf, die wir im letzten Abschnitt (@sec-domaenenmodell-orientierung) eingeführt haben.
+Wie in @head-phase2-registrierung beschrieben, wird das bei der Registrierung erstellte Kundenkonto mit dem zuvor definierten Gründungsvorhaben verknüpft.
+Und diesen Vorgang realisieren wir mit dem Applikationsservice *Verknüpfungsdienst*, der über die Schnittstelle *Gründungs-API* Zugriff auf die Gründungsverwaltung ermöglicht.
+Die Gründungs-API, sowie die beiden anderen Schnittstellen in diesem Modell sind einem Service names *API-Gateway* zugeordnet.
+Dieser Service steht stellvertretend für alle Benutzer- und Service-Schnittstellen.
+Das Gateway entscheidet welche Anfragen an das System, an welche Ressource weitergeleitet werden und ob diese Ressource öffentlich oder geschützt ist.
+Für den Zugriff auf geschützte Ressourcen muss eine Authentifizierung und Autorisierung erfolgen, was hier im Modell durch die Applikationskomponente *IAM* (Identity Access Mananagemet) realisiert wird.
+In @fig-RSM-registrierung ist diese mit zwei Schnittstellen ausgestattet, welche durch die Applikationsservices *Sitzungsdienst* einerseits und durch *Registriertungsdienst* andererseits realisiert werden.
+Der Registierungsdienst ermöglich das Anlegen eines Kundenkontos und löst die Verknüpfung mit dem Gründungsvorhaben aus.
+Der Sitzungsdienst dient der Verwaltung von Benutzer-Sessions und implementiert Funktionen wie Benutzer an- und abmelden.
+
+Die folgende Abbildung zeigt das RSM der Phase "Registrierung" und dessen Beziehungen zum RIM.
+
+#figure(
+  image("../assets/jan/Phase 2c - Sich registieren (RSM).svg", width: 100%),
+  caption: [RSM der Phase «Amira registriert sich»],
+) <fig-RSM-registrierung>
 
 == Operating Model für FINNOFLEET
 
