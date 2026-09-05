@@ -1361,23 +1361,23 @@ Dieser Kapitel enthält die separaten Ausführungen der jeweiligen Autoren der G
 
 == Operating-Model-Einordnung nach Ross, Weill und Robertson für Transgourmet
 
-#autor-transgourmet("Beitrag von Jakob Albrecht", inhalt: [Belieferung von Gastronomiebetrieben durch Transgourmet im Rahmen des Joint Ventures GastroStart mit Fokus auf die Integration von Prozessen und Daten],)
+#autor-transgourmet("Beitrag von Jakob Albrecht", inhalt: [Belieferung von Gastronomiebetrieben durch Transgourmet im Rahmen des Joint Ventures GastroStart],)
 
-Bevor die Customer Journey auf Capabilities und Systeme heruntergebrochen wird, ist eine grundlegende Einordnung nötig: Welches Operating Model liegt Transgourmet zugrunde?
+Bevor die aus der Customer Journey resultierten Geschäftsfähigkeiten auf Applikationslandschaft heruntergebrochen wird, ist eine grundlegende Einordnung nötig: Welches Operating Model liegt Transgourmet zugrunde und welchen Einfluss hat dies auf die Enterprise Architektur des Joint Ventures GastroStart?
+
 Ross, Weill und Robertson unterscheiden vier Operating Models entlang der beiden Achsen Standardisierung der Geschäftsprozesse und Integration der Daten @ross2006enterprise.
 Aus dieser Klassifikation leitet sich ab, wie viel Integration eine Architektur tragen muss und wo Autonomie zulässig bleibt.
 
 #figure(
-  caption: [Operating-Model-Matrix nach Ross, Weill und Robertson @ross2006enterprise[Abb. 2-1, S. 30] mit Verortung der Transgourmet-B2B-Belieferung (Unification) und der übergreifenden Customer Journey (Federation). Matrix #sym.copyright 2005 MIT Sloan Center for Information Systems Research, mit Genehmigung verwendet.],
+  caption: [Operating-Model-Matrix nach Ross, Weill und Robertson @ross2006enterprise[Abb. 2-1, S. 30] mit Verortung der Transgourmet-B2B-Belieferung (Unification) und der übergreifenden Customer Journey (Federation). ],
   image("../assets/operating_model_matrix_mit_federation_layer.svg", width: 92%),
 ) <fig-operating-model-matrix-with-federation-layer>
 
 - *Ebene Transgourmet B2B-Belieferung — Unification*: Innerhalb von Transgourmet sind sowohl Prozesse als auch Daten hoch integriert und zentralisiert. Kunden-, Sortiments-, Preis-, Bestands-, Bestell- und Lieferdaten werden geteilt, die Kernprozesse (Bestellung, Disposition, Lieferung, Fakturierung) sind standardisiert, und ein zentrales System bedient diese Kanäle.
 
-- *Ebene Customer Journey — Federation*: Für die akteursübergreifende Sicht existiert keine Entsprechung im Ross/W/R-Schema; die Klassifikation adressiert Ebenen *innerhalb* einer Organisation (Enterprise, Division, Business Unit), nicht autonome Akteure. Die beteiligten Akteure (Gründer, Behörde, Finanzpartner, Transgourmet) sind autonom und betreiben ihre eigenen Systeme. Eine geteilte Datenhaltung über die Akteursgrenzen hinweg ist nicht vorgesehen. Die Durchgängigkeit der Journey entsteht, wo möglich, über standardisierten Kontrakte: das GastroStart-Portal koordiniert die Gründungsphasen über eCH-konforme Schnittstellen zu Behörden und Finanzpartner. Transgourmet wird über EDIFACT/GS1-Kontrakte für Bestellungen und Lieferantungen angebunden. Die Integration der Daten ist auf die Schnittstellen beschränkt, die Prozesse sind nicht standardisiert, und die Systeme sind autonom.
+- *Ebene Customer Journey — Federation*: Für die akteursübergreifende Sicht existiert keine Entsprechung im Ross/W/R-Schema; die Klassifikation adressiert Ebenen *innerhalb* einer Organisation (Enterprise, Division, Business Unit), nicht autonome Akteure. Dem entsprechend ist die Darstellung @fig-operating-model-matrix-with-federation-layer zweiteilig. Die beteiligten Akteure (Gründer, Behörde, Finanzpartner, Transgourmet) sind autonom und betreiben ihre eigenen Systeme. Eine geteilte Datenhaltung über die Akteursgrenzen hinweg ist nicht vorgesehen. Die Durchgängigkeit der Journey entsteht, wo möglich, über standardisierten Kontrakte: das GastroStart-Portal koordiniert die Gründungsphasen über eCH-konforme Schnittstellen zu Behörden und Finanzpartner. Transgourmet wird über EDIFACT/GS1-Kontrakte @gs1ch_2022_idealmessage_orders für Bestellungen angebunden. Die Integration der Daten ist auf die Schnittstellen beschränkt, die Prozesse sind nicht standardisiert, und die Systeme sind autonom.
 
 == ArchiMate-Modell des Ist-Zustands von Transgourmet
-
 
 Die konsolidierte Sicht auf den Ist-Zustand der Transgourmet-B2B-Belieferung wurde als ArchiMate-Modell über die drei Schichten Business, Application und Technology erstellt @opengroup2019archimate.
 Das Modell macht das Unification-Operating-Model aus @fig-operating-model-matrix-with-federation-layer konkret sichtbar.
@@ -1393,7 +1393,25 @@ Die Schichten lesen sich wie folgt:
 - *Application Layer*: Der B2B-Shop (Web-Portal, Bestellaufnahme) und das EDI-Gateway (EDIFACT-Verarbeitung) bilden die Schnittstellen nach aussen; realisiert werden die Geschäftsfunktionen jedoch durch ein zentrales Dispo-/ERP-System als monolithisches Kernsystem, das Auftragsverwaltung, Stammdaten, Logistik und Faktura in einer Lösung bündelt.
 - *Technology Layer*: Das Kernsystem wird von einem Application-Server (VM-Hosting) getragen und auf einem Datenbank-Server (RDBMS, zentrale Daten) gehostet.
 
-Die entscheidende architektonische Beobachtung: Der monolithische Dispo-/ERP-Kern realisiert sämtliche Geschäftsfunktionen ohne Anti-Corruption Layer (ACL) und ohne Schnitt in Self-Contained Systems (SCS) @bass2012.
+#fuehrung([Das monolithische ERP-Kernsystem realisiert sämtliche Geschäftsfunktionen ohne Anti-Corruption Layer (ACL) und ohne Schnitt in Self-Contained Systems (SCS) @bass2012.
+
+Bei Transgourmet ist ein Modernisierungsprojekt in der Umsetzung (Stand Sommer 2026), das genau diese Architekturprobleme adressiert und die Kernsysteme in SCS aufteilt, die durch ACLs isoliert kommunizieren.])
+
+=== Domänenmodell: Bestellabwicklung im RSM mit Transgourmet als Lieferanten
+
+Mit dem RSM werden die Anforderungen an die Anwendungslandschaft von GastroStart konkretisiert.
+Hier mit dem Blick auf die *Bestellabwicklung* und Anbindung von Transgourmet als Lieferanten.
+
+Die Geschäftstransaktion *Bestellung senden* wird im RSM bis auf Stufe Technologie heruntergebrochen, wo auf den GS1/EDIFACT-Standard für die elektronische Bestellung (ORDERS) verwiesen werden kann @gs1ch_2022_idealmessage_orders.
+
+#figure(
+  image("../assets/RSM-Bestellabwicklung.svg", width: 92%),
+  caption: [RSM der Bestellabwicklung mit Anbindung von Transgourmet als Lieferanten],
+) <fig-RSM-Bestellabwicklung>
+
+Die Domänen GastroStart und Transgourmet werden über den Technologie Layer mit EDIFACT Order Sender und Empfänger verbunden, so dass die Bestellabwicklung über die Akteursgrenzen hinweg standardisiert ist (siehe @fig-RSM-Bestellabwicklung).
+
+#design-entscheid([Weitere Technologien und Kommunikationsknoten, die in der Übertragung und Persistenz eine Rolle spielen, sind hier bewusst ausgeblendet, da sie auf dieser Stufe der Lösungsfindung für den Kommunikationsprozess keinen Mehrwert bieten.])
 
 == OM für DV Bern 
 #autor-dvbern("Beitrag von Jan Sohnemann, DVBern", inhalt: [])
