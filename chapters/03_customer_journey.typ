@@ -88,13 +88,13 @@ In den folgenden Kapiteln gehen wir auf eine Auswahl dieser Szenarien ein, je ei
 
 Die Szenarien sind: 
 - Amira orientiert sich 
-- Amira registriet sich bei GastroStart
+- Amira registriert sich bei GastroStart
 - Amira gründet ihr Unternehmen
 - Amira erhält die Bewilligung
 - Amira erhält die Finanzierung
 - Amira wird Kunde bei Transgourmet
 
-In den nächsten Kapiteln wird auf einer Auswahl dieser Szenarien eingegangen - eines für jede Partei am Joint-Venture.
+In den nächsten Kapiteln wird auf diese Szenarien eingegangen /*- eines für jede Partei am Joint-Venture.*/
 Die Beschreibung des Szenarios wird jeweils in einer Tabelle zusammengefasst. 
 Der Eintritt in das jeweilige Szenario ist eine *Aktion* der GründerInnen.
 Über *Touchpoints* treten sie mit unserem Produkt in Verbindung.
@@ -107,11 +107,11 @@ Und schliesslich bietet jede Phase *Chancen*, die die *Bedürnisse* befriedigen 
 /*
 #autor-dvbern("Beitrag von Jan Sohnemann, DVBern", inhalt: [])*/
 
-Unser Angebot soll sich insbesondere an jede GründerInnen richten, die noch keine Erfährung mit Unternehmensgründungen haben.
+Unser Angebot soll sich insbesondere an jede GründerInnen richten, die noch keine Erfahrung mit Unternehmensgründungen haben.
 Und wir gehen davon aus, dass viele Betroffene schon eine konkrete Idee dessen haben, was sie Anbieten möchten.
 Unsere GründerInnen sollen sich auf eben diese Idee fokussieren können und sich nicht mit den Details einer Unternehmensgründung herumschlagen müssen.
 Entsprechend gehen wir davon aus, dass sie bei ihrer initialen Recherche ihr Vorhaben mehr oder weniger Konkret beschreiben können.
-Weniger konkret dagegen können sie die Details zur Umsetzung bennennen - jedenfalls gehen wir davon aus. 
+Weniger konkret dagegen können sie die Details zur Umsetzung benennen - jedenfalls gehen wir davon aus. 
 Ihr Suchtext würde also wahrscheinlich die geplante Unternehmensart enthalten, zum Beispiel "Catering" oder "Familien-Café", anstelle von "Gastronomie".
 Weniger wahrscheinlich ist, dass die, zur Betriebsbewilligung notwendigen Details bereits bekannt sind.
 Zum Beispiel ist der Ort der Betriebsstätte auch auf nationaler Ebene sehr von Bedeutung, da es kantonale Unterschiede bei den Bewilligungsverfahren und bei der Regulierung gibt.
@@ -151,7 +151,7 @@ Das Ausarbeiten der Details des Gründungsvorhabens nennen wir "Orientierung".
 
       [Aktion],
       [
-        Amira started eine Web-Suche mit den Begiffen "Gründung", "Catering", "Schweiz", "Vorgehen".
+        Amira started eine Web-Suche mit den Begriffen "Gründung", "Catering", "Schweiz", "Vorgehen".
         Ihre Suche führt sie schnell zur Landingpage von GastroStart.
         Sie wird gebeten den Kanton für das Gründungsvorhaben aus einer Liste auszuwählen.
         Sie wählt aus und bestätigt die Eingabe.
@@ -161,7 +161,7 @@ Das Ausarbeiten der Details des Gründungsvorhabens nennen wir "Orientierung".
       [Browser auf Mobile Device, Search Engine, GastroStart],
 
       [Gedanke / Bedürfnis],
-      [Unsicherheit: Amira weiss nicht, wie eine Unternehmensgründung funktionert und welche Voraussetzungen sie erfüllen muss, um ihr Geschäft zu betreiben.],
+      [Unsicherheit: Amira weiss nicht, wie eine Unternehmensgründung funktioniert und welche Voraussetzungen sie erfüllen muss, um ihr Geschäft zu betreiben.],
 
       [Pain Point],
       [ `-` ],
@@ -173,15 +173,15 @@ Das Ausarbeiten der Details des Gründungsvorhabens nennen wir "Orientierung".
 ) <tbl-szenario-orientierung>
 
 
-=== Amira registriert sich bei GastroStart
+=== Amira registriert sich 
 
 /*#autor-dvbern("Beitrag von Jan Sohnemann, DVBern", inhalt: [])*/
 
 Im Anschluss an die Orientierung sollte eine Registrierung erfolgen. 
-Das Ziel der Registrierung ist es, das Gründungsvorhaben auf der Plattform mit einem Konto zu verknüpfen, so dass es gepeichert, den Erstellenden exklusiv zugänglich gemacht und zu einem späteren Zeitpunkt weitergeführt werden kann.
+Das Ziel der Registrierung ist es, das Gründungsvorhaben auf der Plattform mit einem Konto zu verknüpfen, sodass es gespeichert, den Erstellenden exklusiv zugänglich gemacht und zu einem späteren Zeitpunkt weitergeführt werden kann.
 Dies ist ein notwendiges Übel, das alle Benutzenden hinnehmen müssen und die wenigsten verstehen vermutlich den Zweck und Nutzen dieses Vorgangs.
 Die Gefahr eines Abbruchs der Produktnutzung stufen wir als hoch ein, es ist also wichtig den Benutzenden im Vorfeld zu vermitteln, dass eine Nutzung ohne Kundenkonto von hier an nicht mehr möglich ist und dass sie davon profitieren.
-Wenn die Orientierungsphase erfolgreich war und das auslösende Bedürfnis befriedig wurde, ist die Chance gross, dass die Benutzenden hier fortfahren.
+Wenn die Orientierungsphase erfolgreich war und das auslösende Bedürfnis befriedigt wurde, ist die Chance gross, dass die Benutzenden hier fortfahren.
 
 Die folgende  @fig-customer-journey-registrierung zeigt einen den Teil des Szenarios als Modell in Archimate, der die Registrierung auslöst.
 An dieser Stelle des Entwicklungsprozesses war die Bedeutung der Phase "Orientierung" noch nicht ersichtlich.
@@ -245,16 +245,14 @@ Die folgende @tbl-szenario-registrierung kennen die Leser schon aus dem letzten 
   ]
 ) <tbl-szenario-registrierung>
 
-=== Amira gründet ihr Unternehmen
+=== Amira gründet ihr Unternehmen <sec-cj-unternehmen-gründen>
 
 Mit der Registrierung können die Benutzer auf den digitalen Begleiter für die Gründung des Unternehmens zugreifen. 
-Aufgrund der Informationen aus der Orientierung können die Benutzer der Plattform durch Anweisungen, Empfehlungen und vorgefertigte Texte geführt werden, mit denen sie ohne teure Beratung selber die Unterlagen für die gewünschte Firmengründung zusammenstellen oder gar erstellen. 
-Die Informationen auf der Plattform helfen den Benutzern dabei, sich entlang der Gründung ihres Unternehmens zu orientieren und der Sinn hinter der Notwendigkeit hinter der mühseligen Sammlung von Ausweisen und Dokumenten. 
-
+Aufgrund der Informationen aus der Orientierung können die Benutzer durch Anweisungen, Empfehlungen und vorgefertigte Texte geführt werden. 
+Dadurch sind sie in der Lage, ohne teure Beratung selber die Unterlagen für die gewünschte Firmengründung zusammenstellen oder gar zu erstellen.
 Durch die enge Begleitung und das Abnehmen von einfachen Aufgaben und die Erfolgserfahrung mit der Anzeige des Fortschrittes können die Kunden bestärkt werden und zum Abschluss des komplizierten Prozesses motiviert werden. 
-
-Da die Benutzer bereits seit der Orientierung wissen, dass am gewünschten Standort mit einem Medienbruch zu rechnen ist, stufen wir die Wahrscheinlichkeit eines Abbruches als tief ein. 
-
+Da die Benutzer bereits seit der Orientierung wissen, dass am gewünschten Standort mit einem Medienbruch zu rechnen ist, stufen wir die Wahrscheinlichkeit eines Abbruches als tief ein - auch weil die Unterlagen in digitaler Form praktisch in jedem Kanton einem Notar direkt zugestellt werden können. 
+Die jeweilige Kanzlei übernimmt den Medienbruch auf Papier. 
 
 
  #figure(
@@ -315,11 +313,14 @@ Da die Benutzer bereits seit der Orientierung wissen, dass am gewünschten Stand
 ) <tbl-szenario-unternhemen-gründen>
 
 
-=== Amira erhält die Bewilligung
+=== Amira erhält die Bewilligung <sec-cj-bewilligung-erhalten>
 
-#todo-action([Szenario erklären, so wie Jan für Orientierung und Registrierung gemacht hat])
+Auf GastroStart können die GründerInnen die notwendigen Schritte in Erfahrung bringen, um für ihr Unternehmen und Lokal eine Betriebsbewilligung zu erhalten. 
+Ähnlich wie bei der Unternehmensgründung liefert das System eine Übersicht der Informationen, Dokumente und Ausweise, die für den Erhalt der Bewilligung notwendig sind. 
+Diese Angaben entsprechen den Vorschriften, die am Standort des geplanten Betriebs gelten und erklären den Sinn hinter den Vorgaben. 
+Der Mehrwert des Systems liegt in der Begleitung des Ablaufs, in der Plausibilisierung der gelieferten Angaben und Dokumente anhand der geltenden Vorgaben und Sicherheitsrichtlinien und bei den schnellen Rückmeldungen, falls der Benutzer ungenügende Informationen liefert. 
 
-
+Die massgeschneiderten und detaillierten Erklärungen zum einzuhaltenden Ablauf geben den GründerInnen Halt im holprigen, teils mehrspurigen und oftmals analogen Prozess und wirken motivierend auf dem erfolgreichen Abschluss des Szenarios hin. 
 
  #figure(
   image("../assets/cj_verträge.svg", width: 70%),
@@ -503,7 +504,7 @@ Da die Benutzer bereits seit der Orientierung wissen, dass am gewünschten Stand
 
       [Pain Point],
       [
-        Neukunden-Preisgestaltung weniger günstig        
+        Neukunden-Preisgestaltung weniger günstig
       ],
 
       [Chance],
@@ -533,6 +534,8 @@ Entsprechend der gewählten Customer Journey haben wir uns entschieden, nur das 
 
 == Die Rollen der beteiligten Unternehmen im Joint Venture
 
+#todo-action([\@Jakob: bitte erklären, wieso wir hier eigentlich schon das RSM einführen - über die Fertigkeiten der Teilnehmern.])
+
 === DV Bern
 
 Für das Produkt GastroStart liefert DV Bern Software und Infrastruktur für das Web-Portal, inklusive Implementierung der Regelmatrix, Profilmanagement und Schnittstellen für z. B. kantonale Dienste oder die Bonitätsprüfung via FINNOFLEET.
@@ -543,7 +546,9 @@ Für die fünf Phasen der Customer Journey: Orientierung, Registrierung, Bewilli
 
 #frage([wollen wir uns hier knapper halten? Wegen Spoilern von dem was nachher kommt.(se beiträge Transgourmet und öffentliche Verwaltung
 
-Frage 2: sind die folgenden Kapiteln am richtigen Ort? Vielleicht sollten Sie unter dem RSM verfrachet werden?)])
+Frage 2: sind die folgenden Kapiteln am richtigen Ort? Vielleicht sollten Sie unter dem RSM verfrachet werden?)
+
+Entscheid: we're ok with spoilers and Jakob is going to write the intro.])
 
 ==== Orientierung
 
@@ -597,8 +602,8 @@ Die Eröffnung eines Kundenkontos bei Transgourmet ist die letzte Phase der Cust
 === Öffentliche Verwaltung als Interoperabilitätspartner
 
 Aus Sicht von Amira und somit auch von GastroStart wird die öffentliche Verwaltung - ohne besondere Rücksicht auf die jeweilige Ebene - in ihrer Rolle als Interoperabilitätspartner abgebildet und behandelt.
-Dies, weil die öffentliche Hand ihre hoheitlichen Handlungen nicht im Sinne eines wirtschaftlichen Angebots wie die anderen Mitglieder der Joint Venture zur Verfügung stellt. 
-Diese hoheitlichen Akten (bspw. der Eintrag im Handelsregister oder die Erteilung einer Betriebsbewilligung) und die Fähigkeit, diese zu vollziehen, sind auf der einen Seite ausserhalb des Wirkungsbereichs von GastroStart anzusiedeln. 
-Auf der anderen Seite bildet GastroStart eine spezialisierte Schnittstelle für die Vorbereitung hin auf diesen Akten. 
+Dies, weil die öffentliche Hand ihre hoheitlichen Handlungen nicht im Sinne eines wirtschaftlichen Angebots wie die anderen Mitglieder der Joint Venture zur Verfügung stellt. Auch ist es nicht im Sinne der Schweizer Rechtstradition, private Unternehmen mit der Vergabe von hoheitlichen Akten zu betrauen.
+Aus diesen Gründen sind jene Teile der Customer Journey, wofür der Staat verantwortlich ist - bspw. der Eintrag im Handelsregister oder die Erteilung einer Betriebsbewilligung - und die Fähigkeit, diese zu vollziehen, sind ausserhalb des Wirkungsbereichs des Joint Ventures anzusiedeln. 
+/*Auf der anderen Seite bildet GastroStart eine spezialisierte Schnittstelle für die Vorbereitung hin auf diesen Akten. */
 
 

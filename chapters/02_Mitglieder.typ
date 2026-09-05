@@ -173,9 +173,9 @@ Der Reifegrad ist damit auf Produkt- und Entscheidebene hoch, auf Portfolioebene
 
 Bund, Kantone und Gemeinden in der Schweiz orientieren sich für ihre Organisation am Departementalprinzip — an der Gliederung der Verwaltung in eigenständig verantwortete Departemente (Bund) beziehungsweise Direktionen (Kanton) oder Ressorts (Gemeindeebene).
 
-Diese organisatorische Eigenschaft führt dazu, dass auf jede Staatsebene eine Art interne Föderation besteht: die Kernaufgaben werden dabei dezentral verantwortet und wahrgenommen und Leistungen mit Grundcharakter wie beispielsweise Logistik oder Infrastruktur werden gemeinsam genutzt. 
+Diese organisatorische Eigenschaft führt dazu, dass auf jede Staatsebene eine Art interne Föderation besteht: Die Kernaufgaben werden dabei dezentral verantwortet und wahrgenommen und Leistungen mit Grundcharakter wie beispielsweise Logistik oder Infrastruktur werden gemeinsam genutzt. 
 
-Auf dieser Ausgangslage zur Organisation der Verwaltung basieren die folgenden Überlegungen zur angewendeten  Unternehmensarchitektur auf Bundesebene. 
+Auf dieser Ausgangslage zur Organisation der Verwaltung basieren die folgenden Überlegungen zur angewendeten  Unternehmensarchitektur auf Bundesebene. Es wird angenommen, dass die beschriebene Mechanismen weitgehend auch auf kantonale Ebene übertragen werden können.
 
 === Unternehmensarchitektur auf Bundesebene [löschen?]
 
