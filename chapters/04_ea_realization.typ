@@ -408,33 +408,32 @@ transaktion],
 ])
 
 
-=== Amira gründet ihr Unternehmen 
+=== Geschäftsobjekt Unternehmen, seine Zustände und sein Verhalten
+Im @sec-cj-unternehmen-gründen wurde das Szenario der Unternehmensgründung vorgestellt.
+Nun wird dieses Szenario anhand des ihm zugrundeliegende Geschäftsobjekt näher beschrieben.
 
-Amira möchte für den Betrieb des Caterings eine Gesellschaft mit beschränkter Haftung (GmbH) oder eine Aktiengesellschaft (AG) gründen, um sich und ihre Familie finanziell vor einem möglichen Misserfolg ihres Unternehmens zu schützen. 
-GastroStart hat Amira hingewiesen, dass eine GmbH sich besonders für kleinere und mittlere Unternehmen eignet. Sie ist einfacher und günstiger zu gründen und deshalb für viele Familienbetriebe oder Restaurants eine gute Wahl.
-Die GmbH wir es ihr ermöglichen, zwischen Privatvermögen und Geschäft zu trennen - was im Falle des Eintritts von unvorhergesehenen Risiken wie Haftungsfälle oder Überschuldung zu einer Einschränkung der finanziellen Auswirkungen bringen wird. 
+Viele Unternehmer, die in der Gastronomie starten möchten, wollen eine Gesellschaft mit beschränkter Haftung (GmbH) oder eine Aktiengesellschaft (AG) gründen, um sich und ihre Familien finanziell vor einem möglichen Misserfolg ihres Unternehmens zu schützen.
+GastroStart weist die Besucher während des Orientierungsprozesses auf die Möglichkeit hin, eine juristische Person als Trägerschaft für das Gastrounternehmen zu schaffen. /*Eine GmbH eignet sich besonders für kleinere und mittlere Unternehmen. Sie ist einfacher und günstiger zu gründen und deshalb für viele Familienbetriebe oder Restaurants eine gute Wahl.*/
 
-Nach der initialen Orientierung und Registrierung auf GastroStart wurden die Wünsche von Amira auf der Plattform festgehalten. 
-Wie beim Ausfüllen der Steuererklärung bietet GastroStart eine Anleitung zur Vorbereitung der notwendigen Dokumentation, sodass die Notariatskosten möglichst tief gehalten werden können. 
-Dazu gehören Angaben wie der gewünschte Firmennamen, den Sitz und Adresse der Firma, persönliche Informationen zu den Anteilhabenden, die Einzahlung des Gründungskapitals, die Formulierung von Statuten und Lieferung von Identifikationsdokumenten. 
+Wie beim Ausfüllen der Steuererklärung bietet GastroStart eine Anleitung zur Vorbereitung der notwendigen Dokumentation, sodass die Notariatskosten möglichst tief gehalten werden können. Die Angaben, um den User durch den Ablauf zu führen sind in der Bewilligungsübersicht gespeichert (se. @fig-GTZ-orientierung).
+/*Dazu gehören Angaben wie der gewünschte Firmennamen, den Sitz und Adresse der Firma, persönliche Informationen zu den Anteilhabenden, die Einzahlung des Gründungskapitals, die Formulierung von Statuten und Lieferung von Identifikationsdokumenten. */
 
 
 #frage([\@ Cheffen: stimmt die folgende Aussage?])
-_Alles, was Amira Schritt für Schritt vorbereitet wird entsprechend im Gründungsvorhaben festgehalten - respektive kann dort hochgeladen und dokumentiert werden. _
+_Alles, was der Benutzer Schritt für Schritt vorbereitet wird entsprechend im Gründungsvorhaben festgehalten - respektive kann dort hochgeladen und dokumentiert werden. _
 So stehen alle Informationen in GastroStart zur Verfügung und können jederzeit inhaltlich und formell validiert werden. 
-Wenn die Checkliste für die Gründung des *Unternehmens* erfolgreich durchgearbeitet worden ist, kann Amira ein Termin beim Notar abmachen und dort die nötigen offiziellen Schritte: die öffentliche Beurkundung durch den Notar und die darauffolgende Anmeldung beim kantonalen Handelsregister. 
+Wenn die Checkliste für die Gründung des *Unternehmens* erfolgreich durchgearbeitet worden ist, kann der Benutzer ein Termin beim Notar abmachen und dort die nötigen offiziellen Schritte vornehmen: die öffentliche Beurkundung durch den Notar und der Antrag um Eintrag ins kantonale Handelsregister.
 Diese Schritte sind notwendig, damit das Unternehmen überhaupt rechtlich existiert und als solches von den Behörden und Wirtschaftspartner anerkannt werden kann, beispielsweise um eine Betriebsbewilligung und eine Finanzierung zu erhalten. 
 
-Die folgende @fig-GTZ-Amira-gründet stellt die Zusammenhänge der Geschäftsobjekte, Zustände und Transaktionen im ressourcenunabhängigen Modell nach Archimate dar. 
-Die abgebildete Variante erwähnt noch die Möglichkeiten des Abbruches der Firmengründung durch Amira oder dass die kantonale Behörde den Eintrag ins Handelsregister nicht vornimmt. 
+Die folgende @fig-GTZ-Amira-gründet stellt die Zusammenhänge der Geschäftsobjekte, Zustände und Transaktionen im ressourcenunabhängigen Modell nach Archimate dar.
 
 
  #figure(
   image("../assets/GTZ Amira gründet ihr Unternehmen.svg", width: 100%),
-  caption: [Geschäftstransaktionen und Zustände - Szenario Amira gründet ihr Unternehmen]
+  caption: [Geschäftstransaktionen und Zustände - Szenario Unternehmen Gründen]
 ) <fig-GTZ-Amira-gründet>
 
-Nachfolgend wird auf die einzelnen Elemente der Grafik eingegangen.
+Nachfolgend wird auf die einzelnen Elemente der Grafik eingegangen, wobei die Beschreibung sich auf das Happy Path konzentriert. Die Möglichkeiten des Abbruches der Firmengründung durch die GründerInnen oder dass die kantonale Behörde den Eintrag ins Handelsregister nicht vornimmt, werden nicht näher beschrieben.
 
 ==== Geschäftsobjekt und Zustände 
 #figure(
@@ -509,89 +508,11 @@ Nachfolgend wird auf die einzelnen Elemente der Grafik eingegangen.
   ]
 ) <tbl-GO-Unternehmen>
 
-/*
-#figure(
-image("../assets/GOUnternehmen.svg", width: 50%),
-caption: [Geschäftsobjekt Unternehmen und dessen Zustände]
-) <fig-GOUnternehmen>
-*/
-
-/*
-#figure(
-  caption: [Geschäftsobjekt Unternehmen],
-  block(
-    width: 100%,
-    radius: 6pt,
-    clip: true,
-    stroke: 0.5pt + luma(225),
-  )[
-    // Kopfzeile als abgerundetes Band
-    #block(
-      width: 100%,
-      fill: luma(70),
-      inset: (x: 10pt, y: 7pt),
-      below: 0pt,
-    )[
-      #grid(
-        columns: (3.2cm, 1fr),
-        gutter: 10pt,
-        text(fill: white, weight: "bold", size: 0.95em)[Angabe],
-        text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
-      )
-    ]
-    #set par(justify: false)
-    #table(
-      columns: (3.2cm, 1fr),
-      inset: (x: 10pt, y: 7pt),
-      stroke: (x: none, y: 0.5pt + luma(232)),
-      fill: (x, y) => if calc.even(y) { luma(250) } else { white },
-      align: (left, left),
-
-      [Bezeichnung],
-      [Unternehmen],
-
-      [Definition / Zweck],
-      [
-        Repräsentiert die zu gründende resp. gegründete juristische Person, an der Amiras Gründungsvorhaben ausgerichtet ist.
-        Das Geschäftsobjekt enthält die wesentlichen Stammdaten der Unternehmung. 
-        Der Gründungsverlauf selbst wird nicht als Inhalt abgebildet, sondern ist über die Zustände des Objekts nachzuvollziehen.
-       /* Die Gründung einer juristischen Person setzt voraus, dass mindestens ein Vertreter Wohnsitz in der Schweiz hat. */
-       Die juristische Person ist Empfängerin der Betriebsbewilligung. 
-      ],
-
-      [Attribute],
-      [Auf Ebene Geschäftsobjekt nicht ausmodelliert. Fachlich relevant wären jedoch: 
-      + Auf die eine Seite Informationen wie Rechtsform, Firmenname, Sitz / Domizil, Zweck, Kapital.
-      + Auf der anderen Seite Identifikatoren für die Interaktion zu den verschiedenen öffentlich-rechtlichen Akteure auf kantonale und Bundesebene wie Unternehmens-ID, Mehrwertsteuer-Nummer, AHV-Nummer, Nummer der Unfallversicherungspolice (SUVA oder private Versicherung).
-    
-        _(nur Stammdaten; zugehörige Dokumente wie Handelsregistereintrag oder Bewilligung sind eigene Objekte, siehe Beziehungen)_
-      ],
-
-      [Beziehungen],
-      [
-        - wird referenziert von *Gründungsvorhaben* (wobei die Gründung der juristischen Person nicht zwingend notwendig ist)
-        - steht in Beziehung zu 
-         - *Kundenkonto*: als Objekt des Gründungsvorhabens
-         - *Bewilligung*: als Empfänger
-         - *Lieferantenkonto* als Kunde und Debitor von Transgourmet
-         - und *Finanzierung*: als Empfänger der Mittel
-        - Zugriff über die Geschäftstransaktionen 
-          - Gründungsdokumentation vorbereiten, Eintrag im Handelsregister beantragen, Antrag prüfen, im Handelsregister eintragen und Unterlagen nachreichen (siehe @tbl-GT-Unternehmen-gründen). 
-      ],
-    
-    )
-  ]
-) <tbl-GO-Unternehmen>
-
-+ *Zustände*: neu, beurkundet, eingereicht, unvollständig, angenommen, abgelehnt, im Handelsregister eingetragen, abgebrochen.
-
-+ *Lebenszyklus*: von _neu_ über _beurkundet_ zu _eingereicht_ für die Prüfung durch die Behörden; bei fehlenden Angaben _unvollständig_, nach Nachreichung wieder _eingereicht_. Nach dem Erreichen des Status _eingereicht_ geht es je nach Behördenentscheid mit dem Status _abgelehnt_ zum Ende, während bei behördlicher Zustimmung die Status _angenommen_ und _im Handelsregister eingetragen_ erreicht werden. Der Status _abgebrochen_ beendet den Zyklus vorzeitig, solange der Status _eingereicht_ noch nicht erreicht worden ist. 
-*/
 
 ==== Geschäftstransaktionen
 Das Geschäftsobjekt Unternehmen durchläuft mehrere Transaktionen: 
-- In einer ersten Phase ist Amira in Führung: sie _bereitet_  mit der Hilfe von Informationen und Fachfunktionen auf GastroStart die _Unterlagen_ für die Gründung der "Food Affair GmbH _vor_. Nach der öffentlichen Beurkundung _beantragt_ sie den _Eintrag im Handelsregister_ für ihre GmbH. 
-- Danach ist der Ball bei den Behörden: das kantonale Handelsregisteramt _prüft den Antrag_ auf Vollständigkeit, _lehnt es ab_ oder _nimmt es an_ und _trägt die GmbH im Handelsregister ein_. 
+- In einer ersten Phase ist der Benutzer in Führung: er _bereitet_  mit der Hilfe von Informationen und Fachfunktionen auf GastroStart die _Unterlagen_ für die Gründung der juristischen Person  _vor_. Nach der öffentlichen Beurkundung kann den _Eintrag im Handelsregister beantragt_ werden.
+- Danach ist der Ball bei den Behörden: das kantonale Handelsregisteramt _prüft den Antrag_ auf Vollständigkeit, _lehnt es ab_ oder _nimmt es an_ und _trägt die juristische Person im Handelsregister ein_.
 
 Die folgende @tbl-GT-Unternehmen-gründen fasst diese Punkte zusammen:
 
@@ -627,31 +548,31 @@ transaktion],
       fill: (x, y) => if calc.odd(y) { luma(250) } else { white },
       align: (left, left, left),
 
-      [Gründungs-dokumentation vorbereiten], [Amira erstellt die für die Gründung notwendigen Dokumente und sammelt die notwendigen Beilagen  und bringt diese physisch beim Notar vorbei und beauftragt diesen mit der Gründung der GmbH. Sie zahlt das Gründungskapital ein.], [neu → beurkundet],
-      [Eintrag im Handelsregister beantragen], [Amira meldet ihre GmbH über ihren Notar beim Handelsregisteramt des Kantons, in dem die GmbH ihr Sitz hat.], [beurkundet → eingereicht],
+      [Gründungs-dokumentation vorbereiten], [Der Benutzer erstellt die für die Gründung notwendigen Dokumente, sammelt die notwendigen Beilagen  und bringt diese physisch beim Notar vorbei und beauftragt diesen mit der Gründung der Firma. Der Benutzer zahlt das Gründungskapital ein.], [neu → beurkundet],
+      [Eintrag im Handelsregister beantragen], [Der Benutzer meldet seine Firma über den Notar beim Handelsregisteramt.], [beurkundet → eingereicht],
       [Prüfung durch Handelsregister (abwarten)], [ Das Handelsregisteramt prüft den Antrag prüft den Antrag formell und entscheidet über das weitere Vorgehen.
        ], [eingereicht → angenommen / abgelehnt / unvollständig],
-      [Im Handelsregister eintragen], [Das Handelregisteramt teilt Amira mit, dass der Eintrag im Register erfolgt ist], [angenommen → im Handelsregister eingetragen],
+      [Im Handelsregister eintragen], [Das Handelregisteramt teilt mit, dass der Eintrag im Register erfolgt ist], [angenommen → im Handelsregister eingetragen],
     )
   ]
 ) <tbl-GT-Unternehmen-gründen>
 
 
-=== Amira erhält die Bewilligung
+=== Geschäftsobjekt Bewilligung, seine Zustände und sein Verhalten
+verweis: @sec-cj-bewilligung-erhalten
 
-Nach der Gründung ihrer GmbH, die übrigens "Amiras' FoodAffairs GmbH" heisst, kann unsere Heldin den nächsten Hürdenlauf vornehmen. 
-So wie mit der Gründung des Unternehmens bereits erfolgt, unterstützt GastroStart Amira dabei, alle Unterlagen, Bestätigungen und Nachweise vorzubereiten oder einzuholen, die für die Erteilung der Betriebsbewilligung durch die zuständige Behörde am gewählten Standort gefordert sind. 
+Nach der Gründung der juristischen Person, zum Beispiel eine GmbH, kann der Benutzer den nächsten Hürdenlauf vornehmen: So wie mit der Gründung des Unternehmens bereits erfolgt, unterstützt GastroStart seine Kunden dabei, alle Unterlagen, Bestätigungen und Nachweise vorzubereiten oder einzuholen, die für die Erteilung der Betriebsbewilligung durch die zuständige Behörde am gewählten Standort erforderlich sind.
 
 GastroStart gibt Amira über jedes Lieferobjekt Auskunft, zeigt auf, wo welcher Nachweis einholt werden kann.
-Dank GastroStart kann Amira der Sinn hinter jeder behördlichen Anforderung nachvollziehen, und die motiviert sie bei der zeitaufwändigen Zusammenstellung. Denn die Anforderungen an die Erteilung der Betriebsbewilligung dienen dem Schutz der Gäste, denn die Vorschriften decken Bereiche ab wie Hygiene und Lebensmittelsicherheit, Bau- und Brandschutz und nicht zuletzt die persönliche Eignung von Amira für die Führung des Caterings. 
+Dank GastroStart können die Benutzer der Sinn hinter jeder behördlichen Anforderung nachvollziehen, und die motiviert sie bei der zeitaufwändigen Zusammenstellung. Denn die Anforderungen an die Erteilung der Betriebsbewilligung dienen dem Schutz der Gäste, denn die Vorschriften decken Bereiche ab wie Hygiene und Lebensmittelsicherheit, Bau- und Brandschutz und nicht zuletzt die persönliche Eignung des Antragsstellers für die Führung des Caterings.
 
-Bemerkung: Eigentlich ist nicht Amira die Empfängerin der Betriebsbewilligung für das Catering, sondern diese wird ihrer FoodAffairs GmbH ausgestellt.
+Bemerkung: Eigentlich ist nicht der Benutzer Empfänger der Betriebsbewilligung für das Catering, sondern diese wird der Firma  ausgestellt.
 
 Die folgende Abbildung stellt die Zusammenhänge der Geschäftsobjekte, Zustände und Transaktionen im ressourcenunabhängigen Modell nach Archimate dar. 
 
  #figure(
   image("../assets/GTZ Amira erhält die Bewilligung.svg", width: 100%),
-  caption: [Geschäftstransaktionen und Zustände - Szenario "Amira erhält die Bewilligung"]
+  caption: [Geschäftstransaktionen und Zustände - Szenario "Bewilligung erhalten"]
 ) <fig-GTZ-Amira-bewilligung>
 
 Nachfolgend wird auf die einzelnen Elemente der Grafik erklärt:
@@ -724,9 +645,9 @@ caption: [Geschäftsobjekt Bewilligung und dessen Zustände]
  
  
  ==== Geschäftstransaktionen
-Amira möchte beantragt im Namen ihres Unternehmens die Bewilligung für den Betrieb von Catering.
+Der Benutzer beantragt im Namen des Unternehmens die Bewilligung für den Catering-Betrieb.
 Das Geschäftsobjekt Bewilligung durchläuft mehrere Transaktionen: 
-- In einer ersten Phase ist Amira in Führung: sie _bereitet_  mit der Hilfe der Informationen auf GastroStart die _Unterlagen_ für den Bewilligungsantrag _vor_. Wenn sie alle Unterlagen gesammelt hat, _reicht_ sie den _Bewilligungsantrag_ bei der zuständigen Behörde _ein_. 
+- In einer ersten Phase ist der Benutzer in Führung: er _bereitet_  mit der Hilfe der Informationen auf GastroStart die _Unterlagen_ für den Bewilligungsantrag _vor_. Wenn sie alle Unterlagen gesammelt hat, _reicht_ er den _Bewilligungsantrag_ bei der zuständigen Behörde _ein_.
 - Danach ist der Ball bei den Behörden: die Behörde _prüft den Antrag_ auf Vollständigkeit, _lehnt es ab_ oder _erteilt_ der Food Affair GmbH die Betriebsbewilligung. 
 
 Die folgende @tbl-GT-Bewilligung fasst diese Punkte zusammen:
@@ -763,7 +684,7 @@ Die folgende @tbl-GT-Bewilligung fasst diese Punkte zusammen:
       align: (left, left, left),
 
       [Bewilligungsantrag vorbereiten],
-      [Amira erfasst die erforderlichen Angaben und Unterlagen für den Bewilligungsantrag.],
+      [Der Antragssteller erfasst die erforderlichen Angaben und Unterlagen für den Bewilligungsantrag.],
       [neu → in Vorbereitung],
 
       [Bewilligungsantrag einreichen],
@@ -771,7 +692,7 @@ Die folgende @tbl-GT-Bewilligung fasst diese Punkte zusammen:
       [in Vorbereitung → eingereicht],
 
       [Bewilligungsantrag vervollständigen],
-      [Amira reicht die von der Behörde nachgeforderten Unterlagen nach, damit die Prüfung fortgesetzt werden kann.],
+      [Der Antragssteller reicht die von der Behörde nachgeforderten Unterlagen nach, damit die Prüfung fortgesetzt werden kann.],
       [unvollständig → in Vorbereitung],
 
       [Antrag prüfen],
@@ -779,7 +700,7 @@ Die folgende @tbl-GT-Bewilligung fasst diese Punkte zusammen:
       [eingereicht → erteilt / abgelehnt / unvollständig],
 
       [Verfügung mitteilen],
-      [Die Behörde teilt Amira das Ergebnis der Prüfung als Verfügung mit.],
+      [Die Behörde teilt dem Antragssteller das Ergebnis der Prüfung als Verfügung mit.],
       [erteilt / abgelehnt],
     )
   ]
@@ -1415,23 +1336,23 @@ Dieser Kapitel enthält die separaten Ausführungen der jeweiligen Autoren der G
 
 == Operating-Model-Einordnung nach Ross, Weill und Robertson für Transgourmet
 
-#autor-transgourmet("Beitrag von Jakob Albrecht", inhalt: [Belieferung von Gastronomiebetrieben durch Transgourmet im Rahmen des Joint Ventures GastroStart mit Fokus auf die Integration von Prozessen und Daten],)
+#autor-transgourmet("Beitrag von Jakob Albrecht", inhalt: [Belieferung von Gastronomiebetrieben durch Transgourmet im Rahmen des Joint Ventures GastroStart],)
 
-Bevor die Customer Journey auf Capabilities und Systeme heruntergebrochen wird, ist eine grundlegende Einordnung nötig: Welches Operating Model liegt Transgourmet zugrunde?
+Bevor die aus der Customer Journey resultierten Geschäftsfähigkeiten auf Applikationslandschaft heruntergebrochen wird, ist eine grundlegende Einordnung nötig: Welches Operating Model liegt Transgourmet zugrunde und welchen Einfluss hat dies auf die Enterprise Architektur des Joint Ventures GastroStart?
+
 Ross, Weill und Robertson unterscheiden vier Operating Models entlang der beiden Achsen Standardisierung der Geschäftsprozesse und Integration der Daten @ross2006enterprise.
 Aus dieser Klassifikation leitet sich ab, wie viel Integration eine Architektur tragen muss und wo Autonomie zulässig bleibt.
 
 #figure(
-  caption: [Operating-Model-Matrix nach Ross, Weill und Robertson @ross2006enterprise[Abb. 2-1, S. 30] mit Verortung der Transgourmet-B2B-Belieferung (Unification) und der übergreifenden Customer Journey (Federation). Matrix #sym.copyright 2005 MIT Sloan Center for Information Systems Research, mit Genehmigung verwendet.],
+  caption: [Operating-Model-Matrix nach Ross, Weill und Robertson @ross2006enterprise[Abb. 2-1, S. 30] mit Verortung der Transgourmet-B2B-Belieferung (Unification) und der übergreifenden Customer Journey (Federation). ],
   image("../assets/operating_model_matrix_mit_federation_layer.svg", width: 92%),
 ) <fig-operating-model-matrix-with-federation-layer>
 
 - *Ebene Transgourmet B2B-Belieferung — Unification*: Innerhalb von Transgourmet sind sowohl Prozesse als auch Daten hoch integriert und zentralisiert. Kunden-, Sortiments-, Preis-, Bestands-, Bestell- und Lieferdaten werden geteilt, die Kernprozesse (Bestellung, Disposition, Lieferung, Fakturierung) sind standardisiert, und ein zentrales System bedient diese Kanäle.
 
-- *Ebene Customer Journey — Federation*: Für die akteursübergreifende Sicht existiert keine Entsprechung im Ross/W/R-Schema; die Klassifikation adressiert Ebenen *innerhalb* einer Organisation (Enterprise, Division, Business Unit), nicht autonome Akteure. Die beteiligten Akteure (Gründer, Behörde, Finanzpartner, Transgourmet) sind autonom und betreiben ihre eigenen Systeme. Eine geteilte Datenhaltung über die Akteursgrenzen hinweg ist nicht vorgesehen. Die Durchgängigkeit der Journey entsteht, wo möglich, über standardisierten Kontrakte: das GastroStart-Portal koordiniert die Gründungsphasen über eCH-konforme Schnittstellen zu Behörden und Finanzpartner. Transgourmet wird über EDIFACT/GS1-Kontrakte für Bestellungen und Lieferantungen angebunden. Die Integration der Daten ist auf die Schnittstellen beschränkt, die Prozesse sind nicht standardisiert, und die Systeme sind autonom.
+- *Ebene Customer Journey — Federation*: Für die akteursübergreifende Sicht existiert keine Entsprechung im Ross/W/R-Schema; die Klassifikation adressiert Ebenen *innerhalb* einer Organisation (Enterprise, Division, Business Unit), nicht autonome Akteure. Dem entsprechend ist die Darstellung @fig-operating-model-matrix-with-federation-layer zweiteilig. Die beteiligten Akteure (Gründer, Behörde, Finanzpartner, Transgourmet) sind autonom und betreiben ihre eigenen Systeme. Eine geteilte Datenhaltung über die Akteursgrenzen hinweg ist nicht vorgesehen. Die Durchgängigkeit der Journey entsteht, wo möglich, über standardisierten Kontrakte: das GastroStart-Portal koordiniert die Gründungsphasen über eCH-konforme Schnittstellen zu Behörden und Finanzpartner. Transgourmet wird über EDIFACT/GS1-Kontrakte @gs1ch_2022_idealmessage_orders für Bestellungen angebunden. Die Integration der Daten ist auf die Schnittstellen beschränkt, die Prozesse sind nicht standardisiert, und die Systeme sind autonom.
 
 == ArchiMate-Modell des Ist-Zustands von Transgourmet
-
 
 Die konsolidierte Sicht auf den Ist-Zustand der Transgourmet-B2B-Belieferung wurde als ArchiMate-Modell über die drei Schichten Business, Application und Technology erstellt @opengroup2019archimate.
 Das Modell macht das Unification-Operating-Model aus @fig-operating-model-matrix-with-federation-layer konkret sichtbar.
@@ -1447,7 +1368,25 @@ Die Schichten lesen sich wie folgt:
 - *Application Layer*: Der B2B-Shop (Web-Portal, Bestellaufnahme) und das EDI-Gateway (EDIFACT-Verarbeitung) bilden die Schnittstellen nach aussen; realisiert werden die Geschäftsfunktionen jedoch durch ein zentrales Dispo-/ERP-System als monolithisches Kernsystem, das Auftragsverwaltung, Stammdaten, Logistik und Faktura in einer Lösung bündelt.
 - *Technology Layer*: Das Kernsystem wird von einem Application-Server (VM-Hosting) getragen und auf einem Datenbank-Server (RDBMS, zentrale Daten) gehostet.
 
-Die entscheidende architektonische Beobachtung: Der monolithische Dispo-/ERP-Kern realisiert sämtliche Geschäftsfunktionen ohne Anti-Corruption Layer (ACL) und ohne Schnitt in Self-Contained Systems (SCS) @bass2012.
+#fuehrung([Das monolithische ERP-Kernsystem realisiert sämtliche Geschäftsfunktionen ohne Anti-Corruption Layer (ACL) und ohne Schnitt in Self-Contained Systems (SCS) @bass2012.
+
+Bei Transgourmet ist ein Modernisierungsprojekt in der Umsetzung (Stand Sommer 2026), das genau diese Architekturprobleme adressiert und die Kernsysteme in SCS aufteilt, die durch ACLs isoliert kommunizieren.])
+
+=== Domänenmodell: Bestellabwicklung im RSM mit Transgourmet als Lieferanten
+
+Mit dem RSM werden die Anforderungen an die Anwendungslandschaft von GastroStart konkretisiert.
+Hier mit dem Blick auf die *Bestellabwicklung* und Anbindung von Transgourmet als Lieferanten.
+
+Die Geschäftstransaktion *Bestellung senden* wird im RSM bis auf Stufe Technologie heruntergebrochen, wo auf den GS1/EDIFACT-Standard für die elektronische Bestellung (ORDERS) verwiesen werden kann @gs1ch_2022_idealmessage_orders.
+
+#figure(
+  image("../assets/RSM-Bestellabwicklung.svg", width: 92%),
+  caption: [RSM der Bestellabwicklung mit Anbindung von Transgourmet als Lieferanten],
+) <fig-RSM-Bestellabwicklung>
+
+Die Domänen GastroStart und Transgourmet werden über den Technologie Layer mit EDIFACT Order Sender und Empfänger verbunden, so dass die Bestellabwicklung über die Akteursgrenzen hinweg standardisiert ist (siehe @fig-RSM-Bestellabwicklung).
+
+#design-entscheid([Weitere Technologien und Kommunikationsknoten, die in der Übertragung und Persistenz eine Rolle spielen, sind hier bewusst ausgeblendet, da sie auf dieser Stufe der Lösungsfindung für den Kommunikationsprozess keinen Mehrwert bieten.])
 
 == OM für DV Bern 
 #autor-dvbern("Beitrag von Jan Sohnemann, DVBern", inhalt: [])

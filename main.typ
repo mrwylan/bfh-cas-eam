@@ -7,10 +7,7 @@
   date: "BFH CAS Enterprise Architecture Management (EAM), 2026",
   abstract: [
 
-Diese Gruppenarbeit berichtet darüber, wie vier Kollegen aus ganz unterschiedlichen Branchen der Wirtschaft sich auf einer Idee für ein gemeinsames Unternehmen geeinigt haben und dieses in iterativen Schritten erarbeitet haben.
-In der Arbeit wird zunächst die Customer Journey beschrieben und abgegrenzt.
-Danach folgt die "Modellierungsreise" entlang der RIM-Methodik. 
-Anschliessend werden die Ressourcen wieder dazugenommen - wobei jeder der vier Kollegen am Schluss einer Vertiefung seines eigenen Anteils am Unternehmen präsentiert.
+Diese Gruppenarbeit berichtet darüber, wie vier Kollegen aus ganz unterschiedlichen Branchen der Wirtschaft sich auf einer Idee für ein gemeinsames --
 
   ],
    authors: (
