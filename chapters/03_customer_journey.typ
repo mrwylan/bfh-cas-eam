@@ -105,7 +105,7 @@ Und schliesslich bietet jede Phase *Chancen*, die die *Bedürnisse* befriedigen 
 
 === Amira orientiert sich <head-scenarios-orientation>
 /*
-#autor-dvbern("Beitrag von Jan Sohnemann, DVBern", inhalt: [])*/
+#autor-dvbern("Beitrag von Jan Sohnemann, DV Bern", inhalt: [])*/
 
 Unser Angebot soll sich insbesondere an jede GründerInnen richten, die noch keine Erfahrung mit Unternehmensgründungen haben.
 Und wir gehen davon aus, dass viele Betroffene schon eine konkrete Idee dessen haben, was sie Anbieten möchten.
@@ -175,7 +175,7 @@ Die folgende Tabelle fasst die wesentlichen Merkmale dieser Phase der Customer-J
 
 === Amira registriert sich 
 
-/*#autor-dvbern("Beitrag von Jan Sohnemann, DVBern", inhalt: [])*/
+/*#autor-dvbern("Beitrag von Jan Sohnemann, DV Bern", inhalt: [])*/
 
 Im Anschluss an die Orientierung sollte eine Registrierung erfolgen. 
 Das Ziel der Registrierung ist es, das Gründungsvorhaben auf der Plattform mit einem Konto zu verknüpfen, sodass es gespeichert, den Erstellenden exklusiv zugänglich gemacht und zu einem späteren Zeitpunkt weitergeführt werden kann.
