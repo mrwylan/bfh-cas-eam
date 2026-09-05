@@ -354,7 +354,7 @@ transaktion],
 ])
 
 
-=== Geschäftsobjekt Unternehmen, seine Zustände und sein Verhalten
+=== Geschäftsobjekt Unternehmen, seine Zustände und sein Verhalten <sec-go-gt-unternehmen-gründen>
 Im @sec-cj-unternehmen-gründen wurde das Szenario der Unternehmensgründung vorgestellt. 
 Nun wird dieses Szenario anhand des ihm zugrundeliegende Geschäftsobjekt näher beschrieben. 
 
@@ -505,11 +505,11 @@ transaktion],
 
 
 === Geschäftsobjekt Bewilligung, seine Zustände und sein Verhalten
-verweis: @sec-cj-bewilligung-erhalten
+verweis: @fig-GTZ-orientierung
 
 Nach der Gründung der juristischen Person, zum Beispiel eine GmbH, kann der Benutzer den nächsten Hürdenlauf vornehmen: So wie mit der Gründung des Unternehmens bereits erfolgt, unterstützt GastroStart seine Kunden dabei, alle Unterlagen, Bestätigungen und Nachweise vorzubereiten oder einzuholen, die für die Erteilung der Betriebsbewilligung durch die zuständige Behörde am gewählten Standort erforderlich sind. 
 
-GastroStart gibt Amira über jedes Lieferobjekt Auskunft, zeigt auf, wo welcher Nachweis einholt werden kann.
+GastroStart gibt  über jedes Lieferobjekt Auskunft, zeigt auf, wo welcher Nachweis einholt werden kann.
 Dank GastroStart können die Benutzer der Sinn hinter jeder behördlichen Anforderung nachvollziehen, und die motiviert sie bei der zeitaufwändigen Zusammenstellung. Denn die Anforderungen an die Erteilung der Betriebsbewilligung dienen dem Schutz der Gäste, denn die Vorschriften decken Bereiche ab wie Hygiene und Lebensmittelsicherheit, Bau- und Brandschutz und nicht zuletzt die persönliche Eignung des Antragsstellers für die Führung des Caterings. 
 
 Bemerkung: Eigentlich ist nicht der Benutzer Empfänger der Betriebsbewilligung für das Catering, sondern diese wird der Firma  ausgestellt.
@@ -1077,19 +1077,22 @@ Die folgende Abbildung zeigt wie die in diesem Abschnitt besprochenen Prozesse u
   caption: [Geschäftsfähigkeiten in Phase 2: Sich registrieren"]
 ) <fig-bp-and-bc-phase2>
 
-=== Geschäftsprozess: Unternehmen gründen
+=== Geschäftsprozesse und Geschäftsfähigkeiten für die  Unternehmensgründung
+In  @sec-go-gt-unternehmen-gründen wurde das zentrale Geschäftsobjekt für das Szenario "Unternehmen Gründen" beschrieben - samt seinen Zuständen und die dazugehörenden Geschäftstransaktionen (se. @fig-GTZ-Amira-gründet). 
+Unterstehende @GPGF_Amira_gründet_Unternehmen stellt die Zusammenhänge zwischen Geschäftsprozesse, Geschäftsobjekten und Geschäftsfähigkeiten im ressourcenunabhängigen Modell nach Archimate dar. 
 
 #figure(
   image("../assets/GP+GF Amira gründet ihr Unternehmen.svg", width: 100%),
-  caption: [Geschäftsprozesse - Szenario Amira gründet ihr Unternehmen]
+  caption: [Geschäftsprozesse und Geschäftsfähigkeiten - Szenario "Unternehmensgründung"]
 ) <GPGF_Amira_gründet_Unternehmen>
 
-1. Geschäftsprozesse 
+Nachfolgend wird auf die neu hinzugekommene Elemente - Geschäftsprozesse und Geschäftsfähigkeiten - näher eingegangen
 
-Handelsregistereintrag erhalten 
-wichtig, weil der Unternehmen erst dann überhaupt existiert und als solches auch Handlungs- und Geschäftsfähig ist! 
-
-Unternehmen bei Behörde anmelden 
+==== Geschäftsprozesse
+Die Geschäftstransaktionen werden in zwei Geschäftsprozesse aggregiert, nämlich *Handelsregistereintrag erhalten* und *Unternehmen [bei Behörde] anmelden*.
+Die Unterscheidung in zwei Geschäftsprozesse ist hier der Tatsache zuzuweisen, dass jeder Prozess ein eigenständiges Ziel verfolgt. 
+Der Eintrag im Handelsregister hat zum Ziel, das Unternehmen ins Leben zu rufen und als solches auch Handlungs- und Geschäftsfähig zu machen. Dieser Prozess ist zwingend notwendig.
+Die Anmeldung des Unternehmens bei verschiedenen Behörden hat zum Ziel, die zukünftigen Angestellten zu schützen (Anmeldung bei der kantonalen Ausgleichsstelle) oder aber das Unternehmen vor den Behörden eindeutig identifizierbar zu machen und die Mehrwertsteuerpflicht zu konkretisieren (Anmeldung bei der eidgenössischen Steuerverwaltung). Dieser Prozess ist nur dann notwendig, wenn die Geschäftstätigkeit aufgenommen wird.
 
 2. Abhängigkeiten von Geschäftsobjekten 
 
