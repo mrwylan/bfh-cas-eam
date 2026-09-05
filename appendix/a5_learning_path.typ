@@ -57,3 +57,41 @@ Die im CAS entwickelten Praktiken werde ich wie folgt in meine Arbeitsweise einb
 + Vorhaben werde ich mit den Geschäftsfähigkeiten von Transgourmet in Verbindung bringen, um die Wertschöpfung zu fokussieren und die Architekturarbeit auf die Bedürfnisse der Kunden und Anwender auszurichten.
 + Die RIM Methodik werde ich in der Architekturarbeit einsetzen, um eine erste Distanz zu bereits gemachten technischen Lösungen zu schaffen und so die Basis für eine offenere Diskussion von Architekturentscheidungen zu legen.
 + Zielgruppenorientierte Architekturarbeit, Perspektivenwechsel und isolierte Modellierung von Szenarien in der jeweiligen Tiefe, die den Stakeholdern entspricht, wird meine Qualität der Architekturarbeit verbessern und die Akzeptanz der resultierenden Architekturentscheidungen erhöhen.
+
+= Beispiel der EA-Integration bei DV Bern im Produkt kiBon<ext-ea-kibon>
+
+#autor-dvbern([Beitrag von Jan Sohnemann])
+
+kiBon ist eine digitale Verwaltungsplattform für Betreuungsgutscheine.
+Das Projekt wurde ursprünglich mit der Stadt Bern initiiert, inzwischen wurde das System aber im ganzen Kanton ausgerollt und wird massgeblich vom Kanton Bern finanziert.
+Mittlerweise sind auch andere Kontone und Gemeinden ausserhalb des Kantons Bern Nutzter und Financiers der Plattform.
+Familien können über die Plattform Gesuche zur Rückerstattung der Betreuungskonsten ihrer Kinder erstellen.
+Man trägt Alter, Betreuungsform, -platz und Dauer jedes Kindes in einem Webformular ein.
+Elter erfassen auch ihre Familien- und finanzielle Situation.
+Die betreuuende Organisation bestätigt den Platz und die Kosten der Betreuung pro Kind.
+Das System berechnet dann die Höhe der Rückerstattung.
+Mitarbeiter der Gemeinde prüfen anschliessend den Antrag, können weitere Dokumente einfodern und Gesuche verfügen oder Ablehnen.
+Nach der Verfügung haben die Eltern einen Rechtsanspruch auf die Rückerstattungen.
+Diese werden von den Gemeinden und vereinzelt auch von den Kantonen übernommen oder bezuschusst.
+
+Der Technologiestack des Produktes wurde aus einem Katalog ausgewählt, der vom Achtiekturboard von DV Bern verwaltet wird.
+Zusammen mit einem Architekten aus diesem Board wurde die Architektur mit dem Entwicklerteam erarbeitet.
+Dabei wurde auf Best-Practices aus bereits existierenden, ähnlichen Produkten zurückgegriffen.
+Als Vorgehensmodell für die Produktentwicklung wurde Scrum gewählt.
+Dies ist ebenfalls Standard für alle Produktentwicklungen bei DV Bern.
+Der Betrieb der Anwendung erfolgt bei der Bedag AG, was der, vom Kanton Bern vorgegebene Standard für die meisten Systeme dieser Grössenordnung ist.
+Das System wird regelässigen Audits unterzogen, um Sicherheitsanforderungen sicherzustellen.
+Diese Audits werden vom einem unabhängigen Gremium durchgeführt.
+Unabhängig bedeutet: Nicht in die Produktentwicklung involviert.
+Der Source-Code des Produktes muss zudem öffentlich und freu zugänglich sein.
+Auf Feedback Dritter, inbesondere wenn es sich um sicherheitskritische Anmerkungen handelt, muss eingegangen werden.
+
+kiBon bietet und verwendet viele Schnittstellen zu internen und externen Systemen.
+Die zwei wichtigsten Schnittstellen betreffen das Identity Access Management via AGOV und den Steuerdatenabruf via Nesko.
+Schnittstellen nach Aussen betreffen in erster Linie die Betreuungsplatzbestätigungen durch die Institutionen.
+Die Verwendung der vom System dafür bereitgestellten Weboberfläche ist optional.
+Insbesondere grössere Institutionen bevorzugen eine Integration ihrer eigenen Systeme.
+Alle nach aussen gerichteten Schnittstellen in kiBon folgen dem REST Paradigma.
+
+Das Projekt kiBon existiert seit mehr als 10 Jahren und hat zwischenzeitlich enorme Wachtumsschübe erfahren, welche die ursprünglich geplante Architektur an ihre Grenzen bringt.
+Die grössten Herausforderungen liegen aktuell bei der Skalierbarkeit und dem Legacy-Management.

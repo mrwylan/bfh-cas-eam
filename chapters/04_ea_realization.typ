@@ -90,10 +90,9 @@ In der Modellierung verwenden wir zur Darstellung der Beziehnung "löst aus" imm
 Für die Darstellung der Zustände verwenden wir das Symbol *Business Event*.
 In der Modellierung verwenden wir für die Zugriffsbeziehung von Geschäftsobjekt nach Zustand immer die "lesende" Variante. Dabei zeigt der Pfeil vom Geschäftsobjekt zum Zusand.
 
-=== Orientierung<head-phase1-orientierung-1>
-#todo-action([Titel umschreiben - wie bei den anderen Szenarien])
-/*
-#autor-dvbern("Beitrag von Jan Sohnemann, DVBern", inhalt: [])*/
+=== Amira orientiert sich <head-phase1-orientierung-1>
+
+#autor-dvbern("Beitrag von Jan Sohnemann, DVBern", inhalt: [])
 
 In @head-scenarios-orientation haben wir einen Einstieg in die erste Phase der Customer Journey beschrieben. Hier wollen wir den Ablauf der Phase nun vollständig beschreiben.
 
@@ -132,7 +131,7 @@ Die hier beschriebene Variante liest sich als Happy Path — also die erfolgreic
 Sicherlich ist nicht jedes Gründungsvorhaben realisierbar, und der hier beschriebene Prozess kann durchaus komplexer werden. 
 Dass das Gründungsvorhaben nicht realisierbar ist, ist allerdings auch eine Art Orientierung.
 Wie im zweiten Absatz dieses Abschnitts angemerkt, spielt das Gründungsvorhaben in allen Phasen der Customer Journey eine entscheiden Rolle.
-Die folgende @tbl-GO-Gründungsvorhaben gibt darum noch mal einen Überblick über das Objekt.
+Die folgende Tabelle fasst die wesentlichen Kriterien für dieses wichtige Geschäftsobjekt zusammen.
 Für ein besseres Verständnis wurden hier auch einige Attribute (im Text auch als "Eigenschaften" bezeichnet) angegeben.
 Die hier aufgezählten Zustände sind vollständig für alle Phasen der Customer Journey und auch wenn deren Einfürung noch offen ist, tragen sie an dieser Stelle aus unserer Sicht zum Verständnis bei.
 
@@ -189,12 +188,54 @@ Die hier aufgezählten Zustände sind vollständig für alle Phasen der Customer
   ]
 ) <tbl-GO-Gründungsvorhaben>
 
-#todo-action([Geschäftstransaktionen fehlen - nachführen - wie im Abschnitt Registrierung ])
+Und schliessich geben wir in der nächsten Tabelle einen Überblick über die hier erwähnten Geschäftstransaktion. Bei der Auflistung der Zustandsübergänge beschränken wir uns auf die Zustände des Gründungsvorhabens.
 
-=== Registrierung <head-phase2-registrierung>
-#todo-action([Titel umschreiben - wie die anderen Szenarien])
-/*
-#autor-dvbern("Beitrag von Jan Sohnemann, DVBern", inhalt: [])*/
+#figure(
+  caption: [Geschäftstransaktionen: Prozess «sich orientieren],
+  block(
+    width: 100%,
+    radius: 6pt,
+    clip: true,
+    stroke: 0.5pt + luma(225),
+  )[
+    #block(
+      width: 100%,
+      fill: luma(70),
+      inset: (x: 10pt, y: 7pt),
+      below: 0pt,
+    )[
+      #grid(
+        columns: (3.8cm, 1fr, 3.2cm),
+        gutter: 10pt,
+        text(fill: white, weight: "bold", size: 0.95em)[Geschäfts-\
+transaktion],
+        text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
+        text(fill: white, weight: "bold", size: 0.95em)[Zustands-\
+übergang],
+      )
+    ]
+    #set par(justify: false)
+    #table(
+      columns: (3.8cm, 1fr, 3.2cm),
+      inset: (x: 10pt, y: 7pt),
+      stroke: (x: none, y: 0.5pt + luma(232)),
+      fill: (x, y) => if calc.odd(y) { luma(250) } else { white },
+      align: (left, left, left),
+
+      [Standort festlegen],
+      [Die GründerIn legt den Standort ihres Gründungsvorhabens fest. Im Rahmen dieser Arbeit sind diese Standorte die 26 Schweizer Kantone.],
+      [initiiert → lokalisiert],
+
+      [Anforderungen ermitteln],
+      [Aus dem Kantonsanforderungskatalog, der durch die Standortfestlegung bestimmt wird, werden die, für das jeweilige Gründungsvorhaben wesentlichen Kriterien ermittelt.],
+      [lokalisiert → orientiert]
+    )
+  ]
+) <tbl-GT-sich-registrieren>
+
+=== Amirta registriert sich <head-phase2-registrierung>
+
+#autor-dvbern("Beitrag von Jan Sohnemann, DVBern", inhalt: [])
 
 
 Der Gründungsprozess lässt sich höchstwahrscheinlich nicht in einer Sitzung abschliessen. 
@@ -299,7 +340,7 @@ Die folgende @fig-gtz-registrierung zeigt das Geschäftsobjekt *Kundenkonto* und
   caption: [Zustandsübergänge des Kundenkontos im Szenario "Sich registrieren"]
 ) <fig-gtz-registrierung>
 
-#todo-action([jan: noch ein wörtchen als übergang zu dieser Tagbelle?])
+Die folgende Tabelle fasst die hier erwähnten Geschäftstransaktion noch einmal zusammen.
 
 #figure(
   caption: [Geschäftstransaktionen: Prozess «sich registrieren»],
@@ -334,16 +375,29 @@ transaktion],
       align: (left, left, left),
 
       [Konto anlegen],
-      [Die GründerIn erfasst ihre Angaben und legt ein Kundenkonto an, das mit ihrem Gründungsvorhaben verknüpft wird.],
-      [– → aktiv],
+      [Die GründerIn legt ein Kundenkonto an, mit dem sie auf der Plattform identifiziert und autorisiert werden kann. Das Kundenkonto wird mit ihrem Gründungsvorhaben verknüpft.],
+      [– → registriert],
 
       [Konto aktualisieren],
-      [Die GründerIn passt ihre Kontoangaben an (z. B. Postanschrift, Telefonnummer). Betroffene Prozesse oder Behörden werden über die Änderung informiert.],
-      [aktiv → aktualisiert],
+      [Die GründerIn aktualisiert ihre persönlichen oder Zugangsdaten (z. B. Postanschrift, E-Mailadresse, Passwort).],
+      [registriert → aktualisiert],
 
       [Konto löschen],
-      [Das Konto wird deaktiviert, sobald alle damit verbundenen Geschäftstransaktionen abgeschlossen und ausstehende Verbindlichkeiten beglichen sind. Bereits gestartete Transaktionen können abgebrochen werden, neue können nicht mehr gestartet werden.],
-      [aktiv → inaktiv],
+      [Das Konto wird deaktiviert. Bereits gestartete Transaktionen können abgebrochen werden, wenn möglich. Neue Transaktionen können nicht mehr gestartet werden.],
+      [
+        registriert → inaktiv,
+        aktualisiert → inaktiv
+      ],
+      [Kunde anmelden],
+      [Der Benutzer, hier der/die GründerIn als Kunde, identifiziert sich gegenüber der Plattform (durch Eingabe von Benutzername und Passwort z.B.) und wird vom System autorisiert.],
+      [
+        abgemeldet → angemeldet
+      ],
+      [Kunde abmelden],
+      [Der Benutzer, hier der/die GründerIn als Kunde, beendet seine Sitzung auf der Plattform. Zugriffe auf das Kundenkonto sind in dieser Benutzerrolle ohne erneute Anmeldung nicht mehr möglich.],
+      [
+        angemeldet → abgemeldet
+      ],
     )
   ]
 ) <tbl-GT-sich-registrieren>
