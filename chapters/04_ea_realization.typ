@@ -1146,18 +1146,18 @@ Realisierung heisst im Rahmen der Orientierung "Bewilligung", also die, durch di
 Eine Bewilligung ist noch kein Garant für ein erfolgreiches Unternehmen.
 Diesem Aspekt können wir uns im Rahmen dieser Arbeit aber nicht vollumfänglich widmen.
 Die zur Bewilligung notwendigen Schritte - wir bezeichnen sie im folgenden als "Bewilligungskriterien" - ergeben sich aus dem Wissen heraus, welche das sind.
-Dieses Wissen muss erarbeitet und gepflegt werden. Das erfordert Ressourcen und resultiert in einer Fähigkeit, nämlich *regulatorisches Wissen verwalten*.
+Dieses Wissen muss erarbeitet und gepflegt werden. Das erfordert Ressourcen und resultiert in einer Fähigkeit, nämlich *Regulatorisches Wissen*.
 Dieses Wissen ist in den Geschäftsobjekten *Digitale Regelmatrix* und *Kantonsanforderungskatalog* abgelegt.
 Da nicht alle Bewilligungskriterien für jedes Gründungsvorhaben relevant sind, ist es für die GründerInnen vorteilhaft, ihren konkreten Bedarf zu kennen.
-Diesen Bedarf aus allen möglichen Bewilligungskriterien ermitteln zu können resultiert in einer weiteren Geschäftsfähigkeit, nämlich *Bewilligungsbedarf ermitteln*.
+Diesen Bedarf aus allen möglichen Bewilligungskriterien ermitteln zu können resultiert in einer weiteren Geschäftsfähigkeit, nämlich *Bewilligungsbedarf*.
 Und schliesslich muss dieser Bedarf so aufbereitet werden, dass die GründerInnen ihn problemlos erfüllen können.
-Der ganze Prozess resultiert also in der Geschäftsfähigkeit *Gründungsorientierung bereitstellen*.
-Das kling zunächst abstakt und man könnte argumentieren, dass die zuvor genannten Geschäftsfähigkeiten *regulatorisches Wissen verwalten* und *Bewilligungsbedarf ermitteln* in dieser Fähigkeit vereint werden können.
+Der ganze Prozess resultiert also in der Geschäftsfähigkeit *Gründungsorientierung*.
+Das kling zunächst abstakt und man könnte argumentieren, dass die zuvor genannten Geschäftsfähigkeiten *Regulatorisches Wissen* und *Bewilligungsbedarf* in dieser Fähigkeit vereint werden können.
 Wir würden argumentieren, dass das Bereitstellen dieser Orientierung, als das für den Kunden (Gründer/in) sichtbare Ergebnis, von besonderer Bedeutung ist und besonderer Aufmerksamkeit bedarf.
 Man könnte den Kunden an dieser Stelle entwerder die - wie in @head-phase1-orientierung-1 beschrieben - ausgefüllte Regelmatrix überlassen.
 Unser Fokus wäre allerdings, diese Matix in eine Form zu übersetzten, die ein geringes Risko der Überforderung hat, die beherrschbar und ermutigend erscheint.
 Wir wollen schliesslich möglichst viele Kunden durch alle Phasen der Customer Jouney auf unserer Plattform begleiten.
-Das zu realisieren, verbirgt sich also hinter der Geschäftsfähigkeit *Gründungsorientierung bereitstellen*.
+Das zu realisieren, verbirgt sich also hinter der Geschäftsfähigkeit *Gründungsorientierung*.
 
 In @fig-bp-and-bc-phase1 sind neben der Einführung der Geschäftsfähigkeiten auch die beiden Geschäftstransaktion *Standort festlegen* und *Anforderungen ermitteln* in einem Geschäftsprozess aggregiert.
 Diesen Prozess haben wir naheliegenderweise *Gründungsvorhaben orientieren* genannt. 
@@ -1182,7 +1182,7 @@ Da wir uns hier noch im RIM befinden, möchten wir nicht zu sehr in Detail gehen
 - Verschlüsselung sensibler Daten bei der Übertragung.
 - Schützen sensibler Daten vor unberechtigtem Zugriff.
 Schützenswerte, beziehungsweise sensible Daten fassen wir unter dem Begriff "Kundendaten" zusammen.
-Und die für den Umgang mit diesen notwendige Geschäftsfähigkeit nennen wir *Kundendaten verwalten*.
+Und die für den Umgang mit diesen notwendige Geschäftsfähigkeit nennen wir *Kundendaten*.
 
 Das letzte Beispiel, das Schützen der Daten, führt uns zu einer weiteren Geschäftsfähigkeit.
 Wenn wir unberechtige Zugriffe verhindern wollen, wie setzen wir das um?
@@ -1201,7 +1201,7 @@ GründerInnen sind aber nicht die einzigen Benutzer des Systems.
 Ein Mitarbeiter der Verwaltung, der das Ergebnism eines Bewillungungsverfahrens für ein Gründungsvorhaben eintägt, darf dieses nicht abbrechen.
 Alle Benutzer dürfen ihr eigenes Passwort zurücksetzen.
 Aber nur ein Systemadministrator darf das Passwort für andere Benutzer zurücksetzen.
-Die Fähigkeiten sicherzustellen, dass Authenfizierung und Autorisierung sicher funktionieren, haben wir in der Geschäftsfähigkeit *Benutzer authentifizieren und autorisieren* zusammengefasst.
+Die Fähigkeiten sicherzustellen, dass Authenfizierung und Autorisierung sicher funktionieren, haben wir in der Geschäftsfähigkeit *Authentifizierung und Autorisierung* zusammengefasst.
 
 Die folgende Abbildung zeigt wie die in diesem Abschnitt besprochenen Prozesse und Fähigkeiten in das RMI nach Archimate eingebettet sind.
 
