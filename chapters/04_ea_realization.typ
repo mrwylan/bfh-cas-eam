@@ -558,7 +558,7 @@ transaktion],
 ) <tbl-GT-Unternehmen-gründen>
 
 
-=== Geschäftsobjekt Bewilligung, seine Zustände und sein Verhalten
+=== Geschäftsobjekt Bewilligung, seine Zustände und sein Verhalten<sec-go-gt-bewilligung>
 verweis: @fig-GTZ-orientierung
 
 Nach der Gründung der juristischen Person, zum Beispiel eine GmbH, kann der Benutzer den nächsten Hürdenlauf vornehmen: So wie mit der Gründung des Unternehmens bereits erfolgt, unterstützt GastroStart seine Kunden dabei, alle Unterlagen, Bestätigungen und Nachweise vorzubereiten oder einzuholen, die für die Erteilung der Betriebsbewilligung durch die zuständige Behörde am gewählten Standort erforderlich sind. 
@@ -1059,7 +1059,7 @@ Auf der Basis der In- und Outputs der Geschäftstransaktionen werden für jeden 
 ])
 
 === Geschäftsprozesse und Geschäftsfähigkeiten für die Orientierung des Gründungsvorhabens
-
+<sec-GP-GF-orientierung-gründungsvorhaben>
 #autor-dvbern("Beitrag von Jan Sohnemann, DV Bern", inhalt: [])
 
 Greifen wir noch einmal das Modell in @fig-GTZ-orientierung aus @head-phase1-orientierung-1 auf. Bei der Orientierung sollte das Gründungsvorhaben definiert und die zur Realisierung notwendigen Schritte identifiziert werden. 
@@ -1131,8 +1131,11 @@ Die folgende Abbildung zeigt wie die in diesem Abschnitt besprochenen Prozesse u
   caption: [Geschäftsfähigkeiten in Phase 2: Sich registrieren"]
 ) <fig-bp-and-bc-phase2>
 
-=== Geschäftsprozesse und Geschäftsfähigkeiten für die  Unternehmensgründung
-#autor-verwaltung([Beitrag von Giovanna Beier])
+=== Geschäftsprozesse und Geschäftsfähigkeiten der Behördeninteraktion
+
+#autor-verwaltung("Beitrag von Giovanna Beier, Bundeskanzlei", inhalt: [Dieser Abschnitt vereint die Beschreibung der Geschäftsprozesse und Geschäftsfähigkeiten für die Unternehmensgründung und den Erhalt der Betriebsbewilligung, da beide Szenarien von der Interaktion mit den Behörden gekennzeichnet sind. ])
+
+==== Geschäftsprozesse und Abhängigkeit von Geschäftsobjekten für die Unternehmensgründung
 In  @sec-go-gt-unternehmen-gründen wurde das zentrale Geschäftsobjekt für das Szenario "Unternehmen Gründen" beschrieben - samt seinen Zuständen und die dazugehörenden Geschäftstransaktionen (se. @fig-GTZ-Amira-gründet). 
 Unterstehende @GPGF_Amira_gründet_Unternehmen stellt die Zusammenhänge zwischen Geschäftsprozesse, Geschäftsobjekten und Geschäftsfähigkeiten im ressourcenunabhängigen Modell nach Archimate dar. 
 
@@ -1141,27 +1144,59 @@ Unterstehende @GPGF_Amira_gründet_Unternehmen stellt die Zusammenhänge zwische
   caption: [Geschäftsprozesse und Geschäftsfähigkeiten - Szenario "Unternehmensgründung"]
 ) <GPGF_Amira_gründet_Unternehmen>
 
-Nachfolgend wird auf die neu hinzugekommene Elemente - Geschäftsprozesse und Geschäftsfähigkeiten - näher eingegangen
+Nachfolgend wird die Geschäftsprozesse und deren Abhängigkeit von Geschäftsobjekten - näher eingegangen. 
 
-==== Geschäftsprozesse
-Die Geschäftstransaktionen werden in zwei Geschäftsprozesse aggregiert, nämlich *Handelsregistereintrag erhalten* und *Unternehmen [bei Behörden] anmelden*.
+
+Die Geschäftstransaktionen werden in zwei *Geschäftsprozesse* aggregiert, nämlich 
+- _Handelsregistereintrag erhalten_ und 
+- _Unternehmen [bei Behörden] anmelden_
 Die Unterscheidung in zwei Geschäftsprozesse ist hier der Tatsache zuzuweisen, dass jeder Prozess ein eigenständiges Ziel verfolgt. 
-Der erste Geschäftsprozess "Eintrag im Handelsregister erhalten" hat zum Ziel, das Unternehmen ins Leben zu rufen und als solches auch Handlungs- und Geschäftsfähig zu machen. Dieser Prozess ist zwingend notwendig, damit das Unternehmen agieren kann.
-Der zweite Prozess "Unternehmen bei Behörden anmelden" hat zum Ziel, das gegründete Unternehmen bei verschiedenen Stellen der kantonalen und eidgenössischen Verwaltung "bekannt" zu machen - u.A. um zum Schutze der zukünftigen Angestellten (Anmeldung bei der kantonalen Ausgleichsstelle) oder um die Mehrwertsteuerpflicht zu konkretisieren (Anmeldung bei der eidgenössischen Steuerverwaltung). 
-Diese Anmeldungen erfolgen nicht automatisch, sondern bedarf einer Entscheidung der GründerInnen.
-Dieser Prozess ist nur dann notwendig, wenn das Unternehmen seine wirtschaftliche Aktivität aufnimmt, was auch Ziel der Kunden der Plattform ist. 
-Aus diesem Grund forciert der abgebildete Prozess die GründerInnen dazu, diese Anmeldungen vorzunehmen - auch, um den Zugang zur Finanzierung zu ermöglichen. 
+- Der erste Geschäftsprozess "Handelsregistereintrag erhalten" hat zum Ziel, das Unternehmen ins Leben zu rufen und als solches auch Handlungs- und Geschäftsfähig zu machen. Dieser Prozess ist zwingend notwendig, damit das Unternehmen agieren kann.
+- Der zweite Prozess "Unternehmen bei Behörden anmelden" hat zum Ziel, das gegründete Unternehmen bei verschiedenen Stellen der kantonalen und eidgenössischen Verwaltung "bekannt" zu machen - u.A. um zum Schutze der zukünftigen Angestellten (Anmeldung bei der kantonalen Ausgleichsstelle) oder um die Mehrwertsteuerpflicht zu konkretisieren (Anmeldung bei der eidgenössischen Steuerverwaltung). Diese Anmeldungen erfolgen nicht automatisch, sondern bedarf einer Entscheidung der GründerInnen. Dieser Prozess ist nur dann notwendig, wenn das Unternehmen seine wirtschaftliche Aktivität aufnimmt, was auch Ziel der Kunden der Plattform ist. Aus diesem Grund forciert der abgebildete Prozess die GründerInnen dazu, diese Anmeldungen vorzunehmen - auch, um den Zugang zu den Abläufen _Bewilligung erhalten_ und _Finanzierung erhalten_ zu ermöglichen. 
 
-==== Abhängigkeiten von Geschäftsobjekten 
-- #emph[Unternehmen] --- das zentrale Objekt beider Prozesse: alle Geschäftstransaktionen greifen darauf zu, und die Zustände des Objekts sind die Fortschrittsanzeige des Gesamtprozesses (siehe @tbl-GO-unternehmen).
-- #emph[Gründungsvorhaben] --- fachlicher Auslöser und Empfänger des Prozessergebnisses: die abschliessende Transaktion #emph[Finanzierung zusagen] greift auch auf dieses Objekt zu und versetzt es in den Zustand #emph[finanziert]. Sie ist damit die einzige Transaktion der Phase, die auf zwei Geschäftsobjekte wirkt.
-- Indirekt, über das Objektmodell der Finanzierung: #emph[Bewilligung] als Voraussetzung (ohne Betriebsbewilligung kein Gesuch) und #emph[Unternehmen] als Empfänger der Mittel und Inhaber des Geschäftskontos.
+Die soeben beschriebene Geschäftsprozesse weisen folgende Abhängigkeiten von Geschäftsobjekten:
+
+- #emph[Unternehmen] --- das zentrale Objekt beider Prozesse: alle Geschäftstransaktionen greifen darauf zu, und die Zustände des Objekts sind die Fortschrittsanzeige des Gesamtprozesses (siehe @tbl-GO-Unternehmen).
+- #emph[Gründungsvorhaben] --- fachlicher Auslöser und Empfänger des Prozessergebnisses: die abschliessenden Transaktionen des Prozess #emph[Unternehmen anmelden] greifen auch auf dieses Objekt zu und versetzt es in den Zustand #emph[registriert]. Diese Transaktionen wirken sich somit auf zwei Geschäftsobjekte.
+
+==== Geschäftsprozesse und Abhängigkeit von Geschäftsobjekten für die Bewilligung
+In  @sec-go-gt-bewilligung wurde das zentrale Geschäftsobjekt für das Szenario "Bewilligung erhalten" beschrieben - samt seinen Zuständen und die dazugehörenden Geschäftstransaktionen (se. @fig-GTZ-Amira-bewilligung). 
+Unterstehende @GPGF_Amira_erhält_bewilligung stellt die Zusammenhänge zwischen Geschäftsprozesse, Geschäftsobjekten und Geschäftsfähigkeiten im ressourcenunabhängigen Modell nach Archimate dar. 
 
 
-=== Geschäftsprozess Bewilligung erhalten
 
-1. Geschäftsprozesse 
-2. Abhängigkeiten von Geschäftsobjekten 
+#figure(
+  image("../assets/GP+GF Amira erhält die Bewilligung.svg", width: 100%),
+  caption: [Geschäftsprozesse und Geschäftsfähigkeiten - Szenario "Bewilligung erhalten"]
+) <GPGF_Amira_erhält_bewilligung>
+
+Nachfolgend wird die Geschäftsprozesse und deren Abhängigkeit von Geschäftsobjekten - näher eingegangen. 
+
+
+Die Geschäftstransaktionen werden in zwei *Geschäftsprozesse* aggregiert, nämlich 
+- _Betriebsbewilligung erhalten_ und 
+- _Betriebsbewilligung erteilen_
+
+Die Trennlinie liegt dort, wo die Verantwortung wechselt: solange die GründerInnen ihr Gesuch aufbauen und einreichen, liegt der Fall bei ihnen; ab der Beurteilung liegt er bei der zuständigen Behörde.
+- Der Geschäftsprozess "Betriebsbewilligung erhalten" fällt in der Verantwortung des Benutzers - und die Plattform unterstützt ihn dabei, die aus der Orientierungsphase in Erfahrung gebrachten Voraussetzungen zu erfüllen. 
+- Der Geschäftsprozess "Betriebsbewilligung erteilen" fällt komplett unter der Zuständigkeit der genehmigenden Behörde. 
+
+Die soeben beschriebene Geschäftsprozesse weisen folgende Abhängigkeiten von Geschäftsobjekten:
+
+- #emph[Bewilligung] --- das zentrale Objekt beider Prozesse: alle Geschäftstransaktionen greifen darauf zu, und die Zustände des Objekts sind die Fortschrittsanzeige des Gesamtprozesses (siehe @tbl-GO-Bewilligung).
+- #emph[Gründungsvorhaben] --- fachlicher Auslöser und Empfänger des Prozessergebnisses: die abschliessende Transaktion des Prozess #emph[Betriebsbewilligung erteilen] greift auch auf dieses Objekt zu und versetzt es in den Zustand #emph[bewilligt]. Diese Transaktion wirkt sich somit auf zwei Geschäftsobjekte.
+- Indirekt, über das Objektmodell der Bewilligung: #emph[Unternehmen] als Empfänger der behördlichen Verfügung.
+
+
+=== Geschäftsfähigkeiten der Behördeninteraktion: Unternehmen gründen und Bewilligung erhalten
+
+#figure(
+  image("../assets/GF Behördeninteration.svg", width: 80%),
+  caption: [Archimate Modell der Geschäftsfähigkeiten der Behördeninteraktion]
+) <fig-GF_Behördeninteraktion>
+
+1. Die hoheitliche Handlung (Handelsregistereintrag, Betriebsbewilligung erteilen) liegt ausserhalb der Unternehmensgrenze von GastroStart (Verweis: @sec-rolle-interoperabilitätspartner und @sec-Verwaltung-GastroSTart-EARolle).  --- Leitfrage Warum kann ein privates Unternehmen diesen Schritt nicht selbst erbringen?
+2. Weil extern und nicht incapsulierbar, ist der hoheitliche Akt keine GF von GastroStart, sondern eine externe Fähigkeit, von der ein GastroStart-Prozess abhängt. Anders gesagt, die GF von den JV Partner sind JV-intern orchestrierbar vs. extern nur verlinkbar / nicht incapsulierbar.
 
 === Geschäftsprozess Finanzierung erhalten
 
@@ -1170,7 +1205,7 @@ Aus diesem Grund forciert der abgebildete Prozess die GründerInnen dazu, diese 
   caption: [Geschäftsprozesse - Szenario Amira erhält eine Finanzierung]
 ) <GP_Amira_erhaelt_Finanzierung>
 
-1. Geschäftsprozesse
+==== Geschäftsprozesse
 
 Die vier Geschäftstransaktionen der Phase (siehe @tbl-GT-finanzierung-erhalten) aggregieren zu zwei Geschäftsprozessen. Die Trennlinie liegt dort, wo die Verantwortung wechselt: solange Amira ihr Gesuch aufbaut und einreicht, liegt der Fall bei ihr; ab der Beurteilung liegt er bei FINNOFLEET.
 
@@ -1180,69 +1215,14 @@ umfasst die Geschäftstransaktionen #emph[Finanzierung vorbereiten] und #emph[Fi
 Finanzierung erhalten
 umfasst die Geschäftstransaktionen #emph[Finanzierung prüfen] und #emph[Finanzierung zusagen]. Der Prozess führt die Finanzierung von #emph[angefordert] nach #emph[angenommen] --- oder nach #emph[abgelehnt], respektive bei fehlenden Nachweisen zurück nach #emph[unvollständig]. Mit der Zusage wechselt der Zustand die Objektgrenze: nicht die Finanzierung, sondern das #emph[Gründungsvorhaben] wird #emph[finanziert]. Er ist der eigentliche Beitrag von FINNOFLEET zum Joint Venture und der Punkt, an dem aus Amiras Gründungsvorhaben ein finanziertes Unternehmen wird. Beide Prozesse zusammen realisieren die Geschäftsfähigkeit #emph[Gründungsvorhaben finanzieren], die im Abschnitt «Geschäftsfähigkeiten Finanzierung erhalten» in Teilfähigkeiten zerlegt wird.
 
-2. Abhängigkeiten von Geschäftsobjekten
+==== Abhängigkeiten von Geschäftsobjekten
 
 - #emph[Finanzierung] --- das zentrale Objekt beider Prozesse: alle vier Geschäftstransaktionen greifen darauf zu, und die Zustände des Objekts sind die Fortschrittsanzeige des Gesamtprozesses (siehe @tbl-GO-Finanzierung).
 - #emph[Gründungsvorhaben] --- fachlicher Auslöser und Empfänger des Prozessergebnisses: die abschliessende Transaktion #emph[Finanzierung zusagen] greift auch auf dieses Objekt zu und versetzt es in den Zustand #emph[finanziert]. Sie ist damit die einzige Transaktion der Phase, die auf zwei Geschäftsobjekte wirkt.
 - Indirekt, über das Objektmodell der Finanzierung: #emph[Bewilligung] als Voraussetzung (ohne Betriebsbewilligung kein Gesuch) und #emph[Unternehmen] als Empfänger der Mittel und Inhaber des Geschäftskontos.
 
-=== Geschäftsprozesse Kunde bei Transgourmet werden
-
-1. Geschäftsprozesse 
-
-Über die Geschäftsobjekte #emph[Lieferantenkonto] und #emph[Bestellung] werden die Geschäftstransaktionen in diesem Szenario zu zwei Geschäftsprozessen aggregiert:
-- Lieferantenkonto beantragen und eröffnen
-- Bestellung aufgeben und Wareneingang erfassen
-
-2. Abhängigkeiten von Geschäftsobjekten 
-
-Diese Geschäftsprozesse bilden das letze Szenario der Customer Journey ab. Eine erfolgreiche Realisation des Gründungsvorhabens von Amira ist die Voraussetzung.
-
-== Alles zusammenbauen: End-to-End Prozess: Onboarding Gastrounternehmens
-#frage([\@ alle: einverstanden? note to self: mit Swimmlanes und diese prozessbausteine abbilden])
-
-== Vierte Iteration: Geschäftsfähigkeiten und Abhängigkeiten untereinander
-
-#fuehrung([Geschäftsfähigkeiten bilden eine stabile, redundanzfreie Baumstruktur der funktionalen Dekomposition einer Unternehmung. Sie abstrahieren von jeglichen Ressourcen, werden aber von diesen unterstützt. Geschäftsfähigkeiten sind in sich stark zusammenhängend während sie mit andern Geschäftsfähigkeiten lose gekoppelt sind. @Spichiger2026GFbUA])
-
-=== Geschäftsfähigkeiten für die Orientierung auf der Webseite von GastroStart
-
-Die Geschäftsfähigkeit, die im Szenario *Orientierung auf der Webseite von GastroStart* tragend wird, wurde als *GastroStart vorstellen* identifiziert. Sie bildet die Grundlage für die Entscheidung, ob Amira ihr Gründungsvorhaben über GastroStart realisieren möchte.
-
-=== Geschäftsfähigkeiten für die Registrierung bei GastroStart
-
-1. Identitätsverwaltung 
-• Der Benutzer legt Kennung und Credentials fest.
-• Vergabe und Verwaltung einer eindeutigen Benutzerkennung.
-• Festlegung und sichere Speicherung von Passwort / MFA.
-• Überprüfung der Identität bei späteren Anmeldungen.
-
-2. Zugangsverwaltung
-• Steuerung, wer auf welche Plattformressourcen zugreifen darf. 
-• Aktivierung des Benutzerkontos (z. B. E-Mail-Verifikation).
-• Vergabe von Rollen (Gründer, Mentor, Investor).
-
-3. Profilmanagement
-• Der Benutzer erstellt ein Profil seines Gründungsvorhabens. 
-• Aufnahme von Stammdaten zum Gründer und Vorhaben
-• Dokumentation von Idee, Branche, Phase des Start-ups
-• Spätere Änderung und Aktualisierung des Profils.
-
-4. Datenvalidierung
-• Sicherstellung der Qualität und Vollständigkeit der eingegebenen Daten. 
-• Prüfung auf gültige E-Mail, Kennwortregeln etc.
-• Pflichtfelder im Gründungsprofil
-• Erkennung bereits vorhandener Kennunge
-
-=== Geschäftsfähigkeiten der Behördeninteraktion: Unternehmen gründen und Bewilligung erhalten
-
-#figure(
-  image("../assets/GF Behördeninteration.svg", width: 80%),
-  caption: [Archimate Modell der Geschäftsfähigkeiten der Behördeninteraktion]
-) <fig-GF_Behördeninteraktion>
-
-=== Geschäftsfähigkeiten Finanzierung erhalten
-#todo-action([sorry, my bad: can you merge this chapter with the one about "Geschäftsprozesse" in the section above?])
+==== Geschäftsfähigkeiten Finanzierung erhalten
+#todo-action([sorry, my bad: i merged this part with the Geschäftsprozesse - could you check if it fits well in the current chapter?])
 
 Die übergeordnete Geschäftsfähigkeit lautet *Gründungsvorhaben finanzieren*. Sie wird im Joint Venture arbeitsteilig getragen: FINNOFLEET verantwortet den Finanzierungskern --- Prüfung, Entscheid und Kontobereitstellung ---, während die kundenzugewandte Antragserfassung bei GastroStart liegt. Die Fähigkeit zerfällt in vier Teilfähigkeiten:
 
@@ -1273,7 +1253,19 @@ Die letzten beiden Punkte von Teilfähigkeit 3 --- verständliche Begründung un
 // in Archi anlegen (vier Teilfähigkeiten, Composition), als assets/GF_Finanzierung.svg
 // exportieren und als #figure einfügen (analog zu "GF Behördeninteration.svg").
 
-=== Geschäftsfähigkeiten Kunde bei Transgourmet werden
+
+=== Geschäftsprozesse Kunde bei Transgourmet werden
+#todo-action([sorry, my bad: i merged this part with the Geschäftsprozesse - could you check if it fits well in the current chapter?])
+==== Geschäftsprozesse 
+
+Über die Geschäftsobjekte #emph[Lieferantenkonto] und #emph[Bestellung] werden die Geschäftstransaktionen in diesem Szenario zu zwei Geschäftsprozessen aggregiert:
+- Lieferantenkonto beantragen und eröffnen
+- Bestellung aufgeben und Wareneingang erfassen
+
+==== Abhängigkeiten von Geschäftsobjekten 
+
+Diese Geschäftsprozesse bilden das letze Szenario der Customer Journey ab. Eine erfolgreiche Realisation des Gründungsvorhabens von Amira ist die Voraussetzung.
+==== Geschäftsfähigkeiten Kunde bei Transgourmet werden
 
 Die Geschäftsfähigkeit die im Szenario *Kunde bei Transgourmet werden* tragend werden, wurden als *Lieferantenkonto* und *Bestellung* identifiziert.
 Das Einordnen gelingt am Besten anhand der Geschäftstransaktionen, wie sie in der Phase *Amira wird Kunde bei Transgourmet* beschrieben sind (siehe @tbl-GT-Kunde-bei-Transgourmet). Die Geschäftstransaktionen werden zu zwei Geschäftsprozessen aggregiert, die wiederum die beiden Geschäftsfähigkeiten stützen.
@@ -1285,6 +1277,22 @@ Ein erfolgreicher Gastronomiebetrieb benötigt ein Lieferantenkonto, um Waren zu
 2. Bestellung
 
 Die Geschäftsfähigkeit *Bestellung* umfasst die Erfassung und Verwaltung von Bestellungen beim Lieferanten. Die Geschäftsprozesse *Bestellung aufgeben* und *Wareneingang erfassen* sind Teil der *Bestellung* Geschäftsfähigkeit.
+
+== Alles zusammenbauen: End-to-End Prozess: Onboarding Gastrounternehmens
+#frage([\@ alle: einverstanden? note to self: mit Swimmlanes und diese prozessbausteine abbilden])
+
+== Vierte Iteration: Geschäftsfähigkeiten und Abhängigkeiten untereinander
+
+#fuehrung([Geschäftsfähigkeiten bilden eine stabile, redundanzfreie Baumstruktur der funktionalen Dekomposition einer Unternehmung. Sie abstrahieren von jeglichen Ressourcen, werden aber von diesen unterstützt. Geschäftsfähigkeiten sind in sich stark zusammenhängend während sie mit andern Geschäftsfähigkeiten lose gekoppelt sind. @Spichiger2026GFbUA])
+
+
+
+
+
+
+
+
+
 
 /*
 == Business-Object-Analyse <sec-business-objects>
