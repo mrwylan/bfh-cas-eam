@@ -1172,6 +1172,7 @@ Unterstehende @GPGF_Amira_erhält_bewilligung stellt die Zusammenhänge zwischen
 
 Nachfolgend wird die Geschäftsprozesse und deren Abhängigkeit von Geschäftsobjekten - näher eingegangen. 
 
+#todo-action([achtung - vielleicht sind es 3 oder 4 prozesse wegen dem verantwortungsübergang!])
 
 Die Geschäftstransaktionen werden in zwei *Geschäftsprozesse* aggregiert, nämlich 
 - _Betriebsbewilligung erhalten_ und 
@@ -1197,6 +1198,20 @@ Die soeben beschriebene Geschäftsprozesse weisen folgende Abhängigkeiten von G
 
 1. Die hoheitliche Handlung (Handelsregistereintrag, Betriebsbewilligung erteilen) liegt ausserhalb der Unternehmensgrenze von GastroStart (Verweis: @sec-rolle-interoperabilitätspartner und @sec-Verwaltung-GastroSTart-EARolle).  --- Leitfrage Warum kann ein privates Unternehmen diesen Schritt nicht selbst erbringen?
 2. Weil extern und nicht incapsulierbar, ist der hoheitliche Akt keine GF von GastroStart, sondern eine externe Fähigkeit, von der ein GastroStart-Prozess abhängt. Anders gesagt, die GF von den JV Partner sind JV-intern orchestrierbar vs. extern nur verlinkbar / nicht incapsulierbar.
++ 
+Behördliche Freigaben erwirken   ← GF von GastroStart
+│   (Name = Ergebnis/Nutzen; «erwirken» ≠ «erteilen»)
+├─ Geschäftsobjekte: Unternehmen, Bewilligung
+│     → nur der Antrags-Zustand ist GastroStart-getrieben;
+│       die erteilende Transition ist extern
+├─ Geschäftsprozesse (ALLE = GastroStart-Aktionen):
+│     · Handelsregisteranmeldung einreichen
+│     · Unternehmen bei Behörden anmelden (AHV/MWST)
+│     · Bewilligung beantragen
+│     · Behördenstatus nachführen
+└─ Abhängigkeit (AUSSERHALB der Grenze):
+      Behörde: eintragen / erteilen
+      → externe Fähigkeit, verbunden nur über den Objektzustand
 
 === Geschäftsprozess Finanzierung erhalten
 
