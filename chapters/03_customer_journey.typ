@@ -2,13 +2,12 @@
   theorie-anker, design-entscheid, stolperstein, frage, todo-action, fuehrung,
   autor-marker, autor-finnofleet, autor-transgourmet, autor-verwaltung, autor-dvbern,
 )
-// ── 02_customer_journey.typ — Chapter 3: Collaboration Phase: Outside-In Mapping ──
 
-//= Die Kollaborationsphase: Outside-In-Mapping
+#pagebreak()
 
 = Die Reise beginnt: die Customer Journey
 /*Customer Journey und Persona - Fester Stand in Outside-In-Fokus 
-In diesem Kapitel wird die Customer Journey erklärt - und wie wir daraus ein Phasenmodell skizziert haben, welches am Kundenerlebnis entlang entstanden ist.*/
+In diesem Kapitel wird die Customer Journey erklärt - und wie wir daraus Szenarien skizziert haben, welche am Kundenerlebnis entlang entstanden ist.*/
 #fuehrung([Eine Geschichte in Form einer User Story Map oder einer  Customer Journey erklärt allen Beteiligten, welches Verhalten vom zukünftigen System erwartet wird. Die Geschichte wird um Ziele aus Sicht der primären, externen Stakeholder des Unternehmens ergänzt. @Spichiger2026GFbUA, S. 54]) 
 
 == Amira und ihre Geschichte <sec-amira-und-ihre-geschichte>
@@ -382,13 +381,18 @@ Die massgeschneiderten und detaillierten Erklärungen zum einzuhaltenden Ablauf 
 
 === Amira erhält eine Finanzierung
 
-#todo-action([Adi: Szenario erklären, so wie Jan für Orientierung und Registrierung gemacht hat])
+Mit der beantragten Betriebsbewilligung rückt eine Frage in den Vordergrund, die sich bis dahin aufschieben liess: Küchengeräte, Mobiliar, Fahrzeug und die erste Warenlieferung müssen bezahlt sein, bevor Amira ihren Betrieb aufnehmen kann.
+Wir gehen davon aus, dass unsere GründerInnen die Grössenordnung ihres Kapitalbedarfs durchaus benennen können, nicht aber, welche Unterlagen eine Bank dafür sehen will und nach welchen Kriterien ihre Kreditwürdigkeit beurteilt wird.
+Die Finanzierung ist damit die Phase, in der das Gründungsvorhaben zum ersten Mal von aussen bewertet wird -- und aus unserer Sicht diejenige mit dem höchsten Abbruchrisiko der gesamten Customer Journey.
+Eine Absage ohne Begründung beendet das Vorhaben faktisch, weil die Betroffenen weder wissen, was sie am Gesuch ändern müssten, noch welche Alternativen ihnen offenstehen.
+Genau hier liegt der Beitrag des Finanzierungspartners FINNOFLEET: Bonitätsprüfung, Kreditentscheid und Kontobereitstellung werden nicht als separates Bankportal angeboten, sondern als Dienste im Hintergrund in die Journey eingebunden.
+Amira erfasst ihr Finanzierungsgesuch dort, wo sie ihr Vorhaben ohnehin bereits verwaltet, erhält einen in verständlicher Sprache begründeten Entscheid und -- im positiven Fall -- mit der IBAN unmittelbar die Grundlage für den späteren Zahlungsverkehr mit Behörden und Lieferanten.
 
+Die folgende Tabelle fasst die wesentlichen Merkmale dieser Phase der Customer-Jouney noch einmal zusammen. Ihr Aufbau ist am Ende der Einführung dieses Hauptkapitels beschrieben (@aus-phasen-werden-szenarien).
 
- #figure(
-  image("../assets/cj_verträge.svg", width: 70%),
-  caption: [Archimate Szenario "Amira erhält die Finanzierung"]
-) <fig-cj-verträge>
+// Hinweis: Hier stand eine Kopie von cj_verträge.svg (Szenario "Bewilligung") mit
+// dem bereits vergebenen Label <fig-cj-verträge>. Beides entfernt; die für dieses
+// Szenario benötigte Grafik ist im TODO am Ende dieses Kapitels beschrieben.
 
 
 #figure(

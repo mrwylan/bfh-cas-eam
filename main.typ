@@ -7,13 +7,16 @@
   date: "BFH CAS Enterprise Architecture Management (EAM), 2026",
   abstract: [
 
-Diese Gruppenarbeit berichtet darüber, wie vier Kollegen aus ganz unterschiedlichen Branchen der Wirtschaft sich auf einer Idee für ein gemeinsames --
+Diese Gruppenarbeit berichtet darüber, wie vier Kollegen aus ganz unterschiedlichen Branchen der Wirtschaft sich auf einer Idee für ein gemeinsames Unternehmen geeinigt haben und dieses in iterativen Schritten erarbeitet haben.
+In der Arbeit wird zunächst die Customer Journey beschrieben und abgegrenzt.
+Danach folgt die "Modellierungsreise" entlang der RIM-Methodik. 
+Anschliessend werden die Ressourcen modelliert - wobei jeder der vier Kollegen am Schluss einer Vertiefung seines eigenen Anteils am Unternehmen präsentiert.
 
   ],
    authors: (
-    (name: "Jan Sohnemann", affiliation: "DV Bern", email: "..."),
-    (name: "Adrian Anghel", affiliation: "FINNOFLEET", email: "..."),
-    (name: "Jakob Albrecht", affiliation: "Transgourmet", email: "..."),
+    (name: "Jan Sohnemann", affiliation: "DV Bern", email: "jan.sohnemann@ikmail.com"),
+    (name: "Adrian Anghel", affiliation: "FINNOFLEET", email: "adrian_anghel@yahoo.com"),
+    (name: "Jakob Albrecht", affiliation: "Transgourmet", email: "mrwylan@gmail.com"),
     (name: "Giovanna Beier", affiliation: "Digitale Transformation und IKT-Lenkung, Bundeskanzlei", email: "giovanna.meier@gmail.com"),
   ),
   
@@ -51,3 +54,4 @@ Diese Gruppenarbeit berichtet darüber, wie vier Kollegen aus ganz unterschiedli
 #include "appendix/a3_togaf-adm-applied.typ"
 #include "appendix/a4_werkzeug_reflexion.typ"
 #include "appendix/a5_learning_path.typ"
+#include "appendix/a6_ea_kibon.typ"
