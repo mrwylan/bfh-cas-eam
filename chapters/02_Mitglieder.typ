@@ -2,6 +2,9 @@
   theorie-anker, design-entscheid, stolperstein, frage, todo-action, fuehrung,
   autor-marker, autor-finnofleet, autor-transgourmet, autor-verwaltung, autor-dvbern,
 )
+#import "../template.typ": (
+  inset-block,
+)
 
 #pagebreak()
 
@@ -11,17 +14,25 @@ Die vier ungleichen Gefährten stellen sich vor.
 Zusammen werden sie sich auf den Weg machen, ein gemeinsames Unternehmen zu entwerfen und zu modellieren. 
 Jedes Mitglied stellt sein Unternehmen kurz vor. 
 
-#todo-action([Hint \@alle: überlegen, ob den Teil mit den Heruasforderungen in EA mit dem eigenen Unternehmen mit den Ausführungen zum OM der eigenen Firma gemerged werden kann])
+#todo-action([Hint \@alle: überlegen, ob der Teil mit den Herausforderungen in EA mit dem eigenen Unternehmen mit den Ausführungen zum OM der eigenen Firma gemerged werden kann])
 
-== Transgourmet
-#autor-transgourmet([Beitrag von Jakob Albrecht])
-*Transgourmet Schweiz: Ein Marktführer, der das Lebensmittelgeschäft transformiert.*
+#todo-action([Hint \@alle: überlegen, ob nicht konsequent die Reihenfolge in allen Abschnitten gleich sein sollte: DV Bern, Verwaltung, FINNOFLEET, Transgourmet.])
+
+== Transgourmet // Elb
+#autor-transgourmet([Beitrag von Jakob Albrecht
+
+*Transgourmet Schweiz: Ein Marktführer, der das Lebensmittelgeschäft transformiert.*]
+)
 
 === Firmenporträt
 
-Transgourmet Schweiz steht für mehr als nur Lieferung – das Unternehmen ist der Motor hinter der Schweizer Gastronomie und Hotellerie. Mit über 100'000 Kundinnen und Kunden aus den Bereichen Gastronomie, Gemeinschaftsverpflegung und Detailhandel schafft die Marke Transgourmet/Prodega eine Infrastruktur, auf die sich Profis täglich verlassen können. @TransgourmetUeberUns2026
+Transgourmet Schweiz steht für mehr als nur Belieferung – das Unternehmen ist der Motor hinter der Schweizer Gastronomie und Hotellerie.
+Mit über 100'000 Kundinnen und Kunden aus den Bereichen Gastronomie, Gemeinschaftsverpflegung und Detailhandel schafft die Marke Transgourmet/Prodega eine Infrastruktur, auf die sich Profis täglich verlassen können.
+@TransgourmetUeberUns2026
 
-Das Herzstück des Erfolgs bildet ein dichtes Netzwerk: Mit 31 modernen Prodega-Abholmärkten in der ganzen Schweiz und 11 Regionallagern garantiert das Unternehmen höchste Effizienz in der Logistik. Rund 2'100 Mitarbeitende sorgen dafür, dass diese Leistung nicht nur im Hintergrund läuft, sondern durch echtes Engagement direkt sichtbar wird. Vom frischen Produkt bis zur innovativen Convenience-Lösung deckt das Sortiment die Bedürfnisse der Branche ab.
+Das Herzstück des Erfolgs bildet ein dichtes Netzwerk: Mit 31 modernen Prodega-Abholmärkten in der ganzen Schweiz und 11 Regionallagern garantiert das Unternehmen höchste Effizienz in der Logistik.
+Rund 2'100 Mitarbeitende sorgen dafür, dass diese Leistung nicht nur im Hintergrund läuft, sondern durch echtes Engagement direkt sichtbar wird.
+Vom frischen Produkt bis zur innovativen Convenience-Lösung deckt das Sortiment die Bedürfnisse der Branche ab.
 
 Das Unternehmen ist darauf ausgerichtet, die Herausforderungen der Branche zu meistern und dabei stets den Anspruch an Qualität und Verlässlichkeit zu wahren, auf den sein Ruf basiert.
 
@@ -29,13 +40,15 @@ Das Unternehmen ist darauf ausgerichtet, die Herausforderungen der Branche zu me
 
 Die Unternehmensarchitektur von Transgourmet steht vor spezifischen Herausforderungen, die weit über die klassische Grosshandelslogistik hinausgehen:
 
+#inset-block[
 *Hybrides Logistikmodell:* Die Orchestrierung von 11 zentralen Regionallagern für die Belieferung und 31 dezentralen Prodega-Abholmärkten erfordert eine hochgradig verteilte Supply Chain, um volle Konsistenz zwischen allen Kanälen zu sichern.
 
 *Komplexe Omnichannel-Integration:* Webshop, Kundenportal und mobile Kanäle müssen nahtlos ineinandergreifen. Zudem sind externe Kundenbestellsysteme direkt über APIs und EDIFACT-Schnittstellen an das Kernsystem angebunden.
 
 *Anspruchsvolle Frische-Logistik:* Das breite Sortiment hochverderblicher Produkte (Fleisch, Fisch, Molkereierzeugnisse) verlangt maximale Verfügbarkeit und Zuverlässigkeit, verbunden mit extremen Anforderungen an Kühltechnik, Temperaturmanagement und Flexibilität.
 
-*Eigenentwickeltes ERP-System:* Die technologische Basis bildet eine massgeschneiderte Eigenentwicklung für Schweizer Grosshandelsprozesse und Regulierungen. Die nachhaltige Modernisierung dieses Kernsystems bei laufendem Betrieb ist eine der grössten architektonischen Herkulesaufgaben.
+*Eigenentwickeltes ERP-System:* Die technologische Basis bildet eine massgeschneiderte Eigenentwicklung für Schweizer Grosshandelsprozesse und Regulierungen. Die nachhaltige Modernisierung dieses Kernsystems bei laufendem Betrieb ist eine architektonische Herkulesaufgabe.
+]
 
 == DV Bern // Hobbits
 #autor-dvbern([Beitrag von Jan Sohnemann])
@@ -94,23 +107,27 @@ Bund, Kantone und Gemeinden in der Schweiz orientieren sich für ihre Organisati
 
 Diese organisatorische Eigenschaft führt dazu, dass auf jede Staatsebene eine Art interne Föderation besteht: Die Kernaufgaben werden dabei dezentral verantwortet und wahrgenommen und Leistungen mit Grundcharakter wie beispielsweise Logistik oder Infrastruktur werden gemeinsam genutzt. 
 
-Auf dieser Ausgangslage zur Organisation der Verwaltung basieren die folgenden Überlegungen zur angewendeten  Unternehmensarchitektur auf Bundesebene. Es wird angenommen, dass die beschriebene Mechanismen weitgehend auch auf kantonale Ebene übertragen werden können.
+Auf dieser Ausgangslage zur Organisation der Verwaltung basieren die folgenden Überlegungen zur angewendeten Unternehmensarchitektur auf Bundesebene. Es wird angenommen, dass die beschriebenen Mechanismen weitgehend auch auf kantonale Ebene übertragen werden können.
 
-=== Unternehmensarchitektur auf Bundesebene [löschen?]
+=== Unternehmensarchitektur auf Bundesebene
+
+#todo-action([Hint \@Giovanna: überlegen, ob dieser Abschnitt gelöscht werden soll])
 
 Die Entwicklung der Bundesarchitektur geschieht in einem föderierten Ansatz durch den Bereich Digitale Transformation und IKT-Lenkung der Bundeskanzlei (DTI), die Departemente, Ämter und Leistungserbringer @bk_unternehmensarchitektur_bund: 
 + die Unternehmensarchitektur für die jeweiligen *Kernaufgabenbereiche* wird von den Departementen und Verwaltungseinheiten dezentral entwickelt.
-+ Bundesämter mit *übergreifenden Aufgaben*, definieren und koordinieren die Unternehmensarchitektur für die übergreifenden Aspekte in ihrem Verantwortungsbereich.
++ Bundesämter mit *übergreifenden Aufgaben* definieren und koordinieren die Unternehmensarchitektur für die übergreifenden Aspekte in ihrem Verantwortungsbereich.
 + die Unternehmensarchitektur der *aufgabenneutralen IKT-Grundleistungen* - soweit diese von der Mehrheit der Departemente benötigt werden - fällt in der Verantwortung des Bereichs DTI. 
 
-=== Governance und Rolle der Unternehmungsarchitektur [löschen?]
+=== Governance und Rolle der Unternehmensarchitektur
+
+#todo-action([Hint \@Giovanna: überlegen, ob dieser Abschnitt gelöscht werden soll])
 
 Die Unternehmensarchitektur auf Bundesebene wird je nach Aufgabentyp unterschiedlich gelebt - und ist auch unterschiedlich bindend. 
 Wer für die Governance zuständig ist und wie sich diese auf die Bundesverwaltung auswirkt, ist je nach Fall unterschiedlich: 
 + die Unternehmensarchitektur für die *Kernbereiche von Departementen* ist nur für die betroffenen Organisationseinheiten verbindlich. 
 + Ämter mit *übergreifenden Aufgaben* bestimmen die Unternehmensarchitektur für diese spezifischen Bereiche - diese ist dann für die restliche Bundesverwaltung _verbindlich_. 
-+ Betreffend den *aufgabenneutralen IKT-Grundleistungen* Bundesweit gibt es zwei Goverance-Mechanismen: 
-  - das Architekturboard Bund, bei dem alle Departemente und interne Erbringer von IKT-Leistungen vertreten sind, dient der gegenseitigen Abstimmung der Architekturen und der Methoden sowie der Bestimmung Hilfsmittel zu deren Erstellung @bk_unternehmensarchitektur_bund. 
++ Betreffend die *aufgabenneutralen IKT-Grundleistungen* gibt es bundesweit zwei Governance-Mechanismen:
+  - das Architekturboard Bund, bei dem alle Departemente und interne Erbringer von IKT-Leistungen vertreten sind, dient der gegenseitigen Abstimmung der Architekturen und der Methoden sowie der Bestimmung der Hilfsmittel zu deren Erstellung @bk_unternehmensarchitektur_bund.
   - Der Bereich DTI ist als einziger Akteur befugt, bundesweit verbindliche Vorgaben und Standards zu erlassen, im Bereich der sogenannten aufgabenneutralen IKT-Grundleistungen (Standarddienste) — und dies nur, soweit diese von der Mehrheit der Departemente benötigt werden @bk_unternehmensarchitektur_bund.
 
 === Herausforderungen in der Unternehmensarchitektur
@@ -119,9 +136,6 @@ Wer für die Governance zuständig ist und wie sich diese auf die Bundesverwaltu
 
 + *Unverbindliche Steuerungsinstrumente*: Die ebenenübergreifende Zusammenarbeit stützt sich heute auf Standards, deren Übernahme freiwillig ist, oder auf Grundsätze wie Nutzerorientierung und Interoperabilität, deren Umsetzung einen erheblichen Interpretationsspielraum lässt. Beides gibt Orientierung, schafft aber keine konkrete Durchsetzbarkeit — die Durchgängigkeit einer gegebenen Lösung bleibt vom Goodwill der einzelnen Einheiten abhängig.
 
-+ *Rechtsgrundlage als Vorbedingung* Die Schaffung der Voraussetzungen für eine durchsetzbare Governance liegt ausserhalb der Kompetenz der Unternehmensarchitektur: Behörden sind in all ihrem Handeln an das Legalitätsprinzip gebunden. 
++ *Rechtsgrundlage als Vorbedingung*: Die Schaffung der Voraussetzungen für eine durchsetzbare Governance liegt ausserhalb der Kompetenz der Unternehmensarchitektur: Behörden sind in all ihrem Handeln an das Legalitätsprinzip gebunden. 
 Damit die Behörden — innerhalb derselben Ebene oder ebenenübergreifend (etwa zwischen Kanton und Gemeinden) — verbindlich zusammenarbeiten und Daten austauschen können, braucht es daher eine entsprechende gesetzliche Grundlage. 
 Fehlt eine solche, bleibt die Unternehmensarchitektur in diesem Bereich ein zahnloser Tiger: Sie kann Interoperabilität fordern oder gar gestalten, die rechtliche Voraussetzung dafür aber nicht selbst schaffen.
-
-
-

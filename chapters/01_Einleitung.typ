@@ -1,20 +1,17 @@
 #import "../markers.typ": theorie-anker, design-entscheid, stolperstein, frage, todo-action, fuehrung
-
-
-/*L'introduzione presenta lo scenario e le motivazioni, ma non rivela i risultati dettagliati
-L'introduzione è molto più lunga ed estesa, occupando diverse pagine a seconda della complessità del lavoro.
-L'introduzione si focalizza sul giustificare lo studio, evidenziare la "lacuna" nella letteratura (gap) e delineare gli obiettivi.*/
+#import "../template.typ": inset-block
 
 = Einleitung
 
 == Zielsetzung
 
 Dieses Dokument erfüllt zwei explizite Anforderungen des BFH-CAS-Programms Enterprise Architecture Management.
+
 Erstens soll es die schrittweise Entwicklung eines Joint-Ventures zwischen sehr heterogene Parteien dokumentieren. 
-Bei diesem Joint-Venture handelt es sich um ein fiktives Unternehmen, welches technische, operative und kommerzielle Aspekte jedes Ursprungsbetriebs vereint und Einzel hervorhebt. 
-Zweitens bietet das Dokument jedem Mitglied die Möglichkeit, in individuelle (und entsprechend erkennbare) Abschnitte auf die Spezifika des eigenen Unternehmens - resp. des eigenen
-Anteils an dem Joint-Venture - einzugehen. 
-Dadurch wird jedes Mitglied der Gruppe seinen individuellen Lernpfad festhalten sowie seine spezifische Vertiefung und Konklusion beisteuern.
+Bei diesem Joint-Venture handelt es sich um ein fiktives Unternehmen, welches technische, operative und kommerzielle Aspekte jedes Ursprungsbetriebs vereint und einzeln hervorhebt. 
+
+Zweitens bietet das Dokument jedem Mitglied die Möglichkeit in individuellen (und entsprechend erkennbaren) Abschnitten auf die Spezifika des eigenen Unternehmens und des eigenen Anteils am Joint-Venture einzutreten. 
+So wird jedes Mitglied der Gruppe seinen individuellen Lernpfad festhalten und seine spezifische Vertiefung und Schlussfolgerungen beisteuern.
 
 == Problemstellung
 
@@ -22,8 +19,8 @@ Wie bauen wir eine Enterprise-Architektur für das Joint Venture auf, die die un
 
 == Kontext: eine kleine Reise durch Mittelerde
 
-Im Verlauf der Studienwochen hat die Zusammenarbeit unter den Mitgliedern der Gruppe Unternehmungscharakter angenommen: durch die iterative Vorgehensweise und die regelmässigen - anfangs etwas erzwungene Übungen - musste ein gemeinsamer Nenner gefunden und eingegrenzt werden. 
-Die Diskussionen betreffend der Schärfung der Mission (was macht das Joint-Venture? was davon soll abgebildet werden? wo hören wir auf?) sowie die wöchentlichen Feedbackrunden haben nach und nach die Zusammenarbeit und die gemeinsame Unternehmensvision der vier Kollegen gefördert und gefestigt. 
+Im Verlauf der Studienwochen hat die Zusammenarbeit unter den Mitgliedern der Gruppe Unternehmungscharakter angenommen: durch die iterative Vorgehensweise und die regelmässigen - anfangs etwas erzwungenen Übungen - musste ein gemeinsamer Nenner gefunden und eingegrenzt werden. 
+Die Diskussionen betreffend die Schärfung der Mission (Was macht das Joint-Venture? Was davon soll abgebildet werden? Wo hören wir auf?) sowie die wöchentlichen Feedbackrunden haben nach und nach die Zusammenarbeit und die gemeinsame Unternehmensvision der vier Kollegen gefördert und gefestigt. 
 
 == Bemerkung zu den visuellen Call-outs
 
@@ -38,8 +35,6 @@ Da diese Momente einen wesentlichen Teil des Arbeitsprozesses ausmachen, sind si
 
 == Erklärung zur Nutzung Künstlicher Intelligenz (KI)
 
-#frage([Styl-Frage: überall benutzen wir Präsens oder Perfekt. Hier ist hingegen die Wahl auf dem Präteritum gefallen. belassen wir das so? ])
-
 === Einsatzgebiet und Entstehungsprozess
 
 Diese Arbeit entstand unter teilweiser Nutzung KI-gestützter Werkzeuge.
@@ -52,7 +47,7 @@ Sämtliche KI-Generierungen wurden vom Autor initiiert, strukturiert und konsequ
 Kein KI-generierter Inhalt wurde ungeprüft übernommen.
 Der Entstehungsprozess umfasste eine systematische Qualitätssicherung durch die beteiligten Autoren:
 
-#block(inset: 1em, above: 0.1em, below: 0.1em)[
+#inset-block[
 *Inhaltliche Prüfung:* Validierung aller Aussagen auf Richtigkeit, Aktualität und Kontextbezug.
 
 *Redaktionelle Überarbeitung:* Gezielte Steuerung und Anpassung von Stil, Struktur und Formulierungen.

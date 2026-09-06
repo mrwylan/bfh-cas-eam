@@ -1,5 +1,9 @@
 #import "markers.typ": kompendium-modus, anhang-modus
 
+// Einfacher, unauffälliger Block mit gleichmässigem Innen- und Aussenabstand
+// (z. B. für Aufzählungen im Fliesstext, ohne Marker-Rahmen).
+#let inset-block(inhalt) = block(inset: 1em, above: 1em, below: 1em)[#inhalt]
+
 #let conf(
   title: "Untitled Blueprint",
   subtitle: none,

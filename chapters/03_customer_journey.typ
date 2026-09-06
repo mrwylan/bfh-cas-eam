@@ -2,13 +2,12 @@
   theorie-anker, design-entscheid, stolperstein, frage, todo-action, fuehrung,
   autor-marker, autor-finnofleet, autor-transgourmet, autor-verwaltung, autor-dvbern,
 )
-// ── 02_customer_journey.typ — Chapter 3: Collaboration Phase: Outside-In Mapping ──
 
-//= Die Kollaborationsphase: Outside-In-Mapping
+#pagebreak()
 
 = Die Reise beginnt: die Customer Journey
 /*Customer Journey und Persona - Fester Stand in Outside-In-Fokus 
-In diesem Kapitel wird die Customer Journey erklärt - und wie wir daraus ein Phasenmodell skizziert haben, welches am Kundenerlebnis entlang entstanden ist.*/
+In diesem Kapitel wird die Customer Journey erklärt - und wie wir daraus Szenarien skizziert haben, welche am Kundenerlebnis entlang entstanden ist.*/
 #fuehrung([Eine Geschichte in Form einer User Story Map oder einer  Customer Journey erklärt allen Beteiligten, welches Verhalten vom zukünftigen System erwartet wird. Die Geschichte wird um Ziele aus Sicht der primären, externen Stakeholder des Unternehmens ergänzt. @Spichiger2026GFbUA, S. 54]) 
 
 == Amira und ihre Geschichte <sec-amira-und-ihre-geschichte>
