@@ -1132,6 +1132,7 @@ Die folgende Abbildung zeigt wie die in diesem Abschnitt besprochenen Prozesse u
 ) <fig-bp-and-bc-phase2>
 
 === Geschäftsprozesse und Geschäftsfähigkeiten für die  Unternehmensgründung
+#autor-verwaltung([Beitrag von Giovanna Beier])
 In  @sec-go-gt-unternehmen-gründen wurde das zentrale Geschäftsobjekt für das Szenario "Unternehmen Gründen" beschrieben - samt seinen Zuständen und die dazugehörenden Geschäftstransaktionen (se. @fig-GTZ-Amira-gründet). 
 Unterstehende @GPGF_Amira_gründet_Unternehmen stellt die Zusammenhänge zwischen Geschäftsprozesse, Geschäftsobjekten und Geschäftsfähigkeiten im ressourcenunabhängigen Modell nach Archimate dar. 
 
@@ -1143,12 +1144,19 @@ Unterstehende @GPGF_Amira_gründet_Unternehmen stellt die Zusammenhänge zwische
 Nachfolgend wird auf die neu hinzugekommene Elemente - Geschäftsprozesse und Geschäftsfähigkeiten - näher eingegangen
 
 ==== Geschäftsprozesse
-Die Geschäftstransaktionen werden in zwei Geschäftsprozesse aggregiert, nämlich *Handelsregistereintrag erhalten* und *Unternehmen [bei Behörde] anmelden*.
+Die Geschäftstransaktionen werden in zwei Geschäftsprozesse aggregiert, nämlich *Handelsregistereintrag erhalten* und *Unternehmen [bei Behörden] anmelden*.
 Die Unterscheidung in zwei Geschäftsprozesse ist hier der Tatsache zuzuweisen, dass jeder Prozess ein eigenständiges Ziel verfolgt. 
-Der Eintrag im Handelsregister hat zum Ziel, das Unternehmen ins Leben zu rufen und als solches auch Handlungs- und Geschäftsfähig zu machen. Dieser Prozess ist zwingend notwendig.
-Die Anmeldung des Unternehmens bei verschiedenen Behörden hat zum Ziel, die zukünftigen Angestellten zu schützen (Anmeldung bei der kantonalen Ausgleichsstelle) oder aber das Unternehmen vor den Behörden eindeutig identifizierbar zu machen und die Mehrwertsteuerpflicht zu konkretisieren (Anmeldung bei der eidgenössischen Steuerverwaltung). Dieser Prozess ist nur dann notwendig, wenn die Geschäftstätigkeit aufgenommen wird.
+Der erste Geschäftsprozess "Eintrag im Handelsregister erhalten" hat zum Ziel, das Unternehmen ins Leben zu rufen und als solches auch Handlungs- und Geschäftsfähig zu machen. Dieser Prozess ist zwingend notwendig, damit das Unternehmen agieren kann.
+Der zweite Prozess "Unternehmen bei Behörden anmelden" hat zum Ziel, das gegründete Unternehmen bei verschiedenen Stellen der kantonalen und eidgenössischen Verwaltung "bekannt" zu machen - u.A. um zum Schutze der zukünftigen Angestellten (Anmeldung bei der kantonalen Ausgleichsstelle) oder um die Mehrwertsteuerpflicht zu konkretisieren (Anmeldung bei der eidgenössischen Steuerverwaltung). 
+Diese Anmeldungen erfolgen nicht automatisch, sondern bedarf einer Entscheidung der GründerInnen.
+Dieser Prozess ist nur dann notwendig, wenn das Unternehmen seine wirtschaftliche Aktivität aufnimmt, was auch Ziel der Kunden der Plattform ist. 
+Aus diesem Grund forciert der abgebildete Prozess die GründerInnen dazu, diese Anmeldungen vorzunehmen - auch, um den Zugang zur Finanzierung zu ermöglichen. 
 
-2. Abhängigkeiten von Geschäftsobjekten 
+==== Abhängigkeiten von Geschäftsobjekten 
+- #emph[Unternehmen] --- das zentrale Objekt beider Prozesse: alle Geschäftstransaktionen greifen darauf zu, und die Zustände des Objekts sind die Fortschrittsanzeige des Gesamtprozesses (siehe @tbl-GO-unternehmen).
+- #emph[Gründungsvorhaben] --- fachlicher Auslöser und Empfänger des Prozessergebnisses: die abschliessende Transaktion #emph[Finanzierung zusagen] greift auch auf dieses Objekt zu und versetzt es in den Zustand #emph[finanziert]. Sie ist damit die einzige Transaktion der Phase, die auf zwei Geschäftsobjekte wirkt.
+- Indirekt, über das Objektmodell der Finanzierung: #emph[Bewilligung] als Voraussetzung (ohne Betriebsbewilligung kein Gesuch) und #emph[Unternehmen] als Empfänger der Mittel und Inhaber des Geschäftskontos.
+
 
 === Geschäftsprozess Bewilligung erhalten
 
@@ -1701,11 +1709,4 @@ Aus der Perspektive von Amira und ihrer Customer Journey bildet das öffentliche
 
 Es ist nicht sinnvoll, das öffentliche Wesen - respektive dessen jeweiligen Systemen in GastroStartc zu integrieren - sondern werden als externe Systeme und bewusste "Absprünge" weg von GastroStart prozedural wie technisch in den betroffenen Customer Journeys implementieren. 
 
-
-== Domänenmodelle 
-#todo-action([])
-
-=== Domäne DV Bern
-
-
-===
+#pagebreak()

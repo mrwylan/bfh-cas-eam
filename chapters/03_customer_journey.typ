@@ -561,7 +561,7 @@ Die Registrierung erfordert, dass jeder Benutzer sich ein Profil im System erste
 Das System muss sicherstellen, dass jeder Benutzer authentifiziert und autorisiert und jeder Gründungsprozess mit genau einem Benutzerprofil verknüpft wird.
 
 ==== Bewilligung<sec-rolle-dv-bern-bewilligung>
-#frage([\@jan: gio möchte gerne das bild in deinem kopf verstehen - Frage 2: kann die Unternehmensgründung dazugenommen werden? ])
+
 Die Bewilligung erfordert Möglichkeiten, den für die Betriebsgründung notwendigen Behörden alle benötigten Daten zur Verfügung stellen zu können.
 Das beinhaltet das Anbinden externer APIs, wenn vorhanden, oder Darstellung und Verwaltung der entsprechenden Dokumente, sowie Übertragungs- und Speichermöglichkeiten für diese.
 Zudem soll den Benutzern der Status der einzelnen Schritte angezeigt (z.B. offen, bearbeitet, eingereicht, bewilligt), sowie ein Benachrichtigungssystem für die Kommunikation der Beteiligten untereinander, sowie von Statusupdates implementiert werden.
