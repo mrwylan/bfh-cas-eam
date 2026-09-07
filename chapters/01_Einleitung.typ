@@ -37,6 +37,10 @@ Da diese Momente einen wesentlichen Teil des Arbeitsprozesses ausmachen, sind si
 
 === Einsatzgebiet und Entstehungsprozess
 
+#todo-action([\@Jakob Vorlage zur Eigenständigkeitserklärung verwenden])
+#todo-action([Kapitel maximal bis Ebene 3])
+#todo-action([Grafiken als SVG und Breite 100%. Ggf. grosse Grafiken ind mehrere kleine aufteilen])
+
 Diese Arbeit entstand unter teilweiser Nutzung KI-gestützter Werkzeuge.
 Die Erstellung erfolgte als iterativer Prozess zwischen Mensch und System: 
 Das KI-Modell diente jeweils als assistierende Unterstützung, während der Autor das Verfahren durchgehend steuerte (Human-in-the-Loop). 

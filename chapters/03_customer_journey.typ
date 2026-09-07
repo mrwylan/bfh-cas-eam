@@ -11,6 +11,8 @@
 In diesem Kapitel wird die Customer Journey erklärt - und wie wir daraus ein Phasenmodell skizziert haben, welches am Kundenerlebnis entlang entstanden ist.*/
 #fuehrung([Eine Geschichte in Form einer User Story Map oder einer  Customer Journey erklärt allen Beteiligten, welches Verhalten vom zukünftigen System erwartet wird. Die Geschichte wird um Ziele aus Sicht der primären, externen Stakeholder des Unternehmens ergänzt. @Spichiger2026GFbUA, S. 54]) 
 
+#todo-action([\@ Giovanna Korrekt zitieren :)])
+
 == Amira und ihre Geschichte <sec-amira-und-ihre-geschichte>
 
 Amira, eine 34-jährige Quereinsteigerin, will ein Catering-Unternehmen gründen. 

@@ -26,7 +26,7 @@ Im letzten Kapitel der Modellentwicklung beschreiben wir den Übergang vom RIM i
 *Geschäftsobjekte:* Aus der Geschichte werden die groben Geschäftsobjekte sowie die Beziehungen zwischen den Geschäftsobjekten identifiziert, die in einer dematerialisierten Umsetzung der Geschichte noch Relevanz haben.
 Ein Geschäftsobjekt kapselt statische Struktur des RIM. Ein Geschäftsobjekt beschreibt einen zentral wesentlichen Teil des Kontexts einer Unternehmung und abstrahiert vollständig von den Ressourcen der Unternehmung (Dematerialisierung) und dessen Verhalten.
 
-*Zustände:* Zu jedem Geschäftsobjekt werden seine Zustände identifiziert.
+*Zustände:* Zu jedem Geschäftsobjekt werden seine Zustände identifiziert. Für die Darstellung dieser Zustände verwenden wir das Archimate-Symbol *Business Event*.
 
 *Geschäftstransaktionen:* Entlang der Geschichte werden die Geschäftstransaktionen mit ihren Inputs und Output (Geschäftsobjekte) identifiziert. 
 Sowohl bei Input und Output wird darauf geachtet, dass diese inklusive ihre Zustände (bzw. zugehörige Ereignisse) bezeichnet werden. @Spichiger2026GFbUA /*S. 54*/
@@ -50,7 +50,7 @@ Die folgende Abbildung zeigt ein mögliches Ergebnis aus dieser Vorgehensweise.
 
 
  #figure(
-  image("../assets/Customer Journey View.svg", width: 60%),
+  image("../assets/Customer Journey View.svg", width: 100%),
   caption: [Archimate Modell der Customer Journey von Amira und erste Iteration für die Identifikation der Geschäftsobjekte]
 ) <fig-customer-journey-view>
 
@@ -60,13 +60,7 @@ Im ressourcenunabhängigen Modell (RIM) nach Archimate sind die Eigenschaften de
 Wir beginnen stattdessen mit der Betrachtung der Zustände, die ein Geschäftsobjekt annimmt, und welche Transaktionen einen Zustandswechsel hervorrufen. 
 Die nächsten Abschnitte  beschreiben ein entsprechendes RIM für die Szenarien der Customer Journey,
 
-
-
-=== Modell der identifizierten Objekte
-
-#frage([wo packen wir dieses Modell hin? ist es hier an der richtigen stelle?])
-
-Folgendes Archimate Modell der Geschäftsobjekte von GastroStart, die von der Gruppe identifiziert wurden. 
+@fig-IdentifizierteGeschaefstobjetke zeigt die wesentlichen identifizierten Geschäftsobjekte und ihre Abhängigkeiten in GastroStart, die von der Gruppe identifiziert wurden. 
 
 #figure(
   image("../assets/GO diagram.svg", width: 80%),
@@ -79,12 +73,6 @@ Es wurde verzichtet, das Objekt Person zu modellieren.
 Die Behandlung von personenbezogenen Invarianten wie Domizil in der Schweiz oder Besitz des Wirtepatentes als Voraussetzung für die Gründung des Unternehmens und für den Erhalt der Betriebsbewilligung würden den Rahmen dieser Arbeit sprengen.
 
 ])
-
-#frage([können wir diesen Absatz weglassen?])
-Die Szenarios lassen sich Geschäftstransaktionen darstellen. Geschäftstransaktionen werden durch Zustände von Geschäftsobjekten ausgelöst und sie verändern die Zustände der gleichen oder anderer Geschäftsobjekte.
-In der Modellierung verwenden wir zur Darstellung der Beziehnung "löst aus" immer die "Auslöser-Beziehung", die vom Zustand zur Geschäftstransaktion zeigt, beziehungsweise von der Geschäftstransaktion zum Zustand, wenn dieser das Resultat der Transaktion ist.
-Für die Darstellung der Zustände verwenden wir das Symbol *Business Event*.
-In der Modellierung verwenden wir für die Zugriffsbeziehung von Geschäftsobjekt nach Zustand immer die "lesende" Variante. Dabei zeigt der Pfeil vom Geschäftsobjekt zum Zusand.
 
 === Amira orientiert sich <head-phase1-orientierung-1>
 
@@ -404,9 +392,9 @@ transaktion],
 ])
 
 
-=== Geschäftsobjekt Unternehmen, seine Zustände und sein Verhalten <sec-go-gt-unternehmen-gründen>
+=== Amira gründet ihr Unternehmen <sec-go-gt-unternehmen-gründen>
 
-#todo-action([Kapitelüberschrift mit den anderen Kapiteln vereinheitlichen.])
+#autor-dvbern("TODO @Giovanna, Sauron", inhalt: [])
 
 Im @sec-cj-unternehmen-gründen wurde das Szenario der Unternehmensgründung vorgestellt. 
 Nun wird dieses Szenario anhand des ihm zugrundeliegende Geschäftsobjekt näher beschrieben. 
@@ -417,9 +405,6 @@ GastroStart weist die Besucher während des Orientierungsprozesses auf die Mögl
 Wie beim Ausfüllen der Steuererklärung bietet GastroStart eine Anleitung zur Vorbereitung der notwendigen Dokumentation, sodass die Notariatskosten möglichst tief gehalten werden können. Die Angaben, um den User durch den Ablauf zu führen sind in der Bewilligungsübersicht gespeichert (se. @fig-GTZ-orientierung).
 /*Dazu gehören Angaben wie der gewünschte Firmennamen, den Sitz und Adresse der Firma, persönliche Informationen zu den Anteilhabenden, die Einzahlung des Gründungskapitals, die Formulierung von Statuten und Lieferung von Identifikationsdokumenten. */
 
-
-#frage([\@ Cheffen: stimmt die folgende Aussage?])
-_Alles, was der Benutzer Schritt für Schritt vorbereitet wird entsprechend im Gründungsvorhaben festgehalten - respektive kann dort hochgeladen und dokumentiert werden. _
 So stehen alle Informationen in GastroStart zur Verfügung und können jederzeit inhaltlich und formell validiert werden. 
 Wenn die Checkliste für die Gründung des *Unternehmens* erfolgreich durchgearbeitet worden ist, kann der Benutzer ein Termin beim Notar abmachen und dort die nötigen offiziellen Schritte vornehmen: die öffentliche Beurkundung durch den Notar und der Antrag um Eintrag ins kantonale Handelsregister. 
 Diese Schritte sind notwendig, damit das Unternehmen überhaupt rechtlich existiert und als solches von den Behörden und Wirtschaftspartner anerkannt werden kann, beispielsweise um eine Betriebsbewilligung und eine Finanzierung zu erhalten. 
@@ -560,7 +545,7 @@ transaktion],
 === Geschäftsobjekt Bewilligung, seine Zustände und sein Verhalten<sec-go-gt-bewilligung>
 verweis: @fig-GTZ-orientierung
 
-#todo-action([Kapitelüberschrift mit den anderen Kapiteln vereinheitlichen.])
+#todo-action([ \@Giovanna Kapitelüberschrift mit den anderen Kapiteln vereinheitlichen.])
 
 Nach der Gründung der juristischen Person, zum Beispiel eine GmbH, kann der Benutzer den nächsten Hürdenlauf vornehmen: So wie mit der Gründung des Unternehmens bereits erfolgt, unterstützt GastroStart seine Kunden dabei, alle Unterlagen, Bestätigungen und Nachweise vorzubereiten oder einzuholen, die für die Erteilung der Betriebsbewilligung durch die zuständige Behörde am gewählten Standort erforderlich sind. 
 
@@ -712,12 +697,11 @@ Die folgende @tbl-GT-Bewilligung fasst diese Punkte zusammen:
 
 === Amira erhält eine Finanzierung
 
-#todo-action([entschuldige adi, aber ich musste ein Kapitel auflösten und hierhin kopieren. ich habe ein kommentar im Quelltext hinterlassen von wo bis wo ich übernommen habe. ])
-
 Nachdem Amira die Betriebsbewilligung erhalten hat, benötigt sie Kapital für die Erstanschaffungen. In dieser Phase übernimmt FINNOFLEET: Amira stellt über GastroStart ein Finanzierungsgesuch, das anhand ihrer Angaben und einer Bonitätsprüfung beurteilt wird. Das Geschäftsobjekt #emph[Finanzierung] durchläuft dabei vier Geschäftstransaktionen. Die letzte davon überschreitet die Objektgrenze: Sie schliesst den Finanzierungsfall ab und versetzt das #emph[Gründungsvorhaben] in den Zustand #emph[finanziert].
 
 /*hier beginnt der kopierte Teil*/
 Das Geschäftsobjekt *Finanzierung* bündelt sämtliche Informationen rund um Amiras Finanzierungsgesuch --- von der Anfrage über die Bonitätsprüfung durch FINNOFLEET bis zum Kreditentscheid. Es ist das informationstragende Artefakt, das den Finanzierungsfall durch seinen Lebenszyklus führt und die Zustandsübergänge dokumentiert.
+
 /*
 #figure(
 image("../assets/GOFinanzierung.svg", width: 50%),
@@ -842,8 +826,6 @@ transaktion],
 
 === Amira wird Kunde bei Transgourmet
 
-#todo-action([Jakob: bitte vervollständigen - bspw. so wie Adi mit der Registrierung])
-
 Das Lieferantenkonto ist ein Geschäftsobjekt, das die Beziehung zwischen dem Gastronomiebetrieb und seinen Lieferanten abbildet. Es enthält Informationen über die Lieferanten, die Konditionen der Zusammenarbeit und den Status der Geschäftsbeziehung. Das Lieferantenkonto ist entscheidend für die effiziente Abwicklung von Bestellungen und die Verwaltung von Lieferantenbeziehungen.
 
 #figure(
@@ -947,13 +929,8 @@ transaktion],
 
 === Reflexion
 
- #figure(
-  image("../assets/GrpA_GP_GastroStart_Albrecht_Jakob.svg", width: 80%),
-  caption: [Archimate Modell der Customer Journey von Amira]
-) <fig-customer-journey-view>
-
 #stolperstein([
-  Die Kundensicht ständig zu behalten und Abstand vom eigenen Fachbereich zu halten ist den Gefährten nicht immer gelungen. 
+ Den Gefährten ist es nicht immer gelungen, die Kundensicht zu bewahren und gleichzeitig Distanz zum eigenen Unternehmensbeitrag zu halten.
   ])
 
 Eine anfängliche Identifikation der Geschäftsobjekte führte die Gruppe zu einer umfangreicheren Liste.
@@ -1033,14 +1010,14 @@ Schwierigkeiten bat es, Abstand von der gewohnte Implementierungsebene zu halten
 */
 
  #figure(
-  image("../assets/reflektion.png", width: 80%),
+  image("../assets/reflektion.png", width: 100%),
   caption: [Archimate Modell einer frühen Modellierungsphase]
 ) <fig-reflektion_transgourmet>
 
 + *getrennte Objekte* in einer ebenfalls frühen Phase wurde zwischen zwei Objekten, "Betriebsbewilligungsantrag" und "Betriebsbewilligung" unterscheidet. Dabei benötigt die abstrakte Modellierung nur ein Geschäftsobjekt: die Betriebsbewilligung bleibt bestehen, ihr Zustand gibt Auskunft darauf, ob der "Vertrag" mit der Behörde bereits abgeschlossen ist (Zustand "erteilt") oder eben noch nicht (Zustande "beantragt").
 
 #figure(
-  image("../assets/Betriebsbewilligung beantragen - verfügen.png", width: 80%),
+  image("../assets/Betriebsbewilligung beantragen - verfügen.png", width: 100%),
   caption: [Archimate Modell einer frühen Modellierungsphase von "Betriebsbewilligung erhalten"]
 ) <fig-obs-bewilligung-erhalten>
 
@@ -1173,7 +1150,7 @@ Unterstehende @GPGF_Amira_erhält_bewilligung stellt die Zusammenhänge zwischen
 
 Nachfolgend wird die Geschäftsprozesse und deren Abhängigkeit von Geschäftsobjekten - näher eingegangen. 
 
-#todo-action([achtung - vielleicht sind es 3 oder 4 prozesse wegen dem verantwortungsübergang!])
+#todo-action([\@Giovanna achtung - vielleicht sind es 3 oder 4 prozesse wegen dem verantwortungsübergang!])
 
 Die Geschäftstransaktionen werden in zwei *Geschäftsprozesse* aggregiert, nämlich 
 - _Betriebsbewilligung erhalten_ und 
@@ -1193,7 +1170,7 @@ Die soeben beschriebene Geschäftsprozesse weisen folgende Abhängigkeiten von G
 === Geschäftsfähigkeiten der Behördeninteraktion: Unternehmen gründen und Bewilligung erhalten
 
 #figure(
-  image("../assets/GF Behördeninteration.svg", width: 80%),
+  image("../assets/GF Behördeninteration.svg", width: 100%),
   caption: [Archimate Modell der Geschäftsfähigkeiten der Behördeninteraktion]
 ) <fig-GF_Behördeninteraktion>
 
@@ -1238,7 +1215,7 @@ umfasst die Geschäftstransaktionen #emph[Finanzierung prüfen] und #emph[Finanz
 - Indirekt, über das Objektmodell der Finanzierung: #emph[Bewilligung] als Voraussetzung (ohne Betriebsbewilligung kein Gesuch) und #emph[Unternehmen] als Empfänger der Mittel und Inhaber des Geschäftskontos.
 
 ==== Geschäftsfähigkeiten Finanzierung erhalten
-#todo-action([sorry, my bad: i merged this part with the Geschäftsprozesse - could you check if it fits well in the current chapter?])
+#todo-action([\@Adrian sorry, my bad: i merged this part with the Geschäftsprozesse - could you check if it fits well in the current chapter?])
 
 Die übergeordnete Geschäftsfähigkeit lautet *Gründungsvorhaben finanzieren*. Sie wird im Joint Venture arbeitsteilig getragen: FINNOFLEET verantwortet den Finanzierungskern --- Prüfung, Entscheid und Kontobereitstellung ---, während die kundenzugewandte Antragserfassung bei GastroStart liegt. Die Fähigkeit zerfällt in vier Teilfähigkeiten:
 
@@ -1271,7 +1248,7 @@ Die letzten beiden Punkte von Teilfähigkeit 3 --- verständliche Begründung un
 
 
 === Geschäftsprozesse Kunde bei Transgourmet werden
-#todo-action([sorry, my bad: i merged this part with the Geschäftsprozesse - could you check if it fits well in the current chapter?])
+#todo-action([\@Jakob sorry, my bad: i merged this part with the Geschäftsprozesse - could you check if it fits well in the current chapter?])
 ==== Geschäftsprozesse 
 
 Über die Geschäftsobjekte #emph[Lieferantenkonto] und #emph[Bestellung] werden die Geschäftstransaktionen in diesem Szenario zu zwei Geschäftsprozessen aggregiert:
