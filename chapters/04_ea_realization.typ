@@ -394,7 +394,7 @@ transaktion],
 
 === Amira gründet ihr Unternehmen <sec-go-gt-unternehmen-gründen>
 
-#autor-dvbern("TODO @Giovanna, Sauron", inhalt: [])
+#autor-verwaltung([Beitrag von Giovanna Beier, Bundeskanzlei])
 
 Im @sec-cj-unternehmen-gründen wurde das Szenario der Unternehmensgründung vorgestellt. 
 Nun wird dieses Szenario anhand des ihm zugrundeliegende Geschäftsobjekt näher beschrieben. 
@@ -1116,21 +1116,23 @@ In  @sec-go-gt-unternehmen-gründen wurde das zentrale Geschäftsobjekt für das
 Unterstehende @GPGF_Amira_gründet_Unternehmen stellt die Zusammenhänge zwischen Geschäftsprozesse, Geschäftsobjekten und Geschäftsfähigkeiten im ressourcenunabhängigen Modell nach Archimate dar. 
 
 #figure(
-  image("../assets/GP+GF Amira gründet ihr Unternehmen.svg", width: 100%),
+  image("../assets/GP+GF Amira gründet ihr Unternehmen.Svg", width: 100%),
   caption: [Geschäftsprozesse und Geschäftsfähigkeiten - Szenario "Unternehmensgründung"]
 ) <GPGF_Amira_gründet_Unternehmen>
 
 Nachfolgend wird die Geschäftsprozesse und deren Abhängigkeit von Geschäftsobjekten - näher eingegangen. 
 
 
-Die Geschäftstransaktionen werden in zwei *Geschäftsprozesse* aggregiert, nämlich 
-- _Handelsregistereintrag erhalten_ und 
+Die Geschäftstransaktionen von GastroStart werden in zwei *Geschäftsprozesse* aggregiert, nämlich 
+- _Handelsregistereintrag erwirken_ und 
 - _Unternehmen [bei Behörden] anmelden_
 Die Unterscheidung in zwei Geschäftsprozesse ist hier der Tatsache zuzuweisen, dass jeder Prozess ein eigenständiges Ziel verfolgt. 
-- Der erste Geschäftsprozess "Handelsregistereintrag erhalten" hat zum Ziel, das Unternehmen ins Leben zu rufen und als solches auch Handlungs- und Geschäftsfähig zu machen. Dieser Prozess ist zwingend notwendig, damit das Unternehmen agieren kann.
+- Der erste Geschäftsprozess "Handelsregistereintrag erwirken" hat zum Ziel, das Unternehmen ins Leben zu rufen und als solches auch Handlungs- und Geschäftsfähig zu machen. Dieser Prozess ist zwingend notwendig, damit das Unternehmen agieren kann.
 - Der zweite Prozess "Unternehmen bei Behörden anmelden" hat zum Ziel, das gegründete Unternehmen bei verschiedenen Stellen der kantonalen und eidgenössischen Verwaltung "bekannt" zu machen - u.A. um zum Schutze der zukünftigen Angestellten (Anmeldung bei der kantonalen Ausgleichsstelle) oder um die Mehrwertsteuerpflicht zu konkretisieren (Anmeldung bei der eidgenössischen Steuerverwaltung). Diese Anmeldungen erfolgen nicht automatisch, sondern bedarf einer Entscheidung der GründerInnen. Dieser Prozess ist nur dann notwendig, wenn das Unternehmen seine wirtschaftliche Aktivität aufnimmt, was auch Ziel der Kunden der Plattform ist. Aus diesem Grund forciert der abgebildete Prozess die GründerInnen dazu, diese Anmeldungen vorzunehmen - auch, um den Zugang zu den Abläufen _Bewilligung erhalten_ und _Finanzierung erhalten_ zu ermöglichen. 
 
-Die soeben beschriebene Geschäftsprozesse weisen folgende Abhängigkeiten von Geschäftsobjekten:
+Abgebildet ist auch ein dritter Geschäftsprozess, _Unternehmensgründung vollziehen_, welcher die Geschäftstransaktionen _Gründung beurkunden_, _Antrag prüfen_ und _im Handelsregister eintragen_ unter sich sammelt. Dieser Geschäftsprozess gehört unter der Verantwortung der zuständigen Behörde und deren Hilfspersonen (der Notar als Urkundsperson). 
+
+Die soeben beschriebene Geschäftsprozesse von GastroStart weisen folgende Abhängigkeiten von Geschäftsobjekten:
 
 - #emph[Unternehmen] --- das zentrale Objekt beider Prozesse: alle Geschäftstransaktionen greifen darauf zu, und die Zustände des Objekts sind die Fortschrittsanzeige des Gesamtprozesses (siehe @tbl-GO-Unternehmen).
 - #emph[Gründungsvorhaben] --- fachlicher Auslöser und Empfänger des Prozessergebnisses: die abschliessenden Transaktionen des Prozess #emph[Unternehmen anmelden] greifen auch auf dieses Objekt zu und versetzt es in den Zustand #emph[registriert]. Diese Transaktionen wirken sich somit auf zwei Geschäftsobjekte.
@@ -1269,73 +1271,6 @@ Ein erfolgreicher Gastronomiebetrieb benötigt ein Lieferantenkonto, um Waren zu
 
 Die Geschäftsfähigkeit *Bestellung* umfasst die Erfassung und Verwaltung von Bestellungen beim Lieferanten. Die Geschäftsprozesse *Bestellung aufgeben* und *Wareneingang erfassen* sind Teil der *Bestellung* Geschäftsfähigkeit.
 
-== Vierte Iteration: Geschäftsfähigkeiten und Abhängigkeiten untereinander
-
-
-#fuehrung([Geschäftsfähigkeiten bilden eine stabile, redundanzfreie Baumstruktur der funktionalen Dekomposition einer Unternehmung. Sie abstrahieren von jeglichen Ressourcen, werden aber von diesen unterstützt. Geschäftsfähigkeiten sind in sich stark zusammenhängend während sie mit andern Geschäftsfähigkeiten lose gekoppelt sind. @Spichiger2026GFbUA])
-
-#todo-action([ \@Giovanna Blaue Box retten und ggf. Kapitel löschen.])
-
-
-
-
-
-
-
-
-/*
-== Business-Object-Analyse <sec-business-objects>
-#todo-action([wir übernehmen Gründungsvorhaben + die Objetke von Adrian])
-
-Wie kommen wir auf die 5 Objekten? 
-Objekte finden und den Weg dazu danch erklären 
-was ist Entity? Und die Phase dazu - reicht 1 BObject dafür? danach die Statuses 
-
-Das Journey Mapping wurde zu einer Business-Object-Analyse erweitert, die dem von @normann2001 eingeführten und von @tercek2015 weiterentwickelten Dematerialisierungs-Framework folgt.
-Das Framework bewertet Informationsartefakte entlang vier Dimensionen: _Liquidität_ (wie frei das Objekt über organisatorische Grenzen hinweg fliessen kann), _Unbundling_ (ob es von seinem physischen Träger getrennt werden kann), _Dichte_ (Wertkonzentration pro Informationseinheit) und _Vaporisierungspotenzial_ (Grad, in dem das Objekt vollständig in einen digitalen Service dematerialisiert werden kann).
-
-Über die fünf Journey-Phasen hinweg wurden 18 Business Objects identifiziert, klassifiziert nach ArchiMate-Kerneltyp, Eigentümerschaft und aktuellem Dematerialisierungsgrad.
-
-#figure(
-  caption: [Business-Object-Inventar: GastroStart],
-  block(width: 100%, breakable: true)[
-    #set text(size: 7.5pt)
-    #table(
-      columns: (0.5cm, 3.3cm, 1.9cm, 1.1cm, 2.4cm, 1.8cm, 1fr),
-      inset: 5pt,
-      stroke: 0.4pt,
-      fill: (x, y) => if y == 0 { luma(210) } else if calc.odd(y) { luma(248) } else { white },
-      align: (center, left, left, center, left, center, left),
-
-      [*\#*], [*Business Object*], [*Kernel Type*], [*Ph.*], [*Owner*], [*Dematerialisierung*], [*Bemerkungen*],
-
-      [1],  [Kantonsanforderungskatalog],   [Document],    [1], [DV Bern],        [95 %],  [Vollständig digitale Regelmatrix; Pflegerisiko bei Gesetzesänderung],
-      [2],  [Betriebstyp-Profil],           [Entity],      [1], [DV Bern],        [100 %], [Kerndatenobjekt; Basis für alle nachgelagerten Prozesse],
-      [3],  [Bewilligungsübersicht],         [Document],    [1], [DV Bern],        [60 %],  [Vollständigkeit hängt von der kantonalen Datenqualität ab],
-      [4],  [eID-Identitätsnachweis],        [Document],    [2], [Bundeskanzlei],  [100 %], [Vollständig digital; Risiko: Nutzende ohne eID],
-      [5],  [Gründungsprofil],              [Entity],      [2], [DV Bern],        [100 %], [Persistentes Plattform-Objekt],
-      [6],  [Nutzerkonto],                  [Entity],      [2], [DV Bern],        [100 %], [eID-verknüpft; ermöglicht Prozesswiederaufnahme],
-      [7],  [Gewerbebewilligung],           [Contract],    [3], [Kanton],         [55 %],  [Kantonsabhängig; ZH digital, VS analog],
-      [8],  [Lebensmittelkontroll-Anmeldung],[Document],   [3], [Kanton],         [45 %],  [Teilweise postalisch; hohes Risiko eines Medienbruchs],
-      [9],  [Alkoholbewilligung],           [Contract],    [3], [Kanton],         [30 %],  [Verlangt häufig physische Präsenz – höchstes analoges Risiko],
-      [10], [Handelsregistereintrag],       [Contract],    [3], [Bund/Kanton],    [85 %],  [Weitgehend digital über Zefix/EHRA],
-      [11], [Bewilligungsstatus],           [Event],       [3], [DV Bern],        [65 %],  [Digital im Portal; Quelldaten oft manuell],
-      [12], [Kantonales Formular],          [Document],    [3], [Kanton],         [25 %],  [Grösste Dematerialisierungslücke in der Journey],
-      [13], [Bonitätsprüfung],             [Data Object], [4], [FINNOFLEET],     [100 %], [Vollständig automatisiert; Risiko: intransparentes Ergebnis],
-      [14], [Geschäftskonto (IBAN)],        [Entity],      [4], [FINNOFLEET],     [100 %], [Sofortige digitale Ausstellung über Banking-API],
-      [15], [Kreditantrag],                [Contract],    [4], [FINNOFLEET],     [70 %],  [Weitgehend digital; Unterschrift allenfalls physisch],
-      [16], [Lieferantenkonto],            [Entity],      [5], [Transgourmet],   [100 %], [Vollständig digital über Katalog-API],
-      [17], [Bestellung],                  [Document],    [5], [Transgourmet],   [100 %], [Vollständig digitaler Bestellfluss],
-      [18], [Liefervertrag (Neukunde)],    [Contract],    [5], [Transgourmet],   [65 %],  [Rahmenvertrag; Risiko physischer Unterschrift],
-    )
-  ]
-) <tbl-business-objects>
-
-Von den 18 Objekten sind 10 vollständig dematerialisiert (≥ 80 %), 6 sind hybrid (40–79 %) und 2 bleiben weitgehend analog (< 40 %).
-Beide analogen Objekte sind in Phase 3 konzentriert und liegen im Eigentum kantonaler Behörden – was bestätigt, dass die regulatorische Fragmentierung die primäre architektonische Einschränkung der Journey ist und nicht ein Versagen im Prozessdesign.
-
-Im ArchiMate-Modell werden Business Objects über _Access_-Beziehungen (lesend oder schreibend) mit Business Processes verknüpft, wodurch ihre Eigentümerschaft und ihre Zustandsübergänge schichtenübergreifend nachvollziehbar werden.
-*/
 
 = Das Inside-Out-Mapping: Realisierung der Enterprise Architecture
 
@@ -1472,6 +1407,13 @@ Das öffentliche Wesen nimmt nur indirekt eine Rolle im Unternehmen GastroStart.
 Aus der Perspektive von Amira und ihrer Customer Journey bildet das öffentliche Wesen mit seinen Vorschriften eine Hürde, die überwunden werden muss. Die jeweilige Staatsebene stellt oft eine Sammlung an Regulatorien und Vorgaben dar, welche Amira von ihrem Traum trennt. 
 
 Es ist nicht sinnvoll, das öffentliche Wesen - respektive dessen jeweiligen Systemen in GastroStartc zu integrieren - sondern werden als externe Systeme und bewusste "Absprünge" weg von GastroStart prozedural wie technisch in den betroffenen Customer Journeys implementieren. 
+
+==== Domenänenmodell 
+
+#figure(
+  image("../assets/RSM - Betriebsbewilligung erhalten.svg", width: 100%),
+  caption: [RSM der Phase «Amira erhält die Bewilligung»],
+) <fig-RSM-bewilligung>
 
 == Operating Model für FINNOFLEET
 
