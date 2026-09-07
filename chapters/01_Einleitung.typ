@@ -33,18 +33,51 @@ Da diese Momente einen wesentlichen Teil des Arbeitsprozesses ausmachen, sind si
 
 #fuehrung([Kennzeichnet Passagen und Zitate aus der Fachliteratur. Sie dienen dazu, die theoretische Verankerung der Arbeit direkt nachzuvollziehen.])
 
-== Erklärung zur Nutzung Künstlicher Intelligenz (KI)
+== Erklärung zur Nutzung Künstlicher Intelligenz (KI) und Selbständigkeitserklärung
 
 === Einsatzgebiet und Entstehungsprozess
-
-#todo-action([\@Jakob Vorlage zur Eigenständigkeitserklärung verwenden])
-#todo-action([Kapitel maximal bis Ebene 3])
-#todo-action([Grafiken als SVG und Breite 100%. Ggf. grosse Grafiken ind mehrere kleine aufteilen])
 
 Diese Arbeit entstand unter teilweiser Nutzung KI-gestützter Werkzeuge.
 Die Erstellung erfolgte als iterativer Prozess zwischen Mensch und System: 
 Das KI-Modell diente jeweils als assistierende Unterstützung, während der Autor das Verfahren durchgehend steuerte (Human-in-the-Loop). 
 Sämtliche KI-Generierungen wurden vom Autor initiiert, strukturiert und konsequent weiterentwickelt.
+
+=== Eingesetzte LLM-Modelle
+
+Die Aufstellung folgt der Richtlinie der Berner Fachhochschule zum Umgang mit
+generativer KI.
+
+
+#figure(
+ table(
+  columns: (auto, auto, auto),
+  align: (left + top, left + top, left + top ),
+  stroke: 0.4pt + luma(170),
+  inset: 6pt,
+  table.header(
+    [*Zeitraum*], [*Modell*], [*Einsatzschwerpunkt*] 
+  ),
+
+  [März bis Mai 2026],
+  [Claude, Anthropic, Generation Opus 4],
+  [Aufbau der Semantic-Anchor-Sammlung, Zachman-Analyse der B2B-Disposition, Business Model Canvas Transgourmet, Referenz- und Zitationsarbeit zu GFbUA],
+
+  [Juni bis Juli 2026],
+  [Claude, Anthropic, Generation Opus 4],
+  [Kapazitätsmodellierung GastroStart, ArchiMate-Modellbau, Customer Journey und Szenarien, Betriebsmodellanalyse nach Ross, Weill und Robertson],
+
+  [August 2026],
+  [Claude, Anthropic, Opus 4.7],
+  [ @anh-werkzeug-reflexion[Werkzeug-Reflexion für GFbUA-Modellierung] , Verdichtung des Dialogs zum Anhang],
+
+  [September 2026],
+  [Claude, Anthropic, Opus 5],
+  [Konsolidierung der Anhänge, Review und Korrektur der Arbeit, Typst-Satz],
+ ),
+
+  caption: ([Eingesetzte LLM-Modelle und deren Einsatzschwerpunkte]),
+
+)
 
 === Qualitätssicherung und Verantwortung
 
@@ -57,4 +90,15 @@ Der Entstehungsprozess umfasste eine systematische Qualitätssicherung durch die
 *Redaktionelle Überarbeitung:* Gezielte Steuerung und Anpassung von Stil, Struktur und Formulierungen.
 
 *Ergebniverantwortung:* Die Verantwortung für den Inhalt, die wissenschaftliche Einordnung sowie sämtliche Schlussfolgerungen liegen uneingeschränkt bei den Autoren.
+]
+
+=== Selbständigkeitserklärung
+
+#emph[
+
+Ich bestätige, die vorliegende Arbeit selbständig verfasst zu haben.
+Sämtliche Textstellen, die nicht von mir stammen, sind gekennzeichnet und mit dem genauen Hinweis auf ihre Herkunft versehen.
+Die verwendeten Quellen (gilt auch für Abbildungen, Grafiken u.ä.) sind im Literatur- bzw. Quellenverzeichnis aufgeführt.
+Ich bestätige weiterhin, dass ich bei der Erstellung dieser Studienarbeit durchgehend steuernd gearbeitet habe und von einer KI erzeugte Texte bzw. Textfragmente nicht unreflektiert übernommen habe.
+
 ]
