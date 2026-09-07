@@ -63,7 +63,7 @@ Die nächsten Abschnitte  beschreiben ein entsprechendes RIM für die Szenarien 
 @fig-IdentifizierteGeschaefstobjetke zeigt die wesentlichen identifizierten Geschäftsobjekte und ihre Abhängigkeiten in GastroStart, die von der Gruppe identifiziert wurden. 
 
 #figure(
-  image("../assets/GO diagram.svg", width: 80%),
+  image("../assets/GO diagram.svg", width: 100%),
   caption: [Geschäftsobjekt Kundenkonto und dessen Zustände]
 ) <fig-IdentifizierteGeschaefstobjetke>
 
@@ -565,7 +565,7 @@ Nachfolgend wird auf die einzelnen Elemente der Grafik erklärt:
 
 ==== Geschäftsobjekt und Zustände
 /*#figure(
-image("../assets/GOBewilligung.svg", width: 50%),
+image("../assets/GOBewilligung.svg", width: 100%),
 caption: [Geschäftsobjekt Bewilligung und dessen Zustände]
 ) <fig-GOBewilligung>
 */
@@ -704,7 +704,7 @@ Das Geschäftsobjekt *Finanzierung* bündelt sämtliche Informationen rund um Am
 
 /*
 #figure(
-image("../assets/GOFinanzierung.svg", width: 50%),
+image("../assets/GOFinanzierung.svg", width: 100%),
 caption: [Geschäftsobjekt Finanzierung und dessen Zustände]
 ) <fig-GOFinanzierung>
 */
@@ -829,7 +829,7 @@ transaktion],
 Das Lieferantenkonto ist ein Geschäftsobjekt, das die Beziehung zwischen dem Gastronomiebetrieb und seinen Lieferanten abbildet. Es enthält Informationen über die Lieferanten, die Konditionen der Zusammenarbeit und den Status der Geschäftsbeziehung. Das Lieferantenkonto ist entscheidend für die effiziente Abwicklung von Bestellungen und die Verwaltung von Lieferantenbeziehungen.
 
 #figure(
-image("../assets/GOLieferantenkonto.svg", width: 50%),
+image("../assets/GOLieferantenkonto.svg", width: 100%),
 caption: [Geschäftsobjekt Lieferantenkonto und dessen Zustände]
 ) <fig-GOLieferantenkonto>
 
@@ -1462,7 +1462,7 @@ Diese drei Ebenen müssen getrennt betrachtet und eingeordnet werden:
 + *Bundesebene*: ist bei Diversification einzordnune. Das ist nicht überraschend, sondern strukturell angelegt: das Departementrinzip sowie die Gesetzgebung geben den Departementen und Ämtern eigene Vollzugsautonomie für ihre Kernaufgaben. Ist nichts anderes vorgesehen, ist eine Zusammenarbeit nicht erlaubt. Das ist politisch-rechtlich gewollte Dezentralisierung. Eine "dünne" zentrale Schicht basierend u.A. auf Standarddiensten, Produkte- und Prozessstandards und architektonischen Richtlinien erlaubt eine gewisse Interoperabilität und die Schaffung von Datenökosysteme. 
 
 #figure(
-  image("../assets/EABund.png", width: 92%),
+  image("../assets/EABund.png", width: 100%),
   caption: [Grobe Skizze der aktuellen Unternehmensarchitektur der Bundesverwaltung, unterteilt - von oben nach unten - in "Kernaufgabenbereiche", "übergreifenden Aufgaben" und "aufgabenneutralen IKT-Grundleistungen".],
 ) <fig-EA-Bund>
 
@@ -1613,7 +1613,7 @@ _Anmerkung zum Architekturstil:_ ELA Kredit setzt auf eine lose gekoppelte Archi
 Die folgende Architektur zeigt ELA Kredit konkret. Die Kanäle gehören der Bank und bringen keine eigene Prozesslogik mit: Sie rufen dieselben APIs auf. Dahinter liegen der standardisierte Anbahnungsprozess und ein zentrales Backend als Single Source of Truth, das in die bestehenden Systeme der Bank integriert ist und diese nicht ersetzt --- alles unter einem einzigen regulatorischen Regelwerk.
 
 #figure(
-  image("../assets/EA_ELA_Kredit_Unification.svg", width: 92%),
+  image("../assets/EA_ELA_Kredit_Unification.svg", width: 100%),
   caption: [Enterprise Architecture der Kreditanbahnung mit ELA Kredit: Die Kanäle der Bank treffen an einer gemeinsamen API-Grenze auf denselben standardisierten Anbahnungsprozess (Standardisierungsachse) und dasselbe zentrale Backend (Integrationsachse). Die Bestandssysteme sind bidirektional angebunden, nicht ersetzt; die Governance spannt sich über alle Schichten.],
 ) <fig-EA-ela-kredit>
 
@@ -1667,7 +1667,7 @@ Aus dieser Klassifikation leitet sich ab, wie viel Integration eine Architektur 
 
 #figure(
   caption: [Operating-Model-Matrix nach Ross, Weill und Robertson @ross2006enterprise[Abb. 2-1, S. 30] mit Verortung der Transgourmet-B2B-Belieferung (Unification) und der übergreifenden Customer Journey (Federation). ],
-  image("../assets/operating_model_matrix_mit_federation_layer.svg", width: 92%),
+  image("../assets/operating_model_matrix_mit_federation_layer.svg", width: 100%),
 ) <fig-operating-model-matrix-with-federation-layer>
 
 - *Ebene Transgourmet B2B-Belieferung — Unification*: Innerhalb von Transgourmet sind sowohl Prozesse als auch Daten hoch integriert und zentralisiert. Kunden-, Sortiments-, Preis-, Bestands-, Bestell- und Lieferdaten werden geteilt, die Kernprozesse (Bestellung, Disposition, Lieferung, Fakturierung) sind standardisiert, und ein zentrales System bedient diese Kanäle.
@@ -1681,7 +1681,7 @@ Das Modell macht das Unification-Operating-Model aus @fig-operating-model-matrix
 
 #figure(
   caption: [ArchiMate-Ist-Zustand der Transgourmet-B2B-Belieferung über Business-, Application- und Technology-Schicht],
-  image("../assets/ea_ist_archimate_transgourmet_b2b.svg", width: 78%),
+  image("../assets/ea_ist_archimate_transgourmet_b2b.svg", width: 100%),
 ) <fig-archimate-ist>
 
 Die Schichten lesen sich wie folgt:
@@ -1702,7 +1702,7 @@ Hier mit dem Blick auf die *Bestellabwicklung* und Anbindung von Transgourmet al
 Die Geschäftstransaktion *Bestellung senden* wird im RSM bis auf Stufe Technologie heruntergebrochen, wo auf den GS1/EDIFACT-Standard für die elektronische Bestellung (ORDERS) verwiesen werden kann @gs1ch_2022_idealmessage_orders.
 
 #figure(
-  image("../assets/RSM-Bestellabwicklung.svg", width: 92%),
+  image("../assets/RSM-Bestellabwicklung.svg", width: 100%),
   caption: [RSM der Bestellabwicklung mit Anbindung von Transgourmet als Lieferanten],
 ) <fig-RSM-Bestellabwicklung>
 

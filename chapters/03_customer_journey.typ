@@ -24,7 +24,7 @@ Bei der Suche erfährt sie, dass die Punkte Bewilligungen, Finanzierung, Ressour
 Sie landet bei *“GastroStart”* und erfährt in der kurzen Einführung auf der Startseite, dass dieses Portal sie bei all dem unterstützen kann. 
 Sie ist erleichtert und registriert sich. 
  #figure(
-  image("../assets/Customer Journey View.svg", width: 60%),
+  image("../assets/Customer Journey View.svg", width: 100%),
   caption: [Archimate Modell der Customer Journey von Amira und erste Iteration für die Identifikation der Geschäftsobjekte]
 ) <fig-customer-journey-view>
 
@@ -190,7 +190,7 @@ An dieser Stelle des Entwicklungsprozesses war die Bedeutung der Phase "Orientie
 Tatsächlich verbirgt sich dahinter ein komplexerer Prozess, den wir - nach der kurzen Einführung im letzten Kapitel - in späteren Kapiteln nochmals detaillierter aufgreifen.
 
  #figure(
-  image("../assets/cj_registrierung.svg", width: 70%),
+  image("../assets/cj_registrierung.svg", width: 100%),
   caption: [Archimate Szenario "Amira registriert sich"]
 ) <fig-customer-journey-registrierung>
 
@@ -257,7 +257,7 @@ Die jeweilige Kanzlei übernimmt den Medienbruch auf Papier.
 
 
  #figure(
-  image("../assets/cj_gründung und bewilligung.svg", width: 70%),
+  image("../assets/cj_gründung und bewilligung.svg", width: 100%),
   caption: [Archimate Szenario "Amira gründet ihr Unternehmen"]
 ) <fig-customer-journey-grüdndung-bewilligungg>
 
@@ -324,7 +324,7 @@ Der Mehrwert des Systems liegt in der Begleitung des Ablaufs, in der Plausibilis
 Die massgeschneiderten und detaillierten Erklärungen zum einzuhaltenden Ablauf geben den GründerInnen Halt im holprigen, teils mehrspurigen und oftmals analogen Prozess und wirken motivierend auf dem erfolgreichen Abschluss des Szenarios hin. 
 
  #figure(
-  image("../assets/cj_verträge.svg", width: 70%),
+  image("../assets/cj_verträge.svg", width: 100%),
   caption: [Archimate Szenario "Amira erhält die Bewilligung"]
 ) <fig-cj-verträge>
 
@@ -451,7 +451,7 @@ Die folgende Tabelle fasst die wesentlichen Merkmale dieser Phase der Customer-J
 // Danach als assets/SZ_Finanzierung.svg exportieren und untenstehendes #figure
 // einkommentieren:
 // #figure(
-//   image("../assets/SZ_Finanzierung.svg", width: 80%),
+//   image("../assets/SZ_Finanzierung.svg", width: 100%),
 //   caption: [Archimate Modell der Customer Journey von Amira]
 // ) <fig-szenario-finanzierung-cj>
 
@@ -461,7 +461,7 @@ Die folgende Tabelle fasst die wesentlichen Merkmale dieser Phase der Customer-J
 
 
  #figure(
-  image("../assets/cj_verträge.svg", width: 70%),
+  image("../assets/cj_verträge.svg", width: 100%),
   caption: [Archimate Szenario "Amira wird Kunde bei Transgourmet"]
 ) <fig-cj-verträge>
 
