@@ -542,12 +542,10 @@ transaktion],
 ) <tbl-GT-Unternehmen-gründen>
 
 
-=== Geschäftsobjekt Bewilligung, seine Zustände und sein Verhalten<sec-go-gt-bewilligung>
-verweis: @fig-GTZ-orientierung
+=== Amira erhält die Bewilligung<sec-go-gt-bewilligung>
 
-#todo-action([ \@Giovanna Kapitelüberschrift mit den anderen Kapiteln vereinheitlichen.])
 
-Nach der Gründung der juristischen Person, zum Beispiel eine GmbH, kann der Benutzer den nächsten Hürdenlauf vornehmen: So wie mit der Gründung des Unternehmens bereits erfolgt, unterstützt GastroStart seine Kunden dabei, alle Unterlagen, Bestätigungen und Nachweise vorzubereiten oder einzuholen, die für die Erteilung der Betriebsbewilligung durch die zuständige Behörde am gewählten Standort erforderlich sind. 
+Nach der Gründung der juristischen Person, zum Beispiel eine GmbH, kann der Benutzer den nächsten Hürdenlauf vornehmen: So wie mit der Gründung des Unternehmens bereits erfolgt, unterstützt GastroStart seine Kunden dabei, alle Unterlagen, Bestätigungen und Nachweise vorzubereiten oder einzuholen, die für die Erteilung der Betriebsbewilligung durch die zuständige Behörde am gewählten Standort erforderlich sind. Wie es bei der Gründung bereits der Fall gewesen ist, sind die Angaben für die Führung des Users durch den Ablauf in der Bewilligungsübersicht gespeichert (se. @fig-GTZ-orientierung).
 
 GastroStart gibt  über jedes Lieferobjekt Auskunft, zeigt auf, wo welcher Nachweis einholt werden kann.
 Dank GastroStart können die Benutzer der Sinn hinter jeder behördlichen Anforderung nachvollziehen, und die motiviert sie bei der zeitaufwändigen Zusammenstellung. Denn die Anforderungen an die Erteilung der Betriebsbewilligung dienen dem Schutz der Gäste, denn die Vorschriften decken Bereiche ab wie Hygiene und Lebensmittelsicherheit, Bau- und Brandschutz und nicht zuletzt die persönliche Eignung des Antragsstellers für die Führung des Caterings. 
@@ -1144,7 +1142,7 @@ Unterstehende @GPGF_Amira_erhält_bewilligung stellt die Zusammenhänge zwischen
 
 
 #figure(
-  image("../assets/GP+GF Amira erhält die Bewilligung.svg", width: 100%),
+  image("../assets/GP+GF Amira erhält die Bewilligung.svg", width: 100%),
   caption: [Geschäftsprozesse und Geschäftsfähigkeiten - Szenario "Bewilligung erhalten"]
 ) <GPGF_Amira_erhält_bewilligung>
 

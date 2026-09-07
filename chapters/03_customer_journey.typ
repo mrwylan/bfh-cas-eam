@@ -11,8 +11,6 @@
 In diesem Kapitel wird die Customer Journey erklärt - und wie wir daraus ein Phasenmodell skizziert haben, welches am Kundenerlebnis entlang entstanden ist.*/
 #fuehrung([Eine Geschichte in Form einer User Story Map oder einer  Customer Journey erklärt allen Beteiligten, welches Verhalten vom zukünftigen System erwartet wird. Die Geschichte wird um Ziele aus Sicht der primären, externen Stakeholder des Unternehmens ergänzt. @Spichiger2026GFbUA, S. 54]) 
 
-#todo-action([\@ Giovanna Korrekt zitieren :)])
-
 == Amira und ihre Geschichte <sec-amira-und-ihre-geschichte>
 
 Amira, eine 34-jährige Quereinsteigerin, will ein Catering-Unternehmen gründen. 
@@ -517,7 +515,7 @@ Die folgende Tabelle fasst die wesentlichen Merkmale dieser Phase der Customer-J
 
 
 
-== Das Joint Venture GastroStart - Vorstellung des Unternehmens<head-gastrostart-vorstellung>
+== Das Joint Venture GastroStart - Vorstellung des Unternehmens
 #frage([
   der Übergang ist etwas "plötzlich" - wie kann die Herleitung etwas logischer aussehen?
 ])
@@ -535,6 +533,8 @@ Entsprechend der gewählten Customer Journey haben wir uns entschieden, nur das 
 
 == Die Rollen der beteiligten Unternehmen im Joint Venture
 
+#todo-action([\@Jakob: bitte erklären, wieso wir hier eigentlich schon das RSM einführen - über die Fertigkeiten der Teilnehmern.])
+
 === DV Bern
 
 Für das Produkt GastroStart liefert DV Bern Software und Infrastruktur für das Web-Portal, inklusive Implementierung der Regelmatrix, Profilmanagement und Schnittstellen für z. B. kantonale Dienste oder die Bonitätsprüfung via FINNOFLEET.
@@ -542,6 +542,12 @@ Das Portal wird im Folgenden auch als "Plattform" bezeichnet.
 Das Produkt als Ganzes, inklusive aller fachlichen Aspekte, wird, wenn nicht explizit als GastroStart benannt, auch als "System" bezeichnet.
 
 Für die fünf Phasen der Customer Journey: Orientierung, Registrierung, Bewilligung, Finanzierung, erster Einkauf - sind die einzelnen Beiträge seitens DV Bern wie folgt beschrieben.
+
+#frage([wollen wir uns hier knapper halten? Wegen Spoilern von dem was nachher kommt.(se beiträge Transgourmet und öffentliche Verwaltung
+
+Frage 2: sind die folgenden Kapiteln am richtigen Ort? Vielleicht sollten Sie unter dem RSM verfrachet werden?)
+
+Entscheid: we're ok with spoilers and Jakob is going to write the intro.])
 
 ==== Orientierung
 
@@ -595,7 +601,7 @@ Die Eröffnung eines Kundenkontos bei Transgourmet ist die letzte Phase der Cust
 === Öffentliche Verwaltung als Interoperabilitätspartner<sec-rolle-interoperabilitätspartner>
 Aus Sicht von Amira und somit auch von GastroStart wird die öffentliche Verwaltung - ohne besondere Rücksicht auf die jeweilige Ebene - in ihrer Rolle als Interoperabilitätspartner abgebildet und behandelt.
 Dies, weil die öffentliche Hand ihre hoheitlichen Handlungen nicht im Sinne eines wirtschaftlichen Angebots wie die anderen Mitglieder der Joint Venture zur Verfügung stellt. Auch ist es nicht im Sinne der Schweizer Rechtstradition, private Unternehmen mit der Vergabe von hoheitlichen Akten zu betrauen.
-Aus diesen Gründen sind jene Teile der Customer Journey, wofür der Staat verantwortlich ist - bspw. der Eintrag im Handelsregister oder die Erteilung einer Betriebsbewilligung - und die Fähigkeit, diese zu vollziehen, sind ausserhalb des Wirkungsbereichs des Joint Ventures anzusiedeln. 
+Aus diesen Gründen sind jene Teile der Customer Journey, wofür der Staat verantwortlich ist - bspw. der Eintrag im Handelsregister oder die Erteilung einer Betriebsbewilligung - und die Fähigkeit, diese zu vollziehen, ausserhalb des Wirkungsbereichs des Joint Ventures anzusiedeln. 
 /*Auf der anderen Seite bildet GastroStart eine spezialisierte Schnittstelle für die Vorbereitung hin auf diesen Akten. */
 
 
