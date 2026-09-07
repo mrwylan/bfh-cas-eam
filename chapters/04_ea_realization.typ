@@ -107,7 +107,7 @@ Diese Übersicht enthält alle, Kriterien, die für eine Betriebsgenehmigung zu 
 Die GründerInnen haben damit alle Informationen, die sie brauchen, um das Bewilligungsverfahren erfolgreich zu durchlaufen.
 
 #figure(
-  image("../assets/jan/Zustandsübergänge des Gründungsvorhabens in Phase 1 - Orientierung v2.0.svg", width: 100%),
+  image("../assets/jan/Phase 1a - Orientierung - (GT & Events).svg", width: 100%),
   caption: [Zustandsübergänge des Gründungsvorhabens im Szenario "Orientierung"]
 ) <fig-GTZ-orientierung>
 
@@ -320,7 +320,7 @@ Dafür muss das System den Zustand des Kundenkontos allerdings kennen.
 Die folgende @fig-gtz-registrierung zeigt das Geschäftsobjekt *Kundenkonto* und seine Beziehungen im RMI nach Archimate.
 
 #figure(
-  image("../assets/jan/Zustandsübergänge des Kundenkontos in Phase 2 - Sich registrieren.svg", width: 100%),
+  image("../assets/jan/Phase 2a - Sich registrieren (GT & Events) .svg", width: 100%),
   caption: [Zustandsübergänge des Kundenkontos im Szenario "Sich registrieren"]
 ) <fig-gtz-registrierung>
 
@@ -1062,7 +1062,7 @@ In @fig-bp-and-bc-phase1 sind neben der Einführung der Geschäftsfähigkeiten a
 Diesen Prozess haben wir naheliegenderweise *Gründungsvorhaben orientieren* genannt. 
 
 #figure(
-  image("../assets/jan/Geschäftsfähigkeiten in Phase 1 - Orientierung.svg", width: 100%),
+  image("../assets/jan/Phase 1b - Orientierung - (GP & GF).svg", width: 100%),
   caption: [Geschäftsfähigkeiten in Phase 1: Orientierung"]
 ) <fig-bp-and-bc-phase1>
 
@@ -1105,7 +1105,7 @@ Die Fähigkeiten sicherzustellen, dass Authenfizierung und Autorisierung sicher 
 Die folgende Abbildung zeigt wie die in diesem Abschnitt besprochenen Prozesse und Fähigkeiten in das RMI nach Archimate eingebettet sind.
 
 #figure(
-  image("../assets/jan/Geschäftsfähigkeiten in Phase 2 - Sich registrieren.svg", width: 100%),
+  image("../assets/jan/Phase 2b - Sich registieren (GP & GF).svg", width: 100%),
   caption: [Geschäftsfähigkeiten in Phase 2: Sich registrieren"]
 ) <fig-bp-and-bc-phase2>
 
