@@ -108,7 +108,7 @@ Die GründerInnen haben damit alle Informationen, die sie brauchen, um das Bewil
 
 #figure(
   image("../assets/jan/Phase 1a - Orientierung - (GT & Events).svg", width: 100%),
-  caption: [Zustandsübergänge des Gründungsvorhabens im Szenario "Orientierung"]
+  caption: [Zustandsübergänge des Gründungsvorhabens im Szenario "Sich orientieren"]
 ) <fig-GTZ-orientierung>
 
 Die hier beschriebene Variante liest sich als Happy Path — also die erfolgreiche Erstellung einer Bewilligungsübersicht —, auch wenn der hier verwendete Zielzustand *orientiert* Raum für Variationen lässt. 
@@ -1063,7 +1063,7 @@ Diesen Prozess haben wir naheliegenderweise *Gründungsvorhaben orientieren* gen
 
 #figure(
   image("../assets/jan/Phase 1b - Orientierung - (GP & GF).svg", width: 100%),
-  caption: [Geschäftsfähigkeiten in Phase 1: Orientierung"]
+  caption: [Geschäftsfähigkeiten in Phase 1: "Sich orientieren"]
 ) <fig-bp-and-bc-phase1>
 
 === Geschäftsprozesse und Geschäftsfähigkeiten für die Benutzer-Registrierung bei GastroStart
@@ -1106,7 +1106,7 @@ Die folgende Abbildung zeigt wie die in diesem Abschnitt besprochenen Prozesse u
 
 #figure(
   image("../assets/jan/Phase 2b - Sich registieren (GP & GF).svg", width: 100%),
-  caption: [Geschäftsfähigkeiten in Phase 2: Sich registrieren"]
+  caption: [Geschäftsfähigkeiten in Phase 2: "Sich registrieren"]
 ) <fig-bp-and-bc-phase2>
 
 === Geschäftsprozesse und Geschäftsfähigkeiten der Behördeninteraktion
@@ -1394,7 +1394,7 @@ Die folgende Abbildung zeigt das RSM der Phase "Orientierung" und dessen Beziehu
 
 #figure(
   image("../assets/jan/Phase 1c - Orientierung - (RSM).svg", width: 100%),
-  caption: [RSM der Phase «Amira orientiert sich»],
+  caption: [RSM der Phase «Sich orientieren»],
 ) <fig-RSM-orientierung>
 
 === Die Registrierung im RSM <sec-domaenenmodell-registrierung>
@@ -1418,7 +1418,7 @@ Die folgende Abbildung zeigt das RSM der Phase "Registrierung" und dessen Bezieh
 
 #figure(
   image("../assets/jan/Phase 2c - Sich registieren (RSM).svg", width: 100%),
-  caption: [RSM der Phase «Amira registriert sich»],
+  caption: [RSM der Phase «Sich registieren»],
 ) <fig-RSM-registrierung>
 
 == Einordnung von GastroStart und der Akteure des öffentlichen Wesens in das Operating System nach Ross/Weill et al.
