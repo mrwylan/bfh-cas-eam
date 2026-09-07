@@ -515,7 +515,7 @@ Die folgende Tabelle fasst die wesentlichen Merkmale dieser Phase der Customer-J
 
 
 
-== Das Joint Venture GastroStart - Vorstellung des Unternehmens
+== Das Joint Venture GastroStart - Vorstellung des Unternehmens<head-gastrostart-vorstellung>
 #frage([
   der Übergang ist etwas "plötzlich" - wie kann die Herleitung etwas logischer aussehen?
 ])
@@ -533,8 +533,6 @@ Entsprechend der gewählten Customer Journey haben wir uns entschieden, nur das 
 
 == Die Rollen der beteiligten Unternehmen im Joint Venture
 
-#todo-action([\@Jakob: bitte erklären, wieso wir hier eigentlich schon das RSM einführen - über die Fertigkeiten der Teilnehmern.])
-
 === DV Bern
 
 Für das Produkt GastroStart liefert DV Bern Software und Infrastruktur für das Web-Portal, inklusive Implementierung der Regelmatrix, Profilmanagement und Schnittstellen für z. B. kantonale Dienste oder die Bonitätsprüfung via FINNOFLEET.
@@ -542,12 +540,6 @@ Das Portal wird im Folgenden auch als "Plattform" bezeichnet.
 Das Produkt als Ganzes, inklusive aller fachlichen Aspekte, wird, wenn nicht explizit als GastroStart benannt, auch als "System" bezeichnet.
 
 Für die fünf Phasen der Customer Journey: Orientierung, Registrierung, Bewilligung, Finanzierung, erster Einkauf - sind die einzelnen Beiträge seitens DV Bern wie folgt beschrieben.
-
-#frage([wollen wir uns hier knapper halten? Wegen Spoilern von dem was nachher kommt.(se beiträge Transgourmet und öffentliche Verwaltung
-
-Frage 2: sind die folgenden Kapiteln am richtigen Ort? Vielleicht sollten Sie unter dem RSM verfrachet werden?)
-
-Entscheid: we're ok with spoilers and Jakob is going to write the intro.])
 
 ==== Orientierung
 

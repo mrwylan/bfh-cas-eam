@@ -13,17 +13,13 @@ Die Verfolgung der durch die Übungen vorgegebenen Arbeitsschritte haben uns bis
 Jeder Entwicklungsschritt bezieht sich auf einem Auftrag (Übung) und folgt der Empfehlung zur Erarbeitung des RIM, die im Skript @Spichiger2026GFbUA, S. 53 ff. beschrieben ist. 
 Die Modellierung erfolgt mit Archimate.
 
-#todo-action([nachfolgende Sätze ändern um folgendes zu spigeln: 
-1. Geschäftobjete, Zustände und Transaktionen werden unter 4.2. behandelt. 
-2. Geschäftsprozesse und - fähigkeiten unter 4.3 ])
-
-Die folgenden Kapitel orientieren sich wie gehabt an den fünf Szenarien der Customer Journey.
-Zunächst beschreiben wir die wesentlichen Geschäftsobjekte und ihre möglichen Zustände, die in der jeweiligen Phase die entscheidende Rolle spielen.
-Anschliessend erweitern wir das Modell um Geschäftstransaktionen und die Beziehungen der Geschäftsobjekte zu diesen und untereinander.
-Weiter werden die Geschäftstransaktion zu Geschäftsprozessen zusammengeführt und schliesslich die wesentlichen Geschäftsfähigkeiten der jeweiligen Prozesse identifiziert und in das Modell integriert.
+Die folgenden Unterkapitel orientieren sich wie gehabt an den fünf Szenarien der Customer Journey.
+Zunächst beschreiben wir die Herleitung der wesentlichen Geschäftsobjekte und bringen diese anschliessend in Beziehung mit den auf ihnen aufbauenden Geschäftstransaktionen. Dazu verwenden wir ressourcenunabhängige Modelle nach Archimate.
+In den darauf folgenden Hauptkapiteln werden die Geschäftstransaktion zu Geschäftsprozessen zusammengeführt und schliesslich die wesentlichen Geschäftsfähigkeiten der jeweiligen Prozesse identifiziert und in das Modell integriert.
 Im letzten Kapitel der Modellentwicklung beschreiben wir den Übergang vom RIM ins ressourcenspezifische Modell anhand der IDEAL Informationssystemarchitektur.
 
-== Geschäftsobjekte und die Identifikation deren relevanten Verhaltens (statt: Geschäftsobjekte und Geschäftstransaktionen)
+== Geschäftsobjekte und ihre Zustandsübergänge
+
 === Vorgehen 
 
 #fuehrung([
@@ -409,6 +405,9 @@ transaktion],
 
 
 === Geschäftsobjekt Unternehmen, seine Zustände und sein Verhalten <sec-go-gt-unternehmen-gründen>
+
+#todo-action([Kapitelüberschrift mit den anderen Kapiteln vereinheitlichen.])
+
 Im @sec-cj-unternehmen-gründen wurde das Szenario der Unternehmensgründung vorgestellt. 
 Nun wird dieses Szenario anhand des ihm zugrundeliegende Geschäftsobjekt näher beschrieben. 
 
@@ -560,6 +559,8 @@ transaktion],
 
 === Geschäftsobjekt Bewilligung, seine Zustände und sein Verhalten<sec-go-gt-bewilligung>
 verweis: @fig-GTZ-orientierung
+
+#todo-action([Kapitelüberschrift mit den anderen Kapiteln vereinheitlichen.])
 
 Nach der Gründung der juristischen Person, zum Beispiel eine GmbH, kann der Benutzer den nächsten Hürdenlauf vornehmen: So wie mit der Gründung des Unternehmens bereits erfolgt, unterstützt GastroStart seine Kunden dabei, alle Unterlagen, Bestätigungen und Nachweise vorzubereiten oder einzuholen, die für die Erteilung der Betriebsbewilligung durch die zuständige Behörde am gewählten Standort erforderlich sind. 
 
