@@ -140,7 +140,7 @@ it
   set page(numbering: "I") // Da qui in poi gli indici useranno I, II, III...
 
   // Indice dei contenuti (Table of Contents)
-  outline(indent: 1.5em, depth: 4)
+  outline(indent: 1.5em, depth: 2)
   
   // Puoi inserire altri indici qui se necessario (es. immagini, tabelle)
   
