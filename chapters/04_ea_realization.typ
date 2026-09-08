@@ -695,6 +695,8 @@ Die folgende @tbl-GT-Bewilligung fasst diese Punkte zusammen:
 
 === Amira erhält eine Finanzierung
 
+#autor-finnofleet([Beitrag von Adrian Anghel])
+
 Nachdem Amira die Betriebsbewilligung erhalten hat, benötigt sie Kapital für die Erstanschaffungen. In dieser Phase übernimmt FINNOFLEET: Amira stellt über GastroStart ein Finanzierungsgesuch, das anhand ihrer Angaben und einer Bonitätsprüfung beurteilt wird. Das Geschäftsobjekt #emph[Finanzierung] durchläuft dabei vier Geschäftstransaktionen. Die letzte davon überschreitet die Objektgrenze: Sie schliesst den Finanzierungsfall ab und versetzt das #emph[Gründungsvorhaben] in den Zustand #emph[finanziert].
 
 /*hier beginnt der kopierte Teil*/
@@ -1191,12 +1193,9 @@ Behördliche Freigaben erwirken   ← GF von GastroStart
       Behörde: eintragen / erteilen
       → externe Fähigkeit, verbunden nur über den Objektzustand
 
-=== Geschäftsprozess Finanzierung erhalten
-
-#figure(
-  image("../assets/GP Amira erhaelt eine Finanzierung.svg", width: 100%),
-  caption: [Geschäftsprozesse - Szenario Amira erhält eine Finanzierung]
-) <GP_Amira_erhaelt_Finanzierung>
+=== Geschäftsprozesse und Geschäftsfähigkeiten für die Finanzierung
+<sec-GP-GF-finanzierung>
+#autor-finnofleet("Beitrag von Adrian Anghel, FINNOFLEET", inhalt: [Dieser Abschnitt führt Geschäftsprozesse und Geschäftsfähigkeiten der Finanzierungsphase zusammen: von den aggregierten Geschäftstransaktionen bis zur Geschäftsfähigkeit #emph[Gründungsvorhaben finanzieren] und ihren Teilfähigkeiten.])
 
 ==== Geschäftsprozesse
 
@@ -1206,7 +1205,12 @@ Finanzierung initiieren
 umfasst die Geschäftstransaktionen #emph[Finanzierung vorbereiten] und #emph[Finanzierung anfordern]. Der Prozess führt das Geschäftsobjekt #emph[Finanzierung] von #emph[neu] über #emph[vollständig] nach #emph[angefordert] und endet mit der Übergabe des Gesuchs an FINNOFLEET. Wichtig ist die Schleife über #emph[unvollständig]: fehlende Nachweise führen zurück in die Vorbereitung, ohne dass der Fall verloren geht; #emph[abgebrochen] beendet ihn vorzeitig. Dieser Prozess gehört fachlich zu GastroStart, weil hier die Kundeninteraktion stattfindet.
 
 Finanzierung erhalten
-umfasst die Geschäftstransaktionen #emph[Finanzierung prüfen] und #emph[Finanzierung zusagen]. Der Prozess führt die Finanzierung von #emph[angefordert] nach #emph[angenommen] --- oder nach #emph[abgelehnt], respektive bei fehlenden Nachweisen zurück nach #emph[unvollständig]. Mit der Zusage wechselt der Zustand die Objektgrenze: nicht die Finanzierung, sondern das #emph[Gründungsvorhaben] wird #emph[finanziert]. Er ist der eigentliche Beitrag von FINNOFLEET zum Joint Venture und der Punkt, an dem aus Amiras Gründungsvorhaben ein finanziertes Unternehmen wird. Beide Prozesse zusammen realisieren die Geschäftsfähigkeit #emph[Gründungsvorhaben finanzieren], die im Abschnitt «Geschäftsfähigkeiten Finanzierung erhalten» in Teilfähigkeiten zerlegt wird.
+umfasst die Geschäftstransaktionen #emph[Finanzierung prüfen] und #emph[Finanzierung zusagen]. Der Prozess führt die Finanzierung von #emph[angefordert] nach #emph[angenommen] --- oder nach #emph[abgelehnt], respektive bei fehlenden Nachweisen zurück nach #emph[unvollständig]. Mit der Zusage wechselt der Zustand die Objektgrenze: nicht die Finanzierung, sondern das #emph[Gründungsvorhaben] wird #emph[finanziert]. Er ist der eigentliche Beitrag von FINNOFLEET zum Joint Venture und der Punkt, an dem aus Amiras Gründungsvorhaben ein finanziertes Unternehmen wird. Beide Prozesse zusammen realisieren die Geschäftsfähigkeit #emph[Gründungsvorhaben finanzieren], die in @sec-GF-finanzierung in Teilfähigkeiten zerlegt wird.
+
+#figure(
+  image("../assets/GP Amira erhaelt eine Finanzierung.svg", width: 100%),
+  caption: [Geschäftsprozesse - Szenario Amira erhält eine Finanzierung]
+) <GP_Amira_erhaelt_Finanzierung>
 
 ==== Abhängigkeiten von Geschäftsobjekten
 
@@ -1214,8 +1218,8 @@ umfasst die Geschäftstransaktionen #emph[Finanzierung prüfen] und #emph[Finanz
 - #emph[Gründungsvorhaben] --- fachlicher Auslöser und Empfänger des Prozessergebnisses: die abschliessende Transaktion #emph[Finanzierung zusagen] greift auch auf dieses Objekt zu und versetzt es in den Zustand #emph[finanziert]. Sie ist damit die einzige Transaktion der Phase, die auf zwei Geschäftsobjekte wirkt.
 - Indirekt, über das Objektmodell der Finanzierung: #emph[Bewilligung] als Voraussetzung (ohne Betriebsbewilligung kein Gesuch) und #emph[Unternehmen] als Empfänger der Mittel und Inhaber des Geschäftskontos.
 
-==== Geschäftsfähigkeiten Finanzierung erhalten
-#todo-action([\@Adrian sorry, my bad: i merged this part with the Geschäftsprozesse - could you check if it fits well in the current chapter?])
+==== Geschäftsfähigkeiten
+<sec-GF-finanzierung>
 
 Die übergeordnete Geschäftsfähigkeit lautet *Gründungsvorhaben finanzieren*. Sie wird im Joint Venture arbeitsteilig getragen: FINNOFLEET verantwortet den Finanzierungskern --- Prüfung, Entscheid und Kontobereitstellung ---, während die kundenzugewandte Antragserfassung bei GastroStart liegt. Die Fähigkeit zerfällt in vier Teilfähigkeiten:
 
@@ -1244,7 +1248,7 @@ Die letzten beiden Punkte von Teilfähigkeit 3 --- verständliche Begründung un
 
 // Optionale Grafik: bei Bedarf ein Capability-View "Gründungsvorhaben finanzieren"
 // in Archi anlegen (vier Teilfähigkeiten, Composition), als assets/GF_Finanzierung.svg
-// exportieren und als #figure einfügen (analog zu "GF Behördeninteration.svg").
+// exportieren und als #figure einfügen (analog zu "GF Behoerdeninteration.svg").
 
 
 === Geschäftsprozesse Kunde bei Transgourmet werden
