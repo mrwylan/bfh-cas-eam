@@ -413,7 +413,7 @@ Die folgende @fig-GTZ-Amira-gründet stellt die Zusammenhänge der Geschäftsobj
 
 
  #figure(
-  image("../assets/GTZ Amira gründet ihr Unternehmen.svg", width: 100%),
+  image("../assets/GTZ Amira gruendet ihr Unternehmen.svg", width: 100%),
   caption: [Geschäftstransaktionen und Zustände - Szenario Unternehmen Gründen]
 ) <fig-GTZ-Amira-gründet>
 
@@ -555,7 +555,7 @@ Bemerkung: Eigentlich ist nicht der Benutzer Empfänger der Betriebsbewilligung 
 Die folgende Abbildung stellt die Zusammenhänge der Geschäftsobjekte, Zustände und Transaktionen im ressourcenunabhängigen Modell nach Archimate dar. 
 
  #figure(
-  image("../assets/GTZ Amira erhält die Bewilligung.svg", width: 100%),
+  image("../assets/GTZ Amira erhaelt die Bewilligung.svg", width: 100%),
   caption: [Geschäftstransaktionen und Zustände - Szenario "Bewilligung erhalten"]
 ) <fig-GTZ-Amira-bewilligung>
 
@@ -767,7 +767,7 @@ caption: [Geschäftsobjekt Finanzierung und dessen Zustände]
 + Geschäftstransaktionen: Finanzierung vorbereiten, Finanzierung anfordern, Finanzierung prüfen, Finanzierung zusagen.
 
 #figure(
-  image("../assets/GTZ Amira erhält eine Finanzierung.svg", width: 100%),
+  image("../assets/GTZ Amira erhaelt eine Finanzierung.svg", width: 100%),
   caption: [Geschäftstransaktionen der Phase «Amira erhält eine Finanzierung»]
 ) <fig-GTZ-finanzierung>
 
@@ -1015,7 +1015,7 @@ Schwierigkeiten bat es, Abstand von der gewohnte Implementierungsebene zu halten
 + *getrennte Objekte* in einer ebenfalls frühen Phase wurde zwischen zwei Objekten, "Betriebsbewilligungsantrag" und "Betriebsbewilligung" unterscheidet. Dabei benötigt die abstrakte Modellierung nur ein Geschäftsobjekt: die Betriebsbewilligung bleibt bestehen, ihr Zustand gibt Auskunft darauf, ob der "Vertrag" mit der Behörde bereits abgeschlossen ist (Zustand "erteilt") oder eben noch nicht (Zustande "beantragt").
 
 #figure(
-  image("../assets/Betriebsbewilligung beantragen - verfügen.png", width: 100%),
+  image("../assets/Betriebsbewilligung beantragen - verfuegen.png", width: 100%),
   caption: [Archimate Modell einer frühen Modellierungsphase von "Betriebsbewilligung erhalten"]
 ) <fig-obs-bewilligung-erhalten>
 
@@ -1116,7 +1116,7 @@ In  @sec-go-gt-unternehmen-gründen wurde das zentrale Geschäftsobjekt für das
 Unterstehende @GPGF_Amira_gründet_Unternehmen stellt die Zusammenhänge zwischen Geschäftsprozesse, Geschäftsobjekten und Geschäftsfähigkeiten im ressourcenunabhängigen Modell nach Archimate dar. 
 
 #figure(
-  image("../assets/GP+GF Amira gründet ihr Unternehmen.Svg", width: 100%),
+  image("../assets/GP+GF Amira gruendet ihr Unternehmen.svg", width: 100%),
   caption: [Geschäftsprozesse und Geschäftsfähigkeiten - Szenario "Unternehmensgründung"]
 ) <GPGF_Amira_gründet_Unternehmen>
 
@@ -1170,7 +1170,7 @@ Die soeben beschriebene Geschäftsprozesse weisen folgende Abhängigkeiten von G
 === Geschäftsfähigkeiten der Behördeninteraktion: Unternehmen gründen und Bewilligung erhalten
 
 #figure(
-  image("../assets/GF Behördeninteration.svg", width: 100%),
+  image("../assets/GF Behoerdeninteration.svg", width: 100%),
   caption: [Archimate Modell der Geschäftsfähigkeiten der Behördeninteraktion]
 ) <fig-GF_Behördeninteraktion>
 
@@ -1194,7 +1194,7 @@ Behördliche Freigaben erwirken   ← GF von GastroStart
 === Geschäftsprozess Finanzierung erhalten
 
 #figure(
-  image("../assets/GP Amira erhält eine Finanzierung.svg", width: 100%),
+  image("../assets/GP Amira erhaelt eine Finanzierung.svg", width: 100%),
   caption: [Geschäftsprozesse - Szenario Amira erhält eine Finanzierung]
 ) <GP_Amira_erhaelt_Finanzierung>
 
@@ -1574,7 +1574,7 @@ Auf der Ebene des Joint Ventures gilt diese Einordnung nicht: GastroStart verbin
 Die bisherigen Abschnitte bleiben auf der Ebene des Operating Models und der Architekturschichten. Der letzte Schritt führt das RIM der Finanzierung in ein RSM über und beantwortet zwei Fragen: Welche Bausteine der Anwendungslandschaft realisieren die Geschäftstransaktionen der Phase, und wo genau verläuft die Grenze zwischen FINNOFLEET und GastroStart?
 
 #figure(
-  image("../assets/RSM Amira erhält eine Finanzierung.svg", width: 100%),
+  image("../assets/RSM Amira erhaelt eine Finanzierung.svg", width: 100%),
   caption: [RSM der Phase «Amira erhält eine Finanzierung»],
 ) <fig-RSM-finanzierung>
 

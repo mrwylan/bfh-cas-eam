@@ -42,6 +42,6 @@ Dass das Gründungsvorhaben nicht realisierbar ist, ist allerdings auch eine Art
 
 
  #figure(
-  image("../../assets/jan/Zustandsübergänge des Gründungsvorhabens in Phase 1 - Orientierung.svg", width: 80%),
+  image("../../assets/jan/Zustandsuebergaenge des Gruendungsvorhabens in Phase 1 - Orientierung.svg", width: 80%),
   caption: [Zustandsübergänge des Gründungsvorhabens in Phase 1:  Orientierung]
 )

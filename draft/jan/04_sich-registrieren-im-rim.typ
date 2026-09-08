@@ -30,6 +30,6 @@ Wahrscheinlich werden sich nicht alle Informationsaustauschprozesse digitalisier
 Eine zuständige Behörde sollte in diesen Fällen, für den Schriftverkehr, über die Änderung der Postanschrift informiert werden.
 
  #figure(
-  image("../../assets/jan/Zustandsübergänge des Kundenkontos in Phase 2 - Sich registrieren.svg", width: 80%),
+  image("../../assets/jan/Zustandsuebergaenge des Kundenkontos in Phase 2 - Sich registrieren.svg", width: 80%),
   caption: [Zustandsübergänge des Kundenkontos in Phase 2: Sich registrieren.svg]
 )

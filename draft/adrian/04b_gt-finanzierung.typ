@@ -8,7 +8,7 @@
 //
 // SVG: bereits exportiert aus der View "Phase 4 - Finanzierung" (Capability +
 // 5 Prozesse + 8 Events + 2 Objekte; Bild-3.9-Stil nach Spichiger GFbUA, S. 55).
-// Datei: assets/GTZ Amira erhält eine Finanzierung.svg
+// Datei: assets/GTZ Amira erhaelt eine Finanzierung.svg
 // Namenskonvention analog zu ch04: "GTZ Amira gründet ihr Unternehmen.svg",
 // "GTZ Amira erhält die Bewilligung.svg" (GTZ = Geschäftstransaktionen).
 // (Hinweis: die Paper-View "Amira erhält eine Finanzierung" unter
@@ -21,7 +21,7 @@ Nachdem Amira die Betriebsbewilligung erhalten hat, benötigt sie Kapital für d
 + Geschäftstransaktionen: Finanzierung vorbereiten, Finanzierung anfordern, Finanzierung prüfen.
 
 #figure(
-  image("../assets/GTZ Amira erhält eine Finanzierung.svg", width: 100%),
+  image("../assets/GTZ Amira erhaelt eine Finanzierung.svg", width: 100%),
   caption: [Geschäftstransaktionen der Phase «Amira erhält eine Finanzierung»]
 ) <fig-GTZ-finanzierung>
 
