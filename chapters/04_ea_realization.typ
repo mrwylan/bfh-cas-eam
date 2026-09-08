@@ -1144,7 +1144,7 @@ Unterstehende @GPGF_Amira_erhält_bewilligung stellt die Zusammenhänge zwischen
 
 
 #figure(
-  image("../assets/GP+GF Amira erhält die Bewilligung.svg", width: 100%),
+  image("../assets/GP+GF Amira erhaelt die Bewilligung.svg", width: 100%),
   caption: [Geschäftsprozesse und Geschäftsfähigkeiten - Szenario "Bewilligung erhalten"]
 ) <GPGF_Amira_erhält_bewilligung>
 
