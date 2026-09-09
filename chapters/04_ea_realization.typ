@@ -1125,23 +1125,32 @@ Unterstehende @GPGF_Amira_gründet_Unternehmen stellt die Zusammenhänge zwische
 Nachfolgend wird die Geschäftsprozesse und deren Abhängigkeit von Geschäftsobjekten - näher eingegangen. 
 
 
-Die Geschäftstransaktionen von GastroStart werden in zwei *Geschäftsprozesse* aggregiert, nämlich 
-- _Handelsregistereintrag erwirken_ und 
-- _Unternehmen [bei Behörden] anmelden_
-Die Unterscheidung in zwei Geschäftsprozesse ist hier der Tatsache zuzuweisen, dass jeder Prozess ein eigenständiges Ziel verfolgt. 
-- Der erste Geschäftsprozess "Handelsregistereintrag erwirken" hat zum Ziel, das Unternehmen ins Leben zu rufen und als solches auch Handlungs- und Geschäftsfähig zu machen. Dieser Prozess ist zwingend notwendig, damit das Unternehmen agieren kann.
-- Der zweite Prozess "Unternehmen bei Behörden anmelden" hat zum Ziel, das gegründete Unternehmen bei verschiedenen Stellen der kantonalen und eidgenössischen Verwaltung "bekannt" zu machen - u.A. um zum Schutze der zukünftigen Angestellten (Anmeldung bei der kantonalen Ausgleichsstelle) oder um die Mehrwertsteuerpflicht zu konkretisieren (Anmeldung bei der eidgenössischen Steuerverwaltung). Diese Anmeldungen erfolgen nicht automatisch, sondern bedarf einer Entscheidung der GründerInnen. Dieser Prozess ist nur dann notwendig, wenn das Unternehmen seine wirtschaftliche Aktivität aufnimmt, was auch Ziel der Kunden der Plattform ist. Aus diesem Grund forciert der abgebildete Prozess die GründerInnen dazu, diese Anmeldungen vorzunehmen - auch, um den Zugang zu den Abläufen _Bewilligung erhalten_ und _Finanzierung erhalten_ zu ermöglichen. 
+Die Geschäftstransaktionen von GastroStart werden in drei *Geschäftsprozesse* aggregiert, nämlich 
+- _Handelsregistereintrag erwirken_  
+- _Unternehmen [bei Behörden] anmelden_ und
+- _Unternehmensgründung vollziehen_
 
-Abgebildet ist auch ein dritter Geschäftsprozess, _Unternehmensgründung vollziehen_, welcher die Geschäftstransaktionen _Gründung beurkunden_, _Antrag prüfen_ und _im Handelsregister eintragen_ unter sich sammelt. Dieser Geschäftsprozess gehört unter der Verantwortung der zuständigen Behörde und deren Hilfspersonen (der Notar als Urkundsperson). 
+Die ersten zwei aufgelisteten Geschäftsprozesse gehören unter der Verantwortung des Joint Ventures. 
+Jeder Prozess ein eigenständiges Ziel verfolgt. 
+- Der Geschäftsprozess "Handelsregistereintrag erwirken" hat zum Ziel, das Unternehmen ins Leben zu rufen und als solches auch Handlungs- und Geschäftsfähig zu machen. Dieser Prozess ist zwingend notwendig, damit das Unternehmen agieren kann.
+- Der Prozess "Unternehmen bei Behörden anmelden" hat zum Ziel, das gegründete Unternehmen bei verschiedenen Stellen der kantonalen und eidgenössischen Verwaltung "bekannt" zu machen - u.A. um zum Schutze der zukünftigen Angestellten (Anmeldung bei der kantonalen Ausgleichsstelle) oder um die Mehrwertsteuerpflicht zu konkretisieren (Anmeldung bei der eidgenössischen Steuerverwaltung). Diese Anmeldungen erfolgen nicht automatisch, sondern bedarf einer Entscheidung der GründerInnen. Dieser Prozess ist nur dann notwendig, wenn das Unternehmen seine wirtschaftliche Aktivität aufnimmt, was auch Ziel der Kunden der Plattform ist. Aus diesem Grund forciert der abgebildete Prozess die GründerInnen dazu, diese Anmeldungen vorzunehmen - auch, um den Zugang zu den Abläufen _Bewilligung erhalten_ und _Finanzierung erhalten_ zu ermöglichen. 
 
 Die soeben beschriebene Geschäftsprozesse von GastroStart weisen folgende Abhängigkeiten von Geschäftsobjekten:
 
 - #emph[Unternehmen] --- das zentrale Objekt beider Prozesse: alle Geschäftstransaktionen greifen darauf zu, und die Zustände des Objekts sind die Fortschrittsanzeige des Gesamtprozesses (siehe @tbl-GO-Unternehmen).
 - #emph[Gründungsvorhaben] --- fachlicher Auslöser und Empfänger des Prozessergebnisses: die abschliessenden Transaktionen des Prozess #emph[Unternehmen anmelden] greifen auch auf dieses Objekt zu und versetzt es in den Zustand #emph[registriert]. Diese Transaktionen wirken sich somit auf zwei Geschäftsobjekte.
 
+Abgebildet ist auch ein dritter Geschäftsprozess, _Unternehmensgründung vollziehen_, welcher die Geschäftstransaktionen _Gründung beurkunden_, _Antrag prüfen_ und _im Handelsregister eintragen_ unter sich sammelt. Dieser Geschäftsprozess gehört unter der Verantwortung der zuständigen Behörde und deren Hilfspersonen (der Notar als Urkundsperson) und ist deswegen farblich gekennzeichnet. 
+
+
+
+#stolperstein([*Unterschiedliche Granularität*
+  
+  Beim Korrekturlesen ist der Autorin dieses Abschnittes aufgefallen, dass die in @GPGF_Amira_gründet_Unternehmen unterschiedliche Granularität aufweisen. Dies hat zur Folge, dass beim Geschäftsprozess _Unternehmen bei Behörden anmelden_ nicht sichtbar ist, dass auch da Transaktionen erfolgen, nicht zum Kontext vom Joint Venture gehören.])
+
 ==== Geschäftsprozesse und Abhängigkeit von Geschäftsobjekten für die Bewilligung
 In  @sec-go-gt-bewilligung wurde das zentrale Geschäftsobjekt für das Szenario "Bewilligung erhalten" beschrieben - samt seinen Zuständen und die dazugehörenden Geschäftstransaktionen (se. @fig-GTZ-Amira-bewilligung). 
-Unterstehende @GPGF_Amira_erhält_bewilligung stellt die Zusammenhänge zwischen Geschäftsprozesse, Geschäftsobjekten und Geschäftsfähigkeiten im ressourcenunabhängigen Modell nach Archimate dar. 
+Unterstehende @GPGF_Amira_erhält_bewilligung stellt die Zusammenhänge zwischen Geschäftsprozesse, Geschäftsobjekten und der identifizierten Geschäftsfähigkeit im ressourcenunabhängigen Modell nach Archimate dar. 
 
 
 
@@ -1155,7 +1164,7 @@ Nachfolgend wird die Geschäftsprozesse und deren Abhängigkeit von Geschäftsob
 #todo-action([\@Giovanna achtung - vielleicht sind es 3 oder 4 prozesse wegen dem verantwortungsübergang!])
 
 Die Geschäftstransaktionen werden in zwei *Geschäftsprozesse* aggregiert, nämlich 
-- _Betriebsbewilligung erhalten_ und 
+- _Betriebsbewilligung erwirken_ und 
 - _Betriebsbewilligung erteilen_
 
 Die Trennlinie liegt dort, wo die Verantwortung wechselt: solange die GründerInnen ihr Gesuch aufbauen und einreichen, liegt der Fall bei ihnen; ab der Beurteilung liegt er bei der zuständigen Behörde.
