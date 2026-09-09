@@ -255,7 +255,7 @@ Die jeweilige Kanzlei übernimmt den Medienbruch auf Papier.
 
 
  #figure(
-  image("../assets/cj_gründung und bewilligung.svg", width: 100%),
+  image("../assets/cj_gruendung und bewilligung.svg", width: 100%),
   caption: [Archimate Szenario "Amira gründet ihr Unternehmen"]
 ) <fig-customer-journey-grüdndung-bewilligungg>
 
@@ -322,7 +322,7 @@ Der Mehrwert des Systems liegt in der Begleitung des Ablaufs, in der Plausibilis
 Die massgeschneiderten und detaillierten Erklärungen zum einzuhaltenden Ablauf geben den GründerInnen Halt im holprigen, teils mehrspurigen und oftmals analogen Prozess und wirken motivierend auf dem erfolgreichen Abschluss des Szenarios hin. 
 
  #figure(
-  image("../assets/cj_verträge.svg", width: 100%),
+  image("../assets/cj_vertraege.svg", width: 100%),
   caption: [Archimate Szenario "Amira erhält die Bewilligung"]
 ) <fig-cj-verträge>
 
@@ -459,7 +459,7 @@ Die folgende Tabelle fasst die wesentlichen Merkmale dieser Phase der Customer-J
 
 
  #figure(
-  image("../assets/cj_verträge.svg", width: 100%),
+  image("../assets/cj_vertraege.svg", width: 100%),
   caption: [Archimate Szenario "Amira wird Kunde bei Transgourmet"]
 ) <fig-cj-verträge>
 
