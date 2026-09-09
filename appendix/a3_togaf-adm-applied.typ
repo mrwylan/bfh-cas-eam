@@ -27,6 +27,11 @@ Er versteht sich als Klärung, in welcher Rolle TOGAF in der eigenen Praxis nutz
 
 == TOGAF ADM als Rahmenwerk
 
+#figure(
+  caption: [Die Phasen des ADM gliedern Architekturarbeit in drei Blöcke: Strategie und Vision (Preliminary, A), Zielarchitekturen (B bis D), und Umsetzung, Migration und Governance (E bis H).],
+  image("../assets/TOGAF-ADM.svg", width: 100%)
+)
+
 Der Architecture Development Method (ADM) gliedert Architekturarbeit in eine Preliminary Phase und die Phasen A bis H, ergänzt um ein durchgängiges Requirements Management.
 Die Phasen lassen sich grob in drei Blöcke teilen: Strategie und Vision (Preliminary, A), Zielarchitekturen (B bis D), und Umsetzung, Migration und Governance (E bis H).
 
@@ -36,7 +41,7 @@ _Architecture Capability Iterations_ zur Etablierung und Pflege der EA-Funktion,
 Der Wert von TOGAF liegt für mich primär in dieser groben Strukturierung.
 ADM benennt, in welchen Konzern- und Entscheidungssphären Architekturarbeit überhaupt stattfindet, und schafft damit ein gemeinsames Vokabular zwischen IT, Geschäftsleitung und externen Partnern.
 
-#highlight[Wie eine Business Architecture konstruiert oder wie eine Migrationsfolge inhaltlich begründet wird, ist mit ADM hingegen nicht geregelt.]
+Wie eine Business Architecture konstruiert oder wie eine Migrationsfolge inhaltlich begründet wird, ist mit ADM hingegen nicht geregelt.
 
 == Bekannte Limitationen des ADM und Mitigationsoptionen
 
