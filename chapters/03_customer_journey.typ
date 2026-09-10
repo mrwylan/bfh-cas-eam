@@ -9,7 +9,7 @@
 = Die Reise beginnt: die Customer Journey
 /*Customer Journey und Persona - Fester Stand in Outside-In-Fokus 
 In diesem Kapitel wird die Customer Journey erklärt - und wie wir daraus ein Phasenmodell skizziert haben, welches am Kundenerlebnis entlang entstanden ist.*/
-#fuehrung([Eine Geschichte in Form einer User Story Map oder einer  Customer Journey erklärt allen Beteiligten, welches Verhalten vom zukünftigen System erwartet wird. Die Geschichte wird um Ziele aus Sicht der primären, externen Stakeholder des Unternehmens ergänzt. @Spichiger2026GFbUA, S. 54]) 
+#fuehrung([Eine Geschichte in Form einer User Story Map oder einer  Customer Journey erklärt allen Beteiligten, welches Verhalten vom zukünftigen System erwartet wird. Die Geschichte wird um Ziele aus Sicht der primären, externen Stakeholder des Unternehmens ergänzt. @Spichiger2026GFbUA[S. 54]]) 
 
 == Amira und ihre Geschichte <sec-amira-und-ihre-geschichte>
 
@@ -80,7 +80,8 @@ den Szenarien. (Skizze)
 === Aus Phasen werden Szenarien <aus-phasen-werden-szenarien>
 
 
-#fuehrung([Als Standardszenarien wird eine möglichst kleine Anzahl von Geschichten gewählt, die die darzustellende Funktionalität möglichst vollständig umfasst. Irrelevantes soll weggelassen werden, damit die Geschichten auch möglichst kurz bleiben. @Spichiger2026GFbUA, S. 70])
+#fuehrung([Als Standardszenarien wird eine möglichst kleine Anzahl von Geschichten gewählt, die die darzustellende Funktionalität möglichst vollständig umfasst. Irrelevantes soll weggelassen werden, damit die Geschichten auch möglichst kurz bleiben. @Spichiger2026GFbUA[S. 70]])
+
 
 Wir haben bei der Modellierung der Customer Journey festgestellt, dass sich Amiras Weg nicht in starre Phasen einteilen lässt. Stattdessen verstehen wir ihn als eine Abfolge von Szenarien: narrative Ausschnitte aus einer Story Map, die eine Outside-In-Perspektive beschreiben. Den Schnitt zwischen den Szenarien haben wir entlang Amiras Wahrnehmung und der Veränderung ihrer Emotionen gelegt. Erfolg oder Misserfolg auf ihrer Reise durch das Portal entscheidet sich an diesen Schnittstellen.
 

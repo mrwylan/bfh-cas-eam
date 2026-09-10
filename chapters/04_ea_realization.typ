@@ -29,7 +29,9 @@ Ein Geschäftsobjekt kapselt statische Struktur des RIM. Ein Geschäftsobjekt be
 *Zustände:* Zu jedem Geschäftsobjekt werden seine Zustände identifiziert. Für die Darstellung dieser Zustände verwenden wir das Archimate-Symbol *Business Event*.
 
 *Geschäftstransaktionen:* Entlang der Geschichte werden die Geschäftstransaktionen mit ihren Inputs und Output (Geschäftsobjekte) identifiziert. 
-Sowohl bei Input und Output wird darauf geachtet, dass diese inklusive ihre Zustände (bzw. zugehörige Ereignisse) bezeichnet werden. @Spichiger2026GFbUA /*S. 54*/
+Sowohl bei Input und Output wird darauf geachtet, dass diese inklusive ihre Zustände (bzw. zugehörige Ereignisse) bezeichnet werden.
+
+@Spichiger2026GFbUA /*S. 54*/
 ])
 
 
@@ -1033,7 +1035,7 @@ Neben den Geschäftsfähigkeiten werden die Leser in den folgenden Modellen auch
 #fuehrung([
 Geschäftstransaktionen, die inhaltlich zusammenhängen, werden zu *Geschäftsprozessen* aggregiert.
 Auf der Basis der In- und Outputs der Geschäftstransaktionen werden für jeden Geschäftsprozess seine *Abhängigkeiten zu Geschäftsobjekten* identifiziert.
-@Spichiger2026GFbUA
+@Spichiger2026GFbUA[S.56]
 ])
 
 === Geschäftsprozesse und Geschäftsfähigkeiten für die Orientierung des Gründungsvorhabens
@@ -1113,7 +1115,7 @@ Die folgende Abbildung zeigt wie die in diesem Abschnitt besprochenen Prozesse u
 
 #autor-verwaltung("Beitrag von Giovanna Beier, Bundeskanzlei", inhalt: [Dieser Abschnitt vereint die Beschreibung der Geschäftsprozesse und Geschäftsfähigkeiten für die Unternehmensgründung und den Erhalt der Betriebsbewilligung, da beide Szenarien von der Interaktion mit den Behörden gekennzeichnet sind. ])
 
-==== Geschäftsprozesse und Abhängigkeit von Geschäftsobjekten für die Unternehmensgründung
+==== Geschäftsprozesse und Abhängigkeit von Geschäftsobjekten für die Unternehmensgründung<sec-gp-go-unternehmensgruendung>
 In  @sec-go-gt-unternehmen-gründen wurde das zentrale Geschäftsobjekt für das Szenario "Unternehmen Gründen" beschrieben - samt seinen Zuständen und die dazugehörenden Geschäftstransaktionen (se. @fig-GTZ-Amira-gründet). 
 Unterstehende @GPGF_Amira_gründet_Unternehmen stellt die Zusammenhänge zwischen Geschäftsprozesse, Geschäftsobjekten und Geschäftsfähigkeiten im ressourcenunabhängigen Modell nach Archimate dar. 
 
@@ -1132,13 +1134,13 @@ Die Geschäftstransaktionen von GastroStart werden in drei *Geschäftsprozesse* 
 
 Die ersten zwei aufgelisteten Geschäftsprozesse gehören unter der Verantwortung des Joint Ventures. 
 Jeder Prozess ein eigenständiges Ziel verfolgt. 
-- Der Geschäftsprozess "Handelsregistereintrag erwirken" hat zum Ziel, das Unternehmen ins Leben zu rufen und als solches auch Handlungs- und Geschäftsfähig zu machen. Dieser Prozess ist zwingend notwendig, damit das Unternehmen agieren kann.
-- Der Prozess "Unternehmen bei Behörden anmelden" hat zum Ziel, das gegründete Unternehmen bei verschiedenen Stellen der kantonalen und eidgenössischen Verwaltung "bekannt" zu machen - u.A. um zum Schutze der zukünftigen Angestellten (Anmeldung bei der kantonalen Ausgleichsstelle) oder um die Mehrwertsteuerpflicht zu konkretisieren (Anmeldung bei der eidgenössischen Steuerverwaltung). Diese Anmeldungen erfolgen nicht automatisch, sondern bedarf einer Entscheidung der GründerInnen. Dieser Prozess ist nur dann notwendig, wenn das Unternehmen seine wirtschaftliche Aktivität aufnimmt, was auch Ziel der Kunden der Plattform ist. Aus diesem Grund forciert der abgebildete Prozess die GründerInnen dazu, diese Anmeldungen vorzunehmen - auch, um den Zugang zu den Abläufen _Bewilligung erhalten_ und _Finanzierung erhalten_ zu ermöglichen. 
+- Der Geschäftsprozess _Handelsregistereintrag erwirken_ hat zum Ziel, das Unternehmen ins Leben zu rufen und als solches auch Handlungs- und Geschäftsfähig zu machen. Dieser Prozess ist zwingend notwendig, damit das Unternehmen agieren kann. Das Verb kennzeichnet die Position von GastroStart - die Joint Venture ist unterstützend aktiv, jedoch nicht der Besitzer des ganzen Ablaufs.
+- Der Prozess _Unternehmen bei Behörden anmelden_ hat zum Ziel, das gegründete Unternehmen bei verschiedenen Stellen der kantonalen und eidgenössischen Verwaltung "bekannt" zu machen - u.A. um zum Schutze der zukünftigen Angestellten (Anmeldung bei der kantonalen Ausgleichsstelle) oder um die Mehrwertsteuerpflicht zu konkretisieren (Anmeldung bei der eidgenössischen Steuerverwaltung). Diese Anmeldungen erfolgen nicht automatisch, sondern bedarf einer Entscheidung der GründerInnen. Dieser Prozess ist nur dann notwendig, wenn das Unternehmen seine wirtschaftliche Aktivität aufnimmt, was auch Ziel der Kunden der Plattform ist. Aus diesem Grund forciert der abgebildete Prozess die GründerInnen dazu, diese Anmeldungen vorzunehmen - auch, um den Zugang zu den Abläufen _Bewilligung erhalten_ und _Finanzierung erhalten_ zu ermöglichen. 
 
-Die soeben beschriebene Geschäftsprozesse von GastroStart weisen folgende Abhängigkeiten von Geschäftsobjekten:
+Die soeben beschriebene Geschäftsprozesse von GastroStart weisen folgende *Abhängigkeiten von Geschäftsobjekten*:
 
-- #emph[Unternehmen] --- das zentrale Objekt beider Prozesse: alle Geschäftstransaktionen greifen darauf zu, und die Zustände des Objekts sind die Fortschrittsanzeige des Gesamtprozesses (siehe @tbl-GO-Unternehmen).
-- #emph[Gründungsvorhaben] --- fachlicher Auslöser und Empfänger des Prozessergebnisses: die abschliessenden Transaktionen des Prozess #emph[Unternehmen anmelden] greifen auch auf dieses Objekt zu und versetzt es in den Zustand #emph[registriert]. Diese Transaktionen wirken sich somit auf zwei Geschäftsobjekte.
+- _Unternehmen_ ist das zentrale Objekt beider Prozesse: alle Geschäftstransaktionen greifen darauf zu, und die Zustände des Objekts sind die Fortschrittsanzeige des Gesamtprozesses (siehe @tbl-GO-Unternehmen).
+- _Gründungsvorhaben_ ist der fachliche Auslöser und Empfänger des Prozessergebnisses: die abschliessenden Transaktionen des Prozess _Unternehmen anmelden_ greifen auch auf dieses Objekt zu und versetzt es in den Zustand _registriert_. Diese Transaktionen wirken sich somit auf zwei Geschäftsobjekte.
 
 Abgebildet ist auch ein dritter Geschäftsprozess, _Unternehmensgründung vollziehen_, welcher die Geschäftstransaktionen _Gründung beurkunden_, _Antrag prüfen_ und _im Handelsregister eintragen_ unter sich sammelt. Dieser Geschäftsprozess gehört unter der Verantwortung der zuständigen Behörde und deren Hilfspersonen (der Notar als Urkundsperson) und ist deswegen farblich gekennzeichnet. 
 
@@ -1148,7 +1150,7 @@ Abgebildet ist auch ein dritter Geschäftsprozess, _Unternehmensgründung vollzi
   
   Beim Korrekturlesen ist der Autorin dieses Abschnittes aufgefallen, dass die in @GPGF_Amira_gründet_Unternehmen unterschiedliche Granularität aufweisen. Dies hat zur Folge, dass beim Geschäftsprozess _Unternehmen bei Behörden anmelden_ nicht sichtbar ist, dass auch da Transaktionen erfolgen, nicht zum Kontext vom Joint Venture gehören.])
 
-==== Geschäftsprozesse und Abhängigkeit von Geschäftsobjekten für die Bewilligung
+==== Geschäftsprozesse und Abhängigkeit von Geschäftsobjekten für die Bewilligung<sec-gp-go-bewilligung>
 In  @sec-go-gt-bewilligung wurde das zentrale Geschäftsobjekt für das Szenario "Bewilligung erhalten" beschrieben - samt seinen Zuständen und die dazugehörenden Geschäftstransaktionen (se. @fig-GTZ-Amira-bewilligung). 
 Unterstehende @GPGF_Amira_erhält_bewilligung stellt die Zusammenhänge zwischen Geschäftsprozesse, Geschäftsobjekten und der identifizierten Geschäftsfähigkeit im ressourcenunabhängigen Modell nach Archimate dar. 
 
@@ -1161,46 +1163,66 @@ Unterstehende @GPGF_Amira_erhält_bewilligung stellt die Zusammenhänge zwischen
 
 Nachfolgend wird die Geschäftsprozesse und deren Abhängigkeit von Geschäftsobjekten - näher eingegangen. 
 
-#todo-action([\@Giovanna achtung - vielleicht sind es 3 oder 4 prozesse wegen dem verantwortungsübergang!])
-
 Die Geschäftstransaktionen werden in zwei *Geschäftsprozesse* aggregiert, nämlich 
 - _Betriebsbewilligung erwirken_ und 
 - _Betriebsbewilligung erteilen_
 
 Die Trennlinie liegt dort, wo die Verantwortung wechselt: solange die GründerInnen ihr Gesuch aufbauen und einreichen, liegt der Fall bei ihnen; ab der Beurteilung liegt er bei der zuständigen Behörde.
-- Der Geschäftsprozess "Betriebsbewilligung erhalten" fällt in der Verantwortung des Benutzers - und die Plattform unterstützt ihn dabei, die aus der Orientierungsphase in Erfahrung gebrachten Voraussetzungen zu erfüllen. 
-- Der Geschäftsprozess "Betriebsbewilligung erteilen" fällt komplett unter der Zuständigkeit der genehmigenden Behörde. 
+- Der Geschäftsprozess _Betriebsbewilligung erwirken_ fällt in der Verantwortung des Benutzers - und die Plattform unterstützt ihn dabei, die aus der Orientierungsphase in Erfahrung gebrachten Voraussetzungen zu erfüllen. Das Verb wurde gewählt, um der Kern des Mehrwerts, der von GastroStart erbracht wird: die Kunden an der Schnittstelle zu den Behörden erfolgreich unterstützen.
+- Der Geschäftsprozess _Betriebsbewilligung erteilen_ fällt komplett unter der Zuständigkeit der genehmigenden Behörde und ist entsprechend farblich hervorgehoben. 
 
-Die soeben beschriebene Geschäftsprozesse weisen folgende Abhängigkeiten von Geschäftsobjekten:
+Die soeben beschriebene Geschäftsprozesse weisen folgende *Abhängigkeiten von Geschäftsobjekten*:
 
-- #emph[Bewilligung] --- das zentrale Objekt beider Prozesse: alle Geschäftstransaktionen greifen darauf zu, und die Zustände des Objekts sind die Fortschrittsanzeige des Gesamtprozesses (siehe @tbl-GO-Bewilligung).
-- #emph[Gründungsvorhaben] --- fachlicher Auslöser und Empfänger des Prozessergebnisses: die abschliessende Transaktion des Prozess #emph[Betriebsbewilligung erteilen] greift auch auf dieses Objekt zu und versetzt es in den Zustand #emph[bewilligt]. Diese Transaktion wirkt sich somit auf zwei Geschäftsobjekte.
-- Indirekt, über das Objektmodell der Bewilligung: #emph[Unternehmen] als Empfänger der behördlichen Verfügung.
+- _Bewilligung_ ist das zentrale Objekt beider Prozesse: alle Geschäftstransaktionen greifen darauf zu, und die Zustände des Objekts sind die Fortschrittsanzeige des Gesamtprozesses (siehe @tbl-GO-Bewilligung).
+- _Gründungsvorhaben_ ist bei den Geschäftsprozessen der Unternehmensgründung der fachliche Auslöser und Empfänger des Prozessergebnisses: die abschliessende Transaktion des Prozesses _Betriebsbewilligung erteilen_ greift auch auf dieses Objekt zu und versetzt es in den Zustand _bewilligt_. Diese Transaktion wirkt sich somit auf zwei Geschäftsobjekte.
+- Indirekt, über das Objektmodell: _Unternehmen_ als Empfänger der behördlichen Verfügung.
 
 
-=== Geschäftsfähigkeiten der Behördeninteraktion: Unternehmen gründen und Bewilligung erhalten
+=== Geschäftsfähigkeiten der Behördeninteraktion: Behördengänge abwickeln (Behördengänge)
 
 #figure(
   image("../assets/GF Behoerdeninteration.svg", width: 100%),
   caption: [Archimate Modell der Geschäftsfähigkeiten der Behördeninteraktion]
 ) <fig-GF_Behördeninteraktion>
 
-1. Die hoheitliche Handlung (Handelsregistereintrag, Betriebsbewilligung erteilen) liegt ausserhalb der Unternehmensgrenze von GastroStart (Verweis: @sec-rolle-interoperabilitätspartner und @sec-Verwaltung-GastroSTart-EARolle).  --- Leitfrage Warum kann ein privates Unternehmen diesen Schritt nicht selbst erbringen?
-2. Weil extern und nicht incapsulierbar, ist der hoheitliche Akt keine GF von GastroStart, sondern eine externe Fähigkeit, von der ein GastroStart-Prozess abhängt. Anders gesagt, die GF von den JV Partner sind JV-intern orchestrierbar vs. extern nur verlinkbar / nicht incapsulierbar.
-+ 
-Behördliche Freigaben erwirken   ← GF von GastroStart
-│   (Name = Ergebnis/Nutzen; «erwirken» ≠ «erteilen»)
-├─ Geschäftsobjekte: Unternehmen, Bewilligung
-│     → nur der Antrags-Zustand ist GastroStart-getrieben;
-│       die erteilende Transition ist extern
-├─ Geschäftsprozesse (ALLE = GastroStart-Aktionen):
-│     · Handelsregisteranmeldung einreichen
-│     · Unternehmen bei Behörden anmelden (AHV/MWST)
-│     · Bewilligung beantragen
-│     · Behördenstatus nachführen
-└─ Abhängigkeit (AUSSERHALB der Grenze):
-      Behörde: eintragen / erteilen
-      → externe Fähigkeit, verbunden nur über den Objektzustand
+Wie in den vorangehenden Abschnitten dieses Kapitels kurz erwähnt, besteht der Kern der Dienstleistung von GastroStart an die GründerInnen darin, die zwingenden hoheitlichen Freigaben zu erhalten, ohne an der Behördenschnittstelle zu scheitern. 
+
+Diese Geschäftsfähigkeit grenzt sich konsequent ab von allen Prozessen, die unter der Zuständigkeit des öffentlichen Wesens fallen und von denen der Erfolg der Prozesse von GastroStart abhängt. 
+
+
+#figure(
+  caption: [Geschäftsfähigkeit Behördengänge abwickeln ],
+  block(
+    width: 100%,
+    radius: 6pt,
+    clip: true,
+    stroke: 0.5pt + luma(225),
+  )[
+    #block(
+      width: 100%,
+      fill: luma(70),
+      inset: (x: 10pt, y: 7pt),
+      below: 0pt,
+    )[
+      #text(fill: white, weight: "bold", size: 0.95em)[Geschäftsfähigkeit Behördengänge]
+    ]
+    #set par(justify: false)
+    #table(
+      columns: (1fr, 2fr),
+      inset: (x: 10pt, y: 7pt),
+      stroke: (x: none, y: 0.5pt + luma(232)),
+      fill: (x, y) => if calc.odd(y) { luma(250) } else { white },
+      align: (left, left),
+
+      [Geschäftsobjekt], [Unternehmen, Bewilligung],
+      [Geschäftsprozess], [Handelsregistereintrag erwirken, Unternehmen anmelden,
+Bewilligung erwirken],
+      [Abhängigkeiten], [Gründungsvorhaben],
+    )
+  ]
+) <tbl-GF-Behoerdengaenge>
+
+
 
 === Geschäftsprozesse und Geschäftsfähigkeiten für die Finanzierung
 <sec-GP-GF-finanzierung>
@@ -1386,7 +1408,7 @@ Die Daten der Kunden sowie die Teilschritte der Customer Journey, die von den Pa
 In diesem Sinne ist auf der einen Seite von einer ausgeprägten Datenintegration auszugehen - wobei GastroStart und jeder Partner seine fachspezifischen Prozesse beibehält. Dies erlaubt es auch GastroStart auf jeder neuen Fallkonstellation individuell einzugehen - sei es, weil die Kunden nur einen Teil der Customer Journey von Amira erleben - oder aber Bedürfnisse haben, die sich bei einem bereits laufenden Betrieb herauskristallisiert haben und ganz andere (nicht abgebildete) Bereiche von GastroStart beanspruchen.
 
 Folgt man den Rat der Literatur, so findet man folgende Passage: 
-#fuehrung([*Coordination* calls for high levels of integration but little standardization of processes. Business units in a Coordination company share one or more of the following: customers, products, suppliers, and partners. The benefits of integration can include integrated customer service, cross-selling, and transparency across supply chain processes. @ross2006enterprise
+#fuehrung([*Coordination* calls for high levels of integration but little standardization of processes. Business units in a Coordination company share one or more of the following: customers, products, suppliers, and partners. The benefits of integration can include integrated customer service, cross-selling, and transparency across supply chain processes. @ross2006enterprise[S. 33]
 ])
 
 GastroStart fällt somit unter dem sog. Operating Model "Coordination". 
