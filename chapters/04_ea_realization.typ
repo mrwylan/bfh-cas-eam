@@ -1185,9 +1185,9 @@ Die soeben beschriebene Geschäftsprozesse weisen folgende *Abhängigkeiten von 
   caption: [Archimate Modell der Geschäftsfähigkeiten der Behördeninteraktion]
 ) <fig-GF_Behördeninteraktion>
 
-Wie in den vorangehenden Abschnitten dieses Kapitels kurz erwähnt, besteht der Kern der Dienstleistung von GastroStart an die GründerInnen darin, die zwingenden hoheitlichen Freigaben zu erhalten, ohne an der Behördenschnittstelle zu scheitern. 
+Wie in den vorangehenden Abschnitten dieses Kapitels kurz erwähnt, besteht der Kern der Dienstleistung von GastroStart an die GründerInnen darin, die zwingenden hoheitlichen Freigaben zu erhalten, ohne an der Schnittstelle zu den Behörden zu versagen. 
 
-Diese Geschäftsfähigkeit grenzt sich konsequent ab von allen Prozessen, die unter der Zuständigkeit des öffentlichen Wesens fallen und von denen der Erfolg der Prozesse von GastroStart abhängt. 
+Diese Geschäftsfähigkeit grenzt sich konsequent ab von allen Prozessen, die unter der Zuständigkeit des öffentlichen Wesens fallen. Gleichzeitig wird es klar, wie sehr der Erfolg des Versprechens von GastroStart von aussenstehenden Faktoren abhängt. 
 
 
 #figure(
@@ -1412,11 +1412,19 @@ Folgt man den Rat der Literatur, so findet man folgende Passage:
 ])
 
 GastroStart fällt somit unter dem sog. Operating Model "Coordination". 
-Durch die hohe, clevere Datenintegration unter den aktiven Partner erlebt Amira eine "Façade" die weitgehende einheitlich und frei von Medienbrüchen ist, ähnlich wie wenn sie im Kundenbereich eines grossen Anbieters von Fernmeldediensten Unification-Modells aussieht. 
-Das hinter dem User Interface jedoch ein verschiedene, ad-hoc-Prozesse laufen könnten, bekommt Amira nur teilweise mit. 
+Durch die hohe, clevere Datenintegration unter den aktiven Partner erlebt Amira eine "Façade" die weitgehende einheitlich und frei von Medienbrüchen ist, ähnlich wie wenn sie im Kundenbereich eines grossen Anbieters von Fernmeldediensten oder eines anderen Anbieters von "austauschbaren" Massenprodukten. 
+Dass hinter dem User Interface jedoch die verschiedene, ad-hoc-Prozesse der aktiven Joint-Venturepartner laufen, bekommt Amira nur teilweise mit. Ganz anders verläuft es dort, wo ein Szenario (Unternehmen gründen, Bewilligung erhalten) vom Handeln einer Behörde abhängig ist. Dort sind die Brüche - Prozedural wie auch vom Medium - gezwungen.
 
-Wo sind diese Brüche?
-Die Systeme und "Produkte", resp. Dienstleistungen der öffentlichen Verwaltung - unter anderem um die Eintragung ihrer GmbH ins kantonale Handelsregister und um die Erteilung der Betriebsbewilligung - werden aus Sicht der Customer Journey und von GastroStart als externe Systemen, die Artefakten mit hoheitlicher Wirkung erzeugen, betrachtet. 
+Es ist nicht sinnvoll, das öffentliche Wesen - respektive dessen jeweiligen Systemen in GastroStart zu integrieren - sondern werden als externe Systeme und bewusste "Absprünge" weg von GastroStart prozedural wie technisch in den betroffenen Customer Journeys implementieren. 
+
+
+Trotzdem sind diese Brüche nicht massgebend für die Wahl der internen Organisation von GastroStart. Die Aktivität eines im Dienstleistungssektors aktiven Unternehmens, ist oft von externen Faktoren abhängig. Und trotzdem organisieren sich diese Unternehmen selbstständig, ohne die äusseren Faktoren unnötig zu widerspiegeln. 
+
+Die Systeme und "Produkte", resp. Dienstleistungen der öffentlichen Verwaltung - unter anderem die Gründung und Eintragung der GmbH ins kantonale Handelsregister und um die Erteilung der Betriebsbewilligung - werden aus Sicht der Customer Journey und von GastroStart als externe Schnittstellen betrachtet, die Artefakten mit hoheitlicher Wirkung erzeugen. 
+
+
+#todo-action([\@gio letzter teil verschieben])
+
 Dies ist so, da grundsätzlich nur der Staat für solche Handlungen verantwortlich ist und sein darf. 
 Dritte und Private Unternehmen dürfen nur beim Vorhandensein einer Delegationsnorm im Namen einer Behörde handeln. 
 Da GastroStart ein privates Unternehmen ist, kann es nicht den Eintrag ins Handelsregister vornehmen oder die Betriebsbewilligung für Amiras GmbH erteilen.
@@ -1427,12 +1435,7 @@ Das öffentliche Wesen in der Schweiz ist föderalistisch organisiert und spielt
 
 Diese drei Ebenen müssen getrennt betrachtet und eingeordnet werden: 
 
-+ *Bundesebene*: ist bei Diversification einzordnune. Das ist nicht überraschend, sondern strukturell angelegt: das Departementrinzip sowie die Gesetzgebung geben den Departementen und Ämtern eigene Vollzugsautonomie für ihre Kernaufgaben. Ist nichts anderes vorgesehen, ist eine Zusammenarbeit nicht erlaubt. Das ist politisch-rechtlich gewollte Dezentralisierung. Eine "dünne" zentrale Schicht basierend u.A. auf Standarddiensten, Produkte- und Prozessstandards und architektonischen Richtlinien erlaubt eine gewisse Interoperabilität und die Schaffung von Datenökosysteme. 
-
-#figure(
-  image("../assets/EABund.png", width: 100%),
-  caption: [Grobe Skizze der aktuellen Unternehmensarchitektur der Bundesverwaltung, unterteilt - von oben nach unten - in "Kernaufgabenbereiche", "übergreifenden Aufgaben" und "aufgabenneutralen IKT-Grundleistungen".],
-) <fig-EA-Bund>
++ *Bundesebene*: ist bei Diversification einzuordenen. Das ist nicht überraschend, sondern strukturell angelegt: das Departementrinzip sowie die Gesetzgebung geben den Departementen und Ämtern eigene Vollzugsautonomie für ihre Kernaufgaben. Ist nichts anderes vorgesehen, ist eine Zusammenarbeit nicht erlaubt. Das ist politisch-rechtlich gewollte Dezentralisierung. Eine "dünne" zentrale Schicht basierend u.A. auf Standarddiensten, Produkte- und Prozessstandards und architektonischen Richtlinien erlaubt eine gewisse Interoperabilität und die Schaffung von Datenökosysteme. 
 
 + *Kantonale Ebene*: ist ebenfalls bei Diversification einzuordnen - 26-mal wiederholte Diversification. Die Einhaltung eines allfälligen obligatorischen gesetzlichen Minimums sowie die teil freiwillige Übernahme von eCH Standards erlauben eine ansatzweise Interoperabilität mit den anderen Ebenen. 
 + *Gemeindeebene*: Die Gemeinde gehört ebenfalls in die Diversification. Gemeinden differenzieren sich stark von einander - innerhalb desselben Kantons mit eigenen, oft analoge Prozesse. Und nochmals von Kanton zu Kanton kommen der Gemeinden unterschiedliche Zuständigkeiten zu  (Baubewilligung, Lärmschutz, Ortsplanung, punktuelle Bewilligungen). 
@@ -1441,7 +1444,19 @@ Diese drei Ebenen müssen getrennt betrachtet und eingeordnet werden:
 Das öffentliche Wesen nimmt nur indirekt eine Rolle im Unternehmen GastroStart.
 Aus der Perspektive von Amira und ihrer Customer Journey bildet das öffentliche Wesen mit seinen Vorschriften eine Hürde, die überwunden werden muss. Die jeweilige Staatsebene stellt oft eine Sammlung an Regulatorien und Vorgaben dar, welche Amira von ihrem Traum trennt. 
 
-Es ist nicht sinnvoll, das öffentliche Wesen - respektive dessen jeweiligen Systemen in GastroStartc zu integrieren - sondern werden als externe Systeme und bewusste "Absprünge" weg von GastroStart prozedural wie technisch in den betroffenen Customer Journeys implementieren. 
+
+
+==== Ausgangslage
+#quote([
+#set quote(block: true)
+#quote(attribution: [Interview mit D.R., Wirtin])[
+  ... Grundsätzlich verstehe ich, dass Bewilligungen wichtig sind. Manchmal frage ich mich aber, ob es wirklich notwendig ist, dass jeder Kanton andere Vorschriften hat. Einheitlichere Regelungen würden vieles vereinfachen. [...]
+  Generell habe ich den Eindruck, dass jede Person und jede Behörde gewisse Dinge etwas anders beurteilt. Manchmal entstehen dadurch Probleme oder Unsicherheiten, obwohl es eigentlich gar keine geben müsste.
+]])
+
+#quote([
+#set quote(block: true)
+#quote(attribution: [Interview mit H.M., Berater und Gastroplaner])[Sinnvoll wäre ein schweizweit vergleichbarer Grundprozess nach dem Prinzip «ein Gesuch, eine Ansprechperson, ein koordinierter Entscheid». Dazu gehören digitale Verfahren, verbindliche Bearbeitungsfristen, frühzeitige und belastbare Auskünfte sowie die gegenseitige Anerkennung gleichwertiger Fähigkeitsnachweise. Kantonale Sonderregelungen sollten nur bestehen, wenn sie sachlich notwendig sind.]])
 
 ==== Domenänenmodell 
 
@@ -1449,6 +1464,30 @@ Es ist nicht sinnvoll, das öffentliche Wesen - respektive dessen jeweiligen Sys
   image("../assets/RSM - Betriebsbewilligung erhalten.svg", width: 100%),
   caption: [RSM der Phase «Amira erhält die Bewilligung»],
 ) <fig-RSM-bewilligung>
+
++ one stop - da die behörde die informationen nicht hat 
++ once only prinzip (ech-0122, s. 57) - wenn einwilligung da 
++ event-basiert
++ mit Schnittstelle zu Behörde abgebildet da das Mengengerüst pro Behörde wohl zu tief ist - auch weil es nicht davon auszugehen ist, dass das Thema der Bewilligungen für Unternehmen der Gastronomie ein Thema für die Bundesebene ist. 
++ mit eCH Standardschnittstelle (ech-0258)
++ selbe schnittstelle wie nicht digitaler prozess 
++ code is law: schnittstelle / system darf nicht andere Anforderungen aufweise, als die gesetze vorschreiben (Montavon, ATF)
+
+
+
+=== Ansprüche und Herausforderungen an der Unternehmensarchitektur des öffentlichen Wesens
+
+Um das im vorangehenden Abschnitt skizzierten Lösungsansatz zu erreichen, müsste jede Behörde auf jeder föderalen Ebenen in der Lage sein, dieselbe, bekannte, dokumentierte Schnittstelle nach aussen anzubieten. 
+
++ *Fehlende ebenenübergreifende Gesamtsicht*: Föderalismus zwischen den Ebenen und Departementalprinzip innerhalb jeder Ebene verteilen die Verantwortung auf viele eigenständige Einheiten. Dadurch fehlt eine übergreifende Sicht darauf, welche Fähigkeit wo bereits besteht — und damit auch die Grundlage, um zu erkennen, welche Bereiche sich überhaupt für eine gemeinsame Regelung durch EA und Governance eignen.
+
++ *Unverbindliche Steuerungsinstrumente*: Die ebenenübergreifende Zusammenarbeit stützt sich heute auf Standards, deren Übernahme freiwillig ist, oder auf Grundsätze wie Nutzerorientierung und Interoperabilität, deren Umsetzung einen erheblichen Interpretationsspielraum lässt. Beides gibt Orientierung, schafft aber keine konkrete Durchsetzbarkeit — die Durchgängigkeit einer gegebenen Lösung bleibt vom Goodwill der einzelnen Einheiten abhängig.
+
++ *Rechtsgrundlage als Vorbedingung*: Die Schaffung der Voraussetzungen für eine durchsetzbare Governance liegt ausserhalb der Kompetenz der Unternehmensarchitektur: Behörden sind in all ihrem Handeln an das Legalitätsprinzip gebunden. 
+Damit die Behörden — innerhalb derselben Ebene oder ebenenübergreifend (etwa zwischen Kanton und Gemeinden) — verbindlich zusammenarbeiten und Daten austauschen können, braucht es daher eine entsprechende gesetzliche Grundlage. 
+Fehlt eine solche, bleibt die Unternehmensarchitektur in diesem Bereich ein zahnloser Tiger: Sie kann Interoperabilität fordern oder gar gestalten, die rechtliche Voraussetzung dafür aber nicht selbst schaffen.
+
+=== Lösungsansätze
 
 == Operating Model für FINNOFLEET
 
