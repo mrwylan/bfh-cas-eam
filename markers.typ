@@ -103,3 +103,31 @@
   #text(weight: "bold")[#lead] \
   #text(weight: "regular")[#rest]
 ]
+
+#let farbe-praxis = rgb("#0d9488")
+
+#let praxis-zitate(..zitate) = block(
+  width: 100%,
+  inset: (left: 1em, rest: 0.8em),
+  stroke: (left: 3pt + farbe-praxis),
+  fill: farbe-praxis.lighten(92%),
+  above: 1em, below: 1em,
+  breakable: false,
+)[
+  #grid(
+    columns: (auto, 1fr),
+    gutter: 0.6em,
+    align: horizon,
+    image("assets/testimonial_teal.svg", height: 2.4em),
+    text(weight: "bold", fill: farbe-praxis, size: 0.9em)[Stimmen aus der Praxis],
+  )
+  #v(0.4em)
+  #set par(justify: false)
+  #set align(left)
+  #for (i, paar) in zitate.pos().enumerate() {
+    if i > 0 { v(0.7em); line(length: 40%, stroke: 0.5pt + farbe-praxis.lighten(50%)); v(0.5em) }
+    text(style: "italic")[#paar.at(0)]
+    v(0.3em)
+    align(right)[#text(size: 0.85em, fill: farbe-praxis)[— #paar.at(1)]]
+  }
+]

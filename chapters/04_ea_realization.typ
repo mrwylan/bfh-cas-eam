@@ -1,7 +1,7 @@
 // ── Chapter 4 : EA Realization  ───────────────────
 #import "../markers.typ": (
   theorie-anker, design-entscheid, stolperstein, frage, todo-action, fuehrung,
-  autor-marker, autor-finnofleet, autor-transgourmet, autor-verwaltung, autor-dvbern, mit-lead
+  autor-marker, autor-finnofleet, autor-transgourmet, autor-verwaltung, autor-dvbern, mit-lead, praxis-zitate,
 )
 #pagebreak()
 = Die Realisierung des Resource Independent Model
@@ -1447,12 +1447,25 @@ Aus der Perspektive von Amira und ihrer Customer Journey bildet das öffentliche
 
 
 ==== Ausgangslage
+
+#praxis-zitate(
+  ([... grundsätzlich verstehe ich, dass Bewilligungen wichtig sind. Manchmal frage ich mich aber, ob es wirklich notwendig ist, dass jeder Kanton andere Vorschriften hat. Einheitlichere Regelungen würden vieles vereinfachen. [...]
+  Generell habe ich den Eindruck, dass jede Person und jede Behörde gewisse Dinge etwas anders beurteilt. Manchmal entstehen dadurch Probleme oder Unsicherheiten, obwohl es eigentlich gar keine geben müsste.], 
+  [Interview mit D.R., Wirtin]),
+
+  ([... manchmal frage ich mich aber, ob es wirklich notwendig ist, dass jeder Kanton andere Vorschriften hat. Einheitlichere Regelungen würden vieles vereinfachen. [...]
+  Generell habe ich den Eindruck, dass jede Person und jede Behörde gewisse Dinge etwas anders beurteilt. Manchmal entstehen dadurch Probleme oder Unsicherheiten, obwohl es eigentlich gar keine geben müsste.], 
+  [Interview mit H.M., Berater und Gastroplaner]),
+)
+
 #quote([
 #set quote(block: true)
 #quote(attribution: [Interview mit D.R., Wirtin])[
   ... Grundsätzlich verstehe ich, dass Bewilligungen wichtig sind. Manchmal frage ich mich aber, ob es wirklich notwendig ist, dass jeder Kanton andere Vorschriften hat. Einheitlichere Regelungen würden vieles vereinfachen. [...]
   Generell habe ich den Eindruck, dass jede Person und jede Behörde gewisse Dinge etwas anders beurteilt. Manchmal entstehen dadurch Probleme oder Unsicherheiten, obwohl es eigentlich gar keine geben müsste.
 ]])
+
+
 
 #quote([
 #set quote(block: true)
