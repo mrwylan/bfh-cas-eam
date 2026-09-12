@@ -97,29 +97,31 @@ Der Reifegrad ist damit auf Produkt- und Entscheidebene hoch, auf Portfolioebene
 == Öffentliche Verwaltung 
 #autor-verwaltung([Beitrag von Giovanna Beier])//Zwerge
 
-=== Ausgangslage
+=== Ausgangslage<sec-vorstellung-oeffentliche-verwaltung>
 
 Bund, Kantone und Gemeinden in der Schweiz orientieren sich für ihre Organisation am Departementalprinzip — an der Gliederung der Verwaltung in eigenständig verantwortete Departemente (Bund) beziehungsweise Direktionen (Kanton) oder Ressorts (Gemeindeebene).
 
-Diese organisatorische Eigenschaft führt dazu, dass auf jede Staatsebene eine Art interne Föderation besteht: Die Kernaufgaben werden dabei dezentral verantwortet und wahrgenommen und Leistungen mit Grundcharakter wie beispielsweise Logistik oder Infrastruktur werden gemeinsam genutzt. 
+Diese organisatorische Eigenschaft führt dazu, dass auf jede Staatsebene eine Art interne Föderation besteht: Die Kernaufgaben werden dabei dezentral verantwortet und wahrgenommen.
+ Leistungen mit Grundcharakter wie beispielsweise Logistik oder Infrastruktur werden gemeinsam genutzt. 
 
 Auf dieser Ausgangslage zur Organisation der Verwaltung basieren die folgenden Überlegungen zur angewendeten Unternehmensarchitektur auf Bundesebene. Es wird angenommen, dass die beschriebenen Mechanismen weitgehend auch auf kantonale Ebene übertragen werden können.
 
-#todo-action([beide nächste abschnitte in einem fusionieren])
-
 === Unternehmensarchitektur auf Bundesebene
-
-Die Entwicklung der Bundesarchitektur geschieht in einem föderalen Ansatz durch den Bereich Digitale Transformation und IKT-Lenkung der Bundeskanzlei (DTI), die Departemente, Ämter und Leistungserbringer @bk_unternehmensarchitektur_bund: 
-+ die Unternehmensarchitektur für die jeweiligen *Kernaufgabenbereiche* wird von den Departementen und Verwaltungseinheiten dezentral entwickelt.
-+ Bundesämter mit *übergreifenden Aufgaben* definieren und koordinieren die Unternehmensarchitektur für die übergreifenden Aspekte in ihrem Verantwortungsbereich.
-+ die Unternehmensarchitektur der *aufgabenneutralen IKT-Grundleistungen* - soweit diese von der Mehrheit der Departemente benötigt werden - fällt in der Verantwortung des Bereichs DTI. 
-
-=== Governance und Rolle der Unternehmensarchitektur
-
 Die Unternehmensarchitektur auf Bundesebene wird je nach Aufgabentyp unterschiedlich gelebt - und ist auch unterschiedlich bindend. 
-Wer für die Governance zuständig ist und wie sich diese auf die Bundesverwaltung auswirkt, ist je nach Fall unterschiedlich: 
-+ die Unternehmensarchitektur für die *Kernbereiche von Departementen* ist nur für die betroffenen Organisationseinheiten verbindlich. 
-+ Ämter mit *übergreifenden Aufgaben* bestimmen die Unternehmensarchitektur für diese spezifischen Bereiche - diese ist dann für die restliche Bundesverwaltung _verbindlich_. 
-+ Betreffend die *aufgabenneutralen IKT-Grundleistungen* gibt es bundesweit zwei Governance-Mechanismen:
+Wer für die Governance zuständig ist und wie sich diese auf die Bundesverwaltung auswirkt, ist je nach Fall unterschiedlich. 
+Die Entwicklung der Bundesarchitektur geschieht in einem föderalen Ansatz je nach Aufgabentyp durch den Bereich Digitale Transformation und IKT-Lenkung der Bundeskanzlei (DTI), die Departemente, Ämter und Leistungserbringer @bk_unternehmensarchitektur_bund: 
++ die Unternehmensarchitektur für die jeweiligen *Kernaufgabenbereiche* wird von den Departementen und Verwaltungseinheiten dezentral entwickelt und ist nur für die betroffene Organisationseinheiten verbindlich. Die 
++ Bundesämter mit *übergreifenden Aufgaben* definieren und koordinieren die Unternehmensarchitektur für die übergreifenden Aspekte in ihrem Verantwortungsbereich - diese ist dann für die restliche Bundesverwaltung _verbindlich_.
++ die Unternehmensarchitektur der bundesweiten *aufgabenneutralen IKT-Grundleistungen* - soweit diese von der Mehrheit der Departemente benötigt werden - fällt in der Verantwortung des Bereichs DTI. Dabei gibt es zwei Governance-Mechanismen:
   - das Architekturboard Bund, bei dem alle Departemente und interne Erbringer von IKT-Leistungen vertreten sind, dient der gegenseitigen Abstimmung der Architekturen und der Methoden sowie der Bestimmung der Hilfsmittel zu deren Erstellung @bk_unternehmensarchitektur_bund.
   - Der Bereich DTI ist als einziger Akteur befugt, bundesweit verbindliche Vorgaben und Standards zu erlassen, im Bereich der sogenannten aufgabenneutralen IKT-Grundleistungen (Standarddienste) — und dies nur, soweit diese von der Mehrheit der Departemente benötigt werden @bk_unternehmensarchitektur_bund.
+
+Die folgende @fig-informatik-bund stellt in etwa die Verhältnisse zwischen den verschiedenen Typen von Aufgaben:
+
+ #figure(
+  image("../assets/informatikBund.png", width: 100%),
+  caption: [Verteilung der Informatikbereiche nach Aufgabentyp bei der Schweizer Bundesverwaltung]
+) <fig-informatik-bund>
+
+
+#pagebreak()

@@ -27,6 +27,7 @@ Sie ist erleichtert und registriert sich.
 ) <fig-customer-journey-view>
 
 In enger Verbindung mit der Customer Journey wird die Persona „Amira“ erarbeitet. Sie dient dazu, unsere Endkundin konkret greifbar und emotional verankert zu machen. Die Bedürfnisse und Kontexte von Amira bilden den zentralen Ausgangspunkt für die Modellierung des Produkts "GastroStart".
+#pagebreak()
 
 #figure(
   caption: [Persona-Profil: Amira],
@@ -120,7 +121,7 @@ Das Ausarbeiten der Details des Gründungsvorhabens nennen wir "Orientierung".
 
 Die folgende Tabelle fasst die wesentlichen Merkmale dieser Phase der Customer-Jouney noch einmal zusammen. Ihr Aufbau ist am Ende der Einführung dieses Hauptkapitels beschrieben (@aus-phasen-werden-szenarien).
 
-
+#pagebreak()
 #figure(
   caption: [Szenario "Amira orientiert sich"],
   block(
