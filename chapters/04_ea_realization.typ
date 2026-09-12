@@ -1442,8 +1442,8 @@ Diese drei Ebenen müssen getrennt betrachtet und eingeordnet werden:
 
 === Abbildung des öffentlichen Wesens im Kontext von GastroStart <sec-Verwaltung-GastroSTart-EARolle>
 Das öffentliche Wesen nimmt nur indirekt eine Rolle im Unternehmen GastroStart.
-Aus der Perspektive von Amira und ihrer Customer Journey bildet das öffentliche Wesen mit seinen Vorschriften eine Hürde, die überwunden werden muss. Die jeweilige Staatsebene stellt oft eine Sammlung an Regulatorien und Vorgaben dar, welche Amira von ihrem Traum trennt. 
-
+Aus der Perspektive von Amira und ihrer Customer Journey bildet das öffentliche Wesen mit seinen Vorschriften eine Hürde, die überwunden werden muss. Die jeweilige Staatsebene stellt oft eine Sammlung an Regularien und Vorgaben dar, welche Amira von ihrem Traum trennt. 
+Wir wollen nun versuchen, einen möglichen Weg zu einer Ideal-Architektur zu skizzieren.
 
 
 ==== Ausgangslage
@@ -1458,18 +1458,7 @@ Aus der Perspektive von Amira und ihrer Customer Journey bildet das öffentliche
   [Interview mit H.M., Berater und Gastroplaner]),
 )
 
-#quote([
-#set quote(block: true)
-#quote(attribution: [Interview mit D.R., Wirtin])[
-  ... Grundsätzlich verstehe ich, dass Bewilligungen wichtig sind. Manchmal frage ich mich aber, ob es wirklich notwendig ist, dass jeder Kanton andere Vorschriften hat. Einheitlichere Regelungen würden vieles vereinfachen. [...]
-  Generell habe ich den Eindruck, dass jede Person und jede Behörde gewisse Dinge etwas anders beurteilt. Manchmal entstehen dadurch Probleme oder Unsicherheiten, obwohl es eigentlich gar keine geben müsste.
-]])
 
-
-
-#quote([
-#set quote(block: true)
-#quote(attribution: [Interview mit H.M., Berater und Gastroplaner])[Sinnvoll wäre ein schweizweit vergleichbarer Grundprozess nach dem Prinzip «ein Gesuch, eine Ansprechperson, ein koordinierter Entscheid». Dazu gehören digitale Verfahren, verbindliche Bearbeitungsfristen, frühzeitige und belastbare Auskünfte sowie die gegenseitige Anerkennung gleichwertiger Fähigkeitsnachweise. Kantonale Sonderregelungen sollten nur bestehen, wenn sie sachlich notwendig sind.]])
 
 ==== Domenänenmodell 
 

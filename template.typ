@@ -23,20 +23,14 @@
     header: align(right, box(width: auto, text(hyphenate: true, size: 8.5pt, fill: luma(100))[#set par(justify: false); #title])),
     
     // Gestione del piè di pagina in base alla posizione nel documento
-    footer: context {
-      let current_page = here().page()
-      
-      if current_page == 1 {
-        // Il frontespizio (pagina 1) non ha alcuna numerazione
-        none
-      } else if anhang-modus.get() {
-        // Nell'appendice: numerazione propria con prefisso "A-"
-        align(center, "A-" + counter(page).display())
-      } else {
-        // Applica lo stile attivo (romano negli indici, arabo nel testo)
-        align(center, counter(page).display())
-      }
-    }
+footer: context {
+  let current_page = here().page()
+  if current_page == 1 {
+    none
+  } else {
+    align(center, counter(page).display())
+  }
+}
   )
 
   // Tipografia e layout globale
@@ -84,6 +78,16 @@ text(fill: rgb("#274690"), it)
     } else {
 it
     }
+
+show outline.entry: it => {
+  if it.element.body == [Anhang] {
+    v(4em)
+    text(weight: "bold", size: 1.05em)[Anhang]
+    v(0.3em)
+  } else {
+    it
+  }
+}
   }
 
   // Tabellen-Figuren dürfen über Seitengrenzen umbrechen (z. B. lange Glossar-

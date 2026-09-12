@@ -40,6 +40,7 @@ Anschliessend werden die Ressourcen modelliert - wobei jeder der vier Kollegen a
 // ── References ──────────────────────────────────────────────────────────────
 
 #bibliography("refs.bib", style: "apa", title: "Literaturverzeichnis")
+
 //dieser Styl wird im GFbUA benutzt: #bibliography("refs.bib", style: "apa", title: "Literaturverzeichnis")
 
 // ── Anhang ───────────────────────────────────────────────────────────────────
@@ -48,6 +49,8 @@ Anschliessend werden die Ressourcen modelliert - wobei jeder der vier Kollegen a
 #counter(page).update(1)
 #counter(heading).update(0)
 #anhang-modus.update(true)
+#set page(numbering: (..n) => "A-" + numbering("1", ..n.pos()))
+#heading(level: 1, numbering: none, outlined: true)[Anhänge]
 
 #include "appendix/a1_glossary.typ"
 #include "appendix/a2_semantic-anchors.typ"
