@@ -50,7 +50,6 @@ Die folgende Abbildung zeigt ein mögliches Ergebnis aus dieser Vorgehensweise.
 
 
 
-
  #figure(
   image("../assets/Customer Journey View.svg", width: 100%),
   caption: [Archimate Modell der Customer Journey von Amira und erste Iteration für die Identifikation der Geschäftsobjekte]
@@ -327,6 +326,7 @@ Die folgende @fig-gtz-registrierung zeigt das Geschäftsobjekt *Kundenkonto* und
 ) <fig-gtz-registrierung>
 
 Die folgende Tabelle fasst die hier erwähnten Geschäftstransaktion noch einmal zusammen.
+#pagebreak()
 
 #figure(
   caption: [Geschäftstransaktionen: Prozess «sich registrieren»],
@@ -499,6 +499,7 @@ Nachfolgend wird auf die einzelnen Elemente der Grafik eingegangen, wobei die Be
 Das Geschäftsobjekt Unternehmen durchläuft mehrere Transaktionen: 
 - In einer ersten Phase ist der Benutzer in Führung: er _bereitet_  mit der Hilfe von Informationen und Fachfunktionen auf GastroStart die _Unterlagen_ für die Gründung der juristischen Person  _vor_. Nach der öffentlichen Beurkundung kann den _Eintrag im Handelsregister beantragt_ werden. 
 - Danach ist der Ball bei den Behörden: das kantonale Handelsregisteramt _prüft den Antrag_ auf Vollständigkeit, _lehnt es ab_ oder _nimmt es an_ und _trägt die juristische Person im Handelsregister ein_. 
+#pagebreak()
 
 Die folgende @tbl-GT-Unternehmen-gründen fasst diese Punkte zusammen:
 
@@ -1309,8 +1310,6 @@ Die Geschäftsfähigkeit *Bestellung* umfasst die Erfassung und Verwaltung von B
 
 = Das Inside-Out-Mapping: Realisierung der Enterprise Architecture
 
-#todo-action([\@Jakob erklären, dass im Folgenden die aktuellen OMs der beteiligten Unternehmen beschrieben werden und dass es für die Unternehmung "Gastrostart" kein OM nach Ross, et. al gibt. Bsp: Es gibt keine gemeinsame Datenbasis, siehe ])
-
 Dieses Kapitel enthält die separaten Ausführungen der jeweiligen Autoren der Gruppenarbeit zum aktuellen Operating Models des eigenen Ursprungsbetriebs und des Joint Ventures GastroStart. Es kann sein, dass die Autoren zu jeweiligen, unterschiedlichen Schlüsse bezüglich der Gestaltung des Operating Models des Joint Ventures kommen. Dies ist so gewollt.  
 
 == Operating Model für DV Bern 
@@ -1413,23 +1412,19 @@ Folgt man den Rat der Literatur, so findet man folgende Passage:
 
 GastroStart fällt somit unter dem sog. Operating Model "Coordination". 
 Durch die hohe, clevere Datenintegration unter den aktiven Partner erlebt Amira eine "Façade" die weitgehende einheitlich und frei von Medienbrüchen ist, ähnlich wie wenn sie im Kundenbereich eines grossen Anbieters von Fernmeldediensten oder eines anderen Anbieters von "austauschbaren" Massenprodukten. 
-Dass hinter dem User Interface jedoch die verschiedene, ad-hoc-Prozesse der aktiven Joint-Venturepartner laufen, bekommt Amira nur teilweise mit. Ganz anders verläuft es dort, wo ein Szenario (Unternehmen gründen, Bewilligung erhalten) vom Handeln einer Behörde abhängig ist. Dort sind die Brüche - Prozedural wie auch vom Medium - gezwungen.
+Dass hinter dem User Interface jedoch die verschiedene, ad-hoc-Prozesse der aktiven Joint-Venturepartner laufen, bekommt Amira nur teilweise mit. 
 
-Es ist nicht sinnvoll, das öffentliche Wesen - respektive dessen jeweiligen Systemen in GastroStart zu integrieren - sondern werden als externe Systeme und bewusste "Absprünge" weg von GastroStart prozedural wie technisch in den betroffenen Customer Journeys implementieren. 
+Ganz anders verläuft es dort, wo ein Szenario (Unternehmen gründen, Bewilligung erhalten) vom Handeln einer Behörde abhängig ist. Dort sind Brüche unumgänglich. 
+Das öffentliche Wesen - respektive dessen jeweiligen Systemen in GastroStart zu integrieren - werden als externe Systeme und bewusste "Absprünge" weg von GastroStart prozedural wie technisch in den betroffenen Customer Journeys implementiert. 
+
+Diese Brüche sind nicht massgebend für die Wahl der internen Organisation von GastroStart. Die Aktivität eines im Dienstleistungssektors aktiven Unternehmens ist oft von externen Faktoren abhängig. Und trotzdem organisieren sich diese Unternehmen selbstständig, und spiegeln die äusseren Faktoren nur dann, wenn es deren Organisation und Wertschöpfung dienlich ist. 
+
+ 
 
 
-Trotzdem sind diese Brüche nicht massgebend für die Wahl der internen Organisation von GastroStart. Die Aktivität eines im Dienstleistungssektors aktiven Unternehmens, ist oft von externen Faktoren abhängig. Und trotzdem organisieren sich diese Unternehmen selbstständig, ohne die äusseren Faktoren unnötig zu widerspiegeln. 
-
-Die Systeme und "Produkte", resp. Dienstleistungen der öffentlichen Verwaltung - unter anderem die Gründung und Eintragung der GmbH ins kantonale Handelsregister und um die Erteilung der Betriebsbewilligung - werden aus Sicht der Customer Journey und von GastroStart als externe Schnittstellen betrachtet, die Artefakten mit hoheitlicher Wirkung erzeugen. 
 
 
-#todo-action([\@gio letzter teil verschieben])
-
-Dies ist so, da grundsätzlich nur der Staat für solche Handlungen verantwortlich ist und sein darf. 
-Dritte und Private Unternehmen dürfen nur beim Vorhandensein einer Delegationsnorm im Namen einer Behörde handeln. 
-Da GastroStart ein privates Unternehmen ist, kann es nicht den Eintrag ins Handelsregister vornehmen oder die Betriebsbewilligung für Amiras GmbH erteilen.
-
-=== Einordnung der Schweizer öffentlichen Verwaltung in das Operating System nach Ross / Weill 
+/*=== Einordnung der Schweizer öffentlichen Verwaltung in das Operating System nach Ross / Weill 
 
 Das öffentliche Wesen in der Schweiz ist föderalistisch organisiert und spielt sich auf drei politischen (und verwaltungstechnischen) Ebenen ab - dies beeinflusst stark die Interaktionen mit den Betroffenen. 
 
@@ -1438,42 +1433,65 @@ Diese drei Ebenen müssen getrennt betrachtet und eingeordnet werden:
 + *Bundesebene*: ist bei Diversification einzuordenen. Das ist nicht überraschend, sondern strukturell angelegt: das Departementrinzip sowie die Gesetzgebung geben den Departementen und Ämtern eigene Vollzugsautonomie für ihre Kernaufgaben. Ist nichts anderes vorgesehen, ist eine Zusammenarbeit nicht erlaubt. Das ist politisch-rechtlich gewollte Dezentralisierung. Eine "dünne" zentrale Schicht basierend u.A. auf Standarddiensten, Produkte- und Prozessstandards und architektonischen Richtlinien erlaubt eine gewisse Interoperabilität und die Schaffung von Datenökosysteme. 
 
 + *Kantonale Ebene*: ist ebenfalls bei Diversification einzuordnen - 26-mal wiederholte Diversification. Die Einhaltung eines allfälligen obligatorischen gesetzlichen Minimums sowie die teil freiwillige Übernahme von eCH Standards erlauben eine ansatzweise Interoperabilität mit den anderen Ebenen. 
-+ *Gemeindeebene*: Die Gemeinde gehört ebenfalls in die Diversification. Gemeinden differenzieren sich stark von einander - innerhalb desselben Kantons mit eigenen, oft analoge Prozesse. Und nochmals von Kanton zu Kanton kommen der Gemeinden unterschiedliche Zuständigkeiten zu  (Baubewilligung, Lärmschutz, Ortsplanung, punktuelle Bewilligungen). 
++ *Gemeindeebene*: Die Gemeinde gehört ebenfalls in die Diversification. Gemeinden differenzieren sich stark von einander - innerhalb desselben Kantons mit eigenen, oft analoge Prozesse. Und nochmals von Kanton zu Kanton kommen der Gemeinden unterschiedliche Zuständigkeiten zu  (Baubewilligung, Lärmschutz, Ortsplanung, punktuelle Bewilligungen). */
 
-=== Abbildung des öffentlichen Wesens im Kontext von GastroStart <sec-Verwaltung-GastroSTart-EARolle>
-Das öffentliche Wesen nimmt nur indirekt eine Rolle im Unternehmen GastroStart.
+=== Ideal-Architektur für die Integration des öffentlichen Wesens im Kontext von GastroStart <sec-Verwaltung-GastroSTart-EARolle>
+/*Das öffentliche Wesen nimmt nur indirekt eine Rolle im Unternehmen GastroStart.
+
+Die Systeme und "Produkte", resp. Dienstleistungen der öffentlichen Verwaltung - unter anderem die Gründung und Eintragung der GmbH ins kantonale Handelsregister und um die Erteilung der Betriebsbewilligung - werden aus Sicht der Customer Journey und von GastroStart als externe Schnittstellen betrachtet, die Artefakten mit hoheitlicher Wirkung erzeugen. 
+*/
 Aus der Perspektive von Amira und ihrer Customer Journey bildet das öffentliche Wesen mit seinen Vorschriften eine Hürde, die überwunden werden muss. Die jeweilige Staatsebene stellt oft eine Sammlung an Regularien und Vorgaben dar, welche Amira von ihrem Traum trennt. 
-Wir wollen nun versuchen, einen möglichen Weg zu einer Ideal-Architektur zu skizzieren.
-
+Wir wollen nun versuchen, einen möglichen Weg zu einer Ideal-Architektur für das Szenario _Bewilligung erhalten_ (vgl. @sec-go-gt-bewilligung) zu skizzieren.
 
 ==== Ausgangslage
 
+Zwei Stimmen aus der Welt der Gastronomie geben einen Einblick in die Schmerzpunkte in der Interaktion mit den Behörden im Zusammenhang mit der Betriebsbewilligung und den Voraussetzungen dazu.
 #praxis-zitate(
   ([... grundsätzlich verstehe ich, dass Bewilligungen wichtig sind. Manchmal frage ich mich aber, ob es wirklich notwendig ist, dass jeder Kanton andere Vorschriften hat. Einheitlichere Regelungen würden vieles vereinfachen. [...]
   Generell habe ich den Eindruck, dass jede Person und jede Behörde gewisse Dinge etwas anders beurteilt. Manchmal entstehen dadurch Probleme oder Unsicherheiten, obwohl es eigentlich gar keine geben müsste.], 
   [Interview mit D.R., Wirtin]),
 
-  ([... manchmal frage ich mich aber, ob es wirklich notwendig ist, dass jeder Kanton andere Vorschriften hat. Einheitlichere Regelungen würden vieles vereinfachen. [...]
-  Generell habe ich den Eindruck, dass jede Person und jede Behörde gewisse Dinge etwas anders beurteilt. Manchmal entstehen dadurch Probleme oder Unsicherheiten, obwohl es eigentlich gar keine geben müsste.], 
+  ([... Sinnvoll wäre ein schweizweit vergleichbarer Grundprozess nach dem Prinzip «ein Gesuch, eine Ansprechperson, ein koordinierter Entscheid». Dazu gehören digitale Verfahren, verbindliche Bearbeitungsfristen, frühzeitige und belastbare Auskünfte sowie die gegenseitige Anerkennung gleichwertiger Fähigkeitsnachweise. Kantonale Sonderregelungen sollten nur bestehen, wenn sie sachlich notwendig oder nützlich sind.], 
   [Interview mit H.M., Berater und Gastroplaner]),
 )
+
+==== Anforderungen an die Schnittstelle zum öffentlichen Wesen
+
+Dürfte sich GastroStart für seine GründerInnen eine Schnittstelle für die Abwicklung der Bewilligungen, so müsste diese ... 
+
+... auf einen schweizweit einheitlichen Anforderungskatalog basieren. Kantonale Spezifika sollten sachlich begründet sein; 
+
+... die Identifikation und das Ansprechen der für das Bewilligungsverfahren zuständige Behörde übernehmen;
+
+... überall auf dieselben Ereignisse auf dieselbe, vorhersehbare Art und Weise reagieren;
+
+... mit klar kommunizierten Vorbedingungen und Invarianten operieren;
+
+... in ihrer digitalen Implementation dieselben, gesetzlich vorgeschriebene Möglichkeiten bieten, wie die analoge Version - und umgekehrt @montavonPlanficatinCodification; @bge141III173;
+
+...  auf bekannte und erprobte Standards der Behördeninteraktion basieren;
+
++ one stop - da die behörde die informationen nicht hat 
++ once only prinzip (ech-0122, s. 57) - wenn einwilligung da 
++ event-basiert
++ mit klar kommunizierten Vorbedingungen und Invarianten, die erfüllt sein müssen
++
++ mit eCH Standardschnittstelle (ech-0258)
+
 
 
 
 ==== Domenänenmodell 
+
+Die Implementation einer Schnittstelle basiered auf Standard eCH-0258 @eCH0258
+ 
+ it Schnittstelle zu Behörde abgebildet da das Mengengerüst pro Behörde wohl zu tief ist - auch weil es nicht davon auszugehen ist, dass das Thema der Bewilligungen für Unternehmen der Gastronomie ein Thema für die Bundesebene ist. 
 
 #figure(
   image("../assets/RSM - Betriebsbewilligung erhalten.svg", width: 100%),
   caption: [RSM der Phase «Amira erhält die Bewilligung»],
 ) <fig-RSM-bewilligung>
 
-+ one stop - da die behörde die informationen nicht hat 
-+ once only prinzip (ech-0122, s. 57) - wenn einwilligung da 
-+ event-basiert
-+ mit Schnittstelle zu Behörde abgebildet da das Mengengerüst pro Behörde wohl zu tief ist - auch weil es nicht davon auszugehen ist, dass das Thema der Bewilligungen für Unternehmen der Gastronomie ein Thema für die Bundesebene ist. 
-+ mit eCH Standardschnittstelle (ech-0258)
-+ selbe schnittstelle wie nicht digitaler prozess 
-+ code is law: schnittstelle / system darf nicht andere Anforderungen aufweise, als die gesetze vorschreiben (Montavon, ATF)
 
 
 

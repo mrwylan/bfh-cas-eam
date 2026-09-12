@@ -120,7 +120,7 @@ Die folgende @fig-informatik-bund stellt in etwa die Verhältnisse zwischen den 
 
  #figure(
   image("../assets/informatikBund.png", width: 100%),
-  caption: [Verteilung der Informatikbereiche nach Aufgabentyp bei der Schweizer Bundesverwaltung]
+  caption: [Verteilung der Informatikbereiche nach Aufgabentyp bei der Schweizer \ Bundesverwaltung]
 ) <fig-informatik-bund>
 
 

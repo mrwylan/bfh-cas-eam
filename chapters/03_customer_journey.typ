@@ -21,13 +21,15 @@ Sie möchte durch den Prozess der Unternehmensgründung geführt werden.
 Bei der Suche erfährt sie, dass die Punkte Bewilligungen, Finanzierung, Ressourcenplanung und Beschaffung besonders wichtig sind. 
 Sie landet bei *“GastroStart”* und erfährt in der kurzen Einführung auf der Startseite, dass dieses Portal sie bei all dem unterstützen kann. 
 Sie ist erleichtert und registriert sich. 
- #figure(
+#frage([12.09.2026 - können wir das nächste bild weglassen?!? ])
+
+/* #figure(
   image("../assets/Customer Journey View.svg", width: 100%),
   caption: [Archimate Modell der Customer Journey von Amira und erste Iteration für die Identifikation der Geschäftsobjekte]
 ) <fig-customer-journey-view>
-
+*/
 In enger Verbindung mit der Customer Journey wird die Persona „Amira“ erarbeitet. Sie dient dazu, unsere Endkundin konkret greifbar und emotional verankert zu machen. Die Bedürfnisse und Kontexte von Amira bilden den zentralen Ausgangspunkt für die Modellierung des Produkts "GastroStart".
-#pagebreak()
+
 
 #figure(
   caption: [Persona-Profil: Amira],
@@ -121,7 +123,6 @@ Das Ausarbeiten der Details des Gründungsvorhabens nennen wir "Orientierung".
 
 Die folgende Tabelle fasst die wesentlichen Merkmale dieser Phase der Customer-Jouney noch einmal zusammen. Ihr Aufbau ist am Ende der Einführung dieses Hauptkapitels beschrieben (@aus-phasen-werden-szenarien).
 
-#pagebreak()
 #figure(
   caption: [Szenario "Amira orientiert sich"],
   block(
@@ -457,7 +458,6 @@ Die folgende Tabelle fasst die wesentlichen Merkmale dieser Phase der Customer-J
 
 === Amira wird Kunde bei Transgourmet
 
-#todo-action([Jakob: Szenario erklären, so wie Jan für Orientierung und Registrierung gemacht hat])
 
 
  #figure(
@@ -545,11 +545,7 @@ Das Produkt als Ganzes, inklusive aller fachlichen Aspekte, wird, wenn nicht exp
 
 Für die fünf Phasen der Customer Journey: Orientierung, Registrierung, Bewilligung, Finanzierung, erster Einkauf - sind die einzelnen Beiträge seitens DV Bern wie folgt beschrieben.
 
-#frage([wollen wir uns hier knapper halten? Wegen Spoilern von dem was nachher kommt.(se beiträge Transgourmet und öffentliche Verwaltung
 
-Frage 2: sind die folgenden Kapiteln am richtigen Ort? Vielleicht sollten Sie unter dem RSM verfrachet werden?)
-
-Entscheid: we're ok with spoilers and Jakob is going to write the intro.])
 
 ==== Orientierung
 
@@ -601,7 +597,7 @@ Als führender Schweizer Grosshändler für Gastronomie und Hotellerie ist Trans
 Die Eröffnung eines Kundenkontos bei Transgourmet ist die letzte Phase der Customer Journey und steht am Übergang von der Gründungsphase in den operativen Betrieb. 
 
 === Öffentliche Verwaltung als Interoperabilitätspartner<sec-rolle-interoperabilitätspartner>
-Aus Sicht von Amira und somit auch von GastroStart wird die öffentliche Verwaltung - ohne besondere Rücksicht auf die jeweilige Ebene - in ihrer Rolle als Interoperabilitätspartner abgebildet und behandelt.
+Aus Sicht von Amira und somit auch von GastroStart wird die öffentliche Verwaltung - ohne besondere Rücksicht ob Bundes, Kantons- oder Gemeindeebene - in ihrer Rolle als Interoperabilitätspartner abgebildet und behandelt.
 Dies, weil die öffentliche Hand ihre hoheitlichen Handlungen nicht im Sinne eines wirtschaftlichen Angebots wie die anderen Mitglieder der Joint Venture zur Verfügung stellt. Auch ist es nicht im Sinne der Schweizer Rechtstradition, private Unternehmen mit der Vergabe von hoheitlichen Akten zu betrauen.
 Aus diesen Gründen sind jene Teile der Customer Journey, wofür der Staat verantwortlich ist - bspw. der Eintrag im Handelsregister oder die Erteilung einer Betriebsbewilligung - und die Fähigkeit, diese zu vollziehen, ausserhalb des Wirkungsbereichs des Joint Ventures anzusiedeln. 
 /*Auf der anderen Seite bildet GastroStart eine spezialisierte Schnittstelle für die Vorbereitung hin auf diesen Akten. */
