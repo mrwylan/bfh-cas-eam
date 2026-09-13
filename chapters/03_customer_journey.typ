@@ -28,7 +28,13 @@ Sie ist erleichtert und registriert sich.
   caption: [Archimate Modell der Customer-Journey von Amira und erste Iteration für die Identifikation der Geschäftsobjekte]
 ) <fig-customer-journey-view>
 */
+<<<<<<< HEAD
 In enger Verbindung mit der Customer-Journey wird die Persona „Amira“ erarbeitet. Sie dient dazu, unsere Endkundin konkret greifbar und emotional verankert zu machen. Die Bedürfnisse und Kontexte von Amira bilden den zentralen Ausgangspunkt für die Modellierung des Produkts "GastroStart".
+=======
+In enger Verbindung mit der Customer Journey wird die Persona „Amira“ erarbeitet ( @persona-amira Persona-Profil). 
+Sie dient dazu, unsere Endkundin konkret greifbar und emotional verankert zu machen. 
+Die Bedürfnisse und Kontexte von Amira bilden den zentralen Ausgangspunkt für die Modellierung des Produkts "GastroStart".
+>>>>>>> 6f81813 (added führung - moved joint vernture to dedicated chapter)
 
 
 #figure(
@@ -459,12 +465,15 @@ Die folgende Tabelle fasst die wesentlichen Merkmale dieser Phase der Customer-J
 
 === Amira wird Kunde bei Transgourmet
 
-
+Der letzte Schritt in der Customer Journey ist die Bestellung bei Transgourmet @fig-szenario-lieferantenvertrag).
+Basierend auf dem gewählten Gastronomie-Konzept und den erfassten Angaben zu Standort, Betriebsart und Grösse des Unternehmens wird Transgourmet als Lieferant mit passendem Sortimentskatalog vorgeschlagen.
 
  #figure(
   image("../assets/cj_vertraege.svg", width: 100%),
   caption: [Archimate Szenario "Amira wird Kunde bei Transgourmet"]
-) <fig-cj-verträge>
+) <fig-szenario-lieferantenvertrag>
+
+Wird Transgourmet als Lieferant gewählt, kann Amira direkt im GastroStart-Portal die Bestellung aufgeben (@tbl-szenario-lieferantenvertrag).
 
 #figure(
   caption: [Szenario "Amira wird Kunde bei Transgourmet"],
@@ -515,7 +524,7 @@ Die folgende Tabelle fasst die wesentlichen Merkmale dieser Phase der Customer-J
   ]
 ) <tbl-szenario-lieferantenvertrag>
 
-
+Die letzte Hürde für den erfolgreichen Start des Unternehmens ist damit genommen, und die Gründerin kann sich auf die weitere operative Umsetzung ihres Vorhabens konzentrieren.
 
 
 == Das Joint Venture GastroStart - Vorstellung des Unternehmens
@@ -534,6 +543,7 @@ Weitere Dienstleistungen, im Rahmen der Customer-Journey nicht berührt, wären 
 Entsprechend der gewählten Customer-Journey haben wir uns entschieden, nur das Onboarding von Neukunden abzubilden. Die Firmengründung steht im Fokus.
 ]
 
+<<<<<<< HEAD
 == Die Rollen der beteiligten Unternehmen im Joint Venture
 
 #todo-action([\@Jakob: bitte erklären, wieso wir hier eigentlich schon das RSM einführen - über die Fertigkeiten der Teilnehmern.])
@@ -606,3 +616,5 @@ Aus diesen Gründen sind jene Teile der Customer-Journey, für die der Staat ver
 /*Auf der anderen Seite bildet GastroStart eine spezialisierte Schnittstelle für die Vorbereitung hin auf diesen Akten. */
 
 
+=======
+>>>>>>> 6f81813 (added führung - moved joint vernture to dedicated chapter)

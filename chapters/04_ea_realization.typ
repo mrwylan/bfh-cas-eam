@@ -834,10 +834,10 @@ transaktion],
 
 === Amira wird Kunde bei Transgourmet
 
-Das Lieferantenkonto ist ein Geschäftsobjekt, das die Beziehung zwischen dem Gastronomiebetrieb und seinen Lieferanten abbildet. Es enthält Informationen über die Lieferanten, die Konditionen der Zusammenarbeit und den Status der Geschäftsbeziehung. Das Lieferantenkonto ist entscheidend für die effiziente Abwicklung von Bestellungen und die Verwaltung von Lieferantenbeziehungen.
+Das Lieferantenkonto ist ein Geschäftsobjekt, das die Beziehung zwischen dem Gastronomiebetrieb und seinen Lieferanten abbildet. Es enthält Informationen über die Lieferanten, die Konditionen der Zusammenarbeit und den Status der Geschäftsbeziehung. Das Lieferantenkonto ist entscheidend für die effiziente Abwicklung von Bestellungen und der Pflege von Lieferantenbeziehungen.
 
 #figure(
-image("../assets/GOLieferantenkonto.svg", width: 100%),
+image("../assets/GOLieferantenkonto.svg", width: 60%),
 caption: [Geschäftsobjekt Lieferantenkonto und dessen Zustände]
 ) <fig-GOLieferantenkonto>
 
@@ -885,6 +885,8 @@ caption: [Geschäftsobjekt Lieferantenkonto und dessen Zustände]
     )
   ]
 ) <tbl-GO-Lieferantenkonto>
+
+Die Zustände des Lieferantenkontos sind: pendent, aktiv, inaktiv, gelöscht (siehe @tbl-GO-Lieferantenkonto), die aber nicht alle im gewählten Szenerio enthalten sind.
 
 #figure(
   image("../assets/Phase 5 - Kunde bei Transgourmet.svg", width: 100%),
