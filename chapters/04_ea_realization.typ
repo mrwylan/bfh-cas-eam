@@ -1536,10 +1536,14 @@ Folgende Überlegungen liegen dem Vorschlag von @fig-RSM-bewilligung zugrunde:
 
 + Aus diesem Grund wurde die Schnittstelle zur (externen) Bewilligungsstelle möglichst branchenagnostisch ausgestaltet, sodass sie nicht nur für die Gastronomie, sondern auch für vergleichbare Bewilligungsverfahren anwendbar ist. Gleichzeitig erscheint eine lose Kopplung zur zuständigen Behörde zweckmässig. Für GastroStart ist nicht entscheidend, nach welchem Bewilligungsverfahren die Behörde handelt oder welche Mittel sie dafür verwendet. Relevant sind vielmehr die Ereignisse an der Schnittstelle, beispielsweise die Einreichung des Antrags, die Aufforderung zur Nachreichung von Unterlagen oder die Erteilung beziehungsweise Ablehnung der Bewilligung. Die Verantwortung für die Durchführung des Verfahrens verbleibt somit bei der Behörde, während GastroStart die GründerInnen bei der Vorbereitung und Koordination Halt gibt.
 
+Nicht abgebildet und lediglich vorausgesetzt ist die Notwendigkeit einer Infrastruktur zur sicheren und eindeutigen Identifikation von Personen und Unternehmen im Verfahren — sowie zur rechtssicheren digitalen Überprüfung der Behördenentscheide.
+
 Als Referenz für die Implementierung der abgebildeten Schnittstelle wurden insbesondere folgende Standards als geeignet identifiziert:
 - eCH-0122 Architektur E-Government Schweiz @eCH0122,
 - eCH-0258 Schnittstelle Datenaustausch eServices @eCH0258
 - weitere Standards zur Identifikation von Personen @eCH0011 und Unternehmen @eCH0098, welche die Voraussetzungen für eine fachliche, semantische und technische Interoperabilität zwischen GastroStart und den zuständigen Behörden schaffen.
+
+
 
 ==== Exkurs: Anforderungen an die Interoperabilität für die Orientierung
 
@@ -1569,10 +1573,15 @@ Fehlt eine solche, bleibt die Unternehmensarchitektur in diesem Bereich ein zahn
 
 === Lösungsansatz
 
-Damit die Behörden — innerhalb derselben Ebene oder ebenenübergreifend (etwa zwischen Kanton und Gemeinden) — verbindlich zusammenarbeiten und Daten mit der Privatwirtschaft austauschen können, braucht es daher eine entsprechende gesetzliche Grundlage. 
-Es sind verschiedene Ansätze denkbar, aber die Autorin vertritt die Meinung, dass für eine einheitliche Lösung eine Regelung auf der Ebene der Bundesverfassung anzustreben ist.
+Laut der Architekturvision 2050 @eCH0279 digitalisiert heute jede föderale Verwaltungsebene nach ihren eigenen, legitimierten Prioritäten und mit unterschiedlicher Geschwindigkeit; ohne Koordination zwischen den verschiedenen Ebenen driften die jeweiligen Strategien auseinander, was Interoperabilität und einen gemeinsamen architektonischen Ansatz zunehmend erschwert — im Widerspruch zur eigentlich gewollten Vereinfachung.
 
-Auch die einschlägige Literatur (_in primis_ der Autor Michaël Montavon) hat sich in diesem Sinne geäussert und folgenden neuen Verfassungsartikel vorgeschlagen:
+Die Autorin teilt diese Diagnose zum aktuellen Stand: Eine gemeinsame Basis für die Digitalisierung und Vereinfachung der Behördeninteraktionen auf nationaler bzw. interkantonaler Ebene ist bisher nur unzureichend geschaffen worden. Die erarbeiteten Standards und die bisher entwickelten Portale sind aus dieser Perspektive notwendige Vorleistungen, aber noch keine hinreichende Grundlage: Sie beruhen auf Freiwilligkeit und haben keine verbindliche Kraft.
+
+Damit die Behörden — innerhalb derselben Ebene oder ebenenübergreifend (etwa zwischen Kanton und Gemeinden) — verbindlich zusammenarbeiten und Daten untereinander und mit der Privatwirtschaft austauschen können, braucht es daher eine verbindliche gesetzliche Grundlage auf Bundesebene.
+
+Die Autorin dieses Abschnittes vertritt die Meinung, dass diese Regelung in der Bundesverfassung verankert werden, da dem Bund sonst die Kompetenz für eine ebenenübergreifende Verpflichtung der anderen föderalen Ebenen fehlt und die Regelung nur so für alle Kantone verbindlich wirken kann.
+
+Auch die einschlägige Literatur (_in primis_ Michaël Montavon) hat sich in diesem Sinne geäussert und folgenden Vorschlag für einen neuen Verfassungsartikel geäussert:
 
 #rechtsnorm(
   [Art. 88a BV — Cyberadministration],
@@ -1601,6 +1610,9 @@ Dieser Ansatz hat mehrere Vorteile:
 + Die Kantone können ihren verfassungsrechtlichen Primat bei Themen des Verwaltungsrechts gemäss Art. 3 BV @sr101 behalten.
 + Die Grundlagenarbeit, die vom Verein eCH und anderen Akteuren der Digitalisierung wie der Digitalen Verwaltung Schweiz geleistet wurde, sowie die operativen Erfahrungen bestehender kantonaler Portale wie iGovPortal oder eUmzug Schweiz liefern wichtige Hinweise über die technische, verwaltungsrechtliche, aber auch politische Machbarkeit der digitalen Transformation in den einschlägigen Bereichen.
 
+Als Beweis für eine lokalisierte, erfolgreiche Anwendung des vertrenen Ansaatzes ist die *Steuererharmonisierung* (Art. 129 Bundesverfassung).
+Diese Analogie verdeutlicht, dass ein Regelungsgegenstand erst mit seiner Verankerung in der Bundesverfassung für alle föderalen Ebenen verbindlich wird. 
+Der Verfassungsartikel schafft die Verpflichtungsgrundlage, auf der die tatsächliche, einheitliche Umsetzung durch Bund, Kantone und Gemeinden erfolgen kann.
 
 
 == Operating Model für FINNOFLEET
