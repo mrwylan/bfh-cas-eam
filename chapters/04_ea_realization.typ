@@ -1397,7 +1397,7 @@ Die folgende Abbildung zeigt das RSM der Phase "Registrierung" und dessen Bezieh
   caption: [RSM der Phase «Sich registieren»],
 ) <fig-RSM-registrierung>
 
-== Einordnung von GastroStart und der Akteure des öffentlichen Wesens in das Operating System nach Ross/Weill et al.
+== Einordnung von GastroStart und der Akteure des öffentlichen Wesens in das Operating Model nach Ross/Weill et al.
 
 #autor-verwaltung("Beitrag von Giovanna Beier, Bundeskanzlei", inhalt: [
   Mit ihrem Versprechen, die Kunden erfolgreich bei der Gründung ihres
@@ -1408,7 +1408,7 @@ Die folgende Abbildung zeigt das RSM der Phase "Registrierung" und dessen Bezieh
   Die "Sorglosigkeit", die GastroStart verspricht, ist Architektureigenschaft
   und Dienstleistung von GastroStart zugleich.
 ])
-=== Einordnung von GastroStart in das Operating System nach Ross / Weill et al.
+=== Einordnung von GastroStart in das Operating Model nach Ross / Weill et al.
 
 GastroStart ist aus einem engen Schulterschluss unter drei Partnern aus der Privatwirtschaft entstanden: DV Bern, FINNOFLEET und Transgourmet. 
 Dabei profitiert GastroStart von der äusserst positiven Dynamik und Zusammenarbeit unter den Partnern.
@@ -1421,11 +1421,11 @@ Folgt man dem Rat der Literatur, so findet man folgende Passage:
 ])
 
 GastroStart fällt somit unter das sog. Operating Model "Coordination". 
-Durch die hohe, clevere Datenintegration unter den aktiven Partnern erlebt Amira eine "Façade", die weitgehend einheitlich und frei von Medienbrüchen ist, ähnlich wie wenn sie im Kundenbereich eines grossen Anbieters von Fernmeldediensten oder eines anderen Anbieters von "austauschbaren" Massenprodukten ist. 
+Durch die hohe, clevere Datenintegration unter den aktiven Partnern erlebt Amira eine "Façade", die weitgehend einheitlich und frei von Medienbrüchen ist, ähnlich wie im Kundenbereich eines grossen Anbieters von Fernmeldediensten oder eines anderen Anbieters von "austauschbaren" Massenprodukten.
 Dass hinter dem User Interface jedoch die verschiedenen Ad-hoc-Prozesse der aktiven Joint-Venture-Partner laufen, bekommt Amira nur teilweise mit.
 
 Ganz anders verhält es sich dort, wo ein Szenario (Unternehmen gründen, Bewilligung erhalten) vom Handeln einer Behörde abhängig ist. Dort sind Brüche unumgänglich. 
-Das öffentliche Wesen - respektive dessen jeweilige Systeme in GastroStart zu integrieren - wird als externes System und bewusster "Absprung" weg von GastroStart prozedural wie technisch in den betroffenen Customer-Journeys implementiert.
+Das öffentliche Wesen — respektive dessen jeweilige, in GastroStart zu integrierende Systeme — wird als externes System und bewusster "Absprung" weg von GastroStart prozedural wie technisch in den betroffenen Customer-Journeys implementiert.
 
 Diese Brüche sind nicht massgebend für die Wahl der internen Organisation von GastroStart. Die Tätigkeit eines im Dienstleistungssektor aktiven Unternehmens ist oft von externen Faktoren abhängig. Und trotzdem organisieren sich diese Unternehmen selbstständig und spiegeln die äusseren Faktoren nur dann wider, wenn es ihrer Organisation und Wertschöpfung dienlich ist.
 
@@ -1463,7 +1463,7 @@ Zwei Stimmen aus der Welt der Gastronomie geben einen Einblick in die Schmerzpun
 
 ==== Anforderungen an die Interoperabilität mit dem öffentlichen Wesen
 
-Könnte sich GastroStart für seine GründerInnen eine Schnittstelle für die Abwicklung von Bewilligungen wünschen, so müsste diese folgende grobe Anforderungen, oder gar Prinzipien erfüllen:
+Könnte sich GastroStart für seine GründerInnen eine Schnittstelle für die Abwicklung von Bewilligungen wünschen, so müsste diese folgende grobe Anforderungen oder gar Prinzipien erfüllen:
 #pagebreak()
 
  #figure(
@@ -1521,9 +1521,9 @@ Könnte sich GastroStart für seine GründerInnen eine Schnittstelle für die Ab
   ]
 ) <tbl-Anforderungen-Behoerdenschnittstelle>
 
-==== Domenänenmodell für die Bewilligung
+==== Domenänmodell für die Bewilligung
 
-Aufgrund der oben aufgeführten Ausgangslage und der formulierten Anforderungen, haben wir dieses Modell für die ideale Abbildung der Behördeninteraktion vorgestellt:
+Aufgrund der oben aufgeführten Ausgangslage und der formulierten Anforderungen haben wir dieses Modell für die ideale Abbildung der Behördeninteraktion vorgestellt:
 
 #figure(
   image("../assets/RSM - Betriebsbewilligung erhalten.svg", width: 100%),
@@ -1541,21 +1541,22 @@ Als Referenz für die Implementierung der abgebildeten Schnittstelle wurden insb
 - eCH-0258 Schnittstelle Datenaustausch eServices @eCH0258
 - weitere Standards zur Identifikation von Personen @eCH0011 und Unternehmen @eCH0098, welche die Voraussetzungen für eine fachliche, semantische und technische Interoperabilität zwischen GastroStart und den zuständigen Behörden schaffen.
 
-==== Exkurs: Anforderungen ad die Interoperabilität für die Orientierung
+==== Exkurs: Anforderungen an die Interoperabilität für die Orientierung
 
-Die Customer-Journey beginnt mit Ermittlung der Voraussetzungen für den Erhalt einer Bewilligung im Rahmen der Orientierung (s. @sec-GP-GF-orientierung-gründungsvorhaben). 
-Aus diesbezüglich bestehen im Rahmen der Realisierung einer Ideal-Architektur Ansprüche. GastroSTart muss in der Lage sein, die Informationen für die GründerInnen immer aktuell zu halten und allfälligen Anpassungen bei den vielen in Frage kommenden Behörden umgehend umzusetzen, so dass die Schritt-für-Schritt-Anleitungen für die GründerInnen immer der Realität entsprechen. 
+Die Customer-Journey beginnt mit der Ermittlung der Voraussetzungen für den Erhalt einer Bewilligung im Rahmen der Orientierung (s. @sec-GP-GF-orientierung-gründungsvorhaben). 
+Diesbezüglich bestehen im Rahmen der Realisierung einer Ideal-Architektur Ansprüche. 
+GastroStart muss in der Lage sein, die Informationen für die GründerInnen immer aktuell zu halten und allfällige Anpassungen bei den vielen in Frage kommenden Behörden umgehend umzusetzen, so dass die Schritt-für-Schritt-Anleitungen für die GründerInnen immer der Realität entsprechen.
 
-Um dies zu realisieren ist es notwendig, dass alle Bewilligungsstellen über die digitalen Informationskanäle die folgenden Angaben liefern: 
-- die Beschreibung der *Verwaltungsleistung* und der dafür *zuständigen Behörde* gemäss dem eCH-0088 Standard Vorgaben zur Beschreibung von Behördengängen @eCH0088, inklusive alle optionale Felder; 
+Um dies zu realisieren, ist es notwendig, dass alle Bewilligungsstellen über die digitalen Informationskanäle die folgenden Angaben liefern: 
+- die Beschreibung der *Verwaltungsleistung* und der dafür *zuständigen Behörde* gemäss dem eCH-0088 Standard Vorgaben zur Beschreibung von Behördengängen @eCH0088, inklusive aller optionalen Felder; 
 - die Beschreibung der dafür geltenden *Voraussetzungen* und *Vorbedingungen* für den *Zugang zur Verwaltungsleistung* gemäss dem eCH-0073 Standard Vorgaben zur Beschreibung von Leistungen der öffentlichen Verwaltung @eCH0073.
 
-Die Erfüllung der Anforderungen dieser Standards schafft die Grundlage dafür, die Behördenleistung "Betriebsbewilligung erteilen" und deren Voraussetzungen in GastroStart konsistent zu beschreiben und den GründerInnen entsprechend zur Verfügung stellen. 
+Die Erfüllung der Anforderungen dieser Standards schafft die Grundlage dafür, die Behördenleistung "Betriebsbewilligung erteilen" und deren Voraussetzungen in GastroStart konsistent zu beschreiben und den GründerInnen entsprechend zur Verfügung zu stellen. 
 
 === Herausforderungen für die Realisierung der Ideal-Architektur
 
-Die aufgezeigte Lösung ist soll nicht gastronomiespezifisch sein, sondern möchte die allgemeinere Problematik an der Schnittstelle zwischen Privatwirtschaft und öffentlichem Wesen adressieren.
-Um das im vorangehenden Abschnitt skizzierten Lösungsansatz zu erreichen, müsste jede Behörde auf jeder föderalen Ebenen in der Lage sein, dieselbe, bekannte, dokumentierte Schnittstelle nach aussen anbieten. 
+Die aufgezeigte Lösung soll nicht gastronomiespezifisch sein, sondern möchte die allgemeinere Problematik an der Schnittstelle zwischen Privatwirtschaft und öffentlichem Wesen adressieren.
+Um den im vorangehenden Abschnitt skizzierten Lösungsansatz zu erreichen, müsste jede Behörde auf jeder föderalen Ebene in der Lage sein, dieselbe, bekannte, dokumentierte Schnittstelle nach aussen anzubieten. 
 Die gestaltet sich jedoch aus folgenden Gründen als schwierig:
 
 + *Fehlende ebenenübergreifende Gesamtsicht*: Föderalismus zwischen den drei Staatsebenen und Departementalprinzip innerhalb jeder Ebene verteilen die Verantwortung auf viele eigenständige Einheiten. Dadurch fehlt eine übergreifende Sicht darauf, welche Leistung wo erbracht wird — und damit auch die Grundlage, um zu erkennen, welche Bereiche sich überhaupt für eine gemeinsame Regelung eignen.
@@ -1569,9 +1570,9 @@ Fehlt eine solche, bleibt die Unternehmensarchitektur in diesem Bereich ein zahn
 === Lösungsansatz
 
 Damit die Behörden — innerhalb derselben Ebene oder ebenenübergreifend (etwa zwischen Kanton und Gemeinden) — verbindlich zusammenarbeiten und Daten mit der Privatwirtschaft austauschen können, braucht es daher eine entsprechende gesetzliche Grundlage. 
-Es sind verschiedene Ansätze denkbar, aber die Autorin vertritt die Meinung, dass eine einheitlichen Lösung eine Regelung auf der Ebene der Bundesverfassung anzustreben ist. 
+Es sind verschiedene Ansätze denkbar, aber die Autorin vertritt die Meinung, dass für eine einheitliche Lösung eine Regelung auf der Ebene der Bundesverfassung anzustreben ist.
 
-Auch die einschlägige Literatur (_in primis_ der Autor Michaël Montavon) hat sich in diesem Sinne geäussert und folgender neuer Verfassungsartikel vorgeschlagen: 
+Auch die einschlägige Literatur (_in primis_ der Autor Michaël Montavon) hat sich in diesem Sinne geäussert und folgenden neuen Verfassungsartikel vorgeschlagen:
 
 #rechtsnorm(
   [Art. 88a BV — Cyberadministration],
@@ -1588,12 +1589,11 @@ Auch die einschlägige Literatur (_in primis_ der Autor Michaël Montavon) hat s
 ]
 )
 
-Zu beachten ist die Tatsache, dass dieser Vorschlag den selben Aufbau wie der Verfassungsartikel über die Hochschulen, Art. 63a BV @sr101, aufweist. 
-Dieser Artikel regelt im Allgemeinen die Zuständigkeiten und die Organisation rundum den Hochschulen des Bundes und jene der Kantone, wobei der Bund eine sogenannte eine subsidiäre Regelungskompetenz erhält.
-Dies bedeutet, dass wenn die involvierten föderalen Ebenen am gemeinamen Ansatz scheitern, muss der Bund die notwendigen Vorschriften erlasssen. 
-Auf das für diese ARbeit relevante Gebiet der Digitalisierung übertragen, sollen die Digitalisierung und die digitalen Transformation auf die Koordination zwischen den verschiedenen Verwaltungsebenen fussen. 
-Sollte dies jedoch nicht klappen, so behält der Bund ein Druckmittel, um die anderen Akteure zur Erreichnung der gemeinsamen Zielen zu unterstüten. 
-
+Zu beachten ist die Tatsache, dass dieser Vorschlag denselben Aufbau wie der Verfassungsartikel über die Hochschulen, Art. 63a BV @sr101, aufweist.
+Dieser Artikel regelt im Allgemeinen die Zuständigkeiten und die Organisation rund um die Hochschulen des Bundes und jene der Kantone, wobei der Bund eine sogenannte subsidiäre Regelungskompetenz erhält.
+Dies bedeutet, dass der Bund die notwendigen Vorschriften erlassen muss, wenn die involvierten föderalen Ebenen am gemeinsamen Ansatz scheitern.
+Auf das für diese Arbeit relevante Gebiet der Digitalisierung übertragen, sollen die Digitalisierung und die digitale Transformation auf der Koordination zwischen den verschiedenen Verwaltungsebenen fussen.
+Sollte dies jedoch nicht klappen, so behält der Bund ein Druckmittel, um die anderen Akteure bei der Erreichung der gemeinsamen Ziele zu unterstützen.
 
 == Operating Model für FINNOFLEET
 
