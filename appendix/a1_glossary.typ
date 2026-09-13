@@ -5,16 +5,21 @@
 Dieses Glossar erklärt die im Dokument verwendeten fachlichen und methodischen Begriffe kurz und nennt, wo vorhanden, gebräuchliche Synonyme oder im Text verwendete Alternativbezeichnungen. Es erhebt keinen Anspruch auf Vollständigkeit ausserhalb des Kontexts dieser Arbeit.
 
 #figure(
+  caption: [ /* Glossar-Titel – Inhalt bleibt deine Entscheidung */ ],
   block(width: 100%, breakable: true)[
-    #set text(size: 9pt)
+    #set par(justify: false)
     #table(
       columns: (3.4cm, 1fr),
-      inset: 6pt,
-      stroke: 0.4pt,
-      fill: (x, y) => if y == 0 { luma(210) } else if calc.odd(y) { luma(248) } else { white },
+      inset: (x: 10pt, y: 7pt),
+      stroke: (x: none, y: 0.5pt + luma(232)),
+      fill: (x, y) => if y == 0 { luma(70) }
+                      else if calc.even(y) { luma(250) }
+                      else { white },
       align: (left, left),
-
-      [*Begriff*], [*Erklärung*],
+      table.header(
+        text(fill: white, weight: "bold", size: 0.95em)[Begriff],
+        text(fill: white, weight: "bold", size: 0.95em)[Erklärung],
+      ),
 
       [ADM],
       [Siehe #emph[TOGAF ADM].],
