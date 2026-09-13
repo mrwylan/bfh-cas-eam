@@ -6,17 +6,17 @@
 
 //= Die Kollaborationsphase: Outside-In-Mapping
 
-= Die Reise beginnt: die Customer Journey
-/*Customer Journey und Persona - Fester Stand in Outside-In-Fokus 
-In diesem Kapitel wird die Customer Journey erklärt - und wie wir daraus ein Phasenmodell skizziert haben, welches am Kundenerlebnis entlang entstanden ist.*/
-#fuehrung([Eine Geschichte in Form einer User Story Map oder einer  Customer Journey erklärt allen Beteiligten, welches Verhalten vom zukünftigen System erwartet wird. Die Geschichte wird um Ziele aus Sicht der primären, externen Stakeholder des Unternehmens ergänzt. @Spichiger2026GFbUA[S. 54]]) 
+= Die Reise beginnt: die Customer-Journey
+/*Customer-Journey und Persona - Fester Stand in Outside-In-Fokus 
+In diesem Kapitel wird die Customer-Journey erklärt - und wie wir daraus ein Phasenmodell skizziert haben, welches am Kundenerlebnis entlang entstanden ist.*/
+#fuehrung([Eine Geschichte in Form einer User Story Map oder einer  Customer-Journey erklärt allen Beteiligten, welches Verhalten vom zukünftigen System erwartet wird. Die Geschichte wird um Ziele aus Sicht der primären, externen Stakeholder des Unternehmens ergänzt. @Spichiger2026GFbUA[S. 54]]) 
 
 == Amira und ihre Geschichte <sec-amira-und-ihre-geschichte>
 
 Amira, eine 34-jährige Quereinsteigerin, will ein Catering-Unternehmen gründen. 
 Sie hat schon ein Konzept dafür. 
 Sie hat keine Erfahrung, will nichts falsch machen und braucht Orientierung. 
-Sie googelt "_catering aufmachen schweiz_", da sie sich eine Schritt für Schritt Anleitung wünscht.
+Sie googelt "_catering aufmachen schweiz_", da sie sich eine Schritt-für- Schritt-Anleitung wünscht.
 Sie möchte durch den Prozess der Unternehmensgründung geführt werden. 
 Bei der Suche erfährt sie, dass die Punkte Bewilligungen, Finanzierung, Ressourcenplanung und Beschaffung besonders wichtig sind. 
 Sie landet bei *“GastroStart”* und erfährt in der kurzen Einführung auf der Startseite, dass dieses Portal sie bei all dem unterstützen kann. 
@@ -24,11 +24,11 @@ Sie ist erleichtert und registriert sich.
 #frage([12.09.2026 - können wir das nächste bild weglassen?!? ])
 
 /* #figure(
-  image("../assets/Customer Journey View.svg", width: 100%),
-  caption: [Archimate Modell der Customer Journey von Amira und erste Iteration für die Identifikation der Geschäftsobjekte]
+  image("../assets/Customer-Journey View.svg", width: 100%),
+  caption: [Archimate Modell der Customer-Journey von Amira und erste Iteration für die Identifikation der Geschäftsobjekte]
 ) <fig-customer-journey-view>
 */
-In enger Verbindung mit der Customer Journey wird die Persona „Amira“ erarbeitet. Sie dient dazu, unsere Endkundin konkret greifbar und emotional verankert zu machen. Die Bedürfnisse und Kontexte von Amira bilden den zentralen Ausgangspunkt für die Modellierung des Produkts "GastroStart".
+In enger Verbindung mit der Customer-Journey wird die Persona „Amira“ erarbeitet. Sie dient dazu, unsere Endkundin konkret greifbar und emotional verankert zu machen. Die Bedürfnisse und Kontexte von Amira bilden den zentralen Ausgangspunkt für die Modellierung des Produkts "GastroStart".
 
 
 #figure(
@@ -63,7 +63,7 @@ In enger Verbindung mit der Customer Journey wird die Persona „Amira“ erarbe
 ) <persona-amira>
 
 #design-entscheid([
-  Bei der *Wahl der Customer Journey* haben wir folgende Alternativen in Betracht gezogen: 
+  Bei der *Wahl der Customer-Journey* haben wir folgende Alternativen in Betracht gezogen: 
   
   B2B (Onboarding bestehender Transgourmet-Kunden), EatSwiss (digitale Herkunftsplattform), PublicPlate (Beschaffungsplattform für Gemeinschaftsverpflegung) und B2Startup (Marktpotential-Check vor der Gründung).
 
@@ -72,11 +72,11 @@ In enger Verbindung mit der Customer Journey wird die Persona „Amira“ erarbe
   Eine nachvollziehbare und realistische Persona (Amira), eine in sich konsistente, in Szenarien abbildbare Journey, eine sinnvolle Rolle für jeden Partner des Joint Ventures sowie eine im Rahmen der Arbeit beherrschbare Modellierungskomplexität.
 ])
 
-== Szenarien als Teilgeschichten aus der Customer Journey <sec-szenarien-customer-journey>
+== Szenarien als Teilgeschichten aus der Customer-Journey <sec-szenarien-customer-journey>
 
 /*Übung vom 18.05.2026
 Identifizieren Sie zwei bis drei Szenarien zu Ihrem Unternehmen, wenn möglich mit 
-Bezug zur Customer Journey. (Skizze)
+Bezug zur Customer-Journey. (Skizze)
 3. Darstellen der wesentlichsten Geschäftsobjekte und Geschäftsprozesse mit Bezug zu 
 den Szenarien. (Skizze)
 */
@@ -86,7 +86,7 @@ den Szenarien. (Skizze)
 #fuehrung([Als Standardszenarien wird eine möglichst kleine Anzahl von Geschichten gewählt, die die darzustellende Funktionalität möglichst vollständig umfasst. Irrelevantes soll weggelassen werden, damit die Geschichten auch möglichst kurz bleiben. @Spichiger2026GFbUA[S. 70]])
 
 
-Wir haben bei der Modellierung der Customer Journey festgestellt, dass sich Amiras Weg nicht in starre Phasen einteilen lässt. Stattdessen verstehen wir ihn als eine Abfolge von Szenarien: narrative Ausschnitte aus einer Story Map, die eine Outside-In-Perspektive beschreiben. Den Schnitt zwischen den Szenarien haben wir entlang Amiras Wahrnehmung und der Veränderung ihrer Emotionen gelegt. Erfolg oder Misserfolg auf ihrer Reise durch das Portal entscheidet sich an diesen Schnittstellen.
+Wir haben bei der Modellierung der Customer-Journey festgestellt, dass sich Amiras Weg nicht in starre Phasen einteilen lässt. Stattdessen verstehen wir ihn als eine Abfolge von Szenarien: narrative Ausschnitte aus einer Story Map, die eine Outside-In-Perspektive beschreiben. Den Schnitt zwischen den Szenarien haben wir entlang Amiras Wahrnehmung und der Veränderung ihrer Emotionen gelegt. Erfolg oder Misserfolg auf ihrer Reise durch das Portal entscheidet sich an diesen Schnittstellen.
 
 In den folgenden Kapiteln gehen wir auf eine Auswahl dieser Szenarien ein, je eines pro Partei im Joint-Venture. Jedes Szenario ist in einzelne Touchpoints zerlegt: Sie halten fest, was Amira tut, mit welchem System sie interagiert, in welchem emotionalen Zustand sie sich befindet, und wo die aktuelle oder die Ziel-Architektur Reibung oder Chancen erzeugt.
 
@@ -104,20 +104,20 @@ Der Eintritt in das jeweilige Szenario ist eine *Aktion* der GründerInnen.
 Über *Touchpoints* treten sie mit unserem Produkt in Verbindung.
 Die *Aktion* wird ausgelöst durch einen *Gedanken* oder ein *Bedürfnis*.
 Jede Phase kann die GründerInnen mit *Painpoints* konfrontieren, die zum Abbruch der Produktnutzung führen können.
-Und schliesslich bietet jede Phase *Chancen*, die die *Bedürnisse* befriedigen und zur Weiternutzung einladen.
+Und schliesslich bietet jede Phase *Chancen*, die die *Bedürfnisse* befriedigen und zur Weiternutzung einladen.
 
 
 === Amira orientiert sich <head-scenarios-orientation>
 /*
 #autor-dvbern("Beitrag von Jan Sohnemann, DV Bern", inhalt: [])*/
 
-Unser Angebot soll sich insbesondere an jede GründerInnen richten, die noch keine Erfahrung mit Unternehmensgründungen haben.
-Und wir gehen davon aus, dass viele Betroffene schon eine konkrete Idee dessen haben, was sie Anbieten möchten.
+Unser Angebot soll sich insbesondere an jene GründerInnen richten, die noch keine Erfahrung mit Unternehmensgründungen haben.
+Und wir gehen davon aus, dass viele Betroffene schon eine konkrete Idee dessen haben, was sie anbieten möchten.
 Unsere GründerInnen sollen sich auf eben diese Idee fokussieren können und sich nicht mit den Details einer Unternehmensgründung herumschlagen müssen.
-Entsprechend gehen wir davon aus, dass sie bei ihrer initialen Recherche ihr Vorhaben mehr oder weniger Konkret beschreiben können.
+Entsprechend gehen wir davon aus, dass sie bei ihrer initialen Recherche ihr Vorhaben mehr oder weniger konkret beschreiben können.
 Weniger konkret dagegen können sie die Details zur Umsetzung benennen - jedenfalls gehen wir davon aus. 
 Ihr Suchtext würde also wahrscheinlich die geplante Unternehmensart enthalten, zum Beispiel "Catering" oder "Familien-Café", anstelle von "Gastronomie".
-Weniger wahrscheinlich ist, dass die, zur Betriebsbewilligung notwendigen Details bereits bekannt sind.
+Weniger wahrscheinlich ist, dass die zur Betriebsbewilligung notwendigen Details bereits bekannt sind.
 Zum Beispiel ist der Ort der Betriebsstätte auch auf nationaler Ebene sehr von Bedeutung, da es kantonale Unterschiede bei den Bewilligungsverfahren und bei der Regulierung gibt.
 Das Ausarbeiten der Details des Gründungsvorhabens nennen wir "Orientierung".
 
@@ -154,9 +154,9 @@ Die folgende Tabelle fasst die wesentlichen Merkmale dieser Phase der Customer-J
 
       [Aktion],
       [
-        Amira started eine Web-Suche mit den Begriffen "Gründung", "Catering", "Schweiz", "Vorgehen".
+        Amira startet eine Web-Suche mit den Begriffen "Gründung", "Catering", "Schweiz", "Vorgehen".
         Ihre Suche führt sie schnell zur Landingpage von GastroStart.
-        Sie wird gebeten den Kanton für das Gründungsvorhaben aus einer Liste auszuwählen.
+        Sie wird gebeten, den Kanton für das Gründungsvorhaben aus einer Liste auszuwählen.
         Sie wählt aus und bestätigt die Eingabe.
       ],
 
@@ -182,11 +182,12 @@ Die folgende Tabelle fasst die wesentlichen Merkmale dieser Phase der Customer-J
 
 Im Anschluss an die Orientierung sollte eine Registrierung erfolgen. 
 Das Ziel der Registrierung ist es, das Gründungsvorhaben auf der Plattform mit einem Konto zu verknüpfen, sodass es gespeichert, den Erstellenden exklusiv zugänglich gemacht und zu einem späteren Zeitpunkt weitergeführt werden kann.
-Dies ist ein notwendiges Übel, das alle Benutzenden hinnehmen müssen und die wenigsten verstehen vermutlich den Zweck und Nutzen dieses Vorgangs.
-Die Gefahr eines Abbruchs der Produktnutzung stufen wir als hoch ein, es ist also wichtig den Benutzenden im Vorfeld zu vermitteln, dass eine Nutzung ohne Kundenkonto von hier an nicht mehr möglich ist und dass sie davon profitieren.
+Dies ist ein notwendiges Übel, das alle Benutzenden hinnehmen müssen, und die wenigsten verstehen vermutlich den Zweck und Nutzen dieses Vorgangs.
+Die Gefahr eines Abbruchs der Produktnutzung stufen wir als hoch ein.
+Es ist also wichtig, den Benutzenden im Vorfeld zu vermitteln, dass eine Nutzung ohne Kundenkonto von hier an nicht mehr möglich ist und dass sie davon profitieren.
 Wenn die Orientierungsphase erfolgreich war und das auslösende Bedürfnis befriedigt wurde, ist die Chance gross, dass die Benutzenden hier fortfahren.
 
-Die folgende  @fig-customer-journey-registrierung zeigt einen den Teil des Szenarios als Modell in Archimate, der die Registrierung auslöst.
+Die folgende  @fig-customer-journey-registrierung zeigt den Teil des Szenarios als Modell in Archimate, der die Registrierung auslöst.
 An dieser Stelle des Entwicklungsprozesses war die Bedeutung der Phase "Orientierung" noch nicht ersichtlich.
 Tatsächlich verbirgt sich dahinter ein komplexerer Prozess, den wir - nach der kurzen Einführung im letzten Kapitel - in späteren Kapiteln nochmals detaillierter aufgreifen.
 
@@ -201,7 +202,7 @@ Die folgende Tabelle fasst die wesentlichen Merkmale dieser Phase der Customer-J
 /*Wir wiederholen den Aufbau an dieser Stelle und in den Folgenden Kapiteln nicht erneut und verweisen auf @head-scenarios-orientation.*/
 
 #figure(
-  caption: [Szenario "Amira Registriert sich"],
+  caption: [Szenario "Amira registriert sich"],
   block(
     width: 100%,
     radius: 6pt,
@@ -239,7 +240,7 @@ Die folgende Tabelle fasst die wesentlichen Merkmale dieser Phase der Customer-J
       [Dauerhaftes Speichern des aktuellen Fortschritts.],
 
       [Pain Point],
-      [Unterbrechung des Beratungsprozesses, Medienbruch (E-Mail, Smartphone, Passwormanager)],
+      [Unterbrechung des Beratungsprozesses, Medienbruch (E-Mail, Smartphone, Passwortmanager)],
 
       [Chance],
       [Gründungsvorhaben und Fortschritt sind nun dauerhaft gespeichert und können exklusiv verwaltet werden.],
@@ -251,8 +252,8 @@ Die folgende Tabelle fasst die wesentlichen Merkmale dieser Phase der Customer-J
 
 Mit der Registrierung können die Benutzer auf den digitalen Begleiter für die Gründung des Unternehmens zugreifen. 
 Aufgrund der Informationen aus der Orientierung können die Benutzer durch Anweisungen, Empfehlungen und vorgefertigte Texte geführt werden. 
-Dadurch sind sie in der Lage, ohne teure Beratung selber die Unterlagen für die gewünschte Firmengründung zusammenstellen oder gar zu erstellen.
-Durch die enge Begleitung und das Abnehmen von einfachen Aufgaben und die Erfolgserfahrung mit der Anzeige des Fortschrittes können die Kunden bestärkt werden und zum Abschluss des komplizierten Prozesses motiviert werden. 
+Dadurch sind sie in der Lage, ohne teure Beratung selber die Unterlagen für die gewünschte Firmengründung zusammenzustellen oder gar zu erstellen.
+Durch die enge Begleitung, das Abnehmen einfacher Aufgaben und die Erfolgserfahrung mit der Anzeige des Fortschrittes können die Kunden bestärkt und zum Abschluss des komplizierten Prozesses motiviert werden.
 Da die Benutzer bereits seit der Orientierung wissen, dass am gewünschten Standort mit einem Medienbruch zu rechnen ist, stufen wir die Wahrscheinlichkeit eines Abbruches als tief ein - auch weil die Unterlagen in digitaler Form praktisch in jedem Kanton einem Notar direkt zugestellt werden können. 
 Die jeweilige Kanzlei übernimmt den Medienbruch auf Papier. 
 
@@ -319,10 +320,10 @@ Die jeweilige Kanzlei übernimmt den Medienbruch auf Papier.
 
 Auf GastroStart können die GründerInnen die notwendigen Schritte in Erfahrung bringen, um für ihr Unternehmen und Lokal eine Betriebsbewilligung zu erhalten. 
 Ähnlich wie bei der Unternehmensgründung liefert das System eine Übersicht der Informationen, Dokumente und Ausweise, die für den Erhalt der Bewilligung notwendig sind. 
-Diese Angaben entsprechen den Vorschriften, die am Standort des geplanten Betriebs gelten und erklären den Sinn hinter den Vorgaben. 
-Der Mehrwert des Systems liegt in der Begleitung des Ablaufs, in der Plausibilisierung der gelieferten Angaben und Dokumente anhand der geltenden Vorgaben und Sicherheitsrichtlinien und bei den schnellen Rückmeldungen, falls der Benutzer ungenügende Informationen liefert. 
+Diese Angaben entsprechen den Vorschriften, die am Standort des geplanten Betriebs gelten, und erklären den Sinn hinter den Vorgaben. 
+Der Mehrwert des Systems liegt in der Begleitung des Ablaufs, in der Plausibilisierung der gelieferten Angaben und Dokumente anhand der geltenden Vorgaben und Sicherheitsrichtlinien und in den schnellen Rückmeldungen, falls der Benutzer ungenügende Informationen liefert. 
 
-Die massgeschneiderten und detaillierten Erklärungen zum einzuhaltenden Ablauf geben den GründerInnen Halt im holprigen, teils mehrspurigen und oftmals analogen Prozess und wirken motivierend auf dem erfolgreichen Abschluss des Szenarios hin. 
+Die massgeschneiderten und detaillierten Erklärungen zum einzuhaltenden Ablauf geben den GründerInnen Halt im holprigen, teils mehrspurigen und oftmals analogen Prozess und wirken motivierend auf den erfolgreichen Abschluss des Szenarios hin. 
 
  #figure(
   image("../assets/cj_vertraege.svg", width: 100%),
@@ -333,7 +334,7 @@ Die massgeschneiderten und detaillierten Erklärungen zum einzuhaltenden Ablauf 
 
 
 #figure(
-  caption: [Szenario "Amira gründet ihr Unternehmen"],
+  caption: [Szenario "Amira erhält die Bewilligung"],
   block(
     width: 100%,
     radius: 6pt,
@@ -381,13 +382,13 @@ Die massgeschneiderten und detaillierten Erklärungen zum einzuhaltenden Ablauf 
       [Integrierte Anleitung für jeden Kanton; Status-Tracking; expliziter Fallback auf Papier, Unterstützung bei der Herstellung von Selbstdeklarationen.],
     )
   ]
-) <tbl-szenario-unternhemen-gründen>
+) <tbl-szenario-bewilligung-erhalten>
 
 === Amira erhält eine Finanzierung
 
 Mit der beantragten Betriebsbewilligung rückt eine Frage in den Vordergrund, die sich bis dahin aufschieben liess: Küchengeräte, Mobiliar, Fahrzeug und die erste Warenlieferung müssen bezahlt sein, bevor Amira ihren Betrieb aufnehmen kann.
 Wir gehen davon aus, dass unsere GründerInnen die Grössenordnung ihres Kapitalbedarfs durchaus benennen können, nicht aber, welche Unterlagen eine Bank dafür sehen will und nach welchen Kriterien ihre Kreditwürdigkeit beurteilt wird.
-Die Finanzierung ist damit die Phase, in der das Gründungsvorhaben zum ersten Mal von aussen bewertet wird -- und aus unserer Sicht diejenige mit dem höchsten Abbruchrisiko der gesamten Customer Journey.
+Die Finanzierung ist damit die Phase, in der das Gründungsvorhaben zum ersten Mal von aussen bewertet wird -- und aus unserer Sicht diejenige mit dem höchsten Abbruchrisiko der gesamten Customer-Journey.
 Eine Absage ohne Begründung beendet das Vorhaben faktisch, weil die Betroffenen weder wissen, was sie am Gesuch ändern müssten, noch welche Alternativen ihnen offenstehen.
 Genau hier liegt der Beitrag des Finanzierungspartners FINNOFLEET: Bonitätsprüfung, Kreditentscheid und Kontobereitstellung werden nicht als separates Bankportal angeboten, sondern als Dienste im Hintergrund in die Journey eingebunden.
 Amira erfasst ihr Finanzierungsgesuch dort, wo sie ihr Vorhaben ohnehin bereits verwaltet, erhält einen in verständlicher Sprache begründeten Entscheid und -- im positiven Fall -- mit der IBAN unmittelbar die Grundlage für den späteren Zahlungsverkehr mit Behörden und Lieferanten.
@@ -453,7 +454,7 @@ Die folgende Tabelle fasst die wesentlichen Merkmale dieser Phase der Customer-J
 // einkommentieren:
 // #figure(
 //   image("../assets/SZ_Finanzierung.svg", width: 100%),
-//   caption: [Archimate Modell der Customer Journey von Amira]
+//   caption: [Archimate Modell der Customer-Journey von Amira]
 // ) <fig-szenario-finanzierung-cj>
 
 === Amira wird Kunde bei Transgourmet
@@ -527,10 +528,10 @@ GastroStart ist ein fiktives Portal, das Gründerinnen und Gründer im Gastgewer
 
 GastroStart erlaubt es seinen Kunden schweizweit, schnell und ohne langwierige Behördengänge zu einem startbereiten Gastronomieunternehmen zu kommen - ganz unabhängig vom Herkunftskanton.
 
-Weitere Dienstleistungen, im Rahmen der Customer Journey nicht berührt, wären unter anderem Funktionen zur Unterstützung des operativen Betriebs eines Gastrounternehmens: Überwachung von Zahlungsfälligkeiten oder ein Einkaufsplanungsmodul. Darüber hinaus könnten über GastroStart auch Betriebsübergaben und -liquidationen unterstützt werden.
+Weitere Dienstleistungen, im Rahmen der Customer-Journey nicht berührt, wären unter anderem Funktionen zur Unterstützung des operativen Betriebs eines Gastrounternehmens: Überwachung von Zahlungsfälligkeiten oder ein Einkaufsplanungsmodul. Darüber hinaus könnten über GastroStart auch Betriebsübergaben und -liquidationen unterstützt werden.
 
 #design-entscheid[
-Entsprechend der gewählten Customer Journey haben wir uns entschieden, nur das Onboarding von Neukunden abzubilden. Die Firmengründung steht im Fokus.
+Entsprechend der gewählten Customer-Journey haben wir uns entschieden, nur das Onboarding von Neukunden abzubilden. Die Firmengründung steht im Fokus.
 ]
 
 == Die Rollen der beteiligten Unternehmen im Joint Venture
@@ -543,7 +544,7 @@ Für das Produkt GastroStart liefert DV Bern Software und Infrastruktur für das
 Das Portal wird im Folgenden auch als "Plattform" bezeichnet.
 Das Produkt als Ganzes, inklusive aller fachlichen Aspekte, wird, wenn nicht explizit als GastroStart benannt, auch als "System" bezeichnet.
 
-Für die fünf Phasen der Customer Journey: Orientierung, Registrierung, Bewilligung, Finanzierung, erster Einkauf - sind die einzelnen Beiträge seitens DV Bern wie folgt beschrieben.
+Für die fünf Phasen der Customer-Journey: Orientierung, Registrierung, Bewilligung, Finanzierung, erster Einkauf - sind die einzelnen Beiträge seitens DV Bern wie folgt beschrieben.
 
 
 
@@ -555,28 +556,29 @@ Die GastroStart-Benutzer brauchen also eine Möglichkeit, den sie betreffenden K
 Die Kantone brauchen eine Möglichkeit, Abweichungen in ihrem Regelwerk, die sich z. B. durch Gesetzesänderungen ergeben, im System zu ändern.
 
 ==== Registrierung
-Die Registrierung erfordert, dass jeder Benutzer sich ein Profil im System erstellt, mit dem sie ihre Gründungsprozesse speichern, einsehen und verwalten können.
+Die Registrierung erfordert, dass jeder Benutzer sich ein Profil im System erstellt, mit dem er seine Gründungsprozesse speichern, einsehen und verwalten kann.
 Das System muss sicherstellen, dass jeder Benutzer authentifiziert und autorisiert und jeder Gründungsprozess mit genau einem Benutzerprofil verknüpft wird.
 
 ==== Bewilligung<sec-rolle-dv-bern-bewilligung>
 
 Die Bewilligung erfordert Möglichkeiten, den für die Betriebsgründung notwendigen Behörden alle benötigten Daten zur Verfügung stellen zu können.
 Das beinhaltet das Anbinden externer APIs, wenn vorhanden, oder Darstellung und Verwaltung der entsprechenden Dokumente, sowie Übertragungs- und Speichermöglichkeiten für diese.
-Zudem soll den Benutzern der Status der einzelnen Schritte angezeigt (z.B. offen, bearbeitet, eingereicht, bewilligt), sowie ein Benachrichtigungssystem für die Kommunikation der Beteiligten untereinander, sowie von Statusupdates implementiert werden.
+Zudem soll den Benutzern der Status der einzelnen Schritte angezeigt werden (z.B. offen, bearbeitet, eingereicht, bewilligt); ausserdem soll sowie ein Benachrichtigungssystem für die Kommunikation der Beteiligten untereinander sowie für Statusupdates implementiert werden.
 
 ==== Finanzierung
 Die Finanzierung erfolgt in vielen Fällen kreditbasiert.
-Dazu wird den Benutzern ein Interface zur Auswahl ihrer bevorzugten Bank angezeigt, sowie die Schnittstelle zur Bonitätsprüfung an FINNOFLEET implementiert.
+Dazu wird den Benutzern ein Interface zur Auswahl ihrer bevorzugten Bank angezeigt und die Schnittstelle zur Bonitätsprüfung an FINNOFLEET implementiert.
 
 ==== Erster Einkauf
 Voraussetzung für die Bestellung bei Transgourmet ist ein Kundenkonto, welches über das Portal angelegt werden kann.
-Ebenfalls kann der Warenkatalog und die Bestellung über das Portal durchgeführt werden.
+/*Ebenfalls kann der Warenkatalog und die Bestellung über das Portal durchgeführt werden.*/ 
+Ebenfalls können die Einsicht in den Warenkatalog und die Bestellung über das Portal erfolgen.
 Die dafür notwendigen Schnittstellen stellt Transgourmet zur Verfügung.
 Die Aufgabe von DV Bern wird es sein, diese in die Benutzerschnittstelle des Portals zu integrieren.
 
 ==== Zusammenfassung
-DV Bern ist an der Implementierung jeder der fünf Phasen der Customer Journey: Orientierung, Registrierung, Bewilligung, Finanzierung, erster Einkauf - nicht nur massgeblich mitbeteiligt, sondern bildet das technische Fundament der Plattform und ihrer Integrationsmöglichkeiten über alle Phasen hinweg. Dabei nimmt das Unternehmen die Rolle einer Beraterin ein, welche die technischen Realisierungsmöglichkeiten der fachlichen Fragestellungen erarbeitet, die sich aus dem Joint Venture ergeben.
-Wir betrachten im Folgenden das ressourcenunabhängige Modell für jede der fünf Phasen der Customer Journey individuell.
+DV Bern ist an der Implementierung jeder der fünf Phasen der Customer-Journey: Orientierung, Registrierung, Bewilligung, Finanzierung, erster Einkauf - nicht nur massgeblich mitbeteiligt, sondern bildet das technische Fundament der Plattform und ihrer Integrationsmöglichkeiten über alle Phasen hinweg. Dabei nimmt das Unternehmen die Rolle einer Beraterin ein, welche die technischen Realisierungsmöglichkeiten der fachlichen Fragestellungen erarbeitet, die sich aus dem Joint Venture ergeben.
+Wir betrachten im Folgenden das ressourcenunabhängige Modell für jede der fünf Phasen der Customer-Journey individuell.
 
 === FINNOFLEET
 FINNOFLEET bringt in das Joint Venture das ein, was es täglich tut: die *Finanzierung*.
@@ -594,12 +596,13 @@ Diese Leistungen werden nicht als eigenständiges Portal, sondern als *API-Diens
 
 Als letzter Player im Joint Venture bringt Transgourmet die *Lieferfähigkeit* ein. 
 Als führender Schweizer Grosshändler für Gastronomie und Hotellerie ist Transgourmet der Partner, der Amira nach der Gründung ihres Unternehmens mit den notwendigen Lebensmitteln und Zutaten beliefert. 
-Die Eröffnung eines Kundenkontos bei Transgourmet ist die letzte Phase der Customer Journey und steht am Übergang von der Gründungsphase in den operativen Betrieb. 
+Die Eröffnung eines Kundenkontos bei Transgourmet ist die letzte Phase der Customer-Journey und steht am Übergang von der Gründungsphase in den operativen Betrieb. 
 
 === Öffentliche Verwaltung als Interoperabilitätspartner<sec-rolle-interoperabilitätspartner>
-Aus Sicht von Amira und somit auch von GastroStart wird die öffentliche Verwaltung - ohne besondere Rücksicht ob Bundes, Kantons- oder Gemeindeebene - in ihrer Rolle als Interoperabilitätspartner abgebildet und behandelt.
-Dies, weil die öffentliche Hand ihre hoheitlichen Handlungen nicht im Sinne eines wirtschaftlichen Angebots wie die anderen Mitglieder der Joint Venture zur Verfügung stellt. Auch ist es nicht im Sinne der Schweizer Rechtstradition, private Unternehmen mit der Vergabe von hoheitlichen Akten zu betrauen.
-Aus diesen Gründen sind jene Teile der Customer Journey, wofür der Staat verantwortlich ist - bspw. der Eintrag im Handelsregister oder die Erteilung einer Betriebsbewilligung - und die Fähigkeit, diese zu vollziehen, ausserhalb des Wirkungsbereichs des Joint Ventures anzusiedeln. 
+Aus Sicht von Amira und somit auch von GastroStart wird die öffentliche Verwaltung — unabhängig davon, ob Bundes-, Kantons- oder Gemeindeebene — in ihrer Rolle als Interoperabilitätspartner abgebildet und behandelt.
+Dies, weil die öffentliche Hand ihre hoheitlichen Handlungen nicht im Sinne eines wirtschaftlichen Angebots wie die anderen Mitglieder des Joint Ventures zur Verfügung stellt. 
+Auch ist es nicht im Sinne der Schweizer Rechtstradition, private Unternehmen mit der Vergabe von hoheitlichen Akten zu betrauen.
+Aus diesen Gründen sind jene Teile der Customer-Journey, für die der Staat verantwortlich ist - bspw. der Eintrag im Handelsregister oder die Erteilung einer Betriebsbewilligung - und die Fähigkeit, diese zu vollziehen, ausserhalb des Wirkungsbereichs des Joint Ventures anzusiedeln. 
 /*Auf der anderen Seite bildet GastroStart eine spezialisierte Schnittstelle für die Vorbereitung hin auf diesen Akten. */
 
 

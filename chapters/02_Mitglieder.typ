@@ -30,7 +30,7 @@ Das Herzstück des Erfolgs bildet ein dichtes Netzwerk: Mit 31 modernen Prodega-
 Rund 2'100 Mitarbeitende sorgen dafür, dass diese Leistung nicht nur im Hintergrund läuft, sondern durch echtes Engagement direkt sichtbar wird.
 Vom frischen Produkt bis zur innovativen Convenience-Lösung deckt das Sortiment die Bedürfnisse der Branche ab.
 
-Das Unternehmen ist darauf ausgerichtet, die Herausforderungen der Branche zu meistern und dabei stets den Anspruch an Qualität und Verlässlichkeit zu wahren, auf den sein Ruf basiert.
+Das Unternehmen ist darauf ausgerichtet, die Herausforderungen der Branche zu meistern und dabei stets den Anspruch an Qualität und Verlässlichkeit zu wahren, auf dem sein Ruf basiert.
 
 === Herausforderungen in der Enterprise-Architektur
 
@@ -60,7 +60,7 @@ Eine API-First-Strategie und API-Gateways ermöglichen die sichere Integration i
 In der Datenarchitektur stehen Datenhoheit, Sicherheit und die Einhaltung des Schweizer Datenschutzgesetzes im Zentrum. 
 Dazu gehören getrennte Datenbestände, eine zwingende Datenhaltung in der Schweiz und offene Austauschstandards wie XML, JSON-Schema und eCH.
 Technologisch verbindet DV Bern eigene Rechenzentren und sicherheitskritische On-Premise-Systeme mit containerisierten Cloud-Umgebungen auf Basis von Kubernetes. 
-Security by Design, Identity and Access Management, Verschlüsselung, Audits sowie automatisierte CI/CD-Pipelines sichern Betrieb und schnelle Release-Zyklen. 
+Security by Design, Identity and Access Management, Verschlüsselung, Audits sowie automatisierte CI/CD-Pipelines sichern den Betrieb und schnelle Release-Zyklen. 
 Die Enterprise Architecture ist dezentral und kollaborativ organisiert: 
 Beratende Architektur-Boards definieren Leitplanken, während praxisnahe „Working Architects“ eng mit den Scrum-Teams zusammenarbeiten. 
 Insgesamt verbindet die Architektur Stabilität, Sicherheit und Compliance des öffentlichen Sektors mit der Agilität eines modernen Softwarehauses und schafft damit die Grundlage für effiziente, wartbare und langfristig betreibbare Lösungen.
@@ -101,22 +101,23 @@ Der Reifegrad ist damit auf Produkt- und Entscheidebene hoch, auf Portfolioebene
 
 Bund, Kantone und Gemeinden in der Schweiz orientieren sich für ihre Organisation am Departementalprinzip — an der Gliederung der Verwaltung in eigenständig verantwortete Departemente (Bund) beziehungsweise Direktionen (Kanton) oder Ressorts (Gemeindeebene).
 
-Diese organisatorische Eigenschaft führt dazu, dass auf jede Staatsebene eine Art interne Föderation besteht: Die Kernaufgaben werden dabei dezentral verantwortet und wahrgenommen.
+Diese organisatorische Eigenschaft führt dazu, dass auf jeder Staatsebene eine Art interne Föderation besteht: Die Kernaufgaben werden dabei dezentral verantwortet und wahrgenommen.
  Leistungen mit Grundcharakter wie beispielsweise Logistik oder Infrastruktur werden gemeinsam genutzt. 
 
-Auf dieser Ausgangslage zur Organisation der Verwaltung basieren die folgenden Überlegungen zur angewendeten Unternehmensarchitektur auf Bundesebene. Es wird angenommen, dass die beschriebenen Mechanismen weitgehend auch auf kantonale Ebene übertragen werden können.
+Auf dieser Ausgangslage zur Organisation der Verwaltung basieren die folgenden Überlegungen zur angewendeten Unternehmensarchitektur auf Bundesebene. Es wird angenommen, dass die beschriebenen Mechanismen weitgehend auch auf die kantonale Ebene übertragen werden können.
 
 === Unternehmensarchitektur auf Bundesebene
 Die Unternehmensarchitektur auf Bundesebene wird je nach Aufgabentyp unterschiedlich gelebt - und ist auch unterschiedlich bindend. 
 Wer für die Governance zuständig ist und wie sich diese auf die Bundesverwaltung auswirkt, ist je nach Fall unterschiedlich. 
 Die Entwicklung der Bundesarchitektur geschieht in einem föderalen Ansatz je nach Aufgabentyp durch den Bereich Digitale Transformation und IKT-Lenkung der Bundeskanzlei (DTI), die Departemente, Ämter und Leistungserbringer @bk_unternehmensarchitektur_bund: 
-+ die Unternehmensarchitektur für die jeweiligen *Kernaufgabenbereiche* wird von den Departementen und Verwaltungseinheiten dezentral entwickelt und ist nur für die betroffene Organisationseinheiten verbindlich. Die 
++ Die Unternehmensarchitektur für die jeweiligen *Kernaufgabenbereiche* wird von den Departementen und Verwaltungseinheiten dezentral entwickelt und ist nur für die betroffenen Organisationseinheiten verbindlich. 
 + Bundesämter mit *übergreifenden Aufgaben* definieren und koordinieren die Unternehmensarchitektur für die übergreifenden Aspekte in ihrem Verantwortungsbereich - diese ist dann für die restliche Bundesverwaltung _verbindlich_.
-+ die Unternehmensarchitektur der bundesweiten *aufgabenneutralen IKT-Grundleistungen* - soweit diese von der Mehrheit der Departemente benötigt werden - fällt in der Verantwortung des Bereichs DTI. Dabei gibt es zwei Governance-Mechanismen:
-  - das Architekturboard Bund, bei dem alle Departemente und interne Erbringer von IKT-Leistungen vertreten sind, dient der gegenseitigen Abstimmung der Architekturen und der Methoden sowie der Bestimmung der Hilfsmittel zu deren Erstellung @bk_unternehmensarchitektur_bund.
-  - Der Bereich DTI ist als einziger Akteur befugt, bundesweit verbindliche Vorgaben und Standards zu erlassen, im Bereich der sogenannten aufgabenneutralen IKT-Grundleistungen (Standarddienste) — und dies nur, soweit diese von der Mehrheit der Departemente benötigt werden @bk_unternehmensarchitektur_bund.
++ Die Unternehmensarchitektur der bundesweiten *aufgabenneutralen IKT-Grundleistungen* - soweit diese von der Mehrheit der Departemente benötigt werden - fällt in die Verantwortung des Bereichs DTI. Dabei gibt es zwei Governance-Mechanismen:
+  - Das Architekturboard Bund, bei dem alle Departemente und interne Erbringer von IKT-Leistungen vertreten sind, dient der gegenseitigen Abstimmung der Architekturen und der Methoden sowie der Bestimmung der Hilfsmittel zu deren Erstellung @bk_unternehmensarchitektur_bund.
+  
+  - Der Bereich DTI ist als einziger Akteur befugt, im Bereich der sogenannten aufgabenneutralen IKT-Grundleistungen (Standarddienste) bundesweit verbindliche Vorgaben und Standards zu erlassen — und dies nur, soweit diese von der Mehrheit der Departemente benötigt werden @bk_unternehmensarchitektur_bund.
 
-Die folgende @fig-informatik-bund stellt in etwa die Verhältnisse zwischen den verschiedenen Typen von Aufgaben:
+Die folgende @fig-informatik-bund stellt in etwa die Verhältnisse zwischen den verschiedenen Typen von Aufgaben dar:
 
  #figure(
   image("../assets/informatikBund.png", width: 100%),
