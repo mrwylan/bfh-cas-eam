@@ -1,4 +1,4 @@
-= Die Rolle von DV Bern im Joint Venture
+= Die Rolle von DV Bern im Joint-Venture
 
 Für das Produkt GastroStart liefert DV Bern Software und Infrastruktur für das Web-Portal, inklusive implementierung der Regelmatrix, Profilmanagement und Schnittstellen für z. B. kantonale Dienste oder die Bonitätsprüfung via FINNOFLEET. 
 Das Portal wird im Folgenden auch als "Plattform" bezeichnet. 
@@ -32,5 +32,5 @@ Die dafür notwendigen Schnittstellen stellt Transgourmet zur Verfügung.
 Die Aufgabe von DV Bern wird es sein, diese in die Benutzerschnittstelle des Portal zu integrieren.
 
 == Zusammenfassung
-DV Bern ist an der Implementierung jeder der fünf Phasen der Customer Journey: Orientierung, Registrierung, Bewilligung, Finanzierung, erster Einkauf - nicht nur massgeblich mitbeteiligt, sondern bildet das technische Fundament der Plattform und ihrer Integrationsmöglichkeiten über alle Phasen hinweg. Dabei nimmt das Unternehmen die Rolle einer Beraterin ein, welche die technischen Realisierungmöglichkeiten der fachlichen Fragestellungen erarbeitet, die sich aus dem Joint Venture ergeben.
+DV Bern ist an der Implementierung jeder der fünf Phasen der Customer Journey: Orientierung, Registrierung, Bewilligung, Finanzierung, erster Einkauf - nicht nur massgeblich mitbeteiligt, sondern bildet das technische Fundament der Plattform und ihrer Integrationsmöglichkeiten über alle Phasen hinweg. Dabei nimmt das Unternehmen die Rolle einer Beraterin ein, welche die technischen Realisierungmöglichkeiten der fachlichen Fragestellungen erarbeitet, die sich aus dem Joint-Venture ergeben.
 Wir betrachten im Folgenden das ressourcenunabhängige Modell für jede der fünf Phasen der Customer Journey individuell.
