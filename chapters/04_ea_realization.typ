@@ -1461,97 +1461,94 @@ Zwei Stimmen aus der Welt der Gastronomie geben einen Einblick in die Schmerzpun
   [Interview mit H.M., Berater und Gastroplaner]),
 )
 
-==== Anforderungen an die Schnittstelle zum öffentlichen Wesen
+==== Anforderungen an die Interoperabilität mit dem öffentlichen Wesen
 
-Könnte sich GastroStart für seine GründerInnen eine Schnittstelle für die Abwicklung von Bewilligungen wünschen, so müsste diese folgende Anforderungen erfüllen:
+Könnte sich GastroStart für seine GründerInnen eine Schnittstelle für die Abwicklung von Bewilligungen wünschen, so müsste diese folgende grobe Anforderungen, oder gar Prinzipien erfüllen:
 #pagebreak()
-#figure(
-    caption: [Anforderungen an die Behördenschnittstelle],
-block(
-width: 100%,
-radius: 6pt,
-clip: true,
-stroke: 0.5pt + luma(225),
-)[
-#set par(justify: false)
- 
-#table(
-columns: (4cm, 1fr),
-inset: (x: 10pt, y: 7pt),
-stroke: (x: none, y: 0.5pt + luma(232)),
-align: (left, left),
- 
-table.cell(fill: luma(135))[
-#text(fill: white, weight: "bold")[Kategorie]
-],
-table.cell(fill: luma(135))[
-#text(fill: white, weight: "bold")[Anforderung]
-],
- 
-table.cell(
-rowspan: 5,
-fill: luma(135),
-inset: 8pt
-)[
-#text(fill: white, weight: "bold")[
-Fachlich-prozedurale Anforderungen
-]
-],
-[Auf einem schweizweit einheitlichen Anforderungskatalog basieren. Kantonale Spezifika sollen sachlich begründet sein.],
- 
-[Die Identifikation und das Ansprechen der für das Bewilligungsverfahren zuständigen Behörde übernehmen.],
- 
-[Auf identische Ereignisse schweizweit vorhersehbar reagieren und mit klar kommunizierten Vorbedingungen sowie Invarianten operieren.],
- 
-[Auf bekannten und erprobten Standards der Behördeninteraktion basieren.],
- 
-[Den rechtssicheren Austausch von Gesuchen, Verfügungen und Nachweisen unterstützen.],
- 
-table.cell(
-rowspan: 4,
-fill: luma(135),
-inset: 8pt
-)[
-#text(fill: white, weight: "bold")[
-Anforderungen an die Informations-\systemarchitektur
-]
-],
-[In ihrer digitalen Implementation dieselben gesetzlich vorgeschriebenen Möglichkeiten bieten wie die analoge Version und umgekehrt @montavonPlanficatinCodification; @bge141III173.],
- 
-[Auf standardisierten elektronischen Schnittstellen und etablierten Interoperabilitätsstandards des E-Governments aufbauen.],
- 
-[Strukturierte Datenformate verwenden.],
- 
-[Eine einheitliche digitale Identifikation und Authentifizierung ermöglichen.],
-)
-]
+
+ #figure(
+  caption: [Anforderungen an die Behördenschnittstelle],
+  block(
+    width: 100%,
+    radius: 6pt,
+    clip: true,
+    stroke: 0.5pt + luma(225),
+  )[
+    #set par(justify: false)
+
+    #table(
+      columns: (4cm, 1fr),
+      inset: (x: 10pt, y: 7pt),
+      stroke: (x: none, y: 0.5pt + luma(232)),
+      align: (left, left),
+
+      table.cell(
+        rowspan: 5,
+        fill: luma(135),
+        inset: 8pt
+      )[
+        #text(fill: white, weight: "bold")[
+          Fachlich-prozedurale Anforderungen
+        ]
+      ],
+      [Auf einem schweizweit einheitlichen Anforderungskatalog basieren. Kantonale Spezifika sollen sachlich begründet sein.],
+
+      [Die Identifikation und das Ansprechen der für das Bewilligungsverfahren zuständigen Behörde übernehmen.],
+
+      [Auf identische Ereignisse schweizweit vorhersehbar reagieren und mit klar kommunizierten Vorbedingungen sowie Invarianten operieren.],
+
+      [Auf bekannten und erprobten Standards der Behördeninteraktion basieren.],
+
+      [Den rechtssicheren Austausch von Gesuchen, Verfügungen und Nachweisen unterstützen.],
+
+      table.cell(
+        rowspan: 4,
+        fill: luma(135),
+        inset: 8pt
+      )[
+        #text(fill: white, weight: "bold")[
+          Anforderungen an die Informations-\systemarchitektur
+        ]
+      ],
+      [In ihrer digitalen Implementation dieselben gesetzlich vorgeschriebenen Möglichkeiten bieten wie die analoge Version und umgekehrt @montavonPlanficatinCodification; @bge141III173.],
+
+      [Auf standardisierten elektronischen Schnittstellen und etablierten Interoperabilitätsstandards des E-Governments aufbauen.],
+
+      [Strukturierte Datenformate verwenden.],
+
+      [Eine einheitliche digitale Identifikation und Authentifizierung ermöglichen.],
+    )
+  ]
 ) <tbl-Anforderungen-Behoerdenschnittstelle>
-
-
 
 ==== Domenänenmodell 
 
-Aufgrunnd der oben aufgeführten Ausgangslage und der formulierten Anforderungen, haben wir dieses Modell für die ideale Abbildung der Behördeninteraktion vorgestellt:  
-
- 
- it Schnittstelle zu Behörde abgebildet da das Mengengerüst pro Behörde wohl zu tief ist - auch weil es nicht davon auszugehen ist, dass das Thema der Bewilligungen für Unternehmen der Gastronomie ein Thema für die Bundesebene ist. 
+Aufgrund der oben aufgeführten Ausgangslage und der formulierten Anforderungen, haben wir dieses Modell für die ideale Abbildung der Behördeninteraktion vorgestellt:
 
 #figure(
   image("../assets/RSM - Betriebsbewilligung erhalten.svg", width: 100%),
   caption: [RSM der Phase «Amira erhält die Bewilligung»],
 ) <fig-RSM-bewilligung>
 
+Folgende Überlegungen liegen dem Vorschlag von @fig-RSM-bewilligung zugrunde: 
 
-Als geeignete Referenz kommen insbesondere folgende Standards in Betracht: 
-- eCH-0122 Architektur E-Government Schweiz @eCH0122, 
-- eCH-0258 Schnittstelle Datenaustausch eServices @eCH0258 
++ Die Gastronomie ist nicht die einzige Branche, die von kantonalen Bewilligungen abhängig ist. Vergleichbare Situationen finden sich beispielsweise im Gesundheitswesen, im Sicherheitsgewerbe oder bei Kindertagesstätten. Allen diesen Bereichen gemeinsam ist, dass die zuständigen Behörden kantonal oder sogar kommunal organisiert sind. Daraus ergibt sich, dass sich Verfahren, Anforderungen und digitale Angebote von Kanton zu Kanton unterscheiden können.
+
++ Aus diesem Grund wurde die Schnittstelle zur (externen) Bewilligungsstelle möglichst branchenagnostisch ausgestaltet, sodass sie nicht nur für die Gastronomie, sondern auch für vergleichbare Bewilligungsverfahren anwendbar ist. Gleichzeitig erscheint eine lose Kopplung zur zuständigen Behörde zweckmässig. Für GastroStart ist nicht entscheidend, nach welchem Bewilligungsverfahren die Behörde handelt oder welche Mittel sie dafür verwendet. Relevant sind vielmehr die Ereignisse an der Schnittstelle, beispielsweise die Einreichung des Antrags, die Aufforderung zur Nachreichung von Unterlagen oder die Erteilung beziehungsweise Ablehnung der Bewilligung. Die Verantwortung für die Durchführung des Verfahrens verbleibt somit bei der Behörde, während GastroStart die GründerInnen bei der Vorbereitung und Koordination Halt gibt.
+
+Als Referenz für die Implementierung der abgebildeten Schnittstelle wurden insbesondere folgende Standards als geeignet identifiziert:
+- eCH-0122 Architektur E-Government Schweiz @eCH0122,
+- eCH-0258 Schnittstelle Datenaustausch eServices @eCH0258
 - weitere Standards zur Identifikation von Personen @eCH0011 und Unternehmen @eCH0098, welche die Voraussetzungen für eine fachliche, semantische und technische Interoperabilität zwischen GastroStart und den zuständigen Behörden schaffen.
 
-=== Ansprüche und Herausforderungen an der Unternehmensarchitektur des öffentlichen Wesens
 
-Um das im vorangehenden Abschnitt skizzierten Lösungsansatz zu erreichen, müsste jede Behörde auf jeder föderalen Ebenen in der Lage sein, dieselbe, bekannte, dokumentierte Schnittstelle nach aussen anzubieten. 
+=== Herausforderungen für die Realisierung der Ideal-Architektur
 
-+ *Fehlende ebenenübergreifende Gesamtsicht*: Föderalismus zwischen den Ebenen und Departementalprinzip innerhalb jeder Ebene verteilen die Verantwortung auf viele eigenständige Einheiten. Dadurch fehlt eine übergreifende Sicht darauf, welche Fähigkeit wo bereits besteht — und damit auch die Grundlage, um zu erkennen, welche Bereiche sich überhaupt für eine gemeinsame Regelung durch EA und Governance eignen.
+Die aufgezeigte Lösung ist nicht gastronomiespezifisch, sondern möchte die allgemeinere Problematik an der Schnittstelle zwischen Privatwirtschaft und öffentlichem Wesen adressieren.
+Um das im vorangehenden Abschnitt skizzierten Lösungsansatz zu erreichen, müsste jede Behörde auf jeder föderalen Ebenen in der Lage sein, dieselbe, bekannte, dokumentierte Schnittstelle nach aussen anbieten. 
+Die gestaltet sich jedoch aus folgenden Gründen als schwierig:
+
++ *Fehlende ebenenübergreifende Gesamtsicht*: Föderalismus zwischen den föderalen Ebenen und Departementalprinzip innerhalb jeder Ebene verteilen die Verantwortung auf viele eigenständige Einheiten. Dadurch fehlt eine übergreifende Sicht darauf, welche Fähigkeit wo bereits besteht — und damit auch die Grundlage, um zu erkennen, welche Bereiche sich überhaupt für eine gemeinsame Regelung eignen.
 
 + *Unverbindliche Steuerungsinstrumente*: Die ebenenübergreifende Zusammenarbeit stützt sich heute auf Standards, deren Übernahme freiwillig ist, oder auf Grundsätze wie Nutzerorientierung und Interoperabilität, deren Umsetzung einen erheblichen Interpretationsspielraum lässt. Beides gibt Orientierung, schafft aber keine konkrete Durchsetzbarkeit — die Durchgängigkeit einer gegebenen Lösung bleibt vom Goodwill der einzelnen Einheiten abhängig.
 
