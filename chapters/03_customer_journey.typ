@@ -28,13 +28,9 @@ Sie ist erleichtert und registriert sich.
   caption: [Archimate Modell der Customer-Journey von Amira und erste Iteration für die Identifikation der Geschäftsobjekte]
 ) <fig-customer-journey-view>
 */
-<<<<<<< HEAD
-In enger Verbindung mit der Customer-Journey wird die Persona „Amira“ erarbeitet. Sie dient dazu, unsere Endkundin konkret greifbar und emotional verankert zu machen. Die Bedürfnisse und Kontexte von Amira bilden den zentralen Ausgangspunkt für die Modellierung des Produkts "GastroStart".
-=======
 In enger Verbindung mit der Customer Journey wird die Persona „Amira“ erarbeitet ( @persona-amira Persona-Profil). 
 Sie dient dazu, unsere Endkundin konkret greifbar und emotional verankert zu machen. 
 Die Bedürfnisse und Kontexte von Amira bilden den zentralen Ausgangspunkt für die Modellierung des Produkts "GastroStart".
->>>>>>> 6f81813 (added führung - moved joint vernture to dedicated chapter)
 
 
 #figure(
@@ -543,7 +539,6 @@ Weitere Dienstleistungen, im Rahmen der Customer-Journey nicht berührt, wären 
 Entsprechend der gewählten Customer-Journey haben wir uns entschieden, nur das Onboarding von Neukunden abzubilden. Die Firmengründung steht im Fokus.
 ]
 
-<<<<<<< HEAD
 == Die Rollen der beteiligten Unternehmen im Joint Venture
 
 #todo-action([\@Jakob: bitte erklären, wieso wir hier eigentlich schon das RSM einführen - über die Fertigkeiten der Teilnehmern.])
@@ -554,7 +549,7 @@ Für das Produkt GastroStart liefert DV Bern Software und Infrastruktur für das
 Das Portal wird im Folgenden auch als "Plattform" bezeichnet.
 Das Produkt als Ganzes, inklusive aller fachlichen Aspekte, wird, wenn nicht explizit als GastroStart benannt, auch als "System" bezeichnet.
 
-Für die fünf Phasen der Customer-Journey: Orientierung, Registrierung, Bewilligung, Finanzierung, erster Einkauf - sind die einzelnen Beiträge seitens DV Bern wie folgt beschrieben.
+Für die fünf Phasen der Customer Journey: Orientierung, Registrierung, Bewilligung, Finanzierung, erster Einkauf - sind die einzelnen Beiträge seitens DV Bern wie folgt beschrieben.
 
 
 
@@ -566,29 +561,28 @@ Die GastroStart-Benutzer brauchen also eine Möglichkeit, den sie betreffenden K
 Die Kantone brauchen eine Möglichkeit, Abweichungen in ihrem Regelwerk, die sich z. B. durch Gesetzesänderungen ergeben, im System zu ändern.
 
 ==== Registrierung
-Die Registrierung erfordert, dass jeder Benutzer sich ein Profil im System erstellt, mit dem er seine Gründungsprozesse speichern, einsehen und verwalten kann.
+Die Registrierung erfordert, dass jeder Benutzer sich ein Profil im System erstellt, mit dem sie ihre Gründungsprozesse speichern, einsehen und verwalten können.
 Das System muss sicherstellen, dass jeder Benutzer authentifiziert und autorisiert und jeder Gründungsprozess mit genau einem Benutzerprofil verknüpft wird.
 
 ==== Bewilligung<sec-rolle-dv-bern-bewilligung>
 
 Die Bewilligung erfordert Möglichkeiten, den für die Betriebsgründung notwendigen Behörden alle benötigten Daten zur Verfügung stellen zu können.
 Das beinhaltet das Anbinden externer APIs, wenn vorhanden, oder Darstellung und Verwaltung der entsprechenden Dokumente, sowie Übertragungs- und Speichermöglichkeiten für diese.
-Zudem soll den Benutzern der Status der einzelnen Schritte angezeigt werden (z.B. offen, bearbeitet, eingereicht, bewilligt); ausserdem soll sowie ein Benachrichtigungssystem für die Kommunikation der Beteiligten untereinander sowie für Statusupdates implementiert werden.
+Zudem soll den Benutzern der Status der einzelnen Schritte angezeigt (z.B. offen, bearbeitet, eingereicht, bewilligt), sowie ein Benachrichtigungssystem für die Kommunikation der Beteiligten untereinander, sowie von Statusupdates implementiert werden.
 
 ==== Finanzierung
 Die Finanzierung erfolgt in vielen Fällen kreditbasiert.
-Dazu wird den Benutzern ein Interface zur Auswahl ihrer bevorzugten Bank angezeigt und die Schnittstelle zur Bonitätsprüfung an FINNOFLEET implementiert.
+Dazu wird den Benutzern ein Interface zur Auswahl ihrer bevorzugten Bank angezeigt, sowie die Schnittstelle zur Bonitätsprüfung an FINNOFLEET implementiert.
 
 ==== Erster Einkauf
 Voraussetzung für die Bestellung bei Transgourmet ist ein Kundenkonto, welches über das Portal angelegt werden kann.
-/*Ebenfalls kann der Warenkatalog und die Bestellung über das Portal durchgeführt werden.*/ 
-Ebenfalls können die Einsicht in den Warenkatalog und die Bestellung über das Portal erfolgen.
+Ebenfalls kann der Warenkatalog und die Bestellung über das Portal durchgeführt werden.
 Die dafür notwendigen Schnittstellen stellt Transgourmet zur Verfügung.
 Die Aufgabe von DV Bern wird es sein, diese in die Benutzerschnittstelle des Portals zu integrieren.
 
 ==== Zusammenfassung
-DV Bern ist an der Implementierung jeder der fünf Phasen der Customer-Journey: Orientierung, Registrierung, Bewilligung, Finanzierung, erster Einkauf - nicht nur massgeblich mitbeteiligt, sondern bildet das technische Fundament der Plattform und ihrer Integrationsmöglichkeiten über alle Phasen hinweg. Dabei nimmt das Unternehmen die Rolle einer Beraterin ein, welche die technischen Realisierungsmöglichkeiten der fachlichen Fragestellungen erarbeitet, die sich aus dem Joint Venture ergeben.
-Wir betrachten im Folgenden das ressourcenunabhängige Modell für jede der fünf Phasen der Customer-Journey individuell.
+DV Bern ist an der Implementierung jeder der fünf Phasen der Customer Journey: Orientierung, Registrierung, Bewilligung, Finanzierung, erster Einkauf - nicht nur massgeblich mitbeteiligt, sondern bildet das technische Fundament der Plattform und ihrer Integrationsmöglichkeiten über alle Phasen hinweg. Dabei nimmt das Unternehmen die Rolle einer Beraterin ein, welche die technischen Realisierungsmöglichkeiten der fachlichen Fragestellungen erarbeitet, die sich aus dem Joint Venture ergeben.
+Wir betrachten im Folgenden das ressourcenunabhängige Modell für jede der fünf Phasen der Customer Journey individuell.
 
 === FINNOFLEET
 FINNOFLEET bringt in das Joint Venture das ein, was es täglich tut: die *Finanzierung*.
@@ -606,15 +600,12 @@ Diese Leistungen werden nicht als eigenständiges Portal, sondern als *API-Diens
 
 Als letzter Player im Joint Venture bringt Transgourmet die *Lieferfähigkeit* ein. 
 Als führender Schweizer Grosshändler für Gastronomie und Hotellerie ist Transgourmet der Partner, der Amira nach der Gründung ihres Unternehmens mit den notwendigen Lebensmitteln und Zutaten beliefert. 
-Die Eröffnung eines Kundenkontos bei Transgourmet ist die letzte Phase der Customer-Journey und steht am Übergang von der Gründungsphase in den operativen Betrieb. 
+Die Eröffnung eines Kundenkontos bei Transgourmet ist die letzte Phase der Customer Journey und steht am Übergang von der Gründungsphase in den operativen Betrieb. 
 
 === Öffentliche Verwaltung als Interoperabilitätspartner<sec-rolle-interoperabilitätspartner>
-Aus Sicht von Amira und somit auch von GastroStart wird die öffentliche Verwaltung — unabhängig davon, ob Bundes-, Kantons- oder Gemeindeebene — in ihrer Rolle als Interoperabilitätspartner abgebildet und behandelt.
-Dies, weil die öffentliche Hand ihre hoheitlichen Handlungen nicht im Sinne eines wirtschaftlichen Angebots wie die anderen Mitglieder des Joint Ventures zur Verfügung stellt. 
-Auch ist es nicht im Sinne der Schweizer Rechtstradition, private Unternehmen mit der Vergabe von hoheitlichen Akten zu betrauen.
-Aus diesen Gründen sind jene Teile der Customer-Journey, für die der Staat verantwortlich ist - bspw. der Eintrag im Handelsregister oder die Erteilung einer Betriebsbewilligung - und die Fähigkeit, diese zu vollziehen, ausserhalb des Wirkungsbereichs des Joint Ventures anzusiedeln. 
+Aus Sicht von Amira und somit auch von GastroStart wird die öffentliche Verwaltung - ohne besondere Rücksicht ob Bundes, Kantons- oder Gemeindeebene - in ihrer Rolle als Interoperabilitätspartner abgebildet und behandelt.
+Dies, weil die öffentliche Hand ihre hoheitlichen Handlungen nicht im Sinne eines wirtschaftlichen Angebots wie die anderen Mitglieder der Joint Venture zur Verfügung stellt. Auch ist es nicht im Sinne der Schweizer Rechtstradition, private Unternehmen mit der Vergabe von hoheitlichen Akten zu betrauen.
+Aus diesen Gründen sind jene Teile der Customer Journey, wofür der Staat verantwortlich ist - bspw. der Eintrag im Handelsregister oder die Erteilung einer Betriebsbewilligung - und die Fähigkeit, diese zu vollziehen, ausserhalb des Wirkungsbereichs des Joint Ventures anzusiedeln. 
 /*Auf der anderen Seite bildet GastroStart eine spezialisierte Schnittstelle für die Vorbereitung hin auf diesen Akten. */
 
 
-=======
->>>>>>> 6f81813 (added führung - moved joint vernture to dedicated chapter)
