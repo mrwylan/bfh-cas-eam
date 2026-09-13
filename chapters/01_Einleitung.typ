@@ -15,7 +15,7 @@ So wird jedes Mitglied der Gruppe seinen individuellen Lernpfad festhalten und s
 
 == Problemstellung
 
-Wie bauen wir eine Enterprise-Architektur für das Joint Venture auf, die die unterschiedlichen Stärken der Ursprungsunternehmen verbindet und Synergien nutzt, während die Eigenständigkeit und der Kernwert jedes Partners erhalten bleiben?
+Wie bauen wir eine Enterprise-Architektur für das Joint-Venture auf, die die unterschiedlichen Stärken der Ursprungsunternehmen verbindet und Synergien nutzt, während die Eigenständigkeit und der Kernwert jedes Partners erhalten bleiben?
 
 == Kontext: eine kleine Reise durch Mittelerde
 
