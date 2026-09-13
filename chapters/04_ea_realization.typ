@@ -1592,8 +1592,16 @@ Auch die einschlägige Literatur (_in primis_ der Autor Michaël Montavon) hat s
 Zu beachten ist die Tatsache, dass dieser Vorschlag denselben Aufbau wie der Verfassungsartikel über die Hochschulen, Art. 63a BV @sr101, aufweist.
 Dieser Artikel regelt im Allgemeinen die Zuständigkeiten und die Organisation rund um die Hochschulen des Bundes und jene der Kantone, wobei der Bund eine sogenannte subsidiäre Regelungskompetenz erhält.
 Dies bedeutet, dass der Bund die notwendigen Vorschriften erlassen muss, wenn die involvierten föderalen Ebenen am gemeinsamen Ansatz scheitern.
+
 Auf das für diese Arbeit relevante Gebiet der Digitalisierung übertragen, sollen die Digitalisierung und die digitale Transformation auf der Koordination zwischen den verschiedenen Verwaltungsebenen fussen.
 Sollte dies jedoch nicht klappen, so behält der Bund ein Druckmittel, um die anderen Akteure bei der Erreichung der gemeinsamen Ziele zu unterstützen.
+
+Dieser Ansatz hat mehrere Vorteile: 
+
++ Die Kantone können ihren verfassungsrechtlichen Primat bei Themen des Verwaltungsrechts gemäss Art. 3 BV @sr101 behalten.
++ Die Grundlagenarbeit, die vom Verein eCH und anderen Akteuren der Digitalisierung wie der Digitalen Verwaltung Schweiz geleistet wurde, sowie die operativen Erfahrungen bestehender kantonaler Portale wie iGovPortal oder eUmzug Schweiz liefern wichtige Hinweise über die technische, verwaltungsrechtliche, aber auch politische Machbarkeit der digitalen Transformation in den einschlägigen Bereichen.
+
+
 
 == Operating Model für FINNOFLEET
 

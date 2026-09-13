@@ -52,6 +52,9 @@ Dieses Glossar erklärt die im Dokument verwendeten fachlichen und methodischen 
       [Business Process],
       [Siehe #emph[Geschäftsprozess].],
 
+            [BV],
+      [Bundesverfassung],
+
       [CI/CD #linebreak() (Continuous Integration / Continuous Deployment)],
       [Automatisierte Praxis, Codeänderungen laufend zu integrieren, zu testen und auszuliefern.],
 
@@ -69,6 +72,10 @@ Dieses Glossar erklärt die im Dokument verwendeten fachlichen und methodischen 
 
       [EDIFACT],
       [Internationaler Standard für den elektronischen Austausch strukturierter Geschäftsdokumente (z. B. Bestellungen, Lieferavis, Rechnungen) zwischen Handelspartnern.],
+
+
+      [eCH],
+      [Name eins Schweizer Vereins welches e-Governement Standards für die Schweiz herausgibt. ],
 
       [eID],
       [Elektronischer Identitätsnachweis, mit dem sich eine Person gegenüber einem digitalen Dienst authentifiziert.],
@@ -162,6 +169,10 @@ Dieses Glossar erklärt die im Dokument verwendeten fachlichen und methodischen 
 
       [Self-Contained System (SCS)],
       [Architekturmuster, bei dem eine fachliche Domäne inklusive Benutzeroberfläche, Logik und Daten als eigenständiges, lose gekoppeltes System realisiert wird.],
+
+
+            [SR],
+      [Systematische Rechtssammlung],
 
       [Service Blueprint],
       [Darstellung eines Dienstleistungsprozesses, die neben der sichtbaren Kundeninteraktion (Frontstage) auch die dahinterliegenden, unsichtbaren Abläufe (Backstage) abbildet @stickdorn2011.],
