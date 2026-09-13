@@ -1,7 +1,7 @@
 // ── Chapter 4 : EA Realization  ───────────────────
 #import "../markers.typ": (
   theorie-anker, design-entscheid, stolperstein, frage, todo-action, fuehrung,
-  autor-marker, autor-finnofleet, autor-transgourmet, autor-verwaltung, autor-dvbern, mit-lead, praxis-zitate,
+  autor-marker, autor-finnofleet, autor-transgourmet, autor-verwaltung, autor-dvbern, mit-lead, praxis-zitate, rechtsnorm
 )
 #pagebreak()
 = Die Realisierung des Resource Independent Model
@@ -1521,7 +1521,7 @@ Könnte sich GastroStart für seine GründerInnen eine Schnittstelle für die Ab
   ]
 ) <tbl-Anforderungen-Behoerdenschnittstelle>
 
-==== Domenänenmodell 
+==== Domenänenmodell für die Bewilligung
 
 Aufgrund der oben aufgeführten Ausgangslage und der formulierten Anforderungen, haben wir dieses Modell für die ideale Abbildung der Behördeninteraktion vorgestellt:
 
@@ -1541,23 +1541,59 @@ Als Referenz für die Implementierung der abgebildeten Schnittstelle wurden insb
 - eCH-0258 Schnittstelle Datenaustausch eServices @eCH0258
 - weitere Standards zur Identifikation von Personen @eCH0011 und Unternehmen @eCH0098, welche die Voraussetzungen für eine fachliche, semantische und technische Interoperabilität zwischen GastroStart und den zuständigen Behörden schaffen.
 
+==== Exkurs: Anforderungen ad die Interoperabilität für die Orientierung
+
+Die Customer-Journey beginnt mit Ermittlung der Voraussetzungen für den Erhalt einer Bewilligung im Rahmen der Orientierung (s. @sec-GP-GF-orientierung-gründungsvorhaben). 
+Aus diesbezüglich bestehen im Rahmen der Realisierung einer Ideal-Architektur Ansprüche. GastroSTart muss in der Lage sein, die Informationen für die GründerInnen immer aktuell zu halten und allfälligen Anpassungen bei den vielen in Frage kommenden Behörden umgehend umzusetzen, so dass die Schritt-für-Schritt-Anleitungen für die GründerInnen immer der Realität entsprechen. 
+
+Um dies zu realisieren ist es notwendig, dass alle Bewilligungsstellen über die digitalen Informationskanäle die folgenden Angaben liefern: 
+- die Beschreibung der *Verwaltungsleistung* und der dafür *zuständigen Behörde* gemäss dem eCH-0088 Standard Vorgaben zur Beschreibung von Behördengängen @eCH0088, inklusive alle optionale Felder; 
+- die Beschreibung der dafür geltenden *Voraussetzungen* und *Vorbedingungen* für den *Zugang zur Verwaltungsleistung* gemäss dem eCH-0073 Standard Vorgaben zur Beschreibung von Leistungen der öffentlichen Verwaltung @eCH0073.
+
+Die Erfüllung der Anforderungen dieser Standards schafft die Grundlage dafür, die Behördenleistung "Betriebsbewilligung erteilen" und deren Voraussetzungen in GastroStart konsistent zu beschreiben und den GründerInnen entsprechend zur Verfügung stellen. 
 
 === Herausforderungen für die Realisierung der Ideal-Architektur
 
-Die aufgezeigte Lösung ist nicht gastronomiespezifisch, sondern möchte die allgemeinere Problematik an der Schnittstelle zwischen Privatwirtschaft und öffentlichem Wesen adressieren.
+Die aufgezeigte Lösung ist soll nicht gastronomiespezifisch sein, sondern möchte die allgemeinere Problematik an der Schnittstelle zwischen Privatwirtschaft und öffentlichem Wesen adressieren.
 Um das im vorangehenden Abschnitt skizzierten Lösungsansatz zu erreichen, müsste jede Behörde auf jeder föderalen Ebenen in der Lage sein, dieselbe, bekannte, dokumentierte Schnittstelle nach aussen anbieten. 
 Die gestaltet sich jedoch aus folgenden Gründen als schwierig:
 
-+ *Fehlende ebenenübergreifende Gesamtsicht*: Föderalismus zwischen den föderalen Ebenen und Departementalprinzip innerhalb jeder Ebene verteilen die Verantwortung auf viele eigenständige Einheiten. Dadurch fehlt eine übergreifende Sicht darauf, welche Fähigkeit wo bereits besteht — und damit auch die Grundlage, um zu erkennen, welche Bereiche sich überhaupt für eine gemeinsame Regelung eignen.
++ *Fehlende ebenenübergreifende Gesamtsicht*: Föderalismus zwischen den drei Staatsebenen und Departementalprinzip innerhalb jeder Ebene verteilen die Verantwortung auf viele eigenständige Einheiten. Dadurch fehlt eine übergreifende Sicht darauf, welche Leistung wo erbracht wird — und damit auch die Grundlage, um zu erkennen, welche Bereiche sich überhaupt für eine gemeinsame Regelung eignen.
 
 + *Unverbindliche Steuerungsinstrumente*: Die ebenenübergreifende Zusammenarbeit stützt sich heute auf Standards, deren Übernahme freiwillig ist, oder auf Grundsätze wie Nutzerorientierung und Interoperabilität, deren Umsetzung einen erheblichen Interpretationsspielraum lässt. Beides gibt Orientierung, schafft aber keine konkrete Durchsetzbarkeit — die Durchgängigkeit einer gegebenen Lösung bleibt vom Goodwill der einzelnen Einheiten abhängig.
 
 + *Rechtsgrundlage als Vorbedingung*: Die Schaffung der Voraussetzungen für eine durchsetzbare Governance liegt ausserhalb der Kompetenz der Unternehmensarchitektur: Behörden sind in all ihrem Handeln an das Legalitätsprinzip gebunden. 
-
-
-=== Lösungsansätze
-Damit die Behörden — innerhalb derselben Ebene oder ebenenübergreifend (etwa zwischen Kanton und Gemeinden) — verbindlich zusammenarbeiten und Daten austauschen können, braucht es daher eine entsprechende gesetzliche Grundlage. 
 Fehlt eine solche, bleibt die Unternehmensarchitektur in diesem Bereich ein zahnloser Tiger: Sie kann Interoperabilität fordern oder gar gestalten, die rechtliche Voraussetzung dafür aber nicht selbst schaffen.
+
+
+=== Lösungsansatz
+
+Damit die Behörden — innerhalb derselben Ebene oder ebenenübergreifend (etwa zwischen Kanton und Gemeinden) — verbindlich zusammenarbeiten und Daten mit der Privatwirtschaft austauschen können, braucht es daher eine entsprechende gesetzliche Grundlage. 
+Es sind verschiedene Ansätze denkbar, aber die Autorin vertritt die Meinung, dass eine einheitlichen Lösung eine Regelung auf der Ebene der Bundesverfassung anzustreben ist. 
+
+Auch die einschlägige Literatur (_in primis_ der Autor Michaël Montavon) hat sich in diesem Sinne geäussert und folgender neuer Verfassungsartikel vorgeschlagen: 
+
+#rechtsnorm(
+  [Art. 88a BV — Cyberadministration],
+[
+1 La Confédération, les cantons et les communes s'engagent à poursuivre et à mettre en œuvre de manière coordonnée une stratégie commune en matière de cyberadministration. Ils s'assistent mutuellement dans cette tâche.
+
+2 La Confédération et les cantons adoptent les normes applicables concernant la gestion des données et élaborent des solutions informatiques de base utilisables au niveau national. Les communes sont aussi impliquées dans les limites de leurs possibilités.
+
+3 Pour accomplir leurs tâches, la Confédération et les cantons concluent conformément à la loi des accords et délèguent certaines compétences à des organes communs. La loi définit les compétences qui peuvent être déléguées à ces organes et fixe les objectifs à atteindre et les principes applicables à l'organisation et à la procédure en matière de coordination. Elle établit les règles en matière de répartition des coûts.
+
+4 Si la Confédération et les cantons n'atteignent pas les objectifs communs par leurs efforts de coordination, les compétences découlant de la présente disposition sont transférées à la Confédération. De plus, la Confédération peut lier le soutien aux cantons et aux communes à l'atteinte d'objectifs échelonnés.
+
+@montavonCyberadministration, [S. 73 f.]
+]
+)
+
+Zu beachten ist die Tatsache, dass dieser Vorschlag den selben Aufbau wie der Verfassungsartikel über die Hochschulen, Art. 63a BV @sr101, aufweist. 
+Dieser Artikel regelt im Allgemeinen die Zuständigkeiten und die Organisation rundum den Hochschulen des Bundes und jene der Kantone, wobei der Bund eine sogenannte eine subsidiäre Regelungskompetenz erhält.
+Dies bedeutet, dass wenn die involvierten föderalen Ebenen am gemeinamen Ansatz scheitern, muss der Bund die notwendigen Vorschriften erlasssen. 
+Auf das für diese ARbeit relevante Gebiet der Digitalisierung übertragen, sollen die Digitalisierung und die digitalen Transformation auf die Koordination zwischen den verschiedenen Verwaltungsebenen fussen. 
+Sollte dies jedoch nicht klappen, so behält der Bund ein Druckmittel, um die anderen Akteure zur Erreichnung der gemeinsamen Zielen zu unterstüten. 
+
 
 == Operating Model für FINNOFLEET
 

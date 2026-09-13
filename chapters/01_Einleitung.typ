@@ -48,36 +48,47 @@ Die Aufstellung folgt der Richtlinie der Berner Fachhochschule zum Umgang mit
 generativer KI.
 
 
+
 #figure(
- table(
-  columns: (auto, auto, auto),
-  align: (left + top, left + top, left + top ),
-  stroke: 0.4pt + luma(170),
-  inset: 6pt,
-  table.header(
-    [*Zeitraum*], [*Modell*], [*Einsatzschwerpunkt*] 
-  ),
+  caption: [Eingesetzte LLM-Modelle und deren Einsatzschwerpunkte],
+  block(
+    width: 100%,
+    radius: 6pt,
+    clip: true,
+    stroke: 0.5pt + luma(225),
+  )[
+    #set par(justify: false)
+    #table(
+      columns: (auto, auto, auto),
+      inset: (x: 10pt, y: 7pt),
+      stroke: (x: none, y: 0.5pt + luma(232)),
+      fill: (x, y) => if y == 0 { luma(70) } else if calc.odd(y) { luma(250) } else { white },
+      align: (left + top, left + top, left + top),
 
-  [März bis Mai 2026],
-  [Claude, Anthropic, Generation Opus 4],
-  [Aufbau der Semantic-Anchor-Sammlung, Zachman-Analyse der B2B-Disposition, Business Model Canvas Transgourmet, Referenz- und Zitationsarbeit zu GFbUA],
+      table.header(
+        text(fill: white, weight: "bold")[Zeitraum],
+        text(fill: white, weight: "bold")[Modell],
+        text(fill: white, weight: "bold")[Einsatzschwerpunkt],
+      ),
 
-  [Juni bis Juli 2026],
-  [Claude, Anthropic, Generation Opus 4],
-  [Kapazitätsmodellierung GastroStart, ArchiMate-Modellbau, Customer Journey und Szenarien, Betriebsmodellanalyse nach Ross, Weill und Robertson],
+      [März bis Mai 2026],
+      [Claude, Anthropic, Generation Opus 4],
+      [Aufbau der Semantic-Anchor-Sammlung, Zachman-Analyse der B2B-Disposition, Business Model Canvas Transgourmet, Referenz- und Zitationsarbeit zu GFbUA],
 
-  [August 2026],
-  [Claude, Anthropic, Opus 4.7],
-  [ @anh-werkzeug-reflexion[Werkzeug-Reflexion für GFbUA-Modellierung] , Verdichtung des Dialogs zum Anhang],
+      [Juni bis Juli 2026],
+      [Claude, Anthropic, Generation Opus 4],
+      [Kapazitätsmodellierung GastroStart, ArchiMate-Modellbau, Customer Journey und Szenarien, Betriebsmodellanalyse nach Ross, Weill und Robertson],
 
-  [September 2026],
-  [Claude, Anthropic, Opus 5],
-  [Konsolidierung der Anhänge, Review und Korrektur der Arbeit, Typst-Satz],
- ),
+      [August 2026],
+      [Claude, Anthropic, Opus 4.7],
+      [@anh-werkzeug-reflexion[Werkzeug-Reflexion für GFbUA-Modellierung], Verdichtung des Dialogs zum Anhang],
 
-  caption: ([Eingesetzte LLM-Modelle und deren Einsatzschwerpunkte]),
-
-)
+      [September 2026],
+      [Claude, Anthropic, Opus 5],
+      [Konsolidierung der Anhänge, Review und Korrektur der Arbeit, Typst-Satz],
+    )
+  ]
+) <tbl-llm-modelle>
 
 === Qualitätssicherung und Verantwortung
 

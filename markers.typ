@@ -131,3 +131,24 @@
     align(right)[#text(size: 0.85em, fill: farbe-praxis)[— #paar.at(1)]]
   }
 ]
+
+#let farbe-recht = rgb("#FF6F61")  // Pantone Living Coral
+
+#let rechtsnorm(titel, inhalt) = block(
+  width: 100%,
+  inset: (left: 1em, rest: 0.8em),
+  stroke: (left: 3pt + farbe-recht),
+  fill: farbe-recht.lighten(90%),
+  above: 1em, below: 1em,
+  breakable: false,
+)[
+  #grid(
+    columns: (auto, 1fr),
+    gutter: 0.6em,
+    align: horizon,
+    image("assets/paragraph.svg", height: 2em),
+    text(weight: "bold", fill: farbe-recht, size: 0.9em)[#titel],
+  )
+  #v(0.3em)
+  #inhalt
+]
