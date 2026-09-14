@@ -21,13 +21,8 @@ Sie möchte durch den Prozess der Unternehmensgründung geführt werden.
 Bei der Suche erfährt sie, dass die Punkte Bewilligungen, Finanzierung, Ressourcenplanung und Beschaffung besonders wichtig sind. 
 Sie landet bei *“GastroStart”* und erfährt in der kurzen Einführung auf der Startseite, dass dieses Portal sie bei all dem unterstützen kann. 
 Sie ist erleichtert und registriert sich. 
-#frage([12.09.2026 - können wir das nächste bild weglassen?!? ])
 
-/* #figure(
-  image("../assets/Customer-Journey View.svg", width: 100%),
-  caption: [Archimate Modell der Customer-Journey von Amira und erste Iteration für die Identifikation der Geschäftsobjekte]
-) <fig-customer-journey-view>
-*/
+
 In enger Verbindung mit der Customer Journey wird die Persona „Amira“ erarbeitet ( @persona-amira Persona-Profil). 
 Sie dient dazu, unsere Endkundin konkret greifbar und emotional verankert zu machen. 
 Die Bedürfnisse und Kontexte von Amira bilden den zentralen Ausgangspunkt für die Modellierung des Produkts "GastroStart".
@@ -387,8 +382,6 @@ Die massgeschneiderten und detaillierten Erklärungen zum einzuhaltenden Ablauf 
 ) <tbl-szenario-bewilligung-erhalten>
 
 === Amira erhält eine Finanzierung
-
-#todo-action([bild?])
 
 Mit der beantragten Betriebsbewilligung rückt eine Frage in den Vordergrund, die sich bis dahin aufschieben liess: Küchengeräte, Mobiliar, Fahrzeug und die erste Warenlieferung müssen bezahlt sein, bevor Amira ihren Betrieb aufnehmen kann.
 Wir gehen davon aus, dass unsere GründerInnen die Grössenordnung ihres Kapitalbedarfs durchaus benennen können, nicht aber, welche Unterlagen eine Bank dafür sehen will und nach welchen Kriterien ihre Kreditwürdigkeit beurteilt wird.
