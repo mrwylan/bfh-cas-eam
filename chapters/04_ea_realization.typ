@@ -172,7 +172,7 @@ Die hier aufgezählten Zustände gelten für alle Phasen der Customer Journey, u
 Und schliesslich geben wir in der nächsten Tabelle einen Überblick über die hier erwähnten Geschäftstransaktion. Bei der Auflistung der Zustandsübergänge beschränken wir uns auf die Zustände des Gründungsvorhabens.
 
 #figure(
-  caption: [Geschäftstransaktionen: Prozess «sich orientieren],
+  caption: [Geschäftstransaktionen: Prozess "sich orientieren" ],
   block(
     width: 100%,
     radius: 6pt,
@@ -931,10 +931,7 @@ transaktion],
   ]
 ) <tbl-GT-Kunde-bei-Transgourmet>
 
-
-
-
-=== Reflexion
+=== Reflexion zu Geschäftsobjekten, Zuständen und Transaktionen
 
 #stolperstein([
  Den Gefährten ist es nicht immer gelungen, die Kundensicht zu bewahren und gleichzeitig Distanz zum eigenen Unternehmensbeitrag zu halten.
@@ -966,9 +963,9 @@ Nachofolgende Tabelle enthält eine Zusammenfassung der anfänglichen Objekte:
   ]
 ) <tbl-business-objects-grouped>
 
-Die in den Übungen gestellte Frage "Was bleibt, wenn Ihr Unternehmen dematerialisiert wird? Alles wird zur Information, was Information werden kann. 
+Die in den Übungen gestellte Frage "Was bleibt, wenn Ihr Unternehmen dematerialisiert wird? 
+Alles wird zur Information, was Information werden kann. 
 Was bleibt physisch vorhanden, was verschwindet?" 
-
 
 /*#figure(
   caption: [Business-Object-Inventar: GastroStart],
@@ -1017,8 +1014,8 @@ Schwierigkeiten bat es, Abstand von der gewohnte Implementierungsebene zu halten
 */
 
  #figure(
-  image("../assets/reflektion.png", width: 100%),
-  caption: [Archimate Modell einer frühen Modellierungsphase]
+  image("../assets/Phase 5 - Early View.svg", width: 100%),
+  caption: [Archimate Modell einer frühen Modellierungsphase von "Amira wird Kunde bei Transgourmet"]
 ) <fig-reflektion_transgourmet>
 
 + *getrennte Objekte* in einer ebenfalls frühen Phase wurde zwischen zwei Objekten, "Betriebsbewilligungsantrag" und "Betriebsbewilligung" unterscheidet. Dabei benötigt die abstrakte Modellierung nur ein Geschäftsobjekt: die Betriebsbewilligung bleibt bestehen, ihr Zustand gibt Auskunft darauf, ob der "Vertrag" mit der Behörde bereits abgeschlossen ist (Zustand "erteilt") oder eben noch nicht (Zustande "beantragt").
