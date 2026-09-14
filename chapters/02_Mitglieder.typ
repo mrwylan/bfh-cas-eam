@@ -111,8 +111,8 @@ Die Unternehmensarchitektur auf Bundesebene wird je nach Aufgabentyp unterschied
 Wer für die Governance zuständig ist und wie sich diese auf die Bundesverwaltung auswirkt, ist je nach Fall unterschiedlich. 
 Die Entwicklung der Bundesarchitektur geschieht in einem föderalen Ansatz je nach Aufgabentyp durch den Bereich Digitale Transformation und IKT-Lenkung der Bundeskanzlei (DTI), die Departemente, Ämter und Leistungserbringer @bk_unternehmensarchitektur_bund: 
 + Die Unternehmensarchitektur für die jeweiligen *Kernaufgabenbereiche* wird von den Departementen und Verwaltungseinheiten dezentral entwickelt und ist nur für die betroffenen Organisationseinheiten verbindlich. 
-+ Bundesämter mit *übergreifenden Aufgaben* definieren und koordinieren die Unternehmensarchitektur für die übergreifenden Aspekte in ihrem Verantwortungsbereich - diese ist dann für die restliche Bundesverwaltung _verbindlich_.
-+ Die Unternehmensarchitektur der bundesweiten *aufgabenneutralen IKT-Grundleistungen* - soweit diese von der Mehrheit der Departemente benötigt werden - fällt in die Verantwortung des Bereichs DTI. Dabei gibt es zwei Governance-Mechanismen:
++ Bundesämter mit *übergreifenden Aufgaben* definieren und koordinieren die Unternehmensarchitektur für die übergreifenden Aspekte in ihrem Verantwortungsbereich - diese ist dann für die restliche Bundesverwaltung verbindlich.
++ Die Unternehmensarchitektur der bundesweiten *aufgabenneutralen IKT-Grundleistungen* - soweit diese von der Mehrheit der Departemente benötigt werden - fällt in die Verantwortung des Bereichs DTI und ist für die ganze Bundesverwaltung verbindlich. Dabei gibt es zwei Governance-Mechanismen:
   - Das Architekturboard Bund, bei dem alle Departemente und interne Erbringer von IKT-Leistungen vertreten sind, dient der gegenseitigen Abstimmung der Architekturen und der Methoden sowie der Bestimmung der Hilfsmittel zu deren Erstellung @bk_unternehmensarchitektur_bund.
   
   - Der Bereich DTI ist als einziger Akteur befugt, im Bereich der sogenannten aufgabenneutralen IKT-Grundleistungen (Standarddienste) bundesweit verbindliche Vorgaben und Standards zu erlassen — und dies nur, soweit diese von der Mehrheit der Departemente benötigt werden @bk_unternehmensarchitektur_bund.
@@ -121,7 +121,7 @@ Die folgende @fig-informatik-bund stellt in etwa die Verhältnisse zwischen den 
 
  #figure(
   image("../assets/informatikBund.png", width: 100%),
-  caption: [Verteilung der Informatikbereiche nach Aufgabentyp bei der Schweizer \ Bundesverwaltung]
+  caption: [Verteilung der Bereiche der Unternehmensarchitektur nach Aufgabentyp bei der Schweizer \ Bundesverwaltung]
 ) <fig-informatik-bund>
 
 

@@ -75,7 +75,7 @@ generativer KI.
       [Claude, Anthropic, Generation Opus 4],
       [Aufbau der Semantic-Anchor-Sammlung, Zachman-Analyse der B2B-Disposition, Business Model Canvas Transgourmet, Referenz- und Zitationsarbeit zu GFbUA],
 
-      [Juni bis Juli 2026],
+      [Juni bis September 2026],
       [Claude, Anthropic, Generation Opus 4],
       [Kapazitätsmodellierung GastroStart, ArchiMate-Modellbau, Customer Journey und Szenarien, Betriebsmodellanalyse nach Ross, Weill und Robertson],
 

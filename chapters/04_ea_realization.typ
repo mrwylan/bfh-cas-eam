@@ -10,7 +10,7 @@
 
 Dieser Teil der Arbeit bildet den Kern der Überlegungen der Gruppe.
 Die Verfolgung der durch die Übungen vorgegebenen Arbeitsschritte hat uns zur höchsten Abstraktionsstufe unseres Unternehmens geführt.
-Jeder Entwicklungsschritt bezieht sich auf einen Auftrag (Übung) und folgt der Empfehlung zur Erarbeitung des RIM, die im Skript @Spichiger2026GFbUA, S. 53 ff. beschrieben ist.
+Jeder Entwicklungsschritt bezieht sich auf einen Auftrag (Übung) und folgt der Empfehlung zur Erarbeitung des RIM, die im Skript @Spichiger2026GFbUA[S. 53 ff]. beschrieben ist.
 Die Modellierung erfolgt mit Archimate.
 Die folgenden Unterkapitel orientieren sich wie gehabt an den fünf Szenarien der Customer-Journey.
 Zunächst beschreiben wir die Herleitung der wesentlichen Geschäftsobjekte und bringen diese anschliessend in Beziehung mit den auf ihnen aufbauenden Geschäftstransaktionen. Dazu verwenden wir ressourcenunabhängige Modelle nach Archimate.
@@ -56,7 +56,7 @@ Die folgende Abbildung zeigt ein mögliches Ergebnis aus dieser Vorgehensweise.
 ) <fig-customer-journey-view>
 
 In den nächsten Abschnitten folgen wir dem empfohlenen Vorgehen und beschreiben für jedes Szenario das Geschäftsobjekt, seine Zustände sowie die Transaktionen, die diese hervorrufen:
-
+#todo-action([unfertiger satzt mit doppelpunkt])
 Im ressourcenunabhängigen Modell (RIM) nach Archimate sind die Eigenschaften der Geschäftsobjekte zunächst nicht von Bedeutung. 
 Wir beginnen stattdessen mit der Betrachtung der Zustände, die ein Geschäftsobjekt annimmt, und welche Transaktionen einen Zustandswechsel hervorrufen. 
 Die nächsten Abschnitte  beschreiben ein entsprechendes RIM für die Szenarien der Customer-Journey,
@@ -459,7 +459,7 @@ Die Möglichkeiten des Abbruches der Firmengründung durch die GründerInnen ode
 
       [Definition / Zweck],
       [
-        Repräsentiert die zu gründende resp. gegründete juristische Person, an der Amiras Gründungsvorhaben ausgerichtet ist.
+        Repräsentiert die zu gründende resp. gegründete juristische Person, an der das Gründungsvorhaben ausgerichtet ist.
         Das Geschäftsobjekt enthält die wesentlichen Stammdaten der Unternehmung. 
         Der Gründungsverlauf selbst wird nicht als Inhalt abgebildet, sondern ist über die Zustände des Objekts nachzuvollziehen.
        /* Die Gründung einer juristischen Person setzt voraus, dass mindestens ein Vertreter Wohnsitz in der Schweiz hat. */
@@ -472,7 +472,7 @@ Die Möglichkeiten des Abbruches der Firmengründung durch die GründerInnen ode
 + Auf der einen Seite Informationen wie Rechtsform, Firmenname, Sitz / Domizil, Zweck und Kapital.
 + Auf der anderen Seite Identifikatoren für die Interaktion mit den verschiedenen öffentlich-rechtlichen Akteuren auf kantonaler und Bundesebene wie Unternehmens-ID, Mehrwertsteuer-Nummer, AHV-Nummer, Nummer der Unfallversicherungspolice (SUVA oder private Versicherung).
       
-        _(nur Stammdaten; zugehörige Dokumente wie Handelsregistereintrag oder Bewilligung sind eigene Objekte, siehe Beziehungen)_
+        _(nur Stammdaten; zugehörige Dokumente wie Handelsregistereintrag oder Bewilligung sind eigene Objekte, s. Beziehungen)_
       ],
 
       [Zustände],
@@ -484,8 +484,8 @@ Die Möglichkeiten des Abbruches der Firmengründung durch die GründerInnen ode
       Für die grafische Aufbereitung der Zustandsübergänge, vgl. @fig-GTZ-Amira-gründet.],
 
       [Beziehungen],
-      [
-        - wird referenziert von *Gründungsvorhaben* (wobei die Gründung der juristischen Person nicht zwingend notwendig ist)
+      [Das Geschäftsobjekt *Unternehmen*
+        - wird referenziert von *Gründungsvorhaben* 
         - steht in Beziehung zu 
          - *Kundenkonto*: als Objekt des Gründungsvorhabens
          - *Bewilligung*: als Empfänger
@@ -542,7 +542,9 @@ transaktion],
 
       [Gründungs-dokumentation vorbereiten], [Der Benutzer erstellt die für die Gründung notwendigen Dokumente, sammelt die notwendigen Beilagen  und bringt diese physisch beim Notar vorbei und beauftragt diesen mit der Gründung der Firma. Der Benutzer zahlt das Gründungskapital ein.], [neu → beurkundet],
       [Eintrag im Handelsregister beantragen], [Der Benutzer meldet seine Firma über den Notar beim Handelsregisteramt.], [beurkundet → eingereicht],
-      [Prüfung durch Handelsregister (abwarten)], [ Das Handelsregisteramt prüft den Antrag formell und entscheidet über das weitere Vorgehen.
+      [Unterlagen nachreichen], [ Der Benutzer muss Unterlagen oder Ausweise nachreichen.
+       ], [unvollständig → eingereicht],      
+      [Antrag prüfen], [ Das Handelsregisteramt prüft den Antrag formell und entscheidet über das weitere Vorgehen.
        ], [eingereicht → angenommen / abgelehnt / unvollständig],
       [Im Handelsregister eintragen], [Das Handelregisteramt teilt mit, dass der Eintrag im Register erfolgt ist], [angenommen → im Handelsregister eingetragen],
     )
@@ -610,8 +612,8 @@ caption: [Geschäftsobjekt Bewilligung und dessen Zustände]
       [Bewilligung],
 
       [Definition / Zweck],
-      [[Stellt einen behördlichen "Vertrag" dar, welcher einer natürlichen oder juristischen Person (_in casu_ dem Unternehmen von Amira) erteilt werden kann.
-Die Erteilung der Bewilligung setzt je nach Kanton einen Fähigkeitsausweis voraus. Im Kanton Fribourg muss mindestens eine Person im Betrieb ein Wirtepatent besitzen.].],
+      [Stellt einen behördlichen "Vertrag" dar, welcher einer natürlichen oder juristischen Person (_in casu_ dem Unternehmen von Amira) erteilt werden kann.
+Die Erteilung der Bewilligung setzt je nach Kanton einen Fähigkeitsausweis voraus. Im Kanton Fribourg muss mindestens eine Person im Betrieb ein Wirtepatent besitzen.],
 
       [Attribute],
       [/*REDEwendung von Adrian übernehmen*/fachlich relevante Informationen zum Geschäftsobjekt sind: Typ (mit oder ohne Alkoholausschank), unterliegendes Wirtepatent (insbesondere dessen territoriale Gültigkeit), Standort bzw. Lokal, Datum Bewilligungsbeginn, erteilende Behörde, Datum der Anmeldung bei der kantonalen Lebensmittelbehörde bzw. -labor, Hygienekonzept],
