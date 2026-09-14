@@ -80,7 +80,7 @@ Diese Leistungen werden nicht als eigenständiges Portal, sondern als *API-Diens
 == Transgourmet
 
 Als letzter Player im Joint-Venture bringt Transgourmet die *Lieferfähigkeit* ein. 
-Als führender Schweizer Grosshändler für Gastronomie und Hotellerie ist Transgourmet der Partner, der Amira nach der Gründung ihres Unternehmens mit den notwendigen Lebensmitteln und Zutaten beliefert (Siehe: @fig-szenario-lieferantenvertrag).
+Als führender Schweizer Grosshändler für Gastronomie und Hotellerie ist Transgourmet der Partner, der Amira nach der Gründung ihres Unternehmens mit den notwendigen Lebensmitteln und Waren beliefert (Siehe: @fig-szenario-lieferantenvertrag).
 Die Eröffnung eines Kundenkontos bei Transgourmet ist die letzte Phase der Customer Journey und steht am Übergang von der Gründungsphase in den operativen Betrieb. 
 
 == Öffentliche Verwaltung als Interoperabilitätspartner<sec-rolle-interoperabilitätspartner>

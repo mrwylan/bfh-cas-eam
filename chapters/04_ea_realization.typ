@@ -3,7 +3,9 @@
   theorie-anker, design-entscheid, stolperstein, frage, todo-action, fuehrung,
   autor-marker, autor-finnofleet, autor-transgourmet, autor-verwaltung, autor-dvbern, mit-lead, praxis-zitate, rechtsnorm
 )
+
 #pagebreak()
+
 = Die Realisierung des Resource Independent Model
 /*in Anlehnung an Kapitel 3.4.5. vom Spichiger-Skript*/
 == Allgemeines
@@ -13,7 +15,7 @@ Die Verfolgung der durch die Übungen vorgegebenen Arbeitsschritte hat uns zur h
 Jeder Entwicklungsschritt bezieht sich auf einen Auftrag (Übung) und folgt der Empfehlung zur Erarbeitung des RIM, die im Skript @Spichiger2026GFbUA[S. 53 ff]. beschrieben ist.
 Die Modellierung erfolgt mit Archimate.
 Die folgenden Unterkapitel orientieren sich wie gehabt an den fünf Szenarien der Customer-Journey.
-Zunächst beschreiben wir die Herleitung der wesentlichen Geschäftsobjekte und bringen diese anschliessend in Beziehung mit den auf ihnen aufbauenden Geschäftstransaktionen. Dazu verwenden wir ressourcenunabhängige Modelle nach Archimate.
+Zunächst beschreiben wir die Herleitung der wesentlichen Geschäftsobjekte und bringen diese anschliessend in Beziehung mit den auf ihnen aufbauenden Geschäftstransaktionen.
 In den darauf folgenden Hauptkapiteln werden die Geschäftstransaktionen zu Geschäftsprozessen zusammengeführt und schliesslich die wesentlichen Geschäftsfähigkeiten der jeweiligen Prozesse identifiziert und in das Modell integriert.
 Im letzten Kapitel der Modellentwicklung beschreiben wir den Übergang vom RIM ins ressourcenspezifische Modell anhand der IDEAL Informationssystemarchitektur.
 
@@ -33,35 +35,28 @@ Sowohl bei Input und Output wird darauf geachtet, dass diese inklusive ihre Zust
 @Spichiger2026GFbUA /*S. 54*/
 ])
 
-
 In diesem ersten Teil der Realisierung des ressourcenunabhängigen Modells identifizieren wir die relevanten Geschäftsobjekte und dokumentieren deren Zustände und Geschäftstransaktionen pro Szenario, um die Lesbarkeit zu erhalten.
 Die entsprechenden Geschäftsprozesse sind ebenfalls modelliert, auch wenn sie später erklärt werden.
 Die Szenarien sind in @sec-szenarien-customer-journey beschrieben und werden einzeln aufbereitet. 
 
 === Identifizierte Geschäftsobjekte
+
 Um Geschäftsobjekte zu identifizieren, hat sich die Gruppe mit der Struktur von Amiras Customer-Journey auseinandergesetzt.
 Die Customer-Journey haben wir in Szenarios aufgeteilt, und in jedem Szenario ist ein Arbeitsschritt, der sich von anderen Arbeitsschritten abgrenzen lässt.
 Arbeitsschritte resultieren in Ergebnissen oder bauen auf ihnen auf. 
 Das Szenario: "Eine Quereinsteigerin möchte ein Unternehmen gründen.", baut also auf einem Gründungsvorhaben auf und resultiert idealerweise in einem Unternehmen.  
 Diese Ergebnisse dieses Vorgehens bilden die Grundlage für mögliche Geschäftsobjekte.
-Die folgende Abbildung zeigt ein mögliches Ergebnis aus dieser Vorgehensweise.
+Die folgende Abbildung zeigt ein Zwischenergebnis aus dieser Vorgehensweise.
 
-
-
-
-
- #figure(
+#figure(
   image("../assets/Customer Journey View.svg", width: 100%),
   caption: [Archimate Modell der Customer-Journey von Amira und erste Iteration für die Identifikation der Geschäftsobjekte]
 ) <fig-customer-journey-view>
 
-In den nächsten Abschnitten folgen wir dem empfohlenen Vorgehen und beschreiben für jedes Szenario das Geschäftsobjekt, seine Zustände sowie die Transaktionen, die diese hervorrufen:
-#todo-action([unfertiger satzt mit doppelpunkt])
-Im ressourcenunabhängigen Modell (RIM) nach Archimate sind die Eigenschaften der Geschäftsobjekte zunächst nicht von Bedeutung. 
-Wir beginnen stattdessen mit der Betrachtung der Zustände, die ein Geschäftsobjekt annimmt, und welche Transaktionen einen Zustandswechsel hervorrufen. 
-Die nächsten Abschnitte  beschreiben ein entsprechendes RIM für die Szenarien der Customer-Journey,
+Im ressourcenunabhängigen Modell (RIM) sind die Eigenschaften der Geschäftsobjekte zunächst nicht im Fokus. 
+Wir beginnen stattdessen mit der Betrachtung der Zustände, die ein Geschäftsobjekt annimmt, und welche Transaktionen einen Zustandswechsel hervorrufen, was wir entlang der Szenarien der Customer-Journey im nächsten Abschnitt beschreiben.
 
-@fig-IdentifizierteGeschaefstobjetke zeigt die wesentlichen identifizierten Geschäftsobjekte und ihre Abhängigkeiten in GastroStart, die von der Gruppe identifiziert wurden. 
+@fig-IdentifizierteGeschaefstobjetke zeigt die wesentlichen identifizierten Geschäftsobjekte und ihre Abhängigkeiten in GastroStart. 
 
 #figure(
   image("../assets/GO diagram.svg", width: 100%),
