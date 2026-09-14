@@ -16,3 +16,5 @@ Semantic Anchors sind etablierte Fachbegriffe, Methodologien und Frameworks, die
 Dieses Referenzdokument ordnet die Anchors den acht Modulen des CAS Enterprise Architecture Management zu, dokumentiert ihre Schlüsselautoren und aktivierten Konzepte und gibt Hinweise zu ihrem Einsatz in Prompts und im Lernbericht.
 
 @bfh-cas-eam-semantic-anchors (#link("https://github.com/mrwylan/bfh-cas-eam-semantic-anchors/releases"))
+
+#pagebreak()

@@ -261,6 +261,7 @@ Die jeweilige Kanzlei übernimmt den Medienbruch auf Papier.
 ) <fig-customer-journey-grüdndung-bewilligungg>
 
 
+#pagebreak()
 #figure(
   caption: [Szenario "Amira gründet ihr Unternehmen"],
   block(

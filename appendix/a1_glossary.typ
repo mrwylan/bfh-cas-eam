@@ -1,11 +1,10 @@
-// ── Anhang: Glossar ───────────────────────────────────────────────────────
-
+// ── Anhang: Glossar 
 = Glossar
 
 Dieses Glossar erklärt die im Dokument verwendeten fachlichen und methodischen Begriffe kurz und nennt, wo vorhanden, gebräuchliche Synonyme oder im Text verwendete Alternativbezeichnungen. Es erhebt keinen Anspruch auf Vollständigkeit ausserhalb des Kontexts dieser Arbeit.
 
 #figure(
-  caption: [ /* Glossar-Titel – Inhalt bleibt deine Entscheidung */ ],
+  caption: [ Glossar ],
   block(width: 100%, breakable: true)[
     #set par(justify: false)
     #table(
@@ -97,7 +96,7 @@ Dieses Glossar erklärt die im Dokument verwendeten fachlichen und methodischen 
       [Enterprise Architecture Management (EAM)],
       [Die Disziplin, mit der eine Unternehmensarchitektur geplant, gesteuert und weiterentwickelt wird.],
 
-      [FINMA #linebreak() (Eidgenössische Finanzmarktaufsicht)],
+      [FINMA #linebreak() (Eidgenössische Finanzmarkt- aufsicht)],
       [Aufsichtsbehörde über Banken, Versicherungen und weitere Finanzintermediäre in der Schweiz. Sie stellt eigene Anforderungen und anerkennt zusätzlich Selbstregulierungen der Branche als verbindlichen Mindeststandard; im Dokument im Kontext der regulatorischen Vorgaben an die Kreditanbahnung genannt. Siehe auch #emph[SBVg].],
 
       [Geschäftsfähigkeit],
@@ -109,7 +108,7 @@ Dieses Glossar erklärt die im Dokument verwendeten fachlichen und methodischen 
       [Geschäftsprozess],
       [Aggregation inhaltlich zusammenhängender Geschäftstransaktionen zu einem Ablauf. #emph[Syn.: Business Process.]],
 
-      [Geschäftstransaktion],
+      [Geschäfts- \transaktion],
       [Vorgang, der ein Geschäftsobjekt von einem Zustand in einen anderen überführt, mit definierten Inputs und Outputs. #emph[Syn.: Business Transaction.]],
 
       [GS1],
@@ -169,7 +168,7 @@ Dieses Glossar erklärt die im Dokument verwendeten fachlichen und methodischen 
       [SaaS #linebreak() (Software as a Service)],
       [Betriebsmodell, bei dem Software zentral betrieben und den Kundinnen und Kunden als Dienst zur Nutzung bereitgestellt wird.],
 
-      [SBVg #linebreak() (Schweizerische Bankiervereinigung)],
+      [SBVg #linebreak() (Schweizerische Bankier- \vereinigung)],
       [Branchenverband der Schweizer Banken. Ihre #emph[Richtlinien] sind Selbstregulierung der Branche --- für die Kreditanbahnung namentlich die Mindestanforderungen bei Hypothekarfinanzierungen sowie die Richtlinien zur Prüfung, Bewertung und Abwicklung grundpfandgesicherter Kredite. Von der #emph[FINMA] anerkannte Richtlinien gelten als verbindlicher Mindeststandard und werden aufsichtsrechtlich durchgesetzt.],
 
       [Self-Contained System (SCS)],
@@ -200,7 +199,7 @@ Dieses Glossar erklärt die im Dokument verwendeten fachlichen und methodischen 
       [Touchpoint],
       [Konkreter Berührungspunkt zwischen Kunde und System bzw. Organisation innerhalb einer Customer Journey.],
 
-      [Unternehmensarchitektur],
+      [Unternehmens- \architektur],
       [Die grundlegende Struktur einer Organisation, bestehend aus ihren Geschäfts-, Anwendungs-, Daten- und Technologie-Elementen sowie deren Beziehungen. #emph[Syn.: Enterprise Architecture, EA.]],
 
       [Value Driver],
@@ -214,3 +213,4 @@ Dieses Glossar erklärt die im Dokument verwendeten fachlichen und methodischen 
     )
   ]
 ) <tbl-glossar>
+#pagebreak()

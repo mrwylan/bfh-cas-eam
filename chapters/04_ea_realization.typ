@@ -172,7 +172,7 @@ Die hier aufgezählten Zustände gelten für alle Phasen der Customer Journey, u
 Und schliesslich geben wir in der nächsten Tabelle einen Überblick über die hier erwähnten Geschäftstransaktion. Bei der Auflistung der Zustandsübergänge beschränken wir uns auf die Zustände des Gründungsvorhabens.
 
 #figure(
-  caption: [Geschäftstransaktionen: Prozess "sich orientieren" ],
+  caption: [Geschäftstransaktionen: Prozess "Sich orientieren" ],
   block(
     width: 100%,
     radius: 6pt,
@@ -321,11 +321,13 @@ Die folgende @fig-gtz-registrierung zeigt das Geschäftsobjekt *Kundenkonto* und
   caption: [Zustandsübergänge des Kundenkontos im Szenario "Sich registrieren"]
 ) <fig-gtz-registrierung>
 
-Die folgende Tabelle fasst die hier erwähnten Geschäftstransaktion noch einmal zusammen.
 #pagebreak()
 
+Die folgende Tabelle fasst die hier erwähnten Geschäftstransaktion noch einmal zusammen.
+
+
 #figure(
-  caption: [Geschäftstransaktionen: Prozess «sich registrieren»],
+  caption: [Geschäftstransaktionen: Prozess «Sich registrieren»],
   block(
     width: 100%,
     radius: 6pt,
@@ -412,11 +414,13 @@ Die folgende @fig-GTZ-Amira-gründet stellt die Zusammenhänge der Geschäftsobj
 
  #figure(
   image("../assets/GTZ Amira gruendet ihr Unternehmen.svg", width: 100%),
-  caption: [Geschäftstransaktionen und Zustände - Szenario Unternehmen Gründen]
+  caption: [Zustandsübergänge des Gründungsvorhabens 
+im Szenario "Unternehmen - \gründen"]
 ) <fig-GTZ-Amira-gründet>
 
 Nachfolgend wird auf die einzelnen Elemente der Grafik eingegangen, wobei sich die Beschreibung auf das Happy Path konzentriert. 
-Die Möglichkeiten des Abbruches der Firmengründung durch die GründerInnen oder dass die kantonale Behörde den Eintrag ins Handelsregister nicht vornimmt, werden nicht näher beschrieben.  
+Die Möglichkeiten des Abbruches der Firmengründung durch die GründerInnen oder dass die kantonale Behörde den Eintrag ins Handelsregister nicht vornimmt, werden nicht näher beschrieben. 
+
 
 ==== Geschäftsobjekt und Zustände 
 #figure(
@@ -561,7 +565,7 @@ Die folgende Abbildung stellt die Zusammenhänge der Geschäftsobjekte, Zuständ
 
  #figure(
   image("../assets/GTZ Amira erhaelt die Bewilligung.svg", width: 100%),
-  caption: [Geschäftstransaktionen und Zustände - Szenario "Bewilligung erhalten"]
+  caption: [Zustandsübergänge des Gründungsvorhabens im Szenario \"Bewilligung erhalten"]
 ) <fig-GTZ-Amira-bewilligung>
 
 Nachfolgend wird auf die einzelnen Elemente der Grafik eingegangen:
@@ -752,7 +756,6 @@ caption: [Geschäftsobjekt Finanzierung und dessen Zustände]
 
       [Attribute],
       [Auf Objektebene bewusst nicht ausmodelliert (analog zu den übrigen Geschäftsobjekten). Fachlich relevant wären Betrag, Laufzeit, Kondition/Zinssatz und Verwendungszweck.],
-
       [Zustände],
       [neu, angefordert, unvollständig, vollständig, angenommen, abgelehnt, abgebrochen.
 
@@ -779,7 +782,7 @@ caption: [Geschäftsobjekt Finanzierung und dessen Zustände]
 ) <fig-GTZ-finanzierung>
 
 #figure(
-  caption: [Geschäftstransaktionen der Phase «Amira erhält eine Finanzierung»],
+  caption: [Geschäftstransaktionen im Szenario «Amira erhält eine Finanzierung»],
   block(
     width: 100%,
     radius: 6pt,
@@ -889,6 +892,8 @@ Die Zustände des Lieferantenkontos sind: pendent, aktiv, inaktiv, gelöscht (si
   image("../assets/Phase 5 - Kunde bei Transgourmet.svg", width: 100%),
   caption: [Geschäftstransaktionen des Szenarios «Amira wird Kunde bei Transgourmet»]
 ) <fig-GTZ-kunde-bei-transgourmet>
+
+#pagebreak()
 
 #figure(
   caption: [Geschäftstransaktionen: Prozess «Kunde bei Transgourmet werden»],
@@ -1025,6 +1030,7 @@ Schwierigkeiten bat es, Abstand von der gewohnte Implementierungsebene zu halten
   caption: [Archimate Modell einer frühen Modellierungsphase von "Betriebsbewilligung erhalten"]
 ) <fig-obs-bewilligung-erhalten>
 
+#pagebreak()
 
 == Abstraktion: Geschäftsprozesse und Geschäftsfähigkeiten
 
@@ -1109,7 +1115,7 @@ Die Fähigkeiten sicherzustellen, dass Authentifizierung und Autorisierung siche
 Die folgende Abbildung zeigt wie die in diesem Abschnitt besprochenen Prozesse und Fähigkeiten in das RMI nach Archimate eingebettet sind.
 
 #figure(
-  image("../assets/jan/Phase 2b - Sich registieren (GP & GF).svg", width: 100%),
+  image("../assets/jan/Phase 2b - Sich registieren (GP & GF).svg", width: 97%),
   caption: [Geschäftsfähigkeiten in Phase 2: "Sich registrieren"]
 ) <fig-bp-and-bc-phase2>
 
@@ -1228,7 +1234,7 @@ Bewilligung erwirken],
   ]
 ) <tbl-GF-Behoerdengaenge>
 
-
+#pagebreak()
 
 === Geschäftsprozesse und Geschäftsfähigkeiten für die Finanzierung
 <sec-GP-GF-finanzierung>
@@ -1297,6 +1303,8 @@ Ein erfolgreicher Gastronomiebetrieb benötigt ein Lieferantenkonto, um Waren zu
 
 Die Geschäftsfähigkeit *Bestellung* umfasst die Erfassung und Verwaltung von Bestellungen beim Lieferanten. Die Geschäftsprozesse *Bestellung aufgeben* und *Wareneingang erfassen* sind Teil der *Bestellung* Geschäftsfähigkeit.
 
+#pagebreak() 
+
 = Das Inside-Out-Mapping: Realisierung der Enterprise Architecture
 
 Dieses Kapitel enthält die separaten Ausführungen der jeweiligen Autoren der Gruppenarbeit zum aktuellen Operating Models des eigenen Ursprungsbetriebs und des Joint-Ventures GastroStart. Es kann sein, dass die Autoren zu jeweiligen, unterschiedlichen Schlüsse bezüglich der Gestaltung des Operating Models des Joint-Ventures kommen. Dies ist so gewollt.  
@@ -1353,6 +1361,8 @@ Die folgende Abbildung zeigt das RSM der Phase "Orientierung" und dessen Beziehu
   caption: [RSM der Phase «Sich orientieren»],
 ) <fig-RSM-orientierung>
 
+#pagebreak() 
+
 === Die Registrierung im RSM <sec-domaenenmodell-registrierung>
 #autor-dvbern("Beitrag von Jan Sohnemann, DV Bern", inhalt: [])
 
@@ -1373,7 +1383,7 @@ Der Sitzungsdienst dient der Verwaltung von Benutzer-Sessions und implementiert 
 Die folgende Abbildung zeigt das RSM der Phase "Registrierung" und dessen Beziehungen zum RIM.
 
 #figure(
-  image("../assets/jan/Phase 2c - Sich registieren (RSM).svg", width: 100%),
+  image("../assets/jan/Phase 2c - Sich registieren (RSM).svg", width: 97%),
   caption: [RSM der Phase «Sich registieren»],
 ) <fig-RSM-registrierung>
 
@@ -1509,6 +1519,8 @@ Aufgrund der oben aufgeführten Ausgangslage und der formulierten Anforderungen 
   image("../assets/RSM - Betriebsbewilligung erhalten.svg", width: 100%),
   caption: [RSM der Phase «Amira erhält die Bewilligung»],
 ) <fig-RSM-bewilligung>
+
+#pagebreak()
 
 Folgende Überlegungen liegen dem Vorschlag von @fig-RSM-bewilligung zugrunde: 
 
@@ -1674,6 +1686,8 @@ Die Begründung ist unmittelbar an die Rolle in der Customer-Journey gebunden:
 
 _Anmerkung zum Architekturstil:_ ELA Kredit setzt auf eine lose gekoppelte Architektur, in der Komponenten unabhängig arbeiten und dennoch intelligent vernetzt bleiben. Die lose technische Kopplung schwächt die Einordnung nicht ab: Auf der Ebene der Geschäftsprozesse und Daten bleibt es Unification (geteilte Daten, standardisierter Prozess): die lose Kopplung ist lediglich der Implementierungsstil, der das Modell flexibel hält.
 
+#pagebreak()
+
 #figure(
   caption: [Merkmale des Unification-Modells nach Ross, Weill und Robertson @ross2006enterprise[Abb. 2-1, S. 30] --- übersetzt --- und ihre Ausprägung im Fall der Kreditanbahnung mit ELA Kredit. Merkmale #sym.copyright 2005 MIT Sloan Center for Information Systems Research, mit Genehmigung verwendet.],
   block(
@@ -1727,6 +1741,7 @@ _Anmerkung zum Architekturstil:_ ELA Kredit setzt auf eine lose gekoppelte Archi
   ]
 ) <tbl-OM-unification-merkmale>
 
+#pagebreak()
 === Enterprise Architecture zur getroffenen Wahl
 
 Die folgende Architektur zeigt ELA Kredit konkret. Die Kanäle gehören der Bank und bringen keine eigene Prozesslogik mit: Sie rufen dieselben APIs auf. Dahinter liegen der standardisierte Anbahnungsprozess und ein zentrales Backend als Single Source of Truth, das in die bestehenden Systeme der Bank integriert ist und diese nicht ersetzt --- alles unter einem einzigen regulatorischen Regelwerk.
@@ -1756,6 +1771,8 @@ Die bisherigen Abschnitte bleiben auf der Ebene des Operating Models und der Arc
   image("../assets/RSM Amira erhaelt eine Finanzierung.svg", width: 100%),
   caption: [RSM der Phase «Amira erhält eine Finanzierung»],
 ) <fig-RSM-finanzierung>
+
+#pagebreak()
 
 Das Modell ist in drei Ebenen zu lesen:
 
@@ -1803,6 +1820,7 @@ Das Modell macht das Unification-Operating-Model aus @fig-operating-model-matrix
   image("../assets/ea_ist_archimate_transgourmet_b2b.svg", width: 100%),
 ) <fig-archimate-ist>
 
+#pagebreak()
 Die Schichten lesen sich wie folgt:
 
 - *Business Layer*: Der externe B2B-Kunde (Gastronomiebetrieb) interagiert über EDIFACT/GS1 mit der Prozesskette Bestellung (ORDERS, ORDRSP) → Disposition (Tour, Kommissionierung) → Lieferung (DESADV, RECADV) → Fakturierung (INVOIC, APERAK). Die zentralen Geschäftsobjekte sind Kunde, Sortiment, Bestellung, Lieferung und Faktura.
