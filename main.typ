@@ -35,6 +35,7 @@ Anschliessend werden die Ressourcen modelliert - wobei jeder der vier Kollegen a
 #include "chapters/03_customer_journey.typ"
 #include "chapters/03b_joint_venture.typ"
 #include "chapters/04_ea_realization.typ"
+#include "chapters/05_finale.typ"
 
 // ── References ──────────────────────────────────────────────────────────────
 
