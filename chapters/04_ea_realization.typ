@@ -943,69 +943,13 @@ transaktion],
   ])
 
 Eine anfängliche Identifikation der Geschäftsobjekte führte die Gruppe zu einer umfangreicheren Liste.
-Physische Artefakte wie "Bewilligung", "Liefervertrag" oder "kantonales Formular" schienen uns vorerst sehr sinnvoll und notwendig. 
-In einer frühen Phase war es besonders schwierig, die reine Kundensicht einzunehmen - und führte dazu, dass beispielsweise zwischen Bewilligungsantrag und die erteilte Bewilligung (Verfügung) unterschieden wurde.
+Physische Artefakte wie "Bewilligung", "Liefervertrag" oder "kantonales Formular" schienen uns vorerst sehr sinnvoll und notwendig. Auch "Identitätsnachweis", "Gewerbebewilligung" und "Alkoholbewilligung" wurden als separate Objekte modelliert.
 
-Nachofolgende Tabelle enthält eine Zusammenfassung der anfänglichen Objekte: 
-
-#figure(
-  caption: [Business-Object-Inventar: GastroStart — nach Kernel Type],
-  block(width: 100%, breakable: true)[
-    #set text(size: 7.5pt)
-    #table(
-      columns: (1.9cm, 1fr),
-      inset: 5pt,
-      stroke: 0.4pt,
-      fill: (x, y) => if y == 0 { luma(210) } else if calc.odd(y) { luma(248) } else { white },
-      align: (left, left),
-      [*Kernel Type*], [*Business Objects*],
-      [Contract],     [Gewerbebewilligung · Alkoholbewilligung · Handelsregistereintrag · Kreditantrag · Liefervertrag (Neukunde)],
-      [Data Object],  [Bonitätsprüfung],
-      [Document],     [Kantonsanforderungskatalog ·Bewilligungsantrag · Bewilligungsübersicht · Identitätsnachweis · Anmeldung Lebensmittelkontrolle · Kantonales Formular · Bestellung],
-      [Entity],       [Betriebstyp-Profil · Gründungsprofil · Nutzerkonto · Geschäftskonto (IBAN) · Lieferantenkonto],
-      [Event],        [Bewilligungsstatus],
-    )
-  ]
-) <tbl-business-objects-grouped>
+In einer frühen Phase war es besonders schwierig, die reine Kundensicht einzunehmen - und führte dazu, dass beispielsweise zwischen Bewilligungsantrag und der erteilten Bewilligung  unterschieden wurde.
 
 Die in den Übungen gestellte Frage "Was bleibt, wenn Ihr Unternehmen dematerialisiert wird? 
 Alles wird zur Information, was Information werden kann. 
 Was bleibt physisch vorhanden, was verschwindet?" 
-
-/*#figure(
-  caption: [Business-Object-Inventar: GastroStart],
-  block(width: 100%, breakable: true)[
-    #set text(size: 7.5pt)
-    #table(
-      columns: (3.3cm, 1.9cm),
-      inset: 5pt,
-      stroke: 0.4pt,
-      fill: (x, y) => if y == 0 { luma(210) } else if calc.odd(y) { luma(248) } else { white },
-      align: (left, left),
-      [*Business Object*], [*Kernel Type*],
-      [Kantonsanforderungskatalog],    [Document],
-      [Unternehmen],                    [Entity],
-      [Bewilligungsantrag],              [Document],
-      [Bewilligungsübersicht],          [Document],
-      [eID-Identitätsnachweis],         [Document],
-      [Gründungsprofil],               [Entity],
-      [Nutzerkonto],                   [Entity],
-      [Gewerbebewilligung],            [Contract],
-      [Lebensmittelkontroll-Anmeldung],[Document],
-      [Alkoholbewilligung],            [Contract],
-      [Handelsregistereintrag],        [Contract],
-      [Bewilligungsstatus],            [Event],
-      [Kantonales Formular],           [Document],
-      [Bonitätsprüfung],              [Data Object],
-      [Geschäftskonto (IBAN)],         [Entity],
-      [Kreditantrag],                  [Contract],
-      [Lieferantenkonto],              [Entity],
-      [Bestellung],                    [Document],
-      [Liefervertrag (Neukunde)],      [Contract],
-    )
-  ]
-) <tbl-business-objects-kurzform>
-*/
 
 #stolperstein([
 
@@ -1015,8 +959,6 @@ Schwierigkeiten bat es, Abstand von der gewohnte Implementierungsebene zu halten
 ])
 
 + *zu "kleine" Objekte:* in einer frühen Phase wurden Bestellung und Bestellbestätigung als separate Objekte modelliert - anstatt auf die Sichtbarkeit und Einsehbarkeit des Zustands aufzubauen. 
-/*Zustände sind absolut und für alle Beteiligten sichtbar - eine separat modellierte  Bestätigung braucht es nicht. 
-*/
 
  #figure(
   image("../assets/Phase 5 - Early View.svg", width: 100%),
