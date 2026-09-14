@@ -1425,8 +1425,8 @@ Folgt man dem Rat der Literatur, so findet man folgende Passage:
 ])
 
 GastroStart fällt somit unter das sog. Operating Model "Coordination". 
-Durch die hohe, clevere Datenintegration unter den aktiven Partnern erlebt Amira eine "Façade", die weitgehend einheitlich und frei von Medienbrüchen ist, ähnlich wie im Kundenbereich eines grossen Anbieters von Fernmeldediensten oder eines anderen Anbieters von "austauschbaren" Massenprodukten.
-Dass hinter dem User Interface jedoch die verschiedenen Ad-hoc-Prozesse der aktiven Joint-Venture-Partner laufen, bekommt Amira nur teilweise mit.
+Durch die hohe, clevere Datenintegration unter den aktiven Partnern erlebt der Kunde eine "Façade", die weitgehend einheitlich und frei von Medienbrüchen ist, ähnlich wie im Kundenbereich eines grossen Anbieters von Fernmeldediensten oder eines anderen Anbieters von "austauschbaren" Massenprodukten.
+Dass hinter dem User Interface jedoch die verschiedenen Ad-hoc-Prozesse der aktiven Joint-Venture-Partner laufen, bekommt der Kunde nur teilweise mit.
 
 Ganz anders verhält es sich dort, wo ein Szenario (Unternehmen gründen, Bewilligung erhalten) vom Handeln einer Behörde abhängig ist. Dort sind Brüche unumgänglich. 
 Das öffentliche Wesen — respektive dessen jeweilige, in GastroStart zu integrierende Systeme — wird als externes System und bewusster "Absprung" weg von GastroStart prozedural wie technisch in den betroffenen Customer-Journeys implementiert.
