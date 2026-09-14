@@ -1786,5 +1786,3 @@ Die Geschäftstransaktion *Bestellung senden* wird im RSM bis auf Stufe Technolo
 ) <fig-RSM-Bestellabwicklung>
 
 Die Domänen GastroStart und Transgourmet werden über den Technologie Layer mit EDIFACT Order Sender und Empfänger verbunden, so dass die Bestellabwicklung über die Akteursgrenzen hinweg standardisiert ist (siehe @fig-RSM-Bestellabwicklung).
-
-#pagebreak()
