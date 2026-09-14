@@ -1283,25 +1283,13 @@ Die übergeordnete Geschäftsfähigkeit lautet *Gründungsvorhaben finanzieren*.
 
 Die letzten beiden Punkte von Teilfähigkeit 3 --- verständliche Begründung und Verweis auf Förderprogramme --- leiten sich aus der Chance des Szenarios #emph[Amira erhält eine Finanzierung] ab (siehe @tbl-szenario-finanzierung) und beschreiben einen Soll-Zustand. Bewusst nicht als eigene Geschäftsfähigkeit geführt wird die Kommunikation dieses Entscheids: Wie das Ergebnis Amira präsentiert wird, ist eine Frage der Kanäle und Interaktionskomponenten und gehört damit ins RSM, nicht in die ressourcenunabhängige Fähigkeitsstruktur.
 
-// Optionale Grafik: bei Bedarf ein Capability-View "Gründungsvorhaben finanzieren"
-// in Archi anlegen (vier Teilfähigkeiten, Composition), als assets/GF_Finanzierung.svg
-// exportieren und als #figure einfügen (analog zu "GF Behoerdeninteration.svg").
 
 
-=== Geschäftsprozesse Kunde bei Transgourmet werden
-#todo-action([\@Jakob sorry, my bad: i merged this part with the Geschäftsprozesse - could you check if it fits well in the current chapter?])
-==== Geschäftsprozesse 
 
-Über die Geschäftsobjekte #emph[Lieferantenkonto] und #emph[Bestellung] werden die Geschäftstransaktionen in diesem Szenario zu zwei Geschäftsprozessen aggregiert:
-- Lieferantenkonto beantragen und eröffnen
-- Bestellung aufgeben und Wareneingang erfassen
-
-==== Abhängigkeiten von Geschäftsobjekten 
-
-Diese Geschäftsprozesse bilden das letze Szenario der Customer-Journey ab. Eine erfolgreiche Realisation des Gründungsvorhabens von Amira ist die Voraussetzung.
 ==== Geschäftsfähigkeiten Kunde bei Transgourmet werden
 
-Die Geschäftsfähigkeit die im Szenario *Kunde bei Transgourmet werden* tragend werden, wurden als *Lieferantenkonto* und *Bestellung* identifiziert.
+Die Geschäftsfähigkeit die im Szenario *Kunde bei Transgourmet werden* tragend werden, wurden als *Lieferantenkonto* und *Bestellung* identifiziert. 
+
 Das Einordnen gelingt am Besten anhand der Geschäftstransaktionen, wie sie in der Phase *Amira wird Kunde bei Transgourmet* beschrieben sind (siehe @tbl-GT-Kunde-bei-Transgourmet). Die Geschäftstransaktionen werden zu zwei Geschäftsprozessen aggregiert, die wiederum die beiden Geschäftsfähigkeiten stützen.
 
 1. Lieferantenkonto
@@ -1311,7 +1299,6 @@ Ein erfolgreicher Gastronomiebetrieb benötigt ein Lieferantenkonto, um Waren zu
 2. Bestellung
 
 Die Geschäftsfähigkeit *Bestellung* umfasst die Erfassung und Verwaltung von Bestellungen beim Lieferanten. Die Geschäftsprozesse *Bestellung aufgeben* und *Wareneingang erfassen* sind Teil der *Bestellung* Geschäftsfähigkeit.
-
 
 = Das Inside-Out-Mapping: Realisierung der Enterprise Architecture
 
@@ -1565,7 +1552,6 @@ Die gestaltet sich jedoch aus folgenden Gründen als schwierig:
 
 + *Rechtsgrundlage als Vorbedingung*: Die Schaffung der Voraussetzungen für eine durchsetzbare Governance liegt ausserhalb der Kompetenz der Unternehmensarchitektur: Behörden sind in all ihrem Handeln an das Legalitätsprinzip gebunden. 
 Fehlt eine solche, bleibt die Unternehmensarchitektur in diesem Bereich ein zahnloser Tiger: Sie kann Interoperabilität fordern oder gar gestalten, die rechtliche Voraussetzung dafür aber nicht selbst schaffen.
-
 
 === Lösungsansatz
 
