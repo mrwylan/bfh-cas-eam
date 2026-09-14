@@ -52,17 +52,23 @@ Die Unternehmensarchitektur von Transgourmet steht vor spezifischen Herausforder
 Die 1977 gegründete DV Bern AG beschäftigt rund 200 Mitarbeitende und versteht Digitalisierung als wertschöpfenden Prozess.
 Ihr Schwerpunkt liegt auf Digitalisierungsprojekten für die öffentliche Verwaltung und KMU; 
 das Leistungsportfolio umfasst Digitalisierungsberatung, Softwareentwicklung und IT-Services. 
+
 Die Geschäftsarchitektur bildet dabei die duale Rolle als Produktentwickler und Dienstleister ab: 
 Standardisierte SaaS-Produkte, etwa für E-Procurement, Handelsregister und Steuern, stehen neben projektbezogenen Individualentwicklungen. 
 Agile Arbeitsweisen wie Scrum und DevOps werden durch eine pragmatische Enterprise Architecture unterstützt, die wiederverwendbare Geschäftskomponenten fördert, ohne die Autonomie der Teams einzuschränken. 
+
 Die Anwendungsarchitektur folgt einem Best-of-Breed-Ansatz mit Java im Backend und Angular im Frontend sowie einer Kombination aus modularen Monolithen und Microservices. 
 Eine API-First-Strategie und API-Gateways ermöglichen die sichere Integration interner und externer Systeme, während bestehende Anwendungen schrittweise, beispielsweise mithilfe des Strangler-Fig-Patterns, modernisiert werden. 
+
 In der Datenarchitektur stehen Datenhoheit, Sicherheit und die Einhaltung des Schweizer Datenschutzgesetzes im Zentrum. 
 Dazu gehören getrennte Datenbestände, eine zwingende Datenhaltung in der Schweiz und offene Austauschstandards wie XML, JSON-Schema und eCH.
+
 Technologisch verbindet DV Bern eigene Rechenzentren und sicherheitskritische On-Premise-Systeme mit containerisierten Cloud-Umgebungen auf Basis von Kubernetes. 
 Security by Design, Identity and Access Management, Verschlüsselung, Audits sowie automatisierte CI/CD-Pipelines sichern den Betrieb und schnelle Release-Zyklen. 
+
 Die Enterprise Architecture ist dezentral und kollaborativ organisiert: 
 Beratende Architektur-Boards definieren Leitplanken, während praxisnahe „Working Architects“ eng mit den Scrum-Teams zusammenarbeiten. 
+
 Insgesamt verbindet die Architektur Stabilität, Sicherheit und Compliance des öffentlichen Sektors mit der Agilität eines modernen Softwarehauses und schafft damit die Grundlage für effiziente, wartbare und langfristig betreibbare Lösungen.
 
 Ein Beispiel zur EA-Integration bei DV Bern befindet sich in den Anhängen (@ext-ea-kibon).
