@@ -836,10 +836,10 @@ transaktion],
 
 === Amira wird Kunde bei Transgourmet
 
-Das Lieferantenkonto ist ein Geschäftsobjekt, das die Beziehung zwischen dem Gastronomiebetrieb und seinen Lieferanten abbildet. Es enthält Informationen über die Lieferanten, die Konditionen der Zusammenarbeit und den Status der Geschäftsbeziehung. Das Lieferantenkonto ist entscheidend für die effiziente Abwicklung von Bestellungen und die Verwaltung von Lieferantenbeziehungen.
+Das Lieferantenkonto ist ein Geschäftsobjekt, das die Beziehung zwischen dem Gastronomiebetrieb und seinen Lieferanten abbildet. Es enthält Informationen über die Lieferanten, die Konditionen der Zusammenarbeit und den Status der Geschäftsbeziehung. Das Lieferantenkonto ist entscheidend für die effiziente Abwicklung von Bestellungen und der Pflege von Lieferantenbeziehungen.
 
 #figure(
-image("../assets/GOLieferantenkonto.svg", width: 100%),
+image("../assets/GOLieferantenkonto.svg", width: 60%),
 caption: [Geschäftsobjekt Lieferantenkonto und dessen Zustände]
 ) <fig-GOLieferantenkonto>
 
@@ -887,6 +887,8 @@ caption: [Geschäftsobjekt Lieferantenkonto und dessen Zustände]
     )
   ]
 ) <tbl-GO-Lieferantenkonto>
+
+Die Zustände des Lieferantenkontos sind: pendent, aktiv, inaktiv, gelöscht (siehe @tbl-GO-Lieferantenkonto), die aber nicht alle im gewählten Szenerio enthalten sind.
 
 #figure(
   image("../assets/Phase 5 - Kunde bei Transgourmet.svg", width: 100%),
@@ -1140,9 +1142,9 @@ Die Geschäftstransaktionen von GastroStart werden zu drei *Geschäftsprozesse* 
 - _Unternehmen [bei Behörden] anmelden_ 
 - _Unternehmensgründung vollziehen_
 
-Die ersten beiden Geschäftsprozesse liegen in der Verantwortung des Joint Ventures.
+Die ersten beiden Geschäftsprozesse liegen in der Verantwortung des Joint-Ventures.
 Jeder Prozess verfolgt ein eigenständiges Ziel
-- Der Geschäftsprozess _Handelsregistereintrag erwirken_ hat zum Ziel, das Unternehmen ins Leben zu rufen und handlungs- sowie geschäftsfähig zu machen. Dieser Prozess ist zwingend notwendig, damit das Unternehmen überhaupt agieren kann. Das Verb kennzeichnet die Rolle von GastroStart: Das Joint Venture unterstützt den Vorgang aktiv, ist jedoch nicht Eigentümer des gesamten Ablaufs.
+- Der Geschäftsprozess _Handelsregistereintrag erwirken_ hat zum Ziel, das Unternehmen ins Leben zu rufen und handlungs- sowie geschäftsfähig zu machen. Dieser Prozess ist zwingend notwendig, damit das Unternehmen überhaupt agieren kann. Das Verb kennzeichnet die Rolle von GastroStart: Das Joint-Venture unterstützt den Vorgang aktiv, ist jedoch nicht Eigentümer des gesamten Ablaufs.
 - Der Prozess _Unternehmen [bei Behörden] anmelden_ hat zum Ziel, das gegründete Unternehmen bei verschiedenen Stellen der kantonalen und eidgenössischen Verwaltung bekannt zu machen, beispielsweise zum Schutz zukünftiger Angestellter (Anmeldung bei der kantonalen Ausgleichskasse) oder zur Konkretisierung der Mehrwertsteuerpflicht (Anmeldung bei der Eidgenössischen Steuerverwaltung). 
 Diese Anmeldungen erfolgen nicht automatisch, sondern bedürfen einer Entscheidung der GründerInnen. 
 Dieser Prozess ist nur dann erforderlich, wenn das Unternehmen seine wirtschaftliche Tätigkeit aufnimmt, was zugleich dem Ziel der Kundinnen und Kunden der Plattform entspricht. Aus diesem Grund unterstützt der dargestellte Prozess die GründerInnen dabei, diese Anmeldungen vorzunehmen, auch um den Zugang zu den Abläufen _Bewilligung erhalten_ und _Finanzierung erhalten_ zu ermöglichen.
@@ -1160,7 +1162,7 @@ Dieser Geschäftsprozess gehört unter der Verantwortung der zuständigen Behör
 
 #stolperstein([*Unterschiedliche Granularität*
   
-Beim Korrekturlesen ist der Autorin dieses Abschnitts aufgefallen, dass die in @GPGF_Amira_gründet_Unternehmen dargestellten Geschäftsprozesse eine unterschiedliche Granularität aufweisen. Dies hat zur Folge, dass beim Geschäftsprozess _Unternehmen [bei Behörden] anmelden_ nicht sichtbar wird, dass dort ebenfalls Transaktionen stattfinden, die nicht zum Kontext des Joint Ventures gehören.])
+Beim Korrekturlesen ist der Autorin dieses Abschnitts aufgefallen, dass die in @GPGF_Amira_gründet_Unternehmen dargestellten Geschäftsprozesse eine unterschiedliche Granularität aufweisen. Dies hat zur Folge, dass beim Geschäftsprozess _Unternehmen [bei Behörden] anmelden_ nicht sichtbar wird, dass dort ebenfalls Transaktionen stattfinden, die nicht zum Kontext des Joint-Ventures gehören.])
 
 ==== Geschäftsprozesse und Abhängigkeit von Geschäftsobjekten für die Bewilligung<sec-gp-go-bewilligung>
 In  @sec-go-gt-bewilligung wurde das zentrale Geschäftsobjekt für das Szenario "Bewilligung erhalten" beschrieben, samt seinen Zuständen und die dazugehörigen Geschäftstransaktionen (s. @fig-GTZ-Amira-bewilligung). 
@@ -1248,7 +1250,7 @@ Finanzierung initiieren
 umfasst die Geschäftstransaktionen #emph[Finanzierung vorbereiten] und #emph[Finanzierung anfordern]. Der Prozess führt das Geschäftsobjekt #emph[Finanzierung] von #emph[neu] über #emph[vollständig] nach #emph[angefordert] und endet mit der Übergabe des Gesuchs an FINNOFLEET. Wichtig ist die Schleife über #emph[unvollständig]: fehlende Nachweise führen zurück in die Vorbereitung, ohne dass der Fall verloren geht; #emph[abgebrochen] beendet ihn vorzeitig. Dieser Prozess gehört fachlich zu GastroStart, weil hier die Kundeninteraktion stattfindet.
 
 Finanzierung erhalten
-umfasst die Geschäftstransaktionen #emph[Finanzierung prüfen] und #emph[Finanzierung zusagen]. Der Prozess führt die Finanzierung von #emph[angefordert] nach #emph[angenommen] --- oder nach #emph[abgelehnt], respektive bei fehlenden Nachweisen zurück nach #emph[unvollständig]. Mit der Zusage wechselt der Zustand die Objektgrenze: nicht die Finanzierung, sondern das #emph[Gründungsvorhaben] wird #emph[finanziert]. Er ist der eigentliche Beitrag von FINNOFLEET zum Joint Venture und der Punkt, an dem aus Amiras Gründungsvorhaben ein finanziertes Unternehmen wird. Beide Prozesse zusammen realisieren die Geschäftsfähigkeit #emph[Gründungsvorhaben finanzieren], die in @sec-GF-finanzierung in Teilfähigkeiten zerlegt wird.
+umfasst die Geschäftstransaktionen #emph[Finanzierung prüfen] und #emph[Finanzierung zusagen]. Der Prozess führt die Finanzierung von #emph[angefordert] nach #emph[angenommen] --- oder nach #emph[abgelehnt], respektive bei fehlenden Nachweisen zurück nach #emph[unvollständig]. Mit der Zusage wechselt der Zustand die Objektgrenze: nicht die Finanzierung, sondern das #emph[Gründungsvorhaben] wird #emph[finanziert]. Er ist der eigentliche Beitrag von FINNOFLEET zum Joint-Venture und der Punkt, an dem aus Amiras Gründungsvorhaben ein finanziertes Unternehmen wird. Beide Prozesse zusammen realisieren die Geschäftsfähigkeit #emph[Gründungsvorhaben finanzieren], die in @sec-GF-finanzierung in Teilfähigkeiten zerlegt wird.
 
 #figure(
   image("../assets/GP Amira erhaelt eine Finanzierung.svg", width: 100%),
@@ -1264,7 +1266,7 @@ umfasst die Geschäftstransaktionen #emph[Finanzierung prüfen] und #emph[Finanz
 ==== Geschäftsfähigkeiten
 <sec-GF-finanzierung>
 
-Die übergeordnete Geschäftsfähigkeit lautet *Gründungsvorhaben finanzieren*. Sie wird im Joint Venture arbeitsteilig getragen: FINNOFLEET verantwortet den Finanzierungskern --- Prüfung, Entscheid und Kontobereitstellung ---, während die kundenzugewandte Antragserfassung bei GastroStart liegt. Die Fähigkeit zerfällt in vier Teilfähigkeiten:
+Die übergeordnete Geschäftsfähigkeit lautet *Gründungsvorhaben finanzieren*. Sie wird im Joint-Venture arbeitsteilig getragen: FINNOFLEET verantwortet den Finanzierungskern --- Prüfung, Entscheid und Kontobereitstellung ---, während die kundenzugewandte Antragserfassung bei GastroStart liegt. Die Fähigkeit zerfällt in vier Teilfähigkeiten:
 
 1. Finanzierungsantrag-Management
 • Erfassung des Finanzierungsgesuchs mit Betrag, Verwendungszweck und Laufzeit.
@@ -1321,7 +1323,7 @@ Die Geschäftsfähigkeit *Bestellung* umfasst die Erfassung und Verwaltung von B
 
 = Das Inside-Out-Mapping: Realisierung der Enterprise Architecture
 
-Dieses Kapitel enthält die separaten Ausführungen der jeweiligen Autoren der Gruppenarbeit zum aktuellen Operating Models des eigenen Ursprungsbetriebs und des Joint Ventures GastroStart. Es kann sein, dass die Autoren zu jeweiligen, unterschiedlichen Schlüsse bezüglich der Gestaltung des Operating Models des Joint Ventures kommen. Dies ist so gewollt.  
+Dieses Kapitel enthält die separaten Ausführungen der jeweiligen Autoren der Gruppenarbeit zum aktuellen Operating Models des eigenen Ursprungsbetriebs und des Joint-Ventures GastroStart. Es kann sein, dass die Autoren zu jeweiligen, unterschiedlichen Schlüsse bezüglich der Gestaltung des Operating Models des Joint-Ventures kommen. Dies ist so gewollt.  
 
 == Operating Model für DV Bern 
 #autor-dvbern("Beitrag von Jan Sohnemann, DV Bern", inhalt: [])
@@ -1629,7 +1631,7 @@ Der Verfassungsartikel schafft die Verpflichtungsgrundlage, auf der die tatsäch
   es betreibt.
 ])
 
-Betrachtet wird nicht das Softwarehaus FINNOFLEET, sondern das Operating Model, das sein Produkt beim Kunden durchsetzt: die Kreditanbahnung einer Bank mit *ELA Kredit*. Diese Perspektive ist die für GastroStart relevante, denn genau diese Fähigkeit bringt FINNOFLEET als Finanzierungspartner in das Joint Venture ein (siehe @GP_Amira_erhaelt_Finanzierung).
+Betrachtet wird nicht das Softwarehaus FINNOFLEET, sondern das Operating Model, das sein Produkt beim Kunden durchsetzt: die Kreditanbahnung einer Bank mit *ELA Kredit*. Diese Perspektive ist die für GastroStart relevante, denn genau diese Fähigkeit bringt FINNOFLEET als Finanzierungspartner in das Joint-Venture ein (siehe @GP_Amira_erhaelt_Finanzierung).
 
 === Ist-Zustand: Standardisierung der Prozesse und Integration der Daten
 
@@ -1769,7 +1771,7 @@ Von oben nach unten gelesen:
 
 Weil ELA Kredit ausschliesslich die Anbahnung abdeckt, konzentriert sich der architektonische Wert im geteilten Backend und im standardisierten, über APIs konsumierten Prozess. Die Bank erbringt einen einzigen spezialisierten Schritt der Journey --- aber sie erbringt ihn als vereinheitlichten Single-Source-of-Truth-Prozess und nicht als Kanalsilos. Genau das ist das Unification-Operating-Model.
 
-Auf der Ebene des Joint Ventures gilt diese Einordnung nicht: GastroStart verbindet autonome Partner ohne geteilte Prozesse und fällt deshalb unter *Coordination* --- diese Ebene wird im folgenden Abschnitt eingeordnet. Unification gilt innerhalb des Finanzierungsbeitrags, Coordination zwischen den Partnern; die Grenze zwischen den beiden Modellen verläuft genau an der API, über die FINNOFLEET seine Fähigkeit in die Journey einbringt.
+Auf der Ebene des Joint-Ventures gilt diese Einordnung nicht: GastroStart verbindet autonome Partner ohne geteilte Prozesse und fällt deshalb unter *Coordination* --- diese Ebene wird im folgenden Abschnitt eingeordnet. Unification gilt innerhalb des Finanzierungsbeitrags, Coordination zwischen den Partnern; die Grenze zwischen den beiden Modellen verläuft genau an der API, über die FINNOFLEET seine Fähigkeit in die Journey einbringt.
 
 === Domänenmodell: die Finanzierung im RSM <sec-domaenenmodell-finanzierung>
 
@@ -1800,9 +1802,9 @@ Damit ist die Einordnung des vorangehenden Abschnitts nicht mehr nur behauptet, 
 
 == Operating-Model-Einordnung nach Ross, Weill und Robertson für Transgourmet
 
-#autor-transgourmet("Beitrag von Jakob Albrecht", inhalt: [Belieferung von Gastronomiebetrieben durch Transgourmet im Rahmen des Joint Ventures GastroStart],)
+#autor-transgourmet("Beitrag von Jakob Albrecht", inhalt: [Belieferung von Gastronomiebetrieben durch Transgourmet im Rahmen des Joint-Ventures GastroStart],)
 
-Bevor die aus der Customer-Journey resultierten Geschäftsfähigkeiten auf Applikationslandschaft heruntergebrochen wird, ist eine grundlegende Einordnung nötig: Welches Operating Model liegt Transgourmet zugrunde und welchen Einfluss hat dies auf die Enterprise Architektur des Joint Ventures GastroStart?
+Bevor die aus der Customer-Journey resultierten Geschäftsfähigkeiten auf Applikationslandschaft heruntergebrochen wird, ist eine grundlegende Einordnung nötig: Welches Operating Model liegt Transgourmet zugrunde und welchen Einfluss hat dies auf die Enterprise Architektur des Joint-Ventures GastroStart?
 
 Ross, Weill und Robertson unterscheiden vier Operating Models entlang der beiden Achsen Standardisierung der Geschäftsprozesse und Integration der Daten @ross2006enterprise.
 Aus dieser Klassifikation leitet sich ab, wie viel Integration eine Architektur tragen muss und wo Autonomie zulässig bleibt.
