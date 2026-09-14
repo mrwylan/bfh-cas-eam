@@ -1409,19 +1409,19 @@ Die folgende Abbildung zeigt das RSM der Phase "Registrierung" und dessen Bezieh
 GastroStart ist aus einem engen Schulterschluss unter drei Partnern aus der Privatwirtschaft entstanden: DV Bern, FINNOFLEET und Transgourmet. 
 Dabei profitiert GastroStart von der äusserst positiven Dynamik und Zusammenarbeit unter den Partnern.
 Die Daten der Kunden sowie die Teilschritte der Customer-Journey, die von den Partnern abgedeckt werden, werden zentral im Geschäftsobjekt "Gründungsvorhaben" gespeichert.
-In diesem Sinne ist auf der einen Seite von einer ausgeprägten Datenintegration auszugehen, wobei GastroStart und jeder Partner seine fachspezifischen Prozesse beibehält. 
+In diesem Sinne ist von einer ausgeprägten Datenintegration auszugehen, wobei GastroStart und jeder Partner seine fachspezifischen Prozesse beibehält. 
 Dies erlaubt es auch GastroStart, auf jede neue Fallkonstellation individuell einzugehen - sei es, weil die Kunden nur einen Teil der Customer-Journey von Amira erleben, oder aber Bedürfnisse haben, die sich bei einem bereits laufenden Betrieb herauskristallisiert haben und ganz andere (nicht abgebildete) Bereiche von GastroStart beanspruchen.
 
-Folgt man dem Rat der Literatur, so findet man folgende Passage: 
+Folgt man der Literatur, so findet man folgende Passage: 
 #fuehrung([*Coordination* calls for high levels of integration but little standardization of processes. Business units in a Coordination company share one or more of the following: customers, products, suppliers, and partners. The benefits of integration can include integrated customer service, cross-selling, and transparency across supply chain processes. @ross2006enterprise[S. 33]
 ])
 
 GastroStart fällt somit unter das sog. Operating Model "Coordination". 
-Durch die hohe, clevere Datenintegration unter den aktiven Partnern erlebt der Kunde eine "Façade", die weitgehend einheitlich und frei von Medienbrüchen ist, ähnlich wie im Kundenbereich eines grossen Anbieters von Fernmeldediensten oder eines anderen Anbieters von "austauschbaren" Massenprodukten.
+Durch die hohe, clevere Datenintegration unter den aktiven Partnern erlebt der Kunde eine "Façade", die weitgehend einheitlich und frei von Medienbrüchen ist, ähnlich wie im Kundenbereich eines grossen Anbieters von Fernmeldediensten oder eines anderen Anbieters von anderen,"austauschbaren" Massenprodukten.
 Dass hinter dem User Interface jedoch die verschiedenen Ad-hoc-Prozesse der aktiven Joint-Venture-Partner laufen, bekommt der Kunde nur teilweise mit.
 
 Ganz anders verhält es sich dort, wo ein Szenario (Unternehmen gründen, Bewilligung erhalten) vom Handeln einer Behörde abhängig ist. Dort sind Brüche unumgänglich. 
-Das öffentliche Wesen — respektive dessen jeweilige, in GastroStart zu integrierende Systeme — wird als externes System und bewusster "Absprung" weg von GastroStart prozedural wie technisch in den betroffenen Customer-Journeys implementiert.
+Das öffentliche Wesen wird als externes System und bewusster "Absprung" weg von GastroStart prozedural wie technisch in den betroffenen Customer-Journeys implementiert.
 
 Diese Brüche sind nicht massgebend für die Wahl der internen Organisation von GastroStart. Die Tätigkeit eines im Dienstleistungssektor aktiven Unternehmens ist oft von externen Faktoren abhängig. Und trotzdem organisieren sich diese Unternehmen selbstständig und spiegeln die äusseren Faktoren nur dann wider, wenn es ihrer Organisation und Wertschöpfung dienlich ist.
 
@@ -1442,7 +1442,7 @@ Diese drei Ebenen müssen getrennt betrachtet und eingeordnet werden:
 
 Die Systeme und "Produkte", resp. Dienstleistungen der öffentlichen Verwaltung - unter anderem die Gründung und Eintragung der GmbH ins kantonale Handelsregister und um die Erteilung der Betriebsbewilligung - werden aus Sicht der Customer-Journey und von GastroStart als externe Schnittstellen betrachtet, die Artefakten mit hoheitlicher Wirkung erzeugen. 
 */
-Aus der Perspektive von Amira und ihrer Customer-Journey bildet das öffentliche Wesen mit seinen Vorschriften eine Hürde, die überwunden werden muss. Die jeweilige Staatsebene stellt oft eine Sammlung von Regularien und Vorgaben dar, welche Amira von ihrem Traum trennt. 
+Aus der Perspektive von Amira und ihrer Customer-Journey bildet das öffentliche Wesen mit seinen Vorschriften eine Hürde, die überwunden werden muss (s. @sec-rolle-interoperabilitätspartner). Die jeweilige Staatsebene stellt oft eine Sammlung von Regularien und Vorgaben dar, welche Amira von ihrem Traum trennt. 
 Wir wollen nun versuchen, einen möglichen Weg zu einer Ideal-Architektur für das Szenario _Bewilligung erhalten_ (vgl. @sec-go-gt-bewilligung) zu skizzieren.
 
 ==== Ausgangslage

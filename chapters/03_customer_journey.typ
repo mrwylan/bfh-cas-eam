@@ -388,6 +388,8 @@ Die massgeschneiderten und detaillierten Erklärungen zum einzuhaltenden Ablauf 
 
 === Amira erhält eine Finanzierung
 
+#todo-action([bild?])
+
 Mit der beantragten Betriebsbewilligung rückt eine Frage in den Vordergrund, die sich bis dahin aufschieben liess: Küchengeräte, Mobiliar, Fahrzeug und die erste Warenlieferung müssen bezahlt sein, bevor Amira ihren Betrieb aufnehmen kann.
 Wir gehen davon aus, dass unsere GründerInnen die Grössenordnung ihres Kapitalbedarfs durchaus benennen können, nicht aber, welche Unterlagen eine Bank dafür sehen will und nach welchen Kriterien ihre Kreditwürdigkeit beurteilt wird.
 Die Finanzierung ist damit die Phase, in der das Gründungsvorhaben zum ersten Mal von aussen bewertet wird -- und aus unserer Sicht diejenige mit dem höchsten Abbruchrisiko der gesamten Customer-Journey.
