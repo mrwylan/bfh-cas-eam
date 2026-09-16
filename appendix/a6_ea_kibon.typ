@@ -13,7 +13,7 @@
 
 kiBon ist eine digitale Verwaltungsplattform für Betreuungsgutscheine.
 Das Projekt wurde ursprünglich mit der Stadt Bern initiiert, inzwischen wurde das System aber im ganzen Kanton ausgerollt und wird massgeblich vom Kanton Bern finanziert.
-Mittlerweise sind auch andere Kantone und Gemeinden ausserhalb des Kantons Bern Nutzer und Finanziers der Plattform.
+Mittlerweile sind auch andere Kantone und Gemeinden ausserhalb des Kantons Bern Nutzer und Finanziers der Plattform.
 Familien können über die Plattform Gesuche zur Rückerstattung der Betreuungskosten ihrer Kinder erstellen.
 Man trägt Alter, Betreuungsform, -platz und Dauer jedes Kindes in einem Webformular ein.
 Eltern erfassen auch ihre Familien- und finanzielle Situation.
@@ -41,7 +41,7 @@ Auf Feedback Dritter, insbesondere wenn es sich um sicherheitskritische Anmerkun
 
 kiBon bietet und verwendet viele Schnittstellen zu internen und externen Systemen.
 Die zwei wichtigsten Schnittstellen betreffen das Identity Access Management via AGOV und den Steuerdatenabruf via Nesko.
-Schnittstellen nach Aussen betreffen in erster Linie die Betreuungsplatzbestätigungen durch die Institutionen.
+Schnittstellen nach aussen betreffen in erster Linie die Betreuungsplatzbestätigungen durch die Institutionen.
 Die Verwendung der vom System dafür bereitgestellten Weboberfläche ist optional.
 Insbesondere grössere Institutionen bevorzugen eine Integration ihrer eigenen Systeme.
 Alle nach aussen gerichteten Schnittstellen in kiBon folgen dem REST Paradigma.

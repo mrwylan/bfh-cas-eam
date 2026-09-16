@@ -79,7 +79,7 @@ Dieses Glossar erklärt die im Dokument verwendeten fachlichen und methodischen 
 
 
       [eCH],
-      [Name eins Schweizer Vereins welches e-Governement Standards für die Schweiz herausgibt. ],
+      [Name eines Schweizer Vereins welches E-Government-Standards für die Schweiz herausgibt. ],
 
       [eID],
       [Elektronischer Identitätsnachweis, mit dem sich eine Person gegenüber einem digitalen Dienst authentifiziert.],

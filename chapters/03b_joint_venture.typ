@@ -89,7 +89,7 @@ Die Eröffnung eines Kundenkontos bei Transgourmet ist die letzte Phase der Cust
 
 == Öffentliche Verwaltung als Interoperabilitätspartner<sec-rolle-interoperabilitätspartner>
 
-Aus Sicht von Amira und somit auch von GastroStart wird die öffentliche Verwaltung - ohne besondere Rücksicht ob Bundes, Kantons- oder Gemeindeebene - in ihrer Rolle als Interoperabilitätspartner abgebildet und behandelt.
+Aus Sicht von Amira und somit auch von GastroStart wird die öffentliche Verwaltung - ohne besondere Rücksicht ob Bundes-, Kantons- oder Gemeindeebene - in ihrer Rolle als Interoperabilitätspartner abgebildet und behandelt.
 Dies, weil die öffentliche Hand ihre hoheitlichen Handlungen nicht im Sinne eines wirtschaftlichen Angebots wie die anderen Mitglieder der Joint-Venture zur Verfügung stellt. Auch ist es nicht im Sinne der Schweizer Rechtstradition, private Unternehmen mit der Vergabe von hoheitlichen Akten zu betrauen.
 Aus diesen Gründen sind jene Teile der Customer-Journey, wofür der Staat verantwortlich ist - beispielsweise der Eintrag im Handelsregister oder die Erteilung einer Betriebsbewilligung - und die Fähigkeit, diese zu vollziehen, ausserhalb des Wirkungsbereichs des Joint-Ventures anzusiedeln. 
 
