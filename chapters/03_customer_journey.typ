@@ -199,6 +199,8 @@ Tatsächlich verbirgt sich dahinter ein komplexerer Prozess, den wir - nach der 
 
 Die folgende Tabelle fasst die wesentlichen Merkmale dieser Phase der Customer-Journey noch einmal zusammen. Ihr Aufbau ist am Ende der Einführung dieses Hauptkapitels beschrieben (@aus-phasen-werden-szenarien).
 
+#pagebreak()
+
 /*Wir wiederholen den Aufbau an dieser Stelle und in den Folgenden Kapiteln nicht erneut und verweisen auf @head-scenarios-orientation.*/
 
 #figure(
