@@ -100,7 +100,7 @@ Der Entstehungsprozess umfasste eine systematische Qualitätssicherung durch die
 
 *Redaktionelle Überarbeitung:* Gezielte Steuerung und Anpassung von Stil, Struktur und Formulierungen.
 
-*Ergebniverantwortung:* Die Verantwortung für den Inhalt, die wissenschaftliche Einordnung sowie sämtliche Schlussfolgerungen liegen uneingeschränkt bei den Autoren.
+*Ergebnisverantwortung:* Die Verantwortung für den Inhalt, die wissenschaftliche Einordnung sowie sämtliche Schlussfolgerungen liegen uneingeschränkt bei den Autoren.
 ]
 
 === Selbständigkeitserklärung
