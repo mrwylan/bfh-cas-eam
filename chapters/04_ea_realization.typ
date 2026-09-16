@@ -68,7 +68,7 @@ Wir beginnen stattdessen mit der Betrachtung der Zustände, die ein Geschäftsob
 
 #design-entscheid([
 
-Es wurde daraf verzichtet, das Objekt Person zu modellieren. 
+Es wurde darauf verzichtet, das Objekt Person zu modellieren. 
 Die Behandlung von personenbezogenen Invarianten wie Domizil in der Schweiz oder Besitz des Wirtepatentes als Voraussetzung für die Gründung des Unternehmens und für den Erhalt der Betriebsbewilligung würden den Rahmen dieser Arbeit sprengen.
 
 ])
@@ -304,9 +304,6 @@ Nehmen wir zum Beispiel wieder die Änderung der Postanschrift: Wahrscheinlich w
 Aber auch in einem voll digitalisierten System ist dieser Zustand sinnvoll, z.B. wenn dieses System einer Event-orientierten Architektur folgt.
 Wann dieser Zustand (*aktualisiert*) endet, das lassen wir an dieser Stelle offen.
 Wir weisen hier lediglich darauf hin, dass Abhängigkeiten zu diesem Zustand systemabhängig gegebenenfalls präziser definiert werden müssen.
-
-Die folgende @fig-gtz-registrierung stellt die oben beschriebenen Abläufe im Archimate Modell dar.
-
 
 Das Kundenkonto erfüllt noch einen weiteren Zweck, nämlich die Authentifizierung.
 Für diese haben wir dem Modell in @fig-gtz-registrierung noch zwei weitere Geschäftstransaktionen hinzugefügt:

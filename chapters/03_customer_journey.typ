@@ -185,7 +185,10 @@ Es ist also wichtig, den Benutzenden im Vorfeld zu vermitteln, dass eine Nutzung
 Wenn die Orientierungsphase erfolgreich war und das auslösende Bedürfnis befriedigt wurde, ist die Chance gross, dass die Benutzenden hier fortfahren.
 
 Die folgende  @fig-customer-journey-registrierung zeigt den Teil des Szenarios als Modell in Archimate, der die Registrierung auslöst.
+
+#stolperstein([
 Dem aufmerksamen Leser fällt vielleicht auf, dass die "Orierientierung" in dieser Abbildung gänzlich fehlt. Das liegt daren, dass zu diesem Zeitpunkt des Entwicklungsprozesses, die Bedeutung der Phase "Orientierung" noch nicht ersichtlich war.
+])
 Tatsächlich verbirgt sich dahinter ein komplexerer Prozess, den wir - nach der kurzen Einführung im letzten Kapitel - in späteren Kapiteln nochmals detaillierter aufgreifen.
 
  #figure(
