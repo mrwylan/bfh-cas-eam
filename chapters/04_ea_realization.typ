@@ -1542,12 +1542,17 @@ Dieser Ansatz hat mehrere Vorteile:
 
 + Die Kantone können ihren verfassungsrechtlichen Primat bei Themen des Verwaltungsrechts gemäss Art. 3 BV @sr101 behalten.
 + Die vom Verein eCH und anderen Akteuren der Digitalisierung wie der Digitalen Verwaltung Schweiz geleistete Grundlagenarbeit, sowie die operativen Erfahrungen bestehender kantonaler Portale wie iGovPortal oder eUmzug Schweiz liefern wichtige Hinweise über die technische, verwaltungsrechtliche, aber auch politische Machbarkeit der digitalen Transformation in den einschlägigen Bereichen und föderalen Ebenen.
++ Als Beweis für eine lokalisierte, erfolgreiche Anwendung des vertrenen Ansaatzes ist die *Steuererharmonisierung* (Art. 129 Bundesverfassung). Diese Analogie verdeutlicht, dass ein Regelungsgegenstand erst mit seiner Verankerung in der Bundesverfassung für alle föderalen Ebenen verbindlich wird. Der Verfassungsartikel schafft die Verpflichtungsgrundlage, auf der die tatsächliche, einheitliche Umsetzung durch Bund, Kantone und Gemeinden erfolgen kann.
 
-Dieser Ansatz sollte jedoch nach der Meinung der Autorin noch um 
+Dieser Ansatz sollte jedoch nach der Meinung der Autorin noch um eine meschenrechtliche Dimension ergänzt werden: 
 
-Als Beweis für eine lokalisierte, erfolgreiche Anwendung des vertretenen Ansatzes ist die *Steuerharmonisierung* (Art. 129 Bundesverfassung).
-Diese Analogie verdeutlicht, dass ein Regelungsgegenstand erst mit seiner Verankerung in der Bundesverfassung für alle föderalen Ebenen verbindlich wird. 
-Der Verfassungsartikel schafft die Verpflichtungsgrundlage, auf der die tatsächliche, einheitliche Umsetzung durch Bund, Kantone und Gemeinden erfolgen kann.
++ Die Digitalisierung der Behördeninteraktionen ist zwar eine Entwicklung in Richtung von mehr Effizienz und Interoperabilität. Ihre Realisierung in Systemen und Schnittstellen ist wichtig für die Zusammenarbeit unter den Behörden sowie für die Verbesserung ihrer Leistungserbringung gegenüber der Gesellschaft. 
+
++ Die Akteure der Digitalisierung sollen dabei jedoch ihre *Amira*, nie aus den Augen verlieren, wenn sie das Verhältnis zwischen Staat und Individuum neu gestalten. Eine verfassungsrechtliche Grundlage und die damit zusammenhängende Umsetzung der digitalen Transformation sollten deshalb sicherstellen, dass menschenrechtlie Aspekte wie das Recht auf ein analoges Leben gewährt bleiben.
+
+Eine digitale Transformation soll um und für die Betroffene - vor allem _menschliche_ - gedacht und gebaut werden: Sie soll sich nach den Bedürfnissen ihrer Adressaten richten und nicht zu einem Selbstzweck verkommen. Ein Beispiel für einen solchen Ansatz ist die Genfer Kantonsverfassung @cstGE: diese sieht in ihrem Art. 21a ein Recht auf digitaler Unversehrtheit vor. 
+Somit schliesst auf einer überraschende Weise den Kreis: am Beginn der Lösungsentwicklung standen eine Customer-Journey und eine Outside-In-Perspektive. Am Ende meiner Ausführungen kommt die Autorin auch zu Aufruf dazu, bei der Digitalisierung der Behördeninteraktionen stets die Sicht der Adressaten des staatlichen Handenls einzunehmen. 
+
 
 
 == Operating Model für FINNOFLEET
