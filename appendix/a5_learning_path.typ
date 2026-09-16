@@ -17,17 +17,17 @@
 Die TOGAF ADM @opengroup2018togaf hätte für die frühen Projektphasen strukturelle Klarheit, für das Projekt Setup, die Architecture Vision und Business Architecture geliefert.
 Die Theorie dazu kam im Unterricht leider zu spät, so dass wir in der Gruppe das Setup nicht entlang der ADM-Phasen formalisiert haben.
 
-Der Starke Fokus auf die RIM Methodik @Spichiger2026GFbUA hat in Bezug auf die Geschäftsfähigkeiten und die Customer Journey zu einer klaren, nachvollziehbaren Modellierung geführt.
+Der starke Fokus auf die RIM Methodik @Spichiger2026GFbUA hat in Bezug auf die Geschäftsfähigkeiten und die Customer Journey zu einer klaren, nachvollziehbaren Modellierung geführt.
 Die Einbettung in die TOGAF ADM kam dadurch zu kurz, die ADM-Phasen wurden nicht formal durchlaufen, sondern die Modellierung wurde entlang der RIM Methodik durchgeführt.
 
-Der komplexen und fiktiven Journey war es dann auch geschuldet, dass bei der Umsetzung auf die Ressourcen spezifische Applikationslandschaft die Gruppenarbeit ins Stocken geraten ist.
+Der komplexen und fiktiven Journey war es dann auch geschuldet, dass bei der Umsetzung auf die ressourcenspezifische Applikationslandschaft die Gruppenarbeit ins Stocken geraten ist.
 In einer realeren Situation, gehe ich davon aus, dass aufgrund der vorhandenen Applikationslandschaft die Modellierung und Umsetzung schneller vorangetrieben werden kann.
 
 == Dynamiken kollaborativer Architektur
 
 Im Team Setting erlebten wir, dass die Architekturarbeit nicht nur eine technische, sondern auch eine soziale Dimension hat. 
-Nicht jeder hatte zu jedem Zeitpunkt die gleiche Sicht auf die Architektur, den selben Stand im Unterrichtsstoff, oder die gleiche Erfahrung mit den eingesetzten Frameworks.
-Das schaffen von Konsens, iterativ, in Abstimmungsmeetings, war ein zentraler Bestandteil der Arbeit.
+Nicht jeder hatte zu jedem Zeitpunkt die gleiche Sicht auf die Architektur, denselben Stand im Unterrichtsstoff, oder die gleiche Erfahrung mit den eingesetzten Frameworks.
+Das Schaffen von Konsens, iterativ, in Abstimmungsmeetings, war ein zentraler Bestandteil der Arbeit.
 Die Suche nach dem geeigneten Glossar, die Definition von Begriffen, die Auswahl der richtigen Modellierungstiefe, Abgrenzungen und das Abwägen von Kompromissen zwischen den Teammitgliedern waren entscheidend für die Qualität der Architekturarbeit.
 Die Gruppe erreichte Konsens durch Diskussion, Argumentation, Abstimmung und Kompromissfindung.
 Das Arbeiten an der gemeinsamen Wissensbasis war entscheidend, um die Architekturarbeit voranzutreiben.
@@ -47,7 +47,7 @@ Das CAS rahmte technischen Schulden neu als strategische Variable mit expliziten
 
 Diese Gruppenarbeit hat einen vollständigen Bogen von Outside-In zum Inside-Out einer Applikationslandschaft geschlagen.
 Eine Customer Journey wurde auf Business Capabilities abgebildet, die Capabilities wurden zur Application-Landschaft zurückverfolgt.
-Reibungszonen wurden früh identifiziert und bestimmen die Ziel-Architektur, lieferten Chancen und Risiken sowie Ausganspunkte für mögliche Migrationspfade.
+Reibungszonen wurden früh identifiziert und bestimmen die Ziel-Architektur, lieferten Chancen und Risiken sowie Ausgangspunkte für mögliche Migrationspfade.
 
 Die zentralen Erkenntnisse sind:
 
@@ -62,7 +62,7 @@ Die zentralen Erkenntnisse sind:
 Die im CAS entwickelten Praktiken werde ich wie folgt in meine Arbeitsweise einbinden:
 
 #inset-block([
-+ Vorhaben werde ich mit den *Geschäftsfähigkeiten von Transgourmet* in Verbindung bringen, um die Wertschöpfung zu fokussieren und die Architekturarbeit auf gezielter auf die Bedürfnisse der Kunden und Anwender auszurichten.
++ Vorhaben werde ich mit den *Geschäftsfähigkeiten von Transgourmet* in Verbindung bringen, um die Wertschöpfung zu fokussieren und die Architekturarbeit gezielter auf die Bedürfnisse der Kunden und Anwender auszurichten.
 
 + Die *RIM Methodik* werde ich in der Architekturarbeit einsetzen, um eine erste Distanz zu bereits gemachten technischen Lösungen zu schaffen und so die Basis für eine offenere Diskussion von Architekturentscheidungen zu legen.
 

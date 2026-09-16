@@ -16,7 +16,7 @@ In diesem Kapitel wird die Customer-Journey erklärt - und wie wir daraus ein Ph
 Amira, eine 34-jährige Quereinsteigerin, will ein Catering-Unternehmen gründen. 
 Sie hat schon ein Konzept dafür. 
 Sie hat keine Erfahrung, will nichts falsch machen und braucht Orientierung. 
-Sie googelt "_catering aufmachen schweiz_", da sie sich eine Schritt-für- Schritt-Anleitung wünscht.
+Sie googelt "_catering aufmachen schweiz_", da sie sich eine Schritt-für-Schritt-Anleitung wünscht.
 Sie möchte durch den Prozess der Unternehmensgründung geführt werden. 
 Bei der Suche erfährt sie, dass die Punkte Bewilligungen, Finanzierung, Ressourcenplanung und Beschaffung besonders wichtig sind. 
 Sie landet bei *“GastroStart”* und erfährt in der kurzen Einführung auf der Startseite, dass dieses Portal sie bei all dem unterstützen kann. 
@@ -118,7 +118,7 @@ Weniger wahrscheinlich ist, dass die zur Betriebsbewilligung notwendigen Details
 Zum Beispiel ist der Ort der Betriebsstätte auch auf nationaler Ebene sehr von Bedeutung, da es kantonale Unterschiede bei den Bewilligungsverfahren und bei der Regulierung gibt.
 Das Ausarbeiten der Details des Gründungsvorhabens nennen wir "Orientierung".
 
-Die folgende Tabelle fasst die wesentlichen Merkmale dieser Phase der Customer-Jouney noch einmal zusammen. Ihr Aufbau ist am Ende der Einführung dieses Hauptkapitels beschrieben (@aus-phasen-werden-szenarien).
+Die folgende Tabelle fasst die wesentlichen Merkmale dieser Phase der Customer-Journey noch einmal zusammen. Ihr Aufbau ist am Ende der Einführung dieses Hauptkapitels beschrieben (@aus-phasen-werden-szenarien).
 
 #figure(
   caption: [Szenario "Amira orientiert sich"],
@@ -194,7 +194,7 @@ Tatsächlich verbirgt sich dahinter ein komplexerer Prozess, den wir - nach der 
 ) <fig-customer-journey-registrierung>
 
 
-Die folgende Tabelle fasst die wesentlichen Merkmale dieser Phase der Customer-Jouney noch einmal zusammen. Ihr Aufbau ist am Ende der Einführung dieses Hauptkapitels beschrieben (@aus-phasen-werden-szenarien).
+Die folgende Tabelle fasst die wesentlichen Merkmale dieser Phase der Customer-Journey noch einmal zusammen. Ihr Aufbau ist am Ende der Einführung dieses Hauptkapitels beschrieben (@aus-phasen-werden-szenarien).
 
 /*Wir wiederholen den Aufbau an dieser Stelle und in den Folgenden Kapiteln nicht erneut und verweisen auf @head-scenarios-orientation.*/
 
@@ -390,7 +390,7 @@ Eine Absage ohne Begründung beendet das Vorhaben faktisch, weil die Betroffenen
 Genau hier liegt der Beitrag des Finanzierungspartners FINNOFLEET: Bonitätsprüfung, Kreditentscheid und Kontobereitstellung werden nicht als separates Bankportal angeboten, sondern als Dienste im Hintergrund in die Journey eingebunden.
 Amira erfasst ihr Finanzierungsgesuch dort, wo sie ihr Vorhaben ohnehin bereits verwaltet, erhält einen in verständlicher Sprache begründeten Entscheid und -- im positiven Fall -- mit der IBAN unmittelbar die Grundlage für den späteren Zahlungsverkehr mit Behörden und Lieferanten.
 
-Die folgende Tabelle fasst die wesentlichen Merkmale dieser Phase der Customer-Jouney noch einmal zusammen. Ihr Aufbau ist am Ende der Einführung dieses Hauptkapitels beschrieben (@aus-phasen-werden-szenarien).
+Die folgende Tabelle fasst die wesentlichen Merkmale dieser Phase der Customer-Journey noch einmal zusammen. Ihr Aufbau ist am Ende der Einführung dieses Hauptkapitels beschrieben (@aus-phasen-werden-szenarien).
 
 #figure(
   caption: [Szenario "Amira erhält eine Finanzierung"],

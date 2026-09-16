@@ -6,8 +6,8 @@
 = TOGAF ADM und der Begriff «Architecture Capability» im Spiegel der Geschäftsfähigkeiten-basierten Unternehmensarchitektur
 
 #autor-transgourmet("Beitrag von Jakob Albrecht", inhalt: [
-Dieses Kapitel reflektiert die Anwendung der TOGAF Architecture Development Method (ADM) und ordnet den Einsatz der Geschäftsfähigkeiten basierten Geschäftsarchitektur (GFbUA) in das Vorgehensmodel ein.
-Es wiederspiegelt die persönliche Auseinandersetzung des Autors mit den Methoden aus dem CAS Enterprise Architecture Management.
+Dieses Kapitel reflektiert die Anwendung der TOGAF Architecture Development Method (ADM) und ordnet den Einsatz der Geschäftsfähigkeiten-basierten Geschäftsarchitektur (GFbUA) in das Vorgehensmodell ein.
+Es widerspiegelt die persönliche Auseinandersetzung des Autors mit den Methoden aus dem CAS Enterprise Architecture Management.
 ],)
 
 == Motivation für die Auseinandersetzung mit TOGAF
@@ -155,7 +155,7 @@ RIM-Modelle, Geschäftsobjekte mit Zustandslebenszyklen, IDEAL-ISA-Komponenten u
 
 *Architecture Decision Records:*
 
-Die mit TOGAF spezifierte Architecture Governance (z.Bsp. TOGAF-Compliance-Review) ist für meine tägliche Praxis zu schwergewichtig. 
+Die mit TOGAF spezifizierte Architecture Governance (z.Bsp. TOGAF-Compliance-Review) ist für meine tägliche Praxis zu schwergewichtig. 
 Mit ADRs gelingt es mir, Entscheidungen mit Kontext, Optionen, Konsequenzen und ablehnenden Stimmen zu dokumentieren.
 
 *EA als normativ-motivationale Schicht:*
