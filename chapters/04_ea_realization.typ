@@ -419,7 +419,7 @@ Die folgende @fig-GTZ-Amira-gründet stellt die Zusammenhänge der Geschäftsobj
  #figure(
   image("../assets/GTZ Amira gruendet ihr Unternehmen.svg", width: 100%),
   caption: [Zustandsübergänge des Gründungsvorhabens 
-im Szenario "Unternehmen - \gründen"]
+im Szenario "Amira gründet ihr Unternehmen"]
 ) <fig-GTZ-Amira-gründet>
 
 Nachfolgend wird auf die einzelnen Elemente der Grafik eingegangen, wobei sich die Beschreibung auf das Happy Path konzentriert. 
@@ -503,7 +503,7 @@ Die Möglichkeiten des Abbruches der Firmengründung durch die GründerInnen ode
 
 
 ==== Geschäftstransaktionen
-Das Geschäftsobjekt Unternehmen durchläuft mehrere Transaktionen: 
+Das Geschäftsobjekt *Unternehmen* durchläuft mehrere Transaktionen: 
 - In einer ersten Phase ist der Benutzer in Führung: Er _bereitet_ mit Hilfe von Informationen und Fachfunktionen auf GastroStart die _Unterlagen_ für die Gründung der juristischen Person _vor_. Nach der öffentlichen Beurkundung kann der _Eintrag im Handelsregister beantragt_ werden.
 - Danach ist der Ball bei den Behörden: Das kantonale Handelsregisteramt _prüft den Antrag_ auf Vollständigkeit, _lehnt ihn ab_ oder _nimmt ihn an_ und _trägt die juristische Person im Handelsregister ein_.
 #pagebreak()
@@ -511,7 +511,7 @@ Das Geschäftsobjekt Unternehmen durchläuft mehrere Transaktionen:
 Die folgende @tbl-GT-Unternehmen-gründen fasst diese Punkte zusammen:
 
 #figure(
-  caption: [Geschäftstransaktionen: Prozess "Unternehmen gründen"],
+  caption: [Geschäftstransaktionen: Prozess "Amira gründet ihr Unternehmen"],
   block(
     width: 100%,
     radius: 6pt,
@@ -567,7 +567,7 @@ Die folgende Abbildung stellt die Zusammenhänge der Geschäftsobjekte, Zuständ
 
  #figure(
   image("../assets/GTZ Amira erhaelt die Bewilligung.svg", width: 100%),
-  caption: [Zustandsübergänge des Gründungsvorhabens im Szenario \ "Bewilligung erhalten"]
+  caption: [Zustandsübergänge des Gründungsvorhabens im Szenario \ "Amira erhält die Bewilligung"]
 ) <fig-GTZ-Amira-bewilligung>
 
 Nachfolgend wird auf die einzelnen Elemente der Grafik eingegangen:
@@ -642,8 +642,7 @@ Die Erteilung der Bewilligung setzt je nach Kanton einen Fähigkeitsausweis vora
  
  
  ==== Geschäftstransaktionen
-Der Benutzer beantragt im Namen des Unternehmens die Bewilligung für den Cateringbetrieb.
-Das Geschäftsobjekt Bewilligung durchläuft mehrere Transaktionen: 
+Das Geschäftsobjekt *Bewilligung* durchläuft mehrere Transaktionen: 
 - In einer ersten Phase ist der Benutzer in Führung: Er _bereitet_ mithilfe der auf GastroStart bereitgestellten Informationen die _Unterlagen_ für den Bewilligungsantrag _vor_. Wenn alle Unterlagen vollständig vorliegen, _reicht_ er den _Bewilligungsantrag_ bei der zuständigen Behörde _ein_.
 - Danach ist der Ball bei den Behörden: Die Behörde _prüft den Antrag_ auf Vollständigkeit, _lehnt ihn ab_ oder _erteilt_ der Food Affair GmbH die Betriebsbewilligung.
 
@@ -651,7 +650,7 @@ Die folgende @tbl-GT-Bewilligung fasst diese Punkte zusammen:
 
 
 #figure(
-  caption: [Geschäftstransaktionen: "Bewilligung erhalten"],
+  caption: [Geschäftstransaktionen des Szenarios "Amira erhält die Bewilligung"],
   block(
     width: 100%,
     radius: 6pt,
@@ -669,7 +668,7 @@ Die folgende @tbl-GT-Bewilligung fasst diese Punkte zusammen:
         gutter: 10pt,
         text(fill: white, weight: "bold", size: 0.95em)[Geschäfts-\ transaktion],
         text(fill: white, weight: "bold", size: 0.95em)[Beschreibung],
-       text(fill: white, weight: "bold", size: 0.95em)[Zustands\u{00AD}übergang],
+       text(fill: white, weight: "bold", size: 0.95em)[Zustands-\ übergang],
       )
     ]
     #set par(justify: false)
@@ -962,14 +961,14 @@ Schwierigkeiten bat es, Abstand von der gewohnte Implementierungsebene zu halten
 
 ])
 
-+ *zu "kleine" Objekte:* in einer frühen Phase wurden Bestellung und Bestellbestätigung als separate Objekte modelliert - anstatt auf die Sichtbarkeit und Einsehbarkeit des Zustands aufzubauen. 
++ *Zu "kleine" Objekte*: in einer frühen Phase wurden Bestellung und Bestellbestätigung als separate Objekte modelliert - anstatt auf die Sichtbarkeit und Einsehbarkeit des Zustands aufzubauen. 
 
  #figure(
   image("../assets/Phase 5 - Early View.svg", width: 100%),
   caption: [Archimate Modell einer frühen Modellierungsphase von "Amira wird Kunde bei Transgourmet"]
 ) <fig-reflektion_transgourmet>
 
-+ *getrennte Objekte* in einer ebenfalls frühen Phase wurde zwischen zwei Objekten, "Betriebsbewilligungsantrag" und "Betriebsbewilligung" unterscheidet. Dabei benötigt die abstrakte Modellierung nur ein Geschäftsobjekt: die Betriebsbewilligung bleibt bestehen, ihr Zustand gibt Auskunft darauf, ob der "Vertrag" mit der Behörde bereits abgeschlossen ist (Zustand "erteilt") oder eben noch nicht (Zustande "beantragt").
++ *"Geteilte" Objekte*: in einer ebenfalls frühen Phase wurde zwischen zwei Objekten, "Betriebsbewilligungsantrag" und "Betriebsbewilligung" unterscheidet. Dabei benötigt die abstrakte Modellierung nur ein Geschäftsobjekt: die Betriebsbewilligung bleibt bestehen, ihr Zustand gibt Auskunft darauf, ob der "Vertrag" mit der Behörde bereits abgeschlossen ist (Zustand "erteilt") oder eben noch nicht (Zustand "beantragt").
 
 #figure(
   image("../assets/Betriebsbewilligung beantragen - verfuegen.png", width: 100%),
@@ -1067,15 +1066,16 @@ Die folgende Abbildung zeigt wie die in diesem Abschnitt besprochenen Prozesse u
 
 === Geschäftsprozesse und Geschäftsfähigkeiten der Behördeninteraktion
 
-#autor-verwaltung("Beitrag von Giovanna Beier, Bundeskanzlei", inhalt: [Dieser Abschnitt vereint die Beschreibung der Geschäftsprozesse und Geschäftsfähigkeiten für die Unternehmensgründung und den Erhalt der Betriebsbewilligung, da beide Szenarien von der Interaktion mit den Behörden gekennzeichnet sind. ])
+#autor-verwaltung("Beitrag von Giovanna Beier, Bundeskanzlei", inhalt: [])
 
+Dieser Abschnitt vereint die Beschreibung der Geschäftsprozesse und Geschäftsfähigkeiten für die Unternehmensgründung und den Erhalt der Betriebsbewilligung, da beide Szenarien von der Interaktion mit den Behörden gekennzeichnet sind. 
 ==== Geschäftsprozesse und Abhängigkeit von Geschäftsobjekten für die Unternehmensgründung<sec-gp-go-unternehmensgruendung>
 In  @sec-go-gt-unternehmen-gründen wurde das zentrale Geschäftsobjekt für das Szenario "Unternehmen Gründen" beschrieben, samt seinen Zuständen und den dazugehörigen Geschäftstransaktionen (se. @fig-GTZ-Amira-gründet). 
 Die nachfolgende Abbildung @GPGF_Amira_gründet_Unternehmen stellt die Zusammenhänge zwischen Geschäftsprozessen, Geschäftsobjekten und Geschäftsfähigkeiten im ressourcenunabhängigen Modell nach Archimate dar:
 
 #figure(
   image("../assets/GP+GF Amira gruendet ihr Unternehmen.svg", width: 100%),
-  caption: [Geschäftsprozesse und Geschäftsfähigkeiten - Szenario "Unternehmensgründung"]
+  caption: [Geschäftsprozesse und Geschäftsfähigkeiten \ Szenario "Amira gründet ihr Unternehmen"]
 ) <GPGF_Amira_gründet_Unternehmen>
 
 Nachfolgend wird näher auf die Geschäftsprozesse und deren Abhängigkeiten von Geschäftsobjekten eingegangen.
@@ -1095,28 +1095,24 @@ Dieser Prozess ist nur dann erforderlich, wenn das Unternehmen seine wirtschaftl
 
 Die soeben beschriebenen Geschäftsprozesse von GastroStart weisen folgende *Abhängigkeiten von Geschäftsobjekten* auf:
 
-- _Unternehmen_ ist das zentrale Objekt beider Prozesse: alle Geschäftstransaktionen greifen darauf zu, und die Zustände des Objekts sind die Fortschrittsanzeige des Gesamtprozesses (siehe @tbl-GO-Unternehmen).
+- _Unternehmen_ ist das zentrale Objekt der Geschäftsprozesse _Handelsregistereintrag erwirken_ und _Unternehmen [bei Behörden] anmelden_: alle Geschäftstransaktionen greifen darauf zu, und die Zustände des Objekts sind die Fortschrittsanzeige des Gesamtprozesses (siehe @tbl-GO-Unternehmen).
 - _Gründungsvorhaben_ ist der fachliche Auslöser und Empfänger des Prozessergebnisses: Die abschliessenden Transaktionen des Prozesses _Unternehmen [bei Behörden] anmelden_ greifen ebenfalls auf dieses Objekt zu und versetzen es in den Zustand _registriert_. 
 Diese Transaktionen wirken sich somit auf zwei Geschäftsobjekte.
 
 Abgebildet ist auch ein dritter Geschäftsprozess, _Unternehmensgründung vollziehen_, welcher die Geschäftstransaktionen _Gründung beurkunden_, _Antrag prüfen_ und _im Handelsregister eintragen_ umfasst.
 Dieser Geschäftsprozess gehört unter der Verantwortung der zuständigen Behörde und deren Hilfspersonen (der Notar als Urkundsperson) und ist deswegen farblich gekennzeichnet. 
 
-
-
 #stolperstein([*Unterschiedliche Granularität*
   
 Beim Korrekturlesen ist der Autorin dieses Abschnitts aufgefallen, dass die in @GPGF_Amira_gründet_Unternehmen dargestellten Geschäftsprozesse eine unterschiedliche Granularität aufweisen. Dies hat zur Folge, dass beim Geschäftsprozess _Unternehmen [bei Behörden] anmelden_ nicht sichtbar wird, dass dort ebenfalls Transaktionen stattfinden, die nicht zum Kontext des Joint-Ventures gehören.])
 
 ==== Geschäftsprozesse und Abhängigkeit von Geschäftsobjekten für die Bewilligung<sec-gp-go-bewilligung>
-In  @sec-go-gt-bewilligung wurde das zentrale Geschäftsobjekt für das Szenario "Bewilligung erhalten" beschrieben, samt seinen Zuständen und die dazugehörigen Geschäftstransaktionen (s. @fig-GTZ-Amira-bewilligung). 
+In  @sec-go-gt-bewilligung wurde das zentrale Geschäftsobjekt für das Szenario "Amira erhält die Bewilligung" beschrieben, samt seinen Zuständen und die dazugehörigen Geschäftstransaktionen (s. @fig-GTZ-Amira-bewilligung). 
 Die nachfolgende Abbildung @GPGF_Amira_erhält_bewilligung stellt die Zusammenhänge zwischen Geschäftsprozessen, Geschäftsobjekten und der identifizierten Geschäftsfähigkeit im ressourcenunabhängigen Modell nach Archimate dar. 
-
-
 
 #figure(
   image("../assets/GP+GF Amira erhaelt die Bewilligung.svg", width: 100%),
-  caption: [Geschäftsprozesse und Geschäftsfähigkeiten - Szenario "Bewilligung erhalten"]
+  caption: [Geschäftsprozesse und Geschäftsfähigkeiten - Szenario "Amira erhält die Bewilligung"]
 ) <GPGF_Amira_erhält_bewilligung>
 
 Nachfolgend wird näher auf die Geschäftsprozesse und deren Abhängigkeiten von Geschäftsobjekten eingegangen. 
@@ -1341,14 +1337,13 @@ Die folgende Abbildung zeigt das RSM der Phase "Registrierung" und dessen Bezieh
   über die Firmengründung (inkl. Finanzierung) bis zur ersten Lieferung durch
   Transgourmet - übernimmt GastroStart eine sehr komplexe Aufgabe.
 
-  Die "Sorglosigkeit", die GastroStart verspricht, ist Architektureigenschaft
-  und Dienstleistung von GastroStart zugleich.
+  Die "Sorglosigkeit", die GastroStart verspricht, ist Geschäftsfähigkeit, Architektureigenschaft und Dienstleistung von GastroStart zugleich.
 ])
 === Einordnung von GastroStart in das Operating Model nach Ross / Weill et al.
 
 GastroStart ist aus einem engen Schulterschluss unter drei Partnern aus der Privatwirtschaft entstanden: DV Bern, FINNOFLEET und Transgourmet. 
 Dabei profitiert GastroStart von der äusserst positiven Dynamik und Zusammenarbeit unter den Partnern.
-Die Daten der Kunden sowie die Teilschritte der Customer-Journey, die von den Partnern abgedeckt werden, werden zentral im Geschäftsobjekt "Gründungsvorhaben" gespeichert.
+Die, zur Realisierung des Gründungsvorhabens relevanten Daten werden, über alle Phasen der Customer-Journey, mit dem gleichnamigen Geschäftsobjekt verknüpft.
 In diesem Sinne ist von einer ausgeprägten Datenintegration auszugehen, wobei GastroStart und jeder Partner seine fachspezifischen Prozesse beibehält. 
 Dies erlaubt es auch GastroStart, auf jede neue Fallkonstellation individuell einzugehen - sei es, weil die Kunden nur einen Teil der Customer-Journey von Amira erleben, oder aber Bedürfnisse haben, die sich bei einem bereits laufenden Betrieb herauskristallisiert haben und ganz andere (nicht abgebildete) Bereiche von GastroStart beanspruchen.
 
@@ -1357,7 +1352,7 @@ Folgt man der Literatur, so findet man folgende Passage:
 ])
 
 GastroStart fällt somit unter das sog. Operating Model "Coordination". 
-Durch die hohe, clevere Datenintegration unter den aktiven Partnern erlebt der Kunde eine "Façade", die weitgehend einheitlich und frei von Medienbrüchen ist, ähnlich wie im Kundenbereich eines grossen Anbieters von Fernmeldediensten oder eines anderen Anbieters von anderen,"austauschbaren" Massenprodukten.
+Durch die hohe, clevere Teilung der Daten der Gründungsvorhaben unter den aktiven Partnern erlebt der Kunde eine "Façade", die weitgehend einheitlich und frei von Medienbrüchen ist, ähnlich wie im Kundenbereich eines grossen Anbieters von Fernmeldediensten oder eines anderen Anbieters von anderen, "austauschbaren" Massenprodukten.
 Dass hinter dem User Interface jedoch die verschiedenen Ad-hoc-Prozesse der aktiven Joint-Venture-Partner laufen, bekommt der Kunde nur teilweise mit.
 
 Ganz anders verhält es sich dort, wo ein Szenario (Unternehmen gründen, Bewilligung erhalten) vom Handeln einer Behörde abhängig ist. Dort sind Brüche unumgänglich. 
@@ -1383,7 +1378,7 @@ Diese drei Ebenen müssen getrennt betrachtet und eingeordnet werden:
 Die Systeme und "Produkte", resp. Dienstleistungen der öffentlichen Verwaltung - unter anderem die Gründung und Eintragung der GmbH ins kantonale Handelsregister und um die Erteilung der Betriebsbewilligung - werden aus Sicht der Customer-Journey und von GastroStart als externe Schnittstellen betrachtet, die Artefakten mit hoheitlicher Wirkung erzeugen. 
 */
 Aus der Perspektive von Amira und ihrer Customer-Journey bildet das öffentliche Wesen mit seinen Vorschriften eine Hürde, die überwunden werden muss (s. @sec-rolle-interoperabilitätspartner). Die jeweilige Staatsebene stellt oft eine Sammlung von Regularien und Vorgaben dar, welche Amira von ihrem Traum trennt. 
-Wir wollen nun versuchen, einen möglichen Weg zu einer Ideal-Architektur für das Szenario _Bewilligung erhalten_ (vgl. @sec-go-gt-bewilligung) zu skizzieren.
+Wir wollen nun versuchen, einen möglichen Weg zu einer Ideal-Architektur für das Szenario _Bewilligung erhalten_ (s. @sec-go-gt-bewilligung) zu skizzieren.
 
 ==== Ausgangslage
 
@@ -1396,7 +1391,6 @@ Zwei Stimmen aus der Welt der Gastronomie geben einen Einblick in die Schmerzpun
   ([... Sinnvoll wäre ein schweizweit vergleichbarer Grundprozess nach dem Prinzip «ein Gesuch, eine Ansprechperson, ein koordinierter Entscheid». Dazu gehören digitale Verfahren, verbindliche Bearbeitungsfristen, frühzeitige und belastbare Auskünfte sowie die gegenseitige Anerkennung gleichwertiger Fähigkeitsnachweise. Kantonale Sonderregelungen sollten nur bestehen, wenn sie sachlich notwendig oder nützlich sind.], 
   [Interview mit H.M., Berater und Gastroplaner]),
 )
-
 ==== Anforderungen an die Interoperabilität mit dem öffentlichen Wesen
 
 Könnte sich GastroStart für seine GründerInnen eine Schnittstelle für die Abwicklung von Bewilligungen wünschen, so müsste diese folgende grobe Anforderungen oder gar Prinzipien erfüllen:
@@ -1431,7 +1425,7 @@ Könnte sich GastroStart für seine GründerInnen eine Schnittstelle für die Ab
 
       [Die Identifikation und das Ansprechen der für das Bewilligungsverfahren zuständigen Behörde übernehmen.],
 
-      [Auf identische Ereignisse schweizweit vorhersehbar reagieren und mit klar kommunizierten Vorbedingungen sowie Invarianten operieren.],
+      [Auf identische Ereignisse schweizweit vorhersehbar reagieren und mit klar kommunizierten Vor- und Nachbedingungen sowie Invarianten operieren.],
 
       [Auf bekannten und erprobten Standards der Behördeninteraktion basieren.],
 
@@ -1446,7 +1440,7 @@ Könnte sich GastroStart für seine GründerInnen eine Schnittstelle für die Ab
           Anforderungen an die Informations-\systemarchitektur
         ]
       ],
-      [In ihrer digitalen Implementation dieselben gesetzlich vorgeschriebenen Möglichkeiten bieten wie die analoge Version und umgekehrt @montavonPlanficatinCodification; @bge141III173.],
+      [In ihrer digitalen Implementation dieselben gesetzlich vorgeschriebenen Möglichkeiten bieten wie die analoge Version und umgekehrt @montavonPlanficatinCodification und @bge141III173.],
 
       [Auf standardisierten elektronischen Schnittstellen und etablierten Interoperabilitätsstandards des E-Governments aufbauen.],
 
@@ -1459,22 +1453,22 @@ Könnte sich GastroStart für seine GründerInnen eine Schnittstelle für die Ab
 
 ==== Domenänmodell für die Bewilligung
 
-Aufgrund der oben aufgeführten Ausgangslage und der formulierten Anforderungen haben wir dieses Modell für die ideale Abbildung der Behördeninteraktion vorgestellt:
+Aufgrund der oben aufgeführten Ausgangslage und der formulierten Anforderungen haben wir uns dieses Modell für die ideale Abbildung der Behördeninteraktion vorgestellt:
 
 #figure(
   image("../assets/RSM - Betriebsbewilligung erhalten.svg", width: 100%),
-  caption: [RSM der Phase «Amira erhält die Bewilligung»],
+  caption: [RSM des Szenarios «Amira erhält die Bewilligung»],
 ) <fig-RSM-bewilligung>
 
 #pagebreak()
 
 Folgende Überlegungen liegen dem Vorschlag von @fig-RSM-bewilligung zugrunde: 
 
-+ Die Gastronomie ist nicht die einzige Branche, die von kantonalen Bewilligungen abhängig ist. Vergleichbare Situationen finden sich beispielsweise im Gesundheitswesen, im Sicherheitsgewerbe oder bei Kindertagesstätten. Allen diesen Bereichen gemeinsam ist, dass die zuständigen Behörden kantonal oder sogar kommunal organisiert sind. Daraus ergibt sich, dass sich Verfahren, Anforderungen und digitale Angebote von Kanton zu Kanton unterscheiden können.
++ Die Gastronomie ist nicht die einzige Branche, die von kantonalen Bewilligungen abhängig ist. Vergleichbare Situationen finden sich beispielsweise im Gesundheitswesen, im Sicherheitsgewerbe oder bei Kindertagesstätten. Allen diesen Bereichen gemeinsam ist, dass die zuständigen Behörden kantonal oder sogar kommunal organisiert sind. Daraus ergibt sich, dass sich Verfahren, Anforderungen und digitale Angebote von Kanton zu Kanton unterscheiden.
 
 + Aus diesem Grund wurde die Schnittstelle zur (externen) Bewilligungsstelle möglichst branchenagnostisch ausgestaltet, sodass sie nicht nur für die Gastronomie, sondern auch für vergleichbare Bewilligungsverfahren anwendbar ist. Gleichzeitig erscheint eine lose Kopplung zur zuständigen Behörde zweckmässig. Für GastroStart ist nicht entscheidend, nach welchem Bewilligungsverfahren die Behörde handelt oder welche Mittel sie dafür verwendet. Relevant sind vielmehr die Ereignisse an der Schnittstelle, beispielsweise die Einreichung des Antrags, die Aufforderung zur Nachreichung von Unterlagen oder die Erteilung beziehungsweise Ablehnung der Bewilligung. Die Verantwortung für die Durchführung des Verfahrens verbleibt somit bei der Behörde, während GastroStart die GründerInnen bei der Vorbereitung und Koordination Halt gibt.
 
-Nicht abgebildet und lediglich vorausgesetzt ist die Notwendigkeit einer Infrastruktur zur sicheren und eindeutigen Identifikation von Personen und Unternehmen im Verfahren — sowie zur rechtssicheren digitalen Überprüfung der Behördenentscheide.
++ Nicht abgebildet und lediglich vorausgesetzt ist die Notwendigkeit einer Infrastruktur zur sicheren und eindeutigen Identifikation von Personen und Unternehmen im Verfahren — sowie zur rechtssicheren digitalen Überprüfung der Behördenentscheide.
 
 Als Referenz für die Implementierung der abgebildeten Schnittstelle wurden insbesondere folgende Standards als geeignet identifiziert:
 - eCH-0122 Architektur E-Government Schweiz @eCH0122,
@@ -1487,9 +1481,9 @@ Als Referenz für die Implementierung der abgebildeten Schnittstelle wurden insb
 
 Die Customer-Journey beginnt mit der Ermittlung der Voraussetzungen für den Erhalt einer Bewilligung im Rahmen der Orientierung (s. @sec-GP-GF-orientierung-gründungsvorhaben). 
 Diesbezüglich bestehen im Rahmen der Realisierung einer Ideal-Architektur Ansprüche. 
-GastroStart muss in der Lage sein, die Informationen für die GründerInnen immer aktuell zu halten und allfällige Anpassungen bei den vielen in Frage kommenden Behörden umgehend umzusetzen, so dass die Schritt-für-Schritt-Anleitungen für die GründerInnen immer der Realität entsprechen.
+GastroStart muss in der Lage sein, die Informationen für die GründerInnen immer aktuell zu halten und allfällige Anpassungen bei den vielen involvierten Behörden umgehend umzusetzen, sodass die Schritt-für-Schritt-Anleitungen für die GründerInnen immer der Realität entsprechen.
 
-Um dies zu realisieren, ist es notwendig, dass alle Bewilligungsstellen über die digitalen Informationskanäle die folgenden Angaben liefern: 
+Um dies zu realisieren, ist es notwendig, dass alle Bewilligungsstellen über die digitalen Informationskanäle die folgenden Angaben liefern - und zwar strukturiert: 
 - die Beschreibung der *Verwaltungsleistung* und der dafür *zuständigen Behörde* gemäss dem eCH-0088 Standard Vorgaben zur Beschreibung von Behördengängen @eCH0088, inklusive aller optionalen Felder; 
 - die Beschreibung der dafür geltenden *Voraussetzungen* und *Vorbedingungen* für den *Zugang zur Verwaltungsleistung* gemäss dem eCH-0073 Standard Vorgaben zur Beschreibung von Leistungen der öffentlichen Verwaltung @eCH0073.
 
@@ -1497,28 +1491,30 @@ Die Erfüllung der Anforderungen dieser Standards schafft die Grundlage dafür, 
 
 === Herausforderungen für die Realisierung der Ideal-Architektur
 
-Die aufgezeigte Lösung soll nicht gastronomiespezifisch sein, sondern möchte die allgemeinere Problematik an der Schnittstelle zwischen Privatwirtschaft und öffentlichem Wesen adressieren.
+Die aufgezeigte Lösung will nicht gastronomiespezifisch sein, sondern möchte die allgemeinere Problematik an der Schnittstelle zwischen Privatwirtschaft und öffentlichem Wesen adressieren.
 Um den im vorangehenden Abschnitt skizzierten Lösungsansatz zu erreichen, müsste jede Behörde auf jeder föderalen Ebene in der Lage sein, dieselbe, bekannte, dokumentierte Schnittstelle nach aussen anzubieten. 
 Die gestaltet sich jedoch aus folgenden Gründen als schwierig:
 
 + *Fehlende ebenenübergreifende Gesamtsicht*: Föderalismus zwischen den drei Staatsebenen und Departementalprinzip innerhalb jeder Ebene verteilen die Verantwortung auf viele eigenständige Einheiten. Dadurch fehlt eine übergreifende Sicht darauf, welche Leistung wo erbracht wird — und damit auch die Grundlage, um zu erkennen, welche Bereiche sich überhaupt für eine gemeinsame Regelung eignen.
 
-+ *Unverbindliche Steuerungsinstrumente*: Die ebenenübergreifende Zusammenarbeit stützt sich heute auf Standards, deren Übernahme freiwillig ist, oder auf Grundsätze wie Nutzerorientierung und Interoperabilität, deren Umsetzung einen erheblichen Interpretationsspielraum lässt. Beides gibt Orientierung, schafft aber keine konkrete Durchsetzbarkeit — die Durchgängigkeit einer gegebenen Lösung bleibt vom Goodwill der einzelnen Einheiten abhängig.
++ *Unverbindliche Steuerungsinstrumente*: Die ebenenübergreifende Zusammenarbeit stützt sich heute auf Standards, deren Übernahme freiwillig ist, oder auf Grundsätze wie Nutzerorientierung und Interoperabilität, deren Umsetzung einen erheblichen Interpretationsspielraum lässt. Beides gibt Orientierung, schafft aber keine konkrete Durchsetzbarkeit: Die Durchgängigkeit einer gegebenen Lösung bleibt vom Goodwill der einzelnen Einheiten abhängig.
 
 + *Rechtsgrundlage als Vorbedingung*: Die Schaffung der Voraussetzungen für eine durchsetzbare Governance liegt ausserhalb der Kompetenz der Unternehmensarchitektur: Behörden sind in all ihrem Handeln an das Legalitätsprinzip gebunden. 
-Fehlt eine solche, bleibt die Unternehmensarchitektur in diesem Bereich ein zahnloser Tiger: Sie kann Interoperabilität fordern oder gar gestalten, die rechtliche Voraussetzung dafür aber nicht selbst schaffen.
+Fehlt eine solche, bleibt die Unternehmensarchitektur in diesem Bereich ein zahnloser Tiger: Sie kann Interoperabilität fordern oder gar gestalten, die rechtliche Voraussetzung dafür aber nicht selbst schaffen. 
 
 === Lösungsansatz
 
-Laut der Architekturvision 2050 @eCH0279 digitalisiert heute jede föderale Verwaltungsebene nach ihren eigenen, legitimierten Prioritäten und mit unterschiedlicher Geschwindigkeit; ohne Koordination zwischen den verschiedenen Ebenen driften die jeweiligen Strategien auseinander, was Interoperabilität und einen gemeinsamen architektonischen Ansatz zunehmend erschwert — im Widerspruch zur eigentlich gewollten Vereinfachung.
+Laut der Architekturvision 2050 @eCH0279 digitalisiert heute jede föderale Verwaltungsebene nach ihren eigenen, legitimierten Prioritäten und mit unterschiedlicher Geschwindigkeit. 
+Ohne Koordination zwischen den verschiedenen Ebenen driften die jeweiligen Strategien auseinander, was Interoperabilität und einen gemeinsamen architektonischen Ansatz zunehmend erschwert - im Widerspruch zur eigentlich gewollten Vereinfachung.
 
 Die Autorin teilt diese Diagnose zum aktuellen Stand: Eine gemeinsame Basis für die Digitalisierung und Vereinfachung der Behördeninteraktionen auf nationaler bzw. interkantonaler Ebene ist bisher nur unzureichend geschaffen worden. Die erarbeiteten Standards und die bisher entwickelten Portale sind aus dieser Perspektive notwendige Vorleistungen, aber noch keine hinreichende Grundlage: Sie beruhen auf Freiwilligkeit und haben keine verbindliche Kraft.
 
-Damit die Behörden — innerhalb derselben Ebene oder ebenenübergreifend (etwa zwischen Kanton und Gemeinden) — verbindlich zusammenarbeiten und Daten untereinander und mit der Privatwirtschaft austauschen können, braucht es daher eine verbindliche gesetzliche Grundlage auf Bundesebene.
+Damit die Behörden — innerhalb derselben Ebene oder ebenenübergreifend (etwa zwischen Kanton und Gemeinden) — verbindlich zusammenarbeiten und Daten untereinander und mit der Privatwirtschaft austauschen können, braucht es daher eine verbindliche gesetzliche Grundlage.
 
-Die Autorin dieses Abschnittes vertritt die Meinung, dass diese Regelung in der Bundesverfassung verankert werden, da dem Bund sonst die Kompetenz für eine ebenenübergreifende Verpflichtung der anderen föderalen Ebenen fehlt und die Regelung nur so für alle Kantone verbindlich wirken kann.
+Die Autorin dieses Abschnittes vertritt die Meinung, dass diese Regelung in der _Bundes_- verfassung verankert werden. 
+Einen Auftrag auf Bundesebene ist das einzige Mittel, eine Verpflichtung zur Digitalisierung zu gründen, die für alle Kantone, Gemeinden und den Bund _selbst_ verbindlich wirken kann.
 
-Auch die einschlägige Literatur (_in primis_ Michaël Montavon) hat sich in diesem Sinne geäussert und folgenden Vorschlag für einen neuen Verfassungsartikel geäussert:
+Auch die einschlägige Literatur (_in primis_ Michaël Montavon) hat sich in diesem Sinne geäussert und folgenden Vorschlag für einen neuen Verfassungsartikel verfasst:
 
 #rechtsnorm(
   [Art. 88a BV — Cyberadministration],
@@ -1535,17 +1531,19 @@ Auch die einschlägige Literatur (_in primis_ Michaël Montavon) hat sich in die
 ]
 )
 
-Zu beachten ist die Tatsache, dass dieser Vorschlag denselben Aufbau wie der Verfassungsartikel über die Hochschulen, Art. 63a BV @sr101, aufweist.
+Zu beachten ist die Tatsache, dass dieser Vorschlag Ähnlichkeiten mit dem Aufbau des Verfassungsartikels über die Hochschulen aufweist: Art. 63a BV @sr101.
 Dieser Artikel regelt im Allgemeinen die Zuständigkeiten und die Organisation rund um die Hochschulen des Bundes und jene der Kantone, wobei der Bund eine sogenannte subsidiäre Regelungskompetenz erhält.
 Dies bedeutet, dass der Bund die notwendigen Vorschriften erlassen muss, wenn die involvierten föderalen Ebenen am gemeinsamen Ansatz scheitern.
 
-Auf das für diese Arbeit relevante Gebiet der Digitalisierung übertragen, sollen die Digitalisierung und die digitale Transformation auf der Koordination zwischen den verschiedenen Verwaltungsebenen fussen.
+Auf das für diese Arbeit relevante Gebiet übertragen, sollen die Digitalisierung und die digitale Transformation auf der Koordination zwischen den verschiedenen Verwaltungsebenen fussen.
 Sollte dies jedoch nicht klappen, so behält der Bund ein Druckmittel, um die anderen Akteure bei der Erreichung der gemeinsamen Ziele zu unterstützen.
 
 Dieser Ansatz hat mehrere Vorteile: 
 
 + Die Kantone können ihren verfassungsrechtlichen Primat bei Themen des Verwaltungsrechts gemäss Art. 3 BV @sr101 behalten.
-+ Die Grundlagenarbeit, die vom Verein eCH und anderen Akteuren der Digitalisierung wie der Digitalen Verwaltung Schweiz geleistet wurde, sowie die operativen Erfahrungen bestehender kantonaler Portale wie iGovPortal oder eUmzug Schweiz liefern wichtige Hinweise über die technische, verwaltungsrechtliche, aber auch politische Machbarkeit der digitalen Transformation in den einschlägigen Bereichen.
++ Die vom Verein eCH und anderen Akteuren der Digitalisierung wie der Digitalen Verwaltung Schweiz geleistete Grundlagenarbeit, sowie die operativen Erfahrungen bestehender kantonaler Portale wie iGovPortal oder eUmzug Schweiz liefern wichtige Hinweise über die technische, verwaltungsrechtliche, aber auch politische Machbarkeit der digitalen Transformation in den einschlägigen Bereichen und föderalen Ebenen.
+
+Dieser Ansatz sollte jedoch nach der Meinung der Autorin noch um 
 
 Als Beweis für eine lokalisierte, erfolgreiche Anwendung des vertrenen Ansaatzes ist die *Steuererharmonisierung* (Art. 129 Bundesverfassung).
 Diese Analogie verdeutlicht, dass ein Regelungsgegenstand erst mit seiner Verankerung in der Bundesverfassung für alle föderalen Ebenen verbindlich wird. 
