@@ -16,15 +16,15 @@ In diesem Kapitel wird die Customer-Journey erklärt - und wie wir daraus ein Ph
 Amira, eine 34-jährige Quereinsteigerin, will ein Catering-Unternehmen gründen. 
 Sie hat schon ein Konzept dafür. 
 Sie hat keine Erfahrung, will nichts falsch machen und braucht Orientierung. 
-Sie googelt "_catering aufmachen schweiz_", da sie sich eine Schritt-für-Schritt-Anleitung wünscht.
+Sie googelt "_vorgehen catering aufmachen schweiz_" - sie wünscht sich eine Schritt-für-Schritt-Anleitung.
 Sie möchte durch den Prozess der Unternehmensgründung geführt werden. 
 Bei der Suche erfährt sie, dass die Punkte Bewilligungen, Finanzierung, Ressourcenplanung und Beschaffung besonders wichtig sind. 
-Sie landet bei *“GastroStart”* und erfährt in der kurzen Einführung auf der Startseite, dass dieses Portal sie bei all dem unterstützen kann. 
-Sie ist erleichtert und registriert sich. 
+Der erste Eintrag in den Suchergebnissen führt sie zu *“GastroStart”*. Hier erfährt sie in einer kurzen Einführung auf der Startseite, dass dieses Portal sie bei ihrem Gründungsvorhaben vollumfänglich unterstützen kann. 
+Sie ist erleichtert und klickt auf "Starten". 
 
 
 In enger Verbindung mit der Customer Journey wird die Persona „Amira“ erarbeitet ( @persona-amira, Persona-Profil). 
-Sie dient dazu, unsere Endkundin konkret greifbar und emotional verankert zu machen. 
+Sie dient dazu, eine Endkundin konkret greifbar zu machen und emotional zu verankern. 
 Die Bedürfnisse und Kontexte von Amira bilden den zentralen Ausgangspunkt für die Modellierung des Produkts "GastroStart".
 
 
@@ -66,7 +66,7 @@ Die Bedürfnisse und Kontexte von Amira bilden den zentralen Ausgangspunkt für 
 
   Für *GastroStart* sprachen: 
   
-  Eine nachvollziehbare und realistische Persona (Amira), eine in sich konsistente, in Szenarien abbildbare Journey, eine sinnvolle Rolle für jeden Partner des Joint-Ventures sowie eine im Rahmen der Arbeit beherrschbare Modellierungskomplexität.
+  Eine nachvollziehbare und realistische Persona (Amira), eine in sich konsistente, in Szenarien abbildbare Journey, eine sinnvolle Rolle für jeden Partner des Joint-Ventures sowie eine, im Rahmen der Arbeit beherrschbare Modellierungskomplexität.
 ])
 
 == Szenarien als Teilgeschichten aus der Customer-Journey <sec-szenarien-customer-journey>
@@ -85,7 +85,7 @@ den Szenarien. (Skizze)
 
 Wir haben bei der Modellierung der Customer-Journey festgestellt, dass sich Amiras Weg nicht in starre Phasen einteilen lässt. Stattdessen verstehen wir ihn als eine Abfolge von Szenarien: narrative Ausschnitte aus einer Story Map, die eine Outside-In-Perspektive beschreiben. Den Schnitt zwischen den Szenarien haben wir entlang Amiras Wahrnehmung und der Veränderung ihrer Emotionen gelegt. Erfolg oder Misserfolg auf ihrer Reise durch das Portal entscheidet sich an diesen Schnittstellen.
 
-In den folgenden Kapiteln gehen wir auf diese Szenarien ein, aufgeteilt unter den Parteien im Joint-Venture. Jedes Szenario ist in einzelne Touchpoints zerlegt: Sie halten fest, was Amira tut, mit welchem System sie interagiert, in welchem emotionalen Zustand sie sich befindet, und wo die aktuelle oder die Ziel-Architektur Reibung oder Chancen erzeugt.
+In den folgenden Kapiteln gehen wir auf diese Szenarien ein, aufgeteilt unter den Parteien im Joint-Venture. Jedes Szenario - im Folgenden auch als "Phase" bezeichnet, ist in einzelne Touchpoints zerlegt: Sie halten fest, was Amira tut, mit welchem System sie interagiert, in welchem emotionalen Zustand sie sich befindet, und wo die aktuelle oder die Ziel-Architektur Reibung oder Chancen erzeugt.
 
 Die Szenarien sind: 
 - Amira orientiert sich 
@@ -101,7 +101,7 @@ Der Eintritt in das jeweilige Szenario ist eine *Aktion* der GründerInnen.
 Über *Touchpoints* treten sie mit unserem Produkt in Verbindung.
 Die *Aktion* wird ausgelöst durch einen *Gedanken* oder ein *Bedürfnis*.
 Jede Phase kann die GründerInnen mit *Pain Points* konfrontieren, die zum Abbruch der Produktnutzung führen können.
-Und schliesslich bietet jede Phase *Chancen*, die die *Bedürfnisse* befriedigen und zur Weiternutzung einladen.
+Und schliesslich bietet jede Phase *Chancen*, die die *Bedürfnisse* zu befriedigen und zur Weiternutzung einladen.
 
 
 === Amira orientiert sich <head-scenarios-orientation>
@@ -109,8 +109,8 @@ Und schliesslich bietet jede Phase *Chancen*, die die *Bedürfnisse* befriedigen
 #autor-dvbern("Beitrag von Jan Sohnemann, DV Bern", inhalt: [])*/
 
 Unser Angebot soll sich insbesondere an jene GründerInnen richten, die noch keine Erfahrung mit Unternehmensgründungen haben.
-Und wir gehen davon aus, dass viele Betroffene schon eine konkrete Idee dessen haben, was sie anbieten möchten.
-Unsere GründerInnen sollen sich auf eben diese Idee fokussieren können und sich nicht mit den Details einer Unternehmensgründung herumschlagen müssen.
+Ferner gehen wir davon aus, dass viele Betroffene schon eine konkrete Idee dessen haben, was sie anbieten möchten.
+Unsere GründerInnen sollen sich auf eben diese Idee fokussieren können, ohne sich mit den Details einer Unternehmensgründung herumschlagen müssen.
 Entsprechend gehen wir davon aus, dass sie bei ihrer initialen Recherche ihr Vorhaben mehr oder weniger konkret beschreiben können.
 Weniger konkret dagegen können sie die Details zur Umsetzung benennen - jedenfalls gehen wir davon aus. 
 Ihr Suchtext würde also wahrscheinlich die geplante Unternehmensart enthalten, zum Beispiel "Catering" oder "Familien-Café", anstelle von "Gastronomie".
@@ -177,15 +177,15 @@ Die folgende Tabelle fasst die wesentlichen Merkmale dieser Phase der Customer-J
 
 /*#autor-dvbern("Beitrag von Jan Sohnemann, DV Bern", inhalt: [])*/
 
-Im Anschluss an die Orientierung sollte eine Registrierung erfolgen. 
+Im Anschluss an die Orientierung soll eine Registrierung erfolgen. 
 Das Ziel der Registrierung ist es, das Gründungsvorhaben auf der Plattform mit einem Konto zu verknüpfen, sodass es gespeichert, den Erstellenden exklusiv zugänglich gemacht und zu einem späteren Zeitpunkt weitergeführt werden kann.
 Dies ist ein notwendiges Übel, das alle Benutzenden hinnehmen müssen, und die wenigsten verstehen vermutlich den Zweck und Nutzen dieses Vorgangs.
 Die Gefahr eines Abbruchs der Produktnutzung stufen wir als hoch ein.
-Es ist also wichtig, den Benutzenden im Vorfeld zu vermitteln, dass eine Nutzung ohne Kundenkonto von hier an nicht mehr möglich ist und dass sie davon profitieren.
+Es ist also wichtig, den Benutzenden im Vorfeld zu vermitteln, dass eine Nutzung ohne Kundenkonto von hier an nicht mehr möglich ist und dass sie davon profitieren. Wir gehen im folgenden @head-phase2-registrierung detailliert auf die Notwendigkeit der Registrierung ein.
 Wenn die Orientierungsphase erfolgreich war und das auslösende Bedürfnis befriedigt wurde, ist die Chance gross, dass die Benutzenden hier fortfahren.
 
 Die folgende  @fig-customer-journey-registrierung zeigt den Teil des Szenarios als Modell in Archimate, der die Registrierung auslöst.
-An dieser Stelle des Entwicklungsprozesses war die Bedeutung der Phase "Orientierung" noch nicht ersichtlich.
+Dem aufmerksamen Leser fällt vielleicht auf, dass die "Orierientierung" in dieser Abbildung gänzlich fehlt. Das liegt daren, dass zu diesem Zeitpunkt des Entwicklungsprozesses, die Bedeutung der Phase "Orientierung" noch nicht ersichtlich war.
 Tatsächlich verbirgt sich dahinter ein komplexerer Prozess, den wir - nach der kurzen Einführung im letzten Kapitel - in späteren Kapiteln nochmals detaillierter aufgreifen.
 
  #figure(
@@ -249,8 +249,8 @@ Die folgende Tabelle fasst die wesentlichen Merkmale dieser Phase der Customer-J
 
 Mit der Registrierung können die GründerInnen auf den digitalen Begleiter für die Gründung des Unternehmens zugreifen. 
 Aufgrund der Informationen aus der Orientierung können die GründerInnen durch Anweisungen, Empfehlungen und vorgefertigte Texte geführt werden. 
-Dadurch sind sie in der Lage, ohne teure Beratung selber die Unterlagen für die gewünschte Firmengründung zusammenzustellen oder gar zu erstellen.
-Durch die enge Begleitung, das Abnehmen einfacher Aufgaben und die Erfolgserfahrung mit der Anzeige des Fortschrittes können die Kunden bestärkt und zum Abschluss des komplizierten Prozesses motiviert werden.
+Dadurch sind sie in der Lage die Unterlagen für die gewünschte Firmengründung selbst und ohne kostspielige Beratung zusammenzustellen oder gar zu erstellen.
+Durch die enge Begleitung, das Übernehmen einfacher Aufgaben und die Erfolgserfahrung mit der Anzeige des Fortschrittes werden die Kunden bestärkt und zum Abschluss des komplizierten Prozesses motiviert.
 Da die GründerInnen bereits seit der Orientierung wissen, ob am gewünschten Standort mit einem Medienbruch zu rechnen ist, stufen wir die Wahrscheinlichkeit eines Abbruches als tief ein - auch weil die Unterlagen in digitaler Form praktisch in jedem Kanton einem Notar direkt zugestellt werden können: Die jeweilige Kanzlei übernimmt den Medienbruch auf Papier. 
 
 
@@ -315,7 +315,7 @@ Da die GründerInnen bereits seit der Orientierung wissen, ob am gewünschten St
 
 === Amira erhält die Bewilligung <sec-cj-bewilligung-erhalten>
 
-Auf GastroStart können die GründerInnen die notwendigen Schritte in Erfahrung bringen, um für ihr Unternehmen und Lokal eine Betriebsbewilligung zu erhalten. 
+Auf GastroStart können die GründerInnen die notwendigen Schritte in Erfahrung bringen, um für ihr Unternehmen am gewünschten Standort eine Betriebsbewilligung zu erhalten. 
 Ähnlich wie bei der Unternehmensgründung liefert das System eine Übersicht der Informationen, Dokumente und Ausweise, die für den Erhalt der Bewilligung notwendig sind. 
 Diese Angaben entsprechen den Vorschriften, die am Standort des geplanten Betriebs gelten, und erklären den Sinn hinter den Vorgaben. 
 Der Mehrwert von GastroStart liegt in der Begleitung des Ablaufs, in der Plausibilisierung der gelieferten Angaben und Dokumente anhand der geltenden Vorgaben und Sicherheitsrichtlinien und in den schnellen Rückmeldungen, falls der Benutzer ungenügende Informationen liefert. 
@@ -456,7 +456,7 @@ Die folgende Tabelle fasst die wesentlichen Merkmale dieser Phase der Customer-J
 
 === Amira wird Kunde bei Transgourmet
 
-Der letzte Schritt in der Customer Journey ist die Bestellung bei Transgourmet @fig-szenario-lieferantenvertrag).
+Der letzte Schritt in der Customer Journey ist die Bestellung bei Transgourmet (@fig-szenario-lieferantenvertrag).
 Basierend auf dem gewählten Gastronomie-Konzept und den erfassten Angaben zu Standort, Betriebsart und Grösse des Unternehmens wird Transgourmet als Lieferant mit passendem Sortimentskatalog vorgeschlagen.
 
  #figure(

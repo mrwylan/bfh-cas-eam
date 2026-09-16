@@ -10,7 +10,7 @@
 
 == Das Joint-Venture GastroStart 
 
-GastroStart ist ein fiktives Portal, das Gründerinnen und Gründer im Gastgewerbe in der Betriebsgründung wo möglich führt aber sicher unterstützt: von der ersten Orientierung über Registrierung, Unternehmensgründung und Betriebsbewilligung bis hin zur Finanzierung und zum ersten Lieferantenvertrag.
+GastroStart ist ein fiktives Portal, das Gründerinnen und Gründer im Gastgewerbe bei der Betriebsgründung bestmöglich unterstützt: Von der ersten Orientierung über die Registrierung, Unternehmensgründung und Betriebsbewilligung bis hin zur Finanzierung und zum ersten Lieferantenvertrag.
 
 GastroStart erlaubt es seinen Kunden schweizweit, schnell und ohne langwierige Behördengänge zu einem startbereiten Gastronomieunternehmen zu kommen - ganz unabhängig vom Kanton, in dem das geplante Vorhaben realisiert werden soll.
 
@@ -58,13 +58,13 @@ Dazu wird den Benutzern ein Interface zur Auswahl ihrer bevorzugten Bank angezei
 === Erster Einkauf
 
 Voraussetzung für die Bestellung bei Transgourmet ist ein Kundenkonto, welches über das Portal angelegt werden kann.
-Ebenfalls kann der Warenkatalog und die Bestellung über das Portal durchgeführt werden.
+Ebenfalls kann der Warenkatalog und die Bestellung über das Portal eingebunden, beziehungsweise durchgeführt werden.
 Die dafür notwendigen Schnittstellen stellt Transgourmet zur Verfügung.
 Die Aufgabe von DV Bern wird es sein, diese in die Benutzerschnittstelle des Portals zu integrieren.
 
 === Zusammenfassung
 
-DV Bern ist an der Implementierung jeder der fünf/*sechs*/Szenarien, die aus der Customer Journey resultieren massgeblich mitbeteiligt: Orientierung, Registrierung, /*Unternehmensgründung, */Bewilligung, Finanzierung, erster Einkauf. Geliefert wird das technische Fundament der Plattform und ihrer Integrationsmöglichkeiten über alle Szenarien hinweg. Dabei nimmt das Unternehmen die Rolle einer Beraterin ein, welche die technischen Realisierungsmöglichkeiten der fachlichen Fragestellungen erarbeitet, die sich aus dem Joint-Venture ergeben.
+DV Bern ist an der Implementierung jeder der sechs Szenarien, die aus der Customer Journey resultieren massgeblich mitbeteiligt: Orientierung, Registrierung, Unternehmensgründung, Bewilligung, Finanzierung, erster Einkauf. Geliefert wird das technische Fundament der Plattform und ihrer Integrationsmöglichkeiten über alle Szenarien hinweg. Dabei nimmt das Unternehmen die Rolle einer Beraterin ein, welche die technischen Realisierungsmöglichkeiten der fachlichen Fragestellungen erarbeitet, die sich aus dem Joint-Venture ergeben.
 
 == FINNOFLEET
 

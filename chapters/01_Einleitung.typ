@@ -7,10 +7,10 @@
 
 Dieses Dokument erfüllt zwei explizite Anforderungen des BFH-CAS-Programms Enterprise Architecture Management.
 
-Erstens soll es die schrittweise Entwicklung eines Joint-Ventures zwischen sehr heterogene Parteien dokumentieren. 
+Erstens soll es die schrittweise Entwicklung eines Joint-Ventures von unterschiedlichen, sich ergänzenden Parteien dokumentieren. 
 Bei diesem Joint-Venture handelt es sich um ein fiktives Unternehmen, welches technische, operative und kommerzielle Aspekte jedes Ursprungsbetriebs vereint und einzeln hervorhebt. 
 
-Zweitens bietet das Dokument jedem Mitglied die Möglichkeit in individuellen (und entsprechend erkennbaren) Abschnitten auf die Spezifika des eigenen Unternehmens und des eigenen Anteils am Joint-Venture einzutreten. 
+Zweitens bietet das Dokument jedem Mitglied die Möglichkeit in individuellen (und entsprechend erkennbaren) Abschnitten auf die Spezifika des eigenen Unternehmens und des eigenen Anteils am Joint-Venture einzugehen. 
 So wird jedes Mitglied der Gruppe seinen individuellen Lernpfad festhalten und seine spezifische Vertiefung und Schlussfolgerungen beisteuern.
 
 == Problemstellung
@@ -19,7 +19,7 @@ Wie bauen wir eine Enterprise-Architektur für das Joint-Venture auf, die die un
 
 == Kontext: eine kleine Reise durch Mittelerde
 
-Im Verlauf der Studienwochen hat die Zusammenarbeit unter den Mitgliedern der Gruppe Unternehmungscharakter angenommen: durch die iterative Vorgehensweise und die regelmässigen - anfangs etwas erzwungenen Übungen - musste ein gemeinsamer Nenner gefunden und eingegrenzt werden. 
+Im Verlauf der Studienwochen hat die Zusammenarbeit unter den Mitgliedern der Gruppe Unternehmungscharakter angenommen: Durch die iterative Vorgehensweise und die regelmässigen - anfangs etwas erzwungenen Übungen - musste ein gemeinsamer Nenner gefunden und eingegrenzt werden. 
 Die Diskussionen betreffend die Schärfung der Mission (Was macht das Joint-Venture? Was davon soll abgebildet werden? Wo hören wir auf?) sowie die wöchentlichen Feedbackrunden haben nach und nach die Zusammenarbeit und die gemeinsame Unternehmensvision der vier Kollegen gefördert und gefestigt. 
 
 == Bemerkung zu den visuellen Call-outs

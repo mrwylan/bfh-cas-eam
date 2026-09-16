@@ -15,7 +15,7 @@ Die Verfolgung der durch die Übungen vorgegebenen Arbeitsschritte hat uns zur h
 Jeder Entwicklungsschritt bezieht sich auf einen Auftrag (Übung) und folgt der Empfehlung zur Erarbeitung des RIM, die im Skript @Spichiger2026GFbUA[S. 53 ff]. beschrieben ist.
 Die Modellierung erfolgt mit Archimate.
 Die folgenden Unterkapitel orientieren sich wie gehabt an den sechs Szenarien der Customer-Journey.
-Zunächst beschreiben wir die Herleitung der wesentlichen Geschäftsobjekte und bringen diese anschliessend in Beziehung mit den auf ihnen aufbauenden Geschäftstransaktionen.
+Zunächst beschreiben wir die Herleitung der wesentlichen Geschäftsobjekte und bringen diese anschliessend in Beziehung mit den, auf ihnen aufbauenden Geschäftstransaktionen.
 In den darauf folgenden Hauptkapiteln werden die Geschäftstransaktionen zu Geschäftsprozessen zusammengeführt und schliesslich die wesentlichen Geschäftsfähigkeiten der jeweiligen Prozesse identifiziert und in das Modell integriert.
 Im letzten Kapitel der Modellentwicklung beschreiben wir den Übergang vom RIM ins ressourcenspezifische Modell anhand der IDEAL Informationssystemarchitektur.
 
@@ -32,20 +32,20 @@ Ein Geschäftsobjekt kapselt die statische Struktur des RIM. Ein Geschäftsobjek
 Für die Darstellung dieser Zustände verwenden wir das Archimate-Symbol *Business Event*.
 
 *Geschäftstransaktionen:* Entlang der Geschichte werden die Geschäftstransaktionen mit ihren Inputs und Outputs (Geschäftsobjekte) identifiziert. 
-Sowohl bei Input und Output wird darauf geachtet, dass diese inklusive ihre Zustände (bzw. zugehörige Ereignisse) bezeichnet werden @Spichiger2026GFbUA[S.54].
+Bei Input und Output wird darauf geachtet, dass diese inklusive ihrer Zustände (bzw. zugehörigen Ereignisse) bezeichnet werden @Spichiger2026GFbUA[S.54].
 
 
 ])
 
 In diesem ersten Teil der Realisierung des ressourcenunabhängigen Modells identifizieren wir die relevanten Geschäftsobjekte und dokumentieren deren Zustände und Geschäftstransaktionen pro Szenario, um die Lesbarkeit zu erhalten.
-Die entsprechenden Geschäftsprozesse sind ebenfalls modelliert, auch wenn sie später erklärt werden.
+Die sich daraus ergebenden Geschäftsprozesse sind in manchen Abschnitten ebenfalls modelliert, werden aber erst in später folgenden Abschnitten detaillierter beschrieben.
 
-Die Szenarien sind in @sec-szenarien-customer-journey beschrieben und werden einzeln aufbereitet. 
+Die Szenarien sind in @sec-szenarien-customer-journey beschrieben und wurden in den einzelnen Unterkapiteln detaiilert aufbereitet. 
 
 === Identifizierte Geschäftsobjekte
 
 Um Geschäftsobjekte zu identifizieren, hat sich die Gruppe mit der Struktur von Amiras Customer-Journey auseinandergesetzt.
-Die Customer-Journey haben wir in Szenarios aufgeteilt, und in jedem Szenario ist ein Arbeitsschritt, der sich von anderen Arbeitsschritten abgrenzen lässt.
+Die Customer-Journey haben wir in Szenarios aufgeteilt, und jedes Szenario stellt einen Arbeitsschritt dar, der sich von anderen Szenarios abgrenzen lässt.
 Arbeitsschritte resultieren in Ergebnissen oder bauen auf ihnen auf. 
 Das Szenario: "Eine Quereinsteigerin möchte ein Unternehmen gründen." baut also auf einem Gründungsvorhaben auf und resultiert idealerweise in einem Unternehmen.  
 Die Ergebnisse dieses Vorgehens bilden die Grundlage für mögliche Geschäftsobjekte.
@@ -57,9 +57,9 @@ Die folgende Abbildung zeigt ein Zwischenergebnis aus dieser Vorgehensweise.
 ) <fig-customer-journey-view>
 
 Im ressourcenunabhängigen Modell (RIM) sind die Eigenschaften der Geschäftsobjekte zunächst nicht im Fokus. 
-Wir beginnen stattdessen mit der Betrachtung der Zustände, die ein Geschäftsobjekt annimmt, /*<- dieses komma weg und 2. satzteil anpassen (Dativ?)*/und welche Transaktionen einen Zustandswechsel hervorrufen, was wir entlang der Szenarien der Customer-Journey im nächsten Abschnitt beschreiben.
+Wir beginnen stattdessen mit der Betrachtung der Zustände, die ein Geschäftsobjekt annimmt und welche Transaktionen einen Zustandswechsel hervorrufen, was wir entlang der Szenarien der Customer-Journey im nächsten Abschnitt beschreiben.
 
-@fig-IdentifizierteGeschaefstobjetke zeigt die wesentlichen identifizierten Geschäftsobjekte und ihre Abhängigkeiten in GastroStart. 
+@fig-IdentifizierteGeschaefstobjetke zeigt die wesentlichen identifizierten Geschäftsobjekte und ihre Abhängigkeiten in GastroStart. Wie sich diese Geschäftsobjekte sich in das RIM integrieren, wird in den folgenden Abschnitten detaiiert beschreiben.
 
 #figure(
   image("../assets/GO diagram.svg", width: 100%),
@@ -68,7 +68,7 @@ Wir beginnen stattdessen mit der Betrachtung der Zustände, die ein Geschäftsob
 
 #design-entscheid([
 
-Es wurde verzichtet, das Objekt Person zu modellieren. 
+Es wurde daraf verzichtet, das Objekt Person zu modellieren. 
 Die Behandlung von personenbezogenen Invarianten wie Domizil in der Schweiz oder Besitz des Wirtepatentes als Voraussetzung für die Gründung des Unternehmens und für den Erhalt der Betriebsbewilligung würden den Rahmen dieser Arbeit sprengen.
 
 ])
@@ -77,7 +77,7 @@ Die Behandlung von personenbezogenen Invarianten wie Domizil in der Schweiz oder
 
 #autor-dvbern("Beitrag von Jan Sohnemann, DV Bern", inhalt: [])
 
-In @head-scenarios-orientation haben wir einen Einstieg in die erste Phase der Customer-Journey beschrieben. Hier wollen wir den Ablauf der Phase nun vollständig beschreiben.
+In @head-scenarios-orientation haben wir einen Einstieg in die erste Phase der Customer-Journey gegeben. Hier wollen wir den Ablauf der Phase nun vollständig anhand eines ressourcenunabhängigen Modells (RIM) beschreiben.
 
 Was bringt potenzielle Kunden auf eine Plattform wie GastroStart? 
 Am Anfang steht sicherlich der Wunsch, einen Gastronomiebetrieb zu gründen.
@@ -86,7 +86,7 @@ Handelt es sich um ein Cateringunternehmen, um ein Café oder um eine Bar, in de
 Die GründerInnen haben dabei vielleicht zunächst nur ihre Betriebszeiten und ihre Wunschklientel vor Augen.
 Allerdings hat diese Entscheidung auch regulatorische Auswirkungen, die sich an verschiedenen Standorten unterschiedlich auswirken können.
 Von entscheidender Bedeutung ist also auch, wo der Betrieb stattfindet.
-Alle Eigenschaften, die mit der Betriebsgründung zusammenhängen, fassen wir im ressourcenunabhängigen Modell im Geschäftsobjekt *Gründungsvorhaben* zusammen.
+Alle Eigenschaften, die mit der Betriebsgründung zusammenhängen, fassen wir im RIM mit dem Geschäftsobjekt *Gründungsvorhaben* zusammen.
 Das Gründungsvorhaben wird in der ersten Phase, Orientierung, entscheidend geprägt und spielt in den folgenden Phasen die zentrale Rolle.
 
 Der Auslöser der Customer-Journey ist das Gründungsvorhaben. 
@@ -96,28 +96,27 @@ wir lassen das an dieser Stelle offen - ist ihre erste Aktion, den Standort für
 Diese Aktion wird durch die Geschäftstransaktion *Standort festlegen* realisiert.
 Im Anschluss wechselt das Gründungsvorhaben in den Zustand *lokalisiert*.
 Ausserdem wird durch das Festlegen des Standortes auf Basis einer digitalen Regelmatrix das Geschäftsobjekt *Kantonsanforderungskatalog* definiert.
-Dieser Katalog beschreibt alle, für die Realisierung des Gründungsvorhabens,/*<-komma zu viel?*/ zu erfüllenden Kriterien, den gewählten Standort betreffend.
+Dieser Katalog beschreibt alle, für die Realisierung des Gründungsvorhabens zu erfüllenden Kriterien, den gewählten Standort betreffend.
 Diese Kriterien können z.B. erforderliche Bewilligungen, einzuhaltende Auflagen oder nachzuweisende Kenntnisse und Fähigkeiten sein und sie entstammen dem Geschäftsobjekt *digitale Regelmatrix*. 
 Man kann sich dieses Objekt wie eine Tabelle vorstellen: Jede Spalte repräsentiert einen Standort (Kanton) und jede Zeile repräsentiert ein zu erfüllendes Kriterium.
-Eine Zelle mit dem Wert "1" oder "true", bzw. "wahr" bedeutet, dass das durch die Zelle, mit dem Standort verknüpfte Kriterium, bei einem Gründungsvorhaben relevant ist.
+Eine Zelle mit dem Wert "1" oder "true", bzw. "wahr" bedeutet dass das, durch die Zelle mit dem Standort verknüpfte Kriterium bei einem Gründungsvorhaben relevant ist.
 Mit dem erfolgreichen Abschliessen der Geschäftstransaktion *Anforderungen ermitteln* wechselt das Gründungsvorhaben in den Zustand *orientiert*.
-Zusätzlich wird das Geschäftsobjekt *Bewilligungsübersicht* erstellt, das Teil einer Komposition mit dem Gründungsvorhaben ist. 
-Diese Übersicht enthält alle, /*<- komma zu viel? :-)*/Kriterien, die für eine Betriebsgenehmigung zu erfüllen sind.
-Die GründerInnen haben damit alle Informationen, /*<- komma zu viel? :-)*/die sie brauchen, um das Bewilligungsverfahren erfolgreich zu durchlaufen.
+Zusätzlich wird das Geschäftsobjekt *Bewilligungsübersicht* erstellt, welches Teil einer Komposition mit dem Gründungsvorhaben ist. 
+Diese Übersicht enthält alle Kriterien, die für eine Betriebsgenehmigung zu erfüllen sind.
+Die GründerInnen haben damit alle Informationen die sie brauchen, um das Bewilligungsverfahren erfolgreich zu durchlaufen.
 
 #figure(
   image("../assets/jan/Phase 1a - Orientierung - (GT & Events).svg", width: 100%),
   caption: [Zustandsübergänge des Gründungsvorhabens im Szenario "Sich orientieren"]
 ) <fig-GTZ-orientierung>
 
-Die hier beschriebene Variante liest sich als Happy Path — also die erfolgreiche Erstellung einer Bewilligungsübersicht —,/*<- komma zu viel? :-)*/ auch wenn der hier verwendete Zielzustand *orientiert* Raum für Variationen lässt. 
-Sicherlich ist nicht jedes Gründungsvorhaben realisierbar,/*<- komma zu viel? :-)*/ und der hier beschriebene Prozess kann durchaus komplexer werden. 
+Die hier beschriebene Variante liest sich als Happy Path — also die erfolgreiche Erstellung einer Bewilligungsübersicht — auch wenn der hier verwendete Zielzustand, *orientiert*, Raum für Variationen lässt. 
+Sicherlich ist nicht jedes Gründungsvorhaben realisierbar und der hier beschriebene Prozess kann durchaus komplexer werden. 
 Dass das Gründungsvorhaben nicht realisierbar ist, ist allerdings auch eine Art Orientierung.
 Wie im zweiten Absatz dieses Abschnitts angemerkt, spielt das Gründungsvorhaben in allen Phasen der Customer-Journey eine entscheidende Rolle.
 Die folgende Tabelle fasst die wesentlichen Kriterien für dieses wichtige Geschäftsobjekt zusammen.
 Für ein besseres Verständnis wurden hier auch einige Attribute (im Text auch als "Eigenschaften" bezeichnet) angegeben.
-/*Die hier aufgezählten Zustände sind vollständig für alle Phasen der Customer-Journey und auch wenn deren Einführung noch offen ist, tragen sie an dieser Stelle aus unserer Sicht zum Verständnis bei.*/
-Die hier aufgezählten Zustände gelten für alle Phasen der Customer-Journey, und auch wenn deren Einführung noch offen ist, tragen sie aus unserer Sicht an dieser Stelle zum Verständnis bei.
+Die in der Tabelle aufgezählten Zustände gelten für alle Phasen der Customer-Journey. Auch wenn teilweise noch nicht einführt, trägt ihre Erwähnung an dieser Stelle, aus unserer Sicht zum Verständnis bei.
 #pagebreak()
 
 #figure(
@@ -228,7 +227,7 @@ Nachdem die GründerInnen mit dem Abschluss der ersten Phase eine Übersicht zu 
 Das heisst, sie werden Formulare ausfüllen und als Anträge einreichen müssen. 
 Diese Anträge können eine Bearbeitungsdauer haben, die sich über Tage oder gar Wochen erstreckt. 
 Manche GründerInnen werden wahrscheinlich auch Kenntnisse nachweisen und sich diese zunächst erarbeiten müssen. 
-Damit GründerInnen den Prozess auf GastroStart nicht bei jeder Sitzung von vorn beginnen müssen, macht es Sinn, ihr Gründungsvorhaben und dessen aktuellen Stand mit einem Konto zu verknüpfen. 
+Damit GründerInnen den Prozess auf GastroStart nicht bei jeder Sitzung von vorn beginnen müssen, macht es Sinn, ihr Gründungsvorhaben und dessen aktuellen Stand zu sepiechern und mit einem Konto zu verknüpfen. 
 Über ihr Konto können sich alle GastroStart-Benutzenden authentifizieren und Aktualisierungen am Gründungsprozess vornehmen oder einsehen.
 
 Wir betrachten im folgenden Modell im Wesentlichen das Geschäftsobjekt Kundenkonto, das durch drei Geschäftstransaktionen geprägt wird:
@@ -241,7 +240,7 @@ Das Kundenkonto dient einerseits der Authentifizierung, der Autorisierung, der P
 Diese Verknüpfung ist eine Aggregation. 
 Wie im ersten Absatz dieses Abschnitts erklärt, dient das Kundenkonto in erster Linie dem Speichern des Gründungsvorhabens.
 Wird das Kundenkonto gelöscht, lässt sich das Gründungsvorhaben niemandem mehr zuordnen und kann ebenfalls entfernt werden.
-Wir kommen weiter unten im Text noch mal auf das Löschen des Kundenkontos zu sprechen.
+Wir differenzieren diese Aussage allerdings weiter unten im Text noch einmal.
 Das Kundenkonto wird in den Geschäftstransaktionen *Konto anlegen* und *Konto aktualisieren* definiert. 
 Ein Beispiel für eine Aktualisierung könnte die Änderung der Postanschrift oder Telefonnummer des Gründers oder der Gründerin sein.
 
@@ -297,20 +296,20 @@ Die Tabelle entspricht dem Aufbau der Tabelle: @tbl-GO-Gründungsvorhaben aus Ab
 ) <tbl-GO-Kundenkonto>
 
 Das Löschen eines Kundenkontos darf nicht in jedem Fall zu dessen Verschwinden führen. Erst wenn alle Geschäftstransaktionen, die mit diesem Konto in Verbindung stehen, abgeschlossen sind, ist eine endgültige Löschung möglich — und auch nur dann, wenn ausstehende Verbindlichkeiten der GründerInnen auch ausserhalb der Plattform beglichen werden können. 
-Das Löschen eines Kundenkontos versetzt dieses also im Rahmen dieses Modells zunächst nur in den Zustand *inaktiv*, was bedeutet, dass bereits gestartete Transaktionen abgebrochen werden können - wenn möglich, und dass keine neuen Transaktionen gestartet werden können.
+Das Löschen eines Kundenkontos versetzt dieses also im Rahmen des hier vorgestellten Modells, zunächst nur in den Zustand *inaktiv*. Das bedeutet, dass bereits gestartete Transaktionen abgebrochen werden können - wenn möglich, und dass keine neuen Transaktionen gestartet werden können.
 
 Dass die Geschäftstransaktion *Konto aktualisieren* das Kundenkonto in einen neuen Zustand überführt (*aktualisiert*), kann in vielen Fällen sinnvoll sein: 
 Laufende Prozesse oder Transaktionen müssen unter Umständen über diese Zustandsänderung informiert werden. 
 Nehmen wir zum Beispiel wieder die Änderung der Postanschrift: Wahrscheinlich werden sich nicht alle Informationsaustauschprozesse digitalisieren lassen, und eine zuständige Behörde sollte in diesen Fällen für den Schriftverkehr über die Änderung der Postanschrift informiert werden.
-
-Die folgende @fig-gtz-registrierung stellt den Prozess *Kundenkonto verwalten* im Archimate Modell dar.
 Aber auch in einem voll digitalisierten System ist dieser Zustand sinnvoll, z.B. wenn dieses System einer Event-orientierten Architektur folgt.
-Wann dieser Zustand (*aktualisiert*) endet, darüber sprechen wir in diesem Abschnitt nicht.
-Wir weisen hier lediglich darauf hin, dass Abhängigkeiten zu diesem Zustand systemabhängig gegebenenfalls präziser definiert werden muss.
+Wann dieser Zustand (*aktualisiert*) endet, das lassen wir an dieser Stelle offen.
+Wir weisen hier lediglich darauf hin, dass Abhängigkeiten zu diesem Zustand systemabhängig gegebenenfalls präziser definiert werden müssen.
 
-Die ausschliessliche Verwaltung des Kundenkontos erfüllt noch keinen /*einen?*/Zweck. 
-/*Zweck oder keins?*/Diesen Zweck haben wir im ersten Absatz dieses Abschnitts beschrieben: Authentifizierung.
-Für die Authentifizierung haben wir dem Modell in @fig-gtz-registrierung noch zwei weitere Geschäftstransaktionen hinzugefügt:
+Die folgende @fig-gtz-registrierung stellt die oben beschriebenen Abläufe im Archimate Modell dar.
+
+
+Das Kundenkonto erfüllt noch einen weiteren Zweck, nämlich die Authentifizierung.
+Für diese haben wir dem Modell in @fig-gtz-registrierung noch zwei weitere Geschäftstransaktionen hinzugefügt:
 *Kunde anmelden* und *Kunde abmelden*.
 Beide Transaktionen versetzen das Kundenkonto in einen entsprechenden Zustand.
 Diese Zustände sind relevant, weil sie das Verhalten der sie auslösenden Geschäftstransaktion beeinflussen.
@@ -422,7 +421,7 @@ Die folgende @fig-GTZ-Amira-gründet stellt die Zusammenhänge der Geschäftsobj
 im Szenario "Amira gründet ihr Unternehmen"]
 ) <fig-GTZ-Amira-gründet>
 
-Nachfolgend wird auf die einzelnen Elemente der Grafik eingegangen, wobei sich die Beschreibung auf das Happy Path konzentriert. 
+Nachfolgend wird auf die einzelnen Elemente der Grafik eingegangen, wobei sich die Beschreibung auf den Happy Path konzentriert. 
 Die Möglichkeiten des Abbruches der Firmengründung durch die GründerInnen oder dass die kantonale Behörde den Eintrag ins Handelsregister nicht vornimmt, werden nicht näher beschrieben. /*ist das doppelt gemoppelt?*/
 
 
@@ -556,7 +555,7 @@ transaktion],
 
 === Amira erhält die Bewilligung<sec-go-gt-bewilligung>
 
-Nach der Gründung einer juristischen Person, zum Beispiel einer GmbH, können die GründerInnen die nächste Hürde in Angriff nehmen: So wie mit der Gründung des Unternehmens bereits erfolgt, unterstützt GastroStart seine Kunden dabei, alle Unterlagen, Bestätigungen und Nachweise vorzubereiten oder einzuholen, die für die Erteilung der Betriebsbewilligung durch die zuständige Behörde am gewählten Standort erforderlich sind. Wie es bei der Gründung bereits der Fall gewesen ist, sind die Angaben für die Führung der GründerInnen durch den Ablauf in der Bewilligungsübersicht gespeichert (s. @fig-GTZ-orientierung).
+Nach der Gründung einer juristischen Person, zum Beispiel einer GmbH, können die Gründer-Innen die nächste Hürde in Angriff nehmen: So wie mit der Gründung des Unternehmens bereits erfolgt, unterstützt GastroStart seine Kunden dabei, alle Unterlagen, Bestätigungen und Nachweise vorzubereiten oder einzuholen, die für die Erteilung der Betriebsbewilligung durch die zuständige Behörde am gewählten Standort erforderlich sind. Wie es bei der Gründung bereits der Fall gewesen ist, sind die Angaben für die Führung der GründerInnen durch den Ablauf in der Bewilligungsübersicht gespeichert (s. @fig-GTZ-orientierung).
 
 GastroStart gibt über jedes erforderliche Lieferobjekt Auskunft und zeigt auf, wo der jeweilige Nachweis eingeholt werden kann.
 Dank GastroStart können die GründerInnen den Sinn hinter jeder behördlichen Anforderung nachvollziehen, und dies motiviert sie bei der zeitaufwändigen Zusammenstellung. So erfahren sie, dass die Anforderungen an die Erteilung der Betriebsbewilligung dem Schutz der Gäste dienen, denn die Vorschriften decken Bereiche ab wie Hygiene und Lebensmittelsicherheit, Bau- und Brandschutz und nicht zuletzt die persönliche Eignung des Antragstellers für die Führung des Caterings. 
@@ -957,7 +956,7 @@ Was bleibt physisch vorhanden, was verschwindet?"
 #stolperstein([
 
 In dieser Phase wurde mehrmals die Modellierungsebene verfehlt.
-Schwierigkeiten bot es, Abstand von der gewohnte Implementierungsebene zu halten - und Transaktionen nicht wie eine Benutzerführung auf einem Applikations-Frontend zu modellieren. 
+Schwierigkeiten boten es, Abstand von der gewohnte Implementierungsebene zu halten - und Transaktionen nicht wie eine Benutzerführung auf einem Applikations-Frontend zu modellieren. 
 
 ])
 
@@ -1003,13 +1002,14 @@ Die zur Bewilligung notwendigen Schritte - wir bezeichnen sie im Folgenden als "
 Dieses Wissen muss erarbeitet und gepflegt werden. Das erfordert Ressourcen und resultiert in einer Fähigkeit, nämlich *Regulatorisches Wissen*.
 Dieses Wissen ist in den Geschäftsobjekten *Digitale Regelmatrix* und *Kantonsanforderungskatalog* abgelegt.
 Da nicht alle Bewilligungskriterien für jedes Gründungsvorhaben relevant sind, ist es für die GründerInnen vorteilhaft, ihren konkreten Bedarf zu kennen.
-Diesen Bedarf aus allen möglichen Bewilligungskriterien ermitteln zu können resultiert in einer weiteren Geschäftsfähigkeit, nämlich *Bewilligungsbedarf*.
+Diesen Bedarf aus allen möglichen Bewilligungskriterien ermitteln zu können, resultiert in einer weiteren Geschäftsfähigkeit, nämlich *Bewilligungsbedarf*.
 Und schliesslich muss dieser Bedarf so aufbereitet werden, dass die GründerInnen ihn problemlos erfüllen können.
 Der ganze Prozess resultiert also in der Geschäftsfähigkeit *Gründungsorientierung*.
 Das klingt zunächst abstrakt und man könnte argumentieren, dass die zuvor genannten Geschäftsfähigkeiten *Regulatorisches Wissen* und *Bewilligungsbedarf* in dieser Fähigkeit vereint werden können.
 Wir würden argumentieren, dass das Bereitstellen dieser Orientierung, als das für den Kunden (Gründer/in) sichtbare Ergebnis, von besonderer Bedeutung ist und besonderer Aufmerksamkeit bedarf.
-Man könnte den Kunden an dieser Stelle entweder die - wie in @head-phase1-orientierung-1 beschrieben - ausgefüllte Regelmatrix überlassen.
-Unser Fokus wäre allerdings, diese Matrix in eine Form zu übersetzen, die ein geringes Risiko der Überforderung hat, die beherrschbar und ermutigend erscheint.
+Man könnte den Kunden an dieser Stelle einfach die - wie in @head-phase1-orientierung-1 beschrieben - ausgefüllte Regelmatrix überlassen.
+Damit hätten sie bereits alle Informationen, die sie brauchen.
+Unser Fokus soll es aber sein, diese Matrix in eine Form zu übersetzen, die ein geringes Risiko der Überforderung hat, die beherrschbar und ermutigend erscheint.
 Wir wollen schliesslich möglichst viele Kunden durch alle Phasen der Customer Journey auf unserer Plattform begleiten.
 Das zu realisieren, verbirgt sich also hinter der Geschäftsfähigkeit *Gründungsorientierung*.
 
@@ -1032,11 +1032,11 @@ Zunächst aggregieren wir die drei oben genannten Geschäftstransaktionen in ein
 Dieser Prozess erfordert eine langfristige Speicherung sensibler Daten, wie zum Beispiel Name und Adresse und Zugangsdaten der Benutzer unserer Plattform.
 Diese Daten sind besonders schützenswert und erfordern einen entsprechenden Umgang. 
 Und dieser Umgang erfordert besondere Fähigkeiten.
-Da wir uns hier noch im RIM befinden, möchten wir nicht zu sehr ins Detail gehen, aber zwei Beispiele seien hier genannt: 
+Da wir uns hier noch im RIM befinden, möchten wir an dieser Stelle nicht über ressourcenspezifische Details sprechen, aber um sich etwas darunter vorstellen zu können, seien zwei Beispiele genannt: 
 - Verschlüsselung sensibler Daten bei der Übertragung.
-- Schützen sensibler Daten vor unberechtigtem Zugriff.
+- Berechtigungskonzept zum Schützen sensibler Daten im System vor unberechtigtem Zugriff.
 Schützenswerte, beziehungsweise sensible Daten fassen wir unter dem Begriff "Kundendaten" zusammen.
-Und die für den Umgang mit diesen notwendige Geschäftsfähigkeit nennen wir *Kundendaten*.
+Und die für den Umgang mit diesen, notwendige Geschäftsfähigkeit nennen wir *Kundendaten*.
 
 Das letzte Beispiel, das Schützen der Daten, führt uns zu einer weiteren Geschäftsfähigkeit.
 Wenn wir unberechtigte Zugriffe verhindern wollen, wie setzen wir das um?
@@ -1047,8 +1047,8 @@ Mit diesen Daten wird eine Authentifizierung möglich.
 Die Benutzer melden sich damit am System an und bestätigen mit diesem geschützten Wissen ihre Identität.
 In @fig-gtz-registrierung haben wir zu diesem Zweck die beiden Geschäftstransaktion *Kunde anmelden* und *Kunde abmelden* vorgestellt.
 Diese haben wir hier in @fig-bp-and-bc-phase2 in dem Geschäftsprozess *Kundensession verwalten* aggregiert.
-Die Kundensession ist die Möglichkeit des authentifizierten Benutzers, das System seiner Autorität entsprechend zu benutzen.
-Und zwar in der Zeit von seiner Anmeldung bis zu seiner Abmeldung.
+Während einer Kundensession haben authentifizierte Benutzer die Möglichkeit, das System ihrer Autorität entsprechend zu benutzen.
+Und zwar in der Zeit nach erfolgreicher Anmeldung bis zur Abmeldung der Benutzer.
 Autorität bedeutet hier eine definierte Anzahl von Rechten auszuüben.
 So haben z.B. alle GründerInnen das Recht ihre Gründungsvorhaben abzubrechen.
 GründerInnen sind aber nicht die einzigen Benutzer des Systems.
@@ -1081,7 +1081,7 @@ Die nachfolgende Abbildung @GPGF_Amira_gründet_Unternehmen stellt die Zusammenh
 Nachfolgend wird näher auf die Geschäftsprozesse und deren Abhängigkeiten von Geschäftsobjekten eingegangen.
 
 
-Die Geschäftstransaktionen von GastroStart werden zu drei *Geschäftsprozesse* aggregiert, nämlich 
+Die Geschäftstransaktionen von GastroStart werden zu drei *Geschäftsprozessen* aggregiert, nämlich 
 - _Handelsregistereintrag erwirken_  
 - _Unternehmen [bei Behörden] anmelden_ 
 - _Unternehmensgründung vollziehen_
@@ -1095,7 +1095,7 @@ Dieser Prozess ist nur dann erforderlich, wenn das Unternehmen seine wirtschaftl
 
 Die soeben beschriebenen Geschäftsprozesse von GastroStart weisen folgende *Abhängigkeiten von Geschäftsobjekten* auf:
 
-- _Unternehmen_ ist das zentrale Objekt der Geschäftsprozesse _Handelsregistereintrag erwirken_ und _Unternehmen [bei Behörden] anmelden_: alle Geschäftstransaktionen greifen darauf zu, und die Zustände des Objekts sind die Fortschrittsanzeige des Gesamtprozesses (siehe @tbl-GO-Unternehmen).
+- _Unternehmen_ ist das zentrale Objekt der Geschäftsprozesse _Handelsregistereintrag erwirken_ und _Unternehmen [bei Behörden] anmelden_: Alle Geschäftstransaktionen greifen darauf zu, und die Zustände des Objekts sind die Fortschrittsanzeige des Gesamtprozesses (siehe @tbl-GO-Unternehmen).
 - _Gründungsvorhaben_ ist der fachliche Auslöser und Empfänger des Prozessergebnisses: Die abschliessenden Transaktionen des Prozesses _Unternehmen [bei Behörden] anmelden_ greifen ebenfalls auf dieses Objekt zu und versetzen es in den Zustand _registriert_. 
 Diese Transaktionen wirken sich somit auf zwei Geschäftsobjekte.
 
@@ -1122,7 +1122,7 @@ Die Geschäftstransaktionen werden in zwei *Geschäftsprozessen* aggregiert, nä
 - _Betriebsbewilligung erteilen_
 
 Die Trennlinie liegt dort, wo die Verantwortung wechselt: Solange die GründerInnen ihr Gesuch *vorbereiten* und einreichen, liegt die Verantwortung bei ihnen; ab der behördlichen Prüfung liegt sie bei der zuständigen Behörde.
-- Der Geschäftsprozess _Betriebsbewilligung erwirken_ liegt in der Verantwortung der GründerInnen - und die Plattform unterstützt ihn dabei, die in der Orientierungsphase identifizierten Voraussetzungen zu erfüllen. Das Verb wurde gewählt, da es den Kern des von GastroStart erbrachten Mehrwerts beschreibt: die GründerInnen an der Schnittstelle zu den Behörden erfolgreich zu unterstützen.
+- Der Geschäftsprozess _Betriebsbewilligung erwirken_ liegt in der Verantwortung der Gründer-Innen - und die Plattform unterstützt sie dabei, die in der Orientierungsphase identifizierten Voraussetzungen zu erfüllen. Das Verb wurde gewählt, da es den Kern des von GastroStart erbrachten Mehrwerts beschreibt: Die GründerInnen an der Schnittstelle zu den Behörden erfolgreich zu unterstützen.
 -  Der Geschäftsprozess _Betriebsbewilligung erteilen_ fällt komplett unter die Zuständigkeit der genehmigenden Behörde und ist entsprechend farblich hervorgehoben.
 
 Die soeben beschriebenen Geschäftsprozesse weisen folgende *Abhängigkeiten von Geschäftsobjekten* auf:
@@ -1180,17 +1180,17 @@ Bewilligung erwirken],
 
 === Geschäftsprozesse und Geschäftsfähigkeiten für die Finanzierung
 <sec-GP-GF-finanzierung>
-#autor-finnofleet("Beitrag von Adrian Anghel, FINNOFLEET", inhalt: [Dieser Abschnitt führt Geschäftsprozesse und Geschäftsfähigkeiten der Finanzierungsphase zusammen: von den aggregierten Geschäftstransaktionen bis zur Geschäftsfähigkeit #emph[Gründungsvorhaben finanzieren] und ihren Teilfähigkeiten.])
+#autor-finnofleet("Beitrag von Adrian Anghel, FINNOFLEET", inhalt: [Dieser Abschnitt führt Geschäftsprozesse und Geschäftsfähigkeiten der Finanzierungsphase zusammen: Von den aggregierten Geschäftstransaktionen bis zur Geschäftsfähigkeit #emph[Gründungsvorhaben finanzieren] und ihren Teilfähigkeiten.])
 
 ==== Geschäftsprozesse
 
-Die vier Geschäftstransaktionen der Phase (siehe @tbl-GT-finanzierung-erhalten) aggregieren zu zwei Geschäftsprozessen. Die Trennlinie liegt dort, wo die Verantwortung wechselt: solange Amira ihr Gesuch aufbaut und einreicht, liegt der Fall bei ihr; ab der Beurteilung liegt er bei FINNOFLEET.
+Die vier Geschäftstransaktionen dieser Phase (siehe @tbl-GT-finanzierung-erhalten) aggregieren zu zwei Geschäftsprozessen. Die Trennlinie liegt dort, wo die Verantwortung wechselt: solange Amira ihr Gesuch aufbaut und einreicht, liegt der Fall bei ihr; ab der Beurteilung liegt er bei FINNOFLEET.
 
 Finanzierung initiieren
-umfasst die Geschäftstransaktionen #emph[Finanzierung vorbereiten] und #emph[Finanzierung anfordern]. Der Prozess führt das Geschäftsobjekt #emph[Finanzierung] von #emph[neu] über #emph[vollständig] nach #emph[angefordert] und endet mit der Übergabe des Gesuchs an FINNOFLEET. Wichtig ist die Schleife über #emph[unvollständig]: fehlende Nachweise führen zurück in die Vorbereitung, ohne dass der Fall verloren geht; #emph[abgebrochen] beendet ihn vorzeitig. Dieser Prozess gehört fachlich zu GastroStart, weil hier die Kundeninteraktion stattfindet.
+umfasst die Geschäftstransaktionen #emph[Finanzierung vorbereiten] und #emph[Finanzierung anfordern]. Der Prozess führt das Geschäftsobjekt #emph[Finanzierung] von #emph[neu] über #emph[vollständig] nach #emph[angefordert] und endet mit der Übergabe des Gesuchs an FINNOFLEET. Wichtig ist die Schleife über #emph[unvollständig]: Fehlende Nachweise führen zurück in die Vorbereitung, ohne dass der Fall verloren geht; #emph[abgebrochen] beendet ihn vorzeitig. Dieser Prozess gehört fachlich zu GastroStart, weil hier die Kundeninteraktion stattfindet.
 
 Finanzierung erhalten
-umfasst die Geschäftstransaktionen #emph[Finanzierung prüfen] und #emph[Finanzierung zusagen]. Der Prozess führt die Finanzierung von #emph[angefordert] nach #emph[angenommen] --- oder nach #emph[abgelehnt], respektive bei fehlenden Nachweisen zurück nach #emph[unvollständig]. Mit der Zusage wechselt der Zustand die Objektgrenze: nicht die Finanzierung, sondern das #emph[Gründungsvorhaben] wird #emph[finanziert]. Er ist der eigentliche Beitrag von FINNOFLEET zum Joint-Venture und der Punkt, an dem aus Amiras Gründungsvorhaben ein finanziertes Unternehmen wird. Beide Prozesse zusammen realisieren die Geschäftsfähigkeit #emph[Gründungsvorhaben finanzieren], die in @sec-GF-finanzierung in Teilfähigkeiten zerlegt wird.
+umfasst die Geschäftstransaktionen #emph[Finanzierung prüfen] und #emph[Finanzierung zusagen]. Der Prozess führt die Finanzierung von #emph[angefordert] nach #emph[angenommen] --- oder nach #emph[abgelehnt], respektive bei fehlenden Nachweisen zurück nach #emph[unvollständig]. Mit der Zusage wechselt der Zustand die Objektgrenze: Nicht die Finanzierung, sondern das #emph[Gründungsvorhaben] wird #emph[finanziert]. Er ist der eigentliche Beitrag von FINNOFLEET zum Joint-Venture und der Punkt, an dem aus Amiras Gründungsvorhaben ein finanziertes Unternehmen wird. Beide Prozesse zusammen realisieren die Geschäftsfähigkeit #emph[Gründungsvorhaben finanzieren], die in @sec-GF-finanzierung in Teilfähigkeiten zerlegt wird.
 
 #figure(
   image("../assets/GP Amira erhaelt eine Finanzierung.svg", width: 100%),
@@ -1209,29 +1209,29 @@ umfasst die Geschäftstransaktionen #emph[Finanzierung prüfen] und #emph[Finanz
 Die übergeordnete Geschäftsfähigkeit lautet *Gründungsvorhaben finanzieren*. Sie wird im Joint-Venture arbeitsteilig getragen: FINNOFLEET verantwortet den Finanzierungskern --- Prüfung, Entscheid und Kontobereitstellung ---, während die kundenzugewandte Antragserfassung bei GastroStart liegt. Die Fähigkeit zerfällt in vier Teilfähigkeiten:
 
 1. Finanzierungsantrag-Management
-• Erfassung des Finanzierungsgesuchs mit Betrag, Verwendungszweck und Laufzeit.
-• Verwaltung der erforderlichen Unterlagen (Businessplan, Kostenaufstellung, Bewilligungsnachweis).
-• Vollständigkeitsprüfung und Nachforderung fehlender Angaben.
+- Erfassung des Finanzierungsgesuchs mit Betrag, Verwendungszweck und Laufzeit.
+- Verwaltung der erforderlichen Unterlagen (Businessplan, Kostenaufstellung, Bewilligungsnachweis).
+- Vollständigkeitsprüfung und Nachforderung fehlender Angaben.
 
 2. Bonitätsprüfung
-• Automatisierte Beurteilung der Kreditwürdigkeit auf Basis der Antragsdaten.
-• Scoring nach definierten Kriterien (u. a. Einkommenssicherheit, Risikoprofil).
-• Bereitstellung eines nachvollziehbaren Prüfergebnisses.
+- Automatisierte Beurteilung der Kreditwürdigkeit auf Basis der Antragsdaten.
+- Scoring nach definierten Kriterien (u. a. Einkommenssicherheit, Risikoprofil).
+- Bereitstellung eines nachvollziehbaren Prüfergebnisses.
 
 3. Kreditentscheidung
-• Ableitung von Zusage oder Absage aus dem Prüfergebnis.
-• Festlegung der Konditionen (Zinssatz, Laufzeit) bei Zusage.
-• Begründung des Entscheids in verständlicher Sprache.
+- Ableitung von Zusage oder Absage aus dem Prüfergebnis.
+- Festlegung der Konditionen (Zinssatz, Laufzeit) bei Zusage.
+- Begründung des Entscheids in verständlicher Sprache.
 
 4. Konto- und IBAN-Bereitstellung
-• Eröffnung des Geschäftskontos nach positivem Entscheid.
-• Vergabe der IBAN als Grundlage für den späteren Zahlungsverkehr.
+- Eröffnung des Geschäftskontos nach positivem Entscheid.
+- Vergabe der IBAN als Grundlage für den späteren Zahlungsverkehr.
 
 *Zuordnung zu den Geschäftsprozessen.* Teilfähigkeit 1 stützt den Prozess *Finanzierung initiieren* und liegt bei GastroStart, weil dort die Kundeninteraktion stattfindet. Die Teilfähigkeiten 2 bis 4 stützen den Prozess *Finanzierung erhalten* und liegen damit bei FINNOFLEET (siehe @GP_Amira_erhaelt_Finanzierung).
 
-Die letzten beiden Punkte von Teilfähigkeit 3 --- verständliche Begründung und Verweis auf Förderprogramme --- leiten sich aus der Chance des Szenarios #emph[Amira erhält eine Finanzierung] ab (siehe @tbl-szenario-finanzierung) und beschreiben einen Soll-Zustand. Bewusst nicht als eigene Geschäftsfähigkeit geführt wird die Kommunikation dieses Entscheids: Wie das Ergebnis Amira präsentiert wird, ist eine Frage der Kanäle und Interaktionskomponenten und gehört damit ins RSM, nicht in die ressourcenunabhängige Fähigkeitsstruktur.
+Die letzten beiden Punkte von Teilfähigkeit 3 --- verständliche Begründung und Verweis auf Förderprogramme --- leiten sich aus der Chance des Szenarios #emph[Amira erhält eine Finanzierung] ab (siehe @tbl-szenario-finanzierung) und beschreiben einen Soll-Zustand. Bewusst nicht als eigene Geschäftsfähigkeit geführt, wird die Kommunikation dieses Entscheids: Wie das Ergebnis Amira präsentiert wird, ist eine Frage der Kanäle und Interaktionskomponenten und gehört damit ins RSM, nicht in die ressourcenunabhängige Fähigkeitsstruktur.
 
-==== Geschäftsfähigkeiten Kunde bei Transgourmet werden
+=== Geschäftsfähigkeiten Kunde bei Transgourmet werden
 
 Die Geschäftsfähigkeit die im Szenario *Kunde bei Transgourmet werden* tragend werden, wurden als *Lieferantenkonto* und *Bestellung* identifiziert. 
 
@@ -1249,7 +1249,7 @@ Die Geschäftsfähigkeit *Bestellung* umfasst die Erfassung und Verwaltung von B
 
 = Das Inside-Out-Mapping: Realisierung der Enterprise Architecture
 
-Dieses Kapitel enthält die separaten Ausführungen der jeweiligen Autoren der Gruppenarbeit zum aktuellen Operating Models des eigenen Ursprungsbetriebs und des Joint-Ventures GastroStart. Es kann sein, dass die Autoren zu jeweiligen, unterschiedlichen Schlüsse bezüglich der Gestaltung des Operating Models des Joint-Ventures kommen. Dies ist so gewollt.  
+Dieses Kapitel enthält die separaten Ausführungen der jeweiligen Autoren der Gruppenarbeit zum aktuellen Operating Model des eigenen Ursprungsbetriebs und des Joint-Ventures GastroStart. Es kann sein, dass die Autoren zu jeweiligen, unterschiedlichen Schlüssen bezüglich der Gestaltung des Operating Models des Joint-Ventures kommen. Dies ist so gewollt.  
 
 == Operating Model für DV Bern 
 #autor-dvbern("Beitrag von Jan Sohnemann, DV Bern", inhalt: [])
@@ -1261,7 +1261,7 @@ Care & Education, Gesundheit und Steuern.
 Diese Abteilungen können sich Kunden teilen, z.B. die Stadt Luzern oder den Kanton Bern und es kann auch Schnittstellen zwischen den Applikationen geben, die verschiedene Abteilungen für verschiedene Kunden bereitstellen. 
 Alle Abteilungen sind Kunden der Abteilung IT-Services und die Prozesse sind hier weitestgehend für alle Abteilungen standardisiert. 
 Die IT-Services stellen nicht nur Arbeitsgeräte zur Verfügung, sondern sichern auch den Betrieb von intern oder extern gehosteten Kundenanwendungen. 
-Davon und von einigen, wenigen Vorgaben und Best Practices abgesehen haben die Abteilungen weitestgehend Autonomie.
+Davon und von einigen wenigen Vorgaben und Best Practices abgesehen, haben die Abteilungen weitestgehend Autonomie.
 
 Es gibt also wenig Geschäftsprozess-Standardisierung, aber dort wo es standardisierte Prozesse gibt, sind diese meist sehr stark integriert. 
 Ich würde DV Bern im Operating Model unter «Koordination» einordnen. 
@@ -1277,7 +1277,7 @@ Wir betrachten an dieser Stelle den Übergang vom RIM in das ressourcenspezifisc
 Das hier beschriebene, in @fig-RSM-orientierung dargestellte Modell basiert auf @fig-GTZ-orientierung, allerdings haben wir aus diesem, der Übersichtlichkeit halber nur noch Geschäftsprozess und Geschäftsobjekte übernommen.
 
 Das RSM basiert auf der Applikationskomponente *Gründungsverwaltung*. Diese Komponente stellt wohldefinierte Verfahren für das Erstellen, Modifizieren und Löschen von Gründungsvorhaben.
-Wir beschränken den Rahmen dieser Ausführungen wie in den Abschnitten zuvor auf das Erstellen von Gründungsvorhaben.
+Wir beschränken den Rahmen dieser Ausführungen wie in den Abschnitten zuvor auf das Erstellen von Gründungsvorhaben bereit.
 Für die Orientierung des Gründungsvorhabens benötigen wir zwei Applikationsfunktionen:
 Die *Bedarfsermittlung* hat die Aufgabe den regulatorischen Bedarf zu ermitteln.
 Dazu benötigt sie einerseits die dafür relevanten Informationen aus dem Datenobjekt *Gründungsvorhaben*, sowie die regulatorischen Kriterien aus dem Datenobjekt *Regelmatrix*.
@@ -1352,7 +1352,7 @@ Folgt man der Literatur, so findet man folgende Passage:
 ])
 
 GastroStart fällt somit unter das sog. Operating Model "Coordination". 
-Durch die hohe, clevere Teilung der Daten der Gründungsvorhaben unter den aktiven Partnern erlebt der Kunde eine "Façade", die weitgehend einheitlich und frei von Medienbrüchen ist, ähnlich wie im Kundenbereich eines grossen Anbieters von Fernmeldediensten oder eines anderen Anbieters von anderen, "austauschbaren" Massenprodukten.
+Durch die hohe, clevere Teilung der Daten der Gründungsvorhaben unter den aktiven Partnern erlebt der Kunde eine "Façade", die weitgehend einheitlich und frei von Medienbrüchen ist, ähnlich wie im Kundenbereich eines grossen Anbieters von Fernmeldediensten oder eines anderen Anbieters von, "austauschbaren" Massenprodukten.
 Dass hinter dem User Interface jedoch die verschiedenen Ad-hoc-Prozesse der aktiven Joint-Venture-Partner laufen, bekommt der Kunde nur teilweise mit.
 
 Ganz anders verhält es sich dort, wo ein Szenario (Unternehmen gründen, Bewilligung erhalten) vom Handeln einer Behörde abhängig ist. Dort sind Brüche unumgänglich. 
@@ -1511,8 +1511,8 @@ Die Autorin teilt diese Diagnose zum aktuellen Stand: Eine gemeinsame Basis für
 
 Damit die Behörden — innerhalb derselben Ebene oder ebenenübergreifend (etwa zwischen Kanton und Gemeinden) — verbindlich zusammenarbeiten und Daten untereinander und mit der Privatwirtschaft austauschen können, braucht es daher eine verbindliche gesetzliche Grundlage.
 
-Die Autorin dieses Abschnittes vertritt die Meinung, dass diese Regelung in der _Bundes_- verfassung verankert werden. 
-Einen Auftrag auf Bundesebene ist das einzige Mittel, eine Verpflichtung zur Digitalisierung zu gründen, die für alle Kantone, Gemeinden und den Bund _selbst_ verbindlich wirken kann.
+Die Autorin dieses Abschnittes vertritt die Meinung, dass diese Regelung in der _Bundes_- verfassung verankert werden sollten. 
+Ein Auftrag auf Bundesebene ist das einzige Mittel, eine Verpflichtung zur Digitalisierung zu bewirken, die für alle Kantone, Gemeinden und den Bund _selbst_ verbindlich wirken kann.
 
 Auch die einschlägige Literatur (_in primis_ Michaël Montavon) hat sich in diesem Sinne geäussert und folgenden Vorschlag für einen neuen Verfassungsartikel verfasst:
 
@@ -1544,7 +1544,7 @@ Dieser Ansatz hat mehrere Vorteile:
 
 + Die vom Verein eCH und anderen Akteuren der Digitalisierung wie der Digitalen Verwaltung Schweiz geleistete Grundlagenarbeit sowie die operativen Erfahrungen bestehender kantonaler Portale wie iGovPortal oder eUmzug Schweiz liefern wichtige Hinweise über die technische, verwaltungsrechtliche, aber auch politische Machbarkeit der digitalen Transformation und auf den verschiedenen föderalen Ebenen.
 
-+ Als Beweis für eine lokalisierte, erfolgreiche Anwendung des vertrenen Ansaatzes ist die *Steuererharmonisierung* (Art. 129 Bundesverfassung). Diese Analogie verdeutlicht, dass ein Regelungsgegenstand erst mit seiner Verankerung in der Bundesverfassung für alle föderalen Ebenen verbindlich wird. Der Verfassungsartikel schafft die Verpflichtungsgrundlage, auf der die tatsächliche, einheitliche Umsetzung durch Bund, Kantone und Gemeinden erfolgen kann.
++ Als Beweis für eine lokalisierte, erfolgreiche Anwendung des vertretenen Ansatzes ist die *Steuererharmonisierung* (Art. 129 Bundesverfassung). Diese Analogie verdeutlicht, dass ein Regelungsgegenstand erst mit seiner Verankerung in der Bundesverfassung für alle föderalen Ebenen verbindlich wird. Der Verfassungsartikel schafft die Verpflichtungsgrundlage, auf der die tatsächliche, einheitliche Umsetzung durch Bund, Kantone und Gemeinden erfolgen kann.
 
 Dieser Ansatz sollte jedoch nach der Meinung der Autorin noch um eine meschenrechtliche Dimension ergänzt werden: 
 
@@ -1552,8 +1552,8 @@ Dieser Ansatz sollte jedoch nach der Meinung der Autorin noch um eine meschenrec
 
 + Die Akteure der Digitalisierung sollen dabei jedoch ihre *Amira* nie aus den Augen verlieren, wenn sie das Verhältnis zwischen Staat und Individuum neu gestalten. Eine verfassungsrechtliche Grundlage und die damit zusammenhängende Umsetzung der digitalen Transformation sollten deshalb sicherstellen, dass menschenrechtlie Aspekte wie das Recht auf ein analoges Leben gewährt bleiben.
 
-Eine digitale Transformation soll um und für die Betroffene - vor allem die _menschlichen_ - gedacht und gebaut werden: Sie soll sich nach den Bedürfnissen ihrer Adressaten richten und nicht zu einem Selbstzweck verkommen. Ein Beispiel für einen solchen Ansatz ist die Genfer Kantonsverfassung @cstGE: diese sieht in ihrem Art. 21a ein Recht auf digitaler Unversehrtheit vor. 
-Damit schliesst auf einer überraschende Weise den Kreis: am Beginn der Lösungsentwicklung standen eine Customer-Journey und eine Outside-In-Perspektive. Am Ende ihrer Ausführungen kommt die Autorin auch zu Aufruf dazu, bei der Digitalisierung der Behördeninteraktionen stets die Sicht der Adressaten des staatlichen Handenls einzunehmen. 
+Eine digitale Transformation soll um und für die Betroffenen - vor allem die _menschlichen_ - gedacht und gebaut werden: Sie soll sich nach den Bedürfnissen ihrer Adressaten richten und nicht zu einem Selbstzweck verkommen. Ein Beispiel für einen solchen Ansatz ist die Genfer Kantonsverfassung @cstGE: diese sieht in ihrem Art. 21a ein Recht auf digitaler Unversehrtheit vor. 
+Damit schliesst sich der Kreis auf überraschende Weise: Am Beginn der Lösungsentwicklung standen eine Customer-Journey und eine Outside-In-Perspektive. Am Ende ihrer Ausführungen kommt die Autorin auch dazu, bei der Digitalisierung der Behördeninteraktionen stets die Sicht der Adressaten des staatlichen Handenls einzunehmen. 
 
 
 
@@ -1710,7 +1710,7 @@ Von oben nach unten gelesen:
 - *Integrationsschicht*: ELA Kredit ersetzt die Kernsysteme nicht, sondern dockt an Finnova/Avaloq, CRIF/ZEK, IAZI/Terravis und Dokumentensysteme an --- die Anbahnung als ein spezialisiertes Modul, verdrahtet in die weitere Banklandschaft.
 - *Governance*: Ein regulatorisches Regelwerk (SBVg/FINMA) über den gesamten Prozess --- der Ausdruck hoher Standardisierung auf Führungsebene.
 
-Weil ELA Kredit ausschliesslich die Anbahnung abdeckt, konzentriert sich der architektonische Wert im geteilten Backend und im standardisierten, über APIs konsumierten Prozess. Die Bank erbringt einen einzigen spezialisierten Schritt der Journey --- aber sie erbringt ihn als vereinheitlichten Single-Source-of-Truth-Prozess und nicht als Kanalsilos. Genau das ist das Unification-Operating-Model.
+Weil ELA Kredit ausschliesslich die Anbahnung abdeckt, konzentriert sich der architektonische Wert im geteilten Backend und im standardisierten, über APIs konsumierten Prozess. Die Bank erbringt einen einzigen spezialisierten Schritt der Journey --- aber sie erbringt ihn als vereinheitlichten Single-Source-of-Truth-Prozess und nicht in Form von Kanalsilos. Genau das ist das Unification-Operating-Model.
 
 Auf der Ebene des Joint-Ventures gilt diese Einordnung nicht: GastroStart verbindet autonome Partner ohne geteilte Prozesse und fällt deshalb unter *Coordination* --- diese Ebene wird im folgenden Abschnitt eingeordnet. Unification gilt innerhalb des Finanzierungsbeitrags, Coordination zwischen den Partnern; die Grenze zwischen den beiden Modellen verläuft genau an der API, über die FINNOFLEET seine Fähigkeit in die Journey einbringt.
 
@@ -1727,7 +1727,7 @@ Die bisherigen Abschnitte bleiben auf der Ebene des Operating Models und der Arc
 
 Das Modell ist in drei Ebenen zu lesen:
 
-- *Unten das RIM, auf den Erfolgsfall verkürzt*: die vier Geschäftstransaktionen mit der Zustandskette der Finanzierung von #emph[neu] bis #emph[finanziert] sowie die beiden Geschäftsobjekte #emph[Finanzierung] und #emph[Gründungsvorhaben]. Die Rückläufe über #emph[unvollständig], #emph[abgelehnt] und #emph[abgebrochen] sind der Lesbarkeit zuliebe weggelassen; sie stehen vollständig in @fig-GTZ-finanzierung. Fachlich wird diese Ebene durch die Ressourcenzuordnung nicht angetastet --- das ist der Zweck der Trennung von RIM und RSM.
+- *Unten das RIM, auf den Erfolgsfall verkürzt*: die vier Geschäftstransaktionen mit der Zustandskette der Finanzierung von #emph[neu] bis #emph[finanziert] sowie die beiden Geschäftsobjekte #emph[Finanzierung] und #emph[Gründungsvorhaben]. Die Rückläufe über #emph[unvollständig], #emph[abgelehnt] und #emph[abgebrochen] sind der Lesbarkeit zuliebe weggelassen; sie stehen vollständig beschrieben in @fig-GTZ-finanzierung. Fachlich wird diese Ebene durch die Ressourcenzuordnung nicht angetastet --- das ist der Zweck der Trennung von RIM und RSM.
 - *Oben zwei Domänen*: in der Domäne #emph[GastroStart] liegen die Komponenten #emph[Finanzierung] und #emph[Orientierung] mit ihren Datenobjekten #emph[Finanzierung] respektive #emph[Gründungsvorhaben]. Jede Komponente ist über eine gleichnamige Schnittstelle erreichbar, die dem Service #emph[AL- Finanzierung] beziehungsweise #emph[AL- Orientierung] zugewiesen ist. In der Domäne #emph[FINNOFLEET -- Partner] steht eine einzige Komponente, #emph[ELA Kredit], mit einer einzigen Schnittstelle: #emph[Tragbarkeit].
 - *Dazwischen die Trace-Beziehungen*: die Services sind mit den Geschäftstransaktionen verbunden, die sie realisieren, die Datenobjekte mit den Geschäftsobjekten, deren Bestand sie führen. Sie sind die Nachweiskette zwischen den beiden Modellen und der Grund, warum sich zu jedem Element der Anwendungslandschaft die fachliche Herkunft angeben lässt.
 
@@ -1737,7 +1737,7 @@ Vier Beobachtungen tragen die Architekturaussage:
 
 2. *Integriert wird über Daten, nicht über Prozesse.* GastroStart meldet den Fall über die Schnittstelle #emph[Tragbarkeit] an und fragt anschliessend regelmässig nach dem Stand, bis die Prüfung abgeschlossen ist. Eine gemeinsame Prozesssteuerung über die Organisationsgrenze gibt es nicht: die Geschäftstransaktion #emph[Finanzierung prüfen] läuft auf der Partnerplattform von FINNOFLEET und nicht bei GastroStart.
 
-3. *Ein Bestand, nicht zwei.* Das Geschäftsobjekt #emph[Finanzierung] hat im RSM genau einen Bestand: das Datenobjekt #emph[Finanzierung] in der Domäne GastroStart. Im organisationsübergreifenden Kontext könnte aus diesem einen Geschäftsobjekt durchaus mehr als ein Bestand entstehen --- dann wäre zu klären, welcher Partner den Fall führt und wie die Bestände abgeglichen werden. Hier fällt die Entscheidung bewusst anders: der Fall wird einmal geführt, FINNOFLEET greift über die Schnittstelle darauf zu und hält im Modell keine zweite Kopie. Wie viel das wert ist, zeigt der Rücklauf: weist die Prüfung das Gesuch als #emph[unvollständig] zurück, kehrt derselbe Fall in die Vorbereitung zurück und läuft die Kette erneut (siehe @fig-GTZ-finanzierung). Bei zwei Beständen wäre jeder dieser Rückläufe ein Abgleich zwischen den Partnern; bei einem Bestand ist er nur ein Zustandswechsel. Die interne Aktenführung von ELA Kredit ist Innensicht und in @fig-EA-ela-kredit dargestellt, nicht hier.
+3. *Ein Bestand, nicht zwei.* Das Geschäftsobjekt #emph[Finanzierung] hat im RSM genau einen Bestand: das Datenobjekt #emph[Finanzierung] in der Domäne GastroStart. Im organisationsübergreifenden Kontext könnte aus diesem einen Geschäftsobjekt durchaus mehr als ein Bestand entstehen --- dann wäre zu klären, welcher Partner den Fall führt und wie die Bestände abgeglichen werden. Hier fällt die Entscheidung bewusst anders: der Fall wird einmal geführt, FINNOFLEET greift über die Schnittstelle darauf zu und hält im Modell keine zweite Kopie. Wie viel das wert ist, zeigt der Rücklauf: Weist die Prüfung das Gesuch als #emph[unvollständig] zurück, kehrt derselbe Fall in die Vorbereitung zurück und durchläuft die Kette erneut (siehe @fig-GTZ-finanzierung). Bei zwei Beständen wäre jeder dieser Rückläufe ein Abgleich zwischen den Partnern; bei einem Bestand ist er nur ein Zustandswechsel. Die interne Aktenführung von ELA Kredit ist Innensicht und in @fig-EA-ela-kredit dargestellt, nicht hier.
 
 4. *Die Orientierung schliesst die Kette.* Das Datenobjekt #emph[Gründungsvorhaben] liegt in der Komponente #emph[Orientierung], und der Service #emph[AL- Orientierung] ist mit der Transaktion #emph[Finanzierung zusagen] verbunden --- jener Transaktion, die als einzige der Phase auf zwei Geschäftsobjekte wirkt und das Gründungsvorhaben auf #emph[finanziert] setzt (siehe @tbl-GT-finanzierung-erhalten). Der Zustandswechsel über die Objektgrenze ist damit im RSM an genau der Stelle wieder auffindbar, an der er im RIM entstanden ist.
 
@@ -1747,7 +1747,7 @@ Damit ist die Einordnung des vorangehenden Abschnitts nicht mehr nur behauptet, 
 
 #autor-transgourmet("Beitrag von Jakob Albrecht", inhalt: [Belieferung von Gastronomiebetrieben durch Transgourmet im Rahmen des Joint-Ventures GastroStart],)
 
-Bevor die aus der Customer-Journey resultierten Geschäftsfähigkeiten auf Applikationslandschaft heruntergebrochen wird, ist eine grundlegende Einordnung nötig: Welches Operating Model liegt Transgourmet zugrunde und welchen Einfluss hat dies auf die Enterprise Architektur des Joint-Ventures GastroStart?
+Bevor die aus der Customer-Journey resultierten Geschäftsfähigkeiten auf Applikationslandschaft heruntergebrochen werden, ist eine grundlegende Einordnung nötig: Welches Operating Model liegt Transgourmet zugrunde und welchen Einfluss hat dies auf die Enterprise Architektur des Joint-Ventures GastroStart?
 
 Ross, Weill und Robertson unterscheiden vier Operating Models entlang der beiden Achsen Standardisierung der Geschäftsprozesse und Integration der Daten @ross2006enterprise.
 Aus dieser Klassifikation leitet sich ab, wie viel Integration eine Architektur tragen muss und wo Autonomie zulässig bleibt.
@@ -1759,7 +1759,7 @@ Aus dieser Klassifikation leitet sich ab, wie viel Integration eine Architektur 
 
 - *Ebene Transgourmet B2B-Belieferung — Unification*: Innerhalb von Transgourmet sind sowohl Prozesse als auch Daten hoch integriert und zentralisiert. Kunden-, Sortiments-, Preis-, Bestands-, Bestell- und Lieferdaten werden geteilt, die Kernprozesse (Bestellung, Disposition, Lieferung, Fakturierung) sind standardisiert, und ein zentrales System bedient diese Kanäle.
 
-- *Ebene Customer-Journey — Federation*: Für die akteursübergreifende Sicht existiert keine Entsprechung im Ross/W/R-Schema; die Klassifikation adressiert Ebenen *innerhalb* einer Organisation (Enterprise, Division, Business Unit), nicht autonome Akteure. Dementsprechend ist die Darstellung @fig-operating-model-matrix-with-federation-layer zweiteilig. Die beteiligten Akteure (Gründer, Behörde, Finanzpartner, Transgourmet) sind autonom und betreiben ihre eigenen Systeme. Eine geteilte Datenhaltung über die Akteursgrenzen hinweg ist nicht vorgesehen. Die Durchgängigkeit der Journey entsteht, wo möglich, über standardisierten Kontrakte: das GastroStart-Portal koordiniert die Gründungsphasen über eCH-konforme Schnittstellen zu Behörden und Finanzpartner. Transgourmet wird über EDIFACT/GS1-Kontrakte @gs1ch_2022_idealmessage_orders für Bestellungen angebunden. Die Integration der Daten ist auf die Schnittstellen beschränkt, die Prozesse sind nicht standardisiert, und die Systeme sind autonom.
+- *Ebene Customer-Journey — Federation*: Für die akteursübergreifende Sicht existiert keine Entsprechung im Ross/W/R-Schema; die Klassifikation adressiert Ebenen *innerhalb* einer Organisation (Enterprise, Division, Business Unit), nicht autonome Akteure. Dementsprechend ist die Darstellung @fig-operating-model-matrix-with-federation-layer zweiteilig. Die beteiligten Akteure (Gründer, Behörde, Finanzpartner, Transgourmet) sind autonom und betreiben ihre eigenen Systeme. Eine geteilte Datenhaltung über die Akteursgrenzen hinweg ist nicht vorgesehen. Die Durchgängigkeit der Journey entsteht, wo möglich, über standardisierten Kontrakte: Das GastroStart-Portal koordiniert die Gründungsphasen über eCH-konforme Schnittstellen zu Behörden und Finanzpartnern. Transgourmet wird über EDIFACT/GS1-Kontrakte @gs1ch_2022_idealmessage_orders für Bestellungen angebunden. Die Integration der Daten ist auf die Schnittstellen beschränkt, die Prozesse sind nicht standardisiert, und die Systeme sind autonom.
 
 == ArchiMate-Modell des Ist-Zustands von Transgourmet
 
