@@ -100,7 +100,7 @@ Die Beschreibung des Szenarios wird jeweils in einer Tabelle zusammengefasst.
 Der Eintritt in das jeweilige Szenario ist eine *Aktion* der GründerInnen.
 Über *Touchpoints* treten sie mit unserem Produkt in Verbindung.
 Die *Aktion* wird ausgelöst durch einen *Gedanken* oder ein *Bedürfnis*.
-Jede Phase kann die GründerInnen mit *Painpoints* konfrontieren, die zum Abbruch der Produktnutzung führen können.
+Jede Phase kann die GründerInnen mit *Pain Points* konfrontieren, die zum Abbruch der Produktnutzung führen können.
 Und schliesslich bietet jede Phase *Chancen*, die die *Bedürfnisse* befriedigen und zur Weiternutzung einladen.
 
 
@@ -247,12 +247,11 @@ Die folgende Tabelle fasst die wesentlichen Merkmale dieser Phase der Customer-J
 
 === Amira gründet ihr Unternehmen <sec-cj-unternehmen-gründen>
 
-Mit der Registrierung können die Benutzer auf den digitalen Begleiter für die Gründung des Unternehmens zugreifen. 
-Aufgrund der Informationen aus der Orientierung können die Benutzer durch Anweisungen, Empfehlungen und vorgefertigte Texte geführt werden. 
+Mit der Registrierung können die GründerInnen auf den digitalen Begleiter für die Gründung des Unternehmens zugreifen. 
+Aufgrund der Informationen aus der Orientierung können die GründerInnen durch Anweisungen, Empfehlungen und vorgefertigte Texte geführt werden. 
 Dadurch sind sie in der Lage, ohne teure Beratung selber die Unterlagen für die gewünschte Firmengründung zusammenzustellen oder gar zu erstellen.
 Durch die enge Begleitung, das Abnehmen einfacher Aufgaben und die Erfolgserfahrung mit der Anzeige des Fortschrittes können die Kunden bestärkt und zum Abschluss des komplizierten Prozesses motiviert werden.
-Da die Benutzer bereits seit der Orientierung wissen, dass am gewünschten Standort mit einem Medienbruch zu rechnen ist, stufen wir die Wahrscheinlichkeit eines Abbruches als tief ein - auch weil die Unterlagen in digitaler Form praktisch in jedem Kanton einem Notar direkt zugestellt werden können. 
-Die jeweilige Kanzlei übernimmt den Medienbruch auf Papier. 
+Da die GründerInnen bereits seit der Orientierung wissen, ob am gewünschten Standort mit einem Medienbruch zu rechnen ist, stufen wir die Wahrscheinlichkeit eines Abbruches als tief ein - auch weil die Unterlagen in digitaler Form praktisch in jedem Kanton einem Notar direkt zugestellt werden können: Die jeweilige Kanzlei übernimmt den Medienbruch auf Papier. 
 
 
  #figure(
@@ -319,7 +318,7 @@ Die jeweilige Kanzlei übernimmt den Medienbruch auf Papier.
 Auf GastroStart können die GründerInnen die notwendigen Schritte in Erfahrung bringen, um für ihr Unternehmen und Lokal eine Betriebsbewilligung zu erhalten. 
 Ähnlich wie bei der Unternehmensgründung liefert das System eine Übersicht der Informationen, Dokumente und Ausweise, die für den Erhalt der Bewilligung notwendig sind. 
 Diese Angaben entsprechen den Vorschriften, die am Standort des geplanten Betriebs gelten, und erklären den Sinn hinter den Vorgaben. 
-Der Mehrwert des Systems liegt in der Begleitung des Ablaufs, in der Plausibilisierung der gelieferten Angaben und Dokumente anhand der geltenden Vorgaben und Sicherheitsrichtlinien und in den schnellen Rückmeldungen, falls der Benutzer ungenügende Informationen liefert. 
+Der Mehrwert von GastroStart liegt in der Begleitung des Ablaufs, in der Plausibilisierung der gelieferten Angaben und Dokumente anhand der geltenden Vorgaben und Sicherheitsrichtlinien und in den schnellen Rückmeldungen, falls der Benutzer ungenügende Informationen liefert. 
 
 Die massgeschneiderten und detaillierten Erklärungen zum einzuhaltenden Ablauf geben den GründerInnen Halt im holprigen, teils mehrspurigen und oftmals analogen Prozess und wirken motivierend auf den erfolgreichen Abschluss des Szenarios hin. 
 
@@ -367,7 +366,7 @@ Die massgeschneiderten und detaillierten Erklärungen zum einzuhaltenden Ablauf 
       [GastroStart, Verschiedene Behördenportale für Registerauszüge, Architektur- und Technikplanungsbüro, Vermieter],
 
       [Gedanke / Bedürfnis],
-      [Welche Kantonsregeln gelten? Wie lange geht das? Bin beim richtigen Amt?],
+      [Welche Kantonsregeln gelten? Wie lange geht das? Bin ich beim richtigen Amt?],
 
       [Pain Point],
       [
