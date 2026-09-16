@@ -4,7 +4,7 @@
 )
 #import "../template.typ": inset-block
 
-= GastroStart als Joint-Venture und die Rollen der beteiligten Unternehmen
+= GastroStart als Joint-Venture und die Rollen der \ beteiligten Unternehmen
 
 #fuehrung[Basierend auf der Aufgabe -- "Jede Gruppe entwickelt ein gemeinsames neues «digitales Produkt», an welchem jede Unternehmung der Gruppe beteiligt ist." -- beschreiben wir das Joint-Venture GastroStart und der Beitrag der beteiligten Unternehmen.]
 
@@ -12,7 +12,7 @@
 
 GastroStart ist ein fiktives Portal, das Gründerinnen und Gründer im Gastgewerbe in der Betriebsgründung wo möglich führt aber sicher unterstützt: von der ersten Orientierung über Registrierung, Unternehmensgründung und Betriebsbewilligung bis hin zur Finanzierung und zum ersten Lieferantenvertrag.
 
-GastroStart erlaubt es seinen Kunden schweizweit, schnell und ohne langwierige Behördengänge zu einem startbereiten Gastronomieunternehmen zu kommen - ganz unabhängig vom Herkunftskanton.
+GastroStart erlaubt es seinen Kunden schweizweit, schnell und ohne langwierige Behördengänge zu einem startbereiten Gastronomieunternehmen zu kommen - ganz unabhängig vom Kanton, in dem das geplante Vorhaben realisiert werden soll.
 
 Weitere Dienstleistungen, im Rahmen der Customer-Journey nicht berührt, wären unter anderem Funktionen zur Unterstützung des operativen Betriebs eines Gastrounternehmens: Überwachung von Zahlungsfälligkeiten oder ein Einkaufsplanungsmodul. Darüber hinaus könnten über GastroStart auch Betriebsübergaben und -liquidationen unterstützt werden.
 
@@ -26,7 +26,7 @@ Für das Produkt GastroStart liefert DV Bern Software und Infrastruktur für das
 Das Portal wird im Folgenden auch als "Plattform" bezeichnet.
 Das Produkt als Ganzes, inklusive aller fachlichen Aspekte, wird, wenn nicht explizit als GastroStart benannt, auch als "System" bezeichnet.
 
-Für die fünf Szenarien, basierend auf der Customer Journey: Orientierung, Registrierung, Bewilligung, Finanzierung, erster Einkauf - liefert DV Bern folgende Leistungen:
+Für die fünf Szenarien, basierend auf der Customer-Journey: Orientierung, Registrierung, Bewilligung, Finanzierung, erster Einkauf - liefert DV Bern folgende Leistungen:
 
 === Orientierung
 
@@ -35,14 +35,18 @@ Diese Matrix verknüpft alle Kantone mit den dort geltenden Regeln zur Gründung
 Die GastroStart-Benutzer brauchen also eine Möglichkeit, den sie betreffenden Kanton auszuwählen und die für sie geltenden Regeln angezeigt zu bekommen.
 Die Kantone brauchen eine Möglichkeit, Abweichungen in ihrem Regelwerk, die sich z. B. durch Gesetzesänderungen ergeben, im System zu ändern.
 
+/*Anmerkung Gio: ich bin eher der Meinung, dass es ein PULL von Informationen ist, nicht ein PUSH - s. "meine" idealarchitektur, wonach die Behörden mindestens ihre "Dienstleistungen" strkturiert publizieren, damit Betroffene diese ablesen können. Aufgrund des Mengengerüstes ist es IMHO nicht realisistich, dass die Infos GEPUSHT werden.*/ 
+
 === Registrierung
 
 Die Registrierung erfordert, dass jeder Benutzer sich ein Profil im System erstellt, mit dem sie ihre Gründungsprozesse speichern, einsehen und verwalten können.
 Das System muss sicherstellen, dass jeder Benutzer authentifiziert und autorisiert und jeder Gründungsprozess mit genau einem Benutzerprofil verknüpft wird.
 
-=== Bewilligung<sec-rolle-dv-bern-bewilligung>
+/**/ 
 
-Die Bewilligung erfordert Möglichkeiten, den für die Betriebsgründung notwendigen Behörden alle benötigten Daten zur Verfügung stellen zu können.
+=== /*Unternehmensgründung und */Bewilligung<sec-rolle-dv-bern-bewilligung>
+
+Die /*Unternehmensgründung und die */Bewilligung erfordert /*erfordern*/Möglichkeiten, den für die Betriebsgründung notwendigen Behörden alle benötigten Daten zur Verfügung stellen zu können. /*Satz macht keinen Sinn. Vorschlag (bin unsicher...): Die Bewilligung erfordert Möglichkeiten, die von den zuständigen Behörden für die Betriebsgründung geforderten Daten zur Verfügung stellen zu können.*/ 
 Das beinhaltet das Anbinden externer APIs, wenn vorhanden, oder Darstellung und Verwaltung der entsprechenden Dokumente, sowie Übertragungs- und Speichermöglichkeiten für diese.
 Zudem soll den Benutzern der Status der einzelnen Schritte angezeigt (z.B. offen, bearbeitet, eingereicht, bewilligt), sowie ein Benachrichtigungssystem für die Kommunikation der Beteiligten untereinander, sowie von Statusupdates implementiert werden.
 
@@ -60,7 +64,7 @@ Die Aufgabe von DV Bern wird es sein, diese in die Benutzerschnittstelle des Por
 
 === Zusammenfassung
 
-DV Bern ist an der Implementierung jeder der fünf Szenarien, die aus der Customer Journey resultieren massgeblich mitbeteiligt: Orientierung, Registrierung, Bewilligung, Finanzierung, erster Einkauf. Geliefert wird das technische Fundament der Plattform und ihrer Integrationsmöglichkeiten über alle Szenarien hinweg. Dabei nimmt das Unternehmen die Rolle einer Beraterin ein, welche die technischen Realisierungsmöglichkeiten der fachlichen Fragestellungen erarbeitet, die sich aus dem Joint-Venture ergeben.
+DV Bern ist an der Implementierung jeder der fünf/*sechs*/Szenarien, die aus der Customer Journey resultieren massgeblich mitbeteiligt: Orientierung, Registrierung, /*Unternehmensgründung, */Bewilligung, Finanzierung, erster Einkauf. Geliefert wird das technische Fundament der Plattform und ihrer Integrationsmöglichkeiten über alle Szenarien hinweg. Dabei nimmt das Unternehmen die Rolle einer Beraterin ein, welche die technischen Realisierungsmöglichkeiten der fachlichen Fragestellungen erarbeitet, die sich aus dem Joint-Venture ergeben.
 
 == FINNOFLEET
 
@@ -87,7 +91,7 @@ Die Eröffnung eines Kundenkontos bei Transgourmet ist die letzte Phase der Cust
 
 Aus Sicht von Amira und somit auch von GastroStart wird die öffentliche Verwaltung - ohne besondere Rücksicht ob Bundes, Kantons- oder Gemeindeebene - in ihrer Rolle als Interoperabilitätspartner abgebildet und behandelt.
 Dies, weil die öffentliche Hand ihre hoheitlichen Handlungen nicht im Sinne eines wirtschaftlichen Angebots wie die anderen Mitglieder der Joint-Venture zur Verfügung stellt. Auch ist es nicht im Sinne der Schweizer Rechtstradition, private Unternehmen mit der Vergabe von hoheitlichen Akten zu betrauen.
-Aus diesen Gründen sind jene Teile der Customer Journey, wofür der Staat verantwortlich ist - bspw. der Eintrag im Handelsregister oder die Erteilung einer Betriebsbewilligung - und die Fähigkeit, diese zu vollziehen, ausserhalb des Wirkungsbereichs des Joint-Ventures anzusiedeln. 
+Aus diesen Gründen sind jene Teile der Customer-Journey, wofür der Staat verantwortlich ist - beispielsweise der Eintrag im Handelsregister oder die Erteilung einer Betriebsbewilligung - und die Fähigkeit, diese zu vollziehen, ausserhalb des Wirkungsbereichs des Joint-Ventures anzusiedeln. 
 
 /*Auf der anderen Seite bildet GastroStart eine spezialisierte Schnittstelle für die Vorbereitung hin auf diesen Akten. */
 

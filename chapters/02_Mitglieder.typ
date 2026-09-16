@@ -101,7 +101,7 @@ Die Architekturarbeit ist dezentral organisiert und lebt von «Working Architect
 Der Reifegrad ist damit auf Produkt- und Entscheidebene hoch, auf Portfolioebene dagegen deutlich geringer. Es fehlt eine Portfolio-Sicht --- kein zentraler Überblick über alle Produkte, kein Funktionskatalog, kein API- und Integrationsverzeichnis ---, weshalb Wiederverwendungspotenzial ungenutzt bleibt, obwohl die Produkte architektonisch vergleichbar aufgebaut sind. Wesentliches Integrations- und Datenflusswissen liegt implizit bei langjährigen Engineers, ohne strukturierten Knowledge Transfer; das macht diese Personen zu einem Architekturrisiko, ohne dass es ihnen anzulasten wäre. Und es gibt keinen formalen EAM-Rahmen: TOGAF und ArchiMate sind nicht etabliert, ein gepflegtes Tech-Radar und ein Reporting über die Entwicklung der Architektur fehlen. Architekturarbeit ist damit gut dokumentiert, aber schwer steuerbar --- was sich bis in die Aussenkommunikation zieht, wo technische Inhalte auch in Vertriebsdokumenten entstehen und voneinander abweichende Beschreibungen derselben Lösung kursieren.
 
 == Öffentliche Verwaltung 
-#autor-verwaltung([Beitrag von Giovanna Beier])//Zwerge
+#autor-verwaltung([Beitrag von Giovanna Beier, Bundeskanzlei])//Zwerge
 
 === Ausgangslage<sec-vorstellung-oeffentliche-verwaltung>
 

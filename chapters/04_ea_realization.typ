@@ -14,7 +14,7 @@ Dieser Teil der Arbeit bildet den Kern der Überlegungen der Gruppe.
 Die Verfolgung der durch die Übungen vorgegebenen Arbeitsschritte hat uns zur höchsten Abstraktionsstufe unseres Unternehmens geführt.
 Jeder Entwicklungsschritt bezieht sich auf einen Auftrag (Übung) und folgt der Empfehlung zur Erarbeitung des RIM, die im Skript @Spichiger2026GFbUA[S. 53 ff]. beschrieben ist.
 Die Modellierung erfolgt mit Archimate.
-Die folgenden Unterkapitel orientieren sich wie gehabt an den fünf Szenarien der Customer-Journey.
+Die folgenden Unterkapitel orientieren sich wie gehabt an den sechs Szenarien der Customer-Journey.
 Zunächst beschreiben wir die Herleitung der wesentlichen Geschäftsobjekte und bringen diese anschliessend in Beziehung mit den auf ihnen aufbauenden Geschäftstransaktionen.
 In den darauf folgenden Hauptkapiteln werden die Geschäftstransaktionen zu Geschäftsprozessen zusammengeführt und schliesslich die wesentlichen Geschäftsfähigkeiten der jeweiligen Prozesse identifiziert und in das Modell integriert.
 Im letzten Kapitel der Modellentwicklung beschreiben wir den Übergang vom RIM ins ressourcenspezifische Modell anhand der IDEAL Informationssystemarchitektur.
@@ -24,19 +24,22 @@ Im letzten Kapitel der Modellentwicklung beschreiben wir den Übergang vom RIM i
 === Vorgehen 
 
 #fuehrung([
-*Geschäftsobjekte:* Aus der Geschichte werden die groben Geschäftsobjekte sowie die Beziehungen zwischen den Geschäftsobjekten identifiziert, die in einer dematerialisierten Umsetzung der Geschichte noch Relevanz haben.
-Ein Geschäftsobjekt kapselt die statische Struktur des RIM. Ein Geschäftsobjekt beschreibt einen zentralen, wesentlichen Teil des Kontexts einer Unternehmung und abstrahiert vollständig von den Ressourcen der Unternehmung (Dematerialisierung) und deren Verhalten.
+*Geschäftsobjekte:* Aus der Geschichte werden die groben Geschäftsobjekte sowie die Beziehungen zwischen den Geschäftsobjekten identifiziert, die in einer dematerialisierten Umsetzung der Geschichte noch Relevanz haben @Spichiger2026GFbUA[S.54].
 
-*Zustände:* Zu jedem Geschäftsobjekt werden seine Zustände identifiziert. Für die Darstellung dieser Zustände verwenden wir das Archimate-Symbol *Business Event*.
+Ein Geschäftsobjekt kapselt die statische Struktur des RIM. Ein Geschäftsobjekt beschreibt einen zentralen, wesentlichen Teil des Kontexts einer Unternehmung und abstrahiert vollständig von den Ressourcen der Unternehmung (Dematerialisierung) und deren Verhalten @Spichiger2026GFbUA[S.44]. /*S. 54*/
+
+*Zustände:* Zu jedem Geschäftsobjekt werden seine Zustände identifiziert @Spichiger2026GFbUA[S.54].
+Für die Darstellung dieser Zustände verwenden wir das Archimate-Symbol *Business Event*.
 
 *Geschäftstransaktionen:* Entlang der Geschichte werden die Geschäftstransaktionen mit ihren Inputs und Outputs (Geschäftsobjekte) identifiziert. 
-Sowohl bei Input und Output wird darauf geachtet, dass diese inklusive ihre Zustände (bzw. zugehörige Ereignisse) bezeichnet werden.
+Sowohl bei Input und Output wird darauf geachtet, dass diese inklusive ihre Zustände (bzw. zugehörige Ereignisse) bezeichnet werden @Spichiger2026GFbUA[S.54].
 
-@Spichiger2026GFbUA /*S. 54*/
+
 ])
 
 In diesem ersten Teil der Realisierung des ressourcenunabhängigen Modells identifizieren wir die relevanten Geschäftsobjekte und dokumentieren deren Zustände und Geschäftstransaktionen pro Szenario, um die Lesbarkeit zu erhalten.
 Die entsprechenden Geschäftsprozesse sind ebenfalls modelliert, auch wenn sie später erklärt werden.
+
 Die Szenarien sind in @sec-szenarien-customer-journey beschrieben und werden einzeln aufbereitet. 
 
 === Identifizierte Geschäftsobjekte
@@ -44,8 +47,8 @@ Die Szenarien sind in @sec-szenarien-customer-journey beschrieben und werden ein
 Um Geschäftsobjekte zu identifizieren, hat sich die Gruppe mit der Struktur von Amiras Customer-Journey auseinandergesetzt.
 Die Customer-Journey haben wir in Szenarios aufgeteilt, und in jedem Szenario ist ein Arbeitsschritt, der sich von anderen Arbeitsschritten abgrenzen lässt.
 Arbeitsschritte resultieren in Ergebnissen oder bauen auf ihnen auf. 
-Das Szenario: "Eine Quereinsteigerin möchte ein Unternehmen gründen.", baut also auf einem Gründungsvorhaben auf und resultiert idealerweise in einem Unternehmen.  
-Diese Ergebnisse dieses Vorgehens bilden die Grundlage für mögliche Geschäftsobjekte.
+Das Szenario: "Eine Quereinsteigerin möchte ein Unternehmen gründen." baut also auf einem Gründungsvorhaben auf und resultiert idealerweise in einem Unternehmen.  
+Die Ergebnisse dieses Vorgehens bilden die Grundlage für mögliche Geschäftsobjekte.
 Die folgende Abbildung zeigt ein Zwischenergebnis aus dieser Vorgehensweise.
 
 #figure(
@@ -54,7 +57,7 @@ Die folgende Abbildung zeigt ein Zwischenergebnis aus dieser Vorgehensweise.
 ) <fig-customer-journey-view>
 
 Im ressourcenunabhängigen Modell (RIM) sind die Eigenschaften der Geschäftsobjekte zunächst nicht im Fokus. 
-Wir beginnen stattdessen mit der Betrachtung der Zustände, die ein Geschäftsobjekt annimmt, und welche Transaktionen einen Zustandswechsel hervorrufen, was wir entlang der Szenarien der Customer-Journey im nächsten Abschnitt beschreiben.
+Wir beginnen stattdessen mit der Betrachtung der Zustände, die ein Geschäftsobjekt annimmt, /*<- dieses komma weg und 2. satzteil anpassen (Dativ?)*/und welche Transaktionen einen Zustandswechsel hervorrufen, was wir entlang der Szenarien der Customer-Journey im nächsten Abschnitt beschreiben.
 
 @fig-IdentifizierteGeschaefstobjetke zeigt die wesentlichen identifizierten Geschäftsobjekte und ihre Abhängigkeiten in GastroStart. 
 
@@ -80,7 +83,7 @@ Was bringt potenzielle Kunden auf eine Plattform wie GastroStart?
 Am Anfang steht sicherlich der Wunsch, einen Gastronomiebetrieb zu gründen.
 Zu diesem Wunsch gehören viele Eigenschaften, zum Beispiel die Art des Betriebs: 
 Handelt es sich um ein Cateringunternehmen, um ein Café oder um eine Bar, in der auch alkoholische Getränke serviert werden?
-Die GründerInnen haben dabei vielleicht zunächst nur ihre Betriebszeiten und ihr Wunschklientel vor Augen.
+Die GründerInnen haben dabei vielleicht zunächst nur ihre Betriebszeiten und ihre Wunschklientel vor Augen.
 Allerdings hat diese Entscheidung auch regulatorische Auswirkungen, die sich an verschiedenen Standorten unterschiedlich auswirken können.
 Von entscheidender Bedeutung ist also auch, wo der Betrieb stattfindet.
 Alle Eigenschaften, die mit der Betriebsgründung zusammenhängen, fassen wir im ressourcenunabhängigen Modell im Geschäftsobjekt *Gründungsvorhaben* zusammen.
@@ -93,28 +96,29 @@ wir lassen das an dieser stelle offen - ist ihre erste Aktion, den Standort für
 Diese Aktion wird durch die Geschäftstransaktion *Standort festlegen* realisiert.
 Im Anschluss wechselt das Gründungsvorhaben in den Zustand *lokalisiert*.
 Ausserdem wird durch das Festlegen des Standortes auf Basis einer digitalen Regelmatrix das Geschäftsobjekt *Kantonsanforderungskatalog* definiert.
-Dieser Katalog beschreibt alle, für die Realisierung des Gründungsvorhabens, zu erfüllenden Kriterien, den gewählten Standort betreffend.
-Diese Kriterien können z.B. erforderliche Bewilligungen, einzuhaltende Auflagen oder nachzuweistende Kenntnisse und Fähigkeiten sein und sie entstammen dem Geschäftsobjekt *digitale Regelmatrix*. 
+Dieser Katalog beschreibt alle, für die Realisierung des Gründungsvorhabens,/*<-komma zu viel?*/ zu erfüllenden Kriterien, den gewählten Standort betreffend.
+Diese Kriterien können z.B. erforderliche Bewilligungen, einzuhaltende Auflagen oder nachzuweisende Kenntnisse und Fähigkeiten sein und sie entstammen dem Geschäftsobjekt *digitale Regelmatrix*. 
 Man kann sich dieses Objekt wie eine Tabelle vorstellen: Jede Spalte repräsentiert einen Standort (Kanton) und jede Zeile repräsentiert ein zu erfüllendes Kriterium.
 Eine Zelle mit dem Wert "1" oder "true", bzw. "wahr" bedeutet, dass das durch die Zelle, mit dem Standort verknüpfte Kriterium, bei einem Gründungsvorhaben relevant ist.
 Mit dem erfolgreichen Abschliessen der Geschäftstransaktion *Anforderungen ermitteln* wechselt das Gründungsvorhaben in den Zustand *orientiert*.
 Zusätzlich wird das Geschäftsobjekt *Bewilligungsübersicht* erstellt, das Teil einer Komposition mit dem Gründungsvorhaben ist. 
-Diese Übersicht enthält alle, Kriterien, die für eine Betriebsgenehmigung zu erfüllen sind.
-Die GründerInnen haben damit alle Informationen, die sie brauchen, um das Bewilligungsverfahren erfolgreich zu durchlaufen.
+Diese Übersicht enthält alle, /*<- komma zu viel? :-)*/Kriterien, die für eine Betriebsgenehmigung zu erfüllen sind.
+Die GründerInnen haben damit alle Informationen, /*<- komma zu viel? :-)*/die sie brauchen, um das Bewilligungsverfahren erfolgreich zu durchlaufen.
 
 #figure(
   image("../assets/jan/Phase 1a - Orientierung - (GT & Events).svg", width: 100%),
   caption: [Zustandsübergänge des Gründungsvorhabens im Szenario "Sich orientieren"]
 ) <fig-GTZ-orientierung>
 
-Die hier beschriebene Variante liest sich als Happy Path — also die erfolgreiche Erstellung einer Bewilligungsübersicht —, auch wenn der hier verwendete Zielzustand *orientiert* Raum für Variationen lässt. 
-Sicherlich ist nicht jedes Gründungsvorhaben realisierbar, und der hier beschriebene Prozess kann durchaus komplexer werden. 
+Die hier beschriebene Variante liest sich als Happy Path — also die erfolgreiche Erstellung einer Bewilligungsübersicht —,/*<- komma zu viel? :-)*/ auch wenn der hier verwendete Zielzustand *orientiert* Raum für Variationen lässt. 
+Sicherlich ist nicht jedes Gründungsvorhaben realisierbar,/*<- komma zu viel? :-)*/ und der hier beschriebene Prozess kann durchaus komplexer werden. 
 Dass das Gründungsvorhaben nicht realisierbar ist, ist allerdings auch eine Art Orientierung.
 Wie im zweiten Absatz dieses Abschnitts angemerkt, spielt das Gründungsvorhaben in allen Phasen der Customer-Journey eine entscheiden Rolle.
 Die folgende Tabelle fasst die wesentlichen Kriterien für dieses wichtige Geschäftsobjekt zusammen.
 Für ein besseres Verständnis wurden hier auch einige Attribute (im Text auch als "Eigenschaften" bezeichnet) angegeben.
 /*Die hier aufgezählten Zustände sind vollständig für alle Phasen der Customer-Journey und auch wenn deren Einführung noch offen ist, tragen sie an dieser Stelle aus unserer Sicht zum Verständnis bei.*/
-Die hier aufgezählten Zustände gelten für alle Phasen der Customer Journey, und auch wenn deren Einführung noch offen ist, tragen sie aus unserer Sicht an dieser Stelle zum Verständnis bei.
+Die hier aufgezählten Zustände gelten für alle Phasen der Customer-Journey, und auch wenn deren Einführung noch offen ist, tragen sie aus unserer Sicht an dieser Stelle zum Verständnis bei.
+#pagebreak()
 
 #figure(
   caption: [Geschäftsobjekt Gründungsvorhaben],
@@ -304,8 +308,8 @@ Aber auch in einem voll digitalisierten System ist dieser Zustand sinnvoll, z.B.
 Wann dieser Zustand (*aktualisiert*) endet, darüber sprechen wir in diesem Abschnitt nicht.
 Wir weisen hier lediglich darauf hin, dass Abhängigkeiten zu diesem Zustand systemabhängig gegebenenfalls präziser definiert werden muss.
 
-Die ausschliessliche Verwaltung des Kundenkontos erfüllt noch keinen Zweck. 
-Diesen Zweck haben wir im ersten Absatz dieses Abschnitts beschrieben: Authentifizierung.
+Die ausschliessliche Verwaltung des Kundenkontos erfüllt noch keinen /*einen?*/Zweck. 
+/*Zweck oder keins?*/Diesen Zweck haben wir im ersten Absatz dieses Abschnitts beschrieben: Authentifizierung.
 Für die Authentifizierung haben wir dem Modell in @fig-gtz-registrierung noch zwei weitere Geschäftstransaktionen hinzugefügt:
 *Kunde anmelden* und *Kunde abmelden*.
 Beide Transaktionen versetzen das Kundenkonto in einen entsprechenden Zustand.
@@ -314,7 +318,7 @@ So wird die Transaktion *Kunde anmelden* nicht zur Eingabe von Benutzername und 
 Idealerweise ist diese Transaktion für ein angemeldetes Kundenkonto gar nicht erreichbar.
 Dafür muss das System den Zustand des Kundenkontos allerdings kennen.
 
-Die folgende @fig-gtz-registrierung zeigt das Geschäftsobjekt *Kundenkonto* und seine Beziehungen im RMI nach Archimate.
+Die folgende @fig-gtz-registrierung zeigt das Geschäftsobjekt *Kundenkonto* und seine Beziehungen im RIM nach Archimate.
 
 #figure(
   image("../assets/jan/Phase 2a - Sich registrieren (GT & Events) .svg", width: 100%),
@@ -388,7 +392,7 @@ transaktion],
 
 #design-entscheid([
   Wir haben uns die Frage gestellt, ob wir das Objekt "Kunde" auch zusätzlich modellieren sollen. 
-  Wir sind zum Schluss gekommen, dass das Geschäftsobjekt Kundenkonto alle Informationen zum Kunden enthält, weshalb letzteres nicht separat / zusätzlich geführt werden muss.
+  Wir sind zum Schluss gekommen, dass das Geschäftsobjekt Kundenkonto alle Informationen zum Kunden enthält, weshalb letzteres nicht zusätzlich geführt werden muss.
 ])
 
 
@@ -400,13 +404,13 @@ Im @sec-cj-unternehmen-gründen wurde das Szenario der Unternehmensgründung vor
 Nun wird dieses Szenario anhand des ihm zugrunde liegenden Geschäftsobjekts näher beschrieben.
 
 Viele Unternehmer, die in der Gastronomie starten möchten, wollen eine Gesellschaft mit beschränkter Haftung (GmbH) oder eine Aktiengesellschaft (AG) gründen, um sich und ihre Familien finanziell vor einem möglichen Misserfolg ihres Unternehmens zu schützen. 
-GastroStart weist die Besucher während des Orientierungsprozesses auf die Möglichkeit hin, eine juristische Person als Trägerschaft für das Gastrounternehmen zu schaffen. /*Eine GmbH eignet sich besonders für kleinere und mittlere Unternehmen. Sie ist einfacher und günstiger zu gründen und deshalb für viele Familienbetriebe oder Restaurants eine gute Wahl.*/
+GastroStart weist die GründerInnen während des Orientierungsprozesses auf die Möglichkeit hin, eine juristische Person als Trägerschaft für das Gastrounternehmen zu gründen. /*Eine GmbH eignet sich besonders für kleinere und mittlere Unternehmen. Sie ist einfacher und günstiger zu gründen und deshalb für viele Familienbetriebe oder Restaurants eine gute Wahl.*/
 
-Wie beim Ausfüllen der Steuererklärung bietet GastroStart eine Anleitung zur Vorbereitung der notwendigen Dokumentation, sodass die Notariatskosten möglichst tief gehalten werden können. Die Angaben, um die Benutzenden durch den Ablauf zu führen, sind in der Bewilligungsübersicht gespeichert (s. @fig-GTZ-orientierung).
-/*Dazu gehören Angaben wie der gewünschte Firmennamen, den Sitz und Adresse der Firma, persönliche Informationen zu den Anteilhabenden, die Einzahlung des Gründungskapitals, die Formulierung von Statuten und Lieferung von Identifikationsdokumenten. */
+Wie beim Ausfüllen der Steuererklärung bietet GastroStart eine Anleitung zur Vorbereitung der notwendigen Dokumentation, sodass die Notariatskosten möglichst tief gehalten werden können. Die Angaben, um die GründerInnen durch den Ablauf zu führen, sind in der Bewilligungsübersicht gespeichert (s. @fig-GTZ-orientierung)./*richtig so, jan?*/
+
 
 So stehen alle Informationen in GastroStart zur Verfügung und können jederzeit inhaltlich und formell validiert werden. 
-Wenn die Checkliste für die Gründung des *Unternehmens* erfolgreich durchgearbeitet worden ist, kann der Benutzer einen Termin beim Notar vereinbaren und dort die nötigen offiziellen Schritte vornehmen: die öffentliche Beurkundung durch den Notar und den Antrag auf Eintrag ins kantonale Handelsregister.
+Wenn die Checkliste für die Gründung des *Unternehmens* erfolgreich durchgearbeitet worden ist, können die GründerInnen einen Termin beim Notar vereinbaren und dort die nötigen offiziellen Schritte vornehmen: Die öffentliche Beurkundung durch den Notar und den Antrag auf Eintrag ins kantonale Handelsregister stellen.
 Diese Schritte sind notwendig, damit das Unternehmen überhaupt rechtlich existiert und als solches von den Behörden und Wirtschaftspartnern anerkannt werden kann, beispielsweise um eine Betriebsbewilligung und eine Finanzierung zu erhalten.
 
 Die folgende @fig-GTZ-Amira-gründet stellt die Zusammenhänge der Geschäftsobjekte, Zustände und Transaktionen im ressourcenunabhängigen Modell nach Archimate dar. 
@@ -419,7 +423,7 @@ im Szenario "Unternehmen - \gründen"]
 ) <fig-GTZ-Amira-gründet>
 
 Nachfolgend wird auf die einzelnen Elemente der Grafik eingegangen, wobei sich die Beschreibung auf das Happy Path konzentriert. 
-Die Möglichkeiten des Abbruches der Firmengründung durch die GründerInnen oder dass die kantonale Behörde den Eintrag ins Handelsregister nicht vornimmt, werden nicht näher beschrieben. 
+Die Möglichkeiten des Abbruches der Firmengründung durch die GründerInnen oder dass die kantonale Behörde den Eintrag ins Handelsregister nicht vornimmt, werden nicht näher beschrieben. /*ist das doppelt gemoppelt?*/
 
 
 ==== Geschäftsobjekt und Zustände 
@@ -462,16 +466,15 @@ Die Möglichkeiten des Abbruches der Firmengründung durch die GründerInnen ode
         Das Geschäftsobjekt enthält die wesentlichen Stammdaten der Unternehmung. 
         Der Gründungsverlauf selbst wird nicht als Inhalt abgebildet, sondern ist über die Zustände des Objekts nachzuvollziehen.
        /* Die Gründung einer juristischen Person setzt voraus, dass mindestens ein Vertreter Wohnsitz in der Schweiz hat. */
-       Die juristische Person ist Empfängerin der Betriebsbewilligung. 
+       Die juristische Person wird später Empfängerin der Betriebsbewilligung. 
       ],
 
       [Attribute],
       [Auf Ebene Geschäftsobjekt nicht ausmodelliert. Fachlich relevant wären jedoch: 
-      Auf Ebene Geschäftsobjekt nicht ausmodelliert. Fachlich relevant wären jedoch:
 + Auf der einen Seite Informationen wie Rechtsform, Firmenname, Sitz / Domizil, Zweck und Kapital.
 + Auf der anderen Seite Identifikatoren für die Interaktion mit den verschiedenen öffentlich-rechtlichen Akteuren auf kantonaler und Bundesebene wie Unternehmens-ID, Mehrwertsteuer-Nummer, AHV-Nummer, Nummer der Unfallversicherungspolice (SUVA oder private Versicherung).
       
-        _(nur Stammdaten; zugehörige Dokumente wie Handelsregistereintrag oder Bewilligung sind eigene Objekte, s. Beziehungen)_
+       /* _(nur Stammdaten; zugehörige Dokumente wie Handelsregistereintrag oder Bewilligung sind eigene Objekte, s. Beziehungen)_*/
       ],
 
       [Zustände],
@@ -539,13 +542,13 @@ transaktion],
       fill: (x, y) => if calc.odd(y) { luma(250) } else { white },
       align: (left, left, left),
 
-      [Gründungs-dokumentation vorbereiten], [Der Benutzer erstellt die für die Gründung notwendigen Dokumente, sammelt die notwendigen Beilagen  und bringt diese physisch beim Notar vorbei und beauftragt diesen mit der Gründung der Firma. Der Benutzer zahlt das Gründungskapital ein.], [neu → beurkundet],
-      [Eintrag im Handelsregister beantragen], [Der Benutzer meldet seine Firma über den Notar beim Handelsregisteramt.], [beurkundet → eingereicht],
-      [Unterlagen nachreichen], [ Der Benutzer muss Unterlagen oder Ausweise nachreichen.
+      [Gründungs-dokumentation vorbereiten], [Die GründerInnen erstellen die für die Gründung notwendigen Dokumente, sammeln die notwendigen Beilagen  und bringen diese physisch beim Notar vorbei und beauftragen diesen mit der Gründung der Firma. Die GründerInnen zahlen das Gründungskapital ein.], [neu → beurkundet],
+      [Eintrag im Handelsregister beantragen], [Die GründerInnen melden ihre Firma über den Notar beim Handelsregisteramt an.], [beurkundet → eingereicht],
+      [Unterlagen nachreichen], [Die Gründerinnen reichen Unterlagen oder Ausweise nach.
        ], [unvollständig → eingereicht],      
       [Antrag prüfen], [ Das Handelsregisteramt prüft den Antrag formell und entscheidet über das weitere Vorgehen.
        ], [eingereicht → angenommen / abgelehnt / unvollständig],
-      [Im Handelsregister eintragen], [Das Handelregisteramt teilt mit, dass der Eintrag im Register erfolgt ist], [angenommen → im Handelsregister eingetragen],
+      [Im Handelsregister eintragen], [Das Handelsregisteramt teilt mit, dass der Eintrag im Register erfolgt ist], [angenommen → im Handelsregister eingetragen],
     )
   ]
 ) <tbl-GT-Unternehmen-gründen>
@@ -553,19 +556,18 @@ transaktion],
 
 === Amira erhält die Bewilligung<sec-go-gt-bewilligung>
 
-Nach der Gründung einer juristischen Person, zum Beispiel einer GmbH, kann der Benutzer die nächste Hürde in Angriff nehmen: So wie mit der Gründung des Unternehmens bereits erfolgt, unterstützt GastroStart seine Kunden dabei, alle Unterlagen, Bestätigungen und Nachweise vorzubereiten oder einzuholen, die für die Erteilung der Betriebsbewilligung durch die zuständige Behörde am gewählten Standort erforderlich sind. Wie es bei der Gründung bereits der Fall gewesen ist, sind die Angaben für die Führung des Users durch den Ablauf in der Bewilligungsübersicht gespeichert (se. @fig-GTZ-orientierung).
+Nach der Gründung einer juristischen Person, zum Beispiel einer GmbH, können die GründerInnen die nächste Hürde in Angriff nehmen: So wie mit der Gründung des Unternehmens bereits erfolgt, unterstützt GastroStart seine Kunden dabei, alle Unterlagen, Bestätigungen und Nachweise vorzubereiten oder einzuholen, die für die Erteilung der Betriebsbewilligung durch die zuständige Behörde am gewählten Standort erforderlich sind. Wie es bei der Gründung bereits der Fall gewesen ist, sind die Angaben für die Führung der GründerInnen durch den Ablauf in der Bewilligungsübersicht gespeichert (se. @fig-GTZ-orientierung).
 
 GastroStart gibt über jedes erforderliche Lieferobjekt Auskunft und zeigt auf, wo der jeweilige Nachweis eingeholt werden kann.
-Dank GastroStart können die Benutzer den Sinn hinter jeder behördlichen Anforderung nachvollziehen, und dies motiviert sie bei der zeitaufwändigen Zusammenstellung.
-Denn die Anforderungen an die Erteilung der Betriebsbewilligung dienen dem Schutz der Gäste, denn die Vorschriften decken Bereiche ab wie Hygiene und Lebensmittelsicherheit, Bau- und Brandschutz und nicht zuletzt die persönliche Eignung des Antragsstellers für die Führung des Caterings. 
+Dank GastroStart können die GründerInnne den Sinn hinter jeder behördlichen Anforderung nachvollziehen, und dies motiviert sie bei der zeitaufwändigen Zusammenstellung. So erfahren sie, dass die Anforderungen an die Erteilung der Betriebsbewilligung dem Schutz der Gäste dienen, denn die Vorschriften decken Bereiche ab wie Hygiene und Lebensmittelsicherheit, Bau- und Brandschutz und nicht zuletzt die persönliche Eignung des Antragsstellers für die Führung des Caterings. 
 
-Bemerkung: Eigentlich ist nicht der Benutzer Empfänger der Betriebsbewilligung für das Catering, sondern diese wird der Firma  ausgestellt.
+Bemerkung: Eigentlich sind nicht die GründerInnen direkt Empfänger der Betriebsbewilligung für das Catering, sondern diese wird an die juristische Person ausgestellt.
 
 Die folgende Abbildung stellt die Zusammenhänge der Geschäftsobjekte, Zustände und Transaktionen im ressourcenunabhängigen Modell nach Archimate dar. 
 
  #figure(
   image("../assets/GTZ Amira erhaelt die Bewilligung.svg", width: 100%),
-  caption: [Zustandsübergänge des Gründungsvorhabens im Szenario \"Bewilligung erhalten"]
+  caption: [Zustandsübergänge des Gründungsvorhabens im Szenario \ "Bewilligung erhalten"]
 ) <fig-GTZ-Amira-bewilligung>
 
 Nachfolgend wird auf die einzelnen Elemente der Grafik eingegangen:
@@ -611,11 +613,13 @@ caption: [Geschäftsobjekt Bewilligung und dessen Zustände]
       [Bewilligung],
 
       [Definition / Zweck],
-      [Stellt einen behördlichen "Vertrag" dar, welcher einer natürlichen oder juristischen Person (_in casu_ dem Unternehmen von Amira) erteilt werden kann.
-Die Erteilung der Bewilligung setzt je nach Kanton einen Fähigkeitsausweis voraus. Im Kanton Fribourg muss mindestens eine Person im Betrieb ein Wirtepatent besitzen.],
+      [Stellt einen behördlichen "Vertrag" dar, welcher einer natürlichen oder juristischen Person (_in casu_ der GmbH von Amira) erteilt werden kann.
+Die Erteilung der Bewilligung setzt je nach Kanton einen Fähigkeitsausweis voraus./* Im Kanton Fribourg muss mindestens eine Person im Betrieb ein Wirtepatent besitzen.*/],
 
       [Attribute],
-      [/*REDEwendung von Adrian übernehmen*/fachlich relevante Informationen zum Geschäftsobjekt sind: Typ (mit oder ohne Alkoholausschank), unterliegendes Wirtepatent (insbesondere dessen territoriale Gültigkeit), Standort bzw. Lokal, Datum Bewilligungsbeginn, erteilende Behörde, Datum der Anmeldung bei der kantonalen Lebensmittelbehörde bzw. -labor, Hygienekonzept],
+      [/*REDEwendung von Adrian übernehmen*/Auf Ebene Geschäftsobjekt nicht ausmodelliert. Fachlich relevant wären jedoch: 
+      + Typ (mit oder ohne Alkoholausschank), unterliegendes Wirtepatent (insbesondere dessen territoriale Gültigkeit), Standort bzw. Lokal, 
+      + Datum Bewilligungsbeginn, erteilende Behörde, Datum der Anmeldung bei der kantonalen Lebensmittelbehörde bzw. -labor, Hygienekonzept.],
 
       [Zustände],
       [neu, in Vorbereitung, eingereicht, unvollständig, abgelehnt, erteilt, abgebrochen. 
@@ -623,7 +627,7 @@ Die Erteilung der Bewilligung setzt je nach Kanton einen Fähigkeitsausweis vora
       Lebenszyklus: von _neu_ über _in Vorbereitung_ zu _eingereicht_ für die Prüfung durch die Behörden; bei fehlenden Angaben _unvollständig_, nach Nachreichung wieder _eingereicht_. Nach dem Erreichen des Status _eingereicht_ geht es je nach Behördenentscheid mit dem Status _abgelehnt_ zum Ende, während bei behördlicher Zustimmung der Status _erteilt_ erreicht wird. Der Status _abgebrochen_ beendet den Zyklus vorzeitig, solange der Status _eingereicht_ noch nicht erreicht worden ist.
       Für die grafische Aufbereitung der Zustandsübergänge, vgl. @fig-GTZ-Amira-bewilligung. 
 
-      Andere Zustände wie erloschen, entzogen oder sistiert sind für die abgebildete Customer Journey nicht relevant.],
+      Andere Zustände wie erloschen, entzogen oder sistiert sind für die abgebildete Customer-Journey nicht relevant.],
       [Beziehungen],
       [- wird referenziert von *Gründungsvorhaben* // sagt man das so? ist das korrekt?
         - steht in Beziehung zu *Unternehmen* als Adressat
