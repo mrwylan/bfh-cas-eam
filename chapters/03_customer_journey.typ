@@ -23,13 +23,13 @@ Sie landet bei *“GastroStart”* und erfährt in der kurzen Einführung auf de
 Sie ist erleichtert und registriert sich. 
 
 
-In enger Verbindung mit der Customer Journey wird die Persona „Amira“ erarbeitet ( @persona-amira Persona-Profil). 
+In enger Verbindung mit der Customer Journey wird die Persona „Amira“ erarbeitet ( @persona-amira, Persona-Profil). 
 Sie dient dazu, unsere Endkundin konkret greifbar und emotional verankert zu machen. 
 Die Bedürfnisse und Kontexte von Amira bilden den zentralen Ausgangspunkt für die Modellierung des Produkts "GastroStart".
 
 
 #figure(
-  caption: [Persona-Profil: Amira],
+  caption: [Persona-Profil von Amira],
   block(
     width: 100%,
     stroke: 0.5pt,
@@ -85,7 +85,7 @@ den Szenarien. (Skizze)
 
 Wir haben bei der Modellierung der Customer-Journey festgestellt, dass sich Amiras Weg nicht in starre Phasen einteilen lässt. Stattdessen verstehen wir ihn als eine Abfolge von Szenarien: narrative Ausschnitte aus einer Story Map, die eine Outside-In-Perspektive beschreiben. Den Schnitt zwischen den Szenarien haben wir entlang Amiras Wahrnehmung und der Veränderung ihrer Emotionen gelegt. Erfolg oder Misserfolg auf ihrer Reise durch das Portal entscheidet sich an diesen Schnittstellen.
 
-In den folgenden Kapiteln gehen wir auf eine Auswahl dieser Szenarien ein, je eines pro Partei im Joint-Venture. Jedes Szenario ist in einzelne Touchpoints zerlegt: Sie halten fest, was Amira tut, mit welchem System sie interagiert, in welchem emotionalen Zustand sie sich befindet, und wo die aktuelle oder die Ziel-Architektur Reibung oder Chancen erzeugt.
+In den folgenden Kapiteln gehen wir auf diese Szenarien ein, aufgeteilt unter den Parteien im Joint-Venture. Jedes Szenario ist in einzelne Touchpoints zerlegt: Sie halten fest, was Amira tut, mit welchem System sie interagiert, in welchem emotionalen Zustand sie sich befindet, und wo die aktuelle oder die Ziel-Architektur Reibung oder Chancen erzeugt.
 
 Die Szenarien sind: 
 - Amira orientiert sich 
@@ -95,7 +95,7 @@ Die Szenarien sind:
 - Amira erhält die Finanzierung
 - Amira wird Kunde bei Transgourmet
 
-In den nächsten Kapiteln wird auf diese Szenarien eingegangen /*- eines für jede Partei am Joint-Venture.*/
+/* Repetitiv: In den nächsten Kapiteln wird auf diese Szenarien eingegangen - eines für jede Partei am Joint-Venture.*/
 Die Beschreibung des Szenarios wird jeweils in einer Tabelle zusammengefasst. 
 Der Eintritt in das jeweilige Szenario ist eine *Aktion* der GründerInnen.
 Über *Touchpoints* treten sie mit unserem Produkt in Verbindung.

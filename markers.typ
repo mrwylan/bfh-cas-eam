@@ -34,7 +34,7 @@
     columns: (auto, 1fr),
     gutter: 0.5em,
     align: horizon,
-    if icon != none { image("assets/" + icon, width: 1.4em) } else { [] },
+    if icon != none { image("assets/" + icon, width: 1.9em) } else { [] },
     text(weight: "bold", fill: farbe, size: 0.9em)[#titel]
   )
   #v(0.3em)

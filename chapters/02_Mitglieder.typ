@@ -110,7 +110,7 @@ Bund, Kantone und Gemeinden in der Schweiz orientieren sich für ihre Organisati
 Diese organisatorische Eigenschaft führt dazu, dass auf jeder Staatsebene eine Art interne Föderation besteht: Die Kernaufgaben werden dabei dezentral verantwortet und wahrgenommen.
  Leistungen mit Grundcharakter wie beispielsweise Logistik oder Infrastruktur werden gemeinsam genutzt. 
 
-Auf dieser Ausgangslage zur Organisation der Verwaltung basieren die folgenden Überlegungen zur angewendeten Unternehmensarchitektur auf Bundesebene. Es wird angenommen, dass die beschriebenen Mechanismen weitgehend auch auf die kantonale Ebene übertragen werden können.
+Auf dieser Ausgangslage zur Organisation der Verwaltung basieren die folgenden Überlegungen zur angewendeten Unternehmensarchitektur auf Bundesebene. Es wird angenommen, dass die beschriebenen Mechanismen _mutatis mutandis_ auch auf die kantonale Ebene übertragen werden können.
 
 === Unternehmensarchitektur auf Bundesebene
 Die Unternehmensarchitektur auf Bundesebene wird je nach Aufgabentyp unterschiedlich gelebt - und ist auch unterschiedlich bindend. 
@@ -127,7 +127,7 @@ Die folgende @fig-informatik-bund stellt in etwa die Verhältnisse zwischen den 
 
  #figure(
   image("../assets/informatikBund.png", width: 100%),
-  caption: [Verteilung der Bereiche der Unternehmensarchitektur nach Aufgabentyp bei der Schweizer \ Bundesverwaltung]
+  caption: [Verteilung der Bereiche der Unternehmensarchitektur nach Aufgabentyp bei der Schweizer Bundesverwaltung]
 ) <fig-informatik-bund>
 
 

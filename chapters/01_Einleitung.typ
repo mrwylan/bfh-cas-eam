@@ -33,7 +33,7 @@ Da diese Momente einen wesentlichen Teil des Arbeitsprozesses ausmachen, sind si
 
 #fuehrung([Kennzeichnet Passagen und Zitate aus der Fachliteratur. Sie dienen dazu, die theoretische Verankerung der Arbeit direkt nachzuvollziehen.])
 
-== Erklärung zur Nutzung Künstlicher Intelligenz (KI) und Selbständigkeitserklärung
+== Erklärung zur Nutzung Künstlicher Intelligenz (KI) und\ Selbständigkeitserklärung
 
 === Einsatzgebiet und Entstehungsprozess
 
