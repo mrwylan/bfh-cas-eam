@@ -1508,7 +1508,7 @@ Die Autorin teilt diese Diagnose zum aktuellen Stand: Eine gemeinsame Basis für
 
 Damit die Behörden — innerhalb derselben Ebene oder ebenenübergreifend (etwa zwischen Kanton und Gemeinden) — verbindlich zusammenarbeiten und Daten untereinander und mit der Privatwirtschaft austauschen können, braucht es daher eine verbindliche gesetzliche Grundlage.
 
-Die Autorin dieses Abschnittes vertritt die Meinung, dass diese Regelung in der _Bundes_- verfassung verankert werden sollten. 
+Die Autorin dieses Abschnittes vertritt die Meinung, dass diese Regelung in der _Bundes_- verfassung verankert werden sollte. 
 Ein Auftrag auf Bundesebene ist das einzige Mittel, eine Verpflichtung zur Digitalisierung zu bewirken, die für alle Kantone, Gemeinden und den Bund _selbst_ verbindlich wirken kann.
 
 Auch die einschlägige Literatur (_in primis_ Michaël Montavon) hat sich in diesem Sinne geäussert und folgenden Vorschlag für einen neuen Verfassungsartikel verfasst:
