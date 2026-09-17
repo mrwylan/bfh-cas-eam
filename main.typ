@@ -20,7 +20,7 @@ Anschliessend werden die Ressourcen modelliert - wobei jeder der vier Kollegen s
     (name: "Giovanna Beier", affiliation: "Digitale Transformation und IKT-Lenkung, Bundeskanzlei", email: "giovanna.meier@gmail.com"),
   ),
   
-  eingereicht-von: "Jan Sohnemann",   // ändert sich pro abgegebener Kopie
+  eingereicht-von: "Jakob Albrecht",   // ändert sich pro abgegebener Kopie
   kompendium: true,             // false = Abgabeversion, true = persönliches Kompendium
 
 )
